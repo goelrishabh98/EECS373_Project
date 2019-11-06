@@ -1,0 +1,31 @@
+Change Component Footprint: Designator=R1 Old Footprint=RESC0201(0603)_M New Footprint=RESC0603(1608)_M
+Change Component Footprint: Designator=R7 Old Footprint=RESC0201(0603)_M New Footprint=RESC0603(1608)_M
+Change Component Footprint: Designator=R6 Old Footprint=RESC0201(0603)_M New Footprint=RESC0603(1608)_N
+Change Component Comment : Designator=R1 Old Comment=6K04 1% 0201(0603) New Comment=6K04 1% 0603(1608)
+Change Component Comment : Designator=R7 Old Comment=6K8 5% 0201(0603) New Comment=6K8 1% 0603(1608)
+Change Component Comment : Designator=R6 Old Comment=10K 5% 0201(0603) New Comment=10K 1% 0603(1608)
+Change component parameters: Designator = "R1"; Footprint = "RESC0603(1608)_M"; UniqueID = "\ENRNTJQZ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "6040.00 Ohm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R6"; Footprint = "RESC0603(1608)_N"; UniqueID = "\KRRJELHI"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10000.00 Ohm"; VariantName = "[No Variations]"
+Change component parameters: Designator = "R7"; Footprint = "RESC0603(1608)_M"; UniqueID = "\OGKGCPDR"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "6800.00 Ohm"; VariantName = "[No Variations]"
+Added Room: Name=Sheet1

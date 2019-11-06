@@ -1,0 +1,291 @@
+Added Component: Designator=C1(CAP 865080342006)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Initial Voltage"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C2(CAPC0603(1608)100_M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Thickness"; Value = "1 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage"; Value = "16 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "±10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "680pF"; VariantName = "[No Variations]"
+Added Component: Designator=C3(CAPC0603(1608)100_M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Thickness"; Value = "1 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Rated Voltage"; Value = "16 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "±10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "680pF"; VariantName = "[No Variations]"
+Added Component: Designator=P1(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P2(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P3(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P4(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P5(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P6(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P7(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P8(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P9(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P10(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P11(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P12(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P13(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P14(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P15(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=R1(RESC0201(0603)_M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.05 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "6040.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R2(RESC0603(1608)_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "20000.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R3(RESC0603(1608)_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "20000.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R4(RESC0603(1608)_M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "4020.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R5(RESC0603(1608)_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R6(RESC0201(0603)_M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.05 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10000.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R7(RESC0201(0603)_M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0201"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.05 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "6800.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R8(RESC0603(1608)_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10000.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R9(RESC0603(1608)_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R10(RESC0603(1608)_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10000.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R11(RESC0603(1608)_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10000.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R12(RESC0603(1608)_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10000.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R13(RESC0603(1608)_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10000.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R14(RESC0603(1608)_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10000.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R15(RESC0603(1608)_N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case-EIA"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case-Metric"; Value = "1608"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "0.1 W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "1 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10000.00 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=U1(*SOIC24WIDE)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "620-1140-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Purchase_URL"; Value = "https://www.digikey.com/product-detail/en/allegro-microsystems/A3967SLBTR-T/620-1140-1-ND/1090383?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Allegro"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "A3967SLBTR-T"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SOIC-24 Allegro MicroSystems LLC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/A3967SLBTR-T/Allegro%20Industries/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+12 Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=RC1 Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=RC2 Pin=C3-2
+Added Pin To Net: NetName=NetP1_0 Pin=P1-0
+Added Pin To Net: NetName=VCC Pin=P2-0
+Added Pin To Net: NetName=+12 Pin=P3-0
+Added Pin To Net: NetName=DIR Pin=P4-0
+Added Pin To Net: NetName=RESET Pin=P5-0
+Added Pin To Net: NetName=ENABLE Pin=P6-0
+Added Pin To Net: NetName=MS1 Pin=P7-0
+Added Pin To Net: NetName=MS2 Pin=P8-0
+Added Pin To Net: NetName=SLEEP Pin=P9-0
+Added Pin To Net: NetName=GND Pin=P10-0
+Added Pin To Net: NetName=OUT1A Pin=P11-0
+Added Pin To Net: NetName=STEP Pin=P12-0
+Added Pin To Net: NetName=OUT1B Pin=P13-0
+Added Pin To Net: NetName=OUT2A Pin=P14-0
+Added Pin To Net: NetName=OUT2B Pin=P15-0
+Added Pin To Net: NetName=NetP1_0 Pin=R1-1
+Added Pin To Net: NetName=VCC Pin=R1-2
+Added Pin To Net: NetName=GND Pin=R2-1
+Added Pin To Net: NetName=RC1 Pin=R2-2
+Added Pin To Net: NetName=GND Pin=R3-1
+Added Pin To Net: NetName=RC2 Pin=R3-2
+Added Pin To Net: NetName=GND Pin=R4-1
+Added Pin To Net: NetName=NetP1_0 Pin=R4-2
+Added Pin To Net: NetName=NetR5_1 Pin=R5-1
+Added Pin To Net: NetName=GND Pin=R5-2
+Added Pin To Net: NetName=NetR6_1 Pin=R6-1
+Added Pin To Net: NetName=VCC Pin=R6-2
+Added Pin To Net: NetName=GND Pin=R7-1
+Added Pin To Net: NetName=NetR6_1 Pin=R7-2
+Added Pin To Net: NetName=VCC Pin=R8-1
+Added Pin To Net: NetName=SLEEP Pin=R8-2
+Added Pin To Net: NetName=NetR9_1 Pin=R9-1
+Added Pin To Net: NetName=GND Pin=R9-2
+Added Pin To Net: NetName=VCC Pin=R10-1
+Added Pin To Net: NetName=MS1 Pin=R10-2
+Added Pin To Net: NetName=GND Pin=R11-1
+Added Pin To Net: NetName=STEP Pin=R11-2
+Added Pin To Net: NetName=VCC Pin=R12-1
+Added Pin To Net: NetName=MS2 Pin=R12-2
+Added Pin To Net: NetName=GND Pin=R13-1
+Added Pin To Net: NetName=DIR Pin=R13-2
+Added Pin To Net: NetName=GND Pin=R14-1
+Added Pin To Net: NetName=ENABLE Pin=R14-2
+Added Pin To Net: NetName=VCC Pin=R15-1
+Added Pin To Net: NetName=RESET Pin=R15-2
+Added Pin To Net: NetName=NetP1_0 Pin=U1-1
+Added Pin To Net: NetName=RC2 Pin=U1-2
+Added Pin To Net: NetName=SLEEP Pin=U1-3
+Added Pin To Net: NetName=OUT2B Pin=U1-4
+Added Pin To Net: NetName=+12 Pin=U1-5
+Added Pin To Net: NetName=GND Pin=U1-6
+Added Pin To Net: NetName=GND Pin=U1-7
+Added Pin To Net: NetName=NetR9_1 Pin=U1-8
+Added Pin To Net: NetName=OUT2A Pin=U1-9
+Added Pin To Net: NetName=STEP Pin=U1-10
+Added Pin To Net: NetName=DIR Pin=U1-11
+Added Pin To Net: NetName=MS1 Pin=U1-12
+Added Pin To Net: NetName=MS2 Pin=U1-13
+Added Pin To Net: NetName=VCC Pin=U1-14
+Added Pin To Net: NetName=ENABLE Pin=U1-15
+Added Pin To Net: NetName=OUT1A Pin=U1-16
+Added Pin To Net: NetName=NetR5_1 Pin=U1-17
+Added Pin To Net: NetName=GND Pin=U1-18
+Added Pin To Net: NetName=GND Pin=U1-19
+Added Pin To Net: NetName=+12 Pin=U1-20
+Added Pin To Net: NetName=OUT1B Pin=U1-21
+Added Pin To Net: NetName=RESET Pin=U1-22
+Added Pin To Net: NetName=RC1 Pin=U1-23
+Added Pin To Net: NetName=NetR6_1 Pin=U1-24
+Added Member To Class: ClassName=Sheet1 Member=Component C1 =Value
+Added Member To Class: ClassName=Sheet1 Member=Component C2 CAP 680pF 16V 0603(1608)
+Added Member To Class: ClassName=Sheet1 Member=Component C3 CAP 680pF 16V 0603(1608)
+Added Member To Class: ClassName=Sheet1 Member=Component P1 Pin 100mil
+Added Member To Class: ClassName=Sheet1 Member=Component P2 Pin 100mil
+Added Member To Class: ClassName=Sheet1 Member=Component P3 Pin 100mil
+Added Member To Class: ClassName=Sheet1 Member=Component P4 Pin 100mil
+Added Member To Class: ClassName=Sheet1 Member=Component P5 Pin 100mil
+Added Member To Class: ClassName=Sheet1 Member=Component P6 Pin 100mil
+Added Member To Class: ClassName=Sheet1 Member=Component P7 Pin 100mil
+Added Member To Class: ClassName=Sheet1 Member=Component P8 Pin 100mil
+Added Member To Class: ClassName=Sheet1 Member=Component P9 Pin 100mil
+Added Member To Class: ClassName=Sheet1 Member=Component P10 Pin 100mil
+Added Member To Class: ClassName=Sheet1 Member=Component P11 Pin 100mil
+Added Member To Class: ClassName=Sheet1 Member=Component P12 Pin 100mil
+Added Member To Class: ClassName=Sheet1 Member=Component P13 Pin 100mil
+Added Member To Class: ClassName=Sheet1 Member=Component P14 Pin 100mil
+Added Member To Class: ClassName=Sheet1 Member=Component P15 Pin 100mil
+Added Member To Class: ClassName=Sheet1 Member=Component R1 6K04 1% 0201(0603)
+Added Member To Class: ClassName=Sheet1 Member=Component R2 20K 5% 0603(1608)
+Added Member To Class: ClassName=Sheet1 Member=Component R3 20K 5% 0603(1608)
+Added Member To Class: ClassName=Sheet1 Member=Component R4 4K02 1% 0603(1608)
+Added Member To Class: ClassName=Sheet1 Member=Component R5 Jumper 0603(1608)
+Added Member To Class: ClassName=Sheet1 Member=Component R6 10K 5% 0201(0603)
+Added Member To Class: ClassName=Sheet1 Member=Component R7 6K8 5% 0201(0603)
+Added Member To Class: ClassName=Sheet1 Member=Component R8 10K 1% 0603(1608)
+Added Member To Class: ClassName=Sheet1 Member=Component R9 Jumper 0603(1608)
+Added Member To Class: ClassName=Sheet1 Member=Component R10 10K 1% 0603(1608)
+Added Member To Class: ClassName=Sheet1 Member=Component R11 10K 1% 0603(1608)
+Added Member To Class: ClassName=Sheet1 Member=Component R12 10K 1% 0603(1608)
+Added Member To Class: ClassName=Sheet1 Member=Component R13 10K 1% 0603(1608)
+Added Member To Class: ClassName=Sheet1 Member=Component R14 10K 1% 0603(1608)
+Added Member To Class: ClassName=Sheet1 Member=Component R15 10K 1% 0603(1608)
+Added Member To Class: ClassName=Sheet1 Member=Component U1 A3967SLBTR-T
+Added Room: Name=Sheet1
