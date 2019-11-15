@@ -1,8 +1,0 @@
-KEY IDE_DES_TOOL "Ide"
-KEY IDE_DES_ADB_PATH "E:\Github\EECS373_Project\Stepper_Motor_Controller\designer\impl1\Stepper_Motor_Controller.adb"
-LIST SOURCE_FILES
-ENDLIST
-LIST OPTIONAL_FILES
-ENDLIST
-LIST VCD_FILES
-ENDLIST

@@ -1,0 +1,56 @@
+----------------------------------------------------------------------
+Report for cell WhiteboarPlotter.verilog
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                             OUTBUF         4       0.0        0.0
+                                VCC         1       0.0        0.0
+                 WhiteBoard_Plotter         1       0.0        0.0
+                    stepper_control         1      88.0       88.0
+                            
+                         TOTAL              8                 88.0
+----------------------------------------------------------------------
+Report for cell WhiteBoard_Plotter.netlist
+     Instance path:  WhiteBoard_Plotter_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                          INBUF_MSS         2       0.0        0.0
+                            MSS_APB         1       0.0        0.0
+                         OUTBUF_MSS         1       0.0        0.0
+                                VCC         1       0.0        0.0
+          WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC         1       0.0        0.0
+                            
+                         TOTAL              7                  0.0
+----------------------------------------------------------------------
+Report for cell WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.netlist
+     Instance path:  WhiteBoard_Plotter_0.MSS_CCC_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                                GND         1       0.0        0.0
+                            MSS_CCC         1       0.0        0.0
+                              RCOSC         1       0.0        0.0
+                                VCC         1       0.0        0.0
+                            
+                         TOTAL              4                  0.0
+----------------------------------------------------------------------
+Report for cell stepper_control.netlist
+     Instance path:  stepper_control_0
+                                          Cell usage:
+                               cell       count     area    count*area
+                               DFN1        22       1.0       22.0
+                                GND         1       0.0        0.0
+                                MX2         2       1.0        2.0
+                               NOR2         4       1.0        4.0
+                              NOR2A         4       1.0        4.0
+                              NOR2B        19       1.0       19.0
+                               NOR3         2       1.0        2.0
+                              NOR3C         1       1.0        1.0
+                                OA1        12       1.0       12.0
+                               OA1A         2       1.0        2.0
+                                OR2         4       1.0        4.0
+                               OR2B         2       1.0        2.0
+                                VCC         1       0.0        0.0
+                                XA1        14       1.0       14.0
+                            
+                         TOTAL             90                 88.0

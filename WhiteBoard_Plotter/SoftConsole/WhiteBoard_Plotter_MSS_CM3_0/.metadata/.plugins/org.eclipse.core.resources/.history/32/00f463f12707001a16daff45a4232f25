@@ -1,0 +1,10 @@
+#include "stepper.h"
+
+int main()
+{
+
+	while( 1 )
+	{
+		step(CW);
+	}
+}

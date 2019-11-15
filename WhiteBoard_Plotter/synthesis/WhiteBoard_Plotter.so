@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>WhiteBoard_Plotter</design>
+	<target_edif>N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteBoard_Plotter.edn</target_edif>
+</SynplifyOutput>

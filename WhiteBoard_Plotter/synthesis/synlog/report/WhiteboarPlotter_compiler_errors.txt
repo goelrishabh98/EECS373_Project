@@ -1,0 +1,2 @@
+@E: CL172 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":24:4:24:13|Only one always block can assign a given variable count_bool
+

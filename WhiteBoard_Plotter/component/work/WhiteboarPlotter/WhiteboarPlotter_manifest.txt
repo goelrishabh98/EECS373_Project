@@ -1,0 +1,17 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
+
+Date      :  Thu Nov 14 18:07:16 2019
+Project   :  N:\EECS373_Project\WhiteBoard_Plotter
+Component :  WhiteboarPlotter
+Family    :  SmartFusion
+
+
+HDL source files for all Synthesis and Simulation tools:
+    N:/EECS373_Project/WhiteBoard_Plotter/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v
+    N:/EECS373_Project/WhiteBoard_Plotter/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v
+    N:/EECS373_Project/WhiteBoard_Plotter/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v
+    N:/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteboarPlotter/WhiteboarPlotter.v
+
+Stimulus files for all Simulation tools:
+    N:/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteboarPlotter/subsystem.bfm
+

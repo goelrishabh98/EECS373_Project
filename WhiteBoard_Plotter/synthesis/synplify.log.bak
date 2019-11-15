@@ -1,0 +1,108 @@
+
+Starting:    C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\mbin\synbatch.exe
+Install:     C:\Microsemi\Libero_SoC_v11.9\SynplifyPro
+Hostname:    EECS373-07
+Date:        Thu Nov 14 16:24:46 2019
+Version:     L-2016.09M-SP1-5
+
+Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log WhiteBoard_Plotter_syn.tcl
+ProductType: synplify_pro
+
+License checkout: synplifypro_actel
+License: synplifypro_actel node-locked 
+Licensed Vendor: actel
+License Option: actel_oem
+
+Running in Vendor Mode
+
+
+auto_infer_blackbox is not supported in current product.
+
+log file: "N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteBoard_Plotter.srr"
+
+Running: synthesis in foreground
+
+
+
+Running WhiteBoard_Plotter_syn|synthesis
+
+
+Running: compile (Compile) on WhiteBoard_Plotter_syn|synthesis
+# Thu Nov 14 16:24:47 2019
+
+
+Running: compile_flow (Compile Process) on WhiteBoard_Plotter_syn|synthesis
+# Thu Nov 14 16:24:47 2019
+
+
+Running: compiler (Compile Input) on WhiteBoard_Plotter_syn|synthesis
+# Thu Nov 14 16:24:47 2019
+
+Copied N:\EECS373_Project\WhiteBoard_Plotter\synthesis\synwork\WhiteBoard_Plotter_comp.srs to N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteBoard_Plotter.srs
+
+
+compiler completed
+# Thu Nov 14 16:24:49 2019
+
+Return Code: 0
+Run Time:00h:00m:02s
+
+
+Running: multi_srs_gen (Multi-srs Generator) on WhiteBoard_Plotter_syn|synthesis
+# Thu Nov 14 16:24:49 2019
+
+
+multi_srs_gen completed
+# Thu Nov 14 16:24:49 2019
+
+Return Code: 0
+Run Time:00h:00m:00s
+
+Copied N:\EECS373_Project\WhiteBoard_Plotter\synthesis\synwork\WhiteBoard_Plotter_mult.srs to N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteBoard_Plotter.srs
+
+Complete: Compile Process on WhiteBoard_Plotter_syn|synthesis
+
+
+Running: premap (Pre-mapping) on WhiteBoard_Plotter_syn|synthesis
+# Thu Nov 14 16:24:49 2019
+
+
+premap completed
+# Thu Nov 14 16:24:53 2019
+
+Return Code: 0
+Run Time:00h:00m:04s
+
+Complete: Compile on WhiteBoard_Plotter_syn|synthesis
+
+
+Running: map (Map) on WhiteBoard_Plotter_syn|synthesis
+# Thu Nov 14 16:24:53 2019
+
+License granted for 4 parallel jobs
+
+
+Running: fpga_mapper (Map & Optimize) on WhiteBoard_Plotter_syn|synthesis
+# Thu Nov 14 16:24:53 2019
+
+Copied N:\EECS373_Project\WhiteBoard_Plotter\synthesis\synwork\WhiteBoard_Plotter_m.srm to N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteBoard_Plotter.srm
+
+
+fpga_mapper completed
+# Thu Nov 14 16:24:55 2019
+
+Return Code: 0
+Run Time:00h:00m:02s
+
+Complete: Map on WhiteBoard_Plotter_syn|synthesis
+
+Complete: Logic Synthesis on WhiteBoard_Plotter_syn|synthesis
+
+TCL script complete: "WhiteBoard_Plotter_syn.tcl"
+
+exit status=0
+
+exit status=0
+
+License checkin: synplifypro_actel
+

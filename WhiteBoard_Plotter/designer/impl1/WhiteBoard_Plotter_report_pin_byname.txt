@@ -1,0 +1,106 @@
+*****************************************************************
+Pin Report - Date: Thu Nov 14 16:27:28 2019 Pinchecksum: NOT-AVAILABLE
+Product: Designer
+Release: v11.9
+Version: 11.9.0.4
+Design Name: WhiteBoard_Plotter
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+*****************************************************************
+Port          |Pin |Fixed |Function                     |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+--------------|----|------|-----------------------------|--------|------------------|-----|--------------|----------------|-----|-----------------|------------|--------------|
+FAB_CLK        C21  No     GBC2/IO21PDB1V0               LVTTL    12                 High  None           ---              No    35                No           No
+M2F_RESET_N    A15  No     EMC_AB[13]/IO10PDB0V0         LVTTL    12                 High  None           ---              No    35                No           No
+MSS_RESET_N    R1   Yes    MSS_RESET_N                   LVTTL    ---                ---   None           No               ---   ---               No           Yes
+MSSPADDR[0]    J6   No     GFA0/IO64NDB5V0               LVTTL    12                 High  None           ---              No    35                No           No
+MSSPADDR[1]    C1   No     EMC_DB[14]/GAB2/IO71NDB5V0    LVTTL    12                 High  None           ---              No    35                No           No
+MSSPADDR[2]    J1   No     EMC_DB[6]/GEB0/IO62NDB5V0     LVTTL    12                 High  None           ---              No    35                No           No
+MSSPADDR[3]    K2   No     EMC_DB[0]/GEA2/IO59NDB5V0     LVTTL    12                 High  None           ---              No    35                No           No
+MSSPADDR[4]    D2   No     EMC_DB[12]/IO70NDB5V0         LVTTL    12                 High  None           ---              No    35                No           No
+MSSPADDR[5]    F4   No     EMC_DB[10]/IO69NPB5V0         LVTTL    12                 High  None           ---              No    35                No           No
+MSSPADDR[6]    D3   No     EMC_DB[13]/GAC2/IO70PDB5V0    LVTTL    12                 High  None           ---              No    35                No           No
+MSSPADDR[7]    G5   No     EMC_DB[11]/IO69PPB5V0         LVTTL    12                 High  None           ---              No    35                No           No
+MSSPADDR[8]    B11  No     EMC_AB[3]/IO05PDB0V0          LVTTL    12                 High  None           ---              No    35                No           No
+MSSPADDR[9]    J3   No     EMC_DB[4]/GEA0/IO61NDB5V0     LVTTL    12                 High  None           ---              No    35                No           No
+MSSPADDR[10]   H1   No     EMC_DB[7]/GEB1/IO62PDB5V0     LVTTL    12                 High  None           ---              No    35                No           No
+MSSPADDR[11]   K5   No     EMC_DB[2]/IO60NPB5V0          LVTTL    12                 High  None           ---              No    35                No           No
+MSSPADDR[12]   E3   No     GFA2/IO68PDB5V0               LVTTL    12                 High  None           ---              No    35                No           No
+MSSPADDR[13]   D10  No     EMC_OEN0_N/IO03NDB0V0         LVTTL    12                 High  None           ---              No    35                No           No
+MSSPADDR[14]   E1   No     GFC2/IO67PPB5V0               LVTTL    12                 High  None           ---              No    35                No           No
+MSSPADDR[15]   J2   No     EMC_DB[5]/GEA1/IO61PDB5V0     LVTTL    12                 High  None           ---              No    35                No           No
+MSSPADDR[16]   B10  No     EMC_AB[2]/IO05NDB0V0          LVTTL    12                 High  None           ---              No    35                No           No
+MSSPADDR[17]   H3   No     EMC_DB[8]/GEC0/IO63NDB5V0     LVTTL    12                 High  None           ---              No    35                No           No
+MSSPADDR[18]   B9   No     EMC_BYTEN[0]/GAC0/IO02NDB0V0  LVTTL    12                 High  None           ---              No    35                No           No
+MSSPADDR[19]   C10  No     EMC_OEN1_N/IO03PDB0V0         LVTTL    12                 High  None           ---              No    35                No           No
+MSSPENABLE     D15  No     GBC1/IO17PPB0V0               LVTTL    12                 High  None           ---              No    35                No           No
+MSSPRDATA[0]   H5   No     GFC0/IO66NPB5V0               LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[1]   F1   No     GFB1/IO65PPB5V0               LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[2]   H6   No     GFA1/IO64PDB5V0               LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[3]   F3   No     GFB2/IO68NDB5V0               LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[4]   C6   No     EMC_CLK/GAA0/IO00NDB0V0       LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[5]   F2   No     IO67NPB5V0                    LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[6]   B1   No     EMC_DB[15]/GAA2/IO71PDB5V0    LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[7]   K3   No     EMC_DB[1]/GEB2/IO59PDB5V0     LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[8]   B6   No     EMC_RW_N/GAA1/IO00PDB0V0      LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[9]   A6   No     EMC_CS1_N/GAB1/IO01PDB0V0     LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[10]  E22  No     IO22NDB1V0                    LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[11]  A12  No     EMC_AB[7]/IO07PDB0V0          LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[12]  F14  No     EMC_AB[21]/IO14PDB0V0         LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[13]  C14  No     EMC_AB[16]/IO12NDB0V0         LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[14]  K19  No     GDA0/IO31NDB1V0               LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[15]  E14  No     GBC0/IO17NPB0V0               LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[16]  J22  No     GCB1/IO27PDB1V0               LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[17]  H20  No     GCC0/IO26NPB1V0               LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[18]  B20  No     GBB1/IO18PDB0V0               LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[19]  B19  No     GBB0/IO18NDB0V0               LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[20]  B14  No     EMC_AB[15]/IO11PDB0V0         LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[21]  F13  No     EMC_AB[20]/IO14NDB0V0         LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[22]  A14  No     EMC_AB[12]/IO10NDB0V0         LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[23]  C15  No     EMC_AB[17]/IO12PDB0V0         LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[24]  L22  No     GDC2/IO32PDB1V0               LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[25]  F22  No     IO22PDB1V0                    LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[26]  M22  No     IO32NDB1V0                    LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[27]  L18  No     GDA2/IO33NDB1V0               LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[28]  C17  No     EMC_AB[22]/IO15NDB0V0         LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[29]  C18  No     EMC_AB[23]/IO15PDB0V0         LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[30]  K18  No     GDA1/IO31PDB1V0               LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPRDATA[31]  L21  No     GDB0/IO30NDB1V0               LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPREADY      A8   No     EMC_AB[0]/IO04NDB0V0          LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPSEL        C13  No     EMC_AB[8]/IO08NDB0V0          LVTTL    12                 High  None           ---              No    35                No           No
+MSSPSLVERR     G3   No     EMC_DB[9]/GEC1/IO63PDB5V0     LVTTL    ---                ---   None           No               ---   ---               No           No
+MSSPWDATA[0]   C9   No     EMC_BYTEN[1]/GAC1/IO02PDB0V0  LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[1]   E11  No     EMC_AB[4]/IO06NDB0V0          LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[2]   G4   No     GFC1/IO66PPB5V0               LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[3]   E12  No     EMC_AB[5]/IO06PDB0V0          LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[4]   G2   No     GFB0/IO65NPB5V0               LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[5]   A5   No     EMC_CS0_N/GAB0/IO01NDB0V0     LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[6]   B12  No     EMC_AB[6]/IO07NDB0V0          LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[7]   J4   No     EMC_DB[3]/GEC2/IO60PPB5V0     LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[8]   A9   No     EMC_AB[1]/IO04PDB0V0          LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[9]   L20  No     GDB1/IO30PDB1V0               LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[10]  D13  No     EMC_AB[9]/IO08PDB0V0          LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[11]  H18  No     GCC2/IO25PDB1V0               LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[12]  C19  No     GBA0/IO19NPB0V0               LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[13]  M18  No     GDB2/IO33PDB1V0               LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[14]  J21  No     GCC1/IO26PPB1V0               LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[15]  K20  No     GDC1/IO29PDB1V0               LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[16]  D12  No     EMC_AB[11]/IO09PDB0V0         LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[17]  J20  No     GCA1/IO28PDB1V0               LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[18]  H17  No     IO25NDB1V0                    LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[19]  D11  No     EMC_AB[10]/IO09NDB0V0         LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[20]  G21  No     GCB2/IO24PDB1V0               LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[21]  G19  No     GCA2/IO23PDB1V0               LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[22]  B13  No     EMC_AB[14]/IO11NDB0V0         LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[23]  B17  No     EMC_AB[19]/IO13PDB0V0         LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[24]  D16  No     EMC_AB[25]/IO16PDB0V0         LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[25]  C16  No     EMC_AB[24]/IO16NDB0V0         LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[26]  F19  No     IO23NDB1V0                    LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[27]  K21  No     GDC0/IO29NDB1V0               LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[28]  H22  No     GCB0/IO27NDB1V0               LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[29]  B16  No     EMC_AB[18]/IO13NDB0V0         LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[30]  G20  No     IO24NDB1V0                    LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWDATA[31]  D18  No     GBA1/IO19PPB0V0               LVTTL    12                 High  None           ---              No    35                No           No
+MSSPWRITE      J19  No     GCA0/IO28NDB1V0               LVTTL    12                 High  None           ---              No    35                No           No
+UART_0_RXD     U18  Yes    UART_0_RXD/GPIO_21            LVTTL    ---                ---   None           No               ---   ---               No           Yes
+UART_0_TXD     Y22  Yes    UART_0_TXD/GPIO_20            LVTTL    8                  High  None           ---              No    35                No           Yes
