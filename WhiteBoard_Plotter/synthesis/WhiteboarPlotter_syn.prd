@@ -1,0 +1,13 @@
+#--  Synopsys, Inc.
+#--  Version L-2016.09M-SP1-5
+#--  Project file N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter_syn.prd
+#--  Written on Mon Nov 18 17:26:29 2019
+
+#
+### Watch Implementation type ###
+#
+watch_impl -all
+#
+### Watch Implementation properties ###
+#
+watch_prop -clear

@@ -12,10 +12,10 @@
 
 #define PADDR (int*)0x40050000
 
-enum dir{CCW_CCW, CW_CCW, CCW_CW, CW_CW};
+enum dir{NO, CCW, CW};
 
 void config(int ms1, int ms2, int ms3);
-void step(int dir);
+void step(int dir1, int dir2);
 
 
 #endif /* STEPPER_H_ */

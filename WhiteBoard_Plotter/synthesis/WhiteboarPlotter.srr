@@ -1,9 +1,9 @@
 #Build: Synplify Pro L-2016.09M-SP1-5, Build 264R, Oct 26 2017
 #install: C:\Microsemi\Libero_SoC_v11.9\SynplifyPro
 #OS: Windows 8 6.2
-#Hostname: EECS373-07
+#Hostname: EECS373-11
 
-# Thu Nov 14 18:07:30 2019
+# Mon Nov 18 17:32:08 2019
 
 #Implementation: synthesis
 
@@ -24,14 +24,12 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\mss_tshell.v" (library work)
 @I::"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v" (library work)
 @I::"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.v" (library work)
-@I::"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v" (library work)
 @I::"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" (library COREAPB3_LIB)
 @I::"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" (library COREAPB3_LIB)
 @I::"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v" (library COREAPB3_LIB)
+@I::"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v" (library work)
 @I::"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.v" (library work)
 Verilog syntax check successful!
-File N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v changed - recompiling
-File N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.v changed - recompiling
 Selecting top level module WhiteboarPlotter
 @W: CG775 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
 @N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v":13:0:13:6|Synthesizing module CAPB3II in library COREAPB3_LIB.
@@ -156,7 +154,7 @@ Selecting top level module WhiteboarPlotter
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused.
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused.
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused.
-@W: CL246 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":12:18:12:23|Input port bits 31 to 2 of PWDATA[31:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL246 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":12:18:12:23|Input port bits 31 to 4 of PWDATA[31:0] are unused. Assign logic for all port bits or change the input port size.
 @A: CL153 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":13:18:13:23|*Unassigned bits of PRDATA[31:0] are referenced and tied to 0 -- simulation mismatch possible.
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":7:6:7:12|Input PENABLE is unused.
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":11:13:11:17|Input PADDR is unused.
@@ -214,7 +212,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Nov 14 18:07:32 2019
+# Mon Nov 18 17:32:09 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
@@ -225,7 +223,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Nov 14 18:07:33 2019
+# Mon Nov 18 17:32:09 2019
 
 ###########################################################]
 @END
@@ -235,7 +233,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Nov 14 18:07:33 2019
+# Mon Nov 18 17:32:09 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
@@ -247,10 +245,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Nov 14 18:07:34 2019
+# Mon Nov 18 17:32:11 2019
 
 ###########################################################]
-# Thu Nov 14 18:07:34 2019
+# Mon Nov 18 17:32:11 2019
 
 Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -286,10 +284,10 @@ Clock                                                               Frequency   
 ------------------------------------------------------------------------------------------------------------------------------------------
 FAB_CLK                                                             100.0 MHz     10.000        declared     clk_group_0             0    
 FCLK                                                                100.0 MHz     10.000        declared     clk_group_0             0    
-WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     22   
+WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     24   
 ==========================================================================================================================================
 
-@W: MT530 :"n:\eecs373_project\whiteboard_plotter\hdl\stepper_control.v":106:0:106:5|Found inferred clock WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock which controls 22 sequential elements including stepper_control_0.count2[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"n:\eecs373_project\whiteboard_plotter\hdl\stepper_control.v":123:0:123:5|Found inferred clock WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock which controls 24 sequential elements including stepper_control_0.count2[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter.sap.
@@ -307,10 +305,10 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 114MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Thu Nov 14 18:07:37 2019
+# Mon Nov 18 17:32:14 2019
 
 ###########################################################]
-# Thu Nov 14 18:07:38 2019
+# Mon Nov 18 17:32:14 2019
 
 Synopsys Microsemi Technology Mapper, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -340,8 +338,8 @@ Available hyper_sources - for debug and ip models
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
 
-@N: MO231 :"n:\eecs373_project\whiteboard_plotter\hdl\stepper_control.v":106:0:106:5|Found counter in view:work.stepper_control(verilog) instance count2[7:0] 
-@N: MO231 :"n:\eecs373_project\whiteboard_plotter\hdl\stepper_control.v":65:0:65:5|Found counter in view:work.stepper_control(verilog) instance count1[7:0] 
+@N: MO231 :"n:\eecs373_project\whiteboard_plotter\hdl\stepper_control.v":123:0:123:5|Found counter in view:work.stepper_control(verilog) instance count2[7:0] 
+@N: MO231 :"n:\eecs373_project\whiteboard_plotter\hdl\stepper_control.v":75:0:75:5|Found counter in view:work.stepper_control(verilog) instance count1[7:0] 
 
 Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
 
@@ -392,14 +390,14 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:
 
 Clock optimization not enabled
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 22 clock pin(s) of sequential element(s)
-0 instances converted, 22 sequential instances remain driven by gated/generated clocks
+1 gated/generated clock tree(s) driving 24 clock pin(s) of sequential element(s)
+0 instances converted, 24 sequential instances remain driven by gated/generated clocks
 
-================================================================================================================ Gated/Generated Clocks =================================================================================================================
-Clock Tree ID     Driving Element                             Drive Element Type     Fanout     Sample Instance            Explanation                                                                                                                   
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       WhiteBoard_Plotter_0.MSS_CCC_0.I_MSSCCC     MSS_CCC                22         stepper_control_0.dir2     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
-=========================================================================================================================================================================================================================================================
+================================================================================================================== Gated/Generated Clocks ===================================================================================================================
+Clock Tree ID     Driving Element                             Drive Element Type     Fanout     Sample Instance                Explanation                                                                                                                   
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       WhiteBoard_Plotter_0.MSS_CCC_0.I_MSSCCC     MSS_CCC                24         stepper_control_0.step2_en     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+=============================================================================================================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
@@ -423,7 +421,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Thu Nov 14 18:07:40 2019
+# Timing Report written on Mon Nov 18 17:32:16 2019
 #
 
 
@@ -469,7 +467,7 @@ Clocks                                                                          
 Starting                                                         Ending                                                           |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 System                                                           System                                                           |  10.000      4.491  |  No paths    -      |  No paths    -      |  No paths    -    
-System                                                           WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  |  10.000      3.613  |  No paths    -      |  No paths    -      |  No paths    -    
+System                                                           WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  |  10.000      3.544  |  No paths    -      |  No paths    -      |  No paths    -    
 WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  |  10.000      0.327  |  No paths    -      |  No paths    -      |  No paths    -    
 ========================================================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
@@ -598,7 +596,7 @@ Starting Points with Worst Slack
 Instance                                   Reference     Type        Pin              Net                                               Time        Slack
                                            Clock                                                                                                         
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
-WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     M2FRESETn        WhiteBoard_Plotter_0_M2F_RESET_N                  0.000       3.613
+WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     M2FRESETn        WhiteBoard_Plotter_0_M2F_RESET_N                  0.000       3.544
 WhiteBoard_Plotter_0.MSS_CCC_0.I_RCOSC     System        RCOSC       CLKOUT           N_CLKA_RCOSC                                      0.000       4.491
 WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPADDR[8]      WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[8]      0.000       4.621
 WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPSEL          WhiteBoard_Plotter_0_MSS_MASTER_APB_PSELx         0.000       4.699
@@ -618,16 +616,16 @@ Ending Points with Worst Slack
 Instance                        Reference     Type     Pin     Net           Time         Slack
                                 Clock                                                          
 -----------------------------------------------------------------------------------------------
-stepper_control_0.count1[1]     System        DFN1     D       count1_n1     9.427        3.613
-stepper_control_0.count1[2]     System        DFN1     D       count1_n2     9.427        3.613
-stepper_control_0.count1[3]     System        DFN1     D       count1_n3     9.427        3.613
-stepper_control_0.count1[4]     System        DFN1     D       count1_n4     9.427        3.613
-stepper_control_0.count1[5]     System        DFN1     D       count1_n5     9.427        3.613
-stepper_control_0.count1[6]     System        DFN1     D       count1_n6     9.427        3.613
-stepper_control_0.count1[7]     System        DFN1     D       count1_n7     9.427        3.613
-stepper_control_0.count2[1]     System        DFN1     D       count2_n1     9.427        3.613
-stepper_control_0.count2[2]     System        DFN1     D       count2_n2     9.427        3.613
-stepper_control_0.count2[3]     System        DFN1     D       count2_n3     9.427        3.613
+stepper_control_0.count1[1]     System        DFN1     D       count1_n1     9.427        3.544
+stepper_control_0.count1[2]     System        DFN1     D       count1_n2     9.427        3.544
+stepper_control_0.count1[3]     System        DFN1     D       count1_n3     9.427        3.544
+stepper_control_0.count1[4]     System        DFN1     D       count1_n4     9.427        3.544
+stepper_control_0.count1[5]     System        DFN1     D       count1_n5     9.427        3.544
+stepper_control_0.count1[6]     System        DFN1     D       count1_n6     9.427        3.544
+stepper_control_0.count1[7]     System        DFN1     D       count1_n7     9.427        3.544
+stepper_control_0.count2[1]     System        DFN1     D       count2_n1     9.427        3.544
+stepper_control_0.count2[2]     System        DFN1     D       count2_n2     9.427        3.544
+stepper_control_0.count2[3]     System        DFN1     D       count2_n3     9.427        3.544
 ===============================================================================================
 
 
@@ -642,10 +640,10 @@ Path information for path number 1:
     + Clock delay at ending point:           0.000 (ideal)
     = Required time:                         9.427
 
-    - Propagation time:                      5.813
+    - Propagation time:                      5.883
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 3.613
+    = Slack (non-critical) :                 3.544
 
     Number of logic level(s):                3
     Starting point:                          WhiteBoard_Plotter_0.MSS_ADLIB_INST / M2FRESETn
@@ -657,19 +655,19 @@ Instance / Net                                      Pin           Pin           
 Name                                    Type        Name          Dir     Delay     Time        Fan Out(s)
 ----------------------------------------------------------------------------------------------------------
 WhiteBoard_Plotter_0.MSS_ADLIB_INST     MSS_APB     M2FRESETn     Out     0.000     0.000       -         
-WhiteBoard_Plotter_0_M2F_RESET_N        Net         -             -       1.639     -           8         
-stepper_control_0.count211_0            NOR2B       A             In      -         1.639       -         
-stepper_control_0.count211_0            NOR2B       Y             Out     0.514     2.153       -         
+WhiteBoard_Plotter_0_M2F_RESET_N        Net         -             -       1.708     -           10        
+stepper_control_0.count211_0            NOR2B       A             In      -         1.708       -         
+stepper_control_0.count211_0            NOR2B       Y             Out     0.514     2.223       -         
 count211_0                              Net         -             -       0.322     -           1         
-stepper_control_0.count211              OA1         C             In      -         2.475       -         
-stepper_control_0.count211              OA1         Y             Out     0.666     3.140       -         
+stepper_control_0.count211              OA1         C             In      -         2.544       -         
+stepper_control_0.count211              OA1         Y             Out     0.666     3.210       -         
 count211                                Net         -             -       1.639     -           8         
-stepper_control_0.count2_n1             XA1         C             In      -         4.779       -         
-stepper_control_0.count2_n1             XA1         Y             Out     0.713     5.492       -         
+stepper_control_0.count2_n1             XA1         C             In      -         4.849       -         
+stepper_control_0.count2_n1             XA1         Y             Out     0.713     5.561       -         
 count2_n1                               Net         -             -       0.322     -           1         
-stepper_control_0.count2[1]             DFN1        D             In      -         5.813       -         
+stepper_control_0.count2[1]             DFN1        D             In      -         5.883       -         
 ==========================================================================================================
-Total path delay (propagation time + setup) of 6.387 is 2.466(38.6%) logic and 3.921(61.4%) route.
+Total path delay (propagation time + setup) of 6.456 is 2.466(38.2%) logic and 3.990(61.8%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -682,7 +680,7 @@ None
 Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 --------------------------------------------------------------------------------
 Target Part: A2F200M3F_FBGA484_STD
@@ -692,10 +690,10 @@ Report for cell WhiteboarPlotter.verilog
                GND     4      0.0        0.0
            MSS_APB     1      0.0        0.0
            MSS_CCC     1      0.0        0.0
-               MX2     2      1.0        2.0
+               MX2     4      1.0        4.0
               NOR2     4      1.0        4.0
              NOR2A     4      1.0        4.0
-             NOR2B    19      1.0       19.0
+             NOR2B    21      1.0       21.0
               NOR3     2      1.0        2.0
              NOR3C     1      1.0        1.0
                OA1    12      1.0       12.0
@@ -707,9 +705,9 @@ Report for cell WhiteboarPlotter.verilog
                XA1    14      1.0       14.0
 
 
-              DFN1    22      1.0       22.0
+              DFN1    24      1.0       24.0
                    -----          ----------
-             TOTAL    99                88.0
+             TOTAL   105                94.0
 
 
   IO Cell usage:
@@ -721,7 +719,7 @@ Report for cell WhiteboarPlotter.verilog
              TOTAL     7
 
 
-Core Cells         : 88 of 4608 (2%)
+Core Cells         : 94 of 4608 (2%)
 IO Cells           : 7
 
   RAM/ROM Usage Summary
@@ -729,9 +727,9 @@ Block Rams : 0 of 8 (0%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 112MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 112MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Thu Nov 14 18:07:40 2019
+# Mon Nov 18 17:32:16 2019
 
 ###########################################################]

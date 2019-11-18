@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2019 11 14 18 7 40)
+      (timeStamp 2019 11 18 17 32 16)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "L-2016.09M-SP1-5, mapper mapact, Build 2172R"))
      )
@@ -675,7 +675,7 @@
     (cell WhiteBoard_Plotter (cellType GENERIC)
        (view netlist (viewType NETLIST)
          (interface
-           (port (array (rename coreapb3_0_apbmslave0_pwdata "CoreAPB3_0_APBmslave0_PWDATA[1:0]") 2) (direction OUTPUT))
+           (port (array (rename coreapb3_0_apbmslave0_pwdata "CoreAPB3_0_APBmslave0_PWDATA[3:0]") 4) (direction OUTPUT))
            (port (array (rename whiteboard_plotter_0_mss_master_apb_paddr "WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[11:8]") 4) (direction OUTPUT))
            (port CoreAPB3_0_APBmslave0_PWRITE (direction OUTPUT))
            (port WhiteBoard_Plotter_0_MSS_MASTER_APB_PSELx (direction OUTPUT))
@@ -1913,17 +1913,19 @@
           ))
           (net (rename CoreAPB3_0_APBmslave0_PWDATA_0 "CoreAPB3_0_APBmslave0_PWDATA[0]") (joined
            (portRef (member msspwdata 31) (instanceRef MSS_ADLIB_INST))
-           (portRef (member coreapb3_0_apbmslave0_pwdata 1))
+           (portRef (member coreapb3_0_apbmslave0_pwdata 3))
           ))
           (net (rename CoreAPB3_0_APBmslave0_PWDATA_1 "CoreAPB3_0_APBmslave0_PWDATA[1]") (joined
            (portRef (member msspwdata 30) (instanceRef MSS_ADLIB_INST))
-           (portRef (member coreapb3_0_apbmslave0_pwdata 0))
+           (portRef (member coreapb3_0_apbmslave0_pwdata 2))
           ))
-          (net (rename MSSPWDATA_2 "MSSPWDATA[2]") (joined
+          (net (rename CoreAPB3_0_APBmslave0_PWDATA_2 "CoreAPB3_0_APBmslave0_PWDATA[2]") (joined
            (portRef (member msspwdata 29) (instanceRef MSS_ADLIB_INST))
+           (portRef (member coreapb3_0_apbmslave0_pwdata 1))
           ))
-          (net (rename MSSPWDATA_3 "MSSPWDATA[3]") (joined
+          (net (rename CoreAPB3_0_APBmslave0_PWDATA_3 "CoreAPB3_0_APBmslave0_PWDATA[3]") (joined
            (portRef (member msspwdata 28) (instanceRef MSS_ADLIB_INST))
+           (portRef (member coreapb3_0_apbmslave0_pwdata 0))
           ))
           (net (rename MSSPWDATA_4 "MSSPWDATA[4]") (joined
            (portRef (member msspwdata 27) (instanceRef MSS_ADLIB_INST))
@@ -2016,7 +2018,7 @@
     (cell stepper_control (cellType GENERIC)
        (view netlist (viewType NETLIST)
          (interface
-           (port (array (rename coreapb3_0_apbmslave0_pwdata "CoreAPB3_0_APBmslave0_PWDATA[1:0]") 2) (direction INPUT))
+           (port (array (rename coreapb3_0_apbmslave0_pwdata "CoreAPB3_0_APBmslave0_PWDATA[3:0]") 4) (direction INPUT))
            (port (array (rename whiteboard_plotter_0_mss_master_apb_paddr "WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[11:8]") 4) (direction INPUT))
            (port step2_c (direction OUTPUT))
            (port FAB_CLK (direction INPUT))
@@ -2090,10 +2092,14 @@
           (instance (rename count1_RNIK6OR1_4 "count1_RNIK6OR1[4]") (viewRef prim (cellRef NOR2B (libraryRef smartfusion)))          )
           (instance (rename count1_RNIEMPF1_3 "count1_RNIEMPF1[3]") (viewRef prim (cellRef NOR2B (libraryRef smartfusion)))          )
           (instance (rename count1_RNI97R31_2 "count1_RNI97R31[2]") (viewRef prim (cellRef NOR2B (libraryRef smartfusion)))          )
+          (instance step2_en_RNO (viewRef prim (cellRef NOR2B (libraryRef smartfusion)))          )
           (instance dir2_RNO (viewRef prim (cellRef NOR2B (libraryRef smartfusion)))          )
+          (instance step1_en_RNO (viewRef prim (cellRef NOR2B (libraryRef smartfusion)))          )
           (instance dir1_RNO (viewRef prim (cellRef NOR2B (libraryRef smartfusion)))          )
           (instance dir1_RNO_0 (viewRef prim (cellRef MX2 (libraryRef smartfusion)))          )
+          (instance step1_en_RNO_0 (viewRef prim (cellRef MX2 (libraryRef smartfusion)))          )
           (instance dir2_RNO_0 (viewRef prim (cellRef MX2 (libraryRef smartfusion)))          )
+          (instance step2_en_RNO_0 (viewRef prim (cellRef MX2 (libraryRef smartfusion)))          )
           (instance step1 (viewRef prim (cellRef DFN1 (libraryRef smartfusion)))
           )
           (instance step2 (viewRef prim (cellRef DFN1 (libraryRef smartfusion)))
@@ -2136,7 +2142,11 @@
           )
           (instance dir1 (viewRef prim (cellRef DFN1 (libraryRef smartfusion)))
           )
+          (instance step1_en (viewRef prim (cellRef DFN1 (libraryRef smartfusion)))
+          )
           (instance dir2 (viewRef prim (cellRef DFN1 (libraryRef smartfusion)))
+          )
+          (instance step2_en (viewRef prim (cellRef DFN1 (libraryRef smartfusion)))
           )
           (instance VCC_i (viewRef prim (cellRef VCC (libraryRef smartfusion)))          )
           (instance GND_i (viewRef prim (cellRef GND (libraryRef smartfusion)))          )
@@ -2147,7 +2157,9 @@
           (net WhiteBoard_Plotter_0_M2F_RESET_N (joined
            (portRef WhiteBoard_Plotter_0_M2F_RESET_N)
            (portRef A (instanceRef dir1_RNO))
+           (portRef A (instanceRef step1_en_RNO))
            (portRef A (instanceRef dir2_RNO))
+           (portRef A (instanceRef step2_en_RNO))
            (portRef C (instanceRef count_bool1_RNO))
            (portRef C (instanceRef count_bool2_RNO))
            (portRef C (instanceRef step1_RNO_2))
@@ -2437,10 +2449,10 @@
           ))
           (net (rename stepper_writeZ0 "stepper_write") (joined
            (portRef Y (instanceRef stepper_write))
+           (portRef S (instanceRef step2_en_RNO_0))
            (portRef S (instanceRef dir2_RNO_0))
+           (portRef S (instanceRef step1_en_RNO_0))
            (portRef S (instanceRef dir1_RNO_0))
-           (portRef B (instanceRef count_bool1_RNO))
-           (portRef B (instanceRef count_bool2_RNO))
           ))
           (net (rename count2_nZ0Z7 "count2_n7") (joined
            (portRef Y (instanceRef count2_n7))
@@ -2555,9 +2567,14 @@
            (portRef Y (instanceRef count_bool2_RNO))
            (portRef D (instanceRef count_bool2))
           ))
-          (net N_155 (joined
+          (net N_153 (joined
            (portRef Y (instanceRef count_bool2_RNO_0))
            (portRef A (instanceRef count_bool2_RNO))
+          ))
+          (net (rename step2_enZ0 "step2_en") (joined
+           (portRef Q (instanceRef step2_en))
+           (portRef A (instanceRef step2_en_RNO_0))
+           (portRef B (instanceRef count_bool2_RNO))
           ))
           (net count1_n1 (joined
            (portRef Y (instanceRef count1_RNO_1))
@@ -2576,9 +2593,22 @@
            (portRef Y (instanceRef count_bool1_RNO))
            (portRef D (instanceRef count_bool1))
           ))
-          (net N_156 (joined
+          (net N_154 (joined
            (portRef Y (instanceRef count_bool1_RNO_0))
            (portRef A (instanceRef count_bool1_RNO))
+          ))
+          (net (rename step1_enZ0 "step1_en") (joined
+           (portRef Q (instanceRef step1_en))
+           (portRef A (instanceRef step1_en_RNO_0))
+           (portRef B (instanceRef count_bool1_RNO))
+          ))
+          (net (rename step2_en_RNOZ0 "step2_en_RNO") (joined
+           (portRef Y (instanceRef step2_en_RNO))
+           (portRef D (instanceRef step2_en))
+          ))
+          (net (rename step2_en_RNOZ0Z_0 "step2_en_RNO_0") (joined
+           (portRef Y (instanceRef step2_en_RNO_0))
+           (portRef B (instanceRef step2_en_RNO))
           ))
           (net (rename dir2_RNOZ0 "dir2_RNO") (joined
            (portRef Y (instanceRef dir2_RNO))
@@ -2587,6 +2617,14 @@
           (net (rename dir2_RNOZ0Z_0 "dir2_RNO_0") (joined
            (portRef Y (instanceRef dir2_RNO_0))
            (portRef B (instanceRef dir2_RNO))
+          ))
+          (net (rename step1_en_RNOZ0 "step1_en_RNO") (joined
+           (portRef Y (instanceRef step1_en_RNO))
+           (portRef D (instanceRef step1_en))
+          ))
+          (net (rename step1_en_RNOZ0Z_0 "step1_en_RNO_0") (joined
+           (portRef Y (instanceRef step1_en_RNO_0))
+           (portRef B (instanceRef step1_en_RNO))
           ))
           (net (rename dir1_RNOZ0 "dir1_RNO") (joined
            (portRef Y (instanceRef dir1_RNO))
@@ -2602,8 +2640,12 @@
            (portRef dir1_c)
           ))
           (net (rename CoreAPB3_0_APBmslave0_PWDATA_0 "CoreAPB3_0_APBmslave0_PWDATA[0]") (joined
-           (portRef (member coreapb3_0_apbmslave0_pwdata 1))
+           (portRef (member coreapb3_0_apbmslave0_pwdata 3))
            (portRef B (instanceRef dir1_RNO_0))
+          ))
+          (net (rename CoreAPB3_0_APBmslave0_PWDATA_2 "CoreAPB3_0_APBmslave0_PWDATA[2]") (joined
+           (portRef (member coreapb3_0_apbmslave0_pwdata 1))
+           (portRef B (instanceRef step1_en_RNO_0))
           ))
           (net dir2_c (joined
            (portRef Q (instanceRef dir2))
@@ -2611,8 +2653,12 @@
            (portRef dir2_c)
           ))
           (net (rename CoreAPB3_0_APBmslave0_PWDATA_1 "CoreAPB3_0_APBmslave0_PWDATA[1]") (joined
-           (portRef (member coreapb3_0_apbmslave0_pwdata 0))
+           (portRef (member coreapb3_0_apbmslave0_pwdata 2))
            (portRef B (instanceRef dir2_RNO_0))
+          ))
+          (net (rename CoreAPB3_0_APBmslave0_PWDATA_3 "CoreAPB3_0_APBmslave0_PWDATA[3]") (joined
+           (portRef (member coreapb3_0_apbmslave0_pwdata 0))
+           (portRef B (instanceRef step2_en_RNO_0))
           ))
           (net step1_c (joined
            (portRef Q (instanceRef step1))
@@ -2620,7 +2666,9 @@
           ))
           (net FAB_CLK (joined
            (portRef FAB_CLK)
+           (portRef CLK (instanceRef step2_en))
            (portRef CLK (instanceRef dir2))
+           (portRef CLK (instanceRef step1_en))
            (portRef CLK (instanceRef dir1))
            (portRef CLK (instanceRef count_bool1))
            (portRef CLK (instanceRef count_bool2))
@@ -2723,10 +2771,18 @@
            (portRef WhiteBoard_Plotter_0_MSS_MASTER_APB_PSELx (instanceRef stepper_control_0))
           ))
           (net (rename CoreAPB3_0_APBmslave0_PWDATA_0 "CoreAPB3_0_APBmslave0_PWDATA[0]") (joined
+           (portRef (member coreapb3_0_apbmslave0_pwdata 3) (instanceRef WhiteBoard_Plotter_0))
+           (portRef (member coreapb3_0_apbmslave0_pwdata 3) (instanceRef stepper_control_0))
+          ))
+          (net (rename CoreAPB3_0_APBmslave0_PWDATA_1 "CoreAPB3_0_APBmslave0_PWDATA[1]") (joined
+           (portRef (member coreapb3_0_apbmslave0_pwdata 2) (instanceRef WhiteBoard_Plotter_0))
+           (portRef (member coreapb3_0_apbmslave0_pwdata 2) (instanceRef stepper_control_0))
+          ))
+          (net (rename CoreAPB3_0_APBmslave0_PWDATA_2 "CoreAPB3_0_APBmslave0_PWDATA[2]") (joined
            (portRef (member coreapb3_0_apbmslave0_pwdata 1) (instanceRef WhiteBoard_Plotter_0))
            (portRef (member coreapb3_0_apbmslave0_pwdata 1) (instanceRef stepper_control_0))
           ))
-          (net (rename CoreAPB3_0_APBmslave0_PWDATA_1 "CoreAPB3_0_APBmslave0_PWDATA[1]") (joined
+          (net (rename CoreAPB3_0_APBmslave0_PWDATA_3 "CoreAPB3_0_APBmslave0_PWDATA[3]") (joined
            (portRef (member coreapb3_0_apbmslave0_pwdata 0) (instanceRef WhiteBoard_Plotter_0))
            (portRef (member coreapb3_0_apbmslave0_pwdata 0) (instanceRef stepper_control_0))
           ))

@@ -22,9 +22,11 @@ output reg dir2
 assign PSLVERR = 0;
 assign PREADY = 1;
 reg [7:0] count1, count2;
-wire stepper_write = PSEL & PWRITE;   //enable LEDs write at offset #4
+wire stepper_write = PSEL & PWRITE;   //enable LEDs write at 
 reg count_bool1, count_bool2;
-//////////////////////////////////
+reg step1_en, step2_en;
+
+//////////////////////////////////                         
 // end of APB3 interface header //
 //////////////////////////////////
 
@@ -42,6 +44,14 @@ end
 
 always @(posedge PCLK)
 begin
+    if(!PRESERN)
+        step1_en <= 0;
+    else if(stepper_write)
+        step1_en <= PWDATA[2];
+end
+
+always @(posedge PCLK)
+begin
    if(!PRESERN)
         step1 <= 0;
    else if(count_bool1 & count1 > 50 & count1 < 200)
@@ -55,7 +65,7 @@ begin
 	if(!PRESERN)
 		count_bool1 <= 0;  // LED should start turned "off"
 												// recall it is active low. 
-	else if(stepper_write)
+	else if(step1_en)
 		count_bool1 <= 1;
     else if(count1 > 200)
         count_bool1 <= 0;
@@ -83,6 +93,14 @@ end
 
 always @(posedge PCLK)
 begin
+    if(!PRESERN)
+        step2_en <= 0;
+    else if(stepper_write)
+        step2_en <= PWDATA[3];
+end
+
+always @(posedge PCLK)
+begin
    if(!PRESERN)
         step2 <= 0;
    else if(count_bool2 & count2 > 50 & count2 < 200)
@@ -96,12 +114,11 @@ begin
 	if(!PRESERN)
 		count_bool2 <= 0;  // LED should start turned "off"
 												// recall it is active low. 
-	else if(stepper_write)
+	else if(step2_en)
 		count_bool2 <= 1;
     else if(count2 > 200)
         count_bool2 <= 0;
 end
-
 
 always @(posedge PCLK)
 begin

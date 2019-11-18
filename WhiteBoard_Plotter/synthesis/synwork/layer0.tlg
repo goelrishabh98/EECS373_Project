@@ -122,7 +122,7 @@ Selecting top level module WhiteboarPlotter
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused.
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused.
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused.
-@W: CL246 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":12:18:12:23|Input port bits 31 to 2 of PWDATA[31:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL246 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":12:18:12:23|Input port bits 31 to 4 of PWDATA[31:0] are unused. Assign logic for all port bits or change the input port size.
 @A: CL153 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":13:18:13:23|*Unassigned bits of PRDATA[31:0] are referenced and tied to 0 -- simulation mismatch possible.
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":7:6:7:12|Input PENABLE is unused.
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":11:13:11:17|Input PADDR is unused.

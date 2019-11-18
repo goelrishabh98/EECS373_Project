@@ -181,7 +181,11 @@
 
     (PATHCONSTRAINT stepper_control_0/dir1/CLK  stepper_control_0/dir1/Q  stepper_control_0/dir1_RNO_0/A  stepper_control_0/dir1_RNO_0/Y  stepper_control_0/dir1_RNO/B  stepper_control_0/dir1_RNO/Y  stepper_control_0/dir1/D  	(9.5:9.5:9.5) )
 
+    (PATHCONSTRAINT stepper_control_0/step1_en/CLK  stepper_control_0/step1_en/Q  stepper_control_0/step1_en_RNO_0/A  stepper_control_0/step1_en_RNO_0/Y  stepper_control_0/step1_en_RNO/B  stepper_control_0/step1_en_RNO/Y  stepper_control_0/step1_en/D  	(9.5:9.5:9.5) )
+
     (PATHCONSTRAINT stepper_control_0/dir2/CLK  stepper_control_0/dir2/Q  stepper_control_0/dir2_RNO_0/A  stepper_control_0/dir2_RNO_0/Y  stepper_control_0/dir2_RNO/B  stepper_control_0/dir2_RNO/Y  stepper_control_0/dir2/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT stepper_control_0/step2_en/CLK  stepper_control_0/step2_en/Q  stepper_control_0/step2_en_RNO_0/A  stepper_control_0/step2_en_RNO_0/Y  stepper_control_0/step2_en_RNO/B  stepper_control_0/step2_en_RNO/Y  stepper_control_0/step2_en/D  	(9.5:9.5:9.5) )
 
     (PATHCONSTRAINT stepper_control_0/count2\[1\]/CLK  stepper_control_0/count2\[1\]/Q  stepper_control_0/count2_n1/B  stepper_control_0/count2_n1/Y  stepper_control_0/count2\[1\]/D  	(9.5:9.5:9.5) )
 
@@ -218,6 +222,10 @@
     (PATHCONSTRAINT stepper_control_0/count2\[7\]/CLK  stepper_control_0/count2\[7\]/Q  stepper_control_0/count2_n7/A  stepper_control_0/count2_n7/Y  stepper_control_0/count2\[7\]/D  	(9.5:9.5:9.5) )
 
     (PATHCONSTRAINT stepper_control_0/count1\[7\]/CLK  stepper_control_0/count1\[7\]/Q  stepper_control_0/count1_RNO\[7\]/A  stepper_control_0/count1_RNO\[7\]/Y  stepper_control_0/count1\[7\]/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT stepper_control_0/step1_en/CLK  stepper_control_0/step1_en/Q  stepper_control_0/count_bool1_RNO/B  stepper_control_0/count_bool1_RNO/Y  stepper_control_0/count_bool1/D  	(9.5:9.5:9.5) )
+
+    (PATHCONSTRAINT stepper_control_0/step2_en/CLK  stepper_control_0/step2_en/Q  stepper_control_0/count_bool2_RNO/B  stepper_control_0/count_bool2_RNO/Y  stepper_control_0/count_bool2/D  	(9.5:9.5:9.5) )
 
     (PATHCONSTRAINT stepper_control_0/dir1/CLK  stepper_control_0/dir1/Q  dir1_pad/D  dir1_pad/PAD  	(10.0:10.0:10.0) )
 
