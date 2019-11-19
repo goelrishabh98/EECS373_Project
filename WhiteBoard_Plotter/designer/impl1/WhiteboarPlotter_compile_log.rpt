@@ -17,7 +17,7 @@ Imported the files:
    N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter.edn
    N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.pdc
 
-The Import command succeeded ( 00:00:03 )
+The Import command succeeded ( 00:00:02 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -410,7 +410,7 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:     94  Total:   4608   (2.04%)
+    Fabric                     Used:     98  Total:   4608   (2.13%)
     Fabric IO (W/ clocks)      Used:      4  Total:     94   (4.26%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
@@ -439,7 +439,7 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 70           | 70
+    COMB    | 74           | 74
     SEQ     | 24           | 24
 
 I/O Function:
@@ -485,20 +485,20 @@ High fanout nets in the post compile netlist:
                           Driver: stepper_control_0/count_bool1_RNIBUN53
     8       INT_NET       Net   : stepper_control_0/count211
                           Driver: stepper_control_0/count211
+    6       INT_NET       Net   : stepper_control_0/stepper_write
+                          Driver: stepper_control_0/stepper_write
     5       INT_NET       Net   : stepper_control_0/count1[3]
                           Driver: stepper_control_0/count1[3]
     5       INT_NET       Net   : stepper_control_0/count2[3]
                           Driver: stepper_control_0/count2[3]
+    4       INT_NET       Net   : stepper_control_0/un1_count2lto7
+                          Driver: stepper_control_0/count2_RNIJB3Q[7]
+    4       INT_NET       Net   : stepper_control_0/un1_count1lto7
+                          Driver: stepper_control_0/count1_RNIH5TN[7]
     4       INT_NET       Net   : stepper_control_0/count1[6]
                           Driver: stepper_control_0/count1[6]
     4       INT_NET       Net   : stepper_control_0/count2[6]
                           Driver: stepper_control_0/count2[6]
-    4       INT_NET       Net   : stepper_control_0/count1[5]
-                          Driver: stepper_control_0/count1[5]
-    4       INT_NET       Net   : stepper_control_0/count1[4]
-                          Driver: stepper_control_0/count1[4]
-    4       INT_NET       Net   : stepper_control_0/count2[5]
-                          Driver: stepper_control_0/count2[5]
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
@@ -509,33 +509,33 @@ Nets that are candidates for clock assignment and the resulting fanout:
                           Driver: stepper_control_0/count_bool1_RNIBUN53
     8       INT_NET       Net   : stepper_control_0/count211
                           Driver: stepper_control_0/count211
+    6       INT_NET       Net   : stepper_control_0/stepper_write
+                          Driver: stepper_control_0/stepper_write
     5       INT_NET       Net   : stepper_control_0/count1[3]
                           Driver: stepper_control_0/count1[3]
     5       INT_NET       Net   : stepper_control_0/count2[3]
                           Driver: stepper_control_0/count2[3]
+    4       INT_NET       Net   : stepper_control_0/un1_count2lto7
+                          Driver: stepper_control_0/count2_RNIJB3Q[7]
+    4       INT_NET       Net   : stepper_control_0/un1_count1lto7
+                          Driver: stepper_control_0/count1_RNIH5TN[7]
     4       INT_NET       Net   : stepper_control_0/count1[6]
                           Driver: stepper_control_0/count1[6]
     4       INT_NET       Net   : stepper_control_0/count2[6]
                           Driver: stepper_control_0/count2[6]
-    4       INT_NET       Net   : stepper_control_0/count1[5]
-                          Driver: stepper_control_0/count1[5]
-    4       INT_NET       Net   : stepper_control_0/count1[4]
-                          Driver: stepper_control_0/count1[4]
-    4       INT_NET       Net   : stepper_control_0/count2[5]
-                          Driver: stepper_control_0/count2[5]
 
-The Compile command succeeded ( 00:00:01 )
+The Compile command succeeded ( 00:00:02 )
 Wrote status report to file: WhiteboarPlotter_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
 Wrote pin report to file: WhiteboarPlotter_report_pin_byname.txt
 
-The Report command succeeded ( 00:00:01 )
+The Report command succeeded ( 00:00:00 )
 Wrote pin report to file: WhiteboarPlotter_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:01 )
 Design saved to file N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter.adb.
 
-The Execute Script command succeeded ( 00:00:08 )
+The Execute Script command succeeded ( 00:00:07 )
 Design closed.
 

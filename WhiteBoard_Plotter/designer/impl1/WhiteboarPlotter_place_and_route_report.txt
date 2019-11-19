@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Mon Nov 18 17:32:47 2019 ***************************************************************************
+                          Tue Nov 19 13:48:34 2019 ***************************************************************************
 
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
 File Name: N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter.adb
 Design Name: WhiteboarPlotter  Design State: layout
-Last Saved: Mon Nov 18 17:32:30 2019
+Last Saved: Tue Nov 19 13:48:18 2019
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Mon Nov 18 17:32:23 2019:
+Source File(s) Imported on Tue Nov 19 13:48:11 2019:
         N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter.edn
         N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.pdc
 
@@ -435,7 +435,7 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:     94  Total:   4608   (2.04%)
+    Fabric                     Used:     98  Total:   4608   (2.13%)
     Fabric IO (W/ clocks)      Used:      4  Total:     94   (4.26%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
@@ -464,7 +464,7 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 70           | 70
+    COMB    | 74           | 74
     SEQ     | 24           | 24
 
 I/O Function:
@@ -510,20 +510,20 @@ High fanout nets in the post compile netlist:
                           Driver: stepper_control_0/count_bool1_RNIBUN53
     8       INT_NET       Net   : stepper_control_0/count211
                           Driver: stepper_control_0/count211
+    6       INT_NET       Net   : stepper_control_0/stepper_write
+                          Driver: stepper_control_0/stepper_write
     5       INT_NET       Net   : stepper_control_0/count1[3]
                           Driver: stepper_control_0/count1[3]
     5       INT_NET       Net   : stepper_control_0/count2[3]
                           Driver: stepper_control_0/count2[3]
+    4       INT_NET       Net   : stepper_control_0/un1_count2lto7
+                          Driver: stepper_control_0/count2_RNIJB3Q[7]
+    4       INT_NET       Net   : stepper_control_0/un1_count1lto7
+                          Driver: stepper_control_0/count1_RNIH5TN[7]
     4       INT_NET       Net   : stepper_control_0/count1[6]
                           Driver: stepper_control_0/count1[6]
     4       INT_NET       Net   : stepper_control_0/count2[6]
                           Driver: stepper_control_0/count2[6]
-    4       INT_NET       Net   : stepper_control_0/count1[5]
-                          Driver: stepper_control_0/count1[5]
-    4       INT_NET       Net   : stepper_control_0/count1[4]
-                          Driver: stepper_control_0/count1[4]
-    4       INT_NET       Net   : stepper_control_0/count2[5]
-                          Driver: stepper_control_0/count2[5]
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
@@ -534,20 +534,20 @@ Nets that are candidates for clock assignment and the resulting fanout:
                           Driver: stepper_control_0/count_bool1_RNIBUN53
     8       INT_NET       Net   : stepper_control_0/count211
                           Driver: stepper_control_0/count211
+    6       INT_NET       Net   : stepper_control_0/stepper_write
+                          Driver: stepper_control_0/stepper_write
     5       INT_NET       Net   : stepper_control_0/count1[3]
                           Driver: stepper_control_0/count1[3]
     5       INT_NET       Net   : stepper_control_0/count2[3]
                           Driver: stepper_control_0/count2[3]
+    4       INT_NET       Net   : stepper_control_0/un1_count2lto7
+                          Driver: stepper_control_0/count2_RNIJB3Q[7]
+    4       INT_NET       Net   : stepper_control_0/un1_count1lto7
+                          Driver: stepper_control_0/count1_RNIH5TN[7]
     4       INT_NET       Net   : stepper_control_0/count1[6]
                           Driver: stepper_control_0/count1[6]
     4       INT_NET       Net   : stepper_control_0/count2[6]
                           Driver: stepper_control_0/count2[6]
-    4       INT_NET       Net   : stepper_control_0/count1[5]
-                          Driver: stepper_control_0/count1[5]
-    4       INT_NET       Net   : stepper_control_0/count1[4]
-                          Driver: stepper_control_0/count1[4]
-    4       INT_NET       Net   : stepper_control_0/count2[5]
-                          Driver: stepper_control_0/count2[5]
 
 
 Layout Output:
@@ -573,16 +573,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Mon Nov 18 17:32:37 2019
+Timing-driven Placer Started: Tue Nov 19 13:48:24 2019
 
-Placer Finished: Mon Nov 18 17:32:39 2019
-Total Placer CPU Time:     00:00:02
+Placer Finished: Tue Nov 19 13:48:25 2019
+Total Placer CPU Time:     00:00:01
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: WhiteboarPlotter                Started: Mon Nov 18 17:32:41 2019
+Design: WhiteboarPlotter                Started: Tue Nov 19 13:48:27 2019
 
  
 Iterative improvement...
@@ -590,9 +590,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: WhiteboarPlotter                
-Finished: Mon Nov 18 17:32:44 2019
-Total CPU Time:     00:00:03            Total Elapsed Time: 00:00:03
-Total Memory Usage: 166.0 Mbytes
+Finished: Tue Nov 19 13:48:31 2019
+Total CPU Time:     00:00:03            Total Elapsed Time: 00:00:04
+Total Memory Usage: 166.4 Mbytes
                         o - o - o - o - o - o
 
 

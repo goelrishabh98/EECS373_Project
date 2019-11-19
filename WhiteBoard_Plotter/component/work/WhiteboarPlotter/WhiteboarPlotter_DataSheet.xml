@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>N:/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteboarPlotter</location>
-    <state>GENERATED ( Thu Nov 14 18:07:07 2019 )</state>
+    <state>GENERATED ( Tue Nov 19 13:45:51 2019 )</state>
     <swide-toolchain>SoftConsole workspace generated to N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
@@ -31,7 +31,7 @@
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>N:\EECS373_Project\WhiteBoard_Plotter\component\work\N:/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteBoard_Plotter/MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>N:\EECS373_Project\WhiteBoard_Plotter\component\work\./MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
   <io>
     <port-name>UART_0_TXD</port-name>

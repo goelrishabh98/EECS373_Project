@@ -6,9 +6,9 @@ Report for cell WhiteboarPlotter.verilog
                              OUTBUF         4       0.0        0.0
                                 VCC         1       0.0        0.0
                  WhiteBoard_Plotter         1       0.0        0.0
-                    stepper_control         1      94.0       94.0
+                    stepper_control         1      98.0       98.0
                             
-                         TOTAL              8                 94.0
+                         TOTAL              8                 98.0
 ----------------------------------------------------------------------
 Report for cell WhiteBoard_Plotter.netlist
      Instance path:  WhiteBoard_Plotter_0
@@ -43,14 +43,15 @@ Report for cell stepper_control.netlist
                                 MX2         4       1.0        4.0
                                NOR2         4       1.0        4.0
                               NOR2A         4       1.0        4.0
-                              NOR2B        21       1.0       21.0
+                              NOR2B        23       1.0       23.0
                                NOR3         2       1.0        2.0
                               NOR3C         1       1.0        1.0
                                 OA1        12       1.0       12.0
                                OA1A         2       1.0        2.0
+                               OA1B         2       1.0        2.0
                                 OR2         4       1.0        4.0
                                OR2B         2       1.0        2.0
                                 VCC         1       0.0        0.0
                                 XA1        14       1.0       14.0
                             
-                         TOTAL             96                 94.0
+                         TOTAL            100                 98.0

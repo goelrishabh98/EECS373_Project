@@ -5,8 +5,8 @@ int main()
 
 	while( 1 )
 	{
-		step(NO, CW);
-		for(i =0; i<10000; i++){
+		step(CW, CW);
+		for(i =0; i<100000; i++){
 
 		}
 	}

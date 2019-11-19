@@ -48,6 +48,8 @@ begin
         step1_en <= 0;
     else if(stepper_write)
         step1_en <= PWDATA[2];
+    else if(count1 > 200)
+        step1_en <= 0;
 end
 
 always @(posedge PCLK)
@@ -97,6 +99,8 @@ begin
         step2_en <= 0;
     else if(stepper_write)
         step2_en <= PWDATA[3];
+    else if(count2 > 200)
+        step2_en <= 0;
 end
 
 always @(posedge PCLK)

@@ -127,7 +127,7 @@ END GROUP
                 0x20010000                PROVIDE (_estack, __main_stack_start)
                 0x00000000                PROVIDE (__mirrored_nvm, 0x0)
 
-.text           0x20000000      0x5a4
+.text           0x20000000      0x5b0
  CREATE_OBJECT_SYMBOLS
                 0x20000000                __text_load = LOADADDR (.text)
                 0x20000000                __text_start = .
@@ -291,15 +291,15 @@ END GROUP
                 0x20000438                ACE_PPE_Flag31_IRQHandler
  *(.text .text.* .gnu.linkonce.t.*)
  .text          0x20000470       0x30 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- .text.main     0x200004a0       0x34 ./main.o
+ .text.main     0x200004a0       0x38 ./main.o
                 0x200004a0                main
- .text.step     0x200004d4       0x54 ./stepper.o
-                0x200004d4                step
+ .text.step     0x200004d8       0x5c ./stepper.o
+                0x200004d8                step
  .text.SystemInit
-                0x20000528        0xc N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20000528                SystemInit
- .text          0x20000534       0x50 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
-                0x20000534                __libc_init_array
+                0x20000534        0xc N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20000534                SystemInit
+ .text          0x20000540       0x50 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                0x20000540                __libc_init_array
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
@@ -308,7 +308,7 @@ END GROUP
  .glue_7        0x00000000        0x0 linker stubs
  *(.vfp11_veneer)
  .vfp11_veneer  0x00000000        0x0 linker stubs
-                0x20000584                . = ALIGN (0x4)
+                0x20000590                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
@@ -323,75 +323,75 @@ END GROUP
  *(.eh_frame_hdr)
  *(.eh_frame)
  *(.init)
- .init          0x20000584        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x20000584                _init
- .init          0x20000588        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ .init          0x20000590        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x20000590                _init
+ .init          0x20000594        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
  *(.fini)
- .fini          0x20000590        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x20000590                _fini
- .fini          0x20000594        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
-                0x2000059c                PROVIDE (__preinit_array_start, .)
+ .fini          0x2000059c        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x2000059c                _fini
+ .fini          0x200005a0        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x200005a8                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
-                0x2000059c                PROVIDE (__preinit_array_end, .)
-                0x2000059c                PROVIDE (__init_array_start, .)
+                0x200005a8                PROVIDE (__preinit_array_end, .)
+                0x200005a8                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x2000059c        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
-                0x200005a0                PROVIDE (__init_array_end, .)
-                0x200005a0                PROVIDE (__fini_array_start, .)
+ .init_array    0x200005a8        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+                0x200005ac                PROVIDE (__init_array_end, .)
+                0x200005ac                PROVIDE (__fini_array_start, .)
  *(.fini_array)
- .fini_array    0x200005a0        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .fini_array    0x200005ac        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  *(SORT(.fini_array.*))
-                0x200005a4                PROVIDE (__fini_array_end, .)
-                0x200005a4                __exidx_start = .
+                0x200005b0                PROVIDE (__fini_array_end, .)
+                0x200005b0                __exidx_start = .
 
-.v4_bx          0x200005a4        0x0
+.v4_bx          0x200005b0        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x200005a4                __exidx_end = .
-                0x200005a4                _etext = .
-                0x200005a4                PROVIDE (__text_end, .)
+                0x200005b0                __exidx_end = .
+                0x200005b0                _etext = .
+                0x200005b0                PROVIDE (__text_end, .)
 
-.data           0x200005a4        0x4
-                0x200005a4                __data_load = LOADADDR (.data)
-                0x200005a4                _sidata = LOADADDR (.data)
-                0x200005a4                __data_start = .
-                0x200005a4                _sdata = .
+.data           0x200005b0        0x4
+                0x200005b0                __data_load = LOADADDR (.data)
+                0x200005b0                _sidata = LOADADDR (.data)
+                0x200005b0                __data_start = .
+                0x200005b0                _sdata = .
  *(.jcr)
- .jcr           0x200005a4        0x0 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- .jcr           0x200005a4        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .jcr           0x200005b0        0x0 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .jcr           0x200005b0        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
  *(.got.plt)
  *(.got)
  *(.shdata)
  *(.data .data.* .gnu.linkonce.d.*)
-                0x200005a8                . = ALIGN (0x4)
-                0x200005a8                _edata = .
+                0x200005b4                . = ALIGN (0x4)
+                0x200005b4                _edata = .
 
-.bss            0x200005a8        0x8
-                0x200005a8                __bss_start__ = .
-                0x200005a8                _sbss = .
+.bss            0x200005b4        0x4
+                0x200005b4                __bss_start__ = .
+                0x200005b4                _sbss = .
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x200005a8        0x1 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .bss           0x200005b4        0x1 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  *(COMMON)
-                0x200005b0                . = ALIGN (0x8)
- *fill*         0x200005a9        0x7 00
-                0x200005b0                __bss_end__ = .
-                0x200005b0                _end = .
-                0x200005b0                __end = _end
-                0x200005b0                _ebss = .
-                0x200005b0                PROVIDE (end, .)
+                0x200005b8                . = ALIGN (0x8)
+ *fill*         0x200005b5        0x3 00
+                0x200005b8                __bss_end__ = .
+                0x200005b8                _end = .
+                0x200005b8                __end = _end
+                0x200005b8                _ebss = .
+                0x200005b8                PROVIDE (end, .)
 
-.stack          0x200005b0     0x3000
-                0x200005b0                . = ALIGN (0x4)
-                0x200015b0                . = (. + PROCESS_STACK_SIZE)
- *fill*         0x200005b0     0x1000 00
-                0x200015b0                . = ALIGN (0x4)
-                0x200035b0                . = (. + MAIN_STACK_SIZE)
- *fill*         0x200015b0     0x2000 00
-                0x200035b0                . = ALIGN (0x4)
+.stack          0x200005b8     0x3000
+                0x200005b8                . = ALIGN (0x4)
+                0x200015b8                . = (. + PROCESS_STACK_SIZE)
+ *fill*         0x200005b8     0x1000 00
+                0x200015b8                . = ALIGN (0x4)
+                0x200035b8                . = (. + MAIN_STACK_SIZE)
+ *fill*         0x200015b8     0x2000 00
+                0x200035b8                . = ALIGN (0x4)
 
 .stab
  *(.stab)
