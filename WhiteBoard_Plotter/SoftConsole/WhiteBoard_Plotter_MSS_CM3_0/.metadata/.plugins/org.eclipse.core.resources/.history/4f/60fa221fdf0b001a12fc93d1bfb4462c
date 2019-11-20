@@ -18,8 +18,8 @@ typedef struct Timer {
 } timer_tt;
 
 timer_tt *root = NULL;
-int dirLeft = CCW;
-int dirRight = CW;
+int dirLeft = CW;
+int dirRight = CCW;
 
 void updateDir(int dirL, int dirR){
 	dirLeft = dirL;

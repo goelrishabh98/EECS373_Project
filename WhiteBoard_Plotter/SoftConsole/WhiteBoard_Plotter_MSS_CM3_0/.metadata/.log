@@ -4647,3 +4647,9 @@ java.io.IOException: Write end dead
 
 !ENTRY org.eclipse.debug.core 4 125 2019-11-20 16:29:55.906
 !MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-11-20 16:41:35.469
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-11-20 16:41:47.018
+!MESSAGE Inferior terminated
