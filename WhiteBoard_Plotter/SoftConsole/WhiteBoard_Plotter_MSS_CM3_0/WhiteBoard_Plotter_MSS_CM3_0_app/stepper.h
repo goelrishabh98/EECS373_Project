@@ -1,9 +1,3 @@
-/*
- * stepper.h
- *
- *  Created on: Nov 14, 2019
- *      Author: rishgoel
- */
 //3.8 cm for 20 teeth on belt
 //01so 3.8cm per revolution
 

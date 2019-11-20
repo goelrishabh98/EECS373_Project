@@ -1,30 +1,30 @@
-#OPTIONS:"|-layerid|0|-orig_srs|N:\\EECS373_Project\\WhiteBoard_Plotter\\synthesis\\synwork\\WhiteboarPlotter_comp.srs|-top|WhiteboarPlotter|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|N:\\EECS373_Project\\WhiteBoard_Plotter\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work"
+#OPTIONS:"|-layerid|0|-orig_srs|C:\\Users\\bansarth\\Documents\\EECS373_Project\\WhiteBoard_Plotter\\synthesis\\synwork\\WhiteboarPlotter_comp.srs|-top|WhiteboarPlotter|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|C:\\Users\\bansarth\\Documents\\EECS373_Project\\WhiteBoard_Plotter\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|COREAPB3_LIB|-lib|work"
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\bin64\\c_ver.exe":1509358336
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v":1509027488
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\hypermods.v":1509029528
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\umr_capim.v":1509029528
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1509029528
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1509029528
-#CUR:"N:\\EECS373_Project\\WhiteBoard_Plotter\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.200\\mss_comps.v":1536348874
-#CUR:"N:\\EECS373_Project\\WhiteBoard_Plotter\\component\\work\\WhiteBoard_Plotter\\mss_tshell.v":1573766509
-#CUR:"N:\\EECS373_Project\\WhiteBoard_Plotter\\component\\work\\WhiteBoard_Plotter\\MSS_CCC_0\\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":1573766503
-#CUR:"N:\\EECS373_Project\\WhiteBoard_Plotter\\component\\work\\WhiteBoard_Plotter\\WhiteBoard_Plotter.v":1573766540
-#CUR:"N:\\EECS373_Project\\WhiteBoard_Plotter\\hdl\\Stepper_control.v":1574189033
-#CUR:"N:\\EECS373_Project\\WhiteBoard_Plotter\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3_muxptob3.v":1537313265
-#CUR:"N:\\EECS373_Project\\WhiteBoard_Plotter\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3_iaddr_reg.v":1537313265
-#CUR:"N:\\EECS373_Project\\WhiteBoard_Plotter\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3.v":1537313265
-#CUR:"N:\\EECS373_Project\\WhiteBoard_Plotter\\component\\work\\WhiteboarPlotter\\WhiteboarPlotter.v":1574189135
+#CUR:"C:\\Users\\bansarth\\Documents\\EECS373_Project\\WhiteBoard_Plotter\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.200\\mss_comps.v":1574265816
+#CUR:"C:\\Users\\bansarth\\Documents\\EECS373_Project\\WhiteBoard_Plotter\\component\\work\\WhiteBoard_Plotter\\mss_tshell.v":1574265816
+#CUR:"C:\\Users\\bansarth\\Documents\\EECS373_Project\\WhiteBoard_Plotter\\component\\work\\WhiteBoard_Plotter\\MSS_CCC_0\\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":1574265816
+#CUR:"C:\\Users\\bansarth\\Documents\\EECS373_Project\\WhiteBoard_Plotter\\component\\work\\WhiteBoard_Plotter\\WhiteBoard_Plotter.v":1574265816
+#CUR:"C:\\Users\\bansarth\\Documents\\EECS373_Project\\WhiteBoard_Plotter\\hdl\\Stepper_control.v":1574265816
+#CUR:"C:\\Users\\bansarth\\Documents\\EECS373_Project\\WhiteBoard_Plotter\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3_muxptob3.v":1574265816
+#CUR:"C:\\Users\\bansarth\\Documents\\EECS373_Project\\WhiteBoard_Plotter\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3_iaddr_reg.v":1574265816
+#CUR:"C:\\Users\\bansarth\\Documents\\EECS373_Project\\WhiteBoard_Plotter\\component\\Actel\\DirectCore\\CoreAPB3\\4.1.100\\rtl\\vlog\\core_obfuscated\\coreapb3.v":1574265816
+#CUR:"C:\\Users\\bansarth\\Documents\\EECS373_Project\\WhiteBoard_Plotter\\component\\work\\WhiteboarPlotter\\WhiteboarPlotter.v":1574265816
 #numinternalfiles:5
 #defaultlanguage:verilog
-0			"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" verilog
-1			"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\mss_tshell.v" verilog
-2			"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v" verilog
-3			"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.v" verilog
-4			"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v" verilog
-5			"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" verilog
-6			"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" verilog
-7			"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v" verilog
-8			"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.v" verilog
+0			"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" verilog
+1			"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\mss_tshell.v" verilog
+2			"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v" verilog
+3			"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.v" verilog
+4			"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v" verilog
+5			"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" verilog
+6			"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" verilog
+7			"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v" verilog
+8			"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.v" verilog
 #Dependency Lists(Uses List)
 0 -1
 1 -1

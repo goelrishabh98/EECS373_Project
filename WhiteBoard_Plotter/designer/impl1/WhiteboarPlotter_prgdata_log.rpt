@@ -2,18 +2,24 @@ Microsemi Libero Software
 Version: 11.9.0.4
 Release: v11.9
 
-Info: The design N:/EECS373_Project/WhiteBoard_Plotter/designer/impl1/WhiteboarPlotter.adb was
-      last modified by software version 11.9.0.4.
+Info: The design
+      C:/Users/bansarth/Documents/EECS373_Project/WhiteBoard_Plotter/designer/impl1/WhiteboarPl\
+      otter.adb was last modified by software version 11.9.0.4.
 Opened an existing Libero design
-N:/EECS373_Project/WhiteBoard_Plotter/designer/impl1/WhiteboarPlotter.adb.
+C:/Users/bansarth/Documents/EECS373_Project/WhiteBoard_Plotter/designer/impl1/WhiteboarPlotter.\
+adb.
 
-The Export-map command succeeded ( 00:00:08 )
+The Export-map command succeeded ( 00:00:05 )
 CHECKSUM: 3016
-Wrote to the file: N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter.fdb
+Wrote to the file:
+C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter.\
+fdb
 
-The Export command succeeded ( 00:00:14 )
-Design saved to file N:/EECS373_Project/WhiteBoard_Plotter/designer/impl1/WhiteboarPlotter.adb.
+The Export command succeeded ( 00:00:06 )
+Design saved to file
+C:/Users/bansarth/Documents/EECS373_Project/WhiteBoard_Plotter/designer/impl1/WhiteboarPlotter.\
+adb.
 
-The Execute Script command succeeded ( 00:00:15 )
+The Execute Script command succeeded ( 00:00:07 )
 Design closed.
 
