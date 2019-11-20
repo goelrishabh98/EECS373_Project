@@ -116,6 +116,7 @@ void update_timers(){
 	root->prev = NULL;
 	if(!temp->mode){
 		startTimerContinuous(temp->left, temp->period);
+		free(temp);
 		return;
 	}
 	return;
@@ -154,7 +155,7 @@ void Timer1_IRQHandler( void ){
 
 	MSS_TIM1_clear_irq();
 	MSS_TIM1_load_immediate(root->time);
-	MSS_TIM1_start();
+	start_hardware_timer();
 };
 
 #ifdef __cplusplus

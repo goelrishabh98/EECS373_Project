@@ -5,7 +5,7 @@
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
-Date: Wed Nov 20 12:12:28 2019
+Date: Wed Nov 20 16:00:33 2019
 Design Name: WhiteboarPlotter  Family: SmartFusion  Die: A2F200M3F  Package: 484 FBGA
 Design State: Post-Layout
 
@@ -13,7 +13,7 @@ The following nets have been routed to a chip global resource:
 
     Fanout            Name
     ----------------------
-    25                Net   : FAB_CLK
+    23                Net   : FAB_CLK
                       Driver: WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1
 
 

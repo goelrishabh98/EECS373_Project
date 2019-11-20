@@ -2,7 +2,7 @@ Timing Report Max Delay Analysis
 
 SmartTime Version v11.9
 Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
-Date: Wed Nov 20 12:12:34 2019
+Date: Wed Nov 20 16:00:40 2019
 
 
 Design: WhiteboarPlotter
@@ -48,12 +48,12 @@ External Setup (ns):        N/A
 Max Clock-To-Out (ns):      N/A
 
 Clock Domain:               mss_ccc_gla1
-Period (ns):                8.047
-Frequency (MHz):            124.270
+Period (ns):                7.646
+Frequency (MHz):            130.787
 Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
 External Setup (ns):        N/A
-Max Clock-To-Out (ns):      12.360
+Max Clock-To-Out (ns):      12.147
 
 Clock Domain:               mss_ccc_gla0
 Period (ns):                12.500
@@ -232,62 +232,62 @@ Clock Domain mss_ccc_gla1
 SET Register to Register
 
 Path 1
-  From:                  stepper_control_0/count2[1]:CLK
-  To:                    stepper_control_0/count2[2]:D
-  Delay (ns):            7.525
-  Slack (ns):            1.953
-  Arrival (ns):          12.756
-  Required (ns):         14.709
-  Setup (ns):            0.522
-  Minimum Period (ns):   8.047
+  From:                  stepper_control_0/count2[0]:CLK
+  To:                    stepper_control_0/count2[7]:D
+  Delay (ns):            7.154
+  Slack (ns):            2.354
+  Arrival (ns):          12.387
+  Required (ns):         14.741
+  Setup (ns):            0.490
+  Minimum Period (ns):   7.646
 
 Path 2
   From:                  stepper_control_0/count2[1]:CLK
-  To:                    stepper_control_0/count2[4]:D
-  Delay (ns):            7.525
-  Slack (ns):            1.954
-  Arrival (ns):          12.756
-  Required (ns):         14.710
-  Setup (ns):            0.522
-  Minimum Period (ns):   8.046
+  To:                    stepper_control_0/count2[7]:D
+  Delay (ns):            6.852
+  Slack (ns):            2.656
+  Arrival (ns):          12.085
+  Required (ns):         14.741
+  Setup (ns):            0.490
+  Minimum Period (ns):   7.344
 
 Path 3
-  From:                  stepper_control_0/count2[1]:CLK
-  To:                    stepper_control_0/count2[7]:D
-  Delay (ns):            7.507
-  Slack (ns):            1.995
-  Arrival (ns):          12.738
-  Required (ns):         14.733
-  Setup (ns):            0.522
-  Minimum Period (ns):   8.005
+  From:                  stepper_control_0/count1[0]:CLK
+  To:                    stepper_control_0/count1[7]:D
+  Delay (ns):            6.765
+  Slack (ns):            2.736
+  Arrival (ns):          11.996
+  Required (ns):         14.732
+  Setup (ns):            0.490
+  Minimum Period (ns):   7.264
 
 Path 4
   From:                  stepper_control_0/count1[1]:CLK
   To:                    stepper_control_0/count1[7]:D
-  Delay (ns):            7.390
-  Slack (ns):            2.056
-  Arrival (ns):          12.645
-  Required (ns):         14.701
-  Setup (ns):            0.522
-  Minimum Period (ns):   7.944
+  Delay (ns):            6.463
+  Slack (ns):            3.038
+  Arrival (ns):          11.694
+  Required (ns):         14.732
+  Setup (ns):            0.490
+  Minimum Period (ns):   6.962
 
 Path 5
-  From:                  stepper_control_0/count2[2]:CLK
-  To:                    stepper_control_0/count2[2]:D
-  Delay (ns):            7.270
-  Slack (ns):            2.208
-  Arrival (ns):          12.501
-  Required (ns):         14.709
-  Setup (ns):            0.522
-  Minimum Period (ns):   7.792
+  From:                  stepper_control_0/step2_en:CLK
+  To:                    stepper_control_0/count2[1]:D
+  Delay (ns):            6.426
+  Slack (ns):            3.073
+  Arrival (ns):          11.670
+  Required (ns):         14.743
+  Setup (ns):            0.490
+  Minimum Period (ns):   6.927
 
 
 Expanded Path 1
-  From: stepper_control_0/count2[1]:CLK
-  To: stepper_control_0/count2[2]:D
-  data required time                             14.709
-  data arrival time                          -   12.756
-  slack                                          1.953
+  From: stepper_control_0/count2[0]:CLK
+  To: stepper_control_0/count2[7]:D
+  data required time                             14.741
+  data arrival time                          -   12.387
+  slack                                          2.354
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_ccc_gla1
@@ -299,30 +299,42 @@ Expanded Path 1
   4.630                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   4.630                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.601          net: FAB_CLK
-  5.231                        stepper_control_0/count2[1]:CLK (r)
+               +     0.603          net: FAB_CLK
+  5.233                        stepper_control_0/count2[0]:CLK (r)
                +     0.671          cell: ADLIB:DFN1
-  5.902                        stepper_control_0/count2[1]:Q (f)
-               +     0.879          net: stepper_control_0/un6lto1
-  6.781                        stepper_control_0/count2_RNICG471[1]:A (f)
-               +     0.478          cell: ADLIB:NOR3
-  7.259                        stepper_control_0/count2_RNICG471[1]:Y (r)
-               +     0.937          net: stepper_control_0/un1_count2_1lt3
-  8.196                        stepper_control_0/count2_RNI1A9E2[3]:B (r)
-               +     0.821          cell: ADLIB:OA1A
-  9.017                        stepper_control_0/count2_RNI1A9E2[3]:Y (r)
-               +     0.381          net: stepper_control_0/un1_count2_1lt7
-  9.398                        stepper_control_0/count211:B (r)
-               +     0.821          cell: ADLIB:OA1
-  10.219                       stepper_control_0/count211:Y (r)
-               +     1.654          net: stepper_control_0/count211
-  11.873                       stepper_control_0/count2_n2:C (r)
-               +     0.587          cell: ADLIB:XA1
-  12.460                       stepper_control_0/count2_n2:Y (r)
-               +     0.296          net: stepper_control_0/count2_n2
-  12.756                       stepper_control_0/count2[2]:D (r)
+  5.904                        stepper_control_0/count2[0]:Q (f)
+               +     0.432          net: stepper_control_0/un5lto0
+  6.336                        stepper_control_0/count2_RNI7V2Q[1]:B (f)
+               +     0.574          cell: ADLIB:NOR2B
+  6.910                        stepper_control_0/count2_RNI7V2Q[1]:Y (f)
+               +     0.784          net: stepper_control_0/un5lt3
+  7.694                        stepper_control_0/count2_c2:B (f)
+               +     0.574          cell: ADLIB:NOR2B
+  8.268                        stepper_control_0/count2_c2:Y (f)
+               +     0.371          net: stepper_control_0/count2_c2
+  8.639                        stepper_control_0/count2_c3:A (f)
+               +     0.351          cell: ADLIB:NOR2B
+  8.990                        stepper_control_0/count2_c3:Y (f)
+               +     0.309          net: stepper_control_0/count2_c3
+  9.299                        stepper_control_0/count2_c4:A (f)
+               +     0.351          cell: ADLIB:NOR2B
+  9.650                        stepper_control_0/count2_c4:Y (f)
+               +     0.371          net: stepper_control_0/count2_c4
+  10.021                       stepper_control_0/count2_c5:A (f)
+               +     0.351          cell: ADLIB:NOR2B
+  10.372                       stepper_control_0/count2_c5:Y (f)
+               +     0.368          net: stepper_control_0/count2_c5
+  10.740                       stepper_control_0/count2_15_0:B (f)
+               +     0.574          cell: ADLIB:NOR2B
+  11.314                       stepper_control_0/count2_15_0:Y (f)
+               +     0.294          net: stepper_control_0/count2_15_0
+  11.608                       stepper_control_0/count2_n7:A (f)
+               +     0.473          cell: ADLIB:XA1
+  12.081                       stepper_control_0/count2_n7:Y (f)
+               +     0.306          net: stepper_control_0/count2_n7
+  12.387                       stepper_control_0/count2[7]:D (f)
                                     
-  12.756                       data arrival time
+  12.387                       data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_ccc_gla1
@@ -335,11 +347,11 @@ Expanded Path 1
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   14.630                       WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
                +     0.601          net: FAB_CLK
-  15.231                       stepper_control_0/count2[2]:CLK (r)
-               -     0.522          Library setup time: ADLIB:DFN1
-  14.709                       stepper_control_0/count2[2]:D
+  15.231                       stepper_control_0/count2[7]:CLK (r)
+               -     0.490          Library setup time: ADLIB:DFN1
+  14.741                       stepper_control_0/count2[7]:D
                                     
-  14.709                       data required time
+  14.741                       data required time
 
 
 END SET Register to Register
@@ -357,47 +369,47 @@ END SET External Setup
 SET Clock to Output
 
 Path 1
-  From:                  stepper_control_0/dir2:CLK
-  To:                    dir2
-  Delay (ns):            7.129
-  Slack (ns):
-  Arrival (ns):          12.360
-  Required (ns):
-  Clock to Out (ns):     12.360
-
-Path 2
   From:                  stepper_control_0/dir1:CLK
   To:                    dir1
-  Delay (ns):            6.893
+  Delay (ns):            6.919
   Slack (ns):
-  Arrival (ns):          12.124
+  Arrival (ns):          12.147
   Required (ns):
-  Clock to Out (ns):     12.124
+  Clock to Out (ns):     12.147
 
-Path 3
+Path 2
   From:                  stepper_control_0/step1:CLK
   To:                    step1
-  Delay (ns):            6.776
+  Delay (ns):            6.538
   Slack (ns):
-  Arrival (ns):          12.031
+  Arrival (ns):          11.782
   Required (ns):
-  Clock to Out (ns):     12.031
+  Clock to Out (ns):     11.782
+
+Path 3
+  From:                  stepper_control_0/dir2:CLK
+  To:                    dir2
+  Delay (ns):            6.434
+  Slack (ns):
+  Arrival (ns):          11.662
+  Required (ns):
+  Clock to Out (ns):     11.662
 
 Path 4
   From:                  stepper_control_0/step2:CLK
   To:                    step2
-  Delay (ns):            6.461
+  Delay (ns):            6.277
   Slack (ns):
-  Arrival (ns):          11.684
+  Arrival (ns):          11.510
   Required (ns):
-  Clock to Out (ns):     11.684
+  Clock to Out (ns):     11.510
 
 
 Expanded Path 1
-  From: stepper_control_0/dir2:CLK
-  To: dir2
+  From: stepper_control_0/dir1:CLK
+  To: dir1
   data required time                             N/C
-  data arrival time                          -   12.360
+  data arrival time                          -   12.147
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -410,22 +422,22 @@ Expanded Path 1
   4.630                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   4.630                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.601          net: FAB_CLK
-  5.231                        stepper_control_0/dir2:CLK (r)
+               +     0.598          net: FAB_CLK
+  5.228                        stepper_control_0/dir1:CLK (r)
                +     0.671          cell: ADLIB:DFN1
-  5.902                        stepper_control_0/dir2:Q (f)
-               +     2.559          net: dir2_c
-  8.461                        dir2_pad/U0/U1:D (f)
+  5.899                        stepper_control_0/dir1:Q (f)
+               +     2.349          net: dir1_c
+  8.248                        dir1_pad/U0/U1:D (f)
                +     0.530          cell: ADLIB:IOTRI_OB_EB
-  8.991                        dir2_pad/U0/U1:DOUT (f)
-               +     0.000          net: dir2_pad/U0/NET1
-  8.991                        dir2_pad/U0/U0:D (f)
+  8.778                        dir1_pad/U0/U1:DOUT (f)
+               +     0.000          net: dir1_pad/U0/NET1
+  8.778                        dir1_pad/U0/U0:D (f)
                +     3.369          cell: ADLIB:IOPAD_TRI
-  12.360                       dir2_pad/U0/U0:PAD (f)
-               +     0.000          net: dir2
-  12.360                       dir2 (f)
+  12.147                       dir1_pad/U0/U0:PAD (f)
+               +     0.000          net: dir1
+  12.147                       dir1 (f)
                                     
-  12.360                       data arrival time
+  12.147                       data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_ccc_gla1
@@ -434,7 +446,7 @@ Expanded Path 1
                +     4.630          Clock generation
   N/C
                                     
-  N/C                          dir2 (f)
+  N/C                          dir1 (f)
 
 
 END SET Clock to Output
@@ -469,56 +481,56 @@ SET mss_ccc_gla0 to mss_ccc_gla1
 
 Path 1
   From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                    stepper_control_0/count1[5]:D
-  Delay (ns):            9.311
-  Slack (ns):            1.852
-  Arrival (ns):          12.866
-  Required (ns):         14.718
+  To:                    stepper_control_0/count2[1]:D
+  Delay (ns):            9.532
+  Slack (ns):            1.624
+  Arrival (ns):          13.087
+  Required (ns):         14.711
   Setup (ns):            0.522
 
 Path 2
   From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                    stepper_control_0/count2[2]:D
-  Delay (ns):            9.187
-  Slack (ns):            1.967
-  Arrival (ns):          12.742
-  Required (ns):         14.709
+  To:                    stepper_control_0/count2[0]:D
+  Delay (ns):            9.326
+  Slack (ns):            1.830
+  Arrival (ns):          12.881
+  Required (ns):         14.711
   Setup (ns):            0.522
 
 Path 3
   From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                    stepper_control_0/count2[4]:D
-  Delay (ns):            9.187
-  Slack (ns):            1.968
-  Arrival (ns):          12.742
-  Required (ns):         14.710
+  To:                    stepper_control_0/count2[2]:D
+  Delay (ns):            9.240
+  Slack (ns):            1.916
+  Arrival (ns):          12.795
+  Required (ns):         14.711
   Setup (ns):            0.522
 
 Path 4
   From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                    stepper_control_0/count2[7]:D
-  Delay (ns):            9.169
-  Slack (ns):            2.009
-  Arrival (ns):          12.724
-  Required (ns):         14.733
+  To:                    stepper_control_0/count2[6]:D
+  Delay (ns):            8.893
+  Slack (ns):            2.261
+  Arrival (ns):          12.448
+  Required (ns):         14.709
   Setup (ns):            0.522
 
 Path 5
   From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To:                    stepper_control_0/count2[6]:D
-  Delay (ns):            8.804
-  Slack (ns):            2.374
-  Arrival (ns):          12.359
-  Required (ns):         14.733
+  To:                    stepper_control_0/count1[0]:D
+  Delay (ns):            8.504
+  Slack (ns):            2.650
+  Arrival (ns):          12.059
+  Required (ns):         14.709
   Setup (ns):            0.522
 
 
 Expanded Path 1
   From: WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:FCLK
-  To: stepper_control_0/count1[5]:D
-  data required time                             14.718
-  data arrival time                          -   12.866
-  slack                                          1.852
+  To: stepper_control_0/count2[1]:D
+  data required time                             14.711
+  data arrival time                          -   13.087
+  slack                                          1.624
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_ccc_gla0
@@ -534,22 +546,22 @@ Expanded Path 1
   7.309                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_46:PIN2INT (r)
                +     0.095          cell: ADLIB:MSS_IF
   7.404                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_46:PIN2 (r)
-               +     0.944          net: WhiteBoard_Plotter_0_M2F_RESET_N
-  8.348                        stepper_control_0/count_bool1_RNIV046:A (r)
-               +     0.445          cell: ADLIB:NOR2B
-  8.793                        stepper_control_0/count_bool1_RNIV046:Y (r)
-               +     0.815          net: stepper_control_0/count113_0
-  9.608                        stepper_control_0/count_bool1_RNIBUN53:C (r)
+               +     1.114          net: WhiteBoard_Plotter_0_M2F_RESET_N
+  8.518                        stepper_control_0/count211_RNO:B (r)
+               +     0.470          cell: ADLIB:NOR2B
+  8.988                        stepper_control_0/count211_RNO:Y (r)
+               +     1.068          net: stepper_control_0/step28_1
+  10.056                       stepper_control_0/count211:C (r)
                +     0.478          cell: ADLIB:OA1
-  10.086                       stepper_control_0/count_bool1_RNIBUN53:Y (r)
-               +     1.891          net: stepper_control_0/count113
-  11.977                       stepper_control_0/count1_RNO[5]:C (r)
+  10.534                       stepper_control_0/count211:Y (r)
+               +     1.670          net: stepper_control_0/count211
+  12.204                       stepper_control_0/count2_n1:C (r)
                +     0.587          cell: ADLIB:XA1
-  12.564                       stepper_control_0/count1_RNO[5]:Y (r)
-               +     0.302          net: stepper_control_0/count1_n5
-  12.866                       stepper_control_0/count1[5]:D (r)
+  12.791                       stepper_control_0/count2_n1:Y (r)
+               +     0.296          net: stepper_control_0/count2_n1
+  13.087                       stepper_control_0/count2[1]:D (r)
                                     
-  12.866                       data arrival time
+  13.087                       data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_ccc_gla1
@@ -561,12 +573,12 @@ Expanded Path 1
   14.630                       WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   14.630                       WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.610          net: FAB_CLK
-  15.240                       stepper_control_0/count1[5]:CLK (r)
+               +     0.603          net: FAB_CLK
+  15.233                       stepper_control_0/count2[1]:CLK (r)
                -     0.522          Library setup time: ADLIB:DFN1
-  14.718                       stepper_control_0/count1[5]:D
+  14.711                       stepper_control_0/count2[1]:D
                                     
-  14.718                       data required time
+  14.711                       data required time
 
 
 END SET mss_ccc_gla0 to mss_ccc_gla1
@@ -577,47 +589,47 @@ SET mss_fabric_interface_clock to mss_ccc_gla1
 
 Path 1
   From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    stepper_control_0/step1_en:D
-  Delay (ns):            10.219
-  Slack (ns):            0.935
-  Arrival (ns):          13.774
-  Required (ns):         14.709
+  To:                    stepper_control_0/step2_en:D
+  Delay (ns):            9.557
+  Slack (ns):            1.610
+  Arrival (ns):          13.112
+  Required (ns):         14.722
   Setup (ns):            0.522
 
 Path 2
   From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    stepper_control_0/step2_en:D
-  Delay (ns):            9.417
-  Slack (ns):            1.761
-  Arrival (ns):          12.972
-  Required (ns):         14.733
+  To:                    stepper_control_0/step1_en:D
+  Delay (ns):            9.370
+  Slack (ns):            1.781
+  Arrival (ns):          12.925
+  Required (ns):         14.706
   Setup (ns):            0.522
 
 Path 3
   From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    stepper_control_0/dir1:D
-  Delay (ns):            8.433
-  Slack (ns):            2.753
-  Arrival (ns):          11.988
-  Required (ns):         14.741
-  Setup (ns):            0.490
+  To:                    stepper_control_0/dir2:D
+  Delay (ns):            8.707
+  Slack (ns):            2.444
+  Arrival (ns):          12.262
+  Required (ns):         14.706
+  Setup (ns):            0.522
 
 Path 4
   From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:GLB
-  To:                    stepper_control_0/dir2:D
-  Delay (ns):            8.433
-  Slack (ns):            2.753
-  Arrival (ns):          11.988
-  Required (ns):         14.741
-  Setup (ns):            0.490
+  To:                    stepper_control_0/dir1:D
+  Delay (ns):            8.319
+  Slack (ns):            2.832
+  Arrival (ns):          11.874
+  Required (ns):         14.706
+  Setup (ns):            0.522
 
 
 Expanded Path 1
   From: WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:GLB
-  To: stepper_control_0/step1_en:D
-  data required time                             14.709
-  data arrival time                          -   13.774
-  slack                                          0.935
+  To: stepper_control_0/step2_en:D
+  data required time                             14.722
+  data arrival time                          -   13.112
+  slack                                          1.610
   ________________________________________________________
   Data arrival time calculation
   0.000                        mss_fabric_interface_clock
@@ -625,36 +637,36 @@ Expanded Path 1
   0.000                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:GLB (r)
                +     3.555          Clock generation
   3.555
-               +     3.673          cell: ADLIB:MSS_APB_IP
-  7.228                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:MSSPADDR[10] (f)
-               +     0.155          net: WhiteBoard_Plotter_0/MSS_ADLIB_INST/MSSPADDR[10]INT_NET
-  7.383                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_33:PIN2INT (f)
-               +     0.094          cell: ADLIB:MSS_IF
-  7.477                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_33:PIN2 (f)
-               +     0.324          net: WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[10]
-  7.801                        stepper_control_0/stepper_write_1:B (f)
+               +     3.586          cell: ADLIB:MSS_APB_IP
+  7.141                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:MSSPADDR[11] (f)
+               +     0.157          net: WhiteBoard_Plotter_0/MSS_ADLIB_INST/MSSPADDR[11]INT_NET
+  7.298                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_33:PIN3INT (f)
+               +     0.086          cell: ADLIB:MSS_IF
+  7.384                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_33:PIN3 (f)
+               +     0.324          net: WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[11]
+  7.708                        stepper_control_0/stepper_write_2:B (f)
                +     0.588          cell: ADLIB:NOR2
-  8.389                        stepper_control_0/stepper_write_1:Y (r)
-               +     1.193          net: stepper_control_0/stepper_write_1
-  9.582                        stepper_control_0/stepper_write:A (r)
-               +     0.478          cell: ADLIB:NOR3C
-  10.060                       stepper_control_0/stepper_write:Y (r)
-               +     1.295          net: stepper_control_0/stepper_write
-  11.355                       stepper_control_0/step1_en_RNO_1:A (r)
-               +     0.445          cell: ADLIB:NOR2B
-  11.800                       stepper_control_0/step1_en_RNO_1:Y (r)
-               +     0.296          net: stepper_control_0/step1_en_3
-  12.096                       stepper_control_0/step1_en_RNO_0:A (r)
-               +     0.606          cell: ADLIB:MX2
-  12.702                       stepper_control_0/step1_en_RNO_0:Y (r)
-               +     0.306          net: stepper_control_0/step1_en_RNO_0
-  13.008                       stepper_control_0/step1_en_RNO:B (r)
+  8.296                        stepper_control_0/stepper_write_2:Y (r)
+               +     1.120          net: stepper_control_0/stepper_write_2
+  9.416                        stepper_control_0/stepper_write:C (r)
+               +     0.606          cell: ADLIB:NOR3C
+  10.022                       stepper_control_0/stepper_write:Y (r)
+               +     0.683          net: stepper_control_0/stepper_write
+  10.705                       stepper_control_0/step2_en_RNO_1:B (r)
                +     0.470          cell: ADLIB:NOR2B
-  13.478                       stepper_control_0/step1_en_RNO:Y (r)
-               +     0.296          net: stepper_control_0/step1_en_RNO
-  13.774                       stepper_control_0/step1_en:D (r)
+  11.175                       stepper_control_0/step2_en_RNO_1:Y (r)
+               +     0.296          net: stepper_control_0/step2_en_3
+  11.471                       stepper_control_0/step2_en_RNO_0:A (r)
+               +     0.606          cell: ADLIB:MX2
+  12.077                       stepper_control_0/step2_en_RNO_0:Y (r)
+               +     0.294          net: stepper_control_0/N_161
+  12.371                       stepper_control_0/step2_en_RNO:A (r)
+               +     0.445          cell: ADLIB:NOR2B
+  12.816                       stepper_control_0/step2_en_RNO:Y (r)
+               +     0.296          net: stepper_control_0/step2_en_RNO
+  13.112                       stepper_control_0/step2_en:D (r)
                                     
-  13.774                       data arrival time
+  13.112                       data arrival time
   ________________________________________________________
   Data required time calculation
   10.000                       mss_ccc_gla1
@@ -666,12 +678,12 @@ Expanded Path 1
   14.630                       WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
                +     0.000          cell: ADLIB:MSS_CCC_GL_IF
   14.630                       WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
-               +     0.601          net: FAB_CLK
-  15.231                       stepper_control_0/step1_en:CLK (r)
+               +     0.614          net: FAB_CLK
+  15.244                       stepper_control_0/step2_en:CLK (r)
                -     0.522          Library setup time: ADLIB:DFN1
-  14.709                       stepper_control_0/step1_en:D
+  14.722                       stepper_control_0/step2_en:D
                                     
-  14.709                       data required time
+  14.722                       data required time
 
 
 END SET mss_fabric_interface_clock to mss_ccc_gla1

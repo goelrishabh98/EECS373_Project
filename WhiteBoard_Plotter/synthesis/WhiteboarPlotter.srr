@@ -1,9 +1,9 @@
 #Build: Synplify Pro L-2016.09M-SP1-5, Build 264R, Oct 26 2017
 #install: C:\Microsemi\Libero_SoC_v11.9\SynplifyPro
 #OS: Windows 8 6.2
-#Hostname: EECS373-07
+#Hostname: EECS373-10
 
-# Wed Nov 20 12:12:05 2019
+# Wed Nov 20 15:59:48 2019
 
 #Implementation: synthesis
 
@@ -20,22 +20,22 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\umr_capim.v" (library snps_haps)
 @I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\scemi_objects.v" (library snps_haps)
 @I::"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\vlog\scemi_pipes.svh" (library snps_haps)
-@I::"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" (library work)
-@I::"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\mss_tshell.v" (library work)
-@I::"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v" (library work)
-@I::"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.v" (library work)
-@I::"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v" (library work)
-@I::"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" (library COREAPB3_LIB)
-@I::"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" (library COREAPB3_LIB)
-@I::"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v" (library COREAPB3_LIB)
-@I::"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.v" (library work)
+@I::"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" (library work)
+@I::"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\mss_tshell.v" (library work)
+@I::"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v" (library work)
+@I::"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.v" (library work)
+@I::"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" (library COREAPB3_LIB)
+@I::"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" (library COREAPB3_LIB)
+@I::"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v" (library COREAPB3_LIB)
+@I::"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v" (library work)
+@I::"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.v" (library work)
 Verilog syntax check successful!
-Options changed - recompiling
+File N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v changed - recompiling
 Selecting top level module WhiteboarPlotter
-@W: CG775 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
-@N: CG364 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v":13:0:13:6|Synthesizing module CAPB3II in library COREAPB3_LIB.
+@W: CG775 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
+@N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v":13:0:13:6|Synthesizing module CAPB3II in library COREAPB3_LIB.
 
-@N: CG364 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Synthesizing module CoreAPB3 in library COREAPB3_LIB.
+@N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Synthesizing module CoreAPB3 in library COREAPB3_LIB.
 
 	APB_DWIDTH=6'b100000
 	IADDR_OPTION=32'b00000000000000000000000000000000
@@ -113,13 +113,13 @@ Selecting top level module WhiteboarPlotter
 	CAPB3lI1=16'b0000000000000000
    Generated name = CoreAPB3_Z1
 
-@W: CG360 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":1495:0:1495:8|Removing wire CAPB3IlOI, as there is no assignment to it.
-@N: CG364 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":1:7:1:21|Synthesizing module stepper_control in library work.
+@W: CG360 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":1495:0:1495:8|Removing wire CAPB3IlOI, as there is no assignment to it.
+@N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":1:7:1:21|Synthesizing module stepper_control in library work.
 
-@W: CG133 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":13:18:13:23|Object PRDATA is declared but not assigned. Either assign a value or remove the declaration.
-@N: CG364 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB in library work.
+@W: CG133 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":13:18:13:23|Object PRDATA is declared but not assigned. Either assign a value or remove the declaration.
+@N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\mss_tshell.v":1:7:1:13|Synthesizing module MSS_APB in library work.
 
-@N: CG364 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":151:7:151:13|Synthesizing module MSS_CCC in library work.
+@N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":151:7:151:13|Synthesizing module MSS_CCC in library work.
 
 @N: CG364 :"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v":2620:7:2620:11|Synthesizing module RCOSC in library work.
 
@@ -127,93 +127,93 @@ Selecting top level module WhiteboarPlotter
 
 @N: CG364 :"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v":1868:7:1868:9|Synthesizing module VCC in library work.
 
-@N: CG364 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:46|Synthesizing module WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC in library work.
+@N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:46|Synthesizing module WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC in library work.
 
-@N: CG364 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS in library work.
+@N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS in library work.
 
-@N: CG364 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS in library work.
+@N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS in library work.
 
-@N: CG364 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.v":9:7:9:24|Synthesizing module WhiteBoard_Plotter in library work.
+@N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.v":9:7:9:24|Synthesizing module WhiteBoard_Plotter in library work.
 
-@N: CG364 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.v":9:7:9:22|Synthesizing module WhiteboarPlotter in library work.
+@N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.v":9:7:9:22|Synthesizing module WhiteboarPlotter in library work.
 
-@W: CL157 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL157 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":63:7:63:20|*Output MAINXIN_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
-@W: CL157 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":64:7:64:18|*Output LPXIN_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":36:7:36:10|Input CLKA is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":37:7:37:14|Input CLKA_PAD is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":38:7:38:15|Input CLKA_PADP is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":39:7:39:15|Input CLKA_PADN is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":40:7:40:10|Input CLKB is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":41:7:41:14|Input CLKB_PAD is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":42:7:42:15|Input CLKB_PADP is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":43:7:43:15|Input CLKB_PADN is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":44:7:44:10|Input CLKC is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":45:7:45:14|Input CLKC_PAD is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":46:7:46:15|Input CLKC_PADP is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":47:7:47:15|Input CLKC_PADN is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused.
-@W: CL246 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":12:18:12:23|Input port bits 31 to 4 of PWDATA[31:0] are unused. Assign logic for all port bits or change the input port size.
-@A: CL153 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":13:18:13:23|*Unassigned bits of PRDATA[31:0] are referenced and tied to 0 -- simulation mismatch possible.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":7:6:7:12|Input PENABLE is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":11:13:11:17|Input PADDR is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":396:0:396:4|Input IADDR is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":398:0:398:6|Input PRESETN is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":400:0:400:3|Input PCLK is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":521:0:521:7|Input PRDATAS1 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":528:0:528:7|Input PRDATAS2 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":535:0:535:7|Input PRDATAS3 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":542:0:542:7|Input PRDATAS4 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":549:0:549:7|Input PRDATAS5 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":556:0:556:7|Input PRDATAS6 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":563:0:563:7|Input PRDATAS7 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":570:0:570:7|Input PRDATAS8 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":577:0:577:7|Input PRDATAS9 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":584:0:584:8|Input PRDATAS10 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":591:0:591:8|Input PRDATAS11 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":598:0:598:8|Input PRDATAS12 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":605:0:605:8|Input PRDATAS13 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":612:0:612:8|Input PRDATAS14 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":619:0:619:8|Input PRDATAS15 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":630:0:630:7|Input PREADYS1 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":632:0:632:7|Input PREADYS2 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":634:0:634:7|Input PREADYS3 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":636:0:636:7|Input PREADYS4 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":638:0:638:7|Input PREADYS5 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":640:0:640:7|Input PREADYS6 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":642:0:642:7|Input PREADYS7 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":644:0:644:7|Input PREADYS8 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":646:0:646:7|Input PREADYS9 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":648:0:648:8|Input PREADYS10 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":650:0:650:8|Input PREADYS11 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":652:0:652:8|Input PREADYS12 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":654:0:654:8|Input PREADYS13 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":656:0:656:8|Input PREADYS14 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":658:0:658:8|Input PREADYS15 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":664:0:664:8|Input PSLVERRS1 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":666:0:666:8|Input PSLVERRS2 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":668:0:668:8|Input PSLVERRS3 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":670:0:670:8|Input PSLVERRS4 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":672:0:672:8|Input PSLVERRS5 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":674:0:674:8|Input PSLVERRS6 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":676:0:676:8|Input PSLVERRS7 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":678:0:678:8|Input PSLVERRS8 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":680:0:680:8|Input PSLVERRS9 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":682:0:682:9|Input PSLVERRS10 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":684:0:684:9|Input PSLVERRS11 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":686:0:686:9|Input PSLVERRS12 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":688:0:688:9|Input PSLVERRS13 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":690:0:690:9|Input PSLVERRS14 is unused.
-@N: CL159 :"C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":692:0:692:9|Input PSLVERRS15 is unused.
+@W: CL157 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":62:7:62:18|*Output RCOSC_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":63:7:63:20|*Output MAINXIN_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@W: CL157 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":64:7:64:18|*Output LPXIN_CLKOUT has undriven bits; assigning undriven bits to 0.  Simulation mismatch possible. Assign all bits of the output.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":36:7:36:10|Input CLKA is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":37:7:37:14|Input CLKA_PAD is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":38:7:38:15|Input CLKA_PADP is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":39:7:39:15|Input CLKA_PADN is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":40:7:40:10|Input CLKB is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":41:7:41:14|Input CLKB_PAD is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":42:7:42:15|Input CLKB_PADP is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":43:7:43:15|Input CLKB_PADN is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":44:7:44:10|Input CLKC is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":45:7:45:14|Input CLKC_PAD is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":46:7:46:15|Input CLKC_PADP is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":47:7:47:15|Input CLKC_PADN is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused.
+@W: CL246 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":12:18:12:23|Input port bits 31 to 4 of PWDATA[31:0] are unused. Assign logic for all port bits or change the input port size.
+@A: CL153 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":13:18:13:23|*Unassigned bits of PRDATA[31:0] are referenced and tied to 0 -- simulation mismatch possible.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":7:6:7:12|Input PENABLE is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":11:13:11:17|Input PADDR is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":396:0:396:4|Input IADDR is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":398:0:398:6|Input PRESETN is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":400:0:400:3|Input PCLK is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":521:0:521:7|Input PRDATAS1 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":528:0:528:7|Input PRDATAS2 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":535:0:535:7|Input PRDATAS3 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":542:0:542:7|Input PRDATAS4 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":549:0:549:7|Input PRDATAS5 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":556:0:556:7|Input PRDATAS6 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":563:0:563:7|Input PRDATAS7 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":570:0:570:7|Input PRDATAS8 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":577:0:577:7|Input PRDATAS9 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":584:0:584:8|Input PRDATAS10 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":591:0:591:8|Input PRDATAS11 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":598:0:598:8|Input PRDATAS12 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":605:0:605:8|Input PRDATAS13 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":612:0:612:8|Input PRDATAS14 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":619:0:619:8|Input PRDATAS15 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":630:0:630:7|Input PREADYS1 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":632:0:632:7|Input PREADYS2 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":634:0:634:7|Input PREADYS3 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":636:0:636:7|Input PREADYS4 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":638:0:638:7|Input PREADYS5 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":640:0:640:7|Input PREADYS6 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":642:0:642:7|Input PREADYS7 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":644:0:644:7|Input PREADYS8 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":646:0:646:7|Input PREADYS9 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":648:0:648:8|Input PREADYS10 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":650:0:650:8|Input PREADYS11 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":652:0:652:8|Input PREADYS12 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":654:0:654:8|Input PREADYS13 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":656:0:656:8|Input PREADYS14 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":658:0:658:8|Input PREADYS15 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":664:0:664:8|Input PSLVERRS1 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":666:0:666:8|Input PSLVERRS2 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":668:0:668:8|Input PSLVERRS3 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":670:0:670:8|Input PSLVERRS4 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":672:0:672:8|Input PSLVERRS5 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":674:0:674:8|Input PSLVERRS6 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":676:0:676:8|Input PSLVERRS7 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":678:0:678:8|Input PSLVERRS8 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":680:0:680:8|Input PSLVERRS9 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":682:0:682:9|Input PSLVERRS10 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":684:0:684:9|Input PSLVERRS11 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":686:0:686:9|Input PSLVERRS12 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":688:0:688:9|Input PSLVERRS13 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":690:0:690:9|Input PSLVERRS14 is unused.
+@N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":692:0:692:9|Input PSLVERRS15 is unused.
 
-At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 77MB peak: 78MB)
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 77MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Nov 20 12:12:06 2019
+# Wed Nov 20 15:59:50 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
@@ -224,17 +224,17 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Nov 20 12:12:06 2019
+# Wed Nov 20 15:59:50 2019
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Nov 20 12:12:06 2019
+# Wed Nov 20 15:59:50 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
@@ -246,12 +246,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Nov 20 12:12:07 2019
+# Wed Nov 20 15:59:51 2019
 
 ###########################################################]
-Pre-mapping Report
-
-# Wed Nov 20 12:12:07 2019
+# Wed Nov 20 15:59:52 2019
 
 Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -259,9 +257,9 @@ Product Version L-2016.09M-SP1-5
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 100MB)
 
-Reading constraint file: C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\mss_tshell_syn.sdc
-@L: C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter_scck.rpt 
-Printing clock  summary report in "C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter_scck.rpt" file 
+Reading constraint file: N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\mss_tshell_syn.sdc
+@L: N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter_scck.rpt 
+Printing clock  summary report in "N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter_scck.rpt" file 
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
@@ -270,12 +268,12 @@ Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s
 
 Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 104MB peak: 106MB)
 
-@N: MO111 :"c:\users\bansarth\documents\eecs373_project\whiteboard_plotter\component\work\whiteboard_plotter\mss_ccc_0\whiteboard_plotter_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\bansarth\documents\eecs373_project\whiteboard_plotter\component\work\whiteboard_plotter\mss_ccc_0\whiteboard_plotter_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\bansarth\documents\eecs373_project\whiteboard_plotter\component\work\whiteboard_plotter\mss_ccc_0\whiteboard_plotter_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
-@N: BN115 :"c:\users\bansarth\documents\eecs373_project\whiteboard_plotter\component\actel\directcore\coreapb3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":3815:0:3815:8|Removing instance CAPB3IIII (in view: COREAPB3_LIB.CoreAPB3_Z1(verilog)) of type view:COREAPB3_LIB.CAPB3II(verilog) because it does not drive other instances.
+@N: MO111 :"n:\eecs373_project\whiteboard_plotter\component\work\whiteboard_plotter\mss_ccc_0\whiteboard_plotter_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"n:\eecs373_project\whiteboard_plotter\component\work\whiteboard_plotter\mss_ccc_0\whiteboard_plotter_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"n:\eecs373_project\whiteboard_plotter\component\work\whiteboard_plotter\mss_ccc_0\whiteboard_plotter_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: BN115 :"n:\eecs373_project\whiteboard_plotter\component\actel\directcore\coreapb3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":3815:0:3815:8|Removing instance CAPB3IIII (in view: COREAPB3_LIB.CoreAPB3_Z1(verilog)) of type view:COREAPB3_LIB.CAPB3II(verilog) because it does not drive other instances.
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
 
 
 
@@ -287,33 +285,31 @@ Clock                                                               Frequency   
 ------------------------------------------------------------------------------------------------------------------------------------------
 FAB_CLK                                                             100.0 MHz     10.000        declared     clk_group_0             0    
 FCLK                                                                100.0 MHz     10.000        declared     clk_group_0             0    
-WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     24   
+WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     100.0 MHz     10.000        inferred     Inferred_clkgroup_0     22   
 ==========================================================================================================================================
 
-@W: MT530 :"c:\users\bansarth\documents\eecs373_project\whiteboard_plotter\hdl\stepper_control.v":127:0:127:5|Found inferred clock WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock which controls 24 sequential elements including stepper_control_0.count2[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
+@W: MT530 :"n:\eecs373_project\whiteboard_plotter\hdl\stepper_control.v":105:0:105:5|Found inferred clock WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock which controls 22 sequential elements including stepper_control_0.count2[7:0]. This clock has no specified timing constraint which may adversely impact design performance. 
 
 Finished Pre Mapping Phase.
-@N: BN225 |Writing default property annotation file C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter.sap.
+@N: BN225 |Writing default property annotation file N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
 
 None
 None
-@W: MF511 |Found issues with constraints. Please check constraint checker report "C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter_cck.rpt" .
+@W: MF511 |Found issues with constraints. Please check constraint checker report "N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter_cck.rpt" .
 
-Finished constraint checker (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 114MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 114MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 114MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Nov 20 12:12:08 2019
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Wed Nov 20 15:59:54 2019
 
 ###########################################################]
-Map & Optimize Report
-
-# Wed Nov 20 12:12:08 2019
+# Wed Nov 20 15:59:55 2019
 
 Synopsys Microsemi Technology Mapper, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -324,59 +320,59 @@ Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:0
 @N: MF248 |Running in 64-bit mode.
 @N: MF667 |Clock conversion disabled. (Command "set_option -fix_gated_and_generated_clocks 0" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 100MB peak: 101MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 99MB peak: 101MB)
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
 
-@N: MO111 :"c:\users\bansarth\documents\eecs373_project\whiteboard_plotter\component\work\whiteboard_plotter\mss_ccc_0\whiteboard_plotter_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\bansarth\documents\eecs373_project\whiteboard_plotter\component\work\whiteboard_plotter\mss_ccc_0\whiteboard_plotter_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
-@N: MO111 :"c:\users\bansarth\documents\eecs373_project\whiteboard_plotter\component\work\whiteboard_plotter\mss_ccc_0\whiteboard_plotter_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"n:\eecs373_project\whiteboard_plotter\component\work\whiteboard_plotter\mss_ccc_0\whiteboard_plotter_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"n:\eecs373_project\whiteboard_plotter\component\work\whiteboard_plotter\mss_ccc_0\whiteboard_plotter_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
+@N: MO111 :"n:\eecs373_project\whiteboard_plotter\component\work\whiteboard_plotter\mss_ccc_0\whiteboard_plotter_tmp_mss_ccc_0_mss_ccc.v":62:7:62:18|Tristate driver RCOSC_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net RCOSC_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
 
 Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
 
-@N: MO231 :"c:\users\bansarth\documents\eecs373_project\whiteboard_plotter\hdl\stepper_control.v":127:0:127:5|Found counter in view:work.stepper_control(verilog) instance count2[7:0] 
-@N: MO231 :"c:\users\bansarth\documents\eecs373_project\whiteboard_plotter\hdl\stepper_control.v":77:0:77:5|Found counter in view:work.stepper_control(verilog) instance count1[7:0] 
+@N: MO231 :"n:\eecs373_project\whiteboard_plotter\hdl\stepper_control.v":105:0:105:5|Found counter in view:work.stepper_control(verilog) instance count2[7:0] 
+@N: MO231 :"n:\eecs373_project\whiteboard_plotter\hdl\stepper_control.v":65:0:65:5|Found counter in view:work.stepper_control(verilog) instance count1[7:0] 
 
-Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
-
-
-Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+Starting factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
 
 
-Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Finished factoring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
-Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Starting gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Finished gated-clock and generated-clock conversion (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 112MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Finished technology mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
 Added 0 Buffers
@@ -384,7 +380,7 @@ Added 0 Cells via replication
 	Added 0 Sequential Cells via replication
 	Added 0 Combinational Cells via replication
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
 
@@ -395,38 +391,38 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:
 
 Clock optimization not enabled
 0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 24 clock pin(s) of sequential element(s)
-0 instances converted, 24 sequential instances remain driven by gated/generated clocks
+1 gated/generated clock tree(s) driving 22 clock pin(s) of sequential element(s)
+0 instances converted, 22 sequential instances remain driven by gated/generated clocks
 
 ================================================================================================================== Gated/Generated Clocks ===================================================================================================================
 Clock Tree ID     Driving Element                             Drive Element Type     Fanout     Sample Instance                Explanation                                                                                                                   
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       WhiteBoard_Plotter_0.MSS_CCC_0.I_MSSCCC     MSS_CCC                24         stepper_control_0.step2_en     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+@K:CKID0001       WhiteBoard_Plotter_0.MSS_CCC_0.I_MSSCCC     MSS_CCC                22         stepper_control_0.step2_en     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
 =============================================================================================================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
-Writing Analyst data base C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\synthesis\synwork\WhiteboarPlotter_m.srm
+Writing Analyst data base N:\EECS373_Project\WhiteBoard_Plotter\synthesis\synwork\WhiteboarPlotter_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 Writing EDIF Netlist and constraint files
 L-2016.09M-SP1-5
 
-Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 @W: MT420 |Found inferred clock WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:WhiteBoard_Plotter_0.MSS_CCC_0.FAB_CLK"
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Nov 20 12:12:08 2019
+# Timing Report written on Wed Nov 20 15:59:56 2019
 #
 
 
@@ -437,7 +433,7 @@ Requested Frequency:    100.0 MHz
 Wire load mode:         top
 Wire load model:        smartfusion
 Paths requested:        5
-Constraint File(s):    C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\mss_tshell_syn.sdc
+Constraint File(s):    N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\mss_tshell_syn.sdc
                        
 @N: MT320 |This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report.
 
@@ -449,16 +445,16 @@ Performance Summary
 *******************
 
 
-Worst slack in design: 0.327
+Worst slack in design: 1.019
 
                                                                     Requested     Estimated     Requested     Estimated               Clock        Clock              
 Starting Clock                                                      Frequency     Frequency     Period        Period        Slack     Type         Group              
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     100.0 MHz     103.4 MHz     10.000        9.673         0.327     inferred     Inferred_clkgroup_0
+WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     100.0 MHz     111.3 MHz     10.000        8.981         1.019     inferred     Inferred_clkgroup_0
 System                                                              100.0 MHz     181.5 MHz     10.000        5.509         4.491     system       system_clkgroup    
 ======================================================================================================================================================================
-@W: MT548 :"c:/users/bansarth/documents/eecs373_project/whiteboard_plotter/component/work/whiteboard_plotter/mss_tshell_syn.sdc":1:0:1:0|Source for clock FAB_CLK not found in netlist. Run the constraint checker to verify if constraints are applied correctly.
-@W: MT548 :"c:/users/bansarth/documents/eecs373_project/whiteboard_plotter/component/work/whiteboard_plotter/mss_tshell_syn.sdc":2:0:2:0|Source for clock FCLK not found in netlist. Run the constraint checker to verify if constraints are applied correctly.
+@W: MT548 :"n:/eecs373_project/whiteboard_plotter/component/work/whiteboard_plotter/mss_tshell_syn.sdc":1:0:1:0|Source for clock FAB_CLK not found in netlist. Run the constraint checker to verify if constraints are applied correctly.
+@W: MT548 :"n:/eecs373_project/whiteboard_plotter/component/work/whiteboard_plotter/mss_tshell_syn.sdc":2:0:2:0|Source for clock FCLK not found in netlist. Run the constraint checker to verify if constraints are applied correctly.
 
 
 
@@ -473,7 +469,7 @@ Starting                                                         Ending         
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 System                                                           System                                                           |  10.000      4.491  |  No paths    -      |  No paths    -      |  No paths    -    
 System                                                           WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  |  10.000      3.441  |  No paths    -      |  No paths    -      |  No paths    -    
-WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  |  10.000      0.327  |  No paths    -      |  No paths    -      |  No paths    -    
+WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  |  10.000      1.019  |  No paths    -      |  No paths    -      |  No paths    -    
 ========================================================================================================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -500,16 +496,16 @@ Starting Points with Worst Slack
 Instance                        Reference                                                           Type     Pin     Net           Time        Slack
                                 Clock                                                                                                               
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-stepper_control_0.count1[0]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       un5lto0       0.737       0.327
-stepper_control_0.count2[0]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       un6lto0       0.737       0.327
-stepper_control_0.count1[1]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       un5lto1       0.737       0.591
-stepper_control_0.count2[1]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       un6lto1       0.737       0.591
-stepper_control_0.count1[2]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count1[2]     0.737       1.253
-stepper_control_0.count2[2]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count2[2]     0.737       1.253
-stepper_control_0.count1[4]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count1[4]     0.737       1.797
-stepper_control_0.count2[4]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count2[4]     0.737       1.797
-stepper_control_0.count1[5]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count1[5]     0.737       1.936
-stepper_control_0.count2[5]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count2[5]     0.737       1.936
+stepper_control_0.count1[0]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       un4lto0       0.737       1.019
+stepper_control_0.count2[0]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       un5lto0       0.737       1.019
+stepper_control_0.count1[1]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       un4lto1       0.737       1.552
+stepper_control_0.count2[1]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       un5lto1       0.737       1.552
+stepper_control_0.count1[2]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count1[2]     0.737       2.565
+stepper_control_0.count2[2]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count2[2]     0.737       2.565
+stepper_control_0.count1[3]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count1[3]     0.737       2.765
+stepper_control_0.count2[3]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count2[3]     0.737       2.765
+stepper_control_0.count1[4]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count1[4]     0.737       2.801
+stepper_control_0.count2[4]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count2[4]     0.737       2.801
 ====================================================================================================================================================
 
 
@@ -520,16 +516,16 @@ Ending Points with Worst Slack
 Instance                        Reference                                                           Type     Pin     Net           Time         Slack
                                 Clock                                                                                                                
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-stepper_control_0.count1[7]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count1_n7     9.427        0.327
-stepper_control_0.count2[7]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count2_n7     9.427        0.327
-stepper_control_0.count1[1]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count1_n1     9.461        1.253
-stepper_control_0.count1[2]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count1_n2     9.461        1.253
-stepper_control_0.count1[3]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count1_n3     9.461        1.253
-stepper_control_0.count1[4]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count1_n4     9.461        1.253
-stepper_control_0.count1[5]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count1_n5     9.461        1.253
-stepper_control_0.count1[6]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count1_n6     9.461        1.253
-stepper_control_0.count2[1]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count2_n1     9.461        1.253
-stepper_control_0.count2[2]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count2_n2     9.461        1.253
+stepper_control_0.count1[7]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count1_n7     9.461        1.019
+stepper_control_0.count2[7]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count2_n7     9.461        1.019
+stepper_control_0.count1[6]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count1_n6     9.461        1.968
+stepper_control_0.count2[6]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count2_n6     9.461        1.968
+stepper_control_0.step1         WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       step17        9.461        2.765
+stepper_control_0.step2         WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       step28        9.461        2.765
+stepper_control_0.count1[1]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count1_n1     9.461        2.786
+stepper_control_0.count1[2]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count1_n2     9.461        2.786
+stepper_control_0.count1[3]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count1_n3     9.461        2.786
+stepper_control_0.count1[4]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count1_n4     9.461        2.786
 =====================================================================================================================================================
 
 
@@ -540,13 +536,13 @@ Worst Path Information
 
 Path information for path number 1: 
       Requested Period:                      10.000
-    - Setup time:                            0.573
+    - Setup time:                            0.539
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.427
+    = Required time:                         9.461
 
-    - Propagation time:                      9.100
+    - Propagation time:                      8.443
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     0.327
+    = Slack (critical) :                     1.019
 
     Number of logic level(s):                7
     Starting point:                          stepper_control_0.count1[0] / Q
@@ -558,31 +554,31 @@ Instance / Net                                     Pin      Pin               Ar
 Name                                     Type      Name     Dir     Delay     Time        Fan Out(s)
 ----------------------------------------------------------------------------------------------------
 stepper_control_0.count1[0]              DFN1      Q        Out     0.737     0.737       -         
-un5lto0                                  Net       -        -       1.184     -           4         
-stepper_control_0.count1_RNI5PSN[1]      NOR2B     A        In      -         1.921       -         
-stepper_control_0.count1_RNI5PSN[1]      NOR2B     Y        Out     0.514     2.435       -         
-un5lt3                                   Net       -        -       0.806     -           3         
-stepper_control_0.count1_RNI97R31[2]     NOR2B     A        In      -         3.241       -         
-stepper_control_0.count1_RNI97R31[2]     NOR2B     Y        Out     0.514     3.756       -         
+un4lto0                                  Net       -        -       0.806     -           3         
+stepper_control_0.count1_RNI5PSN[1]      NOR2B     B        In      -         1.543       -         
+stepper_control_0.count1_RNI5PSN[1]      NOR2B     Y        Out     0.627     2.171       -         
+un4lt3                                   Net       -        -       0.806     -           3         
+stepper_control_0.count1_RNI97R31[2]     NOR2B     B        In      -         2.977       -         
+stepper_control_0.count1_RNI97R31[2]     NOR2B     Y        Out     0.627     3.604       -         
 count1_c2                                Net       -        -       0.386     -           2         
-stepper_control_0.count1_RNIEMPF1[3]     NOR2B     A        In      -         4.141       -         
-stepper_control_0.count1_RNIEMPF1[3]     NOR2B     Y        Out     0.514     4.656       -         
+stepper_control_0.count1_RNIEMPF1[3]     NOR2B     A        In      -         3.990       -         
+stepper_control_0.count1_RNIEMPF1[3]     NOR2B     Y        Out     0.514     4.505       -         
 count1_c3                                Net       -        -       0.386     -           2         
-stepper_control_0.count1_RNIK6OR1[4]     NOR2B     A        In      -         5.042       -         
-stepper_control_0.count1_RNIK6OR1[4]     NOR2B     Y        Out     0.514     5.556       -         
+stepper_control_0.count1_RNIK6OR1[4]     NOR2B     A        In      -         4.891       -         
+stepper_control_0.count1_RNIK6OR1[4]     NOR2B     Y        Out     0.514     5.405       -         
 count1_c4                                Net       -        -       0.386     -           2         
-stepper_control_0.count1_RNIRNM72[5]     NOR2B     A        In      -         5.942       -         
-stepper_control_0.count1_RNIRNM72[5]     NOR2B     Y        Out     0.514     6.456       -         
+stepper_control_0.count1_RNIRNM72[5]     NOR2B     A        In      -         5.791       -         
+stepper_control_0.count1_RNIRNM72[5]     NOR2B     Y        Out     0.514     6.305       -         
 count1_c5                                Net       -        -       0.386     -           2         
-stepper_control_0.count1_RNO_0[7]        NOR2B     B        In      -         6.842       -         
-stepper_control_0.count1_RNO_0[7]        NOR2B     Y        Out     0.627     7.470       -         
+stepper_control_0.count1_RNO_0[7]        NOR2B     B        In      -         6.691       -         
+stepper_control_0.count1_RNO_0[7]        NOR2B     Y        Out     0.627     7.318       -         
 count1_31_0                              Net       -        -       0.322     -           1         
-stepper_control_0.count1_RNO[7]          XA1       B        In      -         7.791       -         
-stepper_control_0.count1_RNO[7]          XA1       Y        Out     0.987     8.778       -         
+stepper_control_0.count1_RNO[7]          XA1       A        In      -         7.640       -         
+stepper_control_0.count1_RNO[7]          XA1       Y        Out     0.481     8.121       -         
 count1_n7                                Net       -        -       0.322     -           1         
-stepper_control_0.count1[7]              DFN1      D        In      -         9.100       -         
+stepper_control_0.count1[7]              DFN1      D        In      -         8.443       -         
 ====================================================================================================
-Total path delay (propagation time + setup) of 9.673 is 5.497(56.8%) logic and 4.176(43.2%) route.
+Total path delay (propagation time + setup) of 8.981 is 5.182(57.7%) logic and 3.799(42.3%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -602,15 +598,15 @@ Instance                                   Reference     Type        Pin        
                                            Clock                                                                                                         
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPSEL          WhiteBoard_Plotter_0_MSS_MASTER_APB_PSELx         0.000       3.441
-WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPADDR[8]      WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[8]      0.000       3.519
-WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     M2FRESETn        WhiteBoard_Plotter_0_M2F_RESET_N                  0.000       3.544
+WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPADDR[11]     WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[11]     0.000       3.519
 WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPWRITE        CoreAPB3_0_APBmslave0_PWRITE                      0.000       3.554
-WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPADDR[9]      WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[9]      0.000       3.671
-WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPADDR[10]     WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[10]     0.000       3.686
-WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPADDR[11]     WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[11]     0.000       3.825
+WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPADDR[10]     WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[10]     0.000       3.671
+WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     M2FRESETn        WhiteBoard_Plotter_0_M2F_RESET_N                  0.000       3.686
+WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPADDR[9]      WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[9]      0.000       3.686
+WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPADDR[8]      WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[8]      0.000       3.825
 WhiteBoard_Plotter_0.MSS_CCC_0.I_RCOSC     System        RCOSC       CLKOUT           N_CLKA_RCOSC                                      0.000       4.491
-WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPWDATA[2]     CoreAPB3_0_APBmslave0_PWDATA[2]                   0.000       6.307
-WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPWDATA[3]     CoreAPB3_0_APBmslave0_PWDATA[3]                   0.000       6.307
+WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPWDATA[2]     CoreAPB3_0_APBmslave0_PWDATA[2]                   0.000       6.533
+WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPWDATA[3]     CoreAPB3_0_APBmslave0_PWDATA[3]                   0.000       6.533
 =========================================================================================================================================================
 
 
@@ -623,14 +619,14 @@ Instance                        Reference     Type     Pin     Net              
 --------------------------------------------------------------------------------------------------
 stepper_control_0.step1_en      System        DFN1     D       step1_en_RNO     9.427        3.441
 stepper_control_0.step2_en      System        DFN1     D       step2_en_RNO     9.427        3.441
-stepper_control_0.count1[1]     System        DFN1     D       count1_n1        9.427        3.544
-stepper_control_0.count1[2]     System        DFN1     D       count1_n2        9.427        3.544
-stepper_control_0.count1[3]     System        DFN1     D       count1_n3        9.427        3.544
-stepper_control_0.count1[4]     System        DFN1     D       count1_n4        9.427        3.544
-stepper_control_0.count1[5]     System        DFN1     D       count1_n5        9.427        3.544
-stepper_control_0.count1[6]     System        DFN1     D       count1_n6        9.427        3.544
-stepper_control_0.count1[7]     System        DFN1     D       count1_n7        9.427        3.544
-stepper_control_0.count2[1]     System        DFN1     D       count2_n1        9.427        3.544
+stepper_control_0.count2[1]     System        DFN1     D       count2_n1        9.427        3.686
+stepper_control_0.count2[2]     System        DFN1     D       count2_n2        9.427        3.686
+stepper_control_0.count2[3]     System        DFN1     D       count2_n3        9.427        3.686
+stepper_control_0.count2[4]     System        DFN1     D       count2_n4        9.427        3.686
+stepper_control_0.count2[5]     System        DFN1     D       count2_n5        9.427        3.686
+stepper_control_0.count2[6]     System        DFN1     D       count2_n6        9.427        3.686
+stepper_control_0.count2[7]     System        DFN1     D       count2_n7        9.427        3.686
+stepper_control_0.step2         System        DFN1     D       step28           9.427        3.733
 ==================================================================================================
 
 
@@ -667,14 +663,14 @@ stepper_write_0                               Net         -           -       0.
 stepper_control_0.stepper_write               NOR3C       B           In      -         1.270       -         
 stepper_control_0.stepper_write               NOR3C       Y           Out     0.607     1.877       -         
 stepper_write                                 Net         -           -       1.423     -           6         
-stepper_control_0.step1_en_RNO_1              NOR2B       A           In      -         3.300       -         
-stepper_control_0.step1_en_RNO_1              NOR2B       Y           Out     0.514     3.815       -         
+stepper_control_0.step1_en_RNO_1              NOR2B       B           In      -         3.300       -         
+stepper_control_0.step1_en_RNO_1              NOR2B       Y           Out     0.627     3.928       -         
 step1_en_3                                    Net         -           -       0.322     -           1         
-stepper_control_0.step1_en_RNO_0              MX2         A           In      -         4.136       -         
-stepper_control_0.step1_en_RNO_0              MX2         Y           Out     0.579     4.715       -         
-step1_en_RNO_0                                Net         -           -       0.322     -           1         
-stepper_control_0.step1_en_RNO                NOR2B       B           In      -         5.036       -         
-stepper_control_0.step1_en_RNO                NOR2B       Y           Out     0.627     5.664       -         
+stepper_control_0.step1_en_RNO_0              MX2         A           In      -         4.249       -         
+stepper_control_0.step1_en_RNO_0              MX2         Y           Out     0.579     4.828       -         
+N_162                                         Net         -           -       0.322     -           1         
+stepper_control_0.step1_en_RNO                NOR2B       A           In      -         5.149       -         
+stepper_control_0.step1_en_RNO                NOR2B       Y           Out     0.514     5.664       -         
 step1_en_RNO                                  Net         -           -       0.322     -           1         
 stepper_control_0.step1_en                    DFN1        D           In      -         5.985       -         
 ==============================================================================================================
@@ -688,10 +684,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 Timing exceptions that could not be applied
 None
 
-Finished final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 112MB peak: 113MB)
+Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 --------------------------------------------------------------------------------
 Target Part: A2F200M3F_FBGA484_STD
@@ -702,13 +698,12 @@ Report for cell WhiteboarPlotter.verilog
            MSS_APB     1      0.0        0.0
            MSS_CCC     1      0.0        0.0
                MX2     4      1.0        4.0
-              NOR2     4      1.0        4.0
-             NOR2A     4      1.0        4.0
+              NOR2     2      1.0        2.0
+             NOR2A     2      1.0        2.0
              NOR2B    23      1.0       23.0
               NOR3     2      1.0        2.0
              NOR3C     1      1.0        1.0
-               OA1    12      1.0       12.0
-              OA1A     2      1.0        2.0
+               OA1     6      1.0        6.0
               OA1B     2      1.0        2.0
                OR2     4      1.0        4.0
               OR2B     2      1.0        2.0
@@ -717,9 +712,9 @@ Report for cell WhiteboarPlotter.verilog
                XA1    14      1.0       14.0
 
 
-              DFN1    24      1.0       24.0
+              DFN1    22      1.0       22.0
                    -----          ----------
-             TOTAL   109                98.0
+             TOTAL    95                84.0
 
 
   IO Cell usage:
@@ -731,7 +726,7 @@ Report for cell WhiteboarPlotter.verilog
              TOTAL     7
 
 
-Core Cells         : 98 of 4608 (2%)
+Core Cells         : 84 of 4608 (2%)
 IO Cells           : 7
 
   RAM/ROM Usage Summary
@@ -739,9 +734,9 @@ Block Rams : 0 of 8 (0%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 113MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 112MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Wed Nov 20 12:12:08 2019
+Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+# Wed Nov 20 15:59:57 2019
 
 ###########################################################]
