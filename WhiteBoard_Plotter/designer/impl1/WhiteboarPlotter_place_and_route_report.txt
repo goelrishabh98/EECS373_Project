@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Thu Nov 14 18:10:43 2019 ***************************************************************************
+                          Wed Nov 20 16:00:33 2019 ***************************************************************************
 
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
 File Name: N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter.adb
 Design Name: WhiteboarPlotter  Design State: layout
-Last Saved: Thu Nov 14 18:09:51 2019
+Last Saved: Wed Nov 20 16:00:18 2019
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Thu Nov 14 18:07:47 2019:
+Source File(s) Imported on Wed Nov 20 16:00:10 2019:
         N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter.edn
         N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.pdc
 
@@ -369,8 +369,6 @@ Warning: CMP201: Net WhiteBoard_Plotter_0/MSSPADDR[16] drives no load.
 Warning: CMP201: Net WhiteBoard_Plotter_0/MSSPADDR[17] drives no load.
 Warning: CMP201: Net WhiteBoard_Plotter_0/MSSPADDR[18] drives no load.
 Warning: CMP201: Net WhiteBoard_Plotter_0/MSSPADDR[19] drives no load.
-Warning: CMP201: Net WhiteBoard_Plotter_0/MSSPWDATA[2] drives no load.
-Warning: CMP201: Net WhiteBoard_Plotter_0/MSSPWDATA[3] drives no load.
 Warning: CMP201: Net WhiteBoard_Plotter_0/MSSPWDATA[4] drives no load.
 Warning: CMP201: Net WhiteBoard_Plotter_0/MSSPWDATA[5] drives no load.
 Warning: CMP201: Net WhiteBoard_Plotter_0/MSSPWDATA[6] drives no load.
@@ -417,7 +415,7 @@ Optimized macros:
 
     Total macros optimized  0
 
-There were 0 error(s) and 325 warning(s) in this design.
+There were 0 error(s) and 323 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -437,7 +435,7 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:     88  Total:   4608   (1.91%)
+    Fabric                     Used:     84  Total:   4608   (1.82%)
     Fabric IO (W/ clocks)      Used:      4  Total:     94   (4.26%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
@@ -466,7 +464,7 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 66           | 66
+    COMB    | 62           | 62
     SEQ     | 22           | 22
 
 I/O Function:
@@ -489,9 +487,9 @@ I/O Technology:
 
 I/O Placement:
 
-    Locked  :   0
+    Locked  :   4 ( 100.00% )
     Placed  :   0
-    UnPlaced:   4 ( 100.00% )
+    UnPlaced:   0
 
 Net information report:
 =======================
@@ -506,48 +504,48 @@ The following nets have been assigned to a chip global resource:
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    8       INT_NET       Net   : WhiteBoard_Plotter_0_M2F_RESET_N
-                          Driver: WhiteBoard_Plotter_0/MSS_ADLIB_INST
-    8       INT_NET       Net   : stepper_control_0/count113
-                          Driver: stepper_control_0/count_bool1_RNIBUN53
-    8       INT_NET       Net   : stepper_control_0/count211
+    9       INT_NET       Net   : stepper_control_0/count211
                           Driver: stepper_control_0/count211
-    5       INT_NET       Net   : stepper_control_0/count1[3]
-                          Driver: stepper_control_0/count1[3]
-    5       INT_NET       Net   : stepper_control_0/count2[3]
-                          Driver: stepper_control_0/count2[3]
+    9       INT_NET       Net   : stepper_control_0/count113
+                          Driver: stepper_control_0/step1_en_RNISNHD2
+    6       INT_NET       Net   : WhiteBoard_Plotter_0_M2F_RESET_N
+                          Driver: WhiteBoard_Plotter_0/MSS_ADLIB_INST
+    6       INT_NET       Net   : stepper_control_0/stepper_write
+                          Driver: stepper_control_0/stepper_write
     4       INT_NET       Net   : stepper_control_0/count1[6]
                           Driver: stepper_control_0/count1[6]
     4       INT_NET       Net   : stepper_control_0/count2[6]
                           Driver: stepper_control_0/count2[6]
-    4       INT_NET       Net   : stepper_control_0/count1[5]
-                          Driver: stepper_control_0/count1[5]
     4       INT_NET       Net   : stepper_control_0/count1[4]
                           Driver: stepper_control_0/count1[4]
+    4       INT_NET       Net   : stepper_control_0/count1[5]
+                          Driver: stepper_control_0/count1[5]
+    4       INT_NET       Net   : stepper_control_0/count2[4]
+                          Driver: stepper_control_0/count2[4]
     4       INT_NET       Net   : stepper_control_0/count2[5]
                           Driver: stepper_control_0/count2[5]
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    8       INT_NET       Net   : WhiteBoard_Plotter_0_M2F_RESET_N
-                          Driver: WhiteBoard_Plotter_0/MSS_ADLIB_INST
-    8       INT_NET       Net   : stepper_control_0/count113
-                          Driver: stepper_control_0/count_bool1_RNIBUN53
-    8       INT_NET       Net   : stepper_control_0/count211
+    9       INT_NET       Net   : stepper_control_0/count211
                           Driver: stepper_control_0/count211
-    5       INT_NET       Net   : stepper_control_0/count1[3]
-                          Driver: stepper_control_0/count1[3]
-    5       INT_NET       Net   : stepper_control_0/count2[3]
-                          Driver: stepper_control_0/count2[3]
+    9       INT_NET       Net   : stepper_control_0/count113
+                          Driver: stepper_control_0/step1_en_RNISNHD2
+    6       INT_NET       Net   : WhiteBoard_Plotter_0_M2F_RESET_N
+                          Driver: WhiteBoard_Plotter_0/MSS_ADLIB_INST
+    6       INT_NET       Net   : stepper_control_0/stepper_write
+                          Driver: stepper_control_0/stepper_write
     4       INT_NET       Net   : stepper_control_0/count1[6]
                           Driver: stepper_control_0/count1[6]
     4       INT_NET       Net   : stepper_control_0/count2[6]
                           Driver: stepper_control_0/count2[6]
-    4       INT_NET       Net   : stepper_control_0/count1[5]
-                          Driver: stepper_control_0/count1[5]
     4       INT_NET       Net   : stepper_control_0/count1[4]
                           Driver: stepper_control_0/count1[4]
+    4       INT_NET       Net   : stepper_control_0/count1[5]
+                          Driver: stepper_control_0/count1[5]
+    4       INT_NET       Net   : stepper_control_0/count2[4]
+                          Driver: stepper_control_0/count2[4]
     4       INT_NET       Net   : stepper_control_0/count2[5]
                           Driver: stepper_control_0/count2[5]
 
@@ -575,16 +573,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Thu Nov 14 18:10:33 2019
+Timing-driven Placer Started: Wed Nov 20 16:00:24 2019
 
-Placer Finished: Thu Nov 14 18:10:34 2019
+Placer Finished: Wed Nov 20 16:00:25 2019
 Total Placer CPU Time:     00:00:01
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: WhiteboarPlotter                Started: Thu Nov 14 18:10:37 2019
+Design: WhiteboarPlotter                Started: Wed Nov 20 16:00:27 2019
 
  
 Iterative improvement...
@@ -592,9 +590,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: WhiteboarPlotter                
-Finished: Thu Nov 14 18:10:41 2019
-Total CPU Time:     00:00:03            Total Elapsed Time: 00:00:04
-Total Memory Usage: 165.8 Mbytes
+Finished: Wed Nov 20 16:00:31 2019
+Total CPU Time:     00:00:02            Total Elapsed Time: 00:00:04
+Total Memory Usage: 166.2 Mbytes
                         o - o - o - o - o - o
 
 

@@ -1,0 +1,74 @@
+
+Starting:    C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\mbin\synplify.exe
+Install:     C:\Microsemi\Libero_SoC_v11.9\SynplifyPro
+Hostname:    EECS373-11
+Date:        Mon Nov 18 17:25:45 2019
+Version:     L-2016.09M-SP1-5
+
+Arguments:   -product synplify_pro WhiteboarPlotter_syn.tcl
+ProductType: synplify_pro
+
+License checkout: synplifypro_actel
+License: synplifypro_actel node-locked 
+Licensed Vendor: actel
+License Option: actel_oem
+
+
+
+auto_infer_blackbox is not supported in current product.
+TCL script complete: "WhiteboarPlotter_syn.tcl"
+New HDL Analyst: enabled
+log file: "N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter.srr"
+Running: synthesis in foreground
+
+Running WhiteboarPlotter_syn|synthesis
+
+Running: compile (Compile) on WhiteboarPlotter_syn|synthesis
+# Mon Nov 18 17:25:59 2019
+
+Running: compile_flow (Compile Process) on WhiteboarPlotter_syn|synthesis
+# Mon Nov 18 17:25:59 2019
+
+Running: compiler (Compile Input) on WhiteboarPlotter_syn|synthesis
+# Mon Nov 18 17:25:59 2019
+compiler exited with errors
+Job failed on: WhiteboarPlotter_syn|synthesis
+
+Job: "compiler" terminated with error status: 2
+See log file: "N:\EECS373_Project\WhiteBoard_Plotter\synthesis\synlog\WhiteboarPlotter_compiler.srr"
+# Mon Nov 18 17:25:59 2019
+
+Return Code: 2
+Run Time:00h:00m:00s
+Complete: Compile Process on WhiteboarPlotter_syn|synthesis
+Complete: Compile on WhiteboarPlotter_syn|synthesis
+Complete: Logic Synthesis on WhiteboarPlotter_syn|synthesis
+log file: "N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter.srr"
+Running: synthesis in foreground
+
+Running WhiteboarPlotter_syn|synthesis
+
+Running: compile (Compile) on WhiteboarPlotter_syn|synthesis
+# Mon Nov 18 17:26:12 2019
+
+Running: compile_flow (Compile Process) on WhiteboarPlotter_syn|synthesis
+# Mon Nov 18 17:26:12 2019
+
+Running: compiler (Compile Input) on WhiteboarPlotter_syn|synthesis
+# Mon Nov 18 17:26:12 2019
+compiler exited with errors
+Job failed on: WhiteboarPlotter_syn|synthesis
+
+Job: "compiler" terminated with error status: 2
+See log file: "N:\EECS373_Project\WhiteBoard_Plotter\synthesis\synlog\WhiteboarPlotter_compiler.srr"
+# Mon Nov 18 17:26:13 2019
+
+Return Code: 2
+Run Time:00h:00m:01s
+Complete: Compile Process on WhiteboarPlotter_syn|synthesis
+Complete: Compile on WhiteboarPlotter_syn|synthesis
+Complete: Logic Synthesis on WhiteboarPlotter_syn|synthesis
+Opening object source file n:\eecs373_project\whiteboard_plotter\hdl\stepper_control.v
+Opening object source file n:\eecs373_project\whiteboard_plotter\hdl\stepper_control.v
+exit status=2
+License checkin: synplifypro_actel

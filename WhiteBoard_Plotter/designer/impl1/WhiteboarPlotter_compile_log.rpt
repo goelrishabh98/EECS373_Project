@@ -344,8 +344,6 @@ Warning: CMP201: Net WhiteBoard_Plotter_0/MSSPADDR[16] drives no load.
 Warning: CMP201: Net WhiteBoard_Plotter_0/MSSPADDR[17] drives no load.
 Warning: CMP201: Net WhiteBoard_Plotter_0/MSSPADDR[18] drives no load.
 Warning: CMP201: Net WhiteBoard_Plotter_0/MSSPADDR[19] drives no load.
-Warning: CMP201: Net WhiteBoard_Plotter_0/MSSPWDATA[2] drives no load.
-Warning: CMP201: Net WhiteBoard_Plotter_0/MSSPWDATA[3] drives no load.
 Warning: CMP201: Net WhiteBoard_Plotter_0/MSSPWDATA[4] drives no load.
 Warning: CMP201: Net WhiteBoard_Plotter_0/MSSPWDATA[5] drives no load.
 Warning: CMP201: Net WhiteBoard_Plotter_0/MSSPWDATA[6] drives no load.
@@ -392,7 +390,7 @@ Optimized macros:
 
     Total macros optimized  0
 
-There were 0 error(s) and 325 warning(s) in this design.
+There were 0 error(s) and 323 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -412,7 +410,7 @@ Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
-    Fabric                     Used:     88  Total:   4608   (1.91%)
+    Fabric                     Used:     84  Total:   4608   (1.82%)
     Fabric IO (W/ clocks)      Used:      4  Total:     94   (4.26%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
@@ -441,7 +439,7 @@ Core Information:
 
     Type    | Instances    | Core tiles
     --------|--------------|-----------
-    COMB    | 66           | 66
+    COMB    | 62           | 62
     SEQ     | 22           | 22
 
 I/O Function:
@@ -464,9 +462,9 @@ I/O Technology:
 
 I/O Placement:
 
-    Locked  :   0
+    Locked  :   4 ( 100.00% )
     Placed  :   0
-    UnPlaced:   4 ( 100.00% )
+    UnPlaced:   0
 
 Net information report:
 =======================
@@ -481,63 +479,63 @@ The following nets have been assigned to a chip global resource:
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
-    8       INT_NET       Net   : WhiteBoard_Plotter_0_M2F_RESET_N
-                          Driver: WhiteBoard_Plotter_0/MSS_ADLIB_INST
-    8       INT_NET       Net   : stepper_control_0/count113
-                          Driver: stepper_control_0/count_bool1_RNIBUN53
-    8       INT_NET       Net   : stepper_control_0/count211
+    9       INT_NET       Net   : stepper_control_0/count211
                           Driver: stepper_control_0/count211
-    5       INT_NET       Net   : stepper_control_0/count1[3]
-                          Driver: stepper_control_0/count1[3]
-    5       INT_NET       Net   : stepper_control_0/count2[3]
-                          Driver: stepper_control_0/count2[3]
+    9       INT_NET       Net   : stepper_control_0/count113
+                          Driver: stepper_control_0/step1_en_RNISNHD2
+    6       INT_NET       Net   : WhiteBoard_Plotter_0_M2F_RESET_N
+                          Driver: WhiteBoard_Plotter_0/MSS_ADLIB_INST
+    6       INT_NET       Net   : stepper_control_0/stepper_write
+                          Driver: stepper_control_0/stepper_write
     4       INT_NET       Net   : stepper_control_0/count1[6]
                           Driver: stepper_control_0/count1[6]
     4       INT_NET       Net   : stepper_control_0/count2[6]
                           Driver: stepper_control_0/count2[6]
-    4       INT_NET       Net   : stepper_control_0/count1[5]
-                          Driver: stepper_control_0/count1[5]
     4       INT_NET       Net   : stepper_control_0/count1[4]
                           Driver: stepper_control_0/count1[4]
+    4       INT_NET       Net   : stepper_control_0/count1[5]
+                          Driver: stepper_control_0/count1[5]
+    4       INT_NET       Net   : stepper_control_0/count2[4]
+                          Driver: stepper_control_0/count2[4]
     4       INT_NET       Net   : stepper_control_0/count2[5]
                           Driver: stepper_control_0/count2[5]
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
-    8       INT_NET       Net   : WhiteBoard_Plotter_0_M2F_RESET_N
-                          Driver: WhiteBoard_Plotter_0/MSS_ADLIB_INST
-    8       INT_NET       Net   : stepper_control_0/count113
-                          Driver: stepper_control_0/count_bool1_RNIBUN53
-    8       INT_NET       Net   : stepper_control_0/count211
+    9       INT_NET       Net   : stepper_control_0/count211
                           Driver: stepper_control_0/count211
-    5       INT_NET       Net   : stepper_control_0/count1[3]
-                          Driver: stepper_control_0/count1[3]
-    5       INT_NET       Net   : stepper_control_0/count2[3]
-                          Driver: stepper_control_0/count2[3]
+    9       INT_NET       Net   : stepper_control_0/count113
+                          Driver: stepper_control_0/step1_en_RNISNHD2
+    6       INT_NET       Net   : WhiteBoard_Plotter_0_M2F_RESET_N
+                          Driver: WhiteBoard_Plotter_0/MSS_ADLIB_INST
+    6       INT_NET       Net   : stepper_control_0/stepper_write
+                          Driver: stepper_control_0/stepper_write
     4       INT_NET       Net   : stepper_control_0/count1[6]
                           Driver: stepper_control_0/count1[6]
     4       INT_NET       Net   : stepper_control_0/count2[6]
                           Driver: stepper_control_0/count2[6]
-    4       INT_NET       Net   : stepper_control_0/count1[5]
-                          Driver: stepper_control_0/count1[5]
     4       INT_NET       Net   : stepper_control_0/count1[4]
                           Driver: stepper_control_0/count1[4]
+    4       INT_NET       Net   : stepper_control_0/count1[5]
+                          Driver: stepper_control_0/count1[5]
+    4       INT_NET       Net   : stepper_control_0/count2[4]
+                          Driver: stepper_control_0/count2[4]
     4       INT_NET       Net   : stepper_control_0/count2[5]
                           Driver: stepper_control_0/count2[5]
 
-The Compile command succeeded ( 00:00:02 )
+The Compile command succeeded ( 00:00:01 )
 Wrote status report to file: WhiteboarPlotter_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
 Wrote pin report to file: WhiteboarPlotter_report_pin_byname.txt
 
-The Report command succeeded ( 00:00:00 )
+The Report command succeeded ( 00:00:03 )
 Wrote pin report to file: WhiteboarPlotter_report_pin_bynumber.txt
 
-The Report command succeeded ( 00:00:01 )
+The Report command succeeded ( 00:00:00 )
 Design saved to file N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter.adb.
 
-The Execute Script command succeeded ( 00:00:08 )
+The Execute Script command succeeded ( 00:00:09 )
 Design closed.
 

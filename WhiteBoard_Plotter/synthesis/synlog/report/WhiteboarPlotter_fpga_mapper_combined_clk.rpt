@@ -10,11 +10,11 @@ Clock optimization not enabled
 1 gated/generated clock tree(s) driving 22 clock pin(s) of sequential element(s)
 0 instances converted, 22 sequential instances remain driven by gated/generated clocks
 
-================================================================================================================ Gated/Generated Clocks =================================================================================================================
-Clock Tree ID     Driving Element                             Drive Element Type     Fanout     Sample Instance            Explanation                                                                                                                   
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       WhiteBoard_Plotter_0.MSS_CCC_0.I_MSSCCC     MSS_CCC                22         stepper_control_0.dir2     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
-=========================================================================================================================================================================================================================================================
+================================================================================================================== Gated/Generated Clocks ===================================================================================================================
+Clock Tree ID     Driving Element                             Drive Element Type     Fanout     Sample Instance                Explanation                                                                                                                   
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       WhiteBoard_Plotter_0.MSS_CCC_0.I_MSSCCC     MSS_CCC                22         stepper_control_0.step2_en     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
+=============================================================================================================================================================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]

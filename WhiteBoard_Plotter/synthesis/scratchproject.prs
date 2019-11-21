@@ -7,10 +7,10 @@ add_file -verilog "N:/EECS373_Project/WhiteBoard_Plotter/component/Actel/SmartFu
 add_file -verilog "N:/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteBoard_Plotter/mss_tshell.v"
 add_file -verilog "N:/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteBoard_Plotter/MSS_CCC_0/WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v"
 add_file -verilog "N:/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteBoard_Plotter/WhiteBoard_Plotter.v"
-add_file -verilog "N:/EECS373_Project/WhiteBoard_Plotter/hdl/Stepper_control.v"
 add_file -verilog -lib COREAPB3_LIB "N:/EECS373_Project/WhiteBoard_Plotter/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v"
 add_file -verilog -lib COREAPB3_LIB "N:/EECS373_Project/WhiteBoard_Plotter/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v"
 add_file -verilog -lib COREAPB3_LIB "N:/EECS373_Project/WhiteBoard_Plotter/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v"
+add_file -verilog "N:/EECS373_Project/WhiteBoard_Plotter/hdl/Stepper_control.v"
 add_file -verilog "N:/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteboarPlotter/WhiteboarPlotter.v"
 add_file -constraint "N:/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteBoard_Plotter/mss_tshell_syn.sdc"
 

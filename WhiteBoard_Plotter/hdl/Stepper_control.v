@@ -22,9 +22,10 @@ output reg dir2
 assign PSLVERR = 0;
 assign PREADY = 1;
 reg [7:0] count1, count2;
-wire stepper_write = PSEL & PWRITE;   //enable LEDs write at offset #4
-reg count_bool1, count_bool2;
-//////////////////////////////////
+wire stepper_write = PSEL & PWRITE;   //enable LEDs write at 
+reg step1_en, step2_en;
+
+//////////////////////////////////                         
 // end of APB3 interface header //
 //////////////////////////////////
 
@@ -42,23 +43,22 @@ end
 
 always @(posedge PCLK)
 begin
+    if(!PRESERN)
+        step1_en <= 0;
+    else if(stepper_write)
+        step1_en <= PWDATA[2];
+    else if(count1 == 200)
+        step1_en <= 0;
+end
+
+always @(posedge PCLK)
+begin
    if(!PRESERN)
         step1 <= 0;
-   else if(count_bool1 & count1 > 50 & count1 < 200)
+   else if(step1_en & count1 > 50 & count1 < 200)
         step1 <= 1;
    else
         step1 <= 0;
-end
-
-always @(posedge PCLK) 		// register control for APB3 writes
-begin
-	if(!PRESERN)
-		count_bool1 <= 0;  // LED should start turned "off"
-												// recall it is active low. 
-	else if(stepper_write)
-		count_bool1 <= 1;
-    else if(count1 > 200)
-        count_bool1 <= 0;
 end
 
 
@@ -66,8 +66,8 @@ always @(posedge PCLK)
 begin
    if(!PRESERN)
         count1 <= 0;
-    else if(count_bool1 & count1 < 201)
-        count1 <= count1 +1;
+    else if(step1_en & count1 < 200)
+        count1 <= count1 + 1;
     else
         count1 <= 0;
 end
@@ -83,23 +83,22 @@ end
 
 always @(posedge PCLK)
 begin
+    if(!PRESERN)
+        step2_en <= 0;
+    else if(stepper_write)
+        step2_en <= PWDATA[3];
+    else if(count2 == 200)
+        step2_en <= 0;
+end
+
+always @(posedge PCLK)
+begin
    if(!PRESERN)
         step2 <= 0;
-   else if(count_bool2 & count2 > 50 & count2 < 200)
+   else if(step2_en & count2 > 50 & count2 < 200)
         step2 <= 1;
    else
         step2 <= 0;
-end
-
-always @(posedge PCLK) 		// register control for APB3 writes
-begin
-	if(!PRESERN)
-		count_bool2 <= 0;  // LED should start turned "off"
-												// recall it is active low. 
-	else if(stepper_write)
-		count_bool2 <= 1;
-    else if(count2 > 200)
-        count_bool2 <= 0;
 end
 
 
@@ -107,7 +106,7 @@ always @(posedge PCLK)
 begin
    if(!PRESERN)
         count2 <= 0;
-    else if(count_bool2 & count2 < 201)
+    else if(step2_en & count2 < 200)
         count2 <= count2 +1;
     else
         count2 <= 0;
