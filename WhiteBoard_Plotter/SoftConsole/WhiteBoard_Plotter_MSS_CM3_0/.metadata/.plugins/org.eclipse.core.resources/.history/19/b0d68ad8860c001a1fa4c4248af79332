@@ -29,6 +29,10 @@ double getRateChange(double startX, double startY, double endX, double endY){
 	return rateChange2/rateChange1;
 }
 
+void updateLocation(double radLeftOld, double radRightOld){
+	//TODO
+}
+
 double makeLine(int dirLeft, int dirRight, double endX, double endY){
 	while(1){
 		double ratio = getRateChange(xPos, yPos, endX, endY);
