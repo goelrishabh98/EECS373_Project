@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Tue Nov 19 13:45:35 2019
+// Created by SmartDesign Thu Nov 21 14:11:59 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -11,6 +11,12 @@ module WhiteboarPlotter(
     MSS_RESET_N,
     UART_0_RXD,
     // Outputs
+    GPIO_0_OUT,
+    GPIO_1_OUT,
+    GPIO_2_OUT,
+    GPIO_3_OUT,
+    GPIO_4_OUT,
+    GPIO_5_OUT,
     UART_0_TXD,
     dir1,
     dir2,
@@ -26,6 +32,12 @@ input  UART_0_RXD;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
+output GPIO_0_OUT;
+output GPIO_1_OUT;
+output GPIO_2_OUT;
+output GPIO_3_OUT;
+output GPIO_4_OUT;
+output GPIO_5_OUT;
 output UART_0_TXD;
 output dir1;
 output dir2;
@@ -44,6 +56,12 @@ wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
 wire          CoreAPB3_0_APBmslave0_PWRITE;
 wire          dir1_net_0;
 wire          dir2_net_0;
+wire          GPIO_0_OUT_net_0;
+wire          GPIO_1_OUT_net_0;
+wire          GPIO_2_OUT_net_0;
+wire          GPIO_3_OUT_net_0;
+wire          GPIO_4_OUT_net_0;
+wire          GPIO_5_OUT_net_0;
 wire          MSS_RESET_N;
 wire          step1_net_0;
 wire          step2_net_0;
@@ -63,6 +81,12 @@ wire          step2_net_1;
 wire          dir1_net_1;
 wire          dir2_net_1;
 wire          step1_net_1;
+wire          GPIO_5_OUT_net_1;
+wire          GPIO_4_OUT_net_1;
+wire          GPIO_3_OUT_net_1;
+wire          GPIO_2_OUT_net_1;
+wire          GPIO_1_OUT_net_1;
+wire          GPIO_0_OUT_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -127,6 +151,18 @@ assign dir2_net_1       = dir2_net_0;
 assign dir2             = dir2_net_1;
 assign step1_net_1      = step1_net_0;
 assign step1            = step1_net_1;
+assign GPIO_5_OUT_net_1 = GPIO_5_OUT_net_0;
+assign GPIO_5_OUT       = GPIO_5_OUT_net_1;
+assign GPIO_4_OUT_net_1 = GPIO_4_OUT_net_0;
+assign GPIO_4_OUT       = GPIO_4_OUT_net_1;
+assign GPIO_3_OUT_net_1 = GPIO_3_OUT_net_0;
+assign GPIO_3_OUT       = GPIO_3_OUT_net_1;
+assign GPIO_2_OUT_net_1 = GPIO_2_OUT_net_0;
+assign GPIO_2_OUT       = GPIO_2_OUT_net_1;
+assign GPIO_1_OUT_net_1 = GPIO_1_OUT_net_0;
+assign GPIO_1_OUT       = GPIO_1_OUT_net_1;
+assign GPIO_0_OUT_net_1 = GPIO_0_OUT_net_0;
+assign GPIO_0_OUT       = GPIO_0_OUT_net_1;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -300,7 +336,13 @@ WhiteBoard_Plotter WhiteBoard_Plotter_0(
         .FAB_CLK     ( WhiteBoard_Plotter_0_FAB_CLK ),
         .M2F_RESET_N ( WhiteBoard_Plotter_0_M2F_RESET_N ),
         .MSSPADDR    ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR ),
-        .MSSPWDATA   ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PWDATA ) 
+        .MSSPWDATA   ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PWDATA ),
+        .GPIO_5_OUT  ( GPIO_5_OUT_net_0 ),
+        .GPIO_4_OUT  ( GPIO_4_OUT_net_0 ),
+        .GPIO_3_OUT  ( GPIO_3_OUT_net_0 ),
+        .GPIO_2_OUT  ( GPIO_2_OUT_net_0 ),
+        .GPIO_1_OUT  ( GPIO_1_OUT_net_0 ),
+        .GPIO_0_OUT  ( GPIO_0_OUT_net_0 ) 
         );
 
 

@@ -1,16 +1,16 @@
 C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe  -mp  4  -prjfile  N:\EECS373_Project\WhiteBoard_Plotter\synthesis\scratchproject.prs  -implementation  synthesis  -prodtype  synplify_pro   -encrypt  -pro  -rundir  N:\EECS373_Project\WhiteBoard_Plotter\synthesis   -part A2F200M3F  -package FBGA484  -grade STD    -globalthreshold 50 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile N:\EECS373_Project\WhiteBoard_Plotter\synthesis\synlog\report\WhiteboarPlotter_premap.xml  -top_level_module  WhiteboarPlotter  -oedif  N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter.edn  -conchk_prepass  N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter_cck.rpt   -freq 100.000   -tcl  N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\mss_tshell_syn.sdc  N:\EECS373_Project\WhiteBoard_Plotter\synthesis\synwork\WhiteboarPlotter_mult.srs  -flow prepass  -gcc_prepass  -osrd  N:\EECS373_Project\WhiteBoard_Plotter\synthesis\synwork\WhiteboarPlotter_prem.srd  -qsap  N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter.sap  -devicelib  C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v  -ologparam  N:\EECS373_Project\WhiteBoard_Plotter\synthesis\syntmp\WhiteboarPlotter.plg  -osyn  N:\EECS373_Project\WhiteBoard_Plotter\synthesis\synwork\WhiteboarPlotter_prem.srd  -prjdir  N:\EECS373_Project\WhiteBoard_Plotter\synthesis\  -prjname  WhiteboarPlotter_syn  -log  N:\EECS373_Project\WhiteBoard_Plotter\synthesis\synlog\WhiteboarPlotter_premap.srr 
 relcom:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe -mp 4 -prjfile ..\scratchproject.prs -implementation synthesis -prodtype synplify_pro -encrypt -pro -rundir ..\..\synthesis -part A2F200M3F -package FBGA484 -grade STD -globalthreshold 50 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile ..\synlog\report\WhiteboarPlotter_premap.xml -top_level_module WhiteboarPlotter -oedif ..\WhiteboarPlotter.edn -conchk_prepass ..\WhiteboarPlotter_cck.rpt -freq 100.000 -tcl ..\..\component\work\WhiteBoard_Plotter\mss_tshell_syn.sdc ..\synwork\WhiteboarPlotter_mult.srs -flow prepass -gcc_prepass -osrd ..\synwork\WhiteboarPlotter_prem.srd -qsap ..\WhiteboarPlotter.sap -devicelib C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v -ologparam WhiteboarPlotter.plg -osyn ..\synwork\WhiteboarPlotter_prem.srd -prjdir ..\ -prjname WhiteboarPlotter_syn -log ..\synlog\WhiteboarPlotter_premap.srr
-rc:1 success:1 runtime:2
-file:..\scratchproject.prs|io:o|time:1574282737|size:2975|exec:0|csum:
-file:..\WhiteboarPlotter.edn|io:o|time:1574282746|size:138816|exec:0|csum:
-file:..\WhiteboarPlotter_cck.rpt|io:o|time:1574283594|size:24602|exec:0|csum:
-file:..\..\component\work\WhiteBoard_Plotter\mss_tshell_syn.sdc|io:i|time:1573766510|size:166|exec:0|csum:6586A5DF3451A74885035063430ECFCC
-file:..\synwork\WhiteboarPlotter_mult.srs|io:i|time:1574283591|size:6727|exec:0|csum:BA0C5867B8B38EE4DAB39AB713BD6345
-file:..\synwork\WhiteboarPlotter_prem.srd|io:o|time:1574283593|size:28778|exec:0|csum:
-file:..\WhiteboarPlotter.sap|io:o|time:1574283594|size:907|exec:0|csum:
+rc:0 success:1 runtime:3
+file:..\scratchproject.prs|io:o|time:1574362136|size:2975|exec:0|csum:
+file:..\WhiteboarPlotter.edn|io:o|time:1574362144|size:143880|exec:0|csum:
+file:..\WhiteboarPlotter_cck.rpt|io:o|time:1574363618|size:23797|exec:0|csum:
+file:..\..\component\work\WhiteBoard_Plotter\mss_tshell_syn.sdc|io:i|time:1574363392|size:208|exec:0|csum:3A1A196096DC233845BE2FF487D3C972
+file:..\synwork\WhiteboarPlotter_mult.srs|io:i|time:1574363615|size:6958|exec:0|csum:C321CEAA03F2599EF9C807AA59286A98
+file:..\synwork\WhiteboarPlotter_prem.srd|io:o|time:1574363617|size:27347|exec:0|csum:
+file:..\WhiteboarPlotter.sap|io:o|time:1574363618|size:842|exec:0|csum:
 file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v|io:i|time:1509027488|size:72817|exec:0|csum:792D908376FAE59463CBCC67F19D1698
-file:WhiteboarPlotter.plg|io:o|time:1574283592|size:0|exec:0|csum:
-file:..\synwork\WhiteboarPlotter_prem.srd|io:o|time:1574283593|size:28778|exec:0|csum:
-file:..\synlog\WhiteboarPlotter_premap.srr|io:o|time:1574283594|size:5170|exec:0|csum:
+file:WhiteboarPlotter.plg|io:o|time:1574363616|size:0|exec:0|csum:
+file:..\synwork\WhiteboarPlotter_prem.srd|io:o|time:1574363617|size:27347|exec:0|csum:
+file:..\synlog\WhiteboarPlotter_premap.srr|io:o|time:1574363618|size:4141|exec:0|csum:
 file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\m_proasic.exe|io:i|time:1509373872|size:11119104|exec:1|csum:6BD6E9876645BB1B346C655471A0D71C
 file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe|io:i|time:1509375286|size:14301696|exec:1|csum:CA7B630F1194A591FA1E520688EE75E2

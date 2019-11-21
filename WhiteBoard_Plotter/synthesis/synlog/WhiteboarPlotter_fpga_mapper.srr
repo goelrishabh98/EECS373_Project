@@ -1,4 +1,4 @@
-# Wed Nov 20 15:59:55 2019
+# Thu Nov 21 14:13:38 2019
 
 Synopsys Microsemi Technology Mapper, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -16,7 +16,7 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
 
 @N: MO111 :"n:\eecs373_project\whiteboard_plotter\component\work\whiteboard_plotter\mss_ccc_0\whiteboard_plotter_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
 @N: MO111 :"n:\eecs373_project\whiteboard_plotter\component\work\whiteboard_plotter\mss_ccc_0\whiteboard_plotter_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
@@ -26,7 +26,7 @@ Available hyper_sources - for debug and ip models
 	None Found
 
 
-Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
 
 @N: MO231 :"n:\eecs373_project\whiteboard_plotter\hdl\stepper_control.v":105:0:105:5|Found counter in view:work.stepper_control(verilog) instance count2[7:0] 
 @N: MO231 :"n:\eecs373_project\whiteboard_plotter\hdl\stepper_control.v":65:0:65:5|Found counter in view:work.stepper_control(verilog) instance count1[7:0] 
@@ -79,15 +79,15 @@ Finished restoring hierarchy (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:
 #### START OF CLOCK OPTIMIZATION REPORT #####[
 
 Clock optimization not enabled
-0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
-1 gated/generated clock tree(s) driving 22 clock pin(s) of sequential element(s)
-0 instances converted, 22 sequential instances remain driven by gated/generated clocks
+1 non-gated/non-generated clock tree(s) driving 22 clock pin(s) of sequential element(s)
+0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
-================================================================================================================== Gated/Generated Clocks ===================================================================================================================
-Clock Tree ID     Driving Element                             Drive Element Type     Fanout     Sample Instance                Explanation                                                                                                                   
--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-@K:CKID0001       WhiteBoard_Plotter_0.MSS_CCC_0.I_MSSCCC     MSS_CCC                22         stepper_control_0.step2_en     Gating structure creates improper gating logic. See the Gated Clocks description in the user guide for conversion requirements
-=============================================================================================================================================================================================================================================================
+========================================= Non-Gated/Non-Generated Clocks =========================================
+Clock Tree ID     Driving Element          Drive Element Type                Fanout     Sample Instance           
+------------------------------------------------------------------------------------------------------------------
+@K:CKID0001       WhiteBoard_Plotter_0     clock definition on hierarchy     22         stepper_control_0.step2_en
+==================================================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######]
@@ -107,11 +107,12 @@ Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:01s
 
 Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
-@W: MT420 |Found inferred clock WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock with period 10.00ns. Please declare a user-defined clock on object "n:WhiteBoard_Plotter_0.MSS_CCC_0.FAB_CLK"
+@N: MT615 |Found clock FCLK with period 10.00ns 
+@N: MT615 |Found clock FAB_CLK with period 10.00ns 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Nov 20 15:59:56 2019
+# Timing Report written on Thu Nov 21 14:13:40 2019
 #
 
 
@@ -136,14 +137,14 @@ Performance Summary
 
 Worst slack in design: 1.019
 
-                                                                    Requested     Estimated     Requested     Estimated               Clock        Clock              
-Starting Clock                                                      Frequency     Frequency     Period        Period        Slack     Type         Group              
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     100.0 MHz     111.3 MHz     10.000        8.981         1.019     inferred     Inferred_clkgroup_0
-System                                                              100.0 MHz     181.5 MHz     10.000        5.509         4.491     system       system_clkgroup    
-======================================================================================================================================================================
-@W: MT548 :"n:/eecs373_project/whiteboard_plotter/component/work/whiteboard_plotter/mss_tshell_syn.sdc":1:0:1:0|Source for clock FAB_CLK not found in netlist. Run the constraint checker to verify if constraints are applied correctly.
-@W: MT548 :"n:/eecs373_project/whiteboard_plotter/component/work/whiteboard_plotter/mss_tshell_syn.sdc":2:0:2:0|Source for clock FCLK not found in netlist. Run the constraint checker to verify if constraints are applied correctly.
+                   Requested     Estimated      Requested     Estimated               Clock        Clock          
+Starting Clock     Frequency     Frequency      Period        Period        Slack     Type         Group          
+------------------------------------------------------------------------------------------------------------------
+FAB_CLK            100.0 MHz     111.3 MHz      10.000        8.981         1.019     declared     clk_group_0    
+FCLK               100.0 MHz     NA             10.000        NA            NA        declared     clk_group_0    
+System             100.0 MHz     3110.4 MHz     10.000        0.322         9.678     system       system_clkgroup
+==================================================================================================================
+@N: MT582 |Estimated period and frequency not reported for given clock unless the clock has at least one timing path which is not a false or a max delay path and that does not have excessive slack
 
 
 
@@ -152,14 +153,14 @@ System                                                              100.0 MHz   
 Clock Relationships
 *******************
 
-Clocks                                                                                                                            |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-Starting                                                         Ending                                                           |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-System                                                           System                                                           |  10.000      4.491  |  No paths    -      |  No paths    -      |  No paths    -    
-System                                                           WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  |  10.000      3.441  |  No paths    -      |  No paths    -      |  No paths    -    
-WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock  |  10.000      1.019  |  No paths    -      |  No paths    -      |  No paths    -    
-========================================================================================================================================================================================================================
+Clocks             |    rise  to  rise   |    fall  to  fall   |    rise  to  fall   |    fall  to  rise 
+---------------------------------------------------------------------------------------------------------
+Starting  Ending   |  constraint  slack  |  constraint  slack  |  constraint  slack  |  constraint  slack
+---------------------------------------------------------------------------------------------------------
+System    System   |  10.000      9.678  |  No paths    -      |  No paths    -      |  No paths    -    
+System    FAB_CLK  |  10.000      3.441  |  No paths    -      |  No paths    -      |  No paths    -    
+FAB_CLK   FAB_CLK  |  10.000      1.019  |  No paths    -      |  No paths    -      |  No paths    -    
+=========================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -173,7 +174,7 @@ No IO constraint found
 
 
 ====================================
-Detailed Report for Clock: WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock
+Detailed Report for Clock: FAB_CLK
 ====================================
 
 
@@ -181,41 +182,41 @@ Detailed Report for Clock: WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_infe
 Starting Points with Worst Slack
 ********************************
 
-                                Starting                                                                                           Arrival          
-Instance                        Reference                                                           Type     Pin     Net           Time        Slack
-                                Clock                                                                                                               
-----------------------------------------------------------------------------------------------------------------------------------------------------
-stepper_control_0.count1[0]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       un4lto0       0.737       1.019
-stepper_control_0.count2[0]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       un5lto0       0.737       1.019
-stepper_control_0.count1[1]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       un4lto1       0.737       1.552
-stepper_control_0.count2[1]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       un5lto1       0.737       1.552
-stepper_control_0.count1[2]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count1[2]     0.737       2.565
-stepper_control_0.count2[2]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count2[2]     0.737       2.565
-stepper_control_0.count1[3]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count1[3]     0.737       2.765
-stepper_control_0.count2[3]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count2[3]     0.737       2.765
-stepper_control_0.count1[4]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count1[4]     0.737       2.801
-stepper_control_0.count2[4]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     Q       count2[4]     0.737       2.801
-====================================================================================================================================================
+                                Starting                                     Arrival          
+Instance                        Reference     Type     Pin     Net           Time        Slack
+                                Clock                                                         
+----------------------------------------------------------------------------------------------
+stepper_control_0.count1[0]     FAB_CLK       DFN1     Q       un4lto0       0.737       1.019
+stepper_control_0.count2[0]     FAB_CLK       DFN1     Q       un5lto0       0.737       1.019
+stepper_control_0.count1[1]     FAB_CLK       DFN1     Q       un4lto1       0.737       1.552
+stepper_control_0.count2[1]     FAB_CLK       DFN1     Q       un5lto1       0.737       1.552
+stepper_control_0.count1[2]     FAB_CLK       DFN1     Q       count1[2]     0.737       2.565
+stepper_control_0.count2[2]     FAB_CLK       DFN1     Q       count2[2]     0.737       2.565
+stepper_control_0.count1[3]     FAB_CLK       DFN1     Q       count1[3]     0.737       2.765
+stepper_control_0.count2[3]     FAB_CLK       DFN1     Q       count2[3]     0.737       2.765
+stepper_control_0.count1[4]     FAB_CLK       DFN1     Q       count1[4]     0.737       2.801
+stepper_control_0.count2[4]     FAB_CLK       DFN1     Q       count2[4]     0.737       2.801
+==============================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                Starting                                                                                           Required          
-Instance                        Reference                                                           Type     Pin     Net           Time         Slack
-                                Clock                                                                                                                
------------------------------------------------------------------------------------------------------------------------------------------------------
-stepper_control_0.count1[7]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count1_n7     9.461        1.019
-stepper_control_0.count2[7]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count2_n7     9.461        1.019
-stepper_control_0.count1[6]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count1_n6     9.461        1.968
-stepper_control_0.count2[6]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count2_n6     9.461        1.968
-stepper_control_0.step1         WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       step17        9.461        2.765
-stepper_control_0.step2         WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       step28        9.461        2.765
-stepper_control_0.count1[1]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count1_n1     9.461        2.786
-stepper_control_0.count1[2]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count1_n2     9.461        2.786
-stepper_control_0.count1[3]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count1_n3     9.461        2.786
-stepper_control_0.count1[4]     WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock     DFN1     D       count1_n4     9.461        2.786
-=====================================================================================================================================================
+                                Starting                                     Required          
+Instance                        Reference     Type     Pin     Net           Time         Slack
+                                Clock                                                          
+-----------------------------------------------------------------------------------------------
+stepper_control_0.count1[7]     FAB_CLK       DFN1     D       count1_n7     9.461        1.019
+stepper_control_0.count2[7]     FAB_CLK       DFN1     D       count2_n7     9.461        1.019
+stepper_control_0.count1[6]     FAB_CLK       DFN1     D       count1_n6     9.461        1.968
+stepper_control_0.count2[6]     FAB_CLK       DFN1     D       count2_n6     9.461        1.968
+stepper_control_0.step1         FAB_CLK       DFN1     D       step17        9.461        2.765
+stepper_control_0.step2         FAB_CLK       DFN1     D       step28        9.461        2.765
+stepper_control_0.count1[1]     FAB_CLK       DFN1     D       count1_n1     9.461        2.786
+stepper_control_0.count1[2]     FAB_CLK       DFN1     D       count1_n2     9.461        2.786
+stepper_control_0.count1[3]     FAB_CLK       DFN1     D       count1_n3     9.461        2.786
+stepper_control_0.count1[4]     FAB_CLK       DFN1     D       count1_n4     9.461        2.786
+===============================================================================================
 
 
 
@@ -236,8 +237,8 @@ Path information for path number 1:
     Number of logic level(s):                7
     Starting point:                          stepper_control_0.count1[0] / Q
     Ending point:                            stepper_control_0.count1[7] / D
-    The start point is clocked by            WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
-    The end   point is clocked by            WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
+    The start point is clocked by            FAB_CLK [rising] on pin CLK
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
 Instance / Net                                     Pin      Pin               Arrival     No. of    
 Name                                     Type      Name     Dir     Delay     Time        Fan Out(s)
@@ -282,21 +283,21 @@ Detailed Report for Clock: System
 Starting Points with Worst Slack
 ********************************
 
-                                           Starting                                                                                     Arrival          
-Instance                                   Reference     Type        Pin              Net                                               Time        Slack
-                                           Clock                                                                                                         
----------------------------------------------------------------------------------------------------------------------------------------------------------
-WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPSEL          WhiteBoard_Plotter_0_MSS_MASTER_APB_PSELx         0.000       3.441
-WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPADDR[11]     WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[11]     0.000       3.519
-WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPWRITE        CoreAPB3_0_APBmslave0_PWRITE                      0.000       3.554
-WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPADDR[10]     WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[10]     0.000       3.671
-WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     M2FRESETn        WhiteBoard_Plotter_0_M2F_RESET_N                  0.000       3.686
-WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPADDR[9]      WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[9]      0.000       3.686
-WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPADDR[8]      WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[8]      0.000       3.825
-WhiteBoard_Plotter_0.MSS_CCC_0.I_RCOSC     System        RCOSC       CLKOUT           N_CLKA_RCOSC                                      0.000       4.491
-WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPWDATA[2]     CoreAPB3_0_APBmslave0_PWDATA[2]                   0.000       6.533
-WhiteBoard_Plotter_0.MSS_ADLIB_INST        System        MSS_APB     MSSPWDATA[3]     CoreAPB3_0_APBmslave0_PWDATA[3]                   0.000       6.533
-=========================================================================================================================================================
+                                        Starting                                                                                     Arrival          
+Instance                                Reference     Type        Pin              Net                                               Time        Slack
+                                        Clock                                                                                                         
+------------------------------------------------------------------------------------------------------------------------------------------------------
+WhiteBoard_Plotter_0.MSS_ADLIB_INST     System        MSS_APB     MSSPSEL          WhiteBoard_Plotter_0_MSS_MASTER_APB_PSELx         0.000       3.441
+WhiteBoard_Plotter_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[11]     WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[11]     0.000       3.519
+WhiteBoard_Plotter_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWRITE        CoreAPB3_0_APBmslave0_PWRITE                      0.000       3.554
+WhiteBoard_Plotter_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[10]     WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[10]     0.000       3.671
+WhiteBoard_Plotter_0.MSS_ADLIB_INST     System        MSS_APB     M2FRESETn        WhiteBoard_Plotter_0_M2F_RESET_N                  0.000       3.686
+WhiteBoard_Plotter_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[9]      WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[9]      0.000       3.686
+WhiteBoard_Plotter_0.MSS_ADLIB_INST     System        MSS_APB     MSSPADDR[8]      WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR[8]      0.000       3.825
+WhiteBoard_Plotter_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[2]     CoreAPB3_0_APBmslave0_PWDATA[2]                   0.000       6.533
+WhiteBoard_Plotter_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[3]     CoreAPB3_0_APBmslave0_PWDATA[3]                   0.000       6.533
+WhiteBoard_Plotter_0.MSS_ADLIB_INST     System        MSS_APB     MSSPWDATA[0]     CoreAPB3_0_APBmslave0_PWDATA[0]                   0.000       7.376
+======================================================================================================================================================
 
 
 Ending Points with Worst Slack
@@ -339,7 +340,7 @@ Path information for path number 1:
     Starting point:                          WhiteBoard_Plotter_0.MSS_ADLIB_INST / MSSPSEL
     Ending point:                            stepper_control_0.step1_en / D
     The start point is clocked by            System [rising]
-    The end   point is clocked by            WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC|FAB_CLK_inferred_clock [rising] on pin CLK
+    The end   point is clocked by            FAB_CLK [rising] on pin CLK
 
 Instance / Net                                            Pin         Pin               Arrival     No. of    
 Name                                          Type        Name        Dir     Delay     Time        Fan Out(s)
@@ -410,22 +411,22 @@ Report for cell WhiteboarPlotter.verilog
               cell count
          INBUF_MSS     2
             OUTBUF     4
-        OUTBUF_MSS     1
+        OUTBUF_MSS     7
                    -----
-             TOTAL     7
+             TOTAL    13
 
 
 Core Cells         : 84 of 4608 (2%)
-IO Cells           : 7
+IO Cells           : 13
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 112MB)
+At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 112MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Wed Nov 20 15:59:57 2019
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+# Thu Nov 21 14:13:40 2019
 
 ###########################################################]

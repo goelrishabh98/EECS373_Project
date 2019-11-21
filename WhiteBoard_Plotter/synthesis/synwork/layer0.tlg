@@ -96,9 +96,9 @@ Selecting top level module WhiteboarPlotter
 
 @N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:46|Synthesizing module WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC in library work.
 
-@N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS in library work.
-
 @N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS in library work.
+
+@N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS in library work.
 
 @N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.v":9:7:9:24|Synthesizing module WhiteBoard_Plotter in library work.
 

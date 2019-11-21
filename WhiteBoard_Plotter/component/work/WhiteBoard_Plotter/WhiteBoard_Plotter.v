@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Thu Nov 14 16:21:51 2019
+// Created by SmartDesign Thu Nov 21 14:09:53 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -15,6 +15,12 @@ module WhiteBoard_Plotter(
     UART_0_RXD,
     // Outputs
     FAB_CLK,
+    GPIO_0_OUT,
+    GPIO_1_OUT,
+    GPIO_2_OUT,
+    GPIO_3_OUT,
+    GPIO_4_OUT,
+    GPIO_5_OUT,
     M2F_RESET_N,
     MSSPADDR,
     MSSPENABLE,
@@ -36,6 +42,12 @@ input         UART_0_RXD;
 // Output
 //--------------------------------------------------------------------
 output        FAB_CLK;
+output        GPIO_0_OUT;
+output        GPIO_1_OUT;
+output        GPIO_2_OUT;
+output        GPIO_3_OUT;
+output        GPIO_4_OUT;
+output        GPIO_5_OUT;
 output        M2F_RESET_N;
 output [19:0] MSSPADDR;
 output        MSSPENABLE;
@@ -46,12 +58,24 @@ output        UART_0_TXD;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
+wire          GPIO_0_OUT_net_0;
+wire          GPIO_1_OUT_net_0;
+wire          GPIO_2_OUT_net_0;
+wire          GPIO_3_OUT_net_0;
+wire          GPIO_4_OUT_net_0;
+wire          GPIO_5_OUT_net_0;
 wire          MSS_ADLIB_INST_EMCCLK;
 wire          MSS_ADLIB_INST_FCLK;
 wire          MSS_ADLIB_INST_MACCLK;
 wire          MSS_ADLIB_INST_MACCLKCCC;
 wire          MSS_ADLIB_INST_PLLLOCK;
 wire          MSS_ADLIB_INST_SYNCCLKFDBK;
+wire   [0:0]  MSS_GPIO_0_GPIO_0_OUT_D;
+wire   [1:1]  MSS_GPIO_0_GPIO_1_OUT_D;
+wire   [2:2]  MSS_GPIO_0_GPIO_2_OUT_D;
+wire   [3:3]  MSS_GPIO_0_GPIO_3_OUT_D;
+wire   [4:4]  MSS_GPIO_0_GPIO_4_OUT_D;
+wire   [5:5]  MSS_GPIO_0_GPIO_5_OUT_D;
 wire          MSS_RESET_0_MSS_RESET_N_Y;
 wire          MSS_RESET_N;
 wire          MSS_UART_0_RXD_Y;
@@ -75,6 +99,13 @@ wire          net_71_net_0;
 wire   [19:0] net_72_PADDR_net_0;
 wire   [31:0] net_72_PWDATA_net_0;
 wire          UART_0_TXD_net_1;
+wire          GPIO_5_OUT_net_1;
+wire          GPIO_4_OUT_net_1;
+wire          GPIO_3_OUT_net_1;
+wire          GPIO_2_OUT_net_1;
+wire          GPIO_1_OUT_net_1;
+wire          GPIO_0_OUT_net_1;
+wire   [31:0] GPO_net_0;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -118,6 +149,27 @@ assign net_72_PWDATA_net_0              = net_72_PWDATA;
 assign MSSPWDATA[31:0]                  = net_72_PWDATA_net_0;
 assign UART_0_TXD_net_1                 = UART_0_TXD_net_0;
 assign UART_0_TXD                       = UART_0_TXD_net_1;
+assign GPIO_5_OUT_net_1                 = GPIO_5_OUT_net_0;
+assign GPIO_5_OUT                       = GPIO_5_OUT_net_1;
+assign GPIO_4_OUT_net_1                 = GPIO_4_OUT_net_0;
+assign GPIO_4_OUT                       = GPIO_4_OUT_net_1;
+assign GPIO_3_OUT_net_1                 = GPIO_3_OUT_net_0;
+assign GPIO_3_OUT                       = GPIO_3_OUT_net_1;
+assign GPIO_2_OUT_net_1                 = GPIO_2_OUT_net_0;
+assign GPIO_2_OUT                       = GPIO_2_OUT_net_1;
+assign GPIO_1_OUT_net_1                 = GPIO_1_OUT_net_0;
+assign GPIO_1_OUT                       = GPIO_1_OUT_net_1;
+assign GPIO_0_OUT_net_1                 = GPIO_0_OUT_net_0;
+assign GPIO_0_OUT                       = GPIO_0_OUT_net_1;
+//--------------------------------------------------------------------
+// Slices assignments
+//--------------------------------------------------------------------
+assign MSS_GPIO_0_GPIO_0_OUT_D[0] = GPO_net_0[0:0];
+assign MSS_GPIO_0_GPIO_1_OUT_D[1] = GPO_net_0[1:1];
+assign MSS_GPIO_0_GPIO_2_OUT_D[2] = GPO_net_0[2:2];
+assign MSS_GPIO_0_GPIO_3_OUT_D[3] = GPO_net_0[3:3];
+assign MSS_GPIO_0_GPIO_4_OUT_D[4] = GPO_net_0[4:4];
+assign MSS_GPIO_0_GPIO_5_OUT_D[5] = GPO_net_0[5:5];
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
@@ -266,7 +318,7 @@ MSS_ADLIB_INST(
         .DEEPSLEEP      (  ),
         .SLEEP          (  ),
         .TXEV           (  ),
-        .GPO            (  ),
+        .GPO            ( GPO_net_0 ),
         .UART0RTSn      (  ),
         .UART0DTRn      (  ),
         .UART1RTSn      (  ),
@@ -379,6 +431,72 @@ WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC MSS_CCC_0(
         .MSS_LOCK       ( MSS_ADLIB_INST_PLLLOCK ),
         .MAC_CLK_CCC    ( MSS_ADLIB_INST_MACCLKCCC ),
         .MAC_CLK_IO     ( MSS_ADLIB_INST_MACCLK ) 
+        );
+
+//--------OUTBUF_MSS
+OUTBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "V1" ) )
+MSS_GPIO_0_GPIO_0_OUT(
+        // Inputs
+        .D   ( MSS_GPIO_0_GPIO_0_OUT_D ),
+        // Outputs
+        .PAD ( GPIO_0_OUT_net_0 ) 
+        );
+
+//--------OUTBUF_MSS
+OUTBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "R3" ) )
+MSS_GPIO_0_GPIO_1_OUT(
+        // Inputs
+        .D   ( MSS_GPIO_0_GPIO_1_OUT_D ),
+        // Outputs
+        .PAD ( GPIO_1_OUT_net_0 ) 
+        );
+
+//--------OUTBUF_MSS
+OUTBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "W1" ) )
+MSS_GPIO_0_GPIO_2_OUT(
+        // Inputs
+        .D   ( MSS_GPIO_0_GPIO_2_OUT_D ),
+        // Outputs
+        .PAD ( GPIO_2_OUT_net_0 ) 
+        );
+
+//--------OUTBUF_MSS
+OUTBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "Y1" ) )
+MSS_GPIO_0_GPIO_3_OUT(
+        // Inputs
+        .D   ( MSS_GPIO_0_GPIO_3_OUT_D ),
+        // Outputs
+        .PAD ( GPIO_3_OUT_net_0 ) 
+        );
+
+//--------OUTBUF_MSS
+OUTBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "AA1" ) )
+MSS_GPIO_0_GPIO_4_OUT(
+        // Inputs
+        .D   ( MSS_GPIO_0_GPIO_4_OUT_D ),
+        // Outputs
+        .PAD ( GPIO_4_OUT_net_0 ) 
+        );
+
+//--------OUTBUF_MSS
+OUTBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "U2" ) )
+MSS_GPIO_0_GPIO_5_OUT(
+        // Inputs
+        .D   ( MSS_GPIO_0_GPIO_5_OUT_D ),
+        // Outputs
+        .PAD ( GPIO_5_OUT_net_0 ) 
         );
 
 //--------INBUF_MSS

@@ -29,13 +29,13 @@ Report for cell WhiteboarPlotter.verilog
               cell count
          INBUF_MSS     2
             OUTBUF     4
-        OUTBUF_MSS     1
+        OUTBUF_MSS     7
                    -----
-             TOTAL     7
+             TOTAL    13
 
 
 Core Cells         : 84 of 4608 (2%)
-IO Cells           : 7
+IO Cells           : 13
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)

@@ -5,9 +5,10 @@
  *      Author: rishgoel
  */
 #include "stepper.h"
+#include "mss_gpio.h"
 
-void config(int ms1, int ms2, int ms3){
-	//TODO
+void stepper_config(int mode1, int mode2){
+	MSS_GPIO_set_outputs(mode1 | (mode2<<3));
 }
 
 void step(int dir1, int dir2){

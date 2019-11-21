@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2019 11 20 15 59 56)
+      (timeStamp 2019 11 21 14 13 40)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "L-2016.09M-SP1-5, mapper mapact, Build 2172R"))
      )
@@ -532,8 +532,8 @@
     (cell WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC (cellType GENERIC)
        (view netlist (viewType NETLIST)
          (interface
-           (port MSS_ADLIB_INST_FCLK (direction OUTPUT))
            (port FAB_CLK (direction OUTPUT))
+           (port GLA0 (direction OUTPUT))
          )
          (contents
           (instance I_RCOSC (viewRef prim (cellRef RCOSC (libraryRef smartfusion)))
@@ -545,6 +545,10 @@
           )
           (instance VCC_i (viewRef prim (cellRef VCC (libraryRef smartfusion)))          )
           (instance GND_i (viewRef prim (cellRef GND (libraryRef smartfusion)))          )
+          (net GLA0 (joined
+           (portRef GLA0)
+           (portRef GLAMSS (instanceRef I_MSSCCC))
+          ))
           (net FAB_CLK (joined
            (portRef FAB_CLK)
            (portRef GLA (instanceRef I_MSSCCC))
@@ -552,10 +556,6 @@
           (net N_CLKA_RCOSC (joined
            (portRef CLKOUT (instanceRef I_RCOSC))
            (portRef CLKA (instanceRef I_MSSCCC))
-          ))
-          (net MSS_ADLIB_INST_FCLK (joined
-           (portRef GLAMSS (instanceRef I_MSSCCC))
-           (portRef MSS_ADLIB_INST_FCLK)
           ))
           (net I_MSSCCC_GLB (joined
            (portRef GLB (instanceRef I_MSSCCC))
@@ -681,6 +681,12 @@
            (port WhiteBoard_Plotter_0_MSS_MASTER_APB_PSELx (direction OUTPUT))
            (port WhiteBoard_Plotter_0_M2F_RESET_N (direction OUTPUT))
            (port FAB_CLK (direction OUTPUT))
+           (port GPIO_0_OUT (direction OUTPUT))
+           (port GPIO_1_OUT (direction OUTPUT))
+           (port GPIO_2_OUT (direction OUTPUT))
+           (port GPIO_3_OUT (direction OUTPUT))
+           (port GPIO_4_OUT (direction OUTPUT))
+           (port GPIO_5_OUT (direction OUTPUT))
            (port MSS_RESET_N (direction INPUT))
            (port UART_0_RXD (direction INPUT))
            (port UART_0_TXD (direction OUTPUT))
@@ -700,6 +706,36 @@
            (property is_instantiated (integer 1))
            (property ACT_CONFIG (integer 0))
            (property ACT_PIN (string "R1"))
+          )
+          (instance MSS_GPIO_0_GPIO_5_OUT (viewRef prim (cellRef OUTBUF_MSS (libraryRef smartfusion)))
+           (property is_instantiated (integer 1))
+           (property ACT_CONFIG (integer 0))
+           (property ACT_PIN (string "U2"))
+          )
+          (instance MSS_GPIO_0_GPIO_4_OUT (viewRef prim (cellRef OUTBUF_MSS (libraryRef smartfusion)))
+           (property is_instantiated (integer 1))
+           (property ACT_CONFIG (integer 0))
+           (property ACT_PIN (string "AA1"))
+          )
+          (instance MSS_GPIO_0_GPIO_3_OUT (viewRef prim (cellRef OUTBUF_MSS (libraryRef smartfusion)))
+           (property is_instantiated (integer 1))
+           (property ACT_CONFIG (integer 0))
+           (property ACT_PIN (string "Y1"))
+          )
+          (instance MSS_GPIO_0_GPIO_2_OUT (viewRef prim (cellRef OUTBUF_MSS (libraryRef smartfusion)))
+           (property is_instantiated (integer 1))
+           (property ACT_CONFIG (integer 0))
+           (property ACT_PIN (string "W1"))
+          )
+          (instance MSS_GPIO_0_GPIO_1_OUT (viewRef prim (cellRef OUTBUF_MSS (libraryRef smartfusion)))
+           (property is_instantiated (integer 1))
+           (property ACT_CONFIG (integer 0))
+           (property ACT_PIN (string "R3"))
+          )
+          (instance MSS_GPIO_0_GPIO_0_OUT (viewRef prim (cellRef OUTBUF_MSS (libraryRef smartfusion)))
+           (property is_instantiated (integer 1))
+           (property ACT_CONFIG (integer 0))
+           (property ACT_PIN (string "V1"))
           )
           (instance MSS_ADLIB_INST (viewRef prim (cellRef MSS_APB (libraryRef smartfusion)))
            (property is_instantiated (integer 1))
@@ -735,6 +771,54 @@
           (net MSS_RESET_N (joined
            (portRef MSS_RESET_N)
            (portRef PAD (instanceRef MSS_RESET_0_MSS_RESET_N))
+          ))
+          (net GPIO_5_OUT (joined
+           (portRef PAD (instanceRef MSS_GPIO_0_GPIO_5_OUT))
+           (portRef GPIO_5_OUT)
+          ))
+          (net (rename GPO_net_0_5 "GPO_net_0[5]") (joined
+           (portRef (member gpo 26) (instanceRef MSS_ADLIB_INST))
+           (portRef D (instanceRef MSS_GPIO_0_GPIO_5_OUT))
+          ))
+          (net GPIO_4_OUT (joined
+           (portRef PAD (instanceRef MSS_GPIO_0_GPIO_4_OUT))
+           (portRef GPIO_4_OUT)
+          ))
+          (net (rename GPO_net_0_4 "GPO_net_0[4]") (joined
+           (portRef (member gpo 27) (instanceRef MSS_ADLIB_INST))
+           (portRef D (instanceRef MSS_GPIO_0_GPIO_4_OUT))
+          ))
+          (net GPIO_3_OUT (joined
+           (portRef PAD (instanceRef MSS_GPIO_0_GPIO_3_OUT))
+           (portRef GPIO_3_OUT)
+          ))
+          (net (rename GPO_net_0_3 "GPO_net_0[3]") (joined
+           (portRef (member gpo 28) (instanceRef MSS_ADLIB_INST))
+           (portRef D (instanceRef MSS_GPIO_0_GPIO_3_OUT))
+          ))
+          (net GPIO_2_OUT (joined
+           (portRef PAD (instanceRef MSS_GPIO_0_GPIO_2_OUT))
+           (portRef GPIO_2_OUT)
+          ))
+          (net (rename GPO_net_0_2 "GPO_net_0[2]") (joined
+           (portRef (member gpo 29) (instanceRef MSS_ADLIB_INST))
+           (portRef D (instanceRef MSS_GPIO_0_GPIO_2_OUT))
+          ))
+          (net GPIO_1_OUT (joined
+           (portRef PAD (instanceRef MSS_GPIO_0_GPIO_1_OUT))
+           (portRef GPIO_1_OUT)
+          ))
+          (net (rename GPO_net_0_1 "GPO_net_0[1]") (joined
+           (portRef (member gpo 30) (instanceRef MSS_ADLIB_INST))
+           (portRef D (instanceRef MSS_GPIO_0_GPIO_1_OUT))
+          ))
+          (net GPIO_0_OUT (joined
+           (portRef PAD (instanceRef MSS_GPIO_0_GPIO_0_OUT))
+           (portRef GPIO_0_OUT)
+          ))
+          (net (rename GPO_net_0_0 "GPO_net_0[0]") (joined
+           (portRef (member gpo 31) (instanceRef MSS_ADLIB_INST))
+           (portRef D (instanceRef MSS_GPIO_0_GPIO_0_OUT))
           ))
           (net MSS_ADLIB_INST_EMCRWn (joined
            (portRef EMCRWn (instanceRef MSS_ADLIB_INST))
@@ -1058,8 +1142,8 @@
           (net MSS_ADLIB_INST_I2C1SMBALERTNO (joined
            (portRef I2C1SMBALERTNO (instanceRef MSS_ADLIB_INST))
           ))
-          (net MSS_ADLIB_INST_FCLK (joined
-           (portRef MSS_ADLIB_INST_FCLK (instanceRef MSS_CCC_0))
+          (net GLA0 (joined
+           (portRef GLA0 (instanceRef MSS_CCC_0))
            (portRef FCLK (instanceRef MSS_ADLIB_INST))
           ))
           (net MSS_ADLIB_INST_SPI0DO (joined
@@ -1481,100 +1565,82 @@
           (net (rename MSS_ADLIB_INST_GPOE_31 "MSS_ADLIB_INST_GPOE[31]") (joined
            (portRef (member gpoe 0) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_0 "MSS_ADLIB_INST_GPO[0]") (joined
-           (portRef (member gpo 31) (instanceRef MSS_ADLIB_INST))
-          ))
-          (net (rename MSS_ADLIB_INST_GPO_1 "MSS_ADLIB_INST_GPO[1]") (joined
-           (portRef (member gpo 30) (instanceRef MSS_ADLIB_INST))
-          ))
-          (net (rename MSS_ADLIB_INST_GPO_2 "MSS_ADLIB_INST_GPO[2]") (joined
-           (portRef (member gpo 29) (instanceRef MSS_ADLIB_INST))
-          ))
-          (net (rename MSS_ADLIB_INST_GPO_3 "MSS_ADLIB_INST_GPO[3]") (joined
-           (portRef (member gpo 28) (instanceRef MSS_ADLIB_INST))
-          ))
-          (net (rename MSS_ADLIB_INST_GPO_4 "MSS_ADLIB_INST_GPO[4]") (joined
-           (portRef (member gpo 27) (instanceRef MSS_ADLIB_INST))
-          ))
-          (net (rename MSS_ADLIB_INST_GPO_5 "MSS_ADLIB_INST_GPO[5]") (joined
-           (portRef (member gpo 26) (instanceRef MSS_ADLIB_INST))
-          ))
-          (net (rename MSS_ADLIB_INST_GPO_6 "MSS_ADLIB_INST_GPO[6]") (joined
+          (net (rename GPO_net_0_6 "GPO_net_0[6]") (joined
            (portRef (member gpo 25) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_7 "MSS_ADLIB_INST_GPO[7]") (joined
+          (net (rename GPO_net_0_7 "GPO_net_0[7]") (joined
            (portRef (member gpo 24) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_8 "MSS_ADLIB_INST_GPO[8]") (joined
+          (net (rename GPO_net_0_8 "GPO_net_0[8]") (joined
            (portRef (member gpo 23) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_9 "MSS_ADLIB_INST_GPO[9]") (joined
+          (net (rename GPO_net_0_9 "GPO_net_0[9]") (joined
            (portRef (member gpo 22) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_10 "MSS_ADLIB_INST_GPO[10]") (joined
+          (net (rename GPO_net_0_10 "GPO_net_0[10]") (joined
            (portRef (member gpo 21) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_11 "MSS_ADLIB_INST_GPO[11]") (joined
+          (net (rename GPO_net_0_11 "GPO_net_0[11]") (joined
            (portRef (member gpo 20) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_12 "MSS_ADLIB_INST_GPO[12]") (joined
+          (net (rename GPO_net_0_12 "GPO_net_0[12]") (joined
            (portRef (member gpo 19) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_13 "MSS_ADLIB_INST_GPO[13]") (joined
+          (net (rename GPO_net_0_13 "GPO_net_0[13]") (joined
            (portRef (member gpo 18) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_14 "MSS_ADLIB_INST_GPO[14]") (joined
+          (net (rename GPO_net_0_14 "GPO_net_0[14]") (joined
            (portRef (member gpo 17) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_15 "MSS_ADLIB_INST_GPO[15]") (joined
+          (net (rename GPO_net_0_15 "GPO_net_0[15]") (joined
            (portRef (member gpo 16) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_16 "MSS_ADLIB_INST_GPO[16]") (joined
+          (net (rename GPO_net_0_16 "GPO_net_0[16]") (joined
            (portRef (member gpo 15) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_17 "MSS_ADLIB_INST_GPO[17]") (joined
+          (net (rename GPO_net_0_17 "GPO_net_0[17]") (joined
            (portRef (member gpo 14) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_18 "MSS_ADLIB_INST_GPO[18]") (joined
+          (net (rename GPO_net_0_18 "GPO_net_0[18]") (joined
            (portRef (member gpo 13) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_19 "MSS_ADLIB_INST_GPO[19]") (joined
+          (net (rename GPO_net_0_19 "GPO_net_0[19]") (joined
            (portRef (member gpo 12) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_20 "MSS_ADLIB_INST_GPO[20]") (joined
+          (net (rename GPO_net_0_20 "GPO_net_0[20]") (joined
            (portRef (member gpo 11) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_21 "MSS_ADLIB_INST_GPO[21]") (joined
+          (net (rename GPO_net_0_21 "GPO_net_0[21]") (joined
            (portRef (member gpo 10) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_22 "MSS_ADLIB_INST_GPO[22]") (joined
+          (net (rename GPO_net_0_22 "GPO_net_0[22]") (joined
            (portRef (member gpo 9) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_23 "MSS_ADLIB_INST_GPO[23]") (joined
+          (net (rename GPO_net_0_23 "GPO_net_0[23]") (joined
            (portRef (member gpo 8) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_24 "MSS_ADLIB_INST_GPO[24]") (joined
+          (net (rename GPO_net_0_24 "GPO_net_0[24]") (joined
            (portRef (member gpo 7) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_25 "MSS_ADLIB_INST_GPO[25]") (joined
+          (net (rename GPO_net_0_25 "GPO_net_0[25]") (joined
            (portRef (member gpo 6) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_26 "MSS_ADLIB_INST_GPO[26]") (joined
+          (net (rename GPO_net_0_26 "GPO_net_0[26]") (joined
            (portRef (member gpo 5) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_27 "MSS_ADLIB_INST_GPO[27]") (joined
+          (net (rename GPO_net_0_27 "GPO_net_0[27]") (joined
            (portRef (member gpo 4) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_28 "MSS_ADLIB_INST_GPO[28]") (joined
+          (net (rename GPO_net_0_28 "GPO_net_0[28]") (joined
            (portRef (member gpo 3) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_29 "MSS_ADLIB_INST_GPO[29]") (joined
+          (net (rename GPO_net_0_29 "GPO_net_0[29]") (joined
            (portRef (member gpo 2) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_30 "MSS_ADLIB_INST_GPO[30]") (joined
+          (net (rename GPO_net_0_30 "GPO_net_0[30]") (joined
            (portRef (member gpo 1) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename MSS_ADLIB_INST_GPO_31 "MSS_ADLIB_INST_GPO[31]") (joined
+          (net (rename GPO_net_0_31 "GPO_net_0[31]") (joined
            (portRef (member gpo 0) (instanceRef MSS_ADLIB_INST))
           ))
           (net (rename MSS_ADLIB_INST_MSSINT_0 "MSS_ADLIB_INST_MSSINT[0]") (joined
@@ -2642,6 +2708,12 @@
          (interface
            (port MSS_RESET_N (direction INPUT))
            (port UART_0_RXD (direction INPUT))
+           (port GPIO_0_OUT (direction OUTPUT))
+           (port GPIO_1_OUT (direction OUTPUT))
+           (port GPIO_2_OUT (direction OUTPUT))
+           (port GPIO_3_OUT (direction OUTPUT))
+           (port GPIO_4_OUT (direction OUTPUT))
+           (port GPIO_5_OUT (direction OUTPUT))
            (port UART_0_TXD (direction OUTPUT))
            (port dir1 (direction OUTPUT))
            (port dir2 (direction OUTPUT))
@@ -2670,6 +2742,30 @@
           (net UART_0_RXD (joined
            (portRef UART_0_RXD)
            (portRef UART_0_RXD (instanceRef WhiteBoard_Plotter_0))
+          ))
+          (net GPIO_0_OUT (joined
+           (portRef GPIO_0_OUT (instanceRef WhiteBoard_Plotter_0))
+           (portRef GPIO_0_OUT)
+          ))
+          (net GPIO_1_OUT (joined
+           (portRef GPIO_1_OUT (instanceRef WhiteBoard_Plotter_0))
+           (portRef GPIO_1_OUT)
+          ))
+          (net GPIO_2_OUT (joined
+           (portRef GPIO_2_OUT (instanceRef WhiteBoard_Plotter_0))
+           (portRef GPIO_2_OUT)
+          ))
+          (net GPIO_3_OUT (joined
+           (portRef GPIO_3_OUT (instanceRef WhiteBoard_Plotter_0))
+           (portRef GPIO_3_OUT)
+          ))
+          (net GPIO_4_OUT (joined
+           (portRef GPIO_4_OUT (instanceRef WhiteBoard_Plotter_0))
+           (portRef GPIO_4_OUT)
+          ))
+          (net GPIO_5_OUT (joined
+           (portRef GPIO_5_OUT (instanceRef WhiteBoard_Plotter_0))
+           (portRef GPIO_5_OUT)
           ))
           (net UART_0_TXD (joined
            (portRef UART_0_TXD (instanceRef WhiteBoard_Plotter_0))

@@ -15,13 +15,16 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\mss_tshell.v" (library work)
 @I::"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v" (library work)
 @I::"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.v" (library work)
+@I::"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v" (library work)
 @I::"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v" (library COREAPB3_LIB)
 @I::"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v" (library COREAPB3_LIB)
 @I::"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v" (library COREAPB3_LIB)
-@I::"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v" (library work)
 @I::"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.v" (library work)
 Verilog syntax check successful!
-File N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v changed - recompiling
+File N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\mss_tshell.v changed - recompiling
+File N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v changed - recompiling
+File N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.v changed - recompiling
+File N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.v changed - recompiling
 Selecting top level module WhiteboarPlotter
 @W: CG775 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
 @N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v":13:0:13:6|Synthesizing module CAPB3II in library COREAPB3_LIB.
@@ -120,9 +123,9 @@ Selecting top level module WhiteboarPlotter
 
 @N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:46|Synthesizing module WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC in library work.
 
-@N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS in library work.
-
 @N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS in library work.
+
+@N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS in library work.
 
 @N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.v":9:7:9:24|Synthesizing module WhiteBoard_Plotter in library work.
 
@@ -199,12 +202,12 @@ Selecting top level module WhiteboarPlotter
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":690:0:690:9|Input PSLVERRS14 is unused.
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":692:0:692:9|Input PSLVERRS15 is unused.
 
-At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 77MB)
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 78MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Nov 20 15:59:50 2019
+# Thu Nov 21 14:13:34 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
@@ -215,7 +218,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Nov 20 15:59:50 2019
+# Thu Nov 21 14:13:34 2019
 
 ###########################################################]
 @END
@@ -225,6 +228,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Nov 20 15:59:50 2019
+# Thu Nov 21 14:13:34 2019
 
 ###########################################################]

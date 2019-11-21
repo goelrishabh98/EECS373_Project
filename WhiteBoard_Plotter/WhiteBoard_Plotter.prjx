@@ -30,7 +30,7 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "C:\Users\sarth\Dropbox\College\FA2019\EECS373\EECS373_Project\WhiteBoard_Plotter"
+KEY ProjectLocation "N:\EECS373_Project\WhiteBoard_Plotter"
 KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
@@ -57,93 +57,93 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293307"
+TIME="1574363516"
 SIZE="2769"
 PARENT="<project>\component\work\WhiteboarPlotter\WhiteboarPlotter.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\coreparameters.v,tb_hdl"
 STATE="utd"
-TIME="1574293307"
-SIZE="1239"
+TIME="1574363516"
+SIZE="1284"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 IS_INCLUDED="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\mti\scripts\wave_user.do,do"
 STATE="utd"
-TIME="1574293307"
-SIZE="884"
+TIME="1555354520"
+SIZE="912"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_ahbtoapb.v,tb_hdl"
 STATE="utd"
-TIME="1574293307"
-SIZE="3820"
+TIME="1555354520"
+SIZE="4636"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apb.v,tb_hdl"
 STATE="utd"
-TIME="1574293307"
-SIZE="7639"
+TIME="1555354520"
+SIZE="9073"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 STATE="utd"
-TIME="1574293307"
-SIZE="20989"
+TIME="1555354520"
+SIZE="25129"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 STATE="utd"
-TIME="1574293307"
-SIZE="30135"
+TIME="1555354520"
+SIZE="36275"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_main.v,tb_hdl"
 STATE="utd"
-TIME="1574293307"
-SIZE="101478"
+TIME="1555354520"
+SIZE="122456"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v,hdl"
 STATE="utd"
-TIME="1574293307"
-SIZE="26672"
+TIME="1555354520"
+SIZE="32806"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v,hdl"
 STATE="utd"
-TIME="1574293307"
-SIZE="2832"
+TIME="1555354520"
+SIZE="3556"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v,hdl"
 STATE="utd"
-TIME="1574293307"
-SIZE="5442"
+TIME="1555354520"
+SIZE="6765"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
 STATE="utd"
-TIME="1574293307"
-SIZE="22733"
+TIME="1555354520"
+SIZE="23651"
 LIBRARY="COREAPB3_LIB"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 MODULE_UNDER_TEST="testbench"
@@ -152,13 +152,13 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293307"
+TIME="1574363393"
 SIZE="945"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v,hdl"
 STATE="utd"
-TIME="1574293307"
+TIME="1536348874"
 SIZE="11243"
 PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf"
 BEGIN_USE_CONSTRAINT
@@ -170,122 +170,122 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CCC\2.0.106\MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293308"
+TIME="1574363387"
 SIZE="252"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293308"
+TIME="1574363387"
 SIZE="252"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_COM\1.0.200\MSS_COM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293308"
+TIME="1574363387"
 SIZE="252"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_DMA\1.0.101\MSS_DMA.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293308"
+TIME="1574363387"
 SIZE="252"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ENVM\2.3.200\MSS_ENVM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293308"
+TIME="1574363391"
 SIZE="253"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIC\1.0.101\MSS_FIC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293308"
+TIME="1574363391"
 SIZE="252"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIO\1.0.203\MSS_FIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293308"
+TIME="1574363391"
 SIZE="252"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_GPIO\1.0.101\MSS_GPIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293308"
+TIME="1574363391"
 SIZE="253"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_INTR\1.0.101\MSS_INTR.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293308"
+TIME="1574363391"
 SIZE="253"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RESET\1.0.101\MSS_RESET.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293308"
+TIME="1574363391"
 SIZE="254"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RTC\1.0.100\MSS_RTC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293308"
+TIME="1574363391"
 SIZE="252"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_TIMER\1.0.100\MSS_TIMER.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293308"
+TIME="1574363391"
 SIZE="254"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UART\1.0.101\MSS_UART.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293308"
+TIME="1574363391"
 SIZE="253"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UFROM\1.0.100\MSS_UFROM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293308"
+TIME="1574363391"
 SIZE="254"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293308"
+TIME="1573766511"
 SIZE="2533"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_IO\DESIGN_IO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293308"
+TIME="1573766531"
 SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293308"
-SIZE="481"
+TIME="1574363387"
+SIZE="503"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 ENDFILE
 VALUE "<project>\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v,hdl"
 STATE="utd"
-TIME="1574293308"
-SIZE="2788"
+TIME="1574363387"
+SIZE="2891"
 PARENT="<project>\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\WhiteBoard_Plotter\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
 STATE="utd"
-TIME="1574293308"
-SIZE="15641"
+TIME="1574363391"
+SIZE="16218"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\WhiteBoard_Plotter\mss_tshell.v,hdl"
 STATE="utd"
-TIME="1574293308"
-SIZE="11663"
+TIME="1574363392"
+SIZE="12226"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
@@ -296,8 +296,8 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\WhiteBoard_Plotter\mss_tshell_syn.sdc,sdc"
 STATE="utd"
-TIME="1574293308"
-SIZE="164"
+TIME="1574363392"
+SIZE="208"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
@@ -308,25 +308,25 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293308"
-SIZE="11784"
+TIME="1574363395"
+SIZE="13219"
 ENDFILE
 VALUE "<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.v,hdl"
 STATE="utd"
-TIME="1574293308"
-SIZE="18360"
+TIME="1574363393"
+SIZE="22455"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\WhiteboarPlotter\WhiteboarPlotter.cxf,actgen_cxf"
 STATE="utd"
-TIME="1574293308"
-SIZE="4247"
+TIME="1574363544"
+SIZE="5682"
 ENDFILE
 VALUE "<project>\component\work\WhiteboarPlotter\WhiteboarPlotter.pdc,pdc"
 STATE="utd"
-TIME="1574293308"
-SIZE="1150"
+TIME="1574363514"
+SIZE="990"
 PARENT="<project>\component\work\WhiteboarPlotter\WhiteboarPlotter.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideDESIGNER"
@@ -336,175 +336,180 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\WhiteboarPlotter\WhiteboarPlotter.v,hdl"
 STATE="utd"
-TIME="1574293308"
-SIZE="13764"
+TIME="1574363519"
+SIZE="15493"
 PARENT="<project>\component\work\WhiteboarPlotter\WhiteboarPlotter.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteBoard_Plotter.adb,adb"
 STATE="ood"
-TIME="1574293308"
+TIME="1573766847"
 SIZE="350208"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteBoard_Plotter.fdb,fdb"
 STATE="ood"
-TIME="1574293308"
+TIME="1573766769"
 SIZE="37603"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteBoard_Plotter.ide_des,ide_des"
 STATE="utd"
-TIME="1574293308"
-SIZE="969"
+TIME="1573766847"
+SIZE="999"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteBoard_Plotter_compile_log.rpt,log"
 STATE="utd"
-TIME="1574293308"
-SIZE="25175"
+TIME="1573766729"
+SIZE="25662"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteBoard_Plotter_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1574293308"
+TIME="1573766749"
 SIZE="2711"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteBoard_Plotter_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1574293308"
-SIZE="682"
+TIME="1573766770"
+SIZE="702"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteBoard_Plotter_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1574293308"
-SIZE="1198"
+TIME="1573766755"
+SIZE="1229"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter.adb,adb"
 STATE="utd"
-TIME="1574293308"
+TIME="1574283656"
 SIZE="335360"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter.fdb,fdb"
 STATE="utd"
-TIME="1574293308"
-SIZE="36225"
+TIME="1574363672"
+SIZE="36311"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter.ide_des,ide_des"
 STATE="utd"
-TIME="1574293308"
-SIZE="1169"
+TIME="1574283656"
+SIZE="1201"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter_compile_log.rpt,log"
 STATE="utd"
-TIME="1574293308"
-SIZE="35147"
+TIME="1574283619"
+SIZE="35688"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter_fp\projectData\WhiteboarPlotter.pdb,pdb"
 STATE="utd"
-TIME="1574293308"
+TIME="1574283719"
 SIZE="41726"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter_fp\WhiteboarPlotter.pdb,pdb"
 STATE="utd"
-TIME="1574293308"
+TIME="1574283680"
 SIZE="41726"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter_fp\WhiteboarPlotter.pro,pro"
 STATE="utd"
-TIME="1574293405"
+TIME="1574358511"
 SIZE="2577"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1574293308"
+TIME="1574363652"
 SIZE="2717"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1574293308"
-SIZE="674"
+TIME="1574363673"
+SIZE="693"
+ENDFILE
+VALUE "<project>\designer\impl1\WhiteboarPlotter_verifytiming_log.rpt,log"
+STATE="utd"
+TIME="1574363658"
+SIZE="1212"
 ENDFILE
 VALUE "<project>\hdl\Stepper_control.v,hdl"
 STATE="utd"
-TIME="1574293309"
-SIZE="2534"
+TIME="1574283388"
+SIZE="2648"
 ENDFILE
 VALUE "<project>\simulation\bfmtovec_compile.tcl,sim"
 STATE="utd"
-TIME="1574293309"
-SIZE="1196"
+TIME="1555354520"
+SIZE="1229"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
 STATE="utd"
-TIME="1574293309"
+TIME="1536348874"
 SIZE="41"
 PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\coreapb3_usertb_master.bfm,sim"
 STATE="utd"
-TIME="1574293309"
-SIZE="7754"
+TIME="1537386962"
+SIZE="8016"
 PARENT="<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\CoreAPB3.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1574293309"
-SIZE="620"
+TIME="1574363519"
+SIZE="640"
 PARENT="<project>\component\work\WhiteboarPlotter\WhiteboarPlotter.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
-TIME="1574293309"
-SIZE="5273"
+TIME="1574363387"
+SIZE="5496"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 ENDFILE
 VALUE "<project>\simulation\user.bfm,sim"
 STATE="utd"
-TIME="1574293309"
-SIZE="647"
+TIME="1573766032"
+SIZE="670"
 PARENT="<project>\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.cxf"
 ENDFILE
 VALUE "<project>\synthesis\synwork\layer0.so,so"
 STATE="utd"
-TIME="1574293310"
-SIZE="154"
+TIME="1574116225"
+SIZE="159"
 ENDFILE
 VALUE "<project>\synthesis\WhiteBoard_Plotter.edn,syn_edn"
 STATE="ood"
-TIME="1574293309"
-SIZE="128438"
+TIME="1573766695"
+SIZE="131005"
 ENDFILE
 VALUE "<project>\synthesis\WhiteBoard_Plotter.so,so"
 STATE="utd"
-TIME="1574293309"
-SIZE="237"
+TIME="1573766695"
+SIZE="243"
 ENDFILE
 VALUE "<project>\synthesis\WhiteBoard_Plotter_sdc.sdc,syn_sdc"
 STATE="ood"
-TIME="1574293309"
-SIZE="486"
+TIME="1573766695"
+SIZE="512"
 ENDFILE
 VALUE "<project>\synthesis\WhiteBoard_Plotter_syn.prj,prj"
 STATE="utd"
-TIME="1574293405"
+TIME="1574358512"
 SIZE="2524"
 ENDFILE
 VALUE "<project>\synthesis\WhiteboarPlotter.edn,syn_edn"
 STATE="utd"
-TIME="1574293309"
-SIZE="136848"
+TIME="1574283596"
+SIZE="139618"
 ENDFILE
 VALUE "<project>\synthesis\WhiteboarPlotter.so,so"
 STATE="utd"
-TIME="1574293309"
-SIZE="233"
+TIME="1574283596"
+SIZE="239"
 ENDFILE
 VALUE "<project>\synthesis\WhiteboarPlotter_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1574293309"
-SIZE="286"
+TIME="1574283596"
+SIZE="310"
 ENDFILE
 VALUE "<project>\synthesis\WhiteboarPlotter_syn.prj,prj"
 STATE="utd"
-TIME="1574293405"
+TIME="1574358512"
 SIZE="0"
 ENDFILE
 ENDLIST
@@ -541,6 +546,7 @@ LIST ProjectState5.1
 LIST Impl1
 LiberoState=Post_Layout
 ideDESIGNER(<project>\designer\impl1\WhiteboarPlotter.adb,adb)=StateSuccess
+ideSYNTHESIS(<project>\synthesis\WhiteboarPlotter.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -577,18 +583,6 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
-ENDLIST
-LIST ProjectState5.1
-LIST Impl1
-ideSTIMULUS=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
 ENDLIST
 ENDLIST
 ENDLIST
@@ -681,10 +675,10 @@ ENDLIST
 LIST PhySynthesisOptions
 ENDLIST
 LIST Profiles
-NAME="SoftConsolev3.3"
+NAME="sc3v3"
 FUNCTION="SoftwareIDE"
 TOOL="SoftConsole"
-LOCATION="C:\Program Files (x86)\Microsemi\SoftConsole v3.3\Eclipse\eclipse.exe"
+LOCATION="C:\Microsemi\SoftConsole v3.3\Eclipse\eclipse.exe"
 PARAM=""
 BATCH=0
 LICENSE=""
@@ -694,8 +688,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -732,18 +726,7 @@ LIST "WhiteboarPlotter::work"
 LIST Impl1
 LiberoState=Post_Layout
 ideDESIGNER(<project>\designer\impl1\WhiteboarPlotter.adb,adb)=StateSuccess
-LIST FlowOptions
-UsePhySynth=FALSE
-UseSynth=TRUE
-UseFhbAutoInst=FALSE
-ENDLIST
-Used_File_List
-ENDUsed_File_List
-ENDLIST
-ENDLIST
-LIST "CoreAPB3::COREAPB3_LIB"
-LIST Impl1
-ideSTIMULUS=StateSuccess
+ideSYNTHESIS(<project>\synthesis\WhiteboarPlotter.edn,syn_edn)=StateSuccess
 LIST FlowOptions
 UsePhySynth=FALSE
 UseSynth=TRUE
@@ -766,8 +749,12 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Program Device:WhiteboarPlotter_program.log
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+SmartDesign;WhiteboarPlotter;0
+SmartDesign;WhiteBoard_Plotter;0
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"

@@ -2,8 +2,11 @@
 #include "timer.h"
 
 int main(){
-	startTimerContinuous(1, 100000);
-	startTimerContinuous(0, 200000);
+
+	stepper_config(SIXTEENTH, SIXTEENTH);
+
+	startTimerContinuous(1, 1000);
+	startTimerContinuous(0, 2000);
 
 	start_hardware_timer();
 

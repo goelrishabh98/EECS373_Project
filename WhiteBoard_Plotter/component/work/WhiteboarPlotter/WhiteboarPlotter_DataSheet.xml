@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>N:/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteboarPlotter</location>
-    <state>GENERATED ( Tue Nov 19 13:45:51 2019 )</state>
+    <state>GENERATED ( Thu Nov 21 14:12:15 2019 )</state>
     <swide-toolchain>SoftConsole workspace generated to N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
@@ -31,34 +31,22 @@
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>N:\EECS373_Project\WhiteBoard_Plotter\component\work\./MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>N:\EECS373_Project\WhiteBoard_Plotter\component\work\N:/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteBoard_Plotter/MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
   <io>
-    <port-name>UART_0_TXD</port-name>
+    <port-name>dir1</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>UART_0_RXD</port-name>
-    <direction>IN</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>dir2</port-name>
+    <port-name>GPIO_4_OUT</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>step1</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>step2</port-name>
+    <port-name>GPIO_3_OUT</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -70,7 +58,55 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>dir1</port-name>
+    <port-name>step1</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>dir2</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>GPIO_5_OUT</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>UART_0_RXD</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>step2</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>GPIO_0_OUT</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>GPIO_1_OUT</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>UART_0_TXD</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>GPIO_2_OUT</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>

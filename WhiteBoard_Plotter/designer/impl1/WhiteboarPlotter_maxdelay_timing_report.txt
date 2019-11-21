@@ -2,7 +2,7 @@ Timing Report Max Delay Analysis
 
 SmartTime Version v11.9
 Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
-Date: Wed Nov 20 16:00:40 2019
+Date: Thu Nov 21 14:14:18 2019
 
 
 Design: WhiteboarPlotter
@@ -45,7 +45,7 @@ Frequency (MHz):            N/A
 Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
 External Setup (ns):        N/A
-Max Clock-To-Out (ns):      N/A
+Max Clock-To-Out (ns):      12.551
 
 Clock Domain:               mss_ccc_gla1
 Period (ns):                7.646
@@ -197,7 +197,85 @@ END SET External Setup
 
 SET Clock to Output
 
-No Path
+Path 1
+  From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                    GPIO_3_OUT
+  Delay (ns):            8.996
+  Slack (ns):
+  Arrival (ns):          12.551
+  Required (ns):
+  Clock to Out (ns):     12.551
+
+Path 2
+  From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                    GPIO_5_OUT
+  Delay (ns):            8.939
+  Slack (ns):
+  Arrival (ns):          12.494
+  Required (ns):
+  Clock to Out (ns):     12.494
+
+Path 3
+  From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                    GPIO_1_OUT
+  Delay (ns):            8.910
+  Slack (ns):
+  Arrival (ns):          12.465
+  Required (ns):
+  Clock to Out (ns):     12.465
+
+Path 4
+  From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                    GPIO_2_OUT
+  Delay (ns):            8.900
+  Slack (ns):
+  Arrival (ns):          12.455
+  Required (ns):
+  Clock to Out (ns):     12.455
+
+Path 5
+  From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                    GPIO_4_OUT
+  Delay (ns):            8.841
+  Slack (ns):
+  Arrival (ns):          12.396
+  Required (ns):
+  Clock to Out (ns):     12.396
+
+
+Expanded Path 1
+  From: WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To: GPIO_3_OUT
+  data required time                             N/C
+  data arrival time                          -   12.551
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_pclk1
+               +     0.000          Clock source
+  0.000                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:PCLK1 (r)
+               +     3.555          Clock generation
+  3.555
+               +     4.132          cell: ADLIB:MSS_APB_IP
+  7.687                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:GPO[3] (f)
+               +     0.858          net: WhiteBoard_Plotter_0/GPO_net_0[3]
+  8.545                        WhiteBoard_Plotter_0/MSS_GPIO_0_GPIO_3_OUT:D (f)
+               +     4.006          cell: ADLIB:IOPAD_TRI
+  12.551                       WhiteBoard_Plotter_0/MSS_GPIO_0_GPIO_3_OUT:PAD (f)
+               +     0.000          net: GPIO_3_OUT
+  12.551                       GPIO_3_OUT (f)
+                                    
+  12.551                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_pclk1
+               +     0.000          Clock source
+  N/C                          WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:PCLK1 (r)
+               +     3.555          Clock generation
+  N/C
+                                    
+  N/C                          GPIO_3_OUT (f)
+
 
 END SET Clock to Output
 
@@ -538,7 +616,7 @@ Expanded Path 1
   0.000                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLAMSS (r)
                +     2.925          Clock generation
   2.925
-               +     0.630          net: WhiteBoard_Plotter_0/MSS_ADLIB_INST_FCLK
+               +     0.630          net: WhiteBoard_Plotter_0/GLA0
   3.555                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:FCLK (r)
                +     3.632          cell: ADLIB:MSS_APB_IP
   7.187                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:M2FRESETn (r)
@@ -739,7 +817,7 @@ Expanded Path 1
   N/C                          WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLAMSS (r)
                +     2.925          Clock generation
   N/C
-               +     0.630          net: WhiteBoard_Plotter_0/MSS_ADLIB_INST_FCLK
+               +     0.630          net: WhiteBoard_Plotter_0/GLA0
   N/C                          WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:FCLK (r)
                -    -2.196          Library setup time: ADLIB:MSS_APB_IP
   N/C                          WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:MSSRESETn

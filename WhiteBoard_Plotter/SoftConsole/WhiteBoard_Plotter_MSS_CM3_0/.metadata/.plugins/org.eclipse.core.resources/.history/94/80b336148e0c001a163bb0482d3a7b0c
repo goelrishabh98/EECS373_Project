@@ -1,0 +1,16 @@
+//3.8 cm for 20 teeth on belt
+//01so 3.8cm per revolution
+
+#ifndef STEPPER_H_
+#define STEPPER_H_
+
+#define PADDR (int*)0x40050000
+
+enum dir{NO, CCW, CW};
+enum mode{FULL, HALF, QUATER, EIGHT, X, X_X, X_X_X, SIXTEENTH};
+
+void config(int mode);
+void step(int dir1, int dir2);
+
+
+#endif /* STEPPER_H_ */

@@ -33,16 +33,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Wed Nov 20 16:00:24 2019
+Timing-driven Placer Started: Thu Nov 21 14:14:01 2019
 
-Placer Finished: Wed Nov 20 16:00:25 2019
+Placer Finished: Thu Nov 21 14:14:02 2019
 Total Placer CPU Time:     00:00:01
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: WhiteboarPlotter                Started: Wed Nov 20 16:00:27 2019
+Design: WhiteboarPlotter                Started: Thu Nov 21 14:14:04 2019
 
  
 Iterative improvement...
@@ -50,9 +50,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: WhiteboarPlotter                
-Finished: Wed Nov 20 16:00:31 2019
-Total CPU Time:     00:00:02            Total Elapsed Time: 00:00:04
-Total Memory Usage: 166.2 Mbytes
+Finished: Thu Nov 21 14:14:07 2019
+Total CPU Time:     00:00:02            Total Elapsed Time: 00:00:03
+Total Memory Usage: 166.0 Mbytes
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.
