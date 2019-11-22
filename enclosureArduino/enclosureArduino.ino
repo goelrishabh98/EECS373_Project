@@ -3,17 +3,30 @@
  * PWM: D5
  * Comms: TX/RX
  */
+#include <Servo.h>
+ 
 #define servoPin 5
 #define distanceSensorPin A0
-#define armExtendVal 255
-#define armRetractVal 128
+#define distanceThreshold 20  //About 100mV
+#define armExtendVal 150
+#define armRetractVal 35
+
+Servo servo;
 
 void setup() {
-  pinMode(servoPin, OUTPUT);
+  //pinMode(servoPin, OUTPUT);
+  servo.attach(servoPin);
+  Serial.begin(9600);
 }
 
 void loop() {
-
+  if(readDistanceSensor() < distanceThreshold) {
+    Serial.println("Triggered");
+  }
+  extendArm();
+  delay(2000);
+  retractArm();
+  delay(2000);
 }
 
 int readDistanceSensor() {
@@ -21,10 +34,10 @@ int readDistanceSensor() {
 }
 
 void extendArm() {
-  analogWrite(servoPin, armExtendVal);
+  servo.write(armExtendVal);
 }
 
 void retractArm() {
-  analogWrite(serviPin, armRetractVal);
+  servo.write(armRetractVal);
 }
 
