@@ -12,14 +12,15 @@
 #define armRetractVal 35
 
 Servo servo;
+int receivedData = 0;
 
 void setup() {
-  //pinMode(servoPin, OUTPUT);
   servo.attach(servoPin);
   Serial.begin(9600);
 }
 
-void loop() {
+void loop() {  
+  
   if(readDistanceSensor() < distanceThreshold) {
     Serial.println("Triggered");
   }
@@ -27,6 +28,15 @@ void loop() {
   delay(2000);
   retractArm();
   delay(2000);
+  
+  if(Serial.available() > 0) {
+    receivedData = Serial.read();
+  }
+  else {
+    Serial.write("Last Data:");
+    Serial.write(receivedData);
+    Serial.write("\r\n");
+  }
 }
 
 int readDistanceSensor() {
