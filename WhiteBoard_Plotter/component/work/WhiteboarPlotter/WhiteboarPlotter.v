@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Thu Nov 14 18:06:44 2019
+// Created by SmartDesign Thu Nov 21 14:11:59 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -11,6 +11,12 @@ module WhiteboarPlotter(
     MSS_RESET_N,
     UART_0_RXD,
     // Outputs
+    GPIO_0_OUT,
+    GPIO_1_OUT,
+    GPIO_2_OUT,
+    GPIO_3_OUT,
+    GPIO_4_OUT,
+    GPIO_5_OUT,
     UART_0_TXD,
     dir1,
     dir2,
@@ -26,6 +32,12 @@ input  UART_0_RXD;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
+output GPIO_0_OUT;
+output GPIO_1_OUT;
+output GPIO_2_OUT;
+output GPIO_3_OUT;
+output GPIO_4_OUT;
+output GPIO_5_OUT;
 output UART_0_TXD;
 output dir1;
 output dir2;
@@ -44,6 +56,12 @@ wire   [31:0] CoreAPB3_0_APBmslave0_PWDATA;
 wire          CoreAPB3_0_APBmslave0_PWRITE;
 wire          dir1_net_0;
 wire          dir2_net_0;
+wire          GPIO_0_OUT_net_0;
+wire          GPIO_1_OUT_net_0;
+wire          GPIO_2_OUT_net_0;
+wire          GPIO_3_OUT_net_0;
+wire          GPIO_4_OUT_net_0;
+wire          GPIO_5_OUT_net_0;
 wire          MSS_RESET_N;
 wire          step1_net_0;
 wire          step2_net_0;
@@ -63,6 +81,12 @@ wire          step2_net_1;
 wire          dir1_net_1;
 wire          dir2_net_1;
 wire          step1_net_1;
+wire          GPIO_5_OUT_net_1;
+wire          GPIO_4_OUT_net_1;
+wire          GPIO_3_OUT_net_1;
+wire          GPIO_2_OUT_net_1;
+wire          GPIO_1_OUT_net_1;
+wire          GPIO_0_OUT_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -88,10 +112,10 @@ wire   [31:0] PRDATAS16_const_net_0;
 //--------------------------------------------------------------------
 // Bus Interface Nets Declarations - Unequal Pin Widths
 //--------------------------------------------------------------------
-wire   [19:0] WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR;
 wire   [31:20]WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR_0_31to20;
 wire   [19:0] WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR_0_19to0;
 wire   [31:0] WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR_0;
+wire   [19:0] WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR;
 //--------------------------------------------------------------------
 // Constant assignments
 //--------------------------------------------------------------------
@@ -127,6 +151,18 @@ assign dir2_net_1       = dir2_net_0;
 assign dir2             = dir2_net_1;
 assign step1_net_1      = step1_net_0;
 assign step1            = step1_net_1;
+assign GPIO_5_OUT_net_1 = GPIO_5_OUT_net_0;
+assign GPIO_5_OUT       = GPIO_5_OUT_net_1;
+assign GPIO_4_OUT_net_1 = GPIO_4_OUT_net_0;
+assign GPIO_4_OUT       = GPIO_4_OUT_net_1;
+assign GPIO_3_OUT_net_1 = GPIO_3_OUT_net_0;
+assign GPIO_3_OUT       = GPIO_3_OUT_net_1;
+assign GPIO_2_OUT_net_1 = GPIO_2_OUT_net_0;
+assign GPIO_2_OUT       = GPIO_2_OUT_net_1;
+assign GPIO_1_OUT_net_1 = GPIO_1_OUT_net_0;
+assign GPIO_1_OUT       = GPIO_1_OUT_net_1;
+assign GPIO_0_OUT_net_1 = GPIO_0_OUT_net_0;
+assign GPIO_0_OUT       = GPIO_0_OUT_net_1;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -180,71 +216,68 @@ CoreAPB3_0(
         // Inputs
         .PRESETN    ( GND_net ), // tied to 1'b0 from definition
         .PCLK       ( GND_net ), // tied to 1'b0 from definition
-        .PADDR      ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR_0 ),
         .PWRITE     ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PWRITE ),
         .PENABLE    ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PENABLE ),
-        .PWDATA     ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PWDATA ),
         .PSEL       ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PSELx ),
-        .PRDATAS0   ( CoreAPB3_0_APBmslave0_PRDATA ),
         .PREADYS0   ( CoreAPB3_0_APBmslave0_PREADY ),
         .PSLVERRS0  ( CoreAPB3_0_APBmslave0_PSLVERR ),
-        .PRDATAS1   ( PRDATAS1_const_net_0 ), // tied to 32'h00000000 from definition
         .PREADYS1   ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS1  ( GND_net ), // tied to 1'b0 from definition
-        .PRDATAS2   ( PRDATAS2_const_net_0 ), // tied to 32'h00000000 from definition
         .PREADYS2   ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS2  ( GND_net ), // tied to 1'b0 from definition
-        .PRDATAS3   ( PRDATAS3_const_net_0 ), // tied to 32'h00000000 from definition
         .PREADYS3   ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS3  ( GND_net ), // tied to 1'b0 from definition
-        .PRDATAS4   ( PRDATAS4_const_net_0 ), // tied to 32'h00000000 from definition
         .PREADYS4   ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS4  ( GND_net ), // tied to 1'b0 from definition
-        .PRDATAS5   ( PRDATAS5_const_net_0 ), // tied to 32'h00000000 from definition
         .PREADYS5   ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS5  ( GND_net ), // tied to 1'b0 from definition
-        .PRDATAS6   ( PRDATAS6_const_net_0 ), // tied to 32'h00000000 from definition
         .PREADYS6   ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS6  ( GND_net ), // tied to 1'b0 from definition
-        .PRDATAS7   ( PRDATAS7_const_net_0 ), // tied to 32'h00000000 from definition
         .PREADYS7   ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS7  ( GND_net ), // tied to 1'b0 from definition
-        .PRDATAS8   ( PRDATAS8_const_net_0 ), // tied to 32'h00000000 from definition
         .PREADYS8   ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS8  ( GND_net ), // tied to 1'b0 from definition
-        .PRDATAS9   ( PRDATAS9_const_net_0 ), // tied to 32'h00000000 from definition
         .PREADYS9   ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS9  ( GND_net ), // tied to 1'b0 from definition
-        .PRDATAS10  ( PRDATAS10_const_net_0 ), // tied to 32'h00000000 from definition
         .PREADYS10  ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS10 ( GND_net ), // tied to 1'b0 from definition
-        .PRDATAS11  ( PRDATAS11_const_net_0 ), // tied to 32'h00000000 from definition
         .PREADYS11  ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS11 ( GND_net ), // tied to 1'b0 from definition
-        .PRDATAS12  ( PRDATAS12_const_net_0 ), // tied to 32'h00000000 from definition
         .PREADYS12  ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS12 ( GND_net ), // tied to 1'b0 from definition
-        .PRDATAS13  ( PRDATAS13_const_net_0 ), // tied to 32'h00000000 from definition
         .PREADYS13  ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS13 ( GND_net ), // tied to 1'b0 from definition
-        .PRDATAS14  ( PRDATAS14_const_net_0 ), // tied to 32'h00000000 from definition
         .PREADYS14  ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS14 ( GND_net ), // tied to 1'b0 from definition
-        .PRDATAS15  ( PRDATAS15_const_net_0 ), // tied to 32'h00000000 from definition
         .PREADYS15  ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS15 ( GND_net ), // tied to 1'b0 from definition
-        .PRDATAS16  ( PRDATAS16_const_net_0 ), // tied to 32'h00000000 from definition
         .PREADYS16  ( VCC_net ), // tied to 1'b1 from definition
         .PSLVERRS16 ( GND_net ), // tied to 1'b0 from definition
+        .PADDR      ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR_0 ),
+        .PWDATA     ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PWDATA ),
+        .PRDATAS0   ( CoreAPB3_0_APBmslave0_PRDATA ),
+        .PRDATAS1   ( PRDATAS1_const_net_0 ), // tied to 32'h00000000 from definition
+        .PRDATAS2   ( PRDATAS2_const_net_0 ), // tied to 32'h00000000 from definition
+        .PRDATAS3   ( PRDATAS3_const_net_0 ), // tied to 32'h00000000 from definition
+        .PRDATAS4   ( PRDATAS4_const_net_0 ), // tied to 32'h00000000 from definition
+        .PRDATAS5   ( PRDATAS5_const_net_0 ), // tied to 32'h00000000 from definition
+        .PRDATAS6   ( PRDATAS6_const_net_0 ), // tied to 32'h00000000 from definition
+        .PRDATAS7   ( PRDATAS7_const_net_0 ), // tied to 32'h00000000 from definition
+        .PRDATAS8   ( PRDATAS8_const_net_0 ), // tied to 32'h00000000 from definition
+        .PRDATAS9   ( PRDATAS9_const_net_0 ), // tied to 32'h00000000 from definition
+        .PRDATAS10  ( PRDATAS10_const_net_0 ), // tied to 32'h00000000 from definition
+        .PRDATAS11  ( PRDATAS11_const_net_0 ), // tied to 32'h00000000 from definition
+        .PRDATAS12  ( PRDATAS12_const_net_0 ), // tied to 32'h00000000 from definition
+        .PRDATAS13  ( PRDATAS13_const_net_0 ), // tied to 32'h00000000 from definition
+        .PRDATAS14  ( PRDATAS14_const_net_0 ), // tied to 32'h00000000 from definition
+        .PRDATAS15  ( PRDATAS15_const_net_0 ), // tied to 32'h00000000 from definition
+        .PRDATAS16  ( PRDATAS16_const_net_0 ), // tied to 32'h00000000 from definition
         .IADDR      ( IADDR_const_net_0 ), // tied to 32'h00000000 from definition
         // Outputs
-        .PRDATA     ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PRDATA ),
         .PREADY     ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PREADY ),
         .PSLVERR    ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PSLVERR ),
-        .PADDRS     ( CoreAPB3_0_APBmslave0_PADDR ),
         .PWRITES    ( CoreAPB3_0_APBmslave0_PWRITE ),
         .PENABLES   ( CoreAPB3_0_APBmslave0_PENABLE ),
-        .PWDATAS    ( CoreAPB3_0_APBmslave0_PWDATA ),
         .PSELS0     ( CoreAPB3_0_APBmslave0_PSELx ),
         .PSELS1     (  ),
         .PSELS2     (  ),
@@ -261,7 +294,10 @@ CoreAPB3_0(
         .PSELS13    (  ),
         .PSELS14    (  ),
         .PSELS15    (  ),
-        .PSELS16    (  ) 
+        .PSELS16    (  ),
+        .PRDATA     ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PRDATA ),
+        .PADDRS     ( CoreAPB3_0_APBmslave0_PADDR ),
+        .PWDATAS    ( CoreAPB3_0_APBmslave0_PWDATA ) 
         );
 
 //--------stepper_control
@@ -277,11 +313,11 @@ stepper_control stepper_control_0(
         // Outputs
         .PREADY  ( CoreAPB3_0_APBmslave0_PREADY ),
         .PSLVERR ( CoreAPB3_0_APBmslave0_PSLVERR ),
-        .PRDATA  ( CoreAPB3_0_APBmslave0_PRDATA ),
         .step1   ( step1_net_0 ),
         .dir1    ( dir1_net_0 ),
         .step2   ( step2_net_0 ),
-        .dir2    ( dir2_net_0 ) 
+        .dir2    ( dir2_net_0 ),
+        .PRDATA  ( CoreAPB3_0_APBmslave0_PRDATA ) 
         );
 
 //--------WhiteBoard_Plotter
@@ -289,18 +325,24 @@ WhiteBoard_Plotter WhiteBoard_Plotter_0(
         // Inputs
         .UART_0_RXD  ( UART_0_RXD ),
         .MSS_RESET_N ( MSS_RESET_N ),
-        .MSSPRDATA   ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PRDATA ),
         .MSSPREADY   ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PREADY ),
         .MSSPSLVERR  ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PSLVERR ),
+        .MSSPRDATA   ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PRDATA ),
         // Outputs
         .UART_0_TXD  ( UART_0_TXD_net_0 ),
-        .MSSPADDR    ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR ),
         .MSSPSEL     ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PSELx ),
         .MSSPENABLE  ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PENABLE ),
         .MSSPWRITE   ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PWRITE ),
-        .MSSPWDATA   ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PWDATA ),
         .FAB_CLK     ( WhiteBoard_Plotter_0_FAB_CLK ),
-        .M2F_RESET_N ( WhiteBoard_Plotter_0_M2F_RESET_N ) 
+        .M2F_RESET_N ( WhiteBoard_Plotter_0_M2F_RESET_N ),
+        .MSSPADDR    ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR ),
+        .MSSPWDATA   ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PWDATA ),
+        .GPIO_5_OUT  ( GPIO_5_OUT_net_0 ),
+        .GPIO_4_OUT  ( GPIO_4_OUT_net_0 ),
+        .GPIO_3_OUT  ( GPIO_3_OUT_net_0 ),
+        .GPIO_2_OUT  ( GPIO_2_OUT_net_0 ),
+        .GPIO_1_OUT  ( GPIO_1_OUT_net_0 ),
+        .GPIO_0_OUT  ( GPIO_0_OUT_net_0 ) 
         );
 
 

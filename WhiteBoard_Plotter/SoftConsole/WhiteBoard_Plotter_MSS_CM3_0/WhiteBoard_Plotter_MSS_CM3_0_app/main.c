@@ -1,13 +1,16 @@
 #include "stepper.h"
+#include "timer.h"
 
-int main()
-{volatile int i = 0;
+int main(){
 
-	while( 1 )
-	{
-		step(CW_CW);
-		for(i =0; i<10000; i++){
+	stepper_config(SIXTEENTH, SIXTEENTH);
 
-		}
-	}
+	startTimerContinuous(1, 1000);
+	startTimerContinuous(0, 2000);
+
+	start_hardware_timer();
+
+	while(1);
+
+	return 0;
 }

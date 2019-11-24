@@ -1,0 +1,11 @@
+#include "stepper.h"
+#include "timer.h"
+
+int main(){
+
+	volatile int i = 0;
+
+	startTimerContinuous(1, 100000);
+	startTimerContinuous(0, 200000);
+
+}

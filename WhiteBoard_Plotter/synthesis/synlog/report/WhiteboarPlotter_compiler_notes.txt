@@ -9,8 +9,8 @@
 @N: CG364 :"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v":1141:7:1141:9|Synthesizing module GND in library work.
 @N: CG364 :"C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v":1868:7:1868:9|Synthesizing module VCC in library work.
 @N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:46|Synthesizing module WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC in library work.
-@N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS in library work.
 @N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS in library work.
+@N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS in library work.
 @N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.v":9:7:9:24|Synthesizing module WhiteBoard_Plotter in library work.
 @N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.v":9:7:9:22|Synthesizing module WhiteboarPlotter in library work.
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":36:7:36:10|Input CLKA is unused.

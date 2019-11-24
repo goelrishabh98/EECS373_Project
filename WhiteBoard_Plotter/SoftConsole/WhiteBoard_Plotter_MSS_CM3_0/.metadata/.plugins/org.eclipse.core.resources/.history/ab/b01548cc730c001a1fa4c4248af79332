@@ -1,0 +1,29 @@
+#ifndef INTERFACE_H_
+#define INTERFACE_H_
+
+#include "timer.h"
+#include <math.h>
+
+double boardHeight;
+double boardWidth;
+
+double xPos = boardWidth/2;
+double yPos = boardHeight/2;
+
+double rigWidth;
+
+
+
+void drawLine(double startX, double startY, double endX, double endY, double t){
+	double oldR1 = sqrt(pow(startX - .5*boardWidth, 2) + pow(startY, 2));
+	double oldR2 = sqrt(pow(boardWidth - startX - .5*boardWidth, 2) + pow(startY, 2));
+	double newR1 = sqrt(pow(endX - .5*boardWidth, 2) + pow(endY, 2));
+	double newR2 = sqrt(pow(boardWidth - endX - .5*boardWidth, 2) + pow(endY, 2));
+
+	double rateChange1 = (newR1 - oldR1)/t;
+	double rateChange2 = (newR2 - oldR2)/t;
+
+	printf("r1 = %d, r2 = %d", rateChange1, rateChange2);
+}
+
+#endif /* INTERFACE_H_ */

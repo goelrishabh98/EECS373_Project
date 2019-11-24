@@ -6,9 +6,9 @@ Software Version: 11.9.0.4
 PDB file
 'N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter_fp\WhiteboarPlotter.pdb'
 has been loaded successfully.
-DESIGN : WhiteboarPlotter;  CHECKSUM : 3C51;  PDB_VERSION : 1.9
+DESIGN : WhiteboarPlotter;  CHECKSUM : 9938;  PDB_VERSION : 1.9
 Driver : 3.0.0 build 1
-programmer '80550' : FlashPro3
+programmer '78416' : FlashPro3
 Opened
 'N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter_fp\WhiteboarPlotter.pro'
 The 'open_project' command succeeded.
@@ -23,25 +23,25 @@ Info: Adding FPGA Array data from file
 PDB file
 'N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter_fp\WhiteboarPlotter.pdb'
 has been loaded successfully.
-DESIGN : WhiteboarPlotter;  CHECKSUM : D101;  PDB_VERSION : 1.9
+DESIGN : WhiteboarPlotter;  CHECKSUM : 9938;  PDB_VERSION : 1.9
 The 'update_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
-programmer '80550' : Scan Chain...
-Warning: programmer '80550' : Vpump has been selected on programmer AND an externally provided
+programmer '78416' : Scan Chain...
+Warning: programmer '78416' : Vpump has been selected on programmer AND an externally provided
          Vpump has also been detected. Using externally provided Vpump voltage source.
-programmer '80550' : Scan Chain PASSED.
-programmer '80550' : Executing action PROGRAM
-programmer '80550' : EXPORT FSN[48] = 014b3e584c64
-programmer '80550' : Erase ...
-programmer '80550' : Completed erase
-programmer '80550' : EXPORT CHECKSUM[16] = d101
-programmer '80550' : Programming FPGA Array
-programmer '80550' : Verifying FPGA Array
-programmer '80550' :         Verifying FPGA Array -- pass
-programmer '80550' : Program System Init and Boot Clients...
-programmer '80550' : Verify System Init and Boot Clients...
-programmer '80550' : Finished: Thu Nov 14 18:12:08 2019 (Elapsed time 00:00:34)
-programmer '80550' : Executing action PROGRAM PASSED.
+programmer '78416' : Scan Chain PASSED.
+programmer '78416' : Executing action PROGRAM
+programmer '78416' : EXPORT FSN[48] = 014b3e644458
+programmer '78416' : Erase ...
+programmer '78416' : Completed erase
+programmer '78416' : EXPORT CHECKSUM[16] = 9938
+programmer '78416' : Programming FPGA Array
+programmer '78416' : Verifying FPGA Array
+programmer '78416' :         Verifying FPGA Array -- pass
+programmer '78416' : Program System Init and Boot Clients...
+programmer '78416' : Verify System Init and Boot Clients...
+programmer '78416' : Finished: Thu Nov 21 14:17:52 2019 (Elapsed time 00:00:34)
+programmer '78416' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o
 

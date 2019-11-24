@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Thu Nov 14 18:10:45 2019 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Thu Nov 21 14:14:12 2019 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
@@ -32,7 +32,7 @@ A19                  GND                           Reserved
 A20                  Not Bonded                    Unconnected
 A21                  Not Bonded                    Unconnected
 A22                  GND                           Reserved
-AA1                  GPIO_4/IO43RSB4V0             Unassigned
+AA1     GPIO_4_OUT   GPIO_4/IO43RSB4V0             Fixed        LVTTL    8                  High  None           ---              No    35                No           Yes
 AA2                  GPIO_12/IO37RSB4V0            Unassigned
 AA3                  MAC_MDC/IO48RSB4V0            Unassigned
 AA4                  MAC_RXER/IO50RSB4V0           Unassigned
@@ -364,7 +364,7 @@ P21                  TDO                           Reserved
 P22                  TRSTB                         Reserved
 R1      MSS_RESET_N  MSS_RESET_N                   Special      LVTTL    ---                ---   None           No               ---   ---               No           Yes
 R2                   VCCFPGAIOB5                   Reserved
-R3                   GPIO_1/IO46RSB4V0             Unassigned
+R3      GPIO_1_OUT   GPIO_1/IO46RSB4V0             Fixed        LVTTL    8                  High  None           ---              No    35                No           Yes
 R4                   Not Bonded                    Unconnected
 R5                   Not Bonded                    Unconnected
 R6                   Not Bonded                    Unconnected
@@ -407,7 +407,7 @@ T20                  Not Bonded                    Unconnected
 T21                  VCCMSSIOB2                    Reserved
 T22                  GND                           Reserved
 U1                   GND                           Reserved
-U2                   GPIO_5/IO42RSB4V0             Unassigned
+U2      GPIO_5_OUT   GPIO_5/IO42RSB4V0             Fixed        LVTTL    8                  High  None           ---              No    35                No           Yes
 U3                   GPIO_10/IO58RSB4V0            Unassigned
 U4                   VCCMSSIOB4                    Reserved
 U5                   MAC_RXD[1]/IO53RSB4V0         Unassigned
@@ -428,7 +428,7 @@ U19                  VCCMSSIOB2                    Reserved
 U20                  I2C_1_SCL/GPIO_31             Special
 U21                  I2C_0_SCL/GPIO_23             Special
 U22                  GND                           Reserved
-V1                   GPIO_0/IO47RSB4V0             Unassigned
+V1      GPIO_0_OUT   GPIO_0/IO47RSB4V0             Fixed        LVTTL    8                  High  None           ---              No    35                No           Yes
 V2                   GPIO_6/IO41RSB4V0             Unassigned
 V3                   GPIO_9/IO38RSB4V0             Unassigned
 V4                   MAC_MDIO/IO49RSB4V0           Unassigned
@@ -450,7 +450,7 @@ V19                  SPI_1_DI/GPIO_25              Special
 V20                  UART_1_TXD/GPIO_28            Special
 V21                  I2C_0_SDA/GPIO_22             Special
 V22                  I2C_1_SDA/GPIO_30             Special
-W1                   GPIO_2/IO45RSB4V0             Unassigned
+W1      GPIO_2_OUT   GPIO_2/IO45RSB4V0             Fixed        LVTTL    8                  High  None           ---              No    35                No           Yes
 W2                   GPIO_7/IO40RSB4V0             Unassigned
 W3                   GND                           Reserved
 W4                   MAC_CRSDV/IO51RSB4V0          Unassigned
@@ -472,7 +472,7 @@ W19                  SPI_0_CLK/GPIO_18             Special
 W20                  GND                           Reserved
 W21                  SPI_1_SS/GPIO_27              Special
 W22                  UART_1_RXD/GPIO_29            Special
-Y1                   GPIO_3/IO44RSB4V0             Unassigned
+Y1      GPIO_3_OUT   GPIO_3/IO44RSB4V0             Fixed        LVTTL    8                  High  None           ---              No    35                No           Yes
 Y2                   VCCMSSIOB4                    Reserved
 Y3                   GPIO_15/IO34RSB4V0            Unassigned
 Y4                   MAC_TXEN/IO52RSB4V0           Unassigned

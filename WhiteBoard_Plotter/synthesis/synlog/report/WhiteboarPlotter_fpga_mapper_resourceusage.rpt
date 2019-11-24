@@ -5,14 +5,14 @@ Report for cell WhiteboarPlotter.verilog
                GND     4      0.0        0.0
            MSS_APB     1      0.0        0.0
            MSS_CCC     1      0.0        0.0
-               MX2     2      1.0        2.0
-              NOR2     4      1.0        4.0
-             NOR2A     4      1.0        4.0
-             NOR2B    19      1.0       19.0
+               MX2     4      1.0        4.0
+              NOR2     2      1.0        2.0
+             NOR2A     2      1.0        2.0
+             NOR2B    23      1.0       23.0
               NOR3     2      1.0        2.0
              NOR3C     1      1.0        1.0
-               OA1    12      1.0       12.0
-              OA1A     2      1.0        2.0
+               OA1     6      1.0        6.0
+              OA1B     2      1.0        2.0
                OR2     4      1.0        4.0
               OR2B     2      1.0        2.0
              RCOSC     1      0.0        0.0
@@ -22,20 +22,20 @@ Report for cell WhiteboarPlotter.verilog
 
               DFN1    22      1.0       22.0
                    -----          ----------
-             TOTAL    99                88.0
+             TOTAL    95                84.0
 
 
   IO Cell usage:
               cell count
          INBUF_MSS     2
             OUTBUF     4
-        OUTBUF_MSS     1
+        OUTBUF_MSS     7
                    -----
-             TOTAL     7
+             TOTAL    13
 
 
-Core Cells         : 88 of 4608 (2%)
-IO Cells           : 7
+Core Cells         : 84 of 4608 (2%)
+IO Cells           : 13
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)

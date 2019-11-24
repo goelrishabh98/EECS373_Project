@@ -12,7 +12,7 @@ rightMotorPos = [boardWidth, boardHeight];
 %Circumference of pulley ~ 3.8cm
 pulleyCircumference = 3.8;
 %One stepper motor step
-stepDistance = pulleyCircumference / 20;
+stepDistance = pulleyCircumference * 1.8 / 360.0;
 
 %Motor speeds
 %Negative --> Reeling in

@@ -21,7 +21,9 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v" (library COREAPB3_LIB)
 @I::"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.v" (library work)
 Verilog syntax check successful!
-File N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v changed - recompiling
+File N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\mss_tshell.v changed - recompiling
+File N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v changed - recompiling
+File N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.v changed - recompiling
 File N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.v changed - recompiling
 Selecting top level module WhiteboarPlotter
 @W: CG775 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
@@ -121,9 +123,9 @@ Selecting top level module WhiteboarPlotter
 
 @N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:46|Synthesizing module WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC in library work.
 
-@N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS in library work.
-
 @N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS in library work.
+
+@N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS in library work.
 
 @N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.v":9:7:9:24|Synthesizing module WhiteBoard_Plotter in library work.
 
@@ -147,7 +149,7 @@ Selecting top level module WhiteboarPlotter
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":48:7:48:13|Input MAINXIN is unused.
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":49:7:49:11|Input LPXIN is unused.
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused.
-@W: CL246 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":12:18:12:23|Input port bits 31 to 2 of PWDATA[31:0] are unused. Assign logic for all port bits or change the input port size.
+@W: CL246 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":12:18:12:23|Input port bits 31 to 4 of PWDATA[31:0] are unused. Assign logic for all port bits or change the input port size.
 @A: CL153 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":13:18:13:23|*Unassigned bits of PRDATA[31:0] are referenced and tied to 0 -- simulation mismatch possible.
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":7:6:7:12|Input PENABLE is unused.
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\hdl\Stepper_control.v":11:13:11:17|Input PADDR is unused.
@@ -200,12 +202,12 @@ Selecting top level module WhiteboarPlotter
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":690:0:690:9|Input PSLVERRS14 is unused.
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":692:0:692:9|Input PSLVERRS15 is unused.
 
-At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 77MB)
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 78MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Nov 14 18:07:32 2019
+# Thu Nov 21 14:13:34 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
@@ -216,7 +218,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Nov 14 18:07:33 2019
+# Thu Nov 21 14:13:34 2019
 
 ###########################################################]
 @END
@@ -226,6 +228,6 @@ At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Nov 14 18:07:33 2019
+# Thu Nov 21 14:13:34 2019
 
 ###########################################################]
