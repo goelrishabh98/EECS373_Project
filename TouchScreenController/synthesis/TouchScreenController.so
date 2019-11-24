@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>TouchScreenController</design>
+	<target_edif>E:\Github\EECS373_Project\TouchScreenController\synthesis\TouchScreenController.edn</target_edif>
+</SynplifyOutput>

@@ -1,0 +1,21 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
+
+Date      :  Sat Nov 23 20:42:35 2019
+Project   :  E:\Github\EECS373_Project\TouchScreenController
+Component :  TouchScreenController
+Family    :  SmartFusion
+
+
+HDL source files for all Synthesis and Simulation tools:
+    E:/Github/EECS373_Project/TouchScreenController/component/work/TouchScreenController/MSS_CCC_0/TouchScreenController_tmp_MSS_CCC_0_MSS_CCC.v
+    E:/Github/EECS373_Project/TouchScreenController/component/work/TouchScreenController/TouchScreenController.v
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    E:/Github/EECS373_Project/TouchScreenController/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v
+    E:/Github/EECS373_Project/TouchScreenController/component/work/TouchScreenController/mss_tshell.v
+
+Stimulus files for all Simulation tools:
+    E:/Github/EECS373_Project/TouchScreenController/component/Actel/SmartFusionMSS/MSS/2.5.200/CompileDssBfm.tcl
+    E:/Github/EECS373_Project/TouchScreenController/component/Actel/SmartFusionMSS/MSS/2.5.200/bfmtovec.exe
+    E:/Github/EECS373_Project/TouchScreenController/component/work/TouchScreenController/MSS_ENVM_0/test.bfm
+

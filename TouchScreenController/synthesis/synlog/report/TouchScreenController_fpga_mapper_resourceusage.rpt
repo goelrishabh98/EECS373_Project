@@ -1,0 +1,32 @@
+Target Part: A2F200M3F_FBGA484_STD
+Report for cell TouchScreenController.verilog
+  Core Cell usage:
+              cell count     area count*area
+               GND     2      0.0        0.0
+           MSS_APB     1      0.0        0.0
+           MSS_CCC     1      0.0        0.0
+             RCOSC     1      0.0        0.0
+               VCC     2      0.0        0.0
+
+
+                   -----          ----------
+             TOTAL     7                 0.0
+
+
+  IO Cell usage:
+              cell count
+         BIBUF_MSS     6
+           INBUF_A     3
+         INBUF_MSS     3
+        OUTBUF_MSS     1
+       TRIBUFF_MSS     1
+                   -----
+             TOTAL    14
+
+
+Core Cells         : 0 of 4608 (0%)
+IO Cells           : 14
+
+  RAM/ROM Usage Summary
+Block Rams : 0 of 8 (0%)
+
