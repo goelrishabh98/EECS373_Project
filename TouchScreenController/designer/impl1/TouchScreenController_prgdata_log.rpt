@@ -8,7 +8,7 @@ Info: The design
 Opened an existing Libero design
 E:/Github/EECS373_Project/TouchScreenController/designer/impl1/TouchScreenController.adb.
 
-The Export-map command succeeded ( 00:00:09 )
+The Export-map command succeeded ( 00:00:08 )
 CHECKSUM: 7226
 Wrote to the file:
 E:\Github\EECS373_Project\TouchScreenController\designer\impl1\TouchScreenController.fdb
@@ -17,6 +17,6 @@ The Export command succeeded ( 00:00:10 )
 Design saved to file
 E:/Github/EECS373_Project/TouchScreenController/designer/impl1/TouchScreenController.adb.
 
-The Execute Script command succeeded ( 00:00:11 )
+The Execute Script command succeeded ( 00:00:18 )
 Design closed.
 

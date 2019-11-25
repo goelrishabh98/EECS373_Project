@@ -2,15 +2,15 @@ C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe  -prodtype  synpli
 relcom:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe -prodtype synplify_pro -encrypt -pro -rundir ..\..\synthesis -part A2F200M3F -package FBGA484 -grade STD -globalthreshold 50 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile ..\synlog\report\TouchScreenController_fpga_mapper.xml -top_level_module TouchScreenController -licensetype synplifypro_actel -flow mapping -mp 4 -prjfile ..\scratchproject.prs -implementation synthesis -multisrs -oedif ..\TouchScreenController.edn -freq 100.000 ..\synwork\TouchScreenController_prem.srd -sap ..\TouchScreenController.sap -otap ..\TouchScreenController.tap -omap ..\TouchScreenController.map -devicelib C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v -sap ..\TouchScreenController.sap -ologparam TouchScreenController.plg -osyn ..\TouchScreenController.srm -prjdir ..\ -prjname TouchScreenController_syn -log ..\synlog\TouchScreenController_fpga_mapper.srr
 rc:1 success:1 runtime:1
 file:..\scratchproject.prs|io:o|time:1574538993|size:2274|exec:0|csum:
-file:..\TouchScreenController.edn|io:o|time:1574559805|size:102188|exec:0|csum:
-file:..\synwork\TouchScreenController_prem.srd|io:i|time:1574559804|size:10626|exec:0|csum:0CFE4251E6ECD7BFFDB72A76B1DBD7DC
-file:..\TouchScreenController.sap|io:o|time:1574559804|size:129|exec:0|csum:
+file:..\TouchScreenController.edn|io:o|time:1574647326|size:103217|exec:0|csum:
+file:..\synwork\TouchScreenController_prem.srd|io:i|time:1574647325|size:12091|exec:0|csum:0CFE4251E6ECD7BFFDB72A76B1DBD7DC
+file:..\TouchScreenController.sap|io:o|time:1574647325|size:129|exec:0|csum:
 file:..\TouchScreenController.tap|io:o|time:0|size:0|exec:0|csum:
-file:..\TouchScreenController.map|io:o|time:1574559805|size:28|exec:0|csum:
+file:..\TouchScreenController.map|io:o|time:1574647326|size:28|exec:0|csum:
 file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v|io:i|time:1509027488|size:72817|exec:0|csum:792D908376FAE59463CBCC67F19D1698
-file:..\TouchScreenController.sap|io:o|time:1574559804|size:129|exec:0|csum:
-file:TouchScreenController.plg|io:o|time:1574559805|size:327|exec:0|csum:
-file:..\TouchScreenController.srm|io:o|time:1574559805|size:73375|exec:0|csum:
-file:..\synlog\TouchScreenController_fpga_mapper.srr|io:o|time:1574559805|size:14598|exec:0|csum:
+file:..\TouchScreenController.sap|io:o|time:1574647325|size:129|exec:0|csum:
+file:TouchScreenController.plg|io:o|time:1574647326|size:327|exec:0|csum:
+file:..\TouchScreenController.srm|io:o|time:1574647326|size:73511|exec:0|csum:
+file:..\synlog\TouchScreenController_fpga_mapper.srr|io:o|time:1574647326|size:14598|exec:0|csum:
 file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\m_proasic.exe|io:i|time:1509373872|size:11119104|exec:1|csum:6BD6E9876645BB1B346C655471A0D71C
 file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe|io:i|time:1509375286|size:14301696|exec:1|csum:CA7B630F1194A591FA1E520688EE75E2

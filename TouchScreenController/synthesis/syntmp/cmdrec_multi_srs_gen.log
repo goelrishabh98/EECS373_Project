@@ -1,8 +1,8 @@
 C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  TouchScreenController  -multisrs  E:\Github\EECS373_Project\TouchScreenController\synthesis\synwork\TouchScreenController_comp.srs  -osyn  E:\Github\EECS373_Project\TouchScreenController\synthesis\synwork\TouchScreenController_mult.srs  -log  E:\Github\EECS373_Project\TouchScreenController\synthesis\synlog\TouchScreenController_multi_srs_gen.srr 
 relcom:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\syn_nfilter.exe -link -top TouchScreenController -multisrs ..\synwork\TouchScreenController_comp.srs -osyn ..\synwork\TouchScreenController_mult.srs -log ..\synlog\TouchScreenController_multi_srs_gen.srr
 rc:0 success:1 runtime:0
-file:..\synwork\TouchScreenController_comp.srs|io:i|time:1574559802|size:24411|exec:0|csum:46871B31D8E909FBCFA6DDAB64E91F0B
-file:..\synwork\TouchScreenController_mult.srs|io:o|time:1574559804|size:23154|exec:0|csum:
-file:..\synlog\TouchScreenController_multi_srs_gen.srr|io:o|time:1574559804|size:534|exec:0|csum:
+file:..\synwork\TouchScreenController_comp.srs|io:i|time:1574647323|size:24437|exec:0|csum:95C5824E9189C1A8C4F79FD824451BBD
+file:..\synwork\TouchScreenController_mult.srs|io:o|time:1574647324|size:23200|exec:0|csum:
+file:..\synlog\TouchScreenController_multi_srs_gen.srr|io:o|time:1574647324|size:534|exec:0|csum:
 file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\syn_nfilter.exe|io:i|time:1509029812|size:3128832|exec:1|csum:962D613D77B03012E41E67FDFAA0D819
 file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1509030084|size:3947520|exec:1|csum:17B0DA4185D3A16356E0044EDC31C9F0

@@ -2,7 +2,7 @@ Timing Report Max Delay Analysis
 
 SmartTime Version v11.9
 Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
-Date: Sat Nov 23 20:45:39 2019
+Date: Sun Nov 24 21:02:37 2019
 
 
 Design: TouchScreenController

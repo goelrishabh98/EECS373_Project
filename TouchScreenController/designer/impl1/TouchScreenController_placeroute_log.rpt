@@ -33,25 +33,25 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Sat Nov 23 20:45:23 2019
+Timing-driven Placer Started: Sun Nov 24 21:02:21 2019
 
-Placer Finished: Sat Nov 23 20:45:25 2019
+Placer Finished: Sun Nov 24 21:02:23 2019
 Total Placer CPU Time:     00:00:02
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: TouchScreenController           Started: Sat Nov 23 20:45:27 2019
+Design: TouchScreenController           Started: Sun Nov 24 21:02:25 2019
 
  
 
 Timing-driven Router completed successfully.
 
 Design: TouchScreenController           
-Finished: Sat Nov 23 20:45:30 2019
+Finished: Sun Nov 24 21:02:28 2019
 Total CPU Time:     00:00:03            Total Elapsed Time: 00:00:03
-Total Memory Usage: 161.0 Mbytes
+Total Memory Usage: 160.8 Mbytes
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.

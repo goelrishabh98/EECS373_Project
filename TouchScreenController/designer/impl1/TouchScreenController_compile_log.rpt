@@ -13,10 +13,13 @@ Opened an existing Libero design TouchScreenController.adb.
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
  Netlist Reading Time = 0.0 seconds
-Imported the file:
+Imported the files:
    E:\Github\EECS373_Project\TouchScreenController\synthesis\TouchScreenController.edn
 
-The Import command succeeded ( 00:00:03 )
+E:\Github\EECS373_Project\TouchScreenController\component\work\TouchScreenController\TouchScree\
+nController.pdc
+
+The Import command succeeded ( 00:00:04 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -26,6 +29,9 @@ Device      : A2F200M3F
 Package     : 484 FBGA
 Source      :
 E:\Github\EECS373_Project\TouchScreenController\synthesis\TouchScreenController.edn
+
+E:\Github\EECS373_Project\TouchScreenController\component\work\TouchScreenController\TouchScree\
+nController.pdc
 Format      : EDIF
 Topcell     : TouchScreenController
 Speed grade : STD
@@ -283,24 +289,23 @@ Warning: CMP201: Net MSS_ADLIB_INST_SDD0 drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_SDD1 drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_SDD2 drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_SLEEP drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1CLKO drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1DO drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1DOE drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1MODE drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1SSO[0] drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1SSO[1] drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1SSO[2] drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1SSO[3] drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1SSO[4] drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1SSO[5] drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1SSO[6] drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1SSO[7] drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0CLKO drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0DO drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0DOE drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0MODE drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0SSO[0] drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0SSO[1] drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0SSO[2] drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0SSO[3] drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0SSO[4] drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0SSO[5] drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0SSO[6] drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0SSO[7] drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_TXEV drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_UART0DTRn drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_UART0RTSn drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_UART1DTRn drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_UART1RTSn drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_UART1TXD drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_VAREFOUT drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_VCC15GOOD drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_VCC33GOOD drives no load.
@@ -361,13 +366,13 @@ Warning: CMP201: Net GPOE_net_0[28] drives no load.
 Warning: CMP201: Net GPOE_net_0[29] drives no load.
 Warning: CMP201: Net GPOE_net_0[30] drives no load.
 Warning: CMP201: Net GPOE_net_0[31] drives no load.
-Warning: CMP201: Net SPI0SSO_net_0[1] drives no load.
-Warning: CMP201: Net SPI0SSO_net_0[2] drives no load.
-Warning: CMP201: Net SPI0SSO_net_0[3] drives no load.
-Warning: CMP201: Net SPI0SSO_net_0[4] drives no load.
-Warning: CMP201: Net SPI0SSO_net_0[5] drives no load.
-Warning: CMP201: Net SPI0SSO_net_0[6] drives no load.
-Warning: CMP201: Net SPI0SSO_net_0[7] drives no load.
+Warning: CMP201: Net SPI1SSO_net_0[1] drives no load.
+Warning: CMP201: Net SPI1SSO_net_0[2] drives no load.
+Warning: CMP201: Net SPI1SSO_net_0[3] drives no load.
+Warning: CMP201: Net SPI1SSO_net_0[4] drives no load.
+Warning: CMP201: Net SPI1SSO_net_0[5] drives no load.
+Warning: CMP201: Net SPI1SSO_net_0[6] drives no load.
+Warning: CMP201: Net SPI1SSO_net_0[7] drives no load.
 Warning: CMP201: Net MSS_CCC_0/I_MSSCCC_GLA drives no load.
 Warning: CMP201: Net MSS_CCC_0/I_MSSCCC_GLB drives no load.
 Warning: CMP201: Net MSS_CCC_0/I_MSSCCC_GLC drives no load.
@@ -387,7 +392,14 @@ Optimized macros:
 
     Total macros optimized  0
 
-There were 0 error(s) and 322 warning(s) in this design.
+There were 0 error(s) and 321 warning(s) in this design.
+=====================================================================
+
+Reading user pdc (Physical Design Constraints) file(s) postcompile
+
+
+There were 0 error(s) and 0 warning(s) in reading the user pdc.
+
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -404,7 +416,7 @@ Compile report:
     Fabric IO (W/ clocks)      Used:      0  Total:     94   (0.00%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      3  Total:     32   (9.38%)
-    Dedicated MSS IO           Used:     11  Total:     43   (25.58%)
+    Dedicated MSS IO           Used:     13  Total:     43   (30.23%)
     GLOBAL (Chip+Quadrant)     Used:      0  Total:     15   (0.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)
@@ -452,7 +464,7 @@ I/O Technology:
 Net information report:
 =======================
 
-The Compile command succeeded ( 00:00:01 )
+The Compile command succeeded ( 00:00:02 )
 Wrote status report to file: TouchScreenController_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
@@ -465,6 +477,6 @@ The Report command succeeded ( 00:00:01 )
 Design saved to file
 E:\Github\EECS373_Project\TouchScreenController\designer\impl1\TouchScreenController.adb.
 
-The Execute Script command succeeded ( 00:00:08 )
+The Execute Script command succeeded ( 00:00:10 )
 Design closed.
 

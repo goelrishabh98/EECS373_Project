@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Sat Nov 23 20:45:34 2019 ***************************************************************************
+                          Sun Nov 24 21:02:32 2019 ***************************************************************************
 
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
 File Name: E:\Github\EECS373_Project\TouchScreenController\designer\impl1\TouchScreenController.adb
 Design Name: TouchScreenController  Design State: layout
-Last Saved: Sat Nov 23 20:43:35 2019
+Last Saved: Sun Nov 24 21:02:18 2019
 
 ***** Device Data **************************************************
 
@@ -22,8 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Sat Nov 23 20:43:28 2019:
+Source File(s) Imported on Sun Nov 24 21:02:09 2019:
         E:\Github\EECS373_Project\TouchScreenController\synthesis\TouchScreenController.edn
+        E:\Github\EECS373_Project\TouchScreenController\component\work\TouchScreenController\TouchScreenController.pdc
 
 
 ***** CAE Variables ************************************************
@@ -51,6 +52,9 @@ Device      : A2F200M3F
 Package     : 484 FBGA
 Source      :
 E:\Github\EECS373_Project\TouchScreenController\synthesis\TouchScreenController.edn
+
+E:\Github\EECS373_Project\TouchScreenController\component\work\TouchScreenController\TouchScree\
+nController.pdc
 Format      : EDIF
 Topcell     : TouchScreenController
 Speed grade : STD
@@ -308,24 +312,23 @@ Warning: CMP201: Net MSS_ADLIB_INST_SDD0 drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_SDD1 drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_SDD2 drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_SLEEP drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1CLKO drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1DO drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1DOE drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1MODE drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1SSO[0] drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1SSO[1] drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1SSO[2] drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1SSO[3] drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1SSO[4] drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1SSO[5] drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1SSO[6] drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_SPI1SSO[7] drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0CLKO drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0DO drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0DOE drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0MODE drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0SSO[0] drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0SSO[1] drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0SSO[2] drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0SSO[3] drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0SSO[4] drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0SSO[5] drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0SSO[6] drives no load.
+Warning: CMP201: Net MSS_ADLIB_INST_SPI0SSO[7] drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_TXEV drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_UART0DTRn drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_UART0RTSn drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_UART1DTRn drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_UART1RTSn drives no load.
-Warning: CMP201: Net MSS_ADLIB_INST_UART1TXD drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_VAREFOUT drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_VCC15GOOD drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_VCC33GOOD drives no load.
@@ -386,13 +389,13 @@ Warning: CMP201: Net GPOE_net_0[28] drives no load.
 Warning: CMP201: Net GPOE_net_0[29] drives no load.
 Warning: CMP201: Net GPOE_net_0[30] drives no load.
 Warning: CMP201: Net GPOE_net_0[31] drives no load.
-Warning: CMP201: Net SPI0SSO_net_0[1] drives no load.
-Warning: CMP201: Net SPI0SSO_net_0[2] drives no load.
-Warning: CMP201: Net SPI0SSO_net_0[3] drives no load.
-Warning: CMP201: Net SPI0SSO_net_0[4] drives no load.
-Warning: CMP201: Net SPI0SSO_net_0[5] drives no load.
-Warning: CMP201: Net SPI0SSO_net_0[6] drives no load.
-Warning: CMP201: Net SPI0SSO_net_0[7] drives no load.
+Warning: CMP201: Net SPI1SSO_net_0[1] drives no load.
+Warning: CMP201: Net SPI1SSO_net_0[2] drives no load.
+Warning: CMP201: Net SPI1SSO_net_0[3] drives no load.
+Warning: CMP201: Net SPI1SSO_net_0[4] drives no load.
+Warning: CMP201: Net SPI1SSO_net_0[5] drives no load.
+Warning: CMP201: Net SPI1SSO_net_0[6] drives no load.
+Warning: CMP201: Net SPI1SSO_net_0[7] drives no load.
 Warning: CMP201: Net MSS_CCC_0/I_MSSCCC_GLA drives no load.
 Warning: CMP201: Net MSS_CCC_0/I_MSSCCC_GLB drives no load.
 Warning: CMP201: Net MSS_CCC_0/I_MSSCCC_GLC drives no load.
@@ -412,7 +415,14 @@ Optimized macros:
 
     Total macros optimized  0
 
-There were 0 error(s) and 322 warning(s) in this design.
+There were 0 error(s) and 321 warning(s) in this design.
+=====================================================================
+
+Reading user pdc (Physical Design Constraints) file(s) postcompile
+
+
+There were 0 error(s) and 0 warning(s) in reading the user pdc.
+
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -429,7 +439,7 @@ Compile report:
     Fabric IO (W/ clocks)      Used:      0  Total:     94   (0.00%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      3  Total:     32   (9.38%)
-    Dedicated MSS IO           Used:     11  Total:     43   (25.58%)
+    Dedicated MSS IO           Used:     13  Total:     43   (30.23%)
     GLOBAL (Chip+Quadrant)     Used:      0  Total:     15   (0.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)
@@ -501,25 +511,25 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Sat Nov 23 20:45:23 2019
+Timing-driven Placer Started: Sun Nov 24 21:02:21 2019
 
-Placer Finished: Sat Nov 23 20:45:25 2019
+Placer Finished: Sun Nov 24 21:02:23 2019
 Total Placer CPU Time:     00:00:02
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: TouchScreenController           Started: Sat Nov 23 20:45:27 2019
+Design: TouchScreenController           Started: Sun Nov 24 21:02:25 2019
 
  
 
 Timing-driven Router completed successfully.
 
 Design: TouchScreenController           
-Finished: Sat Nov 23 20:45:30 2019
+Finished: Sun Nov 24 21:02:28 2019
 Total CPU Time:     00:00:03            Total Elapsed Time: 00:00:03
-Total Memory Usage: 161.0 Mbytes
+Total Memory Usage: 160.8 Mbytes
                         o - o - o - o - o - o
 
 

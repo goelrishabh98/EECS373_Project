@@ -23,6 +23,7 @@ KEY IDE_DES_ERROR_FOUND "FALSE"
 KEY IDE_DES_ADB_PATH "E:\Github\EECS373_Project\TouchScreenController\designer\impl1\TouchScreenController.adb"
 LIST SOURCE_FILES
 VALUE "E:\Github\EECS373_Project\TouchScreenController\synthesis\TouchScreenController.edn;edn"
+VALUE "E:\Github\EECS373_Project\TouchScreenController\component\work\TouchScreenController\TouchScreenController.pdc;pdc"
 ENDLIST
 LIST OPTIONAL_FILES
 ENDLIST
