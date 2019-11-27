@@ -2,7 +2,6 @@ void begin(){
 
 	uint8_t cmd, x, numArgs;
 	const uint8_t *addr = initcmd;
-	const uint8_t frame_size = 8;
 
 	MSS_SPI_init(&g_mss_spi1);
 	MSS_SPI_configure_master_mode(
@@ -10,25 +9,26 @@ void begin(){
 		MSS_SPI_SLAVE_0,
 		MSS_SPI_MODE0,
 		MSS_SPI_PCLK_DIV_16,
-		frame_size
+		8
 	);
 
 	sendCommand(SWRESET);
-	//delay(150)
+	delay(150)
 	while((cmd = read_byte(addr++))){
 		x = read_byte(addr++);
 		numArgs = x & 0x7F;
 		sendCommand(cmd, addr, numArgs);
 		addr += numArgs;
 		if(x & 0x80){
-			//delay(150);
+			delay(150);
 		}
 	}
 }
 
 void drawPixel(uint16_t x, uint16_t y, uint16_t color){
+	uint8_t 
 	setAddr(x, y, x, y);
-	
+	sendCommand(ILI9341_RAMWR, )
 }
 
 void sendCommand(uint8_t commandByte, uint8_t *dataBytes, uint8_t numDataBytes){

@@ -1,0 +1,25 @@
+Added Component: Designator=P?(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P?(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P?(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P?(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P?(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=P?(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=3v3 Pin=P?-0
+Added Pin To Net: NetName=+5 Pin=P?-0
+Added Pin To Net: NetName=+5 Pin=P?-0
+Added Pin To Net: NetName=+12 Pin=P?-0
+Added Pin To Net: NetName=GND Pin=P?-0
+Added Pin To Net: NetName=GND Pin=P?-0
+Added Member To Class: ClassName=Sheet2 Member=Component P? Pin 100mil
+Added Member To Class: ClassName=Sheet2 Member=Component P? Pin 100mil
+Added Member To Class: ClassName=Sheet2 Member=Component P? Pin 100mil
+Added Member To Class: ClassName=Sheet2 Member=Component P? Pin 100mil
+Added Member To Class: ClassName=Sheet2 Member=Component P? Pin 100mil
+Added Member To Class: ClassName=Sheet2 Member=Component P? Pin 100mil
+Added Room: Name=Sheet2

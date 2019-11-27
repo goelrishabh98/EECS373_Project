@@ -1,0 +1,260 @@
+Added Component: Designator=1A_1(PCB terminal block - SPT 16/ 1-H-10,0 - 1735778)
+Add component. Clean all parameters for all variants
+Added Component: Designator=1A_2(PCB terminal block - SPT 16/ 1-H-10,0 - 1735778)
+Add component. Clean all parameters for all variants
+Added Component: Designator=1B_1(PCB terminal block - SPT 16/ 1-H-10,0 - 1735778)
+Add component. Clean all parameters for all variants
+Added Component: Designator=1B_2(PCB terminal block - SPT 16/ 1-H-10,0 - 1735778)
+Add component. Clean all parameters for all variants
+Added Component: Designator=2A_1(PCB terminal block - SPT 16/ 1-H-10,0 - 1735778)
+Add component. Clean all parameters for all variants
+Added Component: Designator=2A_2(PCB terminal block - SPT 16/ 1-H-10,0 - 1735778)
+Add component. Clean all parameters for all variants
+Added Component: Designator=2B_1(PCB terminal block - SPT 16/ 1-H-10,0 - 1735778)
+Add component. Clean all parameters for all variants
+Added Component: Designator=2B_2(PCB terminal block - SPT 16/ 1-H-10,0 - 1735778)
+Add component. Clean all parameters for all variants
+Added Component: Designator=?(SAMTEC-CLP-150-02-X-DH)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RX(PCB terminal block - SPT 16/ 1-H-10,0 - 1735778)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TX(PCB terminal block - SPT 16/ 1-H-10,0 - 1735778)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U1(Polo-A4988 Motor Driver_V)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case\Package"; Value = "SOT-23-5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.pololu.com/file/0J1082/a4988-stepper-motor-driver-carrier-dimension-diagram.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "Dec-15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Frequency"; Value = "3 MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Input Voltage"; Value = "5.5 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125 degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Ouput Current"; Value = "1 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Input Voltage"; Value = "3 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40 degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Current"; Value = "1 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Outputs"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Voltage"; Value = "4.5 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "16-Pin Through Hole Device, Body 20.3 x 15.2 mm, Pitch 2.54 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "250"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "A4988 Motor Driver"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHSCompliant"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Switching Frequency"; Value = "3 MHz"; VariantName = "[No Variations]"
+Added Component: Designator=U2(Polo-A4988 Motor Driver_V)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Case\Package"; Value = "SOT-23-5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "Datasheet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "https://www.pololu.com/file/0J1082/a4988-stepper-motor-driver-carrier-dimension-diagram.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DatasheetVersion"; Value = "Dec-15"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Frequency"; Value = "3 MHz"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Input Voltage"; Value = "5.5 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125 degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Ouput Current"; Value = "1 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Input Voltage"; Value = "3 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-40 degC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mount"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Current"; Value = "1 A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Outputs"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Output Voltage"; Value = "4.5 V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageDescription"; Value = "16-Pin Through Hole Device, Body 20.3 x 15.2 mm, Pitch 2.54 mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package Quantity"; Value = "250"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PackageReference"; Value = "A4988 Motor Driver"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Tape and Reel"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "REACH SVHC"; Value = "No SVHC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHSCompliant"; Value = "true"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Switching Frequency"; Value = "3 MHz"; VariantName = "[No Variations]"
+Added Component: Designator=XB1(*DIP-20)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Digi International"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "XB24CDMPIT-001"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "Module Digi International"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/XB24CDMPIT-001/Digi%20International/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+5 Pin=?-1
+Added Pin To Net: NetName=+5 Pin=?-2
+Added Pin To Net: NetName=+5 Pin=?-3
+Added Pin To Net: NetName=+5 Pin=?-4
+Added Net: Name=+5
+Added Pin To Net: NetName=+12 Pin=U1-16
+Added Pin To Net: NetName=+12 Pin=U2-16
+Added Net: Name=+12
+Added Pin To Net: NetName=3v3 Pin=?-97
+Added Pin To Net: NetName=3v3 Pin=?-98
+Added Pin To Net: NetName=3v3 Pin=?-99
+Added Pin To Net: NetName=3v3 Pin=?-100
+Added Pin To Net: NetName=3v3 Pin=XB1-1
+Added Net: Name=3v3
+Added Pin To Net: NetName=DIR_1 Pin=?-29
+Added Pin To Net: NetName=DIR_1 Pin=U1-8
+Added Net: Name=DIR_1
+Added Pin To Net: NetName=DIR_2 Pin=?-32
+Added Pin To Net: NetName=DIR_2 Pin=U2-8
+Added Net: Name=DIR_2
+Added Pin To Net: NetName=GND Pin=?-5
+Added Pin To Net: NetName=GND Pin=?-6
+Added Pin To Net: NetName=GND Pin=?-12
+Added Pin To Net: NetName=GND Pin=?-15
+Added Pin To Net: NetName=GND Pin=?-20
+Added Pin To Net: NetName=GND Pin=?-23
+Added Pin To Net: NetName=GND Pin=?-28
+Added Pin To Net: NetName=GND Pin=?-31
+Added Pin To Net: NetName=GND Pin=?-36
+Added Pin To Net: NetName=GND Pin=?-41
+Added Pin To Net: NetName=GND Pin=?-42
+Added Pin To Net: NetName=GND Pin=?-43
+Added Pin To Net: NetName=GND Pin=?-44
+Added Pin To Net: NetName=GND Pin=?-47
+Added Pin To Net: NetName=GND Pin=?-48
+Added Pin To Net: NetName=GND Pin=?-51
+Added Pin To Net: NetName=GND Pin=?-52
+Added Pin To Net: NetName=GND Pin=?-55
+Added Pin To Net: NetName=GND Pin=?-56
+Added Pin To Net: NetName=GND Pin=?-59
+Added Pin To Net: NetName=GND Pin=?-60
+Added Pin To Net: NetName=GND Pin=?-63
+Added Pin To Net: NetName=GND Pin=?-64
+Added Pin To Net: NetName=GND Pin=?-67
+Added Pin To Net: NetName=GND Pin=?-68
+Added Pin To Net: NetName=GND Pin=?-71
+Added Pin To Net: NetName=GND Pin=?-72
+Added Pin To Net: NetName=GND Pin=?-75
+Added Pin To Net: NetName=GND Pin=?-76
+Added Pin To Net: NetName=GND Pin=?-79
+Added Pin To Net: NetName=GND Pin=?-80
+Added Pin To Net: NetName=GND Pin=?-83
+Added Pin To Net: NetName=GND Pin=?-84
+Added Pin To Net: NetName=GND Pin=?-87
+Added Pin To Net: NetName=GND Pin=?-88
+Added Pin To Net: NetName=GND Pin=?-92
+Added Pin To Net: NetName=GND Pin=?-93
+Added Pin To Net: NetName=GND Pin=?-94
+Added Pin To Net: NetName=GND Pin=?-95
+Added Pin To Net: NetName=GND Pin=?-96
+Added Pin To Net: NetName=GND Pin=U1-1
+Added Pin To Net: NetName=GND Pin=U1-9
+Added Pin To Net: NetName=GND Pin=U1-15
+Added Pin To Net: NetName=GND Pin=U2-1
+Added Pin To Net: NetName=GND Pin=U2-9
+Added Pin To Net: NetName=GND Pin=U2-15
+Added Pin To Net: NetName=GND Pin=XB1-10
+Added Net: Name=GND
+Added Pin To Net: NetName=MS1_1 Pin=?-7
+Added Pin To Net: NetName=MS1_1 Pin=U1-2
+Added Net: Name=MS1_1
+Added Pin To Net: NetName=MS1_2 Pin=?-10
+Added Pin To Net: NetName=MS1_2 Pin=U2-2
+Added Net: Name=MS1_2
+Added Pin To Net: NetName=MS2_1 Pin=?-8
+Added Pin To Net: NetName=MS2_1 Pin=U1-3
+Added Net: Name=MS2_1
+Added Pin To Net: NetName=MS2_2 Pin=?-11
+Added Pin To Net: NetName=MS2_2 Pin=U2-3
+Added Net: Name=MS2_2
+Added Pin To Net: NetName=MS3_1 Pin=?-9
+Added Pin To Net: NetName=MS3_1 Pin=U1-4
+Added Net: Name=MS3_1
+Added Pin To Net: NetName=MS3_2 Pin=?-13
+Added Pin To Net: NetName=MS3_2 Pin=U2-4
+Added Net: Name=MS3_2
+Added Pin To Net: NetName=Net1A_1_0 Pin=1A_1-0
+Added Pin To Net: NetName=Net1A_1_0 Pin=1A_1-0
+Added Pin To Net: NetName=Net1A_1_0 Pin=1A_1-0
+Added Pin To Net: NetName=Net1A_1_0 Pin=1A_1-0
+Added Pin To Net: NetName=Net1A_1_0 Pin=1A_1-0
+Added Pin To Net: NetName=Net1A_1_0 Pin=1A_1-0
+Added Pin To Net: NetName=Net1A_1_0 Pin=U1-12
+Added Net: Name=Net1A_1_0
+Added Pin To Net: NetName=Net1A_2_0 Pin=1A_2-0
+Added Pin To Net: NetName=Net1A_2_0 Pin=1A_2-0
+Added Pin To Net: NetName=Net1A_2_0 Pin=1A_2-0
+Added Pin To Net: NetName=Net1A_2_0 Pin=1A_2-0
+Added Pin To Net: NetName=Net1A_2_0 Pin=1A_2-0
+Added Pin To Net: NetName=Net1A_2_0 Pin=1A_2-0
+Added Pin To Net: NetName=Net1A_2_0 Pin=U2-12
+Added Net: Name=Net1A_2_0
+Added Pin To Net: NetName=Net1B_1_0 Pin=1B_1-0
+Added Pin To Net: NetName=Net1B_1_0 Pin=1B_1-0
+Added Pin To Net: NetName=Net1B_1_0 Pin=1B_1-0
+Added Pin To Net: NetName=Net1B_1_0 Pin=1B_1-0
+Added Pin To Net: NetName=Net1B_1_0 Pin=1B_1-0
+Added Pin To Net: NetName=Net1B_1_0 Pin=1B_1-0
+Added Pin To Net: NetName=Net1B_1_0 Pin=U1-11
+Added Net: Name=Net1B_1_0
+Added Pin To Net: NetName=Net1B_2_0 Pin=1B_2-0
+Added Pin To Net: NetName=Net1B_2_0 Pin=1B_2-0
+Added Pin To Net: NetName=Net1B_2_0 Pin=1B_2-0
+Added Pin To Net: NetName=Net1B_2_0 Pin=1B_2-0
+Added Pin To Net: NetName=Net1B_2_0 Pin=1B_2-0
+Added Pin To Net: NetName=Net1B_2_0 Pin=1B_2-0
+Added Pin To Net: NetName=Net1B_2_0 Pin=U2-11
+Added Net: Name=Net1B_2_0
+Added Pin To Net: NetName=Net2A_1_0 Pin=2A_1-0
+Added Pin To Net: NetName=Net2A_1_0 Pin=2A_1-0
+Added Pin To Net: NetName=Net2A_1_0 Pin=2A_1-0
+Added Pin To Net: NetName=Net2A_1_0 Pin=2A_1-0
+Added Pin To Net: NetName=Net2A_1_0 Pin=2A_1-0
+Added Pin To Net: NetName=Net2A_1_0 Pin=2A_1-0
+Added Pin To Net: NetName=Net2A_1_0 Pin=U1-13
+Added Net: Name=Net2A_1_0
+Added Pin To Net: NetName=Net2A_2_0 Pin=2A_2-0
+Added Pin To Net: NetName=Net2A_2_0 Pin=2A_2-0
+Added Pin To Net: NetName=Net2A_2_0 Pin=2A_2-0
+Added Pin To Net: NetName=Net2A_2_0 Pin=2A_2-0
+Added Pin To Net: NetName=Net2A_2_0 Pin=2A_2-0
+Added Pin To Net: NetName=Net2A_2_0 Pin=2A_2-0
+Added Pin To Net: NetName=Net2A_2_0 Pin=U2-13
+Added Net: Name=Net2A_2_0
+Added Pin To Net: NetName=Net2B_1_0 Pin=2B_1-0
+Added Pin To Net: NetName=Net2B_1_0 Pin=2B_1-0
+Added Pin To Net: NetName=Net2B_1_0 Pin=2B_1-0
+Added Pin To Net: NetName=Net2B_1_0 Pin=2B_1-0
+Added Pin To Net: NetName=Net2B_1_0 Pin=2B_1-0
+Added Pin To Net: NetName=Net2B_1_0 Pin=2B_1-0
+Added Pin To Net: NetName=Net2B_1_0 Pin=U1-14
+Added Net: Name=Net2B_1_0
+Added Pin To Net: NetName=Net2B_2_0 Pin=2B_2-0
+Added Pin To Net: NetName=Net2B_2_0 Pin=2B_2-0
+Added Pin To Net: NetName=Net2B_2_0 Pin=2B_2-0
+Added Pin To Net: NetName=Net2B_2_0 Pin=2B_2-0
+Added Pin To Net: NetName=Net2B_2_0 Pin=2B_2-0
+Added Pin To Net: NetName=Net2B_2_0 Pin=2B_2-0
+Added Pin To Net: NetName=Net2B_2_0 Pin=U2-14
+Added Net: Name=Net2B_2_0
+Added Pin To Net: NetName=STEP_1 Pin=?-27
+Added Pin To Net: NetName=STEP_1 Pin=U1-7
+Added Net: Name=STEP_1
+Added Pin To Net: NetName=STEP_2 Pin=?-30
+Added Pin To Net: NetName=STEP_2 Pin=U2-7
+Added Net: Name=STEP_2
+Added Pin To Net: NetName=UART_RX Pin=RX-0
+Added Pin To Net: NetName=UART_RX Pin=RX-0
+Added Pin To Net: NetName=UART_RX Pin=RX-0
+Added Pin To Net: NetName=UART_RX Pin=RX-0
+Added Pin To Net: NetName=UART_RX Pin=RX-0
+Added Pin To Net: NetName=UART_RX Pin=RX-0
+Added Pin To Net: NetName=UART_RX Pin=XB1-3
+Added Net: Name=UART_RX
+Added Pin To Net: NetName=UART_TX Pin=TX-0
+Added Pin To Net: NetName=UART_TX Pin=TX-0
+Added Pin To Net: NetName=UART_TX Pin=TX-0
+Added Pin To Net: NetName=UART_TX Pin=TX-0
+Added Pin To Net: NetName=UART_TX Pin=TX-0
+Added Pin To Net: NetName=UART_TX Pin=TX-0
+Added Pin To Net: NetName=UART_TX Pin=XB1-2
+Added Net: Name=UART_TX
+Added Pin To Net: NetName=VCC Pin=U1-5
+Added Pin To Net: NetName=VCC Pin=U1-6
+Added Pin To Net: NetName=VCC Pin=U1-10
+Added Pin To Net: NetName=VCC Pin=U2-5
+Added Pin To Net: NetName=VCC Pin=U2-6
+Added Pin To Net: NetName=VCC Pin=U2-10
+Added Net: Name=VCC
+Added Class: Name=Sheet2
+Added Room: Name=Sheet2

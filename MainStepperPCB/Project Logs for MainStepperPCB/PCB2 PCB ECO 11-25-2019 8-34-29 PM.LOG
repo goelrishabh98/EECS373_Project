@@ -1,0 +1,40 @@
+Added Component: Designator=1A_1(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=1A_2(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=1B_1(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=1B_2(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=2A_1(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=2A_2(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=2B_1(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=2B_2(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=RX(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Component: Designator=TX(Pin 100mil)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=Net1A_1_0 Pin=1A_1-0
+Added Pin To Net: NetName=Net1A_2_0 Pin=1A_2-0
+Added Pin To Net: NetName=Net1B_1_0 Pin=1B_1-0
+Added Pin To Net: NetName=Net1B_2_0 Pin=1B_2-0
+Added Pin To Net: NetName=Net2A_1_0 Pin=2A_1-0
+Added Pin To Net: NetName=Net2A_2_0 Pin=2A_2-0
+Added Pin To Net: NetName=Net2B_1_0 Pin=2B_1-0
+Added Pin To Net: NetName=Net2B_2_0 Pin=2B_2-0
+Added Pin To Net: NetName=UART_RX Pin=RX-0
+Added Pin To Net: NetName=UART_TX Pin=TX-0
+Added Member To Class: ClassName=Sheet2 Member=Component 1A_1 Pin 100mil
+Added Member To Class: ClassName=Sheet2 Member=Component 1A_2 Pin 100mil
+Added Member To Class: ClassName=Sheet2 Member=Component 1B_1 Pin 100mil
+Added Member To Class: ClassName=Sheet2 Member=Component 1B_2 Pin 100mil
+Added Member To Class: ClassName=Sheet2 Member=Component 2A_1 Pin 100mil
+Added Member To Class: ClassName=Sheet2 Member=Component 2A_2 Pin 100mil
+Added Member To Class: ClassName=Sheet2 Member=Component 2B_1 Pin 100mil
+Added Member To Class: ClassName=Sheet2 Member=Component 2B_2 Pin 100mil
+Added Member To Class: ClassName=Sheet2 Member=Component RX Pin 100mil
+Added Member To Class: ClassName=Sheet2 Member=Component TX Pin 100mil

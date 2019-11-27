@@ -1,0 +1,12 @@
+Change Component Designator: OldDesignator=P? NewDesignator=3v3
+Change Component Designator: OldDesignator=P? NewDesignator=5v
+Change Component Designator: OldDesignator=P? NewDesignator=12V
+Change Component Designator: OldDesignator=P? NewDesignator=GND
+Change Component Designator: OldDesignator=P? NewDesignator=GND
+Change Component Designator: OldDesignator=P? NewDesignator=VCC
+Added Member To Class: ClassName=Sheet2 Member=Component 3v3 Pin 100mil
+Added Member To Class: ClassName=Sheet2 Member=Component 5v Pin 100mil
+Added Member To Class: ClassName=Sheet2 Member=Component 12V Pin 100mil
+Added Member To Class: ClassName=Sheet2 Member=Component GND Pin 100mil
+Added Member To Class: ClassName=Sheet2 Member=Component VCC Pin 100mil
+Added Room: Name=Sheet2
