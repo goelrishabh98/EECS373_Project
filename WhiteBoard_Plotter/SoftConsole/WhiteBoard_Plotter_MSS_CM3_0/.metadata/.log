@@ -5706,3 +5706,193 @@ org.eclipse.cdt.debug.mi.core.MIException: The program is not being run.
 
 !ENTRY org.eclipse.debug.core 4 125 2019-11-21 14:23:28.663
 !MESSAGE Inferior terminated
+!SESSION 2019-12-01 15:00:01.492 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  	.equ	STACK_TOP, 0x20000800 	.equ	SYSREG_SOFT_RST_CR, 0xE0042030 	.equ    ones, 0xFF000000 	.section .int_vector,"a",%progbits @ First linker code section 	.global	 _start                    @ Linker entry point _start: 	.word	STACK_TOP, main 	@ End of int_vector section 	@ Standard text section 	.text 	.syntax	unified 	.thumb 	.type	main, %function main: 	@ Load SYSREG_SOFT_RST_CR address 	movw	r0, #:lower16:SYSREG_SOFT_RST_CR 	movt	r0, #:upper16:SYSREG_SOFT_RST_CR 	@ Reset GPIO hardware 	ldr	r1, [r0, #0] 	orr	r1, #0x4000 	str	r1, [r0, #0] 	@ Take GPIO hardware out of reset 	ldr	r1, [r0, #0] 	mvn	r2, #0x4000 @ move bitwise negation of 0x4000 into r2 	and	r1, r2 	str	r1, [r0, #0] 	mov	r0, #24 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 24 	mov	r0, #25 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 25 	mov	r0, #26 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 26 	mov	r0, #27 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 27 	mov	r0, #28 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 28 	mov	r0, #29 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 29 	mov	r0, #30 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 30 	mov	r0, #31 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 31 	movw r0, #:lower16:ones 	movt r0, #:upper16:ones 	bl setGPIO setAgain: 	mov r2, #24 shift: 	mov	r1, #1 	add r2, r2, #1 	lsl	r1, r2 	mov r10, #0 inner: 	movw r8, #:lower16:ones 	movt r8, #:upper16:ones 	eor r0, r1, r8 	bl	setGPIO @ on 	mov r4, #0 count_off: 	movw r5, #60000 	lsl r6, r5, #5 	add r4, r4, #1 	cmp r4, r6 	bne count_off 	movw r0, #:lower16:ones 	movt r0, #:upper16:ones 	bl setGPIO @ off 	mov r4, #0 count_on: 	movw r5, #60000 	lsl r6, r5, #5 	add r4, r4, #1 	cmp r4, r6 	bne count_on 	add r10, r10, #1 	cmp r10, #5 	bne inner 	cmp r2, #32 	beq setAgain 	b shift 	.end
+Command-line arguments:  -os win32 -ws win32 -arch x86 	.equ	STACK_TOP, 0x20000800 	.equ	SYSREG_SOFT_RST_CR, 0xE0042030 	.equ    ones, 0xFF000000 	.section .int_vector,"a",%progbits @ First linker code section 	.global	 _start                    @ Linker entry point _start: 	.word	STACK_TOP, main 	@ End of int_vector section 	@ Standard text section 	.text 	.syntax	unified 	.thumb 	.type	main, %function main: 	@ Load SYSREG_SOFT_RST_CR address 	movw	r0, #:lower16:SYSREG_SOFT_RST_CR 	movt	r0, #:upper16:SYSREG_SOFT_RST_CR 	@ Reset GPIO hardware 	ldr	r1, [r0, #0] 	orr	r1, #0x4000 	str	r1, [r0, #0] 	@ Take GPIO hardware out of reset 	ldr	r1, [r0, #0] 	mvn	r2, #0x4000 @ move bitwise negation of 0x4000 into r2 	and	r1, r2 	str	r1, [r0, #0] 	mov	r0, #24 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 24 	mov	r0, #25 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 25 	mov	r0, #26 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 26 	mov	r0, #27 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 27 	mov	r0, #28 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 28 	mov	r0, #29 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 29 	mov	r0, #30 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 30 	mov	r0, #31 @bits 24 - 31 are mapped to LEDS 0-7 respectively or D1-D8 on the kit 	bl	initGPIO @ Call initGPIO in gpio.S to initalize GPIO 31 	movw r0, #:lower16:ones 	movt r0, #:upper16:ones 	bl setGPIO setAgain: 	mov r2, #24 shift: 	mov	r1, #1 	add r2, r2, #1 	lsl	r1, r2 	mov r10, #0 inner: 	movw r8, #:lower16:ones 	movt r8, #:upper16:ones 	eor r0, r1, r8 	bl	setGPIO @ on 	mov r4, #0 count_off: 	movw r5, #60000 	lsl r6, r5, #5 	add r4, r4, #1 	cmp r4, r6 	bne count_off 	movw r0, #:lower16:ones 	movt r0, #:upper16:ones 	bl setGPIO @ off 	mov r4, #0 count_on: 	movw r5, #60000 	lsl r6, r5, #5 	add r4, r4, #1 	cmp r4, r6 	bne count_on 	add r10, r10, #1 	cmp r10, #5 	bne inner 	cmp r2, #32 	beq setAgain 	b shift 	.end -data C:/Users/bansarth/Documents/EECS373_Project/WhiteBoard_Plotter/SoftConsole/WhiteBoard_Plotter_MSS_CM3_0
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 15:06:37.679
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 15:12:13.523
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 15:12:28.353
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 15:21:36.543
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:41:58.127
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:44:22.397
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:44:22.401
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:44:22.404
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:44:22.408
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:44:22.412
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:44:22.415
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:44:22.418
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:47:25.347
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:47:25.352
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:47:25.356
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:47:25.359
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:47:25.371
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:47:25.375
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:47:25.378
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:48:44.761
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:48:44.766
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:48:44.769
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:48:44.772
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:48:44.775
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:48:44.779
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:48:44.782
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:49:35.289
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:49:35.293
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:49:35.297
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:49:35.300
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:49:35.304
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:49:35.307
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:49:35.310
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:51:32.368
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:51:32.373
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:51:32.376
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:51:32.379
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:51:32.382
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:51:32.386
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:51:32.389
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:53:45.845
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:53:45.851
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:53:45.854
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:53:45.858
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:53:45.862
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:53:45.865
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:53:45.868
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:55:18.836
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:55:18.841
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:55:18.844
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:55:18.848
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:55:18.851
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:55:18.854
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:55:18.859
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:56:39.412
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:56:39.416
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:56:39.420
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:56:39.424
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:56:39.427
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:56:39.430
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-01 16:56:39.433
+!MESSAGE Inferior terminated

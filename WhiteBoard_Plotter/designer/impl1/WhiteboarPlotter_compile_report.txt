@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Thu Nov 21 14:13:53 2019 ***************************************************************************
+                          Sun Dec 01 15:01:07 2019 ***************************************************************************
 
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
-File Name: N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter.adb
+File Name: C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter.adb
 Design Name: WhiteboarPlotter  Design State: compile
-Last Saved: Thu Nov 21 14:01:03 2019
+Last Saved: Sun Dec 01 14:57:39 2019
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Thu Nov 21 14:13:48 2019:
-        N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter.edn
-        N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.pdc
+Source File(s) Imported on Sun Dec 01 15:01:04 2019:
+        C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter.edn
+        C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,9 +50,11 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter.edn
+Source      :
+C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter.edn
 
-N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.pdc
+C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\\
+WhiteboarPlotter.pdc
 Format      : EDIF
 Topcell     : WhiteboarPlotter
 Speed grade : STD
