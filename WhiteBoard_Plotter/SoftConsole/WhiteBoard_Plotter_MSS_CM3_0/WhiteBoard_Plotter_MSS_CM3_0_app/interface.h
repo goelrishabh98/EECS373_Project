@@ -22,6 +22,8 @@ double yPos;
 double RadiusLeft;
 double RadiusRight;
 
+int counter;
+
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////// TIMER //////////////////////////////////////////////////////////
 typedef void (*handler_t)(int);
@@ -89,7 +91,7 @@ void motorLeft(int dir) {
 	else if(dir == CCW){
 		RadiusLeft = RadiusLeft - 3.8*1.8/360/16;
 	}
-
+	++counter;
 }
 void motorRight(int dir) {
 	step(NO, dir);
@@ -99,6 +101,8 @@ void motorRight(int dir) {
 	else if(dir == CW){
 		RadiusRight = RadiusRight - 3.8*1.8/360/16;
 	}
+
+	++counter;
 }
 
 //add a continuous (periodic) timer to linked list.
@@ -200,7 +204,7 @@ void clearTimers(){
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////// INTERFACE //////////////////////////////////////////////////////////
 
-void interfaceConfig(int height, int width){
+void interfaceConfig(double height, double width){
 	boardHeight = height;
 	boardWidth = width;
 
@@ -209,30 +213,50 @@ void interfaceConfig(int height, int width){
 
 	RadiusLeft = sqrt(pow(xPos, 2) + pow(yPos, 2));
 	RadiusRight = sqrt(pow(boardWidth - xPos, 2) + pow(yPos, 2));
+
+	counter = 0;
 }
 
-double makeLine(int dirL, int dirR, double endX, double endY){
-	dirLeft = dirL;
-	dirRight = dirR;
+void makeLine(int dirL, int dirR, double endX, double endY){
+
 	while(1){
+		dirLeft = dirL;
+		dirRight = dirR;
 		double newRL = sqrt(pow(endX, 2) + pow(endY, 2));
 		double newRR = sqrt(pow(boardWidth - endX, 2) + pow(endY, 2));
 		double rateChangeL = RadiusLeft - newRL;
 		double rateChangeR = RadiusRight - newRR;
 		if(rateChangeL < 0) rateChangeL = rateChangeL * -1;
 		if(rateChangeR < 0) rateChangeR = rateChangeR * -1;
-		if(rateChangeL < 3.8*1.8/360/16){
-			exit;
+		/*if(rateChangeL < 3.8*1.8/360/16){
+			dirL = NO;
 		}
 		else if(rateChangeL < 3.8*1.8/360/16){
-			exit;
+			dirR = NO;
 		}
+		else if(rateChangeL < 3.8*1.8/360/16 && rateChangeL < 3.8*1.8/360/16){
+			break;
+		}*/\
+		if(abs(newRL - RadiusLeft) <= .05 && abs(newRR - RadiusRight) > .05){
+			dirL = NO;
+		}
+		else if(abs(newRL - RadiusLeft) > .05 && abs(newRR - RadiusRight) <= .05){
+			dirR = NO;
+		}
+		else if(abs(newRL - RadiusLeft) <= .05 && abs(newRR - RadiusRight) <= .05) break;
+
 		double ratio = rateChangeL/rateChangeR;
 
 		clearTimers();
 		startTimerContinuous(1, 100000);
-		startTimerContinuous(0, 100000/ratio);
+		startTimerContinuous(0, 100000*ratio);
 		start_hardware_timer();
+		while(1){
+			if(counter >= 10){
+				counter = 0;
+				break;
+			}
+		}
 	}
 	xPos = (pow(RadiusLeft, 2) - pow(RadiusRight, 2) + pow(boardWidth, 2))/2;
 	yPos = sqrt(pow(RadiusLeft, 2) - pow(xPos, 2));
