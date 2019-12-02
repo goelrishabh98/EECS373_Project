@@ -1,16 +1,14 @@
 #include "stepper.h"
 #include "timer.h"
 
+
+//Current Dimensions: 54.61, 83.82
+
 int main(){
+	stepper_config(FULL, FULL);
+	interfaceConfig(54.61, 83.82);
 
-	stepper_config(SIXTEENTH, SIXTEENTH);
-
-	startTimerContinuous(1, 1000);
-	startTimerContinuous(0, 2000);
-
-	start_hardware_timer();
-
-	while(1);
+	makeLine(CCW, CCW, 12, 12);
 
 	return 0;
 }

@@ -4,25 +4,27 @@ Release: v11.9
 
 Software Version: 11.9.0.4
 PDB file
-'N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter_fp\WhiteboarPlotter.pdb'
-has been loaded successfully.
+'C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter\
+_fp\WhiteboarPlotter.pdb' has been loaded successfully.
 DESIGN : WhiteboarPlotter;  CHECKSUM : 9938;  PDB_VERSION : 1.9
 Driver : 3.0.0 build 1
 programmer '78416' : FlashPro3
 Opened
-'N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter_fp\WhiteboarPlotter.pro'
+'C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter\
+_fp\WhiteboarPlotter.pro'
 The 'open_project' command succeeded.
 The 'set_programming_file' command succeeded.
 The 'set_device_type' command succeeded.
 The 'set_device_package' command succeeded.
 Info: Adding Flash Memory data from file
-      N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_ENVM_0\MSS_EN\
-      VM_0.efc.
+      C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_\
+      Plotter\MSS_ENVM_0\MSS_ENVM_0.efc.
 Info: Adding FPGA Array data from file
-      N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter.fdb.
+      C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPl\
+      otter.fdb.
 PDB file
-'N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter_fp\WhiteboarPlotter.pdb'
-has been loaded successfully.
+'C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter\
+_fp\WhiteboarPlotter.pdb' has been loaded successfully.
 DESIGN : WhiteboarPlotter;  CHECKSUM : 9938;  PDB_VERSION : 1.9
 The 'update_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
@@ -40,7 +42,7 @@ programmer '78416' : Verifying FPGA Array
 programmer '78416' :         Verifying FPGA Array -- pass
 programmer '78416' : Program System Init and Boot Clients...
 programmer '78416' : Verify System Init and Boot Clients...
-programmer '78416' : Finished: Thu Nov 21 14:17:52 2019 (Elapsed time 00:00:34)
+programmer '78416' : Finished: Sun Dec 01 15:02:28 2019 (Elapsed time 00:00:34)
 programmer '78416' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o

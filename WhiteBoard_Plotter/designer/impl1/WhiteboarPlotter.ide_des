@@ -20,13 +20,13 @@ KEY IDE_DES_BLOCK_PUBLISH "FALSE"
 KEY IDE_DES_BA_EXPORTED "FALSE"
 KEY IDE_DES_INTERACTIVE "FALSE"
 KEY IDE_DES_ERROR_FOUND "FALSE"
-KEY IDE_DES_ADB_PATH "N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter.adb"
+KEY IDE_DES_ADB_PATH "C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter.adb"
 LIST SOURCE_FILES
-VALUE "N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter.edn;edn"
-VALUE "N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.pdc;pdc"
+VALUE "C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter.edn;edn"
+VALUE "C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.pdc;pdc"
 ENDLIST
 LIST OPTIONAL_FILES
-VALUE "N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.pdc;Used"
+VALUE "C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.pdc;Used"
 ENDLIST
 LIST VCD_FILES
 ENDLIST

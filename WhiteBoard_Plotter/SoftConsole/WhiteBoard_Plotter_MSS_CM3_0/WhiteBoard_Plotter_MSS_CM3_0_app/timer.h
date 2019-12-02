@@ -4,8 +4,26 @@ extern "C" {
 
 #include "stepper.h"
 #include "mss_timer.h"
+#include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////// Globals //////////////////////////////////////////////////////////
+
+//all in cm
+double boardHeight;
+double boardWidth;
+
+double xPos;
+double yPos;
+
+double RadiusLeft;
+double RadiusRight;
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////// TIMER //////////////////////////////////////////////////////////
 typedef void (*handler_t)(int);
 
 typedef struct Timer {
@@ -20,11 +38,6 @@ typedef struct Timer {
 timer_tt *root = NULL;
 int dirLeft = CCW;
 int dirRight = CW;
-
-void updateDir(int dirL, int dirR){
-	dirLeft = dirL;
-	dirRight = dirR;
-}
 
 //used to initialize hardware
 void start_hardware_timer(){
@@ -70,9 +83,22 @@ void insert_timer(timer_tt* newtimer){
 
 void motorLeft(int dir) {
 	step(dir, NO);
+	if(dir == CW){
+		RadiusLeft = RadiusLeft + 3.8*1.8/360/16;
+	}
+	else if(dir == CCW){
+		RadiusLeft = RadiusLeft - 3.8*1.8/360/16;
+	}
+
 }
 void motorRight(int dir) {
 	step(NO, dir);
+	if(dir == CCW){
+		RadiusRight = RadiusRight + 3.8*1.8/360/16;
+	}
+	else if(dir == CW){
+		RadiusRight = RadiusRight - 3.8*1.8/360/16;
+	}
 }
 
 //add a continuous (periodic) timer to linked list.
@@ -157,6 +183,60 @@ void Timer1_IRQHandler( void ){
 	MSS_TIM1_load_immediate(root->time);
 	start_hardware_timer();
 };
+
+void clearTimers(){
+	if(root != NULL){
+		timer_tt *temp = root;
+		root = root->next;
+		free(temp);
+		while(root != NULL){
+			temp = root;
+			root = root->next;
+			free(temp);
+		}
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////// INTERFACE //////////////////////////////////////////////////////////
+
+void interfaceConfig(int height, int width){
+	boardHeight = height;
+	boardWidth = width;
+
+	xPos = boardWidth/2;
+	yPos = boardHeight/2;
+
+	RadiusLeft = sqrt(pow(xPos, 2) + pow(yPos, 2));
+	RadiusRight = sqrt(pow(boardWidth - xPos, 2) + pow(yPos, 2));
+}
+
+double makeLine(int dirL, int dirR, double endX, double endY){
+	dirLeft = dirL;
+	dirRight = dirR;
+	while(1){
+		double newRL = sqrt(pow(endX, 2) + pow(endY, 2));
+		double newRR = sqrt(pow(boardWidth - endX, 2) + pow(endY, 2));
+		double rateChangeL = RadiusLeft - newRL;
+		double rateChangeR = RadiusRight - newRR;
+		if(rateChangeL < 0) rateChangeL = rateChangeL * -1;
+		if(rateChangeR < 0) rateChangeR = rateChangeR * -1;
+		if(rateChangeL < 3.8*1.8/360/16){
+			exit;
+		}
+		else if(rateChangeL < 3.8*1.8/360/16){
+			exit;
+		}
+		double ratio = rateChangeL/rateChangeR;
+
+		clearTimers();
+		startTimerContinuous(1, 100000);
+		startTimerContinuous(0, 100000/ratio);
+		start_hardware_timer();
+	}
+	xPos = (pow(RadiusLeft, 2) - pow(RadiusRight, 2) + pow(boardWidth, 2))/2;
+	yPos = sqrt(pow(RadiusLeft, 2) - pow(xPos, 2));
+}
 
 #ifdef __cplusplus
 }
