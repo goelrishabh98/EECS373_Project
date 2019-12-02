@@ -2,33 +2,22 @@ Microsemi Libero Software
 Version: 11.9.0.4
 Release: v11.9
 
-Created a new design.
+Info: The design mss.adb was last modified by software version 11.9.0.4.
+Opened an existing Libero design mss.adb.
 'BA_NAME' set to 'mss_ba'
 'IDE_DESIGNERVIEW_NAME' set to 'Impl1'
 'IDE_DESIGNERVIEW_COUNT' set to '1'
 'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
 'IDE_DESIGNERVIEW_REVNUM0' set to '1'
-'IDE_DESIGNERVIEW_ROOTDIR' set to 'E:\Github\EECS373_Project\TouchScreenController\designer'
+'IDE_DESIGNERVIEW_ROOTDIR' set to 'N:\EECS373_Project\TouchScreenController\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
-'DESDIR' set to 'E:/Github/EECS373_Project/TouchScreenController/designer/impl1'
-'BA_DIR' set to 'E:/Github/EECS373_Project/TouchScreenController/designer/impl1'
-'BA_NETLIST_ALSO' set to '1'
-'EDNINFLAVOR' set to 'GENERIC'
-'NETLIST_NAMING_STYLE' set to 'VERILOG'
-'EXPORT_STATUS_REPORT' set to '1'
-'EXPORT_STATUS_REPORT_FILENAME' set to 'mss.rpt'
-'AUDIT_NETLIST_FILE' set to '1'
-'AUDIT_DCF_FILE' set to '1'
-'AUDIT_PIN_FILE' set to '1'
-'AUDIT_ADL_FILE' set to '1'
 
  Netlist Reading Time = 0.0 seconds
 Imported the files:
-   E:\Github\EECS373_Project\TouchScreenController\synthesis\mss.edn
-   E:\Github\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc
+   N:\EECS373_Project\TouchScreenController\synthesis\mss.edn
+   N:\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc
 
-The Import command succeeded ( 00:00:04 )
-Design saved to file mss.adb.
+The Import command succeeded ( 00:00:03 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -36,8 +25,8 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : E:\Github\EECS373_Project\TouchScreenController\synthesis\mss.edn
-              E:\Github\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc
+Source      : N:\EECS373_Project\TouchScreenController\synthesis\mss.edn
+              N:\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc
 Format      : EDIF
 Topcell     : mss
 Speed grade : STD
@@ -406,6 +395,13 @@ Reading user pdc (Physical Design Constraints) file(s) postcompile
 There were 0 error(s) and 0 warning(s) in reading the user pdc.
 
 =====================================================================
+
+Reading previous post-compile physical placement constraints.
+
+
+There were 0 error(s) and 0 warning(s).
+
+=====================================================================
 Compile report:
 ===============
 
@@ -462,18 +458,18 @@ I/O Technology:
 Net information report:
 =======================
 
-The Compile command succeeded ( 00:00:03 )
+The Compile command succeeded ( 00:00:02 )
 Wrote status report to file: mss_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
 Wrote pin report to file: mss_report_pin_byname.txt
 
-The Report command succeeded ( 00:00:01 )
+The Report command succeeded ( 00:00:00 )
 Wrote pin report to file: mss_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:01 )
-Design saved to file E:\Github\EECS373_Project\TouchScreenController\designer\impl1\mss.adb.
+Design saved to file N:\EECS373_Project\TouchScreenController\designer\impl1\mss.adb.
 
-The Execute Script command succeeded ( 00:00:13 )
+The Execute Script command succeeded ( 00:00:09 )
 Design closed.
 

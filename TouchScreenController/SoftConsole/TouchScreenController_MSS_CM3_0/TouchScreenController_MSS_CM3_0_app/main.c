@@ -6,6 +6,6 @@ int main()
 
 	while( 1 )
 	{
-		drawFillScreen(ILI9341_BLUE);
+		drawFillScreen(ILI9341_BLACK);
 	}
 }

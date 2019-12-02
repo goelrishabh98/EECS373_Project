@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Sun Dec 01 15:05:05 2019 ***************************************************************************
+                          Mon Dec 02 16:56:19 2019 ***************************************************************************
 
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
-File Name: E:\Github\EECS373_Project\TouchScreenController\designer\impl1\mss.adb
+File Name: N:\EECS373_Project\TouchScreenController\designer\impl1\mss.adb
 Design Name: mss  Design State: compile
-Last Saved: Sun Dec 01 15:05:01 2019
+Last Saved: Mon Dec 02 16:52:28 2019
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Sun Dec 01 15:04:57 2019:
-        E:\Github\EECS373_Project\TouchScreenController\synthesis\mss.edn
-        E:\Github\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc
+Source File(s) Imported on Mon Dec 02 16:56:13 2019:
+        N:\EECS373_Project\TouchScreenController\synthesis\mss.edn
+        N:\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,8 +50,8 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : E:\Github\EECS373_Project\TouchScreenController\synthesis\mss.edn
-              E:\Github\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc
+Source      : N:\EECS373_Project\TouchScreenController\synthesis\mss.edn
+              N:\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc
 Format      : EDIF
 Topcell     : mss
 Speed grade : STD
@@ -418,6 +418,13 @@ Reading user pdc (Physical Design Constraints) file(s) postcompile
 
 
 There were 0 error(s) and 0 warning(s) in reading the user pdc.
+
+=====================================================================
+
+Reading previous post-compile physical placement constraints.
+
+
+There were 0 error(s) and 0 warning(s).
 
 =====================================================================
 Compile report:

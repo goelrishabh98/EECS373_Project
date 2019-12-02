@@ -1,20 +1,20 @@
-#OPTIONS:"|-layerid|0|-orig_srs|E:\\Github\\EECS373_Project\\TouchScreenController\\synthesis\\synwork\\mss_comp.srs|-top|mss|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|E:\\Github\\EECS373_Project\\TouchScreenController\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#OPTIONS:"|-layerid|0|-orig_srs|N:\\EECS373_Project\\TouchScreenController\\synthesis\\synwork\\mss_comp.srs|-top|mss|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|N:\\EECS373_Project\\TouchScreenController\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\bin64\\c_ver.exe":1509358336
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v":1509027488
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\hypermods.v":1509029528
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\umr_capim.v":1509029528
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1509029528
 #CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1509029528
-#CUR:"E:\\Github\\EECS373_Project\\TouchScreenController\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.200\\mss_comps.v":1570057112
-#CUR:"E:\\Github\\EECS373_Project\\TouchScreenController\\component\\work\\TouchScreenController\\mss_tshell.v":1575230165
-#CUR:"E:\\Github\\EECS373_Project\\TouchScreenController\\component\\work\\TouchScreenController\\MSS_CCC_0\\TouchScreenController_tmp_MSS_CCC_0_MSS_CCC.v":1575230160
-#CUR:"E:\\Github\\EECS373_Project\\TouchScreenController\\component\\work\\TouchScreenController\\TouchScreenController.v":1575230170
-#CUR:"E:\\Github\\EECS373_Project\\TouchScreenController\\component\\work\\mss\\mss.v":1575230635
-0			"E:\Github\EECS373_Project\TouchScreenController\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" verilog
-1			"E:\Github\EECS373_Project\TouchScreenController\component\work\TouchScreenController\mss_tshell.v" verilog
-2			"E:\Github\EECS373_Project\TouchScreenController\component\work\TouchScreenController\MSS_CCC_0\TouchScreenController_tmp_MSS_CCC_0_MSS_CCC.v" verilog
-3			"E:\Github\EECS373_Project\TouchScreenController\component\work\TouchScreenController\TouchScreenController.v" verilog
-4			"E:\Github\EECS373_Project\TouchScreenController\component\work\mss\mss.v" verilog
+#CUR:"N:\\EECS373_Project\\TouchScreenController\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.200\\mss_comps.v":1575323546
+#CUR:"N:\\EECS373_Project\\TouchScreenController\\component\\work\\TouchScreenController\\mss_tshell.v":1575323547
+#CUR:"N:\\EECS373_Project\\TouchScreenController\\component\\work\\TouchScreenController\\MSS_CCC_0\\TouchScreenController_tmp_MSS_CCC_0_MSS_CCC.v":1575323547
+#CUR:"N:\\EECS373_Project\\TouchScreenController\\component\\work\\TouchScreenController\\TouchScreenController.v":1575323547
+#CUR:"N:\\EECS373_Project\\TouchScreenController\\component\\work\\mss\\mss.v":1575323548
+0			"N:\EECS373_Project\TouchScreenController\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" verilog
+1			"N:\EECS373_Project\TouchScreenController\component\work\TouchScreenController\mss_tshell.v" verilog
+2			"N:\EECS373_Project\TouchScreenController\component\work\TouchScreenController\MSS_CCC_0\TouchScreenController_tmp_MSS_CCC_0_MSS_CCC.v" verilog
+3			"N:\EECS373_Project\TouchScreenController\component\work\TouchScreenController\TouchScreenController.v" verilog
+4			"N:\EECS373_Project\TouchScreenController\component\work\mss\mss.v" verilog
 #Dependency Lists(Uses List)
 0 -1
 1 -1

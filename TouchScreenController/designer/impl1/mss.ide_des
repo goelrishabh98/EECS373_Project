@@ -20,13 +20,13 @@ KEY IDE_DES_BLOCK_PUBLISH "FALSE"
 KEY IDE_DES_BA_EXPORTED "FALSE"
 KEY IDE_DES_INTERACTIVE "FALSE"
 KEY IDE_DES_ERROR_FOUND "FALSE"
-KEY IDE_DES_ADB_PATH "E:\Github\EECS373_Project\TouchScreenController\designer\impl1\mss.adb"
+KEY IDE_DES_ADB_PATH "N:\EECS373_Project\TouchScreenController\designer\impl1\mss.adb"
 LIST SOURCE_FILES
-VALUE "E:\Github\EECS373_Project\TouchScreenController\synthesis\mss.edn;edn"
-VALUE "E:\Github\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc;pdc"
+VALUE "N:\EECS373_Project\TouchScreenController\synthesis\mss.edn;edn"
+VALUE "N:\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc;pdc"
 ENDLIST
 LIST OPTIONAL_FILES
-VALUE "E:\Github\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc;Used"
+VALUE "N:\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc;Used"
 ENDLIST
 LIST VCD_FILES
 ENDLIST

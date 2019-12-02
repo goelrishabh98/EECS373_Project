@@ -1,6 +1,6 @@
 <project name="mss" version="1.1">
     <ProjectDirectory>
-        E:\Github\EECS373_Project\TouchScreenController\designer\impl1\mss_fp
+        N:\EECS373_Project\TouchScreenController\designer\impl1\mss_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,7 +9,7 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        E:\Github\EECS373_Project\TouchScreenController\designer\impl1\mss_fp\mss.log
+        N:\EECS373_Project\TouchScreenController\designer\impl1\mss_fp\mss.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -74,7 +74,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                E:\Github\EECS373_Project\TouchScreenController\designer\impl1\mss_fp\mss.pdb
+                N:\EECS373_Project\TouchScreenController\designer\impl1\mss_fp\mss.pdb
             </filename>
             <local>
                 projectData\mss.pdb

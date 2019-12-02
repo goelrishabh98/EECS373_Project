@@ -35,6 +35,7 @@ void touchscreen_begin(){
 
 	MSS_SPI_init(&g_mss_spi1);
 	MSS_GPIO_init();
+	MSS_GPIO_config(DC, MSS_GPIO_OUTPUT_MODE);
 	ACE_init();
 
 	//ace_y = ACE_get_channel_handle((const uint8_t*)"ADCDirectInput_0");
@@ -60,10 +61,10 @@ void touchscreen_begin(){
 //	int samples[2];
 //	int valid = 1;
 //
-//	MSS_GPIO_config(yp, MSS_GPIO_INPUT);
-//	MSS_GPIO_config(yn, MSS_GPIO_INPUT);
-//	MSS_GPIO_config(xp, MSS_GPIO_OUTPUT);
-//	MSS_GPIO_config(xn, MSS_GPIO_OUTPUT);
+//	MSS_GPIO_config(yp, MSS_GPIO_INPUT_MODE);
+//	MSS_GPIO_config(yn, MSS_GPIO_INPUT_MODE);
+//	MSS_GPIO_config(xp, MSS_GPIO_OUTPUT_MODE);
+//	MSS_GPIO_config(xn, MSS_GPIO_OUTPUT_MODE);
 //
 //	MSS_GPIO_set_output(xp, 1);
 //	MSS_GPIO_set_output(xn, 0);
@@ -254,7 +255,7 @@ void configureSPI(uint8_t frameSize){
 		&g_mss_spi1, 
 		MSS_SPI_SLAVE_0,
 		MSS_SPI_MODE0,
-		MSS_SPI_PCLK_DIV_16,
+		MSS_SPI_PCLK_DIV_64,
 		frameSize
 	);
 }

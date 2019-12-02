@@ -2,18 +2,18 @@ Microsemi Libero Software
 Version: 11.9.0.4
 Release: v11.9
 
-Info: The design E:/Github/EECS373_Project/TouchScreenController/designer/impl1/mss.adb was last
+Info: The design N:/EECS373_Project/TouchScreenController/designer/impl1/mss.adb was last
       modified by software version 11.9.0.4.
 Opened an existing Libero design
-E:/Github/EECS373_Project/TouchScreenController/designer/impl1/mss.adb.
+N:/EECS373_Project/TouchScreenController/designer/impl1/mss.adb.
 
-The Export-map command succeeded ( 00:00:08 )
+The Export-map command succeeded ( 00:00:10 )
 CHECKSUM: 7226
-Wrote to the file: E:\Github\EECS373_Project\TouchScreenController\designer\impl1\mss.fdb
+Wrote to the file: N:\EECS373_Project\TouchScreenController\designer\impl1\mss.fdb
 
-The Export command succeeded ( 00:00:11 )
-Design saved to file E:/Github/EECS373_Project/TouchScreenController/designer/impl1/mss.adb.
+The Export command succeeded ( 00:00:15 )
+Design saved to file N:/EECS373_Project/TouchScreenController/designer/impl1/mss.adb.
 
-The Execute Script command succeeded ( 00:00:12 )
+The Execute Script command succeeded ( 00:00:16 )
 Design closed.
 
