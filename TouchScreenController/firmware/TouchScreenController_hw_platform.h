@@ -2,7 +2,7 @@
 #define TouchScreenController_HW_PLATFORM_H_
 /*****************************************************************************
 *
-*Created by Microsemi SmartDesign  Sun Nov 24 18:01:21 2019
+*Created by Microsemi SmartDesign  Sun Dec 01 14:56:09 2019
 *
 *Memory map specification for peripherals in TouchScreenController
 */

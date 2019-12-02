@@ -1,0 +1,16 @@
+C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  E:\Github\EECS373_Project\lab7\synthesis   -part A2F200M3F  -package FBGA484  -grade STD    -globalthreshold 50 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile E:\Github\EECS373_Project\lab7\synthesis\synlog\report\lab7_fpga_mapper.xml  -top_level_module  lab7  -licensetype  synplifypro_actel  -flow mapping  -mp  4  -prjfile  E:\Github\EECS373_Project\lab7\synthesis\scratchproject.prs  -implementation  synthesis  -multisrs  -oedif  E:\Github\EECS373_Project\lab7\synthesis\lab7.edn   -freq 100.000   E:\Github\EECS373_Project\lab7\synthesis\synwork\lab7_prem.srd  -sap  E:\Github\EECS373_Project\lab7\synthesis\lab7.sap  -otap  E:\Github\EECS373_Project\lab7\synthesis\lab7.tap  -omap  E:\Github\EECS373_Project\lab7\synthesis\lab7.map  -devicelib  C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v  -sap  E:\Github\EECS373_Project\lab7\synthesis\lab7.sap  -ologparam  E:\Github\EECS373_Project\lab7\synthesis\syntmp\lab7.plg  -osyn  E:\Github\EECS373_Project\lab7\synthesis\lab7.srm  -prjdir  E:\Github\EECS373_Project\lab7\synthesis\  -prjname  lab7_syn  -log  E:\Github\EECS373_Project\lab7\synthesis\synlog\lab7_fpga_mapper.srr 
+relcom:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe -prodtype synplify_pro -encrypt -pro -rundir ..\..\synthesis -part A2F200M3F -package FBGA484 -grade STD -globalthreshold 50 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile ..\synlog\report\lab7_fpga_mapper.xml -top_level_module lab7 -licensetype synplifypro_actel -flow mapping -mp 4 -prjfile ..\scratchproject.prs -implementation synthesis -multisrs -oedif ..\lab7.edn -freq 100.000 ..\synwork\lab7_prem.srd -sap ..\lab7.sap -otap ..\lab7.tap -omap ..\lab7.map -devicelib C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v -sap ..\lab7.sap -ologparam lab7.plg -osyn ..\lab7.srm -prjdir ..\ -prjname lab7_syn -log ..\synlog\lab7_fpga_mapper.srr
+rc:0 success:1 runtime:0
+file:..\scratchproject.prs|io:o|time:1575232159|size:2036|exec:0|csum:
+file:..\lab7.edn|io:o|time:1575232162|size:97442|exec:0|csum:
+file:..\synwork\lab7_prem.srd|io:i|time:1575232161|size:8795|exec:0|csum:D27FB1DB61155D7C87298359570166D1
+file:..\lab7.sap|io:o|time:1575232161|size:113|exec:0|csum:
+file:..\lab7.tap|io:o|time:0|size:0|exec:0|csum:
+file:..\lab7.map|io:o|time:1575232162|size:28|exec:0|csum:
+file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v|io:i|time:1509027488|size:72817|exec:0|csum:792D908376FAE59463CBCC67F19D1698
+file:..\lab7.sap|io:o|time:1575232161|size:113|exec:0|csum:
+file:lab7.plg|io:o|time:1575232162|size:327|exec:0|csum:
+file:..\lab7.srm|io:o|time:1575232162|size:71055|exec:0|csum:
+file:..\synlog\lab7_fpga_mapper.srr|io:o|time:1575232162|size:13491|exec:0|csum:
+file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\m_proasic.exe|io:i|time:1509373872|size:11119104|exec:1|csum:6BD6E9876645BB1B346C655471A0D71C
+file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe|io:i|time:1509375286|size:14301696|exec:1|csum:CA7B630F1194A591FA1E520688EE75E2

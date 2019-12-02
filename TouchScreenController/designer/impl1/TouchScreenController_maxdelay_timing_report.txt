@@ -2,7 +2,7 @@ Timing Report Max Delay Analysis
 
 SmartTime Version v11.9
 Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
-Date: Sun Nov 24 21:02:37 2019
+Date: Sun Dec 01 14:57:21 2019
 
 
 Design: TouchScreenController
@@ -44,8 +44,8 @@ Period (ns):                N/A
 Frequency (MHz):            N/A
 Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
-External Setup (ns):        -1.996
-Max Clock-To-Out (ns):      12.554
+External Setup (ns):        -1.755
+Max Clock-To-Out (ns):      12.978
 
 Clock Domain:               mss_ccc_gla0
 Period (ns):                12.500
@@ -182,14 +182,14 @@ END SET Register to Register
 SET External Setup
 
 Path 1
-  From:                  GPIO_0_BI
-  To:                    MSS_ADLIB_INST/U_CORE:GPI[0]
-  Delay (ns):            1.620
+  From:                  GPIO_4_BI
+  To:                    MSS_ADLIB_INST/U_CORE:GPI[4]
+  Delay (ns):            1.615
   Slack (ns):
-  Arrival (ns):          1.620
+  Arrival (ns):          1.615
   Required (ns):
-  Setup (ns):            -0.061
-  External Setup (ns):   -1.996
+  Setup (ns):            0.185
+  External Setup (ns):   -1.755
 
 Path 2
   From:                  GPIO_1_BI
@@ -223,22 +223,22 @@ Path 4
 
 
 Expanded Path 1
-  From: GPIO_0_BI
-  To: MSS_ADLIB_INST/U_CORE:GPI[0]
+  From: GPIO_4_BI
+  To: MSS_ADLIB_INST/U_CORE:GPI[4]
   data required time                             N/C
-  data arrival time                          -   1.620
+  data arrival time                          -   1.615
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
-  0.000                        GPIO_0_BI (r)
-               +     0.000          net: GPIO_0_BI
-  0.000                        MSS_GPIO_0_GPIO_0_BI:PAD (r)
+  0.000                        GPIO_4_BI (r)
+               +     0.000          net: GPIO_4_BI
+  0.000                        MSS_GPIO_0_GPIO_4_BI:PAD (r)
                +     0.937          cell: ADLIB:IOPAD_BI
-  0.937                        MSS_GPIO_0_GPIO_0_BI:Y (r)
-               +     0.683          net: MSS_GPIO_0_GPIO_0_BI_Y
-  1.620                        MSS_ADLIB_INST/U_CORE:GPI[0] (r)
+  0.937                        MSS_GPIO_0_GPIO_4_BI:Y (r)
+               +     0.678          net: MSS_GPIO_0_GPIO_4_BI_Y
+  1.615                        MSS_ADLIB_INST/U_CORE:GPI[4] (r)
                                     
-  1.620                        data arrival time
+  1.615                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_pclk1
@@ -246,8 +246,8 @@ Expanded Path 1
   N/C                          MSS_ADLIB_INST/U_CORE:PCLK1 (r)
                +     3.555          Clock generation
   N/C
-               -    -0.061          Library setup time: ADLIB:MSS_APB_IP
-  N/C                          MSS_ADLIB_INST/U_CORE:GPI[0]
+               -     0.185          Library setup time: ADLIB:MSS_APB_IP
+  N/C                          MSS_ADLIB_INST/U_CORE:GPI[4]
 
 
 END SET External Setup
@@ -258,6 +258,15 @@ SET Clock to Output
 
 Path 1
   From:                  MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                    GPIO_4_BI
+  Delay (ns):            9.423
+  Slack (ns):
+  Arrival (ns):          12.978
+  Required (ns):
+  Clock to Out (ns):     12.978
+
+Path 2
+  From:                  MSS_ADLIB_INST/U_CORE:PCLK1
   To:                    GPIO_2_BI
   Delay (ns):            8.999
   Slack (ns):
@@ -265,7 +274,7 @@ Path 1
   Required (ns):
   Clock to Out (ns):     12.554
 
-Path 2
+Path 3
   From:                  MSS_ADLIB_INST/U_CORE:PCLK1
   To:                    GPIO_3_BI
   Delay (ns):            8.996
@@ -274,7 +283,7 @@ Path 2
   Required (ns):
   Clock to Out (ns):     12.551
 
-Path 3
+Path 4
   From:                  MSS_ADLIB_INST/U_CORE:PCLK1
   To:                    GPIO_1_BI
   Delay (ns):            8.910
@@ -283,9 +292,9 @@ Path 3
   Required (ns):
   Clock to Out (ns):     12.465
 
-Path 4
+Path 5
   From:                  MSS_ADLIB_INST/U_CORE:PCLK1
-  To:                    GPIO_0_BI
+  To:                    GPIO_0_OUT
   Delay (ns):            8.800
   Slack (ns):
   Arrival (ns):          12.355
@@ -295,9 +304,9 @@ Path 4
 
 Expanded Path 1
   From: MSS_ADLIB_INST/U_CORE:PCLK1
-  To: GPIO_2_BI
+  To: GPIO_4_BI
   data required time                             N/C
-  data arrival time                          -   12.554
+  data arrival time                          -   12.978
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -306,16 +315,16 @@ Expanded Path 1
   0.000                        MSS_ADLIB_INST/U_CORE:PCLK1 (r)
                +     3.555          Clock generation
   3.555
-               +     4.212          cell: ADLIB:MSS_APB_IP
-  7.767                        MSS_ADLIB_INST/U_CORE:GPOE[2] (r)
-               +     0.707          net: GPOE_net_0[2]
-  8.474                        MSS_GPIO_0_GPIO_2_BI:E (r)
+               +     4.683          cell: ADLIB:MSS_APB_IP
+  8.238                        MSS_ADLIB_INST/U_CORE:GPOE[4] (r)
+               +     0.660          net: GPOE_net_0[4]
+  8.898                        MSS_GPIO_0_GPIO_4_BI:E (r)
                +     4.080          cell: ADLIB:IOPAD_BI
-  12.554                       MSS_GPIO_0_GPIO_2_BI:PAD (f)
-               +     0.000          net: GPIO_2_BI
-  12.554                       GPIO_2_BI (f)
+  12.978                       MSS_GPIO_0_GPIO_4_BI:PAD (f)
+               +     0.000          net: GPIO_4_BI
+  12.978                       GPIO_4_BI (f)
                                     
-  12.554                       data arrival time
+  12.978                       data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_pclk1
@@ -324,7 +333,7 @@ Expanded Path 1
                +     3.555          Clock generation
   N/C
                                     
-  N/C                          GPIO_2_BI (f)
+  N/C                          GPIO_4_BI (f)
 
 
 END SET Clock to Output

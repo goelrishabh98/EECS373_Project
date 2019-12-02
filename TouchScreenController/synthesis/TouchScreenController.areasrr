@@ -4,15 +4,15 @@ Report for cell TouchScreenController.verilog
                                cell       count     area    count*area
                           BIBUF_MSS         6       0.0        0.0
                                 GND         1       0.0        0.0
-                            INBUF_A         3       0.0        0.0
+                            INBUF_A         4       0.0        0.0
                           INBUF_MSS         4       0.0        0.0
                             MSS_APB         1       0.0        0.0
-                         OUTBUF_MSS         2       0.0        0.0
+                         OUTBUF_MSS         3       0.0        0.0
                         TRIBUFF_MSS         1       0.0        0.0
           TouchScreenController_tmp_MSS_CCC_0_MSS_CCC         1       0.0        0.0
                                 VCC         1       0.0        0.0
                             
-                         TOTAL             20                  0.0
+                         TOTAL             22                  0.0
 ----------------------------------------------------------------------
 Report for cell TouchScreenController_tmp_MSS_CCC_0_MSS_CCC.netlist
      Instance path:  MSS_CCC_0

@@ -1,6 +1,6 @@
 <project name="TouchScreenController" version="1.1">
     <ProjectDirectory>
-        D:\GitHub\EECS373_Project\TouchScreenController\designer\impl1\TouchScreenController_fp
+        E:\Github\EECS373_Project\TouchScreenController\designer\impl1\TouchScreenController_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,7 +9,7 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        D:\GitHub\EECS373_Project\TouchScreenController\designer\impl1\TouchScreenController_fp\TouchScreenController.log
+        E:\Github\EECS373_Project\TouchScreenController\designer\impl1\TouchScreenController_fp\TouchScreenController.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -74,7 +74,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                D:\GitHub\EECS373_Project\TouchScreenController\designer\impl1\TouchScreenController_fp\TouchScreenController.pdb
+                E:\Github\EECS373_Project\TouchScreenController\designer\impl1\TouchScreenController_fp\TouchScreenController.pdb
             </filename>
             <local>
                 projectData\TouchScreenController.pdb

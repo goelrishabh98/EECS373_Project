@@ -1,0 +1,110 @@
+
+Starting:    C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\mbin\synbatch.exe
+Install:     C:\Microsemi\Libero_SoC_v11.9\SynplifyPro
+Hostname:    RG-PC
+Date:        Sun Dec 01 15:29:19 2019
+Version:     L-2016.09M-SP1-5
+
+Arguments:   -product synplify_pro -licensetype synplifypro_actel -batch -log synplify.log lab7_syn.tcl
+ProductType: synplify_pro
+
+License checkout: synplifypro_actel
+License: synplifypro_actel node-locked 
+Licensed Vendor: actel
+License Option: actel_oem
+
+Running in Vendor Mode
+
+
+Implementation not found: synthesis
+
+log file: "E:\Github\EECS373_Project\lab7\synthesis\lab7.srr"
+
+Running: synthesis in foreground
+
+
+
+Running lab7_syn|synthesis
+
+
+Running: compile (Compile) on lab7_syn|synthesis
+# Sun Dec 01 15:29:19 2019
+
+
+Running: compile_flow (Compile Process) on lab7_syn|synthesis
+# Sun Dec 01 15:29:19 2019
+
+
+Running: compiler (Compile Input) on lab7_syn|synthesis
+# Sun Dec 01 15:29:19 2019
+
+Copied E:\Github\EECS373_Project\lab7\synthesis\synwork\lab7_comp.srs to E:\Github\EECS373_Project\lab7\synthesis\lab7.srs
+
+
+compiler completed
+# Sun Dec 01 15:29:21 2019
+
+Return Code: 0
+Run Time:00h:00m:02s
+
+
+Running: multi_srs_gen (Multi-srs Generator) on lab7_syn|synthesis
+# Sun Dec 01 15:29:21 2019
+
+
+multi_srs_gen completed
+# Sun Dec 01 15:29:21 2019
+
+Return Code: 0
+Run Time:00h:00m:00s
+
+Copied E:\Github\EECS373_Project\lab7\synthesis\synwork\lab7_mult.srs to E:\Github\EECS373_Project\lab7\synthesis\lab7.srs
+
+Complete: Compile Process on lab7_syn|synthesis
+
+
+Running: premap (Pre-mapping) on lab7_syn|synthesis
+# Sun Dec 01 15:29:21 2019
+
+
+premap completed
+# Sun Dec 01 15:29:22 2019
+
+Return Code: 0
+Run Time:00h:00m:01s
+
+Complete: Compile on lab7_syn|synthesis
+
+
+Running: map (Map) on lab7_syn|synthesis
+# Sun Dec 01 15:29:22 2019
+
+License granted for 4 parallel jobs
+
+
+Running: fpga_mapper (Map & Optimize) on lab7_syn|synthesis
+# Sun Dec 01 15:29:22 2019
+
+Copied E:\Github\EECS373_Project\lab7\synthesis\synwork\lab7_m.srm to E:\Github\EECS373_Project\lab7\synthesis\lab7.srm
+
+
+fpga_mapper completed
+# Sun Dec 01 15:29:22 2019
+
+Return Code: 0
+Run Time:00h:00m:00s
+
+Complete: Map on lab7_syn|synthesis
+
+Complete: Logic Synthesis on lab7_syn|synthesis
+
+Copied E:\Github\EECS373_Project\lab7\synthesis\lab7.srr to E:\Github\EECS373_Project\lab7\synthesis\backup\lab7.srr
+
+TCL script complete: "lab7_syn.tcl"
+
+exit status=0
+
+exit status=0
+
+License checkin: synplifypro_actel
+

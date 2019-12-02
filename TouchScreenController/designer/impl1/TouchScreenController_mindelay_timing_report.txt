@@ -2,7 +2,7 @@ Timing Report Min Delay Analysis
 
 SmartTime Version v11.9
 Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
-Date: Sun Nov 24 21:02:37 2019
+Date: Sun Dec 01 14:57:21 2019
 
 
 Design: TouchScreenController
@@ -38,8 +38,8 @@ Min Clock-To-Out (ns):      N/A
 Clock Domain:               mss_pclk1
 Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
-External Hold (ns):         2.949
-Min Clock-To-Out (ns):      5.777
+External Hold (ns):         2.908
+Min Clock-To-Out (ns):      5.802
 
 Clock Domain:               mss_ccc_gla0
 Required Period (ns):       10.000
@@ -172,16 +172,6 @@ END SET Register to Register
 SET External Hold
 
 Path 1
-  From:                  GPIO_0_BI
-  To:                    MSS_ADLIB_INST/U_CORE:GPI[0]
-  Delay (ns):            0.633
-  Slack (ns):
-  Arrival (ns):          0.633
-  Required (ns):
-  Hold (ns):             1.025
-  External Hold (ns):    2.949
-
-Path 2
   From:                  GPIO_2_BI
   To:                    MSS_ADLIB_INST/U_CORE:GPI[2]
   Delay (ns):            0.640
@@ -191,7 +181,7 @@ Path 2
   Hold (ns):             0.991
   External Hold (ns):    2.908
 
-Path 3
+Path 2
   From:                  GPIO_1_BI
   To:                    MSS_ADLIB_INST/U_CORE:GPI[1]
   Delay (ns):            0.635
@@ -200,6 +190,16 @@ Path 3
   Required (ns):
   Hold (ns):             0.980
   External Hold (ns):    2.902
+
+Path 3
+  From:                  GPIO_4_BI
+  To:                    MSS_ADLIB_INST/U_CORE:GPI[4]
+  Delay (ns):            0.620
+  Slack (ns):
+  Arrival (ns):          0.620
+  Required (ns):
+  Hold (ns):             0.961
+  External Hold (ns):    2.898
 
 Path 4
   From:                  GPIO_3_BI
@@ -213,22 +213,22 @@ Path 4
 
 
 Expanded Path 1
-  From: GPIO_0_BI
-  To: MSS_ADLIB_INST/U_CORE:GPI[0]
-  data arrival time                              0.633
+  From: GPIO_2_BI
+  To: MSS_ADLIB_INST/U_CORE:GPI[2]
+  data arrival time                              0.640
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
-  0.000                        GPIO_0_BI (f)
-               +     0.000          net: GPIO_0_BI
-  0.000                        MSS_GPIO_0_GPIO_0_BI:PAD (f)
+  0.000                        GPIO_2_BI (f)
+               +     0.000          net: GPIO_2_BI
+  0.000                        MSS_GPIO_0_GPIO_2_BI:PAD (f)
                +     0.277          cell: ADLIB:IOPAD_BI
-  0.277                        MSS_GPIO_0_GPIO_0_BI:Y (f)
-               +     0.356          net: MSS_GPIO_0_GPIO_0_BI_Y
-  0.633                        MSS_ADLIB_INST/U_CORE:GPI[0] (f)
+  0.277                        MSS_GPIO_0_GPIO_2_BI:Y (f)
+               +     0.363          net: MSS_GPIO_0_GPIO_2_BI_Y
+  0.640                        MSS_ADLIB_INST/U_CORE:GPI[2] (f)
                                     
-  0.633                        data arrival time
+  0.640                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_pclk1
@@ -236,8 +236,8 @@ Expanded Path 1
   N/C                          MSS_ADLIB_INST/U_CORE:PCLK1 (r)
                +     2.557          Clock generation
   N/C
-               +     1.025          Library hold time: ADLIB:MSS_APB_IP
-  N/C                          MSS_ADLIB_INST/U_CORE:GPI[0]
+               +     0.991          Library hold time: ADLIB:MSS_APB_IP
+  N/C                          MSS_ADLIB_INST/U_CORE:GPI[2]
 
 
 END SET External Hold
@@ -248,15 +248,6 @@ SET Clock to Output
 
 Path 1
   From:                  MSS_ADLIB_INST/U_CORE:PCLK1
-  To:                    GPIO_0_BI
-  Delay (ns):            3.220
-  Slack (ns):
-  Arrival (ns):          5.777
-  Required (ns):
-  Clock to Out (ns):     5.777
-
-Path 2
-  From:                  MSS_ADLIB_INST/U_CORE:PCLK1
   To:                    GPIO_1_BI
   Delay (ns):            3.245
   Slack (ns):
@@ -264,7 +255,7 @@ Path 2
   Required (ns):
   Clock to Out (ns):     5.802
 
-Path 3
+Path 2
   From:                  MSS_ADLIB_INST/U_CORE:PCLK1
   To:                    GPIO_3_BI
   Delay (ns):            3.361
@@ -273,7 +264,7 @@ Path 3
   Required (ns):
   Clock to Out (ns):     5.918
 
-Path 4
+Path 3
   From:                  MSS_ADLIB_INST/U_CORE:PCLK1
   To:                    GPIO_2_BI
   Delay (ns):            3.380
@@ -282,11 +273,29 @@ Path 4
   Required (ns):
   Clock to Out (ns):     5.937
 
+Path 4
+  From:                  MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                    GPIO_4_BI
+  Delay (ns):            3.446
+  Slack (ns):
+  Arrival (ns):          6.003
+  Required (ns):
+  Clock to Out (ns):     6.003
+
+Path 5
+  From:                  MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                    GPIO_0_OUT
+  Delay (ns):            3.849
+  Slack (ns):
+  Arrival (ns):          6.406
+  Required (ns):
+  Clock to Out (ns):     6.406
+
 
 Expanded Path 1
   From: MSS_ADLIB_INST/U_CORE:PCLK1
-  To: GPIO_0_BI
-  data arrival time                              5.777
+  To: GPIO_1_BI
+  data arrival time                              5.802
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -296,16 +305,16 @@ Expanded Path 1
   0.000                        MSS_ADLIB_INST/U_CORE:PCLK1 (r)
                +     2.557          Clock generation
   2.557
-               +     1.904          cell: ADLIB:MSS_APB_IP
-  4.461                        MSS_ADLIB_INST/U_CORE:GPOE[0] (f)
-               +     0.370          net: GPOE_net_0[0]
-  4.831                        MSS_GPIO_0_GPIO_0_BI:E (f)
+               +     1.932          cell: ADLIB:MSS_APB_IP
+  4.489                        MSS_ADLIB_INST/U_CORE:GPOE[1] (f)
+               +     0.367          net: GPOE_net_0[1]
+  4.856                        MSS_GPIO_0_GPIO_1_BI:E (f)
                +     0.946          cell: ADLIB:IOPAD_BI
-  5.777                        MSS_GPIO_0_GPIO_0_BI:PAD (r)
-               +     0.000          net: GPIO_0_BI
-  5.777                        GPIO_0_BI (r)
+  5.802                        MSS_GPIO_0_GPIO_1_BI:PAD (r)
+               +     0.000          net: GPIO_1_BI
+  5.802                        GPIO_1_BI (r)
                                     
-  5.777                        data arrival time
+  5.802                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_pclk1
@@ -314,7 +323,7 @@ Expanded Path 1
                +     2.557          Clock generation
   N/C
                                     
-  N/C                          GPIO_0_BI (r)
+  N/C                          GPIO_1_BI (r)
 
 
 END SET Clock to Output

@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Sun Nov 24 21:02:34 2019 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Sun Dec 01 14:57:17 2019 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
@@ -32,14 +32,14 @@ A19                       GND                           Reserved
 A20                       Not Bonded                    Unconnected
 A21                       Not Bonded                    Unconnected
 A22                       GND                           Reserved
-AA1                       GPIO_4/IO43RSB4V0             Unassigned
+AA1     GPIO_4_BI         GPIO_4/IO43RSB4V0             Fixed        LVTTL    8                  High  None           No               No    35                No           Yes
 AA2                       GPIO_12/IO37RSB4V0            Unassigned
 AA3                       MAC_MDC/IO48RSB4V0            Unassigned
 AA4                       MAC_RXER/IO50RSB4V0           Unassigned
 AA5                       MAC_TXD[0]/IO56RSB4V0         Unassigned
 AA6                       ABPS0                         Special
 AA7                       TM1                           Special
-AA8     ADCDirectInput_1  ADC1                          Special      LVTTL    ---                Low   ---            ---              ---   ---               No           No
+AA8                       ADC1                          Special
 AA9                       GND15ADC1                     Reserved
 AA10                      GND33ADC1                     Reserved
 AA11                      CM3                           Special
@@ -61,10 +61,10 @@ AB4                       GND                           Reserved
 AB5                       PCAP                          Reserved
 AB6                       NCAP                          Reserved
 AB7                       ABPS3                         Special
-AB8                       ADC3                          Special
+AB8     ADCDirectInput_0  ADC3                          Special      LVTTL    ---                Low   ---            ---              ---   ---               No           No
 AB9                       GND15ADC0                     Reserved
 AB10                      VCC33ADC1                     Reserved
-AB11                      VAREF1                        Special
+AB11    VAREF1            VAREF1                        Special      LVTTL    ---                Low   ---            ---              ---   ---               No           No
 AB12                      TM2                           Special
 AB13                      CM2                           Special
 AB14                      ABPS4                         Special
@@ -417,7 +417,7 @@ U8                        VCC33N                        Reserved
 U9                        CM1                           Special
 U10     VAREF0            VAREF0                        Special      LVTTL    ---                Low   ---            ---              ---   ---               No           No
 U11                       GND33ADC1                     Reserved
-U12                       ADC4                          Special
+U12     ADCDirectInput_1  ADC4                          Special      LVTTL    ---                Low   ---            ---              ---   ---               No           No
 U13                       Not Bonded                    Unconnected
 U14                       Not Bonded                    Unconnected
 U15                       GNDVAREF                      Special
@@ -428,7 +428,7 @@ U19                       VCCMSSIOB2                    Reserved
 U20                       I2C_1_SCL/GPIO_31             Special
 U21                       I2C_0_SCL/GPIO_23             Special
 U22                       GND                           Reserved
-V1      GPIO_0_BI         GPIO_0/IO47RSB4V0             Fixed        LVTTL    8                  High  None           No               No    35                No           Yes
+V1      GPIO_0_OUT        GPIO_0/IO47RSB4V0             Fixed        LVTTL    8                  High  None           ---              No    35                No           Yes
 V2                        GPIO_6/IO41RSB4V0             Unassigned
 V3                        GPIO_9/IO38RSB4V0             Unassigned
 V4                        MAC_MDIO/IO49RSB4V0           Unassigned
@@ -480,7 +480,7 @@ Y5                        VCCMSSIOB4                    Reserved
 Y6                        GNDSDD0                       Reserved
 Y7                        CM0                           Special
 Y8                        GNDTM0                        Special
-Y9      ADCDirectInput_0  ADC0                          Special      LVTTL    ---                Low   ---            ---              ---   ---               No           No
+Y9                        ADC0                          Special
 Y10                       VCC15ADC0                     Reserved
 Y11                       ABPS7                         Special
 Y12                       TM3                           Special

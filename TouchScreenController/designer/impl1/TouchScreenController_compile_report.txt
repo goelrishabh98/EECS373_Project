@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Sun Nov 24 21:02:16 2019 ***************************************************************************
+                          Sun Dec 01 14:57:02 2019 ***************************************************************************
 
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
 File Name: E:\Github\EECS373_Project\TouchScreenController\designer\impl1\TouchScreenController.adb
 Design Name: TouchScreenController  Design State: compile
-Last Saved: Sat Nov 23 20:45:52 2019
+Last Saved: Sun Dec 01 14:51:05 2019
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Sun Nov 24 21:02:09 2019:
+Source File(s) Imported on Sun Dec 01 14:56:55 2019:
         E:\Github\EECS373_Project\TouchScreenController\synthesis\TouchScreenController.edn
         E:\Github\EECS373_Project\TouchScreenController\component\work\TouchScreenController\TouchScreenController.pdc
 
@@ -333,7 +333,6 @@ Warning: CMP201: Net MSS_ADLIB_INST_VAREFOUT drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_VCC15GOOD drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_VCC33GOOD drives no load.
 Warning: CMP201: Net MSS_ADLIB_INST_WDINT drives no load.
-Warning: CMP201: Net GPO_net_0[4] drives no load.
 Warning: CMP201: Net GPO_net_0[5] drives no load.
 Warning: CMP201: Net GPO_net_0[6] drives no load.
 Warning: CMP201: Net GPO_net_0[7] drives no load.
@@ -361,7 +360,7 @@ Warning: CMP201: Net GPO_net_0[28] drives no load.
 Warning: CMP201: Net GPO_net_0[29] drives no load.
 Warning: CMP201: Net GPO_net_0[30] drives no load.
 Warning: CMP201: Net GPO_net_0[31] drives no load.
-Warning: CMP201: Net GPOE_net_0[4] drives no load.
+Warning: CMP201: Net GPOE_net_0[0] drives no load.
 Warning: CMP201: Net GPOE_net_0[5] drives no load.
 Warning: CMP201: Net GPOE_net_0[6] drives no load.
 Warning: CMP201: Net GPOE_net_0[7] drives no load.
@@ -415,7 +414,7 @@ Optimized macros:
 
     Total macros optimized  0
 
-There were 0 error(s) and 321 warning(s) in this design.
+There were 0 error(s) and 320 warning(s) in this design.
 =====================================================================
 
 Reading user pdc (Physical Design Constraints) file(s) postcompile
@@ -438,8 +437,8 @@ Compile report:
     Fabric                     Used:      0  Total:   4608   (0.00%)
     Fabric IO (W/ clocks)      Used:      0  Total:     94   (0.00%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
-    Dedicated Analog IO        Used:      3  Total:     32   (9.38%)
-    Dedicated MSS IO           Used:     13  Total:     43   (30.23%)
+    Dedicated Analog IO        Used:      4  Total:     32   (12.50%)
+    Dedicated MSS IO           Used:     14  Total:     43   (32.56%)
     GLOBAL (Chip+Quadrant)     Used:      0  Total:     15   (0.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)

@@ -1,0 +1,21 @@
+Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
+
+Date      :  Sun Dec 01 15:28:12 2019
+Project   :  E:\Github\EECS373_Project\lab7
+Component :  lab7
+Family    :  SmartFusion
+
+
+HDL source files for all Synthesis and Simulation tools:
+    E:/Github/EECS373_Project/lab7/component/work/lab7/MSS_CCC_0/lab7_tmp_MSS_CCC_0_MSS_CCC.v
+    E:/Github/EECS373_Project/lab7/component/work/lab7/lab7.v
+
+HDL source files for Synopsys SynplifyPro Synthesis tool:
+    E:/Github/EECS373_Project/lab7/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v
+    E:/Github/EECS373_Project/lab7/component/work/lab7/mss_tshell.v
+
+Stimulus files for all Simulation tools:
+    E:/Github/EECS373_Project/lab7/component/Actel/SmartFusionMSS/MSS/2.5.200/CompileDssBfm.tcl
+    E:/Github/EECS373_Project/lab7/component/Actel/SmartFusionMSS/MSS/2.5.200/bfmtovec.exe
+    E:/Github/EECS373_Project/lab7/component/work/lab7/MSS_ENVM_0/test.bfm
+

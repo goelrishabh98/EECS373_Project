@@ -1,4 +1,7 @@
-#include "mss_spi.h"
+#include "drivers/mss_spi/mss_spi.h"
+#include "drivers/mss_ace/mss_ace.h"
+#include "drivers/mss_gpio/mss_gpio.h"
+#include "drivers/mss_timer/mss_timer.h"
 
 #define TFTWIDTH  240
 #define TFTHEIGHT 320
@@ -85,33 +88,39 @@
 #define ILI9341_GREENYELLOW 0xAFE5  ///< 173, 255,  41
 #define ILI9341_PINK        0xFC18  ///< 255, 130, 198
 
-#define yp MSS_GPIO_0
-#define yn MSS_GPIO_1
-#define xp MSS_GPIO_2 
-#define xn MSS_GPIO_3
-
-ace_channel_handle_t adc_handler1, ace_handler2;
-void begin();
-TSPoint getTouchPoint();
-void drawPixel(uint16_tx, uint16_t y, uint16_t color);
-void drawRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t color);
-void drawRectanglePixel(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t color);
-void drawFillScreen(uint16_t color);
-void setAddr(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1);
-
-void sendCommand(uint8_t commandByte, uint8_t *dataBytes, uint8_t numDataBytes);
-void sendCommand(uint8_t commandByte, uint16_t dataBytes);
-void sendSPI(uint8_t data);
-
-void delay(uint32_t time);
-
-void configureSPI(int frameSize);
-void sendSPI(uint8_t *data);
-void set_SPI_CS();
-void clear_SPI_CS();
+#define DC MSS_GPIO_0
+#define yp MSS_GPIO_1
+#define yn MSS_GPIO_2
+#define xp MSS_GPIO_3
+#define xn MSS_GPIO_4
 
 struct TSPoint{
     uint16_t x;
     uint16_t y;
     uint16_t z;
 };
+
+
+ace_channel_handle_t adc_handler1, ace_handler2;
+
+void touchscreen_begin();
+//TSPoint getTouchPoint();
+
+void drawPixel(uint16_t x, uint16_t y, uint16_t color);
+void drawRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t color);
+void drawRectanglePixel(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t color);
+void drawFillScreen(uint16_t color);
+void setAddr(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1);
+
+void sendCommand(uint8_t commandByte, uint8_t *dataBytes, uint8_t numDataBytes);
+void sendCommand16(uint8_t commandByte, uint16_t *dataBytes);
+void sendCommandOnly(uint8_t commandByte);
+
+void sendData(uint8_t *dataBytes, uint8_t numDataBytes);
+void delay(uint32_t time);
+
+void configureSPI(uint8_t frameSize);
+void sendSPI(uint32_t data);
+void set_SPI_CS();
+void clear_SPI_CS();
+

@@ -2,7 +2,7 @@
 * (c) Copyright  Actel Corporation. All rights reserved.
 *
 *ACE configuration .c file
-*Created by Actel MSS_ACE Configurator Sat Nov 23 13:15:59 2019
+*Created by Actel MSS_ACE Configurator Sun Dec 01 14:54:15 2019
 *
 */
 
@@ -70,14 +70,14 @@ ace_channel_desc_t g_ace_channel_desc_table[ACE_NB_OF_INPUT_CHANNELS] =
 {
 	{
         g_ace_channel_0_name,      /* const uint8_t * p_sz_channel_name */
-        ADC0,                      /* adc_channel_id_t signal_id; */
+        ADC3,                      /* adc_channel_id_t signal_id; */
         16,                        /* uint16_t signal_ppe_offset */
         CHANNEL_0_NB_OF_FLAGS,     /* uint16_t nb_of_flags */
         0                          /* uint16_t * p_flags_array */
 	},
 	{
         g_ace_channel_1_name,      /* const uint8_t * p_sz_channel_name */
-        ADC1,                      /* adc_channel_id_t signal_id; */
+        ADC4,                      /* adc_channel_id_t signal_id; */
         25,                        /* uint16_t signal_ppe_offset */
         CHANNEL_1_NB_OF_FLAGS,     /* uint16_t nb_of_flags */
         0                          /* uint16_t * p_flags_array */
@@ -117,21 +117,15 @@ const ppe_transforms_desc_t g_ace_ppe_transforms_desc_table[ACE_NB_OF_INPUT_CHAN
 const uint8_t g_ace_sse_proc_0_name[] = "ADC0_MAIN";
 const uint16_t g_ace_sse_proc_0_sequence[] = 
 {
-	0x1706, 0x1602, 0x1551, 0x14c9, 
-	0x0000, 0x1551, 0x14ca, 0x0000, 
-	0x13ff, 0x0000, 0x13ff, 0x0000, 
-	0x13ff, 0x0000, 0x13ff, 0x0000, 
-	0x13ff, 0x0000, 0x13ff, 0x0000, 
-	0x13ff, 0x0000, 0x13ff, 0x0000, 
-	0x13ff, 0x0000, 0x13ff, 0x0000, 
-	0x13ff, 0x0000, 0x1346, 0x0000, 
-	0x1002 
+	0x1706, 0x1602, 0x1551, 0x14cc, 
+	0x0000, 0x1002 
 };
 
 const uint8_t g_ace_sse_proc_1_name[] = "ADC1_MAIN";
 const uint16_t g_ace_sse_proc_1_sequence[] = 
 {
-	0x2706, 0x2602, 0x2200 
+	0x2706, 0x2602, 0x2551, 0x24c9, 
+	0x0000, 0x2008 
 };
 
 
@@ -149,8 +143,8 @@ ace_procedure_desc_t g_sse_sequences_desc_table[ACE_NB_OF_SSE_PROCEDURES] =
 	},
 	{
         g_ace_sse_proc_1_name,                              /* const uint8_t * p_sz_proc_name */
-        35,                                                 /* uint16_t sse_loop_pc */
-        33,                                                 /* uint16_t sse_load_offset */
+        8,                                                  /* uint16_t sse_loop_pc */
+        6,                                                  /* uint16_t sse_load_offset */
         sizeof(g_ace_sse_proc_1_sequence) / sizeof(uint16_t), /* uint16_t sse_ucode_length */
         g_ace_sse_proc_1_sequence,                          /* const uint16_t * sse_ucode */
         1                                                   /* uint8_t sse_pc_id */

@@ -14,17 +14,17 @@ PPE_ADCDirectInput_1_LT_OPERATION_MVAL                                          
 PPE_ADCDirectInput_1_PPE_EXECUTION_START                                                : 104
 SSE_ADC0_MAIN_PROCEDURE_LOOP_START                                                : 8
 SSE_ADC0_MAIN_PROCEDURE_START                                                : 0
-SSE_ADC0_MAIN_PROCEDURE_WORD_COUNT                                                : 33
-SSE_ADC1_MAIN_PROCEDURE_LOOP_START                                                : 140
-SSE_ADC1_MAIN_PROCEDURE_START                                                : 132
-SSE_ADC1_MAIN_PROCEDURE_WORD_COUNT                                                : 3
+SSE_ADC0_MAIN_PROCEDURE_WORD_COUNT                                                : 6
+SSE_ADC1_MAIN_PROCEDURE_LOOP_START                                                : 32
+SSE_ADC1_MAIN_PROCEDURE_START                                                : 24
+SSE_ADC1_MAIN_PROCEDURE_WORD_COUNT                                                : 6
 SSE_PC0_START                                                : 0
-SSE_PC1_START                                                : 132
+SSE_PC1_START                                                : 24
 
 
 #### ANALOG PADS ####
-ADCDirectInput_0 ADC:0  QUAD:-1  Logical:9  Pin:Y9
-ADCDirectInput_1 ADC:0  QUAD:-1  Logical:10  Pin:AA8
+ADCDirectInput_0 ADC:0  QUAD:-1  Logical:12  Pin:AB8
+ADCDirectInput_1 ADC:1  QUAD:-1  Logical:9  Pin:U12
 
 
 
@@ -393,8 +393,8 @@ ADCDirectInput_1 ADC:0  QUAD:-1  Logical:10  Pin:AA8
 #    PC[8:0] = 0x0
 0x0
 #  SSE_PC1:0x414
-#    PC[8:0] = 0x21
-0x21
+#    PC[8:0] = 0x6
+0x6
 #  SSE_PC2:0x418
 #    PC[8:0] = 0x0
 0x0
@@ -508,16 +508,16 @@ ADCDirectInput_1 ADC:0  QUAD:-1  Logical:10  Pin:AA8
 0x0
 #  CHAN_JUMP_ADDRESS:0x24
 ######## Jump Addresses for Channel9
-#    ADC0[9:0] = 0x11
-#    ADC1[19:10] = 0x0
+#    ADC0[9:0] = 0x0
+#    ADC1[19:10] = 0x1a
 #    ADC2[29:20] = 0x0
-0x11
+0x6800
 #  CHAN_JUMP_ADDRESS:0x28
 ######## Jump Addresses for Channel10
-#    ADC0[9:0] = 0x1a
+#    ADC0[9:0] = 0x0
 #    ADC1[19:10] = 0x0
 #    ADC2[29:20] = 0x0
-0x1a
+0x0
 #  CHAN_JUMP_ADDRESS:0x2c
 ######## Jump Addresses for Channel11
 #    ADC0[9:0] = 0x0
@@ -526,10 +526,10 @@ ADCDirectInput_1 ADC:0  QUAD:-1  Logical:10  Pin:AA8
 0x0
 #  CHAN_JUMP_ADDRESS:0x30
 ######## Jump Addresses for Channel12
-#    ADC0[9:0] = 0x0
+#    ADC0[9:0] = 0x11
 #    ADC1[19:10] = 0x0
 #    ADC2[29:20] = 0x0
-0x0
+0x11
 #  CHAN_JUMP_ADDRESS:0x34
 ######## Jump Addresses for Channel13
 #    ADC0[9:0] = 0x0
@@ -733,173 +733,52 @@ ADCDirectInput_1 ADC:0  QUAD:-1  Logical:10  Pin:AA8
 0x1551
 #  ADC0_CONV_CTRL:0xc
 #    ADCSTART[7:7] = 0x1
-#    AMUXSEL[4:0] = 0x9
+#    AMUXSEL[4:0] = 0xc
 #    CONVWAIT[6:6] = 0x1
 #    SSE_INT_ADDR[15:8] = 0x14
-0x14c9
+0x14cc
 #  NOP:0x10
 # - Wait for DataValid
 #    NOP[7:0] = 0x0
 #    SSE_INT_ADDR[15:8] = 0x0
 0x0
-#  ADC0_STC:0x14
-######## User Instruction: Sample ADCDirectInput_1
-#    SSE_INT_ADDR[15:8] = 0x15
-#    STC[7:0] = 0x51
-0x1551
-#  ADC0_CONV_CTRL:0x18
-#    ADCSTART[7:7] = 0x1
-#    AMUXSEL[4:0] = 0xa
-#    CONVWAIT[6:6] = 0x1
-#    SSE_INT_ADDR[15:8] = 0x14
-0x14ca
-#  NOP:0x1c
-# - Wait for DataValid
-#    NOP[7:0] = 0x0
-#    SSE_INT_ADDR[15:8] = 0x0
-0x0
-#  PC0_DLY:0x20
-######## User Instruction: Wait for 230.000 us
-# - Wait for 255 clocks
-#    DLY[7:0] = 0xff
-#    SSE_INT_ADDR[15:8] = 0x13
-0x13ff
-#  NOP:0x24
-# - NOP:  Wait for delay counter
-#    NOP[7:0] = 0x0
-#    SSE_INT_ADDR[15:8] = 0x0
-0x0
-#  PC0_DLY:0x28
-# - Wait for 255 clocks
-#    DLY[7:0] = 0xff
-#    SSE_INT_ADDR[15:8] = 0x13
-0x13ff
-#  NOP:0x2c
-# - NOP:  Wait for delay counter
-#    NOP[7:0] = 0x0
-#    SSE_INT_ADDR[15:8] = 0x0
-0x0
-#  PC0_DLY:0x30
-# - Wait for 255 clocks
-#    DLY[7:0] = 0xff
-#    SSE_INT_ADDR[15:8] = 0x13
-0x13ff
-#  NOP:0x34
-# - NOP:  Wait for delay counter
-#    NOP[7:0] = 0x0
-#    SSE_INT_ADDR[15:8] = 0x0
-0x0
-#  PC0_DLY:0x38
-# - Wait for 255 clocks
-#    DLY[7:0] = 0xff
-#    SSE_INT_ADDR[15:8] = 0x13
-0x13ff
-#  NOP:0x3c
-# - NOP:  Wait for delay counter
-#    NOP[7:0] = 0x0
-#    SSE_INT_ADDR[15:8] = 0x0
-0x0
-#  PC0_DLY:0x40
-# - Wait for 255 clocks
-#    DLY[7:0] = 0xff
-#    SSE_INT_ADDR[15:8] = 0x13
-0x13ff
-#  NOP:0x44
-# - NOP:  Wait for delay counter
-#    NOP[7:0] = 0x0
-#    SSE_INT_ADDR[15:8] = 0x0
-0x0
-#  PC0_DLY:0x48
-# - Wait for 255 clocks
-#    DLY[7:0] = 0xff
-#    SSE_INT_ADDR[15:8] = 0x13
-0x13ff
-#  NOP:0x4c
-# - NOP:  Wait for delay counter
-#    NOP[7:0] = 0x0
-#    SSE_INT_ADDR[15:8] = 0x0
-0x0
-#  PC0_DLY:0x50
-# - Wait for 255 clocks
-#    DLY[7:0] = 0xff
-#    SSE_INT_ADDR[15:8] = 0x13
-0x13ff
-#  NOP:0x54
-# - NOP:  Wait for delay counter
-#    NOP[7:0] = 0x0
-#    SSE_INT_ADDR[15:8] = 0x0
-0x0
-#  PC0_DLY:0x58
-# - Wait for 255 clocks
-#    DLY[7:0] = 0xff
-#    SSE_INT_ADDR[15:8] = 0x13
-0x13ff
-#  NOP:0x5c
-# - NOP:  Wait for delay counter
-#    NOP[7:0] = 0x0
-#    SSE_INT_ADDR[15:8] = 0x0
-0x0
-#  PC0_DLY:0x60
-# - Wait for 255 clocks
-#    DLY[7:0] = 0xff
-#    SSE_INT_ADDR[15:8] = 0x13
-0x13ff
-#  NOP:0x64
-# - NOP:  Wait for delay counter
-#    NOP[7:0] = 0x0
-#    SSE_INT_ADDR[15:8] = 0x0
-0x0
-#  PC0_DLY:0x68
-# - Wait for 255 clocks
-#    DLY[7:0] = 0xff
-#    SSE_INT_ADDR[15:8] = 0x13
-0x13ff
-#  NOP:0x6c
-# - NOP:  Wait for delay counter
-#    NOP[7:0] = 0x0
-#    SSE_INT_ADDR[15:8] = 0x0
-0x0
-#  PC0_DLY:0x70
-# - Wait for 255 clocks
-#    DLY[7:0] = 0xff
-#    SSE_INT_ADDR[15:8] = 0x13
-0x13ff
-#  NOP:0x74
-# - NOP:  Wait for delay counter
-#    NOP[7:0] = 0x0
-#    SSE_INT_ADDR[15:8] = 0x0
-0x0
-#  PC0_DLY:0x78
-# - Wait for 70 clocks
-#    DLY[7:0] = 0x46
-#    SSE_INT_ADDR[15:8] = 0x13
-0x1346
-#  NOP:0x7c
-# - NOP:  Wait for delay counter
-#    NOP[7:0] = 0x0
-#    SSE_INT_ADDR[15:8] = 0x0
-0x0
-#  PC0_LO:0x80
+#  PC0_LO:0x14
 ######## User Instruction: Restarts the execution sequence for this timeslot  Jump to program counter 2
 #    PC[7:0] = 0x2
 #    SSE_INT_ADDR[15:8] = 0x10
 0x1002
-#  ADC1_MISC_CTRL:0x84
+#  ADC1_MISC_CTRL:0x18
 ######## ADC1 setup and configuration 
 #    ADCRESET[4:4] = 0x0
 #    MODE[3:0] = 0x6
 #    PWRDWN[5:5] = 0x0
 #    SSE_INT_ADDR[15:8] = 0x27
 0x2706
-#  ADC1_TVC:0x88
+#  ADC1_TVC:0x1c
 #    SSE_INT_ADDR[15:8] = 0x26
 #    TVC[7:0] = 0x2
 0x2602
-#  PC1_CTRL:0x8c
-######## User Instruction: Stop Execution in this timeslot.  No operations to execute.
-#    PC1_EN[0:0] = 0x0
-#    SSE_INT_ADDR[15:8] = 0x22
-0x2200
+#  ADC1_STC:0x20
+######## User Instruction: Sample ADCDirectInput_1
+#    SSE_INT_ADDR[15:8] = 0x25
+#    STC[7:0] = 0x51
+0x2551
+#  ADC1_CONV_CTRL:0x24
+#    ADCSTART[7:7] = 0x1
+#    AMUXSEL[4:0] = 0x9
+#    CONVWAIT[6:6] = 0x1
+#    SSE_INT_ADDR[15:8] = 0x24
+0x24c9
+#  NOP:0x28
+# - Wait for DataValid
+#    NOP[7:0] = 0x0
+#    SSE_INT_ADDR[15:8] = 0x0
+0x0
+#  PC1_LO:0x2c
+######## User Instruction: Restarts the execution sequence for this timeslot  Jump to program counter 8
+#    PC[7:0] = 0x8
+#    SSE_INT_ADDR[15:8] = 0x20
+0x2008
 
 
 #PPE_MERGE_CONFIG = 0x0
@@ -928,13 +807,13 @@ ADCDirectInput_1 ADC:0  QUAD:-1  Logical:10  Pin:AA8
 # - Word1:  PPE_SCRATCH64_1 <- PPE_SCRATCH64_1 * M1
 #    ADC_NUMBER[5:4] = 0x0
 #    CALIB_CHOICE[6:6] = 0x0
-#    CHANNEL_NUMBER[3:0] = 0x9
+#    CHANNEL_NUMBER[3:0] = 0xc
 #    OPERAND_TYPE[10:10] = 0x1
 #    OPERAND_WIDTH[23:16] = 0x10
 #    RESERVED1[9:7] = 0x0
 #    RESERVED2[15:11] = 0x0
 #    RESULT_WIDTH[31:24] = 0x20
-0x20100409
+0x2010040c
 #  MERGE_DATA_BLOCK_WORD0:0x10
 ######## ADCDirectInput_0 : Merge Operation for C value = ( M2 * C1 ) + ( C2 )
 # - Word0:  PPE_SCRATCH64_2 <- M2(PPE_RAM)
@@ -960,13 +839,13 @@ ADCDirectInput_1 ADC:0  QUAD:-1  Logical:10  Pin:AA8
 # - Word1:  PPE_SCRATCH64_2 <- M2(PPE_SCRATCH64_2) * C1
 #    ADC_NUMBER[5:4] = 0x0
 #    CALIB_CHOICE[6:6] = 0x1
-#    CHANNEL_NUMBER[3:0] = 0x9
+#    CHANNEL_NUMBER[3:0] = 0xc
 #    OPERAND_TYPE[10:10] = 0x1
 #    OPERAND_WIDTH[23:16] = 0x10
 #    RESERVED1[9:7] = 0x0
 #    RESERVED2[15:11] = 0x0
 #    RESULT_WIDTH[31:24] = 0x20
-0x20100449
+0x2010044c
 #  MERGE_DATA_BLOCK_WORD0:0x20
 # - Word0:  PPE_RAM <- [ C2 ](in PPE_RAM) + [ M2*C1 ](in PPE_SCRATCH64_2)
 #    MERGE_OPERATION[31:24] = 0x1
@@ -1018,15 +897,15 @@ ADCDirectInput_1 ADC:0  QUAD:-1  Logical:10  Pin:AA8
 0x2100300
 #  MERGE_DATA_BLOCK_CHANNEL_WORD1:0x3c
 # - Word1:  PPE_SCRATCH64_1 <- PPE_SCRATCH64_1 * M1
-#    ADC_NUMBER[5:4] = 0x0
+#    ADC_NUMBER[5:4] = 0x1
 #    CALIB_CHOICE[6:6] = 0x0
-#    CHANNEL_NUMBER[3:0] = 0xa
+#    CHANNEL_NUMBER[3:0] = 0x9
 #    OPERAND_TYPE[10:10] = 0x1
 #    OPERAND_WIDTH[23:16] = 0x10
 #    RESERVED1[9:7] = 0x0
 #    RESERVED2[15:11] = 0x0
 #    RESULT_WIDTH[31:24] = 0x20
-0x2010040a
+0x20100419
 #  MERGE_DATA_BLOCK_WORD0:0x40
 ######## ADCDirectInput_1 : Merge Operation for C value = ( M2 * C1 ) + ( C2 )
 # - Word0:  PPE_SCRATCH64_2 <- M2(PPE_RAM)
@@ -1050,15 +929,15 @@ ADCDirectInput_1 ADC:0  QUAD:-1  Logical:10  Pin:AA8
 0x2100301
 #  MERGE_DATA_BLOCK_CHANNEL_WORD1:0x4c
 # - Word1:  PPE_SCRATCH64_2 <- M2(PPE_SCRATCH64_2) * C1
-#    ADC_NUMBER[5:4] = 0x0
+#    ADC_NUMBER[5:4] = 0x1
 #    CALIB_CHOICE[6:6] = 0x1
-#    CHANNEL_NUMBER[3:0] = 0xa
+#    CHANNEL_NUMBER[3:0] = 0x9
 #    OPERAND_TYPE[10:10] = 0x1
 #    OPERAND_WIDTH[23:16] = 0x10
 #    RESERVED1[9:7] = 0x0
 #    RESERVED2[15:11] = 0x0
 #    RESULT_WIDTH[31:24] = 0x20
-0x2010044a
+0x20100459
 #  MERGE_DATA_BLOCK_WORD0:0x50
 # - Word0:  PPE_RAM <- [ C2 ](in PPE_RAM) + [ M2*C1 ](in PPE_SCRATCH64_2)
 #    MERGE_OPERATION[31:24] = 0x1

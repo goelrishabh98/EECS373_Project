@@ -1,0 +1,40 @@
+Software Version: 11.9.0.4
+creating folder: E:\Github\EECS373_Project\lab7\designer\impl1\lab7_fp
+Driver : 3.0.0 build 1
+programmer '80550' : FlashPro3
+Created new project 'E:/Github/EECS373_Project/lab7/designer/impl1/lab7_fp\lab7.pro'
+The 'new_project' command succeeded.
+The 'set_device_type' command succeeded.
+The 'set_device_package' command succeeded.
+Info: Adding Flash Memory data from file
+      E:\Github\EECS373_Project\lab7\component\work\lab7\MSS_ENVM_0\MSS_ENVM_0.efc.
+Info: Adding FPGA Array data from file E:\Github\EECS373_Project\lab7\designer\impl1\lab7.fdb.
+PDB file 'E:\Github\EECS373_Project\lab7\designer\impl1\lab7_fp\lab7.pdb' has been loaded
+successfully.
+DESIGN : lab7;  CHECKSUM : 7226;  PDB_VERSION : 1.9
+The 'update_programming_file' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer '80550' : Scan Chain...
+Warning: programmer '80550' : Vpump has been selected on programmer AND an externally provided
+         Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer '80550' : Scan Chain PASSED.
+programmer '80550' : Executing action PROGRAM
+programmer '80550' : EXPORT FSN[48] = 014b3e584c64
+programmer '80550' : Erase ...
+programmer '80550' : Completed erase
+programmer '80550' : EXPORT CHECKSUM[16] = 7226
+programmer '80550' : Programming FPGA Array
+programmer '80550' : Verifying FPGA Array
+programmer '80550' :         Verifying FPGA Array -- pass
+programmer '80550' : Program System Init and Boot Clients...
+programmer '80550' : Verify System Init and Boot Clients...
+programmer '80550' : Finished: Sun Dec 01 15:30:58 2019 (Elapsed time 00:00:37)
+programmer '80550' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+creating folder: E:\Github\EECS373_Project\lab7\designer\impl1\lab7_fp\projectData
+Project saved.
+The 'save_project' command succeeded.
+Project closed.

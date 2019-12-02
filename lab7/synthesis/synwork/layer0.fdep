@@ -1,0 +1,44 @@
+#OPTIONS:"|-layerid|0|-orig_srs|E:\\Github\\EECS373_Project\\lab7\\synthesis\\synwork\\lab7_comp.srs|-top|lab7|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|E:\\Github\\EECS373_Project\\lab7\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\bin64\\c_ver.exe":1509358336
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v":1509027488
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\hypermods.v":1509029528
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\umr_capim.v":1509029528
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1509029528
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1509029528
+#CUR:"E:\\Github\\EECS373_Project\\lab7\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.200\\mss_comps.v":1570057112
+#CUR:"E:\\Github\\EECS373_Project\\lab7\\component\\work\\lab7\\mss_tshell.v":1575232078
+#CUR:"E:\\Github\\EECS373_Project\\lab7\\component\\work\\lab7\\MSS_CCC_0\\lab7_tmp_MSS_CCC_0_MSS_CCC.v":1575232073
+#CUR:"E:\\Github\\EECS373_Project\\lab7\\component\\work\\lab7\\lab7.v":1575232091
+#numinternalfiles:5
+#defaultlanguage:verilog
+0			"E:\Github\EECS373_Project\lab7\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" verilog
+1			"E:\Github\EECS373_Project\lab7\component\work\lab7\mss_tshell.v" verilog
+2			"E:\Github\EECS373_Project\lab7\component\work\lab7\MSS_CCC_0\lab7_tmp_MSS_CCC_0_MSS_CCC.v" verilog
+3			"E:\Github\EECS373_Project\lab7\component\work\lab7\lab7.v" verilog
+#Dependency Lists(Uses List)
+0 -1
+1 -1
+2 0
+3 2 1 0
+#Dependency Lists(Users Of)
+0 2 3
+1 3
+2 3
+3 -1
+#Design Unit to File Association
+module work MSS_XTLOSC 0
+module work MSS_LPXTLOSC 0
+module work INBUF_MSS 0
+module work OUTBUF_MSS 0
+module work TRIBUFF_MSS 0
+module work BIBUF_MSS 0
+module work BIBUF_OPEND_MSS 0
+module work INBUF_MCCC 0
+module work INBUF_LVPECL_MCCC 0
+module work INBUF_LVDS_MCCC 0
+module work MSSINT 0
+module work MSS_CCC 0
+module work MSS_ALL 0
+module work MSS_APB 1
+module work lab7_tmp_MSS_CCC_0_MSS_CCC 2
+module work lab7 3

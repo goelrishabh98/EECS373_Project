@@ -1,0 +1,1153 @@
+Archive member included because of file (symbol)
+
+E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                              ./touchscreen.o (g_mss_spi1)
+E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                              ./touchscreen.o (MSS_GPIO_init)
+E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+                              ./touchscreen.o (ACE_init)
+E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                              E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o (SystemInit)
+E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+                              E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o) (g_ace_channel_desc_table)
+E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+                              E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o) (ace_init_convert)
+E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                              E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o) (ace_init_flags)
+c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
+                              ./touchscreen.o (__aeabi_ui2d)
+c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivdf3.o)
+                              ./touchscreen.o (__aeabi_ddiv)
+c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixdfsi.o)
+                              ./touchscreen.o (__aeabi_d2iz)
+c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
+                              E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o (__errno)
+c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                              c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o) (_impure_ptr)
+c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                              E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o (__libc_init_array)
+c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+                              E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o) (memset)
+c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncmp.o)
+                              E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o) (strncmp)
+
+Allocating common symbols
+Common symbol       size              file
+
+ace_handler2        0x1               ./main.o
+g_mss_spi1          0x84              E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+adc_handler1        0x1               ./main.o
+g_mss_spi0          0x84              E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+
+Discarded input sections
+
+ .text          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+ .data          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+ .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+ .data          0x00000000        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .text          0x00000000        0x0 ./main.o
+ .data          0x00000000        0x0 ./main.o
+ .bss           0x00000000        0x0 ./main.o
+ COMMON         0x00000000        0x2 ./main.o
+ .text          0x00000000        0x0 ./touchscreen.o
+ .data          0x00000000        0x0 ./touchscreen.o
+ .bss           0x00000000        0x0 ./touchscreen.o
+ .text.drawPixel
+                0x00000000       0x34 ./touchscreen.o
+ .text.drawRectanglePixel
+                0x00000000       0x5c ./touchscreen.o
+ .text.sendCommand16
+                0x00000000       0x48 ./touchscreen.o
+ .text          0x00000000        0x0 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
+ .data          0x00000000        0x0 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
+ .bss           0x00000000        0x0 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
+ .text          0x00000000        0x0 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .data          0x00000000        0x0 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .bss           0x00000000        0x0 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .bss.__env     0x00000000        0x4 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .data.environ  0x00000000        0x4 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._close   0x00000000       0x18 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._execve  0x00000000       0x28 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._exit    0x00000000        0xc E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._fork    0x00000000       0x18 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._fstat   0x00000000       0x24 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._getpid  0x00000000       0x10 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._isatty  0x00000000       0x18 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._kill    0x00000000       0x24 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._link    0x00000000       0x24 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._lseek   0x00000000       0x1c E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._open    0x00000000       0x1c E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._read    0x00000000       0x1c E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._write_r
+                0x00000000       0x20 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .rodata        0x00000000       0x1c E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._sbrk    0x00000000       0x94 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._stat    0x00000000       0x24 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._times   0x00000000       0x18 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._unlink  0x00000000       0x24 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text._wait    0x00000000       0x24 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .bss.heap_end.2220
+                0x00000000        0x4 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .text          0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .data          0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .bss           0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .text.MSS_SPI_configure_slave_mode
+                0x00000000       0xe0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .text.MSS_SPI_transfer_block
+                0x00000000      0x228 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .text.MSS_SPI_set_frame_rx_handler
+                0x00000000       0xf0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .text.MSS_SPI_set_slave_tx_frame
+                0x00000000      0x110 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .text.MSS_SPI_set_slave_block_buffers
+                0x00000000      0x23c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .text.MSS_SPI_set_cmd_handler
+                0x00000000       0xc4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .text.MSS_SPI_set_cmd_response
+                0x00000000       0x38 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .text.MSS_SPI_enable
+                0x00000000       0x38 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .text.MSS_SPI_disable
+                0x00000000       0x38 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .text.MSS_SPI_set_transfer_byte_count
+                0x00000000       0x84 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .text.MSS_SPI_tx_done
+                0x00000000       0x24 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .text          0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .data          0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .bss           0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .text.NVIC_EnableIRQ
+                0x00000000       0x38 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .rodata.g_config_reg_lut
+                0x00000000       0x80 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .text.MSS_GPIO_config
+                0x00000000       0x3c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .text.MSS_GPIO_drive_inout
+                0x00000000      0x128 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .text.MSS_GPIO_enable_irq
+                0x00000000       0x64 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .text.MSS_GPIO_disable_irq
+                0x00000000       0x50 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .text.MSS_GPIO_clear_irq
+                0x00000000       0x50 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .text          0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .data          0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .bss           0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_start_adc
+                0x00000000       0x2c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .rodata.adc_status_reg_lut
+                0x00000000        0xc E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_get_adc_result
+                0x00000000       0x64 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .rodata.dac_ctrl_reg_lut
+                0x00000000        0xc E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .rodata.dac_enable_masks_lut
+                0x00000000        0xc E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .rodata.dac_byte01_reg_lut
+                0x00000000        0xc E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .rodata.dac_byte2_reg_lut
+                0x00000000        0xc E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .rodata.p_mtd_data
+                0x00000000        0x4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_configure_sdd
+                0x00000000      0x1a0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_enable_sdd
+                0x00000000       0x48 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_disable_sdd
+                0x00000000       0x48 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_set_sdd_value
+                0x00000000       0x4c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_set_sdd_value_sync
+                0x00000000       0xd0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .rodata.comp_id_2_scb_lut
+                0x00000000        0xc E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_set_comp_reference
+                0x00000000      0x1b4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_set_comp_hysteresis
+                0x00000000      0x128 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_enable_comp
+                0x00000000       0xfc E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_disable_comp
+                0x00000000       0xf8 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_enable_comp_rise_irq
+                0x00000000       0x50 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_disable_comp_rise_irq
+                0x00000000       0x70 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_clear_comp_rise_irq
+                0x00000000       0x6c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_enable_comp_fall_irq
+                0x00000000       0x50 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_disable_comp_fall_irq
+                0x00000000       0x70 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_clear_comp_fall_irq
+                0x00000000       0x6c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_get_comp_status
+                0x00000000       0x20 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_get_channel_count
+                0x00000000       0x10 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_get_first_channel
+                0x00000000       0x1c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_get_next_channel
+                0x00000000       0x2c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_get_channel_handle
+                0x00000000       0x74 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_get_input_channel_handle
+                0x00000000       0x54 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text.ACE_get_ppe_sample
+                0x00000000       0x54 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .rodata.C.18.3512
+                0x00000000        0x4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .text          0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .data          0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .bss           0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .data.SystemFrequency
+                0x00000000        0x4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .data.SystemCoreClock
+                0x00000000        0x4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .data.g_FrequencyPCLK0
+                0x00000000        0x4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .data.g_FrequencyPCLK1
+                0x00000000        0x4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .data.g_FrequencyACE
+                0x00000000        0x4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .data.g_FrequencyFPGA
+                0x00000000        0x4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .text.SystemCoreClockUpdate
+                0x00000000      0x150 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .text.GetSystemClock
+                0x00000000       0xe8 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .rodata.C.18.2576
+                0x00000000       0x10 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .text          0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .data          0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .bss           0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .data.g_ace_adc_config
+                0x00000000        0x8 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .rodata.g_ace_current_resistors
+                0x00000000        0x8 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .rodata.g_ace_external_varef_used
+                0x00000000        0x4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .rodata.g_ace_ppe_transforms_desc_table
+                0x00000000       0x18 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .rodata.g_ace_sse_proc_0_name
+                0x00000000        0xc E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .rodata.g_ace_sse_proc_0_sequence
+                0x00000000       0xdc E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .rodata.g_ace_sse_proc_1_name
+                0x00000000        0xc E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .rodata.g_ace_sse_proc_1_sequence
+                0x00000000       0xd4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .data.g_sse_sequences_desc_table
+                0x00000000       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .text          0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .data          0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .bss           0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .rodata.abps_channel_lut
+                0x00000000       0x30 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .rodata.abps_idx_lut
+                0x00000000       0x30 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .rodata.apbs_gain_lut
+                0x00000000        0x4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .rodata.apbs_range
+                0x00000000        0x8 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .text.ACE_get_channel_type
+                0x00000000       0x44 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .text.ACE_convert_adc_input_to_mV
+                0x00000000       0x64 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .text.ACE_convert_to_mV
+                0x00000000      0x100 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .text.ACE_convert_to_mA
+                0x00000000       0xb4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .text.ACE_convert_to_uA
+                0x00000000       0xb0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .text.ACE_convert_to_Kelvin
+                0x00000000       0x4c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .text.ACE_convert_to_Celsius
+                0x00000000       0x3c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .text.ACE_convert_to_Fahrenheit
+                0x00000000       0x58 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .text.ACE_get_channel_name
+                0x00000000       0x38 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .text.ACE_convert_mV_to_adc_value
+                0x00000000       0xa0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .text.convert_mV_to_ppe_value
+                0x00000000       0x7c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .text.ACE_convert_from_mV
+                0x00000000      0x110 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .text.ACE_convert_from_mA
+                0x00000000       0xc4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .text.ACE_convert_from_uA
+                0x00000000       0xc4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .text.ACE_convert_from_Kelvin
+                0x00000000       0x58 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .text.ACE_convert_from_Celsius
+                0x00000000       0x4c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .text.ACE_convert_from_Fahrenheit
+                0x00000000       0x64 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .text.ACE_translate_pdma_value
+                0x00000000       0x34 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .text          0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .data          0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .bss           0x00000000        0x0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_is_hysteresis_flag
+                0x00000000       0x20 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_is_under_flag
+                0x00000000       0x20 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_set_flag_threshold
+                0x00000000       0x18 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_set_flag_assertion
+                0x00000000       0x18 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_set_flag_deassertion
+                0x00000000       0x18 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_set_flag_hysteresis
+                0x00000000       0x18 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_set_channel_hysteresis
+                0x00000000       0x18 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_get_flag_handle
+                0x00000000       0x1c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_get_flag_status
+                0x00000000       0x20 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_get_flag_name
+                0x00000000       0x20 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_get_flag_channel
+                0x00000000       0x20 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_get_channel_flag_count
+                0x00000000       0x20 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_get_channel_first_flag
+                0x00000000       0x20 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_get_channel_next_flag
+                0x00000000       0x20 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_enable_channel_flags_irq
+                0x00000000       0x14 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_disable_channel_flags_irq
+                0x00000000       0x14 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_clear_channel_flags_irq
+                0x00000000       0x14 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_enable_flag_irq
+                0x00000000       0x14 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_disable_flag_irq
+                0x00000000       0x14 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_clear_flag_irq
+                0x00000000       0x14 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_register_flag_isr
+                0x00000000       0x18 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_register_channel_flags_isr
+                0x00000000       0x18 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_register_global_flags_isr
+                0x00000000       0x14 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .data          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivdf3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivdf3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixdfsi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixdfsi.o)
+ .text          0x00000000        0xc c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
+ .data          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
+ .text          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .data          0x00000000       0xf4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .rodata        0x00000000        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .rodata.str1.4
+                0x00000000        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .data          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+ .data          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+ .text          0x00000000       0xa8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncmp.o)
+ .data          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncmp.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncmp.o)
+ .text          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .data          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .text          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ .data          0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ .bss           0x00000000        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+ram              0x20000000         0x00010000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+LOAD c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+LOAD ./main.o
+LOAD ./touchscreen.o
+LOAD E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
+LOAD E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+LOAD E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a
+START GROUP
+LOAD c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a
+LOAD c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a
+END GROUP
+LOAD c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+LOAD c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+START GROUP
+LOAD c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a
+LOAD c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a
+LOAD c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libm.a
+END GROUP
+                0x00000000                __DYNAMIC = 0x0
+                0x20000000                RAM_START_ADDRESS = 0x20000000
+                0x00010000                RAM_SIZE = 0x10000
+                0x00002000                MAIN_STACK_SIZE = 0x2000
+                0x00001000                PROCESS_STACK_SIZE = 0x1000
+                0x20010000                PROVIDE (__main_stack_start, (RAM_START_ADDRESS + RAM_SIZE))
+                0x2000e000                PROVIDE (__process_stack_start, (__main_stack_start - MAIN_STACK_SIZE))
+                0x20010000                PROVIDE (_estack, __main_stack_start)
+                0x00000000                PROVIDE (__mirrored_nvm, 0x0)
+
+.text           0x20000000     0x26ac
+ CREATE_OBJECT_SYMBOLS
+                0x20000000                __text_load = LOADADDR (.text)
+                0x20000000                __text_start = .
+                0x20000000                __vector_table_vma_base_address = .
+ *(.isr_vector)
+ .isr_vector    0x20000000      0x470 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
+                0x20000000                g_pfnVectors
+                0x20000298                Reset_Handler
+                0x20000308                NMI_Handler
+                0x2000030a                HardFault_Handler
+                0x2000030c                MemManage_Handler
+                0x2000030e                BusFault_Handler
+                0x20000310                UsageFault_Handler
+                0x20000312                SVC_Handler
+                0x20000314                DebugMon_Handler
+                0x20000316                PendSV_Handler
+                0x20000318                SysTick_Handler
+                0x2000031a                WdogWakeup_IRQHandler
+                0x2000031c                BrownOut_1_5V_IRQHandler
+                0x2000031e                BrownOut_3_3V_IRQHandler
+                0x20000320                RTC_Match_IRQHandler
+                0x20000322                RTCIF_Pub_IRQHandler
+                0x20000324                EthernetMAC_IRQHandler
+                0x20000326                IAP_IRQHandler
+                0x20000328                ENVM0_IRQHandler
+                0x2000032a                ENVM1_IRQHandler
+                0x2000032c                DMA_IRQHandler
+                0x2000032e                UART0_IRQHandler
+                0x20000330                UART1_IRQHandler
+                0x20000336                I2C0_IRQHandler
+                0x20000338                I2C0_SMBAlert_IRQHandler
+                0x2000033a                I2C0_SMBus_IRQHandler
+                0x2000033c                I2C1_IRQHandler
+                0x2000033e                I2C1_SMBAlert_IRQHandler
+                0x20000340                I2C1_SMBus_IRQHandler
+                0x20000342                Timer1_IRQHandler
+                0x20000344                Timer2_IRQHandler
+                0x20000346                PLL_Lock_IRQHandler
+                0x20000348                PLL_LockLost_IRQHandler
+                0x2000034a                CommError_IRQHandler
+                0x2000034c                Fabric_IRQHandler
+                0x2000034e                GPIO0_IRQHandler
+                0x20000350                GPIO1_IRQHandler
+                0x20000352                GPIO2_IRQHandler
+                0x20000354                GPIO3_IRQHandler
+                0x20000356                GPIO4_IRQHandler
+                0x20000358                GPIO5_IRQHandler
+                0x2000035a                GPIO6_IRQHandler
+                0x2000035c                GPIO7_IRQHandler
+                0x2000035e                GPIO8_IRQHandler
+                0x20000360                GPIO9_IRQHandler
+                0x20000362                GPIO10_IRQHandler
+                0x20000364                GPIO11_IRQHandler
+                0x20000366                GPIO12_IRQHandler
+                0x20000368                GPIO13_IRQHandler
+                0x2000036a                GPIO14_IRQHandler
+                0x2000036c                GPIO15_IRQHandler
+                0x2000036e                GPIO16_IRQHandler
+                0x20000370                GPIO17_IRQHandler
+                0x20000372                GPIO18_IRQHandler
+                0x20000374                GPIO19_IRQHandler
+                0x20000376                GPIO20_IRQHandler
+                0x20000378                GPIO21_IRQHandler
+                0x2000037a                GPIO22_IRQHandler
+                0x2000037c                GPIO23_IRQHandler
+                0x2000037e                GPIO24_IRQHandler
+                0x20000380                GPIO25_IRQHandler
+                0x20000382                GPIO26_IRQHandler
+                0x20000384                GPIO27_IRQHandler
+                0x20000386                GPIO28_IRQHandler
+                0x20000388                GPIO29_IRQHandler
+                0x2000038a                GPIO30_IRQHandler
+                0x2000038c                GPIO31_IRQHandler
+                0x2000038e                ACE_PC0_Flag0_IRQHandler
+                0x20000390                ACE_PC0_Flag1_IRQHandler
+                0x20000392                ACE_PC0_Flag2_IRQHandler
+                0x20000394                ACE_PC0_Flag3_IRQHandler
+                0x20000396                ACE_PC1_Flag0_IRQHandler
+                0x20000398                ACE_PC1_Flag1_IRQHandler
+                0x2000039a                ACE_PC1_Flag2_IRQHandler
+                0x2000039c                ACE_PC1_Flag3_IRQHandler
+                0x2000039e                ACE_PC2_Flag0_IRQHandler
+                0x200003a0                ACE_PC2_Flag1_IRQHandler
+                0x200003a2                ACE_PC2_Flag2_IRQHandler
+                0x200003a4                ACE_PC2_Flag3_IRQHandler
+                0x200003a6                ACE_ADC0_DataValid_IRQHandler
+                0x200003a8                ACE_ADC1_DataValid_IRQHandler
+                0x200003aa                ACE_ADC2_DataValid_IRQHandler
+                0x200003ac                ACE_ADC0_CalDone_IRQHandler
+                0x200003ae                ACE_ADC1_CalDone_IRQHandler
+                0x200003b0                ACE_ADC2_CalDone_IRQHandler
+                0x200003b2                ACE_ADC0_CalStart_IRQHandler
+                0x200003b4                ACE_ADC1_CalStart_IRQHandler
+                0x200003b6                ACE_ADC2_CalStart_IRQHandler
+                0x200003b8                ACE_Comp0_Fall_IRQHandler
+                0x200003ba                ACE_Comp1_Fall_IRQHandler
+                0x200003bc                ACE_Comp2_Fall_IRQHandler
+                0x200003be                ACE_Comp3_Fall_IRQHandler
+                0x200003c0                ACE_Comp4_Fall_IRQHandler
+                0x200003c2                ACE_Comp5_Fall_IRQHandler
+                0x200003c4                ACE_Comp6_Fall_IRQHandler
+                0x200003c6                ACE_Comp7_Fall_IRQHandler
+                0x200003c8                ACE_Comp8_Fall_IRQHandler
+                0x200003ca                ACE_Comp9_Fall_IRQHandler
+                0x200003cc                ACE_Comp10_Fall_IRQHandler
+                0x200003ce                ACE_Comp11_Fall_IRQHandler
+                0x200003d0                ACE_Comp0_Rise_IRQHandler
+                0x200003d2                ACE_Comp1_Rise_IRQHandler
+                0x200003d4                ACE_Comp2_Rise_IRQHandler
+                0x200003d6                ACE_Comp3_Rise_IRQHandler
+                0x200003d8                ACE_Comp4_Rise_IRQHandler
+                0x200003da                ACE_Comp5_Rise_IRQHandler
+                0x200003dc                ACE_Comp6_Rise_IRQHandler
+                0x200003de                ACE_Comp7_Rise_IRQHandler
+                0x200003e0                ACE_Comp8_Rise_IRQHandler
+                0x200003e2                ACE_Comp9_Rise_IRQHandler
+                0x200003e4                ACE_Comp10_Rise_IRQHandler
+                0x200003e6                ACE_Comp11_Rise_IRQHandler
+                0x200003e8                ACE_ADC0_FifoFull_IRQHandler
+                0x200003ea                ACE_ADC0_FifoAFull_IRQHandler
+                0x200003ec                ACE_ADC0_FifoEmpty_IRQHandler
+                0x200003ee                ACE_ADC1_FifoFull_IRQHandler
+                0x200003f0                ACE_ADC1_FifoAFull_IRQHandler
+                0x200003f2                ACE_ADC1_FifoEmpty_IRQHandler
+                0x200003f4                ACE_ADC2_FifoFull_IRQHandler
+                0x200003f6                ACE_ADC2_FifoAFull_IRQHandler
+                0x200003f8                ACE_ADC2_FifoEmpty_IRQHandler
+ *(.text .text.* .gnu.linkonce.t.*)
+ .text          0x20000470       0x30 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .text.main     0x200004a0       0x14 ./main.o
+                0x200004a0                main
+ .text.MSS_TIM1_start
+                0x200004b4       0x1c ./touchscreen.o
+ .text.MSS_TIM1_stop
+                0x200004d0       0x1c ./touchscreen.o
+ .text.MSS_TIM1_get_current_value
+                0x200004ec       0x18 ./touchscreen.o
+ .text.touchscreen_begin
+                0x20000504       0xa0 ./touchscreen.o
+                0x20000504                touchscreen_begin
+ .text.drawRectangle
+                0x200005a4       0x88 ./touchscreen.o
+                0x200005a4                drawRectangle
+ .text.drawFillScreen
+                0x2000062c       0x2c ./touchscreen.o
+                0x2000062c                drawFillScreen
+ .text.setAddr  0x20000658       0x5c ./touchscreen.o
+                0x20000658                setAddr
+ .text.sendCommand
+                0x200006b4       0x64 ./touchscreen.o
+                0x200006b4                sendCommand
+ .text.sendData
+                0x20000718       0x54 ./touchscreen.o
+                0x20000718                sendData
+ *fill*         0x2000076c        0x4 00
+ .text.delay    0x20000770       0x68 ./touchscreen.o
+                0x20000770                delay
+ .text.sendCommandOnly
+                0x200007d8       0x28 ./touchscreen.o
+                0x200007d8                sendCommandOnly
+ .text.configureSPI
+                0x20000800       0x30 ./touchscreen.o
+                0x20000800                configureSPI
+ .text.sendSPI  0x20000830       0x20 ./touchscreen.o
+                0x20000830                sendSPI
+ .text.set_SPI_CS
+                0x20000850       0x18 ./touchscreen.o
+                0x20000850                set_SPI_CS
+ .text.clear_SPI_CS
+                0x20000868       0x18 ./touchscreen.o
+                0x20000868                clear_SPI_CS
+ .text.set_DC_HIGH
+                0x20000880       0x14 ./touchscreen.o
+                0x20000880                set_DC_HIGH
+ .text.set_DC_LOW
+                0x20000894       0x14 ./touchscreen.o
+                0x20000894                set_DC_LOW
+ .text.NVIC_EnableIRQ
+                0x200008a8       0x38 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .text.NVIC_DisableIRQ
+                0x200008e0       0x3c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .text.NVIC_ClearPendingIRQ
+                0x2000091c       0x3c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .text.MSS_SPI_init
+                0x20000958      0x134 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20000958                MSS_SPI_init
+ .text.recover_from_rx_overflow
+                0x20000a8c      0x160 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .text.MSS_SPI_configure_master_mode
+                0x20000bec      0x120 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20000bec                MSS_SPI_configure_master_mode
+ .text.MSS_SPI_set_slave_select
+                0x20000d0c      0x108 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20000d0c                MSS_SPI_set_slave_select
+ .text.MSS_SPI_clear_slave_select
+                0x20000e14       0x90 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20000e14                MSS_SPI_clear_slave_select
+ .text.MSS_SPI_transfer_frame
+                0x20000ea4       0xec E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x20000ea4                MSS_SPI_transfer_frame
+ .text.fill_slave_tx_fifo
+                0x20000f90       0xe0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .text.read_slave_rx_fifo
+                0x20001070       0xac E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .text.mss_spi_isr
+                0x2000111c      0x2b0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .text.SPI0_IRQHandler
+                0x200013cc       0x2c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x200013cc                SPI0_IRQHandler
+ .text.SPI1_IRQHandler
+                0x200013f8       0x2c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x200013f8                SPI1_IRQHandler
+ .text.NVIC_ClearPendingIRQ
+                0x20001424       0x3c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .text.MSS_GPIO_init
+                0x20001460       0x6c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x20001460                MSS_GPIO_init
+ .text.MSS_GPIO_set_output
+                0x200014cc       0x40 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x200014cc                MSS_GPIO_set_output
+ .text.ACE_init
+                0x2000150c       0x10 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+                0x2000150c                ACE_init
+ .text.SystemInit
+                0x2000151c        0xc E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x2000151c                SystemInit
+ .text.ace_init_convert
+                0x20001528      0x1b4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+                0x20001528                ace_init_convert
+ .text.NVIC_ClearPendingIRQ
+                0x200016dc       0x3c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ace_init_flags
+                0x20001718        0xc E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001718                ace_init_flags
+ .text.process_flag_irq
+                0x20001724       0x14 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .text.ACE_PPE_Flag0_IRQHandler
+                0x20001738       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001738                ACE_PPE_Flag0_IRQHandler
+ .text.ACE_PPE_Flag1_IRQHandler
+                0x20001760       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001760                ACE_PPE_Flag1_IRQHandler
+ .text.ACE_PPE_Flag2_IRQHandler
+                0x20001788       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001788                ACE_PPE_Flag2_IRQHandler
+ .text.ACE_PPE_Flag3_IRQHandler
+                0x200017b0       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x200017b0                ACE_PPE_Flag3_IRQHandler
+ .text.ACE_PPE_Flag4_IRQHandler
+                0x200017d8       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x200017d8                ACE_PPE_Flag4_IRQHandler
+ .text.ACE_PPE_Flag5_IRQHandler
+                0x20001800       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001800                ACE_PPE_Flag5_IRQHandler
+ .text.ACE_PPE_Flag6_IRQHandler
+                0x20001828       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001828                ACE_PPE_Flag6_IRQHandler
+ .text.ACE_PPE_Flag7_IRQHandler
+                0x20001850       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001850                ACE_PPE_Flag7_IRQHandler
+ .text.ACE_PPE_Flag8_IRQHandler
+                0x20001878       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001878                ACE_PPE_Flag8_IRQHandler
+ .text.ACE_PPE_Flag9_IRQHandler
+                0x200018a0       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x200018a0                ACE_PPE_Flag9_IRQHandler
+ .text.ACE_PPE_Flag10_IRQHandler
+                0x200018c8       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x200018c8                ACE_PPE_Flag10_IRQHandler
+ .text.ACE_PPE_Flag11_IRQHandler
+                0x200018f0       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x200018f0                ACE_PPE_Flag11_IRQHandler
+ .text.ACE_PPE_Flag12_IRQHandler
+                0x20001918       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001918                ACE_PPE_Flag12_IRQHandler
+ .text.ACE_PPE_Flag13_IRQHandler
+                0x20001940       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001940                ACE_PPE_Flag13_IRQHandler
+ .text.ACE_PPE_Flag14_IRQHandler
+                0x20001968       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001968                ACE_PPE_Flag14_IRQHandler
+ .text.ACE_PPE_Flag15_IRQHandler
+                0x20001990       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001990                ACE_PPE_Flag15_IRQHandler
+ .text.ACE_PPE_Flag16_IRQHandler
+                0x200019b8       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x200019b8                ACE_PPE_Flag16_IRQHandler
+ .text.ACE_PPE_Flag17_IRQHandler
+                0x200019e0       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x200019e0                ACE_PPE_Flag17_IRQHandler
+ .text.ACE_PPE_Flag18_IRQHandler
+                0x20001a08       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001a08                ACE_PPE_Flag18_IRQHandler
+ .text.ACE_PPE_Flag19_IRQHandler
+                0x20001a30       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001a30                ACE_PPE_Flag19_IRQHandler
+ .text.ACE_PPE_Flag20_IRQHandler
+                0x20001a58       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001a58                ACE_PPE_Flag20_IRQHandler
+ .text.ACE_PPE_Flag21_IRQHandler
+                0x20001a80       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001a80                ACE_PPE_Flag21_IRQHandler
+ .text.ACE_PPE_Flag22_IRQHandler
+                0x20001aa8       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001aa8                ACE_PPE_Flag22_IRQHandler
+ .text.ACE_PPE_Flag23_IRQHandler
+                0x20001ad0       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001ad0                ACE_PPE_Flag23_IRQHandler
+ .text.ACE_PPE_Flag24_IRQHandler
+                0x20001af8       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001af8                ACE_PPE_Flag24_IRQHandler
+ .text.ACE_PPE_Flag25_IRQHandler
+                0x20001b20       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001b20                ACE_PPE_Flag25_IRQHandler
+ .text.ACE_PPE_Flag26_IRQHandler
+                0x20001b48       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001b48                ACE_PPE_Flag26_IRQHandler
+ .text.ACE_PPE_Flag27_IRQHandler
+                0x20001b70       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001b70                ACE_PPE_Flag27_IRQHandler
+ .text.ACE_PPE_Flag28_IRQHandler
+                0x20001b98       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001b98                ACE_PPE_Flag28_IRQHandler
+ .text.ACE_PPE_Flag29_IRQHandler
+                0x20001bc0       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001bc0                ACE_PPE_Flag29_IRQHandler
+ .text.ACE_PPE_Flag30_IRQHandler
+                0x20001be8       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001be8                ACE_PPE_Flag30_IRQHandler
+ .text.ACE_PPE_Flag31_IRQHandler
+                0x20001c10       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                0x20001c10                ACE_PPE_Flag31_IRQHandler
+ .text          0x20001c38      0x370 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
+                0x20001c38                __aeabi_drsub
+                0x20001c40                __aeabi_dsub
+                0x20001c40                __subdf3
+                0x20001c44                __aeabi_dadd
+                0x20001c44                __adddf3
+                0x20001ebc                __floatunsidf
+                0x20001ebc                __aeabi_ui2d
+                0x20001edc                __floatsidf
+                0x20001edc                __aeabi_i2d
+                0x20001f00                __aeabi_f2d
+                0x20001f00                __extendsfdf2
+                0x20001f3c                __floatundidf
+                0x20001f3c                __aeabi_ul2d
+                0x20001f4c                __floatdidf
+                0x20001f4c                __aeabi_l2d
+ .text          0x20001fa8      0x424 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivdf3.o)
+                0x20001fa8                __aeabi_dmul
+                0x20001fa8                __muldf3
+                0x200021fc                __divdf3
+                0x200021fc                __aeabi_ddiv
+ .text          0x200023cc       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixdfsi.o)
+                0x200023cc                __aeabi_d2iz
+                0x200023cc                __fixdfsi
+ .text          0x2000241c       0x50 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                0x2000241c                __libc_init_array
+ .text          0x2000246c       0xd4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+                0x2000246c                memset
+ *(.plt)
+ *(.gnu.warning)
+ *(.glue_7t)
+ .glue_7t       0x00000000        0x0 linker stubs
+ *(.glue_7)
+ .glue_7        0x00000000        0x0 linker stubs
+ *(.vfp11_veneer)
+ .vfp11_veneer  0x00000000        0x0 linker stubs
+                0x20002540                . = ALIGN (0x4)
+ *crtbegin.o(.ctors)
+ *(EXCLUDE_FILE(*crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *crtend.o(.ctors)
+ *crtbegin.o(.dtors)
+ *(EXCLUDE_FILE(*crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *crtend.o(.dtors)
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.initcmd
+                0x20002540       0x70 ./touchscreen.o
+                0x20002540                initcmd
+ .rodata.g_gpio_irqn_lut
+                0x200025b0       0x40 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .rodata.g_ace_channel_0_name
+                0x200025f0       0x14 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+                0x200025f0                g_ace_channel_0_name
+ .rodata.g_ace_channel_1_name
+                0x20002604       0x14 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+                0x20002604                g_ace_channel_1_name
+ .rodata.g_ace_channel_2_name
+                0x20002618       0x14 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+                0x20002618                g_ace_channel_2_name
+ .rodata.channel_type_lut
+                0x2000262c       0x30 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .rodata.channel_quad_lut
+                0x2000265c       0x30 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ *(.ARM.extab* .gnu.linkonce.armextab.*)
+ *(.gcc_except_table)
+ *(.eh_frame_hdr)
+ *(.eh_frame)
+ *(.init)
+ .init          0x2000268c        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x2000268c                _init
+ .init          0x20002690        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ *(.fini)
+ .fini          0x20002698        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x20002698                _fini
+ .fini          0x2000269c        0x8 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x200026a4                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x200026a4                PROVIDE (__preinit_array_end, .)
+                0x200026a4                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*))
+ *(.init_array)
+ .init_array    0x200026a4        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+                0x200026a8                PROVIDE (__init_array_end, .)
+                0x200026a8                PROVIDE (__fini_array_start, .)
+ *(.fini_array)
+ .fini_array    0x200026a8        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ *(SORT(.fini_array.*))
+                0x200026ac                PROVIDE (__fini_array_end, .)
+                0x200026ac                __exidx_start = .
+
+.v4_bx          0x200026ac        0x0
+ .v4_bx         0x00000000        0x0 linker stubs
+
+.ARM.exidx
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+                0x200026ac                __exidx_end = .
+                0x200026ac                _etext = .
+                0x200026ac                PROVIDE (__text_end, .)
+
+.data           0x200026ac       0x34
+                0x200026ac                __data_load = LOADADDR (.data)
+                0x200026ac                _sidata = LOADADDR (.data)
+                0x200026ac                __data_start = .
+                0x200026ac                _sdata = .
+ *(.jcr)
+ .jcr           0x200026ac        0x0 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .jcr           0x200026ac        0x4 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ *(.got.plt)
+ *(.got)
+ *(.shdata)
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data.g_ace_channel_desc_table
+                0x200026b0       0x30 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+                0x200026b0                g_ace_channel_desc_table
+                0x200026e0                . = ALIGN (0x4)
+                0x200026e0                _edata = .
+
+.bss            0x200026e0      0x120
+                0x200026e0                __bss_start__ = .
+                0x200026e0                _sbss = .
+ *(.shbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x200026e0        0x1 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ *fill*         0x200026e1        0x3 00
+ .bss.g_gdec_lut
+                0x200026e4        0xc E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .bss.channel_type_lut_h
+                0x200026f0        0x4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ *(COMMON)
+ COMMON         0x200026f4      0x108 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                0x200026f4                g_mss_spi1
+                0x20002778                g_mss_spi0
+                0x20002800                . = ALIGN (0x8)
+ *fill*         0x200027fc        0x4 00
+                0x20002800                __bss_end__ = .
+                0x20002800                _end = .
+                0x20002800                __end = _end
+                0x20002800                _ebss = .
+                0x20002800                PROVIDE (end, .)
+
+.stack          0x20002800     0x3000
+                0x20002800                . = ALIGN (0x4)
+                0x20003800                . = (. + PROCESS_STACK_SIZE)
+ *fill*         0x20002800     0x1000 00
+                0x20003800                . = ALIGN (0x4)
+                0x20005800                . = (. + MAIN_STACK_SIZE)
+ *fill*         0x20003800     0x2000 00
+                0x20005800                . = ALIGN (0x4)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.comment        0x00000000      0x1ae
+ .comment       0x00000000       0x2b ./main.o
+ .comment       0x0000002b       0x2b ./touchscreen.o
+ .comment       0x00000056       0x2b E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .comment       0x00000081       0x2b E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .comment       0x000000ac       0x2b E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .comment       0x000000d7       0x2b E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .comment       0x00000102       0x2b E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .comment       0x0000012d       0x2b E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .comment       0x00000158       0x2b E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .comment       0x00000183       0x2b E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+
+.debug_aranges  0x00000000      0x668
+ *(.debug_aranges)
+ .debug_aranges
+                0x00000000       0x20 ./main.o
+ .debug_aranges
+                0x00000020       0xb8 ./touchscreen.o
+ .debug_aranges
+                0x000000d8       0xa8 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_aranges
+                0x00000180       0xe0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .debug_aranges
+                0x00000260       0x60 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_aranges
+                0x000002c0       0xe0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .debug_aranges
+                0x000003a0       0x30 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_aranges
+                0x000003d0       0xb0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .debug_aranges
+                0x00000480      0x1e8 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+
+.debug_pubnames
+                0x00000000     0x1255
+ *(.debug_pubnames)
+ .debug_pubnames
+                0x00000000       0x3d ./main.o
+ .debug_pubnames
+                0x0000003d      0x155 ./touchscreen.o
+ .debug_pubnames
+                0x00000192       0xeb E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_pubnames
+                0x0000027d      0x21a E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .debug_pubnames
+                0x00000497       0xb1 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_pubnames
+                0x00000548      0x292 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .debug_pubnames
+                0x000007da       0xb4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_pubnames
+                0x0000088e      0x17c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .debug_pubnames
+                0x00000a0a      0x1ec E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .debug_pubnames
+                0x00000bf6      0x65f E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+
+.debug_info     0x00000000     0x8da6
+ *(.debug_info .gnu.linkonce.wi.*)
+ .debug_info    0x00000000       0xf2 ./main.o
+ .debug_info    0x000000f2     0x11fd ./touchscreen.o
+ .debug_info    0x000012ef      0x6bf E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_info    0x000019ae     0x1472 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .debug_info    0x00002e20     0x1114 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_info    0x00003f34     0x1b07 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .debug_info    0x00005a3b      0x53c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_info    0x00005f77      0x4be E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .debug_info    0x00006435     0x1aae E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .debug_info    0x00007ee3      0xec3 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+
+.debug_abbrev   0x00000000      0xe42
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000       0x98 ./main.o
+ .debug_abbrev  0x00000098      0x1f0 ./touchscreen.o
+ .debug_abbrev  0x00000288      0x130 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_abbrev  0x000003b8      0x219 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .debug_abbrev  0x000005d1      0x181 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_abbrev  0x00000752      0x225 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .debug_abbrev  0x00000977      0x111 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_abbrev  0x00000a88       0xbd E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .debug_abbrev  0x00000b45      0x191 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .debug_abbrev  0x00000cd6      0x16c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+
+.debug_line     0x00000000     0x363e
+ *(.debug_line)
+ .debug_line    0x00000000      0x69c ./main.o
+ .debug_line    0x0000069c      0x845 ./touchscreen.o
+ .debug_line    0x00000ee1      0x4a8 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_line    0x00001389      0x762 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .debug_line    0x00001aeb      0x362 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_line    0x00001e4d      0x649 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .debug_line    0x00002496      0x2b7 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_line    0x0000274d      0x1bd E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .debug_line    0x0000290a      0x511 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .debug_line    0x00002e1b      0x823 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+
+.debug_frame    0x00000000     0x1664
+ *(.debug_frame)
+ .debug_frame   0x00000000       0x2c ./main.o
+ .debug_frame   0x0000002c      0x268 ./touchscreen.o
+ .debug_frame   0x00000294      0x21c E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_frame   0x000004b0      0x320 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .debug_frame   0x000007d0      0x118 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_frame   0x000008e8      0x2cc E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .debug_frame   0x00000bb4       0x64 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_frame   0x00000c18      0x24c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .debug_frame   0x00000e64      0x764 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .debug_frame   0x000015c8       0x20 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
+ .debug_frame   0x000015e8       0x2c c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+ .debug_frame   0x00001614       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+ .debug_frame   0x0000163c       0x28 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncmp.o)
+
+.debug_str      0x00000000     0x3db1
+ *(.debug_str)
+ .debug_str     0x00000000      0x17a ./main.o
+                                0x1ae (size before relaxing)
+ .debug_str     0x0000017a     0x1366 ./touchscreen.o
+                               0x1589 (size before relaxing)
+ .debug_str     0x000014e0      0x265 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                                0x34e (size before relaxing)
+ .debug_str     0x00001745      0x60b E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+                               0x16f0 (size before relaxing)
+ .debug_str     0x00001d50      0x2df E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                               0x12b7 (size before relaxing)
+ .debug_str     0x0000202f     0x109d E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+                               0x132a (size before relaxing)
+ .debug_str     0x000030cc      0x119 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                                0x482 (size before relaxing)
+ .debug_str     0x000031e5      0x216 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+                                0x492 (size before relaxing)
+ .debug_str     0x000033fb      0x32c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+                                0xffc (size before relaxing)
+ .debug_str     0x00003727      0x68a E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+                               0x134a (size before relaxing)
+
+.debug_loc      0x00000000     0x23f4
+ *(.debug_loc)
+ .debug_loc     0x00000000       0x2b ./main.o
+ .debug_loc     0x0000002b      0x3f8 ./touchscreen.o
+ .debug_loc     0x00000423      0x3c6 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_loc     0x000007e9      0x549 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .debug_loc     0x00000d32      0x1ef E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_loc     0x00000f21      0x53b E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .debug_loc     0x0000145c       0x99 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_loc     0x000014f5      0x415 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .debug_loc     0x0000190a      0xaea E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+
+.debug_macinfo  0x00000000    0x3a087
+ *(.debug_macinfo)
+ .debug_macinfo
+                0x00000000     0x61b2 ./main.o
+ .debug_macinfo
+                0x000061b2     0x61b2 ./touchscreen.o
+ .debug_macinfo
+                0x0000c364     0x4bf0 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_macinfo
+                0x00010f54     0x7540 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .debug_macinfo
+                0x00018494     0x5ce1 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_macinfo
+                0x0001e175     0x77de E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .debug_macinfo
+                0x00025953     0x5a7f E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_macinfo
+                0x0002b3d2     0x18e4 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .debug_macinfo
+                0x0002ccb6     0x5b7c E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .debug_macinfo
+                0x00032832     0x7855 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+
+.ARM.attributes
+                0x00000000       0x25
+ *(.ARM.attributes)
+ .ARM.attributes
+                0x00000000       0x19 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+ .ARM.attributes
+                0x00000019       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .ARM.attributes
+                0x00000042       0x31 ./main.o
+ .ARM.attributes
+                0x00000073       0x31 ./touchscreen.o
+ .ARM.attributes
+                0x000000a4       0x21 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/startup_a2fxxxm3.o
+ .ARM.attributes
+                0x000000c5       0x31 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .ARM.attributes
+                0x000000f6       0x31 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .ARM.attributes
+                0x00000127       0x31 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .ARM.attributes
+                0x00000158       0x31 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .ARM.attributes
+                0x00000189       0x31 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .ARM.attributes
+                0x000001ba       0x31 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_config.o)
+ .ARM.attributes
+                0x000001eb       0x31 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .ARM.attributes
+                0x0000021c       0x31 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)
+ .ARM.attributes
+                0x0000024d       0x1b c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
+ .ARM.attributes
+                0x00000268       0x1b c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivdf3.o)
+ .ARM.attributes
+                0x00000283       0x1b c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixdfsi.o)
+ .ARM.attributes
+                0x0000029e       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
+ .ARM.attributes
+                0x000002c7       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+ .ARM.attributes
+                0x000002f0       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+ .ARM.attributes
+                0x00000319       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x00000342       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-strncmp.o)
+ .ARM.attributes
+                0x0000036b       0x29 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .ARM.attributes
+                0x00000394       0x19 c:/program files (x86)/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.isr_vector)
+OUTPUT(TouchScreenController_MSS_CM3_0_app elf32-littlearm)
+
+.debug_ranges   0x00000000      0x620
+ .debug_ranges  0x00000000       0x18 ./main.o
+ .debug_ranges  0x00000018       0xb0 ./touchscreen.o
+ .debug_ranges  0x000000c8       0xa0 E:/Github/EECS373_Project/TouchScreenController/SoftConsole/TouchScreenController_MSS_CM3_0/TouchScreenController_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_ranges  0x00000168       0xd8 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_spi.o)
+ .debug_ranges  0x00000240       0x58 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_ranges  0x00000298       0xd8 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(mss_ace.o)
+ .debug_ranges  0x00000370       0x28 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_ranges  0x00000398       0xa8 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_convert.o)
+ .debug_ranges  0x00000440      0x1e0 E:\Github\EECS373_Project\TouchScreenController\SoftConsole\TouchScreenController_MSS_CM3_0\TouchScreenController_MSS_CM3_0_hw_platform\Debug\libTouchScreenController_MSS_CM3_0_hw_platform.a(ace_flags.o)

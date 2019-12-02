@@ -378,7 +378,7 @@ begin_register SSE_PC0 0x410 32 .
 field PC 0 RW 9 0x0.
 end_register.
 begin_register SSE_PC1 0x414 32 .
-field PC 0 RW 9 0x21.
+field PC 0 RW 9 0x6.
 end_register.
 begin_register SSE_PC2 0x418 32 .
 field PC 0 RW 9 0x0.
@@ -483,12 +483,12 @@ field ADC1 10 RW 10 0x0.
 field ADC2 20 RW 10 0x0.
 end_register.
 begin_register CHAN_JUMP_ADDRESS 0x24 32 .
-field ADC0 0 RW 10 0x11.
-field ADC1 10 RW 10 0x0.
+field ADC0 0 RW 10 0x0.
+field ADC1 10 RW 10 0x1a.
 field ADC2 20 RW 10 0x0.
 end_register.
 begin_register CHAN_JUMP_ADDRESS 0x28 32 .
-field ADC0 0 RW 10 0x1a.
+field ADC0 0 RW 10 0x0.
 field ADC1 10 RW 10 0x0.
 field ADC2 20 RW 10 0x0.
 end_register.
@@ -498,7 +498,7 @@ field ADC1 10 RW 10 0x0.
 field ADC2 20 RW 10 0x0.
 end_register.
 begin_register CHAN_JUMP_ADDRESS 0x30 32 .
-field ADC0 0 RW 10 0x0.
+field ADC0 0 RW 10 0x11.
 field ADC1 10 RW 10 0x0.
 field ADC2 20 RW 10 0x0.
 end_register.
@@ -678,7 +678,7 @@ field STC 0 RW 8 0x51.
 end_register.
 begin_register ADC0_CONV_CTRL 0xc 16 .
 field ADCSTART 7 RW 1 0x1.
-field AMUXSEL 0 RW 5 0x9.
+field AMUXSEL 0 RW 5 0xc.
 field CONVWAIT 6 RW 1 0x1.
 field SSE_INT_ADDR 8 RW 8 0x14.
 end_register.
@@ -686,133 +686,37 @@ begin_register NOP 0x10 16 .
 field NOP 0 RW 8 0x0.
 field SSE_INT_ADDR 8 RW 8 0x0.
 end_register.
-begin_register ADC0_STC 0x14 16 .
-field SSE_INT_ADDR 8 RW 8 0x15.
-field STC 0 RW 8 0x51.
-end_register.
-begin_register ADC0_CONV_CTRL 0x18 16 .
-field ADCSTART 7 RW 1 0x1.
-field AMUXSEL 0 RW 5 0xa.
-field CONVWAIT 6 RW 1 0x1.
-field SSE_INT_ADDR 8 RW 8 0x14.
-end_register.
-begin_register NOP 0x1c 16 .
-field NOP 0 RW 8 0x0.
-field SSE_INT_ADDR 8 RW 8 0x0.
-end_register.
-begin_register PC0_DLY 0x20 16 .
-field DLY 0 RW 8 0xff.
-field SSE_INT_ADDR 8 RW 8 0x13.
-end_register.
-begin_register NOP 0x24 16 .
-field NOP 0 RW 8 0x0.
-field SSE_INT_ADDR 8 RW 8 0x0.
-end_register.
-begin_register PC0_DLY 0x28 16 .
-field DLY 0 RW 8 0xff.
-field SSE_INT_ADDR 8 RW 8 0x13.
-end_register.
-begin_register NOP 0x2c 16 .
-field NOP 0 RW 8 0x0.
-field SSE_INT_ADDR 8 RW 8 0x0.
-end_register.
-begin_register PC0_DLY 0x30 16 .
-field DLY 0 RW 8 0xff.
-field SSE_INT_ADDR 8 RW 8 0x13.
-end_register.
-begin_register NOP 0x34 16 .
-field NOP 0 RW 8 0x0.
-field SSE_INT_ADDR 8 RW 8 0x0.
-end_register.
-begin_register PC0_DLY 0x38 16 .
-field DLY 0 RW 8 0xff.
-field SSE_INT_ADDR 8 RW 8 0x13.
-end_register.
-begin_register NOP 0x3c 16 .
-field NOP 0 RW 8 0x0.
-field SSE_INT_ADDR 8 RW 8 0x0.
-end_register.
-begin_register PC0_DLY 0x40 16 .
-field DLY 0 RW 8 0xff.
-field SSE_INT_ADDR 8 RW 8 0x13.
-end_register.
-begin_register NOP 0x44 16 .
-field NOP 0 RW 8 0x0.
-field SSE_INT_ADDR 8 RW 8 0x0.
-end_register.
-begin_register PC0_DLY 0x48 16 .
-field DLY 0 RW 8 0xff.
-field SSE_INT_ADDR 8 RW 8 0x13.
-end_register.
-begin_register NOP 0x4c 16 .
-field NOP 0 RW 8 0x0.
-field SSE_INT_ADDR 8 RW 8 0x0.
-end_register.
-begin_register PC0_DLY 0x50 16 .
-field DLY 0 RW 8 0xff.
-field SSE_INT_ADDR 8 RW 8 0x13.
-end_register.
-begin_register NOP 0x54 16 .
-field NOP 0 RW 8 0x0.
-field SSE_INT_ADDR 8 RW 8 0x0.
-end_register.
-begin_register PC0_DLY 0x58 16 .
-field DLY 0 RW 8 0xff.
-field SSE_INT_ADDR 8 RW 8 0x13.
-end_register.
-begin_register NOP 0x5c 16 .
-field NOP 0 RW 8 0x0.
-field SSE_INT_ADDR 8 RW 8 0x0.
-end_register.
-begin_register PC0_DLY 0x60 16 .
-field DLY 0 RW 8 0xff.
-field SSE_INT_ADDR 8 RW 8 0x13.
-end_register.
-begin_register NOP 0x64 16 .
-field NOP 0 RW 8 0x0.
-field SSE_INT_ADDR 8 RW 8 0x0.
-end_register.
-begin_register PC0_DLY 0x68 16 .
-field DLY 0 RW 8 0xff.
-field SSE_INT_ADDR 8 RW 8 0x13.
-end_register.
-begin_register NOP 0x6c 16 .
-field NOP 0 RW 8 0x0.
-field SSE_INT_ADDR 8 RW 8 0x0.
-end_register.
-begin_register PC0_DLY 0x70 16 .
-field DLY 0 RW 8 0xff.
-field SSE_INT_ADDR 8 RW 8 0x13.
-end_register.
-begin_register NOP 0x74 16 .
-field NOP 0 RW 8 0x0.
-field SSE_INT_ADDR 8 RW 8 0x0.
-end_register.
-begin_register PC0_DLY 0x78 16 .
-field DLY 0 RW 8 0x46.
-field SSE_INT_ADDR 8 RW 8 0x13.
-end_register.
-begin_register NOP 0x7c 16 .
-field NOP 0 RW 8 0x0.
-field SSE_INT_ADDR 8 RW 8 0x0.
-end_register.
-begin_register PC0_LO 0x80 16 .
+begin_register PC0_LO 0x14 16 .
 field PC 0 RW 8 0x2.
 field SSE_INT_ADDR 8 RW 8 0x10.
 end_register.
-begin_register ADC1_MISC_CTRL 0x84 16 .
+begin_register ADC1_MISC_CTRL 0x18 16 .
 field ADCRESET 4 RW 1 0x0.
 field MODE 0 RW 4 0x6.
 field PWRDWN 5 RW 1 0x0.
 field SSE_INT_ADDR 8 RW 8 0x27.
 end_register.
-begin_register ADC1_TVC 0x88 16 .
+begin_register ADC1_TVC 0x1c 16 .
 field SSE_INT_ADDR 8 RW 8 0x26.
 field TVC 0 RW 8 0x2.
 end_register.
-begin_register PC1_CTRL 0x8c 16 .
-field PC1_EN 0 RW 1 0x0.
-field SSE_INT_ADDR 8 RW 8 0x22.
+begin_register ADC1_STC 0x20 16 .
+field SSE_INT_ADDR 8 RW 8 0x25.
+field STC 0 RW 8 0x51.
+end_register.
+begin_register ADC1_CONV_CTRL 0x24 16 .
+field ADCSTART 7 RW 1 0x1.
+field AMUXSEL 0 RW 5 0x9.
+field CONVWAIT 6 RW 1 0x1.
+field SSE_INT_ADDR 8 RW 8 0x24.
+end_register.
+begin_register NOP 0x28 16 .
+field NOP 0 RW 8 0x0.
+field SSE_INT_ADDR 8 RW 8 0x0.
+end_register.
+begin_register PC1_LO 0x2c 16 .
+field PC 0 RW 8 0x8.
+field SSE_INT_ADDR 8 RW 8 0x20.
 end_register.
 End.
 
@@ -837,7 +741,7 @@ end_register.
 begin_register MERGE_DATA_BLOCK_CHANNEL_WORD1 0xc 32 .
 field ADC_NUMBER 4 RW 2 0x0.
 field CALIB_CHOICE 6 RW 1 0x0.
-field CHANNEL_NUMBER 0 RW 4 0x9.
+field CHANNEL_NUMBER 0 RW 4 0xc.
 field OPERAND_TYPE 10 RW 1 0x1.
 field OPERAND_WIDTH 16 RW 8 0x10.
 field RESERVED1 7 RW 3 0x0.
@@ -864,7 +768,7 @@ end_register.
 begin_register MERGE_DATA_BLOCK_CHANNEL_WORD1 0x1c 32 .
 field ADC_NUMBER 4 RW 2 0x0.
 field CALIB_CHOICE 6 RW 1 0x1.
-field CHANNEL_NUMBER 0 RW 4 0x9.
+field CHANNEL_NUMBER 0 RW 4 0xc.
 field OPERAND_TYPE 10 RW 1 0x1.
 field OPERAND_WIDTH 16 RW 8 0x10.
 field RESERVED1 7 RW 3 0x0.
@@ -913,9 +817,9 @@ field OPERAND_LOCATION 0 RW 16 0x300.
 field OPERAND_WIDTH 16 RW 8 0x10.
 end_register.
 begin_register MERGE_DATA_BLOCK_CHANNEL_WORD1 0x3c 32 .
-field ADC_NUMBER 4 RW 2 0x0.
+field ADC_NUMBER 4 RW 2 0x1.
 field CALIB_CHOICE 6 RW 1 0x0.
-field CHANNEL_NUMBER 0 RW 4 0xa.
+field CHANNEL_NUMBER 0 RW 4 0x9.
 field OPERAND_TYPE 10 RW 1 0x1.
 field OPERAND_WIDTH 16 RW 8 0x10.
 field RESERVED1 7 RW 3 0x0.
@@ -940,9 +844,9 @@ field OPERAND_LOCATION 0 RW 16 0x301.
 field OPERAND_WIDTH 16 RW 8 0x10.
 end_register.
 begin_register MERGE_DATA_BLOCK_CHANNEL_WORD1 0x4c 32 .
-field ADC_NUMBER 4 RW 2 0x0.
+field ADC_NUMBER 4 RW 2 0x1.
 field CALIB_CHOICE 6 RW 1 0x1.
-field CHANNEL_NUMBER 0 RW 4 0xa.
+field CHANNEL_NUMBER 0 RW 4 0x9.
 field OPERAND_TYPE 10 RW 1 0x1.
 field OPERAND_WIDTH 16 RW 8 0x10.
 field RESERVED1 7 RW 3 0x0.

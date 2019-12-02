@@ -3,7 +3,7 @@
 #OS: Windows 8 6.2
 #Hostname: RG-PC
 
-# Sun Nov 24 21:02:02 2019
+# Sun Dec 01 14:56:48 2019
 
 #Implementation: synthesis
 
@@ -43,13 +43,13 @@ Selecting top level module TouchScreenController
 
 @N: CG364 :"E:\Github\EECS373_Project\TouchScreenController\component\work\TouchScreenController\MSS_CCC_0\TouchScreenController_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:49|Synthesizing module TouchScreenController_tmp_MSS_CCC_0_MSS_CCC in library work.
 
+@N: CG364 :"E:\Github\EECS373_Project\TouchScreenController\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS in library work.
+
 @N: CG364 :"E:\Github\EECS373_Project\TouchScreenController\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":67:7:67:15|Synthesizing module BIBUF_MSS in library work.
 
 @N: CG364 :"E:\Github\EECS373_Project\TouchScreenController\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS in library work.
 
 @N: CG364 :"E:\Github\EECS373_Project\TouchScreenController\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":51:7:51:17|Synthesizing module TRIBUFF_MSS in library work.
-
-@N: CG364 :"E:\Github\EECS373_Project\TouchScreenController\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS in library work.
 
 @N: CG364 :"E:\Github\EECS373_Project\TouchScreenController\component\work\TouchScreenController\TouchScreenController.v":9:7:9:27|Synthesizing module TouchScreenController in library work.
 
@@ -77,7 +77,7 @@ At c_ver Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Nov 24 21:02:03 2019
+# Sun Dec 01 14:56:48 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
@@ -88,7 +88,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Nov 24 21:02:03 2019
+# Sun Dec 01 14:56:49 2019
 
 ###########################################################]
 @END
@@ -98,7 +98,7 @@ At c_hdl Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Nov 24 21:02:03 2019
+# Sun Dec 01 14:56:49 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
@@ -110,10 +110,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sun Nov 24 21:02:04 2019
+# Sun Dec 01 14:56:50 2019
 
 ###########################################################]
-# Sun Nov 24 21:02:05 2019
+# Sun Dec 01 14:56:50 2019
 
 Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -163,10 +163,10 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 26MB peak: 112MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Nov 24 21:02:05 2019
+# Sun Dec 01 14:56:50 2019
 
 ###########################################################]
-# Sun Nov 24 21:02:05 2019
+# Sun Dec 01 14:56:51 2019
 
 Synopsys Microsemi Technology Mapper, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -268,11 +268,11 @@ Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s
 
 Start final timing analysis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
 
-@W: MT246 :"e:\github\eecs373_project\touchscreencontroller\component\work\touchscreencontroller\touchscreencontroller.v":548:0:548:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"e:\github\eecs373_project\touchscreencontroller\component\work\touchscreencontroller\touchscreencontroller.v":579:0:579:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Sun Nov 24 21:02:06 2019
+# Timing Report written on Sun Dec 01 14:56:51 2019
 #
 
 
@@ -341,9 +341,10 @@ Instance              Reference     Type        Pin         Net                 
                       Clock                                                                            
 -------------------------------------------------------------------------------------------------------
 MSS_CCC_0.I_RCOSC     System        RCOSC       CLKOUT      N_CLKA_RCOSC              0.000       4.491
-MSS_ACE_0_ADC0        System        INBUF_A     Y           MSS_ACE_0_ADC0_Y          0.000       9.678
-MSS_ACE_0_ADC1        System        INBUF_A     Y           MSS_ACE_0_ADC1_Y          0.000       9.678
+MSS_ACE_0_ADC3        System        INBUF_A     Y           MSS_ACE_0_ADC3_Y          0.000       9.678
+MSS_ACE_0_ADC4        System        INBUF_A     Y           MSS_ACE_0_ADC4_Y          0.000       9.678
 MSS_ACE_0_VAREF0      System        INBUF_A     Y           MSS_ACE_0_VAREF0_Y        0.000       9.678
+MSS_ACE_0_VAREF1      System        INBUF_A     Y           MSS_ACE_0_VAREF1_Y        0.000       9.678
 MSS_ADLIB_INST        System        MSS_APB     EMCCLK      MSS_ADLIB_INST_EMCCLK     0.000       9.678
 MSS_ADLIB_INST        System        MSS_APB     SPI1DO      MSS_SPI_1_DO_D            0.000       9.678
 MSS_ADLIB_INST        System        MSS_APB     SPI1DOE     MSS_SPI_1_DO_E            0.000       9.678
@@ -358,10 +359,11 @@ Instance           Reference     Type            Pin           Net              
                    Clock                                                                                   
 -----------------------------------------------------------------------------------------------------------
 MSS_ADLIB_INST     System        MSS_APB         FCLK          MSS_ADLIB_INST_FCLK       10.000       4.491
-MSS_ADLIB_INST     System        MSS_APB         ADC0          MSS_ACE_0_ADC0_Y          10.000       9.678
-MSS_ADLIB_INST     System        MSS_APB         ADC1          MSS_ACE_0_ADC1_Y          10.000       9.678
+MSS_ADLIB_INST     System        MSS_APB         ADC3          MSS_ACE_0_ADC3_Y          10.000       9.678
+MSS_ADLIB_INST     System        MSS_APB         ADC4          MSS_ACE_0_ADC4_Y          10.000       9.678
 MSS_ADLIB_INST     System        MSS_APB         EMCCLKRTN     MSS_ADLIB_INST_EMCCLK     10.000       9.678
 MSS_ADLIB_INST     System        MSS_APB         VAREF0        MSS_ACE_0_VAREF0_Y        10.000       9.678
+MSS_ADLIB_INST     System        MSS_APB         VAREF1        MSS_ACE_0_VAREF1_Y        10.000       9.678
 MSS_SPI_1_DO       System        TRIBUFF_MSS     D             MSS_SPI_1_DO_D            10.000       9.678
 MSS_SPI_1_DO       System        TRIBUFF_MSS     E             MSS_SPI_1_DO_E            10.000       9.678
 ===========================================================================================================
@@ -434,16 +436,16 @@ Report for cell TouchScreenController.verilog
   IO Cell usage:
               cell count
          BIBUF_MSS     6
-           INBUF_A     3
+           INBUF_A     4
          INBUF_MSS     4
-        OUTBUF_MSS     2
+        OUTBUF_MSS     3
        TRIBUFF_MSS     1
                    -----
-             TOTAL    16
+             TOTAL    18
 
 
 Core Cells         : 0 of 4608 (0%)
-IO Cells           : 16
+IO Cells           : 18
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)
@@ -453,6 +455,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 26MB peak: 111MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Sun Nov 24 21:02:06 2019
+# Sun Dec 01 14:56:51 2019
 
 ###########################################################]

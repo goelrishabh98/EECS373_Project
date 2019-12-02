@@ -12,14 +12,27 @@
     <project-description>
     </project-description>
     <location>E:/Github/EECS373_Project/TouchScreenController/component/work/TouchScreenController</location>
-    <state>SAVED ( Sun Nov 24 18:01:21 2019 )</state>
+    <state>SAVED ( Sun Dec 01 14:56:10 2019 )</state>
     <swide-toolchain>SoftConsole workspace generated to E:\Github\EECS373_Project\TouchScreenController\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
   </site-map>
   <fileset>
     <name>HDL File(s)</name>
+    <file>E:\Github\EECS373_Project\TouchScreenController\component\work\mss\mss.v</file>
   </fileset>
+  <io>
+    <port-name>GPIO_0_OUT</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>SPI_1_DO</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
   <io>
     <port-name>ADCDirectInput_1</port-name>
     <direction>IN</direction>
@@ -27,50 +40,32 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>ADCDirectInput_0</port-name>
-    <direction>IN</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>VAREF0</port-name>
-    <direction>IN</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>UART_1_TXD</port-name>
-    <direction>OUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>SPI_1_SS</port-name>
+    <port-name>GPIO_4_BI</port-name>
     <direction>INOUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>UART_0_TXD</port-name>
-    <direction>OUT</direction>
+    <port-name>SPI_1_CLK</port-name>
+    <direction>INOUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>MSS_RESET_N</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>SPI_1_DI</port-name>
+    <direction>IN</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
     <port-name>UART_0_RXD</port-name>
     <direction>IN</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>GPIO_0_BI</port-name>
-    <direction>INOUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>GPIO_2_BI</port-name>
-    <direction>INOUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
@@ -87,7 +82,31 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>SPI_1_DO</port-name>
+    <port-name>ADCDirectInput_0</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>UART_1_TXD</port-name>
+    <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>VAREF0</port-name>
+    <direction>IN</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>GPIO_2_BI</port-name>
+    <direction>INOUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>UART_0_TXD</port-name>
     <direction>OUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
@@ -99,20 +118,14 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>MSS_RESET_N</port-name>
+    <port-name>VAREF1</port-name>
     <direction>IN</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>SPI_1_CLK</port-name>
+    <port-name>SPI_1_SS</port-name>
     <direction>INOUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
-  <io>
-    <port-name>SPI_1_DI</port-name>
-    <direction>IN</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>

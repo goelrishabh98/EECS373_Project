@@ -7,6 +7,7 @@ add_file -verilog "E:/Github/EECS373_Project/TouchScreenController/component/Act
 add_file -verilog "E:/Github/EECS373_Project/TouchScreenController/component/work/TouchScreenController/mss_tshell.v"
 add_file -verilog "E:/Github/EECS373_Project/TouchScreenController/component/work/TouchScreenController/MSS_CCC_0/TouchScreenController_tmp_MSS_CCC_0_MSS_CCC.v"
 add_file -verilog "E:/Github/EECS373_Project/TouchScreenController/component/work/TouchScreenController/TouchScreenController.v"
+add_file -verilog "E:/Github/EECS373_Project/TouchScreenController/component/work/mss/mss.v"
 
 
 
@@ -27,7 +28,7 @@ set_option -part_companion ""
 
 #compilation/mapping options
 set_option -use_fsm_explorer 0
-set_option -top_module "TouchScreenController"
+set_option -top_module "mss"
 
 # hdl_compiler_options
 set_option -distributed_compile 0
@@ -73,5 +74,5 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "E:/Github/EECS373_Project/TouchScreenController/synthesis/TouchScreenController.edn"
+project -result_file "E:/Github/EECS373_Project/TouchScreenController/synthesis/mss.edn"
 impl -active "synthesis"

@@ -16,16 +16,16 @@ Report for cell TouchScreenController.verilog
   IO Cell usage:
               cell count
          BIBUF_MSS     6
-           INBUF_A     3
+           INBUF_A     4
          INBUF_MSS     4
-        OUTBUF_MSS     2
+        OUTBUF_MSS     3
        TRIBUFF_MSS     1
                    -----
-             TOTAL    16
+             TOTAL    18
 
 
 Core Cells         : 0 of 4608 (0%)
-IO Cells           : 16
+IO Cells           : 18
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)

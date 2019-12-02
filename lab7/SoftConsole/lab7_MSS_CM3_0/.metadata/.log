@@ -1,0 +1,32 @@
+!SESSION 2019-12-01 15:28:02.910 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -application org.eclipse.cdt.managedbuilder.core.headlessbuild -import E:\Github\EECS373_Project\lab7\SoftConsole\lab7_MSS_CM3_0\projects\lab7_MSS_CM3_0_hw_platform
+Command-line arguments:  -os win32 -ws win32 -arch x86 -application org.eclipse.cdt.managedbuilder.core.headlessbuild -data E:/Github/EECS373_Project/lab7/SoftConsole/lab7_MSS_CM3_0 -import E:\Github\EECS373_Project\lab7\SoftConsole\lab7_MSS_CM3_0\projects\lab7_MSS_CM3_0_hw_platform
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-12-01 15:28:06.495
+!MESSAGE Indexed 'lab7_MSS_CM3_0_hw_platform' (26 sources, 64 headers) in 1.02 sec: 3,691 declarations; 11,698 references; 4 unresolved inclusions; 2 syntax errors; 1 unresolved names (0.01%)
+!SESSION 2019-12-01 15:28:07.543 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Framework arguments:  -application org.eclipse.cdt.managedbuilder.core.headlessbuild -import E:\Github\EECS373_Project\lab7\SoftConsole\lab7_MSS_CM3_0\projects\lab7_MSS_CM3_0_app
+Command-line arguments:  -os win32 -ws win32 -arch x86 -application org.eclipse.cdt.managedbuilder.core.headlessbuild -data E:/Github/EECS373_Project/lab7/SoftConsole/lab7_MSS_CM3_0 -import E:\Github\EECS373_Project\lab7\SoftConsole\lab7_MSS_CM3_0\projects\lab7_MSS_CM3_0_app
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-12-01 15:28:08.698
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.cdt.core 1 0 2019-12-01 15:28:10.049
+!MESSAGE Indexed 'lab7_MSS_CM3_0_app' (1 sources, 8 headers) in 0.14 sec: 1 declarations; 0 references; 3 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+!SESSION 2019-12-01 15:31:04.484 -----------------------------------------------
+eclipse.buildId=M20101209-1200
+java.version=1.6.0_22
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data E:/Github/EECS373_Project/lab7/SoftConsole/lab7_MSS_CM3_0
+
+!ENTRY org.eclipse.core.resources 2 10035 2019-12-01 15:31:05.700
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.

@@ -1,1 +1,1 @@
-run_tcl -fg TouchScreenController_syn.tcl
+run_tcl -fg mss_syn.tcl

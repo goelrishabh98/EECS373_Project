@@ -2,7 +2,7 @@
 <device>
   <name>TouchScreenController</name>
   <version>1.0</version>
-  <description>CMSIS description for TouchScreenController.  Created by Microsemi SmartDesign on Sun Nov 24 18:01:21 2019</description>
+  <description>CMSIS description for TouchScreenController.  Created by Microsemi SmartDesign on Sun Dec 01 14:56:09 2019</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>

@@ -3,15 +3,15 @@
   Synopsys, Inc.
   Version L-2016.09M-SP1-5
   Project file E:\Github\EECS373_Project\TouchScreenController\synthesis\syntmp\run_option.xml
-  Written on Sun Nov 24 21:02:02 2019
+  Written on Sun Dec 01 15:04:49 2019
 
 
 --> 
 <project_attribute_list name="Project Settings"> 
-     <option name="project_name" display_name="Project Name">TouchScreenController_syn</option>
+     <option name="project_name" display_name="Project Name">mss_syn</option>
      <option name="device_name" display_name="Device Name">synthesis: Microsemi SmartFusion : A2F200M3F</option>
      <option name="impl_name" display_name="Implementation Name">synthesis</option>
-     <option name="top_module" display_name="Top Module">TouchScreenController</option>
+     <option name="top_module" display_name="Top Module">mss</option>
      <option name="retiming" display_name="Retiming">0</option>
      <option name="resource_sharing" display_name="Resource Sharing">1</option>
      <option name="maxfan" display_name="Fanout Guide">24</option>

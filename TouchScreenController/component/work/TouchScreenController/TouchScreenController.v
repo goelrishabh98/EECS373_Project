@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Sun Nov 24 18:01:20 2019
+// Created by SmartDesign Sun Dec 01 14:56:09 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -15,15 +15,17 @@ module TouchScreenController(
     UART_0_RXD,
     UART_1_RXD,
     VAREF0,
+    VAREF1,
     // Outputs
+    GPIO_0_OUT,
     SPI_1_DO,
     UART_0_TXD,
     UART_1_TXD,
     // Inouts
-    GPIO_0_BI,
     GPIO_1_BI,
     GPIO_2_BI,
     GPIO_3_BI,
+    GPIO_4_BI,
     SPI_1_CLK,
     SPI_1_SS
 );
@@ -38,19 +40,21 @@ input  SPI_1_DI;
 input  UART_0_RXD;
 input  UART_1_RXD;
 input  VAREF0;
+input  VAREF1;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
+output GPIO_0_OUT;
 output SPI_1_DO;
 output UART_0_TXD;
 output UART_1_TXD;
 //--------------------------------------------------------------------
 // Inout
 //--------------------------------------------------------------------
-inout  GPIO_0_BI;
 inout  GPIO_1_BI;
 inout  GPIO_2_BI;
 inout  GPIO_3_BI;
+inout  GPIO_4_BI;
 inout  SPI_1_CLK;
 inout  SPI_1_SS;
 //--------------------------------------------------------------------
@@ -58,22 +62,22 @@ inout  SPI_1_SS;
 //--------------------------------------------------------------------
 wire          ADCDirectInput_0;
 wire          ADCDirectInput_1;
-wire          GPIO_0_BI;
+wire          GPIO_0_OUT_net_0;
 wire          GPIO_1_BI;
 wire          GPIO_2_BI;
 wire          GPIO_3_BI;
-wire          MSS_ACE_0_ADC0_Y;
-wire          MSS_ACE_0_ADC1_Y;
+wire          GPIO_4_BI;
+wire          MSS_ACE_0_ADC3_Y;
+wire          MSS_ACE_0_ADC4_Y;
 wire          MSS_ACE_0_VAREF0_Y;
+wire          MSS_ACE_0_VAREF1_Y;
 wire          MSS_ADLIB_INST_EMCCLK;
 wire          MSS_ADLIB_INST_FCLK;
 wire          MSS_ADLIB_INST_MACCLK;
 wire          MSS_ADLIB_INST_MACCLKCCC;
 wire          MSS_ADLIB_INST_PLLLOCK;
 wire          MSS_ADLIB_INST_SYNCCLKFDBK;
-wire   [0:0]  MSS_GPIO_0_GPIO_0_BI_D;
-wire   [0:0]  MSS_GPIO_0_GPIO_0_BI_E;
-wire          MSS_GPIO_0_GPIO_0_BI_Y;
+wire   [0:0]  MSS_GPIO_0_GPIO_0_OUT_D;
 wire   [1:1]  MSS_GPIO_0_GPIO_1_BI_D;
 wire   [1:1]  MSS_GPIO_0_GPIO_1_BI_E;
 wire          MSS_GPIO_0_GPIO_1_BI_Y;
@@ -83,6 +87,9 @@ wire          MSS_GPIO_0_GPIO_2_BI_Y;
 wire   [3:3]  MSS_GPIO_0_GPIO_3_BI_D;
 wire   [3:3]  MSS_GPIO_0_GPIO_3_BI_E;
 wire          MSS_GPIO_0_GPIO_3_BI_Y;
+wire   [4:4]  MSS_GPIO_0_GPIO_4_BI_D;
+wire   [4:4]  MSS_GPIO_0_GPIO_4_BI_E;
+wire          MSS_GPIO_0_GPIO_4_BI_Y;
 wire          MSS_RESET_0_MSS_RESET_N_Y;
 wire          MSS_RESET_N;
 wire          MSS_SPI_1_CLK_D;
@@ -106,9 +113,11 @@ wire          UART_0_TXD_net_0;
 wire          UART_1_RXD;
 wire          UART_1_TXD_net_0;
 wire          VAREF0;
+wire          VAREF1;
 wire          UART_0_TXD_net_1;
 wire          UART_1_TXD_net_1;
 wire          SPI_1_DO_net_1;
+wire          GPIO_0_OUT_net_1;
 wire   [31:0] GPI_net_0;
 wire   [31:0] GPO_net_0;
 wire   [31:0] GPOE_net_0;
@@ -146,39 +155,42 @@ assign UART_1_TXD_net_1 = UART_1_TXD_net_0;
 assign UART_1_TXD       = UART_1_TXD_net_1;
 assign SPI_1_DO_net_1   = SPI_1_DO_net_0;
 assign SPI_1_DO         = SPI_1_DO_net_1;
+assign GPIO_0_OUT_net_1 = GPIO_0_OUT_net_0;
+assign GPIO_0_OUT       = GPIO_0_OUT_net_1;
 //--------------------------------------------------------------------
 // Slices assignments
 //--------------------------------------------------------------------
-assign MSS_GPIO_0_GPIO_0_BI_D[0] = GPO_net_0[0:0];
-assign MSS_GPIO_0_GPIO_0_BI_E[0] = GPOE_net_0[0:0];
-assign MSS_GPIO_0_GPIO_1_BI_D[1] = GPO_net_0[1:1];
-assign MSS_GPIO_0_GPIO_1_BI_E[1] = GPOE_net_0[1:1];
-assign MSS_GPIO_0_GPIO_2_BI_D[2] = GPO_net_0[2:2];
-assign MSS_GPIO_0_GPIO_2_BI_E[2] = GPOE_net_0[2:2];
-assign MSS_GPIO_0_GPIO_3_BI_D[3] = GPO_net_0[3:3];
-assign MSS_GPIO_0_GPIO_3_BI_E[3] = GPOE_net_0[3:3];
-assign MSS_SPI_1_SS_D[0]         = SPI1SSO_net_0[0:0];
+assign MSS_GPIO_0_GPIO_0_OUT_D[0] = GPO_net_0[0:0];
+assign MSS_GPIO_0_GPIO_1_BI_D[1]  = GPO_net_0[1:1];
+assign MSS_GPIO_0_GPIO_1_BI_E[1]  = GPOE_net_0[1:1];
+assign MSS_GPIO_0_GPIO_2_BI_D[2]  = GPO_net_0[2:2];
+assign MSS_GPIO_0_GPIO_2_BI_E[2]  = GPOE_net_0[2:2];
+assign MSS_GPIO_0_GPIO_3_BI_D[3]  = GPO_net_0[3:3];
+assign MSS_GPIO_0_GPIO_3_BI_E[3]  = GPOE_net_0[3:3];
+assign MSS_GPIO_0_GPIO_4_BI_D[4]  = GPO_net_0[4:4];
+assign MSS_GPIO_0_GPIO_4_BI_E[4]  = GPOE_net_0[4:4];
+assign MSS_SPI_1_SS_D[0]          = SPI1SSO_net_0[0:0];
 //--------------------------------------------------------------------
 // Concatenation assignments
 //--------------------------------------------------------------------
-assign GPI_net_0 = { 28'h0000000 , MSS_GPIO_0_GPIO_3_BI_Y , MSS_GPIO_0_GPIO_2_BI_Y , MSS_GPIO_0_GPIO_1_BI_Y , MSS_GPIO_0_GPIO_0_BI_Y };
+assign GPI_net_0 = { 27'h0000000 , MSS_GPIO_0_GPIO_4_BI_Y , MSS_GPIO_0_GPIO_3_BI_Y , MSS_GPIO_0_GPIO_2_BI_Y , MSS_GPIO_0_GPIO_1_BI_Y , 1'b0 };
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
 //--------INBUF_A
-INBUF_A MSS_ACE_0_ADC0(
+INBUF_A MSS_ACE_0_ADC3(
         // Inputs
         .PAD ( ADCDirectInput_0 ),
         // Outputs
-        .Y   ( MSS_ACE_0_ADC0_Y ) 
+        .Y   ( MSS_ACE_0_ADC3_Y ) 
         );
 
 //--------INBUF_A
-INBUF_A MSS_ACE_0_ADC1(
+INBUF_A MSS_ACE_0_ADC4(
         // Inputs
         .PAD ( ADCDirectInput_1 ),
         // Outputs
-        .Y   ( MSS_ACE_0_ADC1_Y ) 
+        .Y   ( MSS_ACE_0_ADC4_Y ) 
         );
 
 //--------INBUF_A
@@ -187,6 +199,14 @@ INBUF_A MSS_ACE_0_VAREF0(
         .PAD ( VAREF0 ),
         // Outputs
         .Y   ( MSS_ACE_0_VAREF0_Y ) 
+        );
+
+//--------INBUF_A
+INBUF_A MSS_ACE_0_VAREF1(
+        // Inputs
+        .PAD ( VAREF1 ),
+        // Outputs
+        .Y   ( MSS_ACE_0_VAREF1_Y ) 
         );
 
 //--------MSS_APB
@@ -274,11 +294,11 @@ MSS_ADLIB_INST(
         .MACMDI         ( GND_net ), // tied to 1'b0 from definition
         .EMCCLKRTN      ( MSS_ADLIB_INST_EMCCLK ),
         .EMCRDB         ( EMCRDB_const_net_0 ), // tied to 16'h0000 from definition
-        .ADC0           ( MSS_ACE_0_ADC0_Y ),
-        .ADC1           ( MSS_ACE_0_ADC1_Y ),
+        .ADC0           ( GND_net ), // tied to 1'b0 from definition
+        .ADC1           ( GND_net ), // tied to 1'b0 from definition
         .ADC2           ( GND_net ), // tied to 1'b0 from definition
-        .ADC3           ( GND_net ), // tied to 1'b0 from definition
-        .ADC4           ( GND_net ), // tied to 1'b0 from definition
+        .ADC3           ( MSS_ACE_0_ADC3_Y ),
+        .ADC4           ( MSS_ACE_0_ADC4_Y ),
         .ADC5           ( GND_net ), // tied to 1'b0 from definition
         .ADC6           ( GND_net ), // tied to 1'b0 from definition
         .ADC7           ( GND_net ), // tied to 1'b0 from definition
@@ -314,7 +334,7 @@ MSS_ADLIB_INST(
         .GNDTM1         ( GND_net ), // tied to 1'b0 from definition
         .GNDTM2         ( GND_net ), // tied to 1'b0 from definition
         .VAREF0         ( MSS_ACE_0_VAREF0_Y ),
-        .VAREF1         ( GND_net ), // tied to 1'b0 from definition
+        .VAREF1         ( MSS_ACE_0_VAREF1_Y ),
         .VAREF2         ( GND_net ), // tied to 1'b0 from definition
         .GNDVAREF       ( GND_net ), // tied to 1'b0 from definition
         .PUn            ( GND_net ), // tied to 1'b0 from definition
@@ -449,18 +469,15 @@ TouchScreenController_tmp_MSS_CCC_0_MSS_CCC MSS_CCC_0(
         .MAC_CLK_IO     ( MSS_ADLIB_INST_MACCLK ) 
         );
 
-//--------BIBUF_MSS
-BIBUF_MSS #( 
+//--------OUTBUF_MSS
+OUTBUF_MSS #( 
         .ACT_CONFIG ( 0 ),
         .ACT_PIN    ( "V1" ) )
-MSS_GPIO_0_GPIO_0_BI(
+MSS_GPIO_0_GPIO_0_OUT(
         // Inputs
-        .D   ( MSS_GPIO_0_GPIO_0_BI_D ),
-        .E   ( MSS_GPIO_0_GPIO_0_BI_E ),
+        .D   ( MSS_GPIO_0_GPIO_0_OUT_D ),
         // Outputs
-        .Y   ( MSS_GPIO_0_GPIO_0_BI_Y ),
-        // Inouts
-        .PAD ( GPIO_0_BI ) 
+        .PAD ( GPIO_0_OUT_net_0 ) 
         );
 
 //--------BIBUF_MSS
@@ -503,6 +520,20 @@ MSS_GPIO_0_GPIO_3_BI(
         .Y   ( MSS_GPIO_0_GPIO_3_BI_Y ),
         // Inouts
         .PAD ( GPIO_3_BI ) 
+        );
+
+//--------BIBUF_MSS
+BIBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "AA1" ) )
+MSS_GPIO_0_GPIO_4_BI(
+        // Inputs
+        .D   ( MSS_GPIO_0_GPIO_4_BI_D ),
+        .E   ( MSS_GPIO_0_GPIO_4_BI_E ),
+        // Outputs
+        .Y   ( MSS_GPIO_0_GPIO_4_BI_Y ),
+        // Inouts
+        .PAD ( GPIO_4_BI ) 
         );
 
 //--------INBUF_MSS
