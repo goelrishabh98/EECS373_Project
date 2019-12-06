@@ -15,14 +15,12 @@ ARCHIVES :=
 SUBDIRS := \
 hal/CortexM3 \
 hal/CortexM3/GNU \
-drivers_config/mss_ace \
 drivers/mss_uart \
 drivers/mss_spi/drivers/mss_spi \
 drivers/mss_rtc/drivers/mss_rtc \
 drivers/mss_pdma \
 drivers/mss_nvm/drivers/F2DSS_NVM \
 drivers/mss_gpio \
-drivers/mss_ace \
 CMSIS \
 CMSIS/startup_gcc \
 

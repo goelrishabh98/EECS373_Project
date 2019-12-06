@@ -9,15 +9,15 @@ Opened an existing Libero design mss.adb.
 'IDE_DESIGNERVIEW_COUNT' set to '1'
 'IDE_DESIGNERVIEW_REV0' set to 'Impl1'
 'IDE_DESIGNERVIEW_REVNUM0' set to '1'
-'IDE_DESIGNERVIEW_ROOTDIR' set to 'N:\EECS373_Project\TouchScreenController\designer'
+'IDE_DESIGNERVIEW_ROOTDIR' set to 'D:\GitHub\EECS373_Project\TouchScreenController\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
  Netlist Reading Time = 0.0 seconds
 Imported the files:
-   N:\EECS373_Project\TouchScreenController\synthesis\mss.edn
-   N:\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc
+   D:\GitHub\EECS373_Project\TouchScreenController\synthesis\mss.edn
+   D:\GitHub\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc
 
-The Import command succeeded ( 00:00:03 )
+The Import command succeeded ( 00:00:01 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -25,8 +25,8 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : N:\EECS373_Project\TouchScreenController\synthesis\mss.edn
-              N:\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc
+Source      : D:\GitHub\EECS373_Project\TouchScreenController\synthesis\mss.edn
+              D:\GitHub\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc
 Format      : EDIF
 Topcell     : mss
 Speed grade : STD
@@ -458,18 +458,18 @@ I/O Technology:
 Net information report:
 =======================
 
-The Compile command succeeded ( 00:00:02 )
+The Compile command succeeded ( 00:00:01 )
 Wrote status report to file: mss_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
 Wrote pin report to file: mss_report_pin_byname.txt
 
-The Report command succeeded ( 00:00:00 )
+The Report command succeeded ( 00:00:01 )
 Wrote pin report to file: mss_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:01 )
-Design saved to file N:\EECS373_Project\TouchScreenController\designer\impl1\mss.adb.
+Design saved to file D:\GitHub\EECS373_Project\TouchScreenController\designer\impl1\mss.adb.
 
-The Execute Script command succeeded ( 00:00:09 )
+The Execute Script command succeeded ( 00:00:07 )
 Design closed.
 

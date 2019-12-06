@@ -18,14 +18,15 @@ Report for cell mss.verilog
          BIBUF_MSS     6
            INBUF_A     4
          INBUF_MSS     4
+          OUTBUF_A     2
         OUTBUF_MSS     3
        TRIBUFF_MSS     1
                    -----
-             TOTAL    18
+             TOTAL    20
 
 
 Core Cells         : 0 of 4608 (0%)
-IO Cells           : 18
+IO Cells           : 20
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)

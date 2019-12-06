@@ -1,0 +1,22 @@
+#include "touchscreen.h"
+
+int main()
+{
+	touchscreen_begin();
+
+	drawFillScreen(ILI9341_WHITE);
+	drawRectanglePixel(0,0, 5, ILI9341_TFTHEIGHT, ILI9341_BLUE);
+	drawRectanglePixel(0,0, ILI9341_TFTWIDTH, 5, ILI9341_BLUE);
+	drawRectanglePixel(0,ILI9341_TFTWIDTH-5, ILI9341_TFTHEIGHT, ILI9341_TFTWIDTH, ILI9341_BLUE);
+
+	while( 1 )
+	{
+		int x = getX();
+		int y = getY();
+		int z = getZ();
+
+		if(z > 10){
+			drawPixel(x, y, ILI9341_YELLOW);
+		}
+	}
+}

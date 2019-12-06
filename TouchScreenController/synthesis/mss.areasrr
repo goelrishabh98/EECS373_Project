@@ -17,12 +17,13 @@ Report for cell TouchScreenController.netlist
                             INBUF_A         4       0.0        0.0
                           INBUF_MSS         4       0.0        0.0
                             MSS_APB         1       0.0        0.0
+                           OUTBUF_A         2       0.0        0.0
                          OUTBUF_MSS         3       0.0        0.0
                         TRIBUFF_MSS         1       0.0        0.0
           TouchScreenController_tmp_MSS_CCC_0_MSS_CCC         1       0.0        0.0
                                 VCC         1       0.0        0.0
                             
-                         TOTAL             22                  0.0
+                         TOTAL             24                  0.0
 ----------------------------------------------------------------------
 Report for cell TouchScreenController_tmp_MSS_CCC_0_MSS_CCC.netlist
      Instance path:  TouchScreenController_0.MSS_CCC_0

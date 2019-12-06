@@ -1,23 +1,23 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09M-SP1-5
-#--  Project file C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\synthesis\scratchproject.prs
+#--  Project file N:\EECS373_Project\WhiteBoard_Plotter\synthesis\scratchproject.prs
 
 #project files
-add_file -verilog "C:/Users/bansarth/Documents/EECS373_Project/WhiteBoard_Plotter/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v"
-add_file -verilog "C:/Users/bansarth/Documents/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteBoard_Plotter/mss_tshell.v"
-add_file -verilog "C:/Users/bansarth/Documents/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteBoard_Plotter/MSS_CCC_0/WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v"
-add_file -verilog "C:/Users/bansarth/Documents/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteBoard_Plotter/WhiteBoard_Plotter.v"
-add_file -verilog "C:/Users/bansarth/Documents/EECS373_Project/WhiteBoard_Plotter/hdl/Stepper_control.v"
-add_file -verilog -lib COREAPB3_LIB "C:/Users/bansarth/Documents/EECS373_Project/WhiteBoard_Plotter/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v"
-add_file -verilog -lib COREAPB3_LIB "C:/Users/bansarth/Documents/EECS373_Project/WhiteBoard_Plotter/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v"
-add_file -verilog -lib COREAPB3_LIB "C:/Users/bansarth/Documents/EECS373_Project/WhiteBoard_Plotter/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v"
-add_file -verilog "C:/Users/bansarth/Documents/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteboarPlotter/WhiteboarPlotter.v"
-add_file -constraint "C:/Users/bansarth/Documents/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteBoard_Plotter/mss_tshell_syn.sdc"
+add_file -verilog "N:/EECS373_Project/WhiteBoard_Plotter/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v"
+add_file -verilog "N:/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteBoard_Plotter/mss_tshell.v"
+add_file -verilog "N:/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteBoard_Plotter/MSS_CCC_0/WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v"
+add_file -verilog "N:/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteBoard_Plotter/WhiteBoard_Plotter.v"
+add_file -verilog "N:/EECS373_Project/WhiteBoard_Plotter/hdl/Stepper_control.v"
+add_file -verilog -lib COREAPB3_LIB "N:/EECS373_Project/WhiteBoard_Plotter/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_muxptob3.v"
+add_file -verilog -lib COREAPB3_LIB "N:/EECS373_Project/WhiteBoard_Plotter/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3_iaddr_reg.v"
+add_file -verilog -lib COREAPB3_LIB "N:/EECS373_Project/WhiteBoard_Plotter/component/Actel/DirectCore/CoreAPB3/4.1.100/rtl/vlog/core_obfuscated/coreapb3.v"
+add_file -verilog "N:/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteboarPlotter/WhiteboarPlotter.v"
+add_file -constraint "N:/EECS373_Project/WhiteBoard_Plotter/component/work/WhiteBoard_Plotter/mss_tshell_syn.sdc"
 
 
 
 #implementation: "synthesis"
-impl -add C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\synthesis -type fpga
+impl -add N:\EECS373_Project\WhiteBoard_Plotter\synthesis -type fpga
 
 #
 #implementation attributes
@@ -79,5 +79,5 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "C:/Users/bansarth/Documents/EECS373_Project/WhiteBoard_Plotter/synthesis/WhiteboarPlotter.edn"
+project -result_file "N:/EECS373_Project/WhiteBoard_Plotter/synthesis/WhiteboarPlotter.edn"
 impl -active "synthesis"

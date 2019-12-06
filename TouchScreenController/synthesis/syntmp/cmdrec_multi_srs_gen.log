@@ -1,8 +1,8 @@
-C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  mss  -multisrs  N:\EECS373_Project\TouchScreenController\synthesis\synwork\mss_comp.srs  -osyn  N:\EECS373_Project\TouchScreenController\synthesis\synwork\mss_mult.srs  -log  N:\EECS373_Project\TouchScreenController\synthesis\synlog\mss_multi_srs_gen.srr 
+C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\syn_nfilter.exe  -link  -top  mss  -multisrs  D:\GitHub\EECS373_Project\TouchScreenController\synthesis\synwork\mss_comp.srs  -osyn  D:\GitHub\EECS373_Project\TouchScreenController\synthesis\synwork\mss_mult.srs  -log  D:\GitHub\EECS373_Project\TouchScreenController\synthesis\synlog\mss_multi_srs_gen.srr 
 relcom:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\syn_nfilter.exe -link -top mss -multisrs ..\synwork\mss_comp.srs -osyn ..\synwork\mss_mult.srs -log ..\synlog\mss_multi_srs_gen.srr
-rc:0 success:1 runtime:0
-file:..\synwork\mss_comp.srs|io:i|time:1575323755|size:25921|exec:0|csum:2A6A9F538E86758EBBB8A72FE8D91E0C
-file:..\synwork\mss_mult.srs|io:o|time:1575323756|size:2725|exec:0|csum:
-file:..\synlog\mss_multi_srs_gen.srr|io:o|time:1575323756|size:516|exec:0|csum:
-file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\syn_nfilter.exe|io:i|time:1509029812|size:3128832|exec:1|csum:962D613D77B03012E41E67FDFAA0D819
-file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1509030084|size:3947520|exec:1|csum:17B0DA4185D3A16356E0044EDC31C9F0
+rc:0 success:1 runtime:1
+file:..\synwork\mss_comp.srs|io:i|time:1575611770|size:25943|exec:0|csum:003D62272482C7BFE17D74014B052576
+file:..\synwork\mss_mult.srs|io:o|time:1575611772|size:2737|exec:0|csum:
+file:..\synlog\mss_multi_srs_gen.srr|io:o|time:1575611772|size:516|exec:0|csum:
+file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\syn_nfilter.exe|io:i|time:1509033412|size:3128832|exec:1|csum:962D613D77B03012E41E67FDFAA0D819
+file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\syn_nfilter.exe|io:i|time:1509033684|size:3947520|exec:1|csum:17B0DA4185D3A16356E0044EDC31C9F0

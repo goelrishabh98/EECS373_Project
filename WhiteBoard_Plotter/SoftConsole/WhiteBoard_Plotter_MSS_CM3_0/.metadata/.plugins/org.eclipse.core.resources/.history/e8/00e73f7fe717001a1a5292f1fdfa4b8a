@@ -1,0 +1,23 @@
+#include "stepper.h"
+#include "interface.h"
+
+//Current Dimensions: 54.61, 83.82
+//center: 41.91, 27.305
+int main(){
+	stepper_config(SIXTEENTH, SIXTEENTH);
+	interfaceConfig(54.61, 83.82);
+
+	makeLine(CW, CW, 47.91, 18.305);
+	makeLine(CW, CCW, 53.91, 27.305);
+	makeLine(CCW, CW, 50.91, 22.805);
+	makeLine(CCW, CCW, 44.91, 22.805);
+	//makeLine(CCW, CW, 41.91, 20);
+	//makeLine(CW, CW, 55, 20);
+	//makeLine(CW, CCW, 55, 27.305);
+	//makeLine(CCW, CCW, 41.91, 27.305);
+	//makeLine(CW, CCW, 41.91, 40);
+	//makeLine(CW, CW, 60, 40);
+	//makeLine(CCW, CW, 60, 27.305);
+	//makeLine(CCW, CCW, 41.91, 27.305);
+	return 0;
+}

@@ -1,0 +1,18 @@
+#include "touchscreen.h"
+
+int main()
+{
+	touchscreen_begin();
+
+	while( 1 )
+	{
+		int i, j;
+		//drawFillScreen(ILI9341_ORANGE);
+		delay(3000);
+		for(i=0; i<ILI9341_TFTWIDTH; i++){
+			for(j = 0; j<ILI9341_TFTHEIGHT; j++){
+				drawPixel(i, j, ILI9341_BLACK);
+			}
+		}
+	}
+}

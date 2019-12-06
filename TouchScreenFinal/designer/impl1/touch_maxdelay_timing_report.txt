@@ -1,0 +1,519 @@
+Timing Report Max Delay Analysis
+
+SmartTime Version v11.9
+Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
+Date: Fri Dec 06 18:35:32 2019
+
+
+Design: touch
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+Temperature Range: 0 - 85 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 85 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               mss_aclk
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_fabric_interface_clock
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_pclk1
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        -1.719
+Max Clock-To-Out (ns):      13.015
+
+Clock Domain:               mss_ccc_gla0
+Period (ns):                12.500
+Frequency (MHz):            80.000
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        -4.814
+Max Clock-To-Out (ns):      N/A
+
+Clock Domain:               TouchScreenFinal_0/MSS_CCC_0/I_RCOSC:CLKOUT
+Period (ns):                N/A
+Frequency (MHz):            N/A
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Setup (ns):        N/A
+Max Clock-To-Out (ns):      N/A
+
+                            Input to Output
+Max Delay (ns):             N/A
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain mss_aclk
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_fabric_interface_clock
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_pclk1
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                  GPIO_7_BI
+  To:                    TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:GPI[7]
+  Delay (ns):            1.669
+  Slack (ns):
+  Arrival (ns):          1.669
+  Required (ns):
+  Setup (ns):            0.167
+  External Setup (ns):   -1.719
+
+Path 2
+  From:                  GPIO_8_BI
+  To:                    TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:GPI[8]
+  Delay (ns):            1.683
+  Slack (ns):
+  Arrival (ns):          1.683
+  Required (ns):
+  Setup (ns):            -0.409
+  External Setup (ns):   -2.281
+
+Path 3
+  From:                  GPIO_6_BI
+  To:                    TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:GPI[6]
+  Delay (ns):            1.639
+  Slack (ns):
+  Arrival (ns):          1.639
+  Required (ns):
+  Setup (ns):            -0.448
+  External Setup (ns):   -2.364
+
+Path 4
+  From:                  GPIO_5_BI
+  To:                    TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:GPI[5]
+  Delay (ns):            1.627
+  Slack (ns):
+  Arrival (ns):          1.627
+  Required (ns):
+  Setup (ns):            -0.446
+  External Setup (ns):   -2.374
+
+
+Expanded Path 1
+  From: GPIO_7_BI
+  To: TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:GPI[7]
+  data required time                             N/C
+  data arrival time                          -   1.669
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        GPIO_7_BI (r)
+               +     0.000          net: GPIO_7_BI
+  0.000                        TouchScreenFinal_0/MSS_GPIO_0_GPIO_7_BI:PAD (r)
+               +     0.937          cell: ADLIB:IOPAD_BI
+  0.937                        TouchScreenFinal_0/MSS_GPIO_0_GPIO_7_BI:Y (r)
+               +     0.732          net: TouchScreenFinal_0/MSS_GPIO_0_GPIO_7_BI_Y
+  1.669                        TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:GPI[7] (r)
+                                    
+  1.669                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_pclk1
+               +     0.000          Clock source
+  N/C                          TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:PCLK1 (r)
+               +     3.555          Clock generation
+  N/C
+               -     0.167          Library setup time: ADLIB:MSS_APB_IP
+  N/C                          TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:GPI[7]
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                  TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                    GPIO_7_BI
+  Delay (ns):            9.460
+  Slack (ns):
+  Arrival (ns):          13.015
+  Required (ns):
+  Clock to Out (ns):     13.015
+
+Path 2
+  From:                  TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                    GPIO_5_BI
+  Delay (ns):            9.283
+  Slack (ns):
+  Arrival (ns):          12.838
+  Required (ns):
+  Clock to Out (ns):     12.838
+
+Path 3
+  From:                  TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                    GPIO_6_BI
+  Delay (ns):            8.864
+  Slack (ns):
+  Arrival (ns):          12.419
+  Required (ns):
+  Clock to Out (ns):     12.419
+
+Path 4
+  From:                  TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                    GPIO_8_BI
+  Delay (ns):            8.805
+  Slack (ns):
+  Arrival (ns):          12.360
+  Required (ns):
+  Clock to Out (ns):     12.360
+
+Path 5
+  From:                  TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                    GPIO_0_OUT
+  Delay (ns):            8.800
+  Slack (ns):
+  Arrival (ns):          12.355
+  Required (ns):
+  Clock to Out (ns):     12.355
+
+
+Expanded Path 1
+  From: TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To: GPIO_7_BI
+  data required time                             N/C
+  data arrival time                          -   13.015
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_pclk1
+               +     0.000          Clock source
+  0.000                        TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:PCLK1 (r)
+               +     3.555          Clock generation
+  3.555
+               +     4.691          cell: ADLIB:MSS_APB_IP
+  8.246                        TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:GPOE[7] (r)
+               +     0.689          net: TouchScreenFinal_0/GPOE_net_0[7]
+  8.935                        TouchScreenFinal_0/MSS_GPIO_0_GPIO_7_BI:E (r)
+               +     4.080          cell: ADLIB:IOPAD_BI
+  13.015                       TouchScreenFinal_0/MSS_GPIO_0_GPIO_7_BI:PAD (f)
+               +     0.000          net: GPIO_7_BI
+  13.015                       GPIO_7_BI (f)
+                                    
+  13.015                       data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_pclk1
+               +     0.000          Clock source
+  N/C                          TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:PCLK1 (r)
+               +     3.555          Clock generation
+  N/C
+                                    
+  N/C                          GPIO_7_BI (f)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_ccc_gla0
+
+Info: The maximum frequency of this clock domain is limited by the period of pin TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:FCLK
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+Path 1
+  From:                  MSS_RESET_N
+  To:                    TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+  Delay (ns):            0.937
+  Slack (ns):
+  Arrival (ns):          0.937
+  Required (ns):
+  Setup (ns):            -2.196
+  External Setup (ns):   -4.814
+
+
+Expanded Path 1
+  From: MSS_RESET_N
+  To: TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+  data required time                             N/C
+  data arrival time                          -   0.937
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        MSS_RESET_N (r)
+               +     0.000          net: MSS_RESET_N
+  0.000                        TouchScreenFinal_0/MSS_RESET_0_MSS_RESET_N:PAD (r)
+               +     0.937          cell: ADLIB:IOPAD_IN
+  0.937                        TouchScreenFinal_0/MSS_RESET_0_MSS_RESET_N:Y (r)
+               +     0.000          net: TouchScreenFinal_0/MSS_RESET_0_MSS_RESET_N_Y
+  0.937                        TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:MSSRESETn (r)
+                                    
+  0.937                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla0
+               +     0.000          Clock source
+  N/C                          TouchScreenFinal_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLAMSS (r)
+               +     2.925          Clock generation
+  N/C
+               +     0.630          net: TouchScreenFinal_0/MSS_ADLIB_INST_FCLK
+  N/C                          TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:FCLK (r)
+               -    -2.196          Library setup time: ADLIB:MSS_APB_IP
+  N/C                          TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain TouchScreenFinal_0/MSS_CCC_0/I_RCOSC:CLKOUT
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Setup
+
+No Path
+
+END SET External Setup
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Recovery
+
+No Path
+
+END SET External Recovery
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+No Path
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

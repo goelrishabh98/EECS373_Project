@@ -7,7 +7,7 @@ extern "C" {
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "TouchScreenInterpreter.h"
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////// Globals //////////////////////////////////////////////////////////
@@ -23,7 +23,7 @@ double RadiusLeft;
 double RadiusRight;
 
 int counter;
-
+double thres = .02;
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////// TIMER //////////////////////////////////////////////////////////
 typedef void (*handler_t)(int);
@@ -217,8 +217,9 @@ void interfaceConfig(double height, double width){
 	counter = 0;
 }
 
-void makeLine(int dirL, int dirR, double endX, double endY){
-
+void makeLine(double endX, double endY){
+	int dirL = calculateMotorDir(xPos, yPos, endX, endY, 0);
+	int dirR = calculateMotorDir(xPos, yPos, endX, endY, 1);
 	while(1){
 		dirLeft = dirL;
 		dirRight = dirR;
@@ -228,24 +229,21 @@ void makeLine(int dirL, int dirR, double endX, double endY){
 		double rateChangeR = RadiusRight - newRR;
 		if(rateChangeL < 0) rateChangeL = rateChangeL * -1;
 		if(rateChangeR < 0) rateChangeR = rateChangeR * -1;
-		/*if(rateChangeL < 3.8*1.8/360/16){
-			dirL = NO;
-		}
-		else if(rateChangeL < 3.8*1.8/360/16){
-			dirR = NO;
-		}
-		else if(rateChangeL < 3.8*1.8/360/16 && rateChangeL < 3.8*1.8/360/16){
-			break;
-		}*/\
-		if(abs(newRL - RadiusLeft) <= .05 && abs(newRR - RadiusRight) > .05){
-			dirL = NO;
-		}
-		else if(abs(newRL - RadiusLeft) > .05 && abs(newRR - RadiusRight) <= .05){
-			dirR = NO;
-		}
-		else if(abs(newRL - RadiusLeft) <= .05 && abs(newRR - RadiusRight) <= .05) break;
-
 		double ratio = rateChangeL/rateChangeR;
+
+		if(fabs(newRL - RadiusLeft) <= thres && fabs(newRR - RadiusRight) > thres){
+			dirL = NO;
+			ratio = 1;
+		}
+		else if(fabs(newRL - RadiusLeft) > thres && fabs(newRR - RadiusRight) <= thres){
+			dirR = NO;
+			ratio = 1;
+		}
+		else if(fabs(newRL - RadiusLeft) <= thres && fabs(newRR - RadiusRight) <= thres) {
+			break;
+		}
+
+
 
 		clearTimers();
 		startTimerContinuous(1, 100000);
@@ -258,7 +256,7 @@ void makeLine(int dirL, int dirR, double endX, double endY){
 			}
 		}
 	}
-	xPos = (pow(RadiusLeft, 2) - pow(RadiusRight, 2) + pow(boardWidth, 2))/2;
+	xPos = (pow(RadiusLeft, 2) - pow(RadiusRight, 2) + pow(boardWidth, 2))/(2*boardWidth);
 	yPos = sqrt(pow(RadiusLeft, 2) - pow(xPos, 2));
 }
 

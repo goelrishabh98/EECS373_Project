@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Mon Dec 02 16:56:38 2019 ***************************************************************************
+                          Fri Dec 06 00:56:35 2019 ***************************************************************************
 
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
-File Name: N:\EECS373_Project\TouchScreenController\designer\impl1\mss.adb
+File Name: D:\GitHub\EECS373_Project\TouchScreenController\designer\impl1\mss.adb
 Design Name: mss  Design State: layout
-Last Saved: Mon Dec 02 16:56:20 2019
+Last Saved: Fri Dec 06 00:56:24 2019
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Mon Dec 02 16:56:13 2019:
-        N:\EECS373_Project\TouchScreenController\synthesis\mss.edn
-        N:\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc
+Source File(s) Imported on Fri Dec 06 00:56:17 2019:
+        D:\GitHub\EECS373_Project\TouchScreenController\synthesis\mss.edn
+        D:\GitHub\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,8 +50,8 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : N:\EECS373_Project\TouchScreenController\synthesis\mss.edn
-              N:\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc
+Source      : D:\GitHub\EECS373_Project\TouchScreenController\synthesis\mss.edn
+              D:\GitHub\EECS373_Project\TouchScreenController\component\work\mss\mss.pdc
 Format      : EDIF
 Topcell     : mss
 Speed grade : STD
@@ -507,25 +507,25 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Mon Dec 02 16:56:28 2019
+Timing-driven Placer Started: Fri Dec 06 00:56:26 2019
 
-Placer Finished: Mon Dec 02 16:56:29 2019
-Total Placer CPU Time:     00:00:01
+Placer Finished: Fri Dec 06 00:56:28 2019
+Total Placer CPU Time:     00:00:02
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: mss                             Started: Mon Dec 02 16:56:32 2019
+Design: mss                             Started: Fri Dec 06 00:56:30 2019
 
  
 
 Timing-driven Router completed successfully.
 
 Design: mss                             
-Finished: Mon Dec 02 16:56:34 2019
-Total CPU Time:     00:00:02            Total Elapsed Time: 00:00:02
-Total Memory Usage: 161.0 Mbytes
+Finished: Fri Dec 06 00:56:33 2019
+Total CPU Time:     00:00:02            Total Elapsed Time: 00:00:03
+Total Memory Usage: 161.4 Mbytes
                         o - o - o - o - o - o
 
 

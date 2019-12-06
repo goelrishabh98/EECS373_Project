@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>touch</design>
+	<target_edif>N:\EECS373_Project\TouchScreenFinal\synthesis\touch.edn</target_edif>
+</SynplifyOutput>

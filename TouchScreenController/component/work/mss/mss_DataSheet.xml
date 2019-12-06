@@ -11,23 +11,23 @@
     <hdl-type>Verilog</hdl-type>
     <project-description>
     </project-description>
-    <location>E:/Github/EECS373_Project/TouchScreenController/component/work/mss</location>
-    <state>GENERATED ( Sun Dec 01 15:03:57 2019 )</state>
-    <swide-toolchain>SoftConsole workspace generated to E:\Github\EECS373_Project\TouchScreenController\SoftConsole</swide-toolchain>
+    <location>D:/GitHub/EECS373_Project/TouchScreenController/component/work/mss</location>
+    <state>GENERATED ( Fri Dec 06 00:55:46 2019 )</state>
+    <swide-toolchain>SoftConsole workspace generated to D:\GitHub\EECS373_Project\TouchScreenController\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
   </site-map>
   <fileset>
     <name>HDL File(s)</name>
-    <file>E:\Github\EECS373_Project\TouchScreenController\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v</file>
-    <file>E:\Github\EECS373_Project\TouchScreenController\component\work\mss\mss.v</file>
-    <file>E:\Github\EECS373_Project\TouchScreenController\component\work\TouchScreenController\MSS_CCC_0\TouchScreenController_tmp_MSS_CCC_0_MSS_CCC.v</file>
-    <file>E:\Github\EECS373_Project\TouchScreenController\component\work\TouchScreenController\mss_tshell.v</file>
-    <file>E:\Github\EECS373_Project\TouchScreenController\component\work\TouchScreenController\TouchScreenController.v</file>
+    <file>D:\GitHub\EECS373_Project\TouchScreenController\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v</file>
+    <file>D:\GitHub\EECS373_Project\TouchScreenController\component\work\mss\mss.v</file>
+    <file>D:\GitHub\EECS373_Project\TouchScreenController\component\work\TouchScreenController\MSS_CCC_0\TouchScreenController_tmp_MSS_CCC_0_MSS_CCC.v</file>
+    <file>D:\GitHub\EECS373_Project\TouchScreenController\component\work\TouchScreenController\mss_tshell.v</file>
+    <file>D:\GitHub\EECS373_Project\TouchScreenController\component\work\TouchScreenController\TouchScreenController.v</file>
   </fileset>
   <fileset>
     <name>Flash Memory File(s)</name>
-    <file>E:\Github\EECS373_Project\TouchScreenController\component\work\E:/Github/EECS373_Project/TouchScreenController/component/work/TouchScreenController/MSS_ENVM_0/MSS_ENVM_0.efc</file>
+    <file>D:\GitHub\EECS373_Project\TouchScreenController\component\work\D:/GitHub/EECS373_Project/TouchScreenController/component/work/TouchScreenController/MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
   <io>
     <port-name>UART_1_RXD</port-name>
@@ -140,228 +140,59 @@
   <core type="ComponentModule">
     <core-type>ComponentModule</core-type>
     <core-exttype>HierSpiritDesign</core-exttype>
-    <core-location>E:/Github/EECS373_Project/TouchScreenController/component/work/TouchScreenController</core-location>
+    <core-location>D:/GitHub/EECS373_Project/TouchScreenController/component/work/TouchScreenController</core-location>
     <core-name>TouchScreenController_0</core-name>
   </core>
-  <firmware_core type="FirmWareModule">
+  <firmware_core>
     <core-exttype>IP</core-exttype>
-    <core-type>FirmWareModule</core-type>
-    <core-vendor>Actel</core-vendor>
-    <core-lib>Firmware</core-lib>
-    <core-intname>HAL</core-intname>
-    <core-ver>2.3.102</core-ver>
-    <core-desc>The Hardware Abstraction Layer is used by drivers to access the hardware. It also allows the control of interrupts. The HAL is normally required when using bare metal drivers as part of your application.</core-desc>
-    <core-param>
-      <param-name>Memory Model:</param-name>
-      <param-value>Small</param-value>
-      <param-hdlname>MemoryModel</param-hdlname>
-      <param-hdlvalue>0</param-hdlvalue>
-      <param-tag>actel-cc:variantParameter</param-tag>
-    </core-param>
-    <core-param>
-      <param-name>Processor:</param-name>
-      <param-value>Cortex-M3</param-value>
-      <param-hdlname>Processor</param-hdlname>
-      <param-hdlvalue>0</param-hdlvalue>
-      <param-tag>actel-cc:variantParameter</param-tag>
-    </core-param>
-    <core-param>
-      <param-name>Software Tool Chain:</param-name>
-      <param-value>SoftConsole</param-value>
-      <param-hdlname>ToolChain</param-hdlname>
-      <param-hdlvalue>0</param-hdlvalue>
-      <param-tag>actel-cc:variantParameter</param-tag>
-    </core-param>
     <core-name>HAL_0</core-name>
   </firmware_core>
-  <firmware_core type="FirmWareModule">
+  <firmware_core>
     <core-exttype>IP</core-exttype>
-    <core-type>FirmWareModule</core-type>
-    <core-vendor>Actel</core-vendor>
-    <core-lib>Firmware</core-lib>
-    <core-intname>HAL</core-intname>
-    <core-ver>2.3.102</core-ver>
-    <core-desc>The Hardware Abstraction Layer is used by drivers to access the hardware. It also allows the control of interrupts. The HAL is normally required when using bare metal drivers as part of your application.</core-desc>
-    <core-param>
-      <param-name>Memory Model:</param-name>
-      <param-value>Small</param-value>
-      <param-hdlname>MemoryModel</param-hdlname>
-      <param-hdlvalue>0</param-hdlvalue>
-      <param-tag>actel-cc:variantParameter</param-tag>
-    </core-param>
-    <core-param>
-      <param-name>Processor:</param-name>
-      <param-value>Cortex-M3</param-value>
-      <param-hdlname>Processor</param-hdlname>
-      <param-hdlvalue>0</param-hdlvalue>
-      <param-tag>actel-cc:variantParameter</param-tag>
-    </core-param>
-    <core-param>
-      <param-name>Software Tool Chain:</param-name>
-      <param-value>SoftConsole</param-value>
-      <param-hdlname>ToolChain</param-hdlname>
-      <param-hdlvalue>0</param-hdlvalue>
-      <param-tag>actel-cc:variantParameter</param-tag>
-    </core-param>
     <core-name>HAL_1</core-name>
   </firmware_core>
-  <firmware_core type="FirmWareModule">
+  <firmware_core>
     <core-exttype>IP</core-exttype>
-    <core-type>FirmWareModule</core-type>
-    <core-vendor>Actel</core-vendor>
-    <core-lib>Firmware</core-lib>
-    <core-intname>MSS_GPIO_Driver</core-intname>
-    <core-ver>2.1.100</core-ver>
-    <core-desc>SmartFusion microcontroller subsystem (MSS) GPIO bare metal software driver.
-
-This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
     <core-name>MSS_GPIO_Driver_0</core-name>
   </firmware_core>
-  <firmware_core type="FirmWareModule">
+  <firmware_core>
     <core-exttype>IP</core-exttype>
-    <core-type>FirmWareModule</core-type>
-    <core-vendor>Actel</core-vendor>
-    <core-lib>Firmware</core-lib>
-    <core-intname>MSS_IAP_Driver</core-intname>
-    <core-ver>2.3.100</core-ver>
-    <core-desc>SmartFusion microcontroller subsystem (MSS) In-Application Programming bare metal driver.
-
-This driver requires the SmartFusion CMSIS-PAL to build correctly.
-</core-desc>
     <core-name>MSS_IAP_Driver_1</core-name>
   </firmware_core>
-  <firmware_core type="FirmWareModule">
+  <firmware_core>
     <core-exttype>IP</core-exttype>
-    <core-type>FirmWareModule</core-type>
-    <core-vendor>Actel</core-vendor>
-    <core-lib>Firmware</core-lib>
-    <core-intname>MSS_NVM_Driver</core-intname>
-    <core-ver>2.3.100</core-ver>
-    <core-desc>SmartFusion microcontroller subsystem (MSS) eNVM bare metal software driver.
-
-This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
     <core-name>MSS_NVM_Driver_0</core-name>
   </firmware_core>
-  <firmware_core type="FirmWareModule">
+  <firmware_core>
     <core-exttype>IP</core-exttype>
-    <core-type>FirmWareModule</core-type>
-    <core-vendor>Actel</core-vendor>
-    <core-lib>Firmware</core-lib>
-    <core-intname>MSS_PDMA_Driver</core-intname>
-    <core-ver>2.0.102</core-ver>
-    <core-desc>SmartFusion microcontroller subsystem (MSS)  Peripheral DMA bare metal software driver.
-
-This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
     <core-name>MSS_PDMA_Driver_0</core-name>
   </firmware_core>
-  <firmware_core type="FirmWareModule">
+  <firmware_core>
     <core-exttype>IP</core-exttype>
-    <core-type>FirmWareModule</core-type>
-    <core-vendor>Actel</core-vendor>
-    <core-lib>Firmware</core-lib>
-    <core-intname>MSS_RTC_Driver</core-intname>
-    <core-ver>2.1.101</core-ver>
-    <core-desc>SmartFusion microcontroller subsystem (MSS) RTC bare metal software driver.
-
-This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
     <core-name>MSS_RTC_Driver_0</core-name>
   </firmware_core>
-  <firmware_core type="FirmWareModule">
+  <firmware_core>
     <core-exttype>IP</core-exttype>
-    <core-type>FirmWareModule</core-type>
-    <core-vendor>Actel</core-vendor>
-    <core-lib>Firmware</core-lib>
-    <core-intname>MSS_SPI_Driver</core-intname>
-    <core-ver>2.3.100</core-ver>
-    <core-desc>SmartFusion microcontroller subsystem (MSS) SPI bare metal software driver.
-
-This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
     <core-name>MSS_SPI_Driver_0</core-name>
   </firmware_core>
-  <firmware_core type="FirmWareModule">
+  <firmware_core>
     <core-exttype>IP</core-exttype>
-    <core-type>FirmWareModule</core-type>
-    <core-vendor>Actel</core-vendor>
-    <core-lib>Firmware</core-lib>
-    <core-intname>MSS_Timer_Driver</core-intname>
-    <core-ver>2.3.102</core-ver>
-    <core-desc>SmartFusion microcontroller subsystem (MSS) Timer bare metal software driver.
-
-This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
     <core-name>MSS_Timer_Driver_0</core-name>
   </firmware_core>
-  <firmware_core type="FirmWareModule">
+  <firmware_core>
     <core-exttype>IP</core-exttype>
-    <core-type>FirmWareModule</core-type>
-    <core-vendor>Actel</core-vendor>
-    <core-lib>Firmware</core-lib>
-    <core-intname>MSS_UART_Driver</core-intname>
-    <core-ver>2.4.101</core-ver>
-    <core-desc>SmartFusion microcontroller subsystem (MSS) UART bare metal software driver.
-
-This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
     <core-name>MSS_UART_Driver_0</core-name>
   </firmware_core>
-  <firmware_core type="FirmWareModule">
+  <firmware_core>
     <core-exttype>IP</core-exttype>
-    <core-type>FirmWareModule</core-type>
-    <core-vendor>Actel</core-vendor>
-    <core-lib>Firmware</core-lib>
-    <core-intname>MSS_UART_Driver</core-intname>
-    <core-ver>2.4.101</core-ver>
-    <core-desc>SmartFusion microcontroller subsystem (MSS) UART bare metal software driver.
-
-This driver requires the SmartFusion CMSIS-PAL to build correctly.</core-desc>
     <core-name>MSS_UART_Driver_1</core-name>
   </firmware_core>
-  <firmware_core type="FirmWareModule">
+  <firmware_core>
     <core-exttype>IP</core-exttype>
-    <core-type>FirmWareModule</core-type>
-    <core-vendor>Actel</core-vendor>
-    <core-lib>Firmware</core-lib>
-    <core-intname>SmartFusion_CMSIS_PAL</core-intname>
-    <core-ver>2.4.102</core-ver>
-    <core-desc>SmartFusion Cortex Microcontroller Software Interface Standard - Peripheral Access Layer (CMSIS-PAL).
-
-The CMSIS provides:
-- startup code.
-- standard naming for exception and interrupt handlers.
-- standard functions for controlling the Cortex-M3 Nested Vectored Interrupt Controller (NVIC).
-- peripherals registers description.
-
-These files are required by the SmartFusion bare metal peripheral drivers to build correctly.</core-desc>
-    <core-param>
-      <param-name>Software Tool Chain</param-name>
-      <param-value>SoftConsole</param-value>
-      <param-hdlname>ToolChain</param-hdlname>
-      <param-hdlvalue>0</param-hdlvalue>
-      <param-tag>actel-cc:variantParameter</param-tag>
-    </core-param>
     <core-name>SmartFusion_CMSIS_PAL_0</core-name>
   </firmware_core>
-  <firmware_core type="FirmWareModule">
+  <firmware_core>
     <core-exttype>IP</core-exttype>
-    <core-type>FirmWareModule</core-type>
-    <core-vendor>Actel</core-vendor>
-    <core-lib>Firmware</core-lib>
-    <core-intname>SmartFusion_CMSIS_PAL</core-intname>
-    <core-ver>2.4.102</core-ver>
-    <core-desc>SmartFusion Cortex Microcontroller Software Interface Standard - Peripheral Access Layer (CMSIS-PAL).
-
-The CMSIS provides:
-- startup code.
-- standard naming for exception and interrupt handlers.
-- standard functions for controlling the Cortex-M3 Nested Vectored Interrupt Controller (NVIC).
-- peripherals registers description.
-
-These files are required by the SmartFusion bare metal peripheral drivers to build correctly.</core-desc>
-    <core-param>
-      <param-name>Software Tool Chain</param-name>
-      <param-value>SoftConsole</param-value>
-      <param-hdlname>ToolChain</param-hdlname>
-      <param-hdlvalue>0</param-hdlvalue>
-      <param-tag>actel-cc:variantParameter</param-tag>
-    </core-param>
     <core-name>SmartFusion_CMSIS_PAL_1</core-name>
   </firmware_core>
   <memorysystem>

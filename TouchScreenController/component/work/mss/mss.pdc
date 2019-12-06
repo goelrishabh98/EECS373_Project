@@ -3,7 +3,7 @@
 
 # Version: v11.9 11.9.0.4
 # Family: SmartFusion , Die: A2F200M3F , Package: 484 FBGA
-# Date generated: Sun Dec 01 15:03:55 2019 
+# Date generated: Fri Dec 06 00:55:39 2019 
 
 
 # 
@@ -38,24 +38,75 @@ define_group -name UART_1_PADs
 # Dedicated Peripheral I/O Settings
 # 
 
+
+# 
+# Unlocked I/O settings
+# The I/Os in this section are unplaced or placed but are not locked
+# the other listed attributes have been applied
+# 
+
+set_io GPIO_0_OUT      \
+    -iostd LVTTL       \
+    -DIRECTION OUTPUT
+
+
+set_io GPIO_1_BI      \
+    -iostd LVTTL      \
+    -DIRECTION INOUT
+
+
+set_io GPIO_2_BI      \
+    -iostd LVTTL      \
+    -DIRECTION INOUT
+
+
+set_io GPIO_3_BI      \
+    -iostd LVTTL      \
+    -DIRECTION INOUT
+
+
+set_io GPIO_4_BI      \
+    -iostd LVTTL      \
+    -DIRECTION INOUT
+
+
+set_io MSS_RESET_N    \
+    -iostd LVTTL      \
+    -DIRECTION INPUT
+
+
+set_io UART_0_RXD     \
+    -iostd LVTTL      \
+    -DIRECTION INPUT
+
+
+set_io UART_0_TXD      \
+    -iostd LVTTL       \
+    -DIRECTION OUTPUT
+
+
 # User Group SPI_1_PADs
 
 set_io SPI_1_CLK            \
+    -iostd LVTTL            \
     -GROUP_NAME SPI_1_PADs  \
     -DIRECTION INOUT
 
 
 set_io SPI_1_DI             \
+    -iostd LVTTL            \
     -GROUP_NAME SPI_1_PADs  \
     -DIRECTION INPUT
 
 
 set_io SPI_1_DO             \
+    -iostd LVTTL            \
     -GROUP_NAME SPI_1_PADs  \
     -DIRECTION OUTPUT
 
 
 set_io SPI_1_SS             \
+    -iostd LVTTL            \
     -GROUP_NAME SPI_1_PADs  \
     -DIRECTION INOUT
 
@@ -63,21 +114,16 @@ set_io SPI_1_SS             \
 # User Group UART_1_PADs
 
 set_io UART_1_RXD            \
+    -iostd LVTTL             \
     -GROUP_NAME UART_1_PADs  \
     -DIRECTION INPUT
 
 
 set_io UART_1_TXD            \
+    -iostd LVTTL             \
     -GROUP_NAME UART_1_PADs  \
     -DIRECTION OUTPUT
 
-
-
-# 
-# Unlocked I/O settings
-# The I/Os in this section are unplaced or placed but are not locked
-# the other listed attributes have been applied
-# 
 
 
 #
@@ -89,26 +135,17 @@ set_io UART_1_TXD            \
 # Old IO constraints, commented out for reference
 #
 
-# set_io GPIO_0_BI -iostd LVTTL -DIRECTION INOUT 
+# set_io GPIO_0_OUT -iostd LVTTL -DIRECTION OUTPUT 
 # set_io GPIO_1_BI -iostd LVTTL -DIRECTION INOUT 
 # set_io GPIO_2_BI -iostd LVTTL -DIRECTION INOUT 
 # set_io GPIO_3_BI -iostd LVTTL -DIRECTION INOUT 
+# set_io GPIO_4_BI -iostd LVTTL -DIRECTION INOUT 
 # set_io MSS_RESET_N -iostd LVTTL -DIRECTION INPUT 
-# set_io SPI_0_CLK -iostd LVTTL -DIRECTION INOUT 
-# set_io SPI_0_DI -iostd LVTTL -DIRECTION INPUT 
-# set_io SPI_0_DO -iostd LVTTL -DIRECTION OUTPUT 
-# set_io SPI_0_SS -iostd LVTTL -DIRECTION INOUT 
 # set_io UART_0_RXD -iostd LVTTL -DIRECTION INPUT 
 # set_io UART_0_TXD -iostd LVTTL -DIRECTION OUTPUT 
-# set_io SPI_1_CLK -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
-# set_io SPI_1_DI -GROUP_NAME SPI_1_PADs -DIRECTION INPUT 
-# set_io SPI_1_DO -GROUP_NAME SPI_1_PADs -DIRECTION OUTPUT 
-# set_io SPI_1_SS -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
-# set_io UART_1_RXD -GROUP_NAME UART_1_PADs -DIRECTION INPUT 
-# set_io UART_1_TXD -GROUP_NAME UART_1_PADs -DIRECTION OUTPUT 
-# set_io SPI_1_CLK -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
-# set_io SPI_1_DI -GROUP_NAME SPI_1_PADs -DIRECTION INPUT 
-# set_io SPI_1_DO -GROUP_NAME SPI_1_PADs -DIRECTION OUTPUT 
-# set_io SPI_1_SS -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
-# set_io UART_1_RXD -GROUP_NAME UART_1_PADs -DIRECTION INPUT 
-# set_io UART_1_TXD -GROUP_NAME UART_1_PADs -DIRECTION OUTPUT 
+# set_io SPI_1_CLK -iostd LVTTL -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
+# set_io SPI_1_DI -iostd LVTTL -GROUP_NAME SPI_1_PADs -DIRECTION INPUT 
+# set_io SPI_1_DO -iostd LVTTL -GROUP_NAME SPI_1_PADs -DIRECTION OUTPUT 
+# set_io SPI_1_SS -iostd LVTTL -GROUP_NAME SPI_1_PADs -DIRECTION INOUT 
+# set_io UART_1_RXD -iostd LVTTL -GROUP_NAME UART_1_PADs -DIRECTION INPUT 
+# set_io UART_1_TXD -iostd LVTTL -GROUP_NAME UART_1_PADs -DIRECTION OUTPUT 

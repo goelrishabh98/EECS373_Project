@@ -1,0 +1,2 @@
+report -type "pin" -listby  "name" {N:\EECS373_Project\TouchScreenFinal\designer\impl1\touch_report_pin_byname.txt}
+report -type "pin" -listby  "number" {N:\EECS373_Project\TouchScreenFinal\designer\impl1\touch_report_pin_bynumber.txt}

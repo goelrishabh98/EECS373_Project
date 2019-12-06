@@ -2,5 +2,5 @@
 <SynplifyOutput>
 	<result>Success</result>
 	<design>mss</design>
-	<target_edif>N:\EECS373_Project\TouchScreenController\synthesis\mss.edn</target_edif>
+	<target_edif>D:\GitHub\EECS373_Project\TouchScreenController\synthesis\mss.edn</target_edif>
 </SynplifyOutput>

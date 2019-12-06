@@ -1,0 +1,13 @@
+#include "touchscreen.h"
+
+int main()
+{
+	touchscreen_begin();
+
+	drawFillScreen(ILI9341_BLUE);
+
+	while( 1 )
+	{
+
+	}
+}

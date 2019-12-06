@@ -1,15 +1,15 @@
-C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe  -mp  4  -prjfile  N:\EECS373_Project\TouchScreenController\synthesis\scratchproject.prs  -implementation  synthesis  -prodtype  synplify_pro   -encrypt  -pro  -rundir  N:\EECS373_Project\TouchScreenController\synthesis   -part A2F200M3F  -package FBGA484  -grade STD    -globalthreshold 50 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile N:\EECS373_Project\TouchScreenController\synthesis\synlog\report\mss_premap.xml  -top_level_module  mss  -oedif  N:\EECS373_Project\TouchScreenController\synthesis\mss.edn  -conchk_prepass  N:\EECS373_Project\TouchScreenController\synthesis\mss_cck.rpt   -freq 100.000   N:\EECS373_Project\TouchScreenController\synthesis\synwork\mss_mult.srs  -flow prepass  -gcc_prepass  -osrd  N:\EECS373_Project\TouchScreenController\synthesis\synwork\mss_prem.srd  -qsap  N:\EECS373_Project\TouchScreenController\synthesis\mss.sap  -devicelib  C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v  -ologparam  N:\EECS373_Project\TouchScreenController\synthesis\syntmp\mss.plg  -osyn  N:\EECS373_Project\TouchScreenController\synthesis\synwork\mss_prem.srd  -prjdir  N:\EECS373_Project\TouchScreenController\synthesis\  -prjname  mss_syn  -log  N:\EECS373_Project\TouchScreenController\synthesis\synlog\mss_premap.srr 
+C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe  -mp  4  -prjfile  D:\GitHub\EECS373_Project\TouchScreenController\synthesis\scratchproject.prs  -implementation  synthesis  -prodtype  synplify_pro   -encrypt  -pro  -rundir  D:\GitHub\EECS373_Project\TouchScreenController\synthesis   -part A2F200M3F  -package FBGA484  -grade STD    -globalthreshold 50 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile D:\GitHub\EECS373_Project\TouchScreenController\synthesis\synlog\report\mss_premap.xml  -top_level_module  mss  -oedif  D:\GitHub\EECS373_Project\TouchScreenController\synthesis\mss.edn  -conchk_prepass  D:\GitHub\EECS373_Project\TouchScreenController\synthesis\mss_cck.rpt   -freq 100.000   D:\GitHub\EECS373_Project\TouchScreenController\synthesis\synwork\mss_mult.srs  -flow prepass  -gcc_prepass  -osrd  D:\GitHub\EECS373_Project\TouchScreenController\synthesis\synwork\mss_prem.srd  -qsap  D:\GitHub\EECS373_Project\TouchScreenController\synthesis\mss.sap  -devicelib  C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v  -ologparam  D:\GitHub\EECS373_Project\TouchScreenController\synthesis\syntmp\mss.plg  -osyn  D:\GitHub\EECS373_Project\TouchScreenController\synthesis\synwork\mss_prem.srd  -prjdir  D:\GitHub\EECS373_Project\TouchScreenController\synthesis\  -prjname  mss_syn  -log  D:\GitHub\EECS373_Project\TouchScreenController\synthesis\synlog\mss_premap.srr 
 relcom:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe -mp 4 -prjfile ..\scratchproject.prs -implementation synthesis -prodtype synplify_pro -encrypt -pro -rundir ..\..\synthesis -part A2F200M3F -package FBGA484 -grade STD -globalthreshold 50 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile ..\synlog\report\mss_premap.xml -top_level_module mss -oedif ..\mss.edn -conchk_prepass ..\mss_cck.rpt -freq 100.000 ..\synwork\mss_mult.srs -flow prepass -gcc_prepass -osrd ..\synwork\mss_prem.srd -qsap ..\mss.sap -devicelib C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v -ologparam mss.plg -osyn ..\synwork\mss_prem.srd -prjdir ..\ -prjname mss_syn -log ..\synlog\mss_premap.srr
-rc:0 success:1 runtime:3
-file:..\scratchproject.prs|io:o|time:1575323753|size:2276|exec:0|csum:
-file:..\mss.edn|io:o|time:1575323551|size:108434|exec:0|csum:
-file:..\mss_cck.rpt|io:o|time:1575323759|size:23950|exec:0|csum:
-file:..\synwork\mss_mult.srs|io:i|time:1575323756|size:2725|exec:0|csum:EE8C9B13CC4A296C2EAA9F8C0B264E51
-file:..\synwork\mss_prem.srd|io:o|time:1575323758|size:13675|exec:0|csum:
-file:..\mss.sap|io:o|time:1575323759|size:113|exec:0|csum:
-file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v|io:i|time:1509027488|size:72817|exec:0|csum:792D908376FAE59463CBCC67F19D1698
-file:mss.plg|io:o|time:1575323757|size:0|exec:0|csum:
-file:..\synwork\mss_prem.srd|io:o|time:1575323758|size:13675|exec:0|csum:
-file:..\synlog\mss_premap.srr|io:o|time:1575323759|size:3579|exec:0|csum:
-file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\m_proasic.exe|io:i|time:1509373872|size:11119104|exec:1|csum:6BD6E9876645BB1B346C655471A0D71C
-file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe|io:i|time:1509375286|size:14301696|exec:1|csum:CA7B630F1194A591FA1E520688EE75E2
+rc:0 success:1 runtime:0
+file:..\scratchproject.prs|io:o|time:1575607460|size:2332|exec:0|csum:
+file:..\mss.edn|io:o|time:1575607464|size:108435|exec:0|csum:
+file:..\mss_cck.rpt|io:o|time:1575611772|size:23950|exec:0|csum:
+file:..\synwork\mss_mult.srs|io:i|time:1575611772|size:2737|exec:0|csum:ECE366D865B2C40E9BF7EF219208BE57
+file:..\synwork\mss_prem.srd|io:o|time:1575611772|size:13718|exec:0|csum:
+file:..\mss.sap|io:o|time:1575611772|size:113|exec:0|csum:
+file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v|io:i|time:1509031088|size:72817|exec:0|csum:792D908376FAE59463CBCC67F19D1698
+file:mss.plg|io:o|time:1575611772|size:0|exec:0|csum:
+file:..\synwork\mss_prem.srd|io:o|time:1575611772|size:13718|exec:0|csum:
+file:..\synlog\mss_premap.srr|io:o|time:1575611772|size:3621|exec:0|csum:
+file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\m_proasic.exe|io:i|time:1509377472|size:11119104|exec:1|csum:6BD6E9876645BB1B346C655471A0D71C
+file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe|io:i|time:1509378886|size:14301696|exec:1|csum:CA7B630F1194A591FA1E520688EE75E2
