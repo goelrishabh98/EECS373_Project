@@ -1,1 +1,1 @@
-@W: MT246 :"n:\eecs373_project\touchscreenfinal\component\work\touchscreenfinal\touchscreenfinal.v":608:0:608:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"d:\github\eecs373_project\touchscreenfinal\component\work\touchscreenfinal\touchscreenfinal.v":608:0:608:11|Blackbox TRIBUFF_MSS is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 

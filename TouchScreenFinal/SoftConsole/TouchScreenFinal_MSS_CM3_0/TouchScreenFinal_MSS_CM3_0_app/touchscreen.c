@@ -56,7 +56,7 @@ void touchscreen_begin(){
 }
 int16_t getX(){
 	int sample;
-
+	MSS_GPIO_set_output(yn, 0);
 	MSS_GPIO_config(yp, MSS_GPIO_INPUT_MODE);
 	MSS_GPIO_config(yn, MSS_GPIO_INPUT_MODE);
 	MSS_GPIO_config(xp, MSS_GPIO_OUTPUT_MODE);
@@ -67,8 +67,8 @@ int16_t getX(){
 	delayMicro(20);
 
 	sample = ACE_get_ppe_sample(ace_y);
-
-	return ((sample/1985.45)*320);
+	MSS_GPIO_set_output(xp, 0);
+	return ((sample/4080.0f)*240);
 }
 
 int16_t getY(){
@@ -85,11 +85,12 @@ int16_t getY(){
 	delayMicro(20);
 
 	sample = ACE_get_ppe_sample(ace_x);
+	MSS_GPIO_set_output(yp, 0);
 
-	return ((sample/1985.45)*240);
+	return ((sample/4080.0f)*320);
 }
 
-int16_t getZ(int16_t y){
+int16_t getZ(uint16_t x){
 	int16_t z;
 
 	MSS_GPIO_config(yp, MSS_GPIO_INPUT_MODE);
@@ -109,14 +110,15 @@ int16_t getZ(int16_t y){
 	 rtouch = z2;
 	 rtouch /= z1;
 	 rtouch -= 1;
-	 rtouch *= y;
+	 rtouch *= x;
 	 rtouch *= rxplate;
-	 rtouch /= 1024;
+	 rtouch /= 4080;
 
 	 z = rtouch;
    } else {
 	 z = ((z2-z1));
    }
+	MSS_GPIO_set_output(yn, 0);
 
    return z;
 }
@@ -151,6 +153,11 @@ void drawRectanglePixel(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t
 
 void drawFillScreen(uint16_t color){
 	drawRectanglePixel(0, 0, ILI9341_TFTWIDTH, ILI9341_TFTHEIGHT, color);
+}
+
+void drawText1(uint16_t color){
+	drawRectanglePixel(40, 200, 5, 20, color);
+	drawRectanglePixel(40, 210, 35, 5, color);
 }
 
 void setAddr(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1){

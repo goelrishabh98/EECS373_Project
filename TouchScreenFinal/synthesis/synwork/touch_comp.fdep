@@ -1,20 +1,20 @@
-#OPTIONS:"|-layerid|0|-orig_srs|N:\\EECS373_Project\\TouchScreenFinal\\synthesis\\synwork\\touch_comp.srs|-top|touch|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|N:\\EECS373_Project\\TouchScreenFinal\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
-#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\bin64\\c_ver.exe":1509358336
-#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v":1509027488
-#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\hypermods.v":1509029528
-#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\umr_capim.v":1509029528
-#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1509029528
-#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1509029528
-#CUR:"N:\\EECS373_Project\\TouchScreenFinal\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.200\\mss_comps.v":1536348874
-#CUR:"N:\\EECS373_Project\\TouchScreenFinal\\component\\work\\TouchScreenFinal\\mss_tshell.v":1575675090
-#CUR:"N:\\EECS373_Project\\TouchScreenFinal\\component\\work\\TouchScreenFinal\\MSS_CCC_0\\TouchScreenFinal_tmp_MSS_CCC_0_MSS_CCC.v":1575675083
-#CUR:"N:\\EECS373_Project\\TouchScreenFinal\\component\\work\\TouchScreenFinal\\TouchScreenFinal.v":1575675092
-#CUR:"N:\\EECS373_Project\\TouchScreenFinal\\component\\work\\touch\\touch.v":1575675108
-0			"N:\EECS373_Project\TouchScreenFinal\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" verilog
-1			"N:\EECS373_Project\TouchScreenFinal\component\work\TouchScreenFinal\mss_tshell.v" verilog
-2			"N:\EECS373_Project\TouchScreenFinal\component\work\TouchScreenFinal\MSS_CCC_0\TouchScreenFinal_tmp_MSS_CCC_0_MSS_CCC.v" verilog
-3			"N:\EECS373_Project\TouchScreenFinal\component\work\TouchScreenFinal\TouchScreenFinal.v" verilog
-4			"N:\EECS373_Project\TouchScreenFinal\component\work\touch\touch.v" verilog
+#OPTIONS:"|-layerid|0|-orig_srs|D:\\GitHub\\EECS373_Project\\TouchScreenFinal\\synthesis\\synwork\\touch_comp.srs|-top|touch|-prodtype|synplify_pro|-nram|-fixsmult|-divnmod|-I|D:\\GitHub\\EECS373_Project\\TouchScreenFinal\\synthesis\\|-I|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib|-v2001|-devicelib|C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v|-encrypt|-pro|-ui|-fid2|-ram|-sharing|on|-ll|2000|-autosm|-lib|work|-lib|work|-lib|work|-lib|work|-lib|work"
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\bin64\\c_ver.exe":1509361936
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\proasic\\smartfusion.v":1509031088
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\hypermods.v":1509033128
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\umr_capim.v":1509033128
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\scemi_objects.v":1509033128
+#CUR:"C:\\Microsemi\\Libero_SoC_v11.9\\SynplifyPro\\lib\\vlog\\scemi_pipes.svh":1509033128
+#CUR:"D:\\GitHub\\EECS373_Project\\TouchScreenFinal\\component\\Actel\\SmartFusionMSS\\MSS\\2.5.200\\mss_comps.v":1575777722
+#CUR:"D:\\GitHub\\EECS373_Project\\TouchScreenFinal\\component\\work\\TouchScreenFinal\\mss_tshell.v":1575777724
+#CUR:"D:\\GitHub\\EECS373_Project\\TouchScreenFinal\\component\\work\\TouchScreenFinal\\MSS_CCC_0\\TouchScreenFinal_tmp_MSS_CCC_0_MSS_CCC.v":1575777724
+#CUR:"D:\\GitHub\\EECS373_Project\\TouchScreenFinal\\component\\work\\TouchScreenFinal\\TouchScreenFinal.v":1575777724
+#CUR:"D:\\GitHub\\EECS373_Project\\TouchScreenFinal\\component\\work\\touch\\touch.v":1575777724
+0			"D:\GitHub\EECS373_Project\TouchScreenFinal\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v" verilog
+1			"D:\GitHub\EECS373_Project\TouchScreenFinal\component\work\TouchScreenFinal\mss_tshell.v" verilog
+2			"D:\GitHub\EECS373_Project\TouchScreenFinal\component\work\TouchScreenFinal\MSS_CCC_0\TouchScreenFinal_tmp_MSS_CCC_0_MSS_CCC.v" verilog
+3			"D:\GitHub\EECS373_Project\TouchScreenFinal\component\work\TouchScreenFinal\TouchScreenFinal.v" verilog
+4			"D:\GitHub\EECS373_Project\TouchScreenFinal\component\work\touch\touch.v" verilog
 #Dependency Lists(Uses List)
 0 -1
 1 -1

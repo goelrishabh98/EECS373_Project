@@ -120,9 +120,14 @@ void drawPixel(uint16_t x, uint16_t y, uint16_t color);
 void drawRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t color);
 void drawRectanglePixel(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t color);
 void drawFillScreen(uint16_t color);
+void drawText1(uint16_t color);
 void setAddr(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1);
 
 void writeLine(int16_t x0, int16_t y0, int16_t x1, int16_t y1, uint16_t color);
+
+int16_t getX();
+int16_t getY();
+int16_t getZ(uint16_t x);
 
 void sendCommand(uint8_t commandByte, uint8_t *dataBytes, uint8_t numDataBytes);
 void sendCommand16(uint8_t commandByte, uint16_t *dataBytes);

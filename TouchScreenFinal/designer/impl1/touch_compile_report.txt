@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Fri Dec 06 18:35:08 2019 ***************************************************************************
+                          Sat Dec 07 23:05:32 2019 ***************************************************************************
 
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
-File Name: N:\EECS373_Project\TouchScreenFinal\designer\impl1\touch.adb
+File Name: D:\GitHub\EECS373_Project\TouchScreenFinal\designer\impl1\touch.adb
 Design Name: touch  Design State: compile
-Last Saved: Fri Dec 06 18:19:12 2019
+Last Saved: Sat Dec 07 23:02:04 2019
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Fri Dec 06 18:35:04 2019:
-        N:\EECS373_Project\TouchScreenFinal\synthesis\touch.edn
-        N:\EECS373_Project\TouchScreenFinal\component\work\touch\touch.pdc
+Source File(s) Imported on Sat Dec 07 23:05:27 2019:
+        D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\touch.edn
+        D:\GitHub\EECS373_Project\TouchScreenFinal\component\work\touch\touch.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,8 +50,8 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : N:\EECS373_Project\TouchScreenFinal\synthesis\touch.edn
-              N:\EECS373_Project\TouchScreenFinal\component\work\touch\touch.pdc
+Source      : D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\touch.edn
+              D:\GitHub\EECS373_Project\TouchScreenFinal\component\work\touch\touch.pdc
 Format      : EDIF
 Topcell     : touch
 Speed grade : STD

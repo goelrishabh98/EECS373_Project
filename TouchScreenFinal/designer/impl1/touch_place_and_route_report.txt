@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Fri Dec 06 18:35:24 2019 ***************************************************************************
+                          Sat Dec 07 23:05:48 2019 ***************************************************************************
 
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
-File Name: N:\EECS373_Project\TouchScreenFinal\designer\impl1\touch.adb
+File Name: D:\GitHub\EECS373_Project\TouchScreenFinal\designer\impl1\touch.adb
 Design Name: touch  Design State: layout
-Last Saved: Fri Dec 06 18:35:10 2019
+Last Saved: Sat Dec 07 23:05:36 2019
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Fri Dec 06 18:35:04 2019:
-        N:\EECS373_Project\TouchScreenFinal\synthesis\touch.edn
-        N:\EECS373_Project\TouchScreenFinal\component\work\touch\touch.pdc
+Source File(s) Imported on Sat Dec 07 23:05:27 2019:
+        D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\touch.edn
+        D:\GitHub\EECS373_Project\TouchScreenFinal\component\work\touch\touch.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,8 +50,8 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : N:\EECS373_Project\TouchScreenFinal\synthesis\touch.edn
-              N:\EECS373_Project\TouchScreenFinal\component\work\touch\touch.pdc
+Source      : D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\touch.edn
+              D:\GitHub\EECS373_Project\TouchScreenFinal\component\work\touch\touch.pdc
 Format      : EDIF
 Topcell     : touch
 Speed grade : STD
@@ -506,25 +506,25 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Fri Dec 06 18:35:15 2019
+Timing-driven Placer Started: Sat Dec 07 23:05:39 2019
 
-Placer Finished: Fri Dec 06 18:35:17 2019
-Total Placer CPU Time:     00:00:02
+Placer Finished: Sat Dec 07 23:05:40 2019
+Total Placer CPU Time:     00:00:01
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: touch                           Started: Fri Dec 06 18:35:19 2019
+Design: touch                           Started: Sat Dec 07 23:05:42 2019
 
  
 
 Timing-driven Router completed successfully.
 
 Design: touch                           
-Finished: Fri Dec 06 18:35:22 2019
-Total CPU Time:     00:00:02            Total Elapsed Time: 00:00:03
-Total Memory Usage: 161.0 Mbytes
+Finished: Sat Dec 07 23:05:46 2019
+Total CPU Time:     00:00:03            Total Elapsed Time: 00:00:04
+Total Memory Usage: 161.4 Mbytes
                         o - o - o - o - o - o
 
 
