@@ -217,7 +217,9 @@ void interfaceConfig(double height, double width){
 	counter = 0;
 }
 
-void makeLine(double endX, double endY){
+void makeLine(double relX, double relY){
+	double endX = relX;
+	double endY = relY;
 	int dirL = calculateMotorDir(xPos, yPos, endX, endY, 0);
 	int dirR = calculateMotorDir(xPos, yPos, endX, endY, 1);
 	while(1){
@@ -258,6 +260,35 @@ void makeLine(double endX, double endY){
 	}
 	xPos = (pow(RadiusLeft, 2) - pow(RadiusRight, 2) + pow(boardWidth, 2))/(2*boardWidth);
 	yPos = sqrt(pow(RadiusLeft, 2) - pow(xPos, 2));
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////// HARDCODING /////////////////////////////////////////////////////////
+
+void letterA(double height){
+	makeLine(height * cos(60), -height * sin(60));
+	makeLine(height * cos(60), height * sin(60));
+	makeLine(-height * cos(60) * .5, -height * sin(60) * .5);
+	makeLine(-height * cos(60) * .5, 0);
+}
+
+void letterI(double height){
+	makeLine(height * .5, 0);
+	makeLine(-height * .25, 0);
+	makeLine(0, height);
+	makeLine(-height * .25, 0);
+	makeLine(height * .5, 0);
+}
+
+void letterE(double height){
+	makeLine(height * .5, 0);
+	makeLine(-height * .5, 0);
+	makeLine(0, -height);
+	makeLine(height * .5, 0);
+	makeLine(-height * .5, 0);
+	makeLine(0, height * .5);
+	makeLine(height * .5, 0);
+	makeLine(-height * .5, 0);
 }
 
 #ifdef __cplusplus
