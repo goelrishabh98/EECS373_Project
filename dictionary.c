@@ -6,73 +6,199 @@ Possible implementations:
 3) An array of structs containing information about a character
 */
 
-//26 upper case, 26 lower case, 10 digits
-#define DICTIONARYSIZE 62
+#include <string.h>
+
+//Use ASCII table to get our indices for characters
+#define DICTIONARYSIZE 128
+#define MAXMOVES 16		//Stores the number of moves needed for the most complicated drawing
+#define EXTENDALIAS 200.0	//Store extend marker command in instructions array as 200.0
+#define RETRACTALIAS 100.0	//Store retract marker command in instructions array as 100.0
+double currentX = 41.91;
+double currentY = 27.305;
+
+enum side{LEFT, RIGHT};
+
+/*
+Stores the relative distances in the following format:
+1	2	-3	4 is equivalent to moving (1,2) and then (-3,4)
+1	2	100.0	-3	4	200.0	5	-6 is equivalent to moving (1,2), retracting marker, moving (-3,4), extending marker, and then moving (5,-6)
+*/
+//double instructions[DICTIONARYSIZE][MAXMOVES];
+/*
+//Initialize everything to 0
+int i = 0;
+int j = 0;
+for(i = 0; i < DICTIONARYSIZE; ++i) {
+	for(j = 0; j < MAXMOVES; ++j) {
+		instructions[i][j] = 0.0;
+	}
+}
+
+//Goes to 2D array and carries out instructions detailed in instructions[row]
+void drawRow(uint8_t row) {
+	int i = 0;
+	for(i = 0; i < MAXMOVES; ++i) {
+		//Avoid floating point comparisons, see if the difference is negligible to compare
+		if(instructions[row][i] - RETRACTALIAS < 0.1) {
+			sendMessage(&servoRetract, 1, 0x373A);
+		}
+		else if(instructions[row][i] - EXTENDALIAS < 0.1) {
+			sendMessage(&servoExtend, 1, 0x373A);
+		}
+		else {
+			makeLine(calculateMotorDir(currentX, currentY, instructions[row][i], instructions[row][i+1], LEFT),
+			calculateMotorDir(currentX, currentY, instructions[row][i], instructions[row][i+1], RIGHT),
+			instructions[row][i], instructions[row][i+1]);
+			//For loop needs to increment by two if moving to coordinate
+			i++;
+		}
+	}
+}
+
+//Fill up 2D array with instructions
+char c = '0';
+double sequence[MAXMOVES];
+sequence = {RETRACTALIAS, 43.91, 27.305, EXTENDALIAS, 42.91, 26.305, 42.91, 25.305, 43.91, 24.305, 44.91, 25.305, 44.91, 26.305, 43.91, 27.305};
+memcpy(instructions[(int)c], sequence, sizeof(sequence));
+c = '1';
+sequence[MAXMOVES] = {};
+memcpy(instructions[(int)c], sequence, sizeof(sequence));
+
+c = '';
+sequence[MAXMOVES] = {};
+memcpy(instructions[(int)c], sequence, sizeof(sequence));
+*/
+
+//Assumes that the marker is retracted and at the bottom left corner of a 3cm wide, 4cm high area that character is allowed to occupy
 if(character == '0') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(1.5, -0.4);	//Start at bottom of 0
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(-0.3, -0.5);
+	makeLine(0.0, -0.5);
+	makeLine(0.3, -0.5);
+	makeLine(0.2, 0.0);
+	makeLine(0.3, 0.5);
+	makeLine(0.0, 0.5);
+	makeLine(-0.3, 0.5);
+	makeLine(-0.2, 0.0);
+	//Get ready for next character
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(1.5, 0.4);
 }
 else if(character == '1') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(0.4, -0.4);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(1.5, 0.0);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(-0.75, 0.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(0.0, -2.3);
+	makeLine(-0.3, 0.3);
+	//Get ready for next character
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(2.15, 2.4);
 }
 else if(character == '2') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(2.5, -0.5);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(-1.5, 0.0);
+	makeLine(0.0, -1.0);
+	makeLine(1.5, 0.0);
+	makeLine(0.0, -1.0);
+	makeLine(-1.5, 0.0);
+	//Get ready for next character
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(2.0, 2.5);
 }
 else if(character == '3') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(1.0, -1.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(0.8, 0.5);
+	makeLine(0.8, -0.5);
+	makeLine(-0.8, -0.5);
+	makeLine(0.8, -0.5);
+	makeLine(-0.8, -0.5);
+	makeLine(-0.8, 0.5);
+	//Get ready for next character
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(2.0, 2.0);
 }
 else if(character == '4') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(2.0, -0.7);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(0.0, -3.0);
+	makeLine(-1.5, 1.5);
+	makeLine(2.0, 0.0);
+	//Get ready for next character
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(0.5, 2.2);
 }
 else if(character == '5') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(0.5, -0.5);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(2.0, 0.0);
+	makeLine(0.0, -1.5);
+	makeLine(-2.0, 0.0);
+	makeLine(0.0, -1.5);
+	makeLine(2.0, 0.0);
+	//Get ready for next character
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(0.5, 3.5);
 }
 else if(character == '6') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(2.5, -3.5);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(-2.0, 0.0);
+	makeLine(0.0, 3.0);
+	makeLine(2.0, 0.0);
+	makeLine(0.0, -1.5);
+	makeLine(-2.0, 0.0);
+	//Get ready for next character
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(2.5, 2.0);
 }
 else if(character == '7') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(0.5, -3.5);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(2.5, 0.0);
+	makeLine(-1.5, 3.0);
+	//Get ready for next character
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(1.5, 0.5);
 }
 else if(character == '8') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(0.5, -0.5);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(0.0, -3.0);
+	makeLine(1.0, 0.0);
+	makeLine(0.0, 3.0);
+	makeLine(-1.0, 0.0);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(0.0, -1.5);
+	makeLine(1.0, 0.0);
+	//Get ready for next character
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(1.5, 2.0);
 }
 else if(character == '9') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(0.5, -0.5);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(1.5, 0.0);
+	makeLine(0.0, -3.0);
+	makeLine(-1.5, 0.0);
+	makeLine(0.0, 1.5);
+	makeLine(1.5, 0.0);
+	//Get ready for next character
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(1.0, 2.0);
 }
 else if(character == 'A') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(47.91, 18.305);
+	makeLine(53.91, 27.305);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(50.91, 22.805);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(44.91, 22.805);
 }
 else if(character == 'B') {
 	makeLine();
@@ -94,9 +220,13 @@ else if(character == 'D') {
 }
 else if(character == 'E') {
 	makeLine();
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine();
+	sendMessage(&servoExtend, 1, 0x373A);
 	makeLine();
 	makeLine();
-	makeLine();
+	sendMessage(&servoRetract, 1, 0x373A);
+	sendMessage(&servoExtend, 1, 0x373A);
 }
 else if(character == 'F') {
 	makeLine();
@@ -215,6 +345,7 @@ else if(character == 'X') {
 else if(character == 'Y') {
 	makeLine();
 	makeLine();
+
 	makeLine();
 	makeLine();
 }
