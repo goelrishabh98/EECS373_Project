@@ -3,7 +3,7 @@
 #include "drivers/mss_uart/mss_uart.h"
 
 //NOTE: Maximum amount of data you can send (i.e maximum value of inputMessageLength) is messageLength - 15
-#define messageLength 20
+#define messageLength 16
 #define RX_BUFF_SIZE 64
 
 uint8_t g_rx_buff[RX_BUFF_SIZE];
@@ -46,10 +46,12 @@ int main()
 
 	//uint8_t message[20] = {0x7E, 0, 0x10, 0, 1, 0, 0, 0, 0, 0, 0, 0xFF, 0xFF, 0, 0x68, 0x65, 0x6C, 0x6C, 0x6F, 0xEC};
 	uint8_t message[5] = "hello";
+	uint8_t servoExtend[1] = "e";	//Message to send to Arduino to extend marker
+	uint8_t servoRetract[1] = "r";	//Message to send to Arduino to retract marker
 	MSS_UART_init(&g_mss_uart1, MSS_UART_57600_BAUD, MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT);
 	MSS_UART_set_rx_handler( &g_mss_uart1, uart1_rx_handler, MSS_UART_FIFO_SINGLE_BYTE);
 	while(1) {
-		//sendMessage(&message, 5, 0xFFFF);
+		//sendMessage(&message, messageLength - 15, 0xFFFF);
 	}
 	return 0;
 }
