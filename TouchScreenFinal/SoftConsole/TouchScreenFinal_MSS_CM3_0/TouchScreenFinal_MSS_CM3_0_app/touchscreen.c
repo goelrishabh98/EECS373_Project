@@ -30,9 +30,11 @@ static const uint8_t initcmd[] = {
 void touchscreen_begin(){
 
 	uint8_t cmd, x, numArgs;
+	uint8_t i;
 	const uint8_t *addr = initcmd;
 
 	MSS_SPI_init(&g_mss_spi1);
+	MSS_I2C_init(&g_mss_i2c1 , TOUCH_ADDR, MSS_I2C_PCLK_DIV_256 );
 	MSS_GPIO_init();
 	ACE_init();
 	MSS_GPIO_config(DC, MSS_GPIO_OUTPUT_MODE);
@@ -52,6 +54,31 @@ void touchscreen_begin(){
 		if(x & 0x80) delay(150);
 	}
 	clear_SPI_CS();
+
+	writeRegister8(STMPE_SYS_CTRL1, STMPE_SYS_CTRL1_RESET);
+
+	readRegister8(i, 65);
+
+	writeRegister8(STMPE_SYS_CTRL2, 0x0); // turn on clocks!
+	writeRegister8(STMPE_TSC_CTRL,
+				 STMPE_TSC_CTRL_XYZ | STMPE_TSC_CTRL_EN); // XYZ and enable!
+	// Serial.println(readRegister8(STMPE_TSC_CTRL), HEX);
+	writeRegister8(STMPE_INT_EN, STMPE_INT_EN_TOUCHDET);
+	writeRegister8(STMPE_ADC_CTRL1, STMPE_ADC_CTRL1_10BIT |
+									  (0x6 << 4)); // 96 clocks per conversion
+	  writeRegister8(STMPE_ADC_CTRL2, STMPE_ADC_CTRL2_6_5MHZ);
+	  writeRegister8(STMPE_TSC_CFG, STMPE_TSC_CFG_4SAMPLE |
+										STMPE_TSC_CFG_DELAY_1MS |
+										STMPE_TSC_CFG_SETTLE_5MS);
+	  writeRegister8(STMPE_TSC_FRACTION_Z, 0x6);
+	  writeRegister8(STMPE_FIFO_TH, 1);
+	  writeRegister8(STMPE_FIFO_STA, STMPE_FIFO_STA_RESET);
+	  writeRegister8(STMPE_FIFO_STA, 0); // unreset
+	  writeRegister8(STMPE_TSC_I_DRIVE, STMPE_TSC_I_DRIVE_50MA);
+	  writeRegister8(STMPE_INT_STA, 0xFF); // reset all ints
+	  writeRegister8(STMPE_INT_CTRL,
+					 STMPE_INT_CTRL_POL_HIGH | STMPE_INT_CTRL_ENABLE);
+
 
 }
 int16_t getX(){
@@ -137,6 +164,24 @@ int16_t getZ(uint16_t x){
 	MSS_GPIO_set_output(yn, 0);
 
    return z;
+}
+
+void readTouch(uint16_t *x, uint16_t *y, uint8_t* z){
+	uint8_t data[4];
+	readRegister8(0xD7, &data);
+
+	*x = data[0];
+	*x <<= 4;
+	*x |= (data[1] >> 4);
+	*y = data[1] & 0x0F;
+	*y <<= 8;
+	*y |= data[2];
+	*z = data[3];
+}
+int touched(){
+	uint8_t data;
+	readRegister8(STMPE_TSC_CTRL, &data);
+	return (data & 0x80);
 }
 
 void drawPixel(uint16_t x, uint16_t y, uint16_t color){
@@ -376,4 +421,31 @@ void set_yp(int val){
 	}
 }
 
+void writeRegister8(uint8_t reg, uint8_t val){
+	uint8_t transmit_buf[] = {reg, val};
+
+	MSS_I2C_write
+	(
+		&g_mss_i2c1,
+		TOUCH_ADDR,
+		transmit_buf,
+		sizeof(transmit_buf),
+		MSS_I2C_RELEASE_BUS
+	);
+	MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
+	return;
+}
+
+void readRegister8(uint8_t reg, uint8_t* receive_buf){
+	MSS_I2C_read
+	(
+			&g_mss_i2c1,
+			TOUCH_ADDR,
+			receive_buf,
+			sizeof(receive_buf),
+			MSS_I2C_RELEASE_BUS
+	 );
+	MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
+	return;
+}
 

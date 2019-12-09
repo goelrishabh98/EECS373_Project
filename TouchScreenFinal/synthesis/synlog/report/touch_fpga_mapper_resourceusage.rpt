@@ -16,17 +16,18 @@ Report for cell touch.verilog
   IO Cell usage:
               cell count
          BIBUF_MSS     6
+   BIBUF_OPEND_MSS     2
            INBUF_A     4
          INBUF_MSS     4
           OUTBUF_A     2
         OUTBUF_MSS     3
        TRIBUFF_MSS     1
                    -----
-             TOTAL    20
+             TOTAL    22
 
 
 Core Cells         : 0 of 4608 (0%)
-IO Cells           : 20
+IO Cells           : 22
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)

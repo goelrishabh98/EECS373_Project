@@ -2,7 +2,7 @@
 #define touch_HW_PLATFORM_H_
 /*****************************************************************************
 *
-*Created by Microsemi SmartDesign  Fri Dec 06 18:31:51 2019
+*Created by Microsemi SmartDesign  Mon Dec 09 16:03:49 2019
 *
 *Memory map specification for peripherals in touch
 */
