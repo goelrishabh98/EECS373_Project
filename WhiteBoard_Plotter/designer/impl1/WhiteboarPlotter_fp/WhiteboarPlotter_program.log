@@ -6,7 +6,7 @@ Software Version: 11.9.0.4
 PDB file
 'N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter_fp\WhiteboarPlotter.pdb'
 has been loaded successfully.
-DESIGN : WhiteboarPlotter;  CHECKSUM : 9938;  PDB_VERSION : 1.9
+DESIGN : WhiteboarPlotter;  CHECKSUM : 8667;  PDB_VERSION : 1.9
 Driver : 3.0.0 build 1
 programmer '78416' : FlashPro3
 Opened
@@ -40,7 +40,7 @@ programmer '78416' : Verifying FPGA Array
 programmer '78416' :         Verifying FPGA Array -- pass
 programmer '78416' : Program System Init and Boot Clients...
 programmer '78416' : Verify System Init and Boot Clients...
-programmer '78416' : Finished: Mon Dec 09 16:16:26 2019 (Elapsed time 00:00:34)
+programmer '78416' : Finished: Mon Dec 09 17:45:29 2019 (Elapsed time 00:00:35)
 programmer '78416' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o

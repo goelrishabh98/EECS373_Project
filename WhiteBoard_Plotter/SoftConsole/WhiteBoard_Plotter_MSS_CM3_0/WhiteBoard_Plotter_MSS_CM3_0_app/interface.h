@@ -24,7 +24,7 @@ double yPos;
 double RadiusLeft;
 double RadiusRight;
 
-int period = 1000000;
+int period = 100000;
 int counter;
 double thres = .0035;
 double ratio;

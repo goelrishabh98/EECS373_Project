@@ -354,8 +354,8 @@ else if(character == 'Z') {
 else if(character == 'a') {
 	makeLine(1.0, -4.0);
 	sendMessage(&servoExtend, 1, 0x373A);
-	makeLine(1.5, -1.0);
-	makeLine(1.5, 1.0);
+	makeLine(1.0, -1.0);
+	makeLine(1.0, 1.0);
 	makeLine(0.0, 2.0);
 	makeLine(-2.0, -1.0);
 	makeLine(2.0, -1.0);
@@ -396,10 +396,10 @@ else if(character == 'e') {
 	sendMessage(&servoExtend, 1, 0x373A);
 	makeLine(2.0, 0.0);
 	makeLine(-1.0, -1.5);
-	makeLine(-1.0, 1.5);
-	makeLine(0.0, -1.0);
+	makeLine(-2.0, 1.5);
+	makeLine(0.0, 1.0);
 	makeLine(1.0, 1.5);
-	makeLine(1.0, -1.5);
+	makeLine(2.0, -1.5);
 	sendMessage(&servoRetract, 1, 0x373A);
 	makeLine(1.5, 4.0);
 }
@@ -434,7 +434,7 @@ else if(character == 'h') {
 	sendMessage(&servoExtend, 1, 0x373A);
 	makeLine(0.0, -4.0);
 	sendMessage(&servoRetract, 1, 0x373A);
-	makeLine(0.0, 2.0);
+	makeLine(0.0, 2.5);
 	sendMessage(&servoExtend, 1, 0x373A);
 	makeLine(1.0, -1.0);
 	makeLine(1.0, 1.0);
@@ -489,7 +489,7 @@ else if(character == 'm') {
 	makeLine(0.75, -2.5);
 	makeLine(0.75, 2.5);
 	makeLine(0.75, -2.5);
-	makeLine(0.75, 2.5);
+	makeLine(0.75, 2.6);
 	sendMessage(&servoRetract, 1, 0x373A);
 	makeLine(1.0, 1.0);
 }
@@ -610,7 +610,7 @@ else if(character == 'x') {
 	sendMessage(&servoExtend, 1, 0x373A);
 	makeLine(3.0, 3.0);
 	sendMessage(&servoRetract, 1, 0x373A);
-	makeLine(0.0, 3.0);
+	makeLine(0.0, -3.0);
 	sendMessage(&servoExtend, 1, 0x373A);
 	makeLine(-3.0, 3.0);
 	sendMessage(&servoRetract, 1, 0x373A);
@@ -618,6 +618,7 @@ else if(character == 'x') {
 }
 else if(character == 'y') {
 	makeLine(1.0, -4.0);
+	sendMessage(&servoExtend, 1, 0x373A);
 	makeLine(1.5, 1.5);
 	sendMessage(&servoRetract, 1, 0x373A);
 	makeLine(1.5, -1.5);
