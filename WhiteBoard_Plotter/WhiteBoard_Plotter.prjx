@@ -394,8 +394,8 @@ SIZE="352256"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter.fdb,fdb"
 STATE="utd"
-TIME="1575844485"
-SIZE="36261"
+TIME="1575926121"
+SIZE="36405"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter.ide_des,ide_des"
 STATE="utd"
@@ -424,17 +424,17 @@ SIZE="2448"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1575844462"
+TIME="1575926098"
 SIZE="2717"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1575844486"
+TIME="1575926123"
 SIZE="693"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1575844469"
+TIME="1575926105"
 SIZE="1212"
 ENDFILE
 VALUE "<project>\hdl\Stepper_control.v,hdl"
@@ -786,8 +786,12 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
+Reports;Reports;0
+ReportsCurrentItem;Generate Programming Data:WhiteboarPlotter_prgdata_log.rpt
 StartPage;StartPage;0
-ACTIVEVIEW;StartPage
+SmartDesign;WhiteboarPlotter;0
+SmartDesign;WhiteBoard_Plotter;0
+ACTIVEVIEW;WhiteboarPlotter
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"

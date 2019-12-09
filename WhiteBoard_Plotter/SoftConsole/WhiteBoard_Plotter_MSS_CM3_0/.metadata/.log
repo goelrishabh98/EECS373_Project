@@ -1254,3 +1254,57 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 ; LIBERO IDE VERSION 11.9
 
 !ENTRY org.eclipse.debug.core 4 125 2019-12-09 16:50:44.209
 !MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-09 17:27:31.301
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-09 17:27:31.306
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-09 17:27:31.312
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-09 17:27:31.316
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-09 17:27:31.320
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-09 17:27:31.325
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-09 17:28:52.103
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-09 17:28:52.108
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-09 17:28:52.113
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-09 17:28:52.118
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-09 17:28:52.123
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-09 17:28:52.129
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-09 17:31:28.470
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-09 17:31:28.474
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-09 17:31:28.479
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-09 17:31:28.483
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-09 17:31:28.487
+!MESSAGE Inferior terminated
+
+!ENTRY org.eclipse.debug.core 4 125 2019-12-09 17:31:28.491
+!MESSAGE Inferior terminated
