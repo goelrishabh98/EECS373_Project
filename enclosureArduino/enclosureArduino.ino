@@ -8,8 +8,8 @@
 #define servoPin 5
 #define distanceSensorPin A0
 #define distanceThreshold 20  //About 100mV
-#define armExtendVal 150
-#define armRetractVal 35
+#define armExtendVal 160
+#define armRetractVal 180
 #define receiveSize 8
 int receiveCounter = 0;
 int tempReceive;
