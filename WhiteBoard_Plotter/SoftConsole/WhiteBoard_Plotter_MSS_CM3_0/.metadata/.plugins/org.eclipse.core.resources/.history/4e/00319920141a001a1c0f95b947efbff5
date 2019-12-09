@@ -1,0 +1,38 @@
+#include "stepper.h"
+#include "interface.h"
+#include "xbee.h"
+
+//When something is received, trigger an interrupt that fills g_rx_buff with the received data
+void uart1_rx_handler( mss_uart_instance_t * this_uart ) {
+      MSS_UART_get_rx( this_uart, &g_rx_buff, sizeof(g_rx_buff) );
+}
+
+//Current Dimensions: 57, 85
+//center: 42.5, 28.5
+int main(){
+	stepper_config(SIXTEENTH, SIXTEENTH);
+	interfaceConfig(57, 85);
+
+	uint8_t servoExtend[1] = "e";
+	uint8_t servoRetract[1] = "r";
+	MSS_UART_init(&g_mss_uart1, MSS_UART_57600_BAUD, MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT);
+	MSS_UART_set_rx_handler( &g_mss_uart1, uart1_rx_handler, MSS_UART_FIFO_SINGLE_BYTE);
+
+	sendMessage(&servoRetract, 1, 0xFFFF);
+	makeLine(2.0, -0.7);
+	sendMessage(servoExtend, 1, 0x373A);
+	makeLine(0.0, -3.0);
+	makeLine(-1.5, 1.5);
+	makeLine(2.0, 0.0);
+	//Get ready for next character
+	sendMessage(servoRetract, 1, 0x373A);
+	makeLine(0.5, 2.2);
+
+	//makeLine(3, 0);
+	//makeLine(0, -3);
+	//makeLine(-3, 0);
+	//makeLine(0, -3);
+	//makeLine(3, 0);
+
+	return 0;
+}

@@ -13,7 +13,7 @@
 #include "drivers/mss_uart/mss_uart.h"
 
 //NOTE: Maximum amount of data you can send (i.e maximum value of inputMessageLength) is messageLength - 15
-#define messageLength 20
+#define messageLength 16
 #define RX_BUFF_SIZE 64
 
 uint8_t g_rx_buff[RX_BUFF_SIZE];

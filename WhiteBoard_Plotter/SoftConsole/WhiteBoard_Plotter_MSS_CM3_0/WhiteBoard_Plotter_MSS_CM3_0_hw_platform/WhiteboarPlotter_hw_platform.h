@@ -2,7 +2,7 @@
 #define WhiteboarPlotter_HW_PLATFORM_H_
 /*****************************************************************************
 *
-*Created by Microsemi SmartDesign  Thu Nov 21 14:12:03 2019
+*Created by Microsemi SmartDesign  Sun Dec 08 17:32:45 2019
 *
 *Memory map specification for peripherals in WhiteboarPlotter
 */

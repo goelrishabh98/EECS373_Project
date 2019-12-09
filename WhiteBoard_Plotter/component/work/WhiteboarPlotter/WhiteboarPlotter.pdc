@@ -3,7 +3,7 @@
 
 # Version: v11.9 11.9.0.4
 # Family: SmartFusion , Die: A2F200M3F , Package: 484 FBGA
-# Date generated: Thu Nov 21 14:11:54 2019 
+# Date generated: Sun Dec 08 17:32:33 2019 
 
 
 # 
@@ -11,6 +11,8 @@
 # 
 
 define_group -name UART_0
+
+define_group -name UART_1_PADs
 
 
 # 
@@ -34,6 +36,18 @@ define_group -name UART_0
 # Dedicated Peripheral I/O Settings
 # 
 
+# User Group UART_1_PADs
+
+set_io UART_1_RXD            \
+    -GROUP_NAME UART_1_PADs  \
+    -DIRECTION INPUT
+
+
+set_io UART_1_TXD            \
+    -GROUP_NAME UART_1_PADs  \
+    -DIRECTION OUTPUT
+
+
 
 # 
 # Unlocked I/O settings
@@ -51,6 +65,5 @@ define_group -name UART_0
 # Old IO constraints, commented out for reference
 #
 
-# set_io MSS_RESET_N -iostd LVTTL -DIRECTION INPUT 
-# set_io UART_0_RXD -iostd LVTTL -DIRECTION INPUT 
-# set_io UART_0_TXD -iostd LVTTL -DIRECTION OUTPUT 
+# set_io UART_1_RXD -GROUP_NAME UART_1_PADs -DIRECTION INPUT 
+# set_io UART_1_TXD -GROUP_NAME UART_1_PADs -DIRECTION OUTPUT 

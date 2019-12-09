@@ -1,4 +1,4 @@
-KEY IDE_DES_TOOL "Designer"
+KEY IDE_DES_TOOL "Ide"
 KEY IDE_DES_FAMILY "SmartFusion"
 KEY IDE_DES_DIE "IP4X3M1"
 KEY IDE_DES_PACKAGE "fg484"
@@ -23,6 +23,7 @@ KEY IDE_DES_ERROR_FOUND "FALSE"
 KEY IDE_DES_ADB_PATH "N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteBoard_Plotter.adb"
 LIST SOURCE_FILES
 VALUE "N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteBoard_Plotter.edn;edn"
+VALUE "N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.pdc;pdc"
 ENDLIST
 LIST OPTIONAL_FILES
 ENDLIST

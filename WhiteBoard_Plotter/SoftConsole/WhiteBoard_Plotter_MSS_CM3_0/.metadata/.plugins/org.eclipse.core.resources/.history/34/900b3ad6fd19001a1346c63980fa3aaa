@@ -1,0 +1,330 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include "stepper.h"
+#include "mss_timer.h"
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "TouchScreenInterpreter.h"
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////// Globals //////////////////////////////////////////////////////////
+int dirLeft = CCW;
+int dirRight = CW;
+
+//all in cm
+double boardHeight;
+double boardWidth;
+
+double xPos;
+double yPos;
+
+double RadiusLeft;
+double RadiusRight;
+
+int counter;
+double thres = .02;
+double ratio;
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////// TIMER //////////////////////////////////////////////////////////
+
+void motorLeft(int dir) {
+	step(dir, NO);
+	if(dir == CW){
+		RadiusLeft = RadiusLeft + 3.8*1.8/360/16;
+	}
+	else if(dir == CCW){
+		RadiusLeft = RadiusLeft - 3.8*1.8/360/16;
+	}
+	++counter;
+}
+void motorRight(int dir) {
+	step(NO, dir);
+	if(dir == CCW){
+		RadiusRight = RadiusRight + 3.8*1.8/360/16;
+	}
+	else if(dir == CW){
+		RadiusRight = RadiusRight - 3.8*1.8/360/16;
+	}
+	++counter;
+}
+
+//used to initialize hardware
+void start_hardware_timer1(){
+	MSS_TIM1_init(MSS_TIMER_PERIODIC_MODE);
+
+	MSS_TIM1_load_immediate(100000);
+	MSS_TIM1_start();
+	MSS_TIM1_enable_irq();
+}
+
+void start_hardware_timer2(){
+	MSS_TIM2_init(MSS_TIMER_PERIODIC_MODE);
+
+	MSS_TIM2_load_immediate(100000 * ratio);
+	MSS_TIM2_start();
+	MSS_TIM2_enable_irq();
+}
+
+void Timer1_IRQHandler( void ){
+	motorLeft(dirLeft);
+
+	MSS_TIM1_clear_irq();
+	MSS_TIM1_load_immediate(100000);
+	MSS_TIM1_start();
+	MSS_TIM1_enable_irq();
+}
+
+void Timer2_IRQHandler( void ){
+	motorRight(dirRight);
+
+	MSS_TIM2_clear_irq();
+	start_hardware_timer2();
+}
+/*typedef void (*handler_t)(int);
+
+typedef struct Timer {
+    int			left;//function pointer (called after timer period)
+    uint32_t	time;//time remaining for this counter
+    uint32_t	period;//period
+    uint32_t	mode;//continuous or one shot timer
+    struct Timer*  next;//points to next timer
+    struct Timer* prev;
+} timer_tt;
+
+timer_tt *root = NULL;
+
+
+//used to initialize hardware
+void start_hardware_timer(){
+	// mode == 1 One shot mode == 0 continuous
+	MSS_TIM1_init(MSS_TIMER_PERIODIC_MODE);
+
+	MSS_TIM1_load_immediate(root->period);
+	MSS_TIM1_start();
+	MSS_TIM1_enable_irq();
+}
+
+void insert_timer(timer_tt* newtimer){
+
+	if(root == NULL){
+		root = newtimer;
+		return;
+	}
+
+	timer_tt* curr = root;
+	while( curr != NULL){
+		if(curr->time > newtimer->time){
+			if(curr->prev == NULL){
+				root = newtimer;
+			}
+			if(curr->prev != NULL){
+				curr->prev->next = newtimer;
+			}
+			newtimer->prev = curr->prev;
+			curr->prev = newtimer;
+			newtimer->next = curr;
+			return;
+		}
+		else{
+			if(curr->next == NULL){
+				curr->next = newtimer;
+				newtimer->prev = curr;
+				return;
+			}
+			curr = curr->next;
+		}
+	}
+}*/
+
+
+
+/*
+//add a continuous (periodic) timer to linked list.
+void startTimerContinuous(int isLeft, uint32_t period){
+	timer_tt* newTimer = NULL;
+	newTimer = (timer_tt*)malloc(sizeof(struct Timer));
+	newTimer->left = isLeft;
+	newTimer->period = period;
+	newTimer->time = period;
+	newTimer->mode = 0;
+	newTimer->next = NULL;
+	newTimer->prev = NULL;
+
+	insert_timer(newTimer);
+}
+//example
+//startTimerContinuous(&led0, 50000000);
+
+//update down count with elapsed time, call fnc if timer zero, update continuous timers
+//with new down count
+void update_timers(){
+	timer_tt *curr = root;
+	curr = curr->next;
+	while(curr != NULL){
+		curr->time = curr->time - root->time;
+		curr = curr->next;
+	}
+	if(root->next == NULL){
+		if(!root->mode){
+			root->time = root->period;
+			return;
+		}
+		else{
+			root = NULL;
+			return;
+		}
+	}
+	timer_tt *temp = root;
+	root = root->next;
+	temp->next = NULL;
+	root->prev = NULL;
+	if(!temp->mode){
+		startTimerContinuous(temp->left, temp->period);
+		free(temp);
+		return;
+	}
+	return;
+}
+
+void Timer1_IRQHandler( void ){
+	//printf("start\n\r");
+	if(root->left){
+		motorLeft(dirLeft);
+	}
+	else{
+		motorRight(dirRight);
+	}
+	update_timers();
+
+	timer_tt* temp = root;
+	while(temp != NULL){
+		int not_change = 0;
+		if(temp->time == 0){
+			if(root->left){
+				motorLeft(dirLeft);
+			}
+			else{
+				motorRight(dirRight);
+			}
+			update_timers();
+			not_change = 1;
+		}
+		if(not_change){
+			temp = root;
+		}
+		else{
+			temp = temp->next;
+		}
+	}
+
+	MSS_TIM1_clear_irq();
+	MSS_TIM1_load_immediate(root->time);
+	start_hardware_timer();
+	//printf("end\n\r");
+};
+
+void clearTimers(){
+	if(root != NULL){
+		timer_tt *temp = root;
+		root = root->next;
+		free(temp);
+		while(root != NULL){
+			temp = root;
+			root = root->next;
+			free(temp);
+		}
+	}
+}*/
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////// INTERFACE //////////////////////////////////////////////////////////
+
+void interfaceConfig(double height, double width){
+	boardHeight = height;
+	boardWidth = width;
+
+	xPos = boardWidth/2;
+	yPos = boardHeight/2;
+
+	RadiusLeft = sqrt(pow(xPos, 2) + pow(yPos, 2));
+	RadiusRight = sqrt(pow(boardWidth - xPos, 2) + pow(yPos, 2));
+
+	counter = 0;
+}
+
+void makeLine(double relX, double relY){
+	double endX = relX + xPos;
+	double endY = relY + yPos;
+	int dirL = calculateMotorDir(xPos, yPos, endX, endY, 0);
+	int dirR = calculateMotorDir(xPos, yPos, endX, endY, 1);
+	while(1){
+		dirLeft = dirL;
+		dirRight = dirR;
+		double newRL = sqrt(pow(endX, 2) + pow(endY, 2));
+		double newRR = sqrt(pow(boardWidth - endX, 2) + pow(endY, 2));
+		double rateChangeL = RadiusLeft - newRL;
+		double rateChangeR = RadiusRight - newRR;
+		if(rateChangeL < 0) rateChangeL = rateChangeL * -1;
+		if(rateChangeR < 0) rateChangeR = rateChangeR * -1;
+		ratio = rateChangeL/rateChangeR;
+
+		if(fabs(newRL - RadiusLeft) <= thres && fabs(newRR - RadiusRight) > thres){
+			dirL = NO;
+			ratio = 1;
+		}
+		else if(fabs(newRL - RadiusLeft) > thres && fabs(newRR - RadiusRight) <= thres){
+			dirR = NO;
+			ratio = 1;
+		}
+		else if(fabs(newRL - RadiusLeft) <= thres && fabs(newRR - RadiusRight) <= thres) {
+			break;
+		}
+
+		start_hardware_timer1();
+		start_hardware_timer2();
+		while(1){
+			if(counter >= 10){
+				counter = 0;
+				break;
+			}
+		}
+	}
+	xPos = (pow(RadiusLeft, 2) - pow(RadiusRight, 2) + pow(boardWidth, 2))/(2*boardWidth);
+	yPos = sqrt(pow(RadiusLeft, 2) - pow(xPos, 2));
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////// HARDCODING /////////////////////////////////////////////////////////
+
+void letterA(double height){
+	makeLine(height * cos(60), -height * sin(60));
+	makeLine(height * cos(60), height * sin(60));
+	makeLine(-height * cos(60) * .5, -height * sin(60) * .5);
+	makeLine(-height * cos(60) * .5, 0);
+}
+
+void letterI(double height){
+	makeLine(height * .5, 0);
+	makeLine(-height * .25, 0);
+	makeLine(0, height);
+	makeLine(-height * .25, 0);
+	makeLine(height * .5, 0);
+}
+
+void letterE(double height){
+	makeLine(height * .5, 0);
+	makeLine(-height * .5, 0);
+	makeLine(0, -height);
+	makeLine(height * .5, 0);
+	makeLine(-height * .5, 0);
+	makeLine(0, height * .5);
+	makeLine(height * .5, 0);
+	makeLine(-height * .5, 0);
+}
+
+#ifdef __cplusplus
+}
+#endif
