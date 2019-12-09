@@ -2,7 +2,7 @@ Timing Report Max Delay Analysis
 
 SmartTime Version v11.9
 Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
-Date: Sat Dec 07 23:05:54 2019
+Date: Mon Dec 09 16:05:00 2019
 
 
 Design: touch
@@ -44,15 +44,15 @@ Period (ns):                N/A
 Frequency (MHz):            N/A
 Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
-External Setup (ns):        -1.719
-Max Clock-To-Out (ns):      13.015
+External Setup (ns):        -1.472
+Max Clock-To-Out (ns):      13.278
 
 Clock Domain:               mss_ccc_gla0
 Period (ns):                12.500
 Frequency (MHz):            80.000
 Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
-External Setup (ns):        -4.814
+External Setup (ns):        -4.567
 Max Clock-To-Out (ns):      N/A
 
 Clock Domain:               TouchScreenFinal_0/MSS_CCC_0/I_RCOSC:CLKOUT
@@ -184,61 +184,61 @@ SET External Setup
 Path 1
   From:                  GPIO_7_BI
   To:                    TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:GPI[7]
-  Delay (ns):            1.669
+  Delay (ns):            1.916
   Slack (ns):
-  Arrival (ns):          1.669
+  Arrival (ns):          1.916
   Required (ns):
   Setup (ns):            0.167
-  External Setup (ns):   -1.719
+  External Setup (ns):   -1.472
 
 Path 2
   From:                  GPIO_8_BI
   To:                    TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:GPI[8]
-  Delay (ns):            1.683
+  Delay (ns):            1.930
   Slack (ns):
-  Arrival (ns):          1.683
+  Arrival (ns):          1.930
   Required (ns):
   Setup (ns):            -0.409
-  External Setup (ns):   -2.281
+  External Setup (ns):   -2.034
 
 Path 3
   From:                  GPIO_6_BI
   To:                    TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:GPI[6]
-  Delay (ns):            1.639
+  Delay (ns):            1.886
   Slack (ns):
-  Arrival (ns):          1.639
+  Arrival (ns):          1.886
   Required (ns):
   Setup (ns):            -0.448
-  External Setup (ns):   -2.364
+  External Setup (ns):   -2.117
 
 Path 4
   From:                  GPIO_5_BI
   To:                    TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:GPI[5]
-  Delay (ns):            1.627
+  Delay (ns):            1.874
   Slack (ns):
-  Arrival (ns):          1.627
+  Arrival (ns):          1.874
   Required (ns):
   Setup (ns):            -0.446
-  External Setup (ns):   -2.374
+  External Setup (ns):   -2.127
 
 
 Expanded Path 1
   From: GPIO_7_BI
   To: TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:GPI[7]
   data required time                             N/C
-  data arrival time                          -   1.669
+  data arrival time                          -   1.916
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
   0.000                        GPIO_7_BI (r)
                +     0.000          net: GPIO_7_BI
   0.000                        TouchScreenFinal_0/MSS_GPIO_0_GPIO_7_BI:PAD (r)
-               +     0.937          cell: ADLIB:IOPAD_BI
-  0.937                        TouchScreenFinal_0/MSS_GPIO_0_GPIO_7_BI:Y (r)
+               +     1.184          cell: ADLIB:IOPAD_BI
+  1.184                        TouchScreenFinal_0/MSS_GPIO_0_GPIO_7_BI:Y (r)
                +     0.732          net: TouchScreenFinal_0/MSS_GPIO_0_GPIO_7_BI_Y
-  1.669                        TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:GPI[7] (r)
+  1.916                        TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:GPI[7] (r)
                                     
-  1.669                        data arrival time
+  1.916                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_pclk1
@@ -259,54 +259,54 @@ SET Clock to Output
 Path 1
   From:                  TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:PCLK1
   To:                    GPIO_7_BI
-  Delay (ns):            9.460
+  Delay (ns):            9.723
   Slack (ns):
-  Arrival (ns):          13.015
+  Arrival (ns):          13.278
   Required (ns):
-  Clock to Out (ns):     13.015
+  Clock to Out (ns):     13.278
 
 Path 2
   From:                  TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:PCLK1
   To:                    GPIO_5_BI
-  Delay (ns):            9.283
+  Delay (ns):            9.600
   Slack (ns):
-  Arrival (ns):          12.838
+  Arrival (ns):          13.155
   Required (ns):
-  Clock to Out (ns):     12.838
+  Clock to Out (ns):     13.155
 
 Path 3
   From:                  TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:PCLK1
   To:                    GPIO_6_BI
-  Delay (ns):            8.864
+  Delay (ns):            9.510
   Slack (ns):
-  Arrival (ns):          12.419
+  Arrival (ns):          13.065
   Required (ns):
-  Clock to Out (ns):     12.419
+  Clock to Out (ns):     13.065
 
 Path 4
   From:                  TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:PCLK1
-  To:                    GPIO_8_BI
-  Delay (ns):            8.805
+  To:                    GPIO_0_OUT
+  Delay (ns):            9.451
   Slack (ns):
-  Arrival (ns):          12.360
+  Arrival (ns):          13.006
   Required (ns):
-  Clock to Out (ns):     12.360
+  Clock to Out (ns):     13.006
 
 Path 5
   From:                  TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:PCLK1
-  To:                    GPIO_0_OUT
-  Delay (ns):            8.800
+  To:                    GPIO_8_BI
+  Delay (ns):            9.370
   Slack (ns):
-  Arrival (ns):          12.355
+  Arrival (ns):          12.925
   Required (ns):
-  Clock to Out (ns):     12.355
+  Clock to Out (ns):     12.925
 
 
 Expanded Path 1
   From: TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:PCLK1
   To: GPIO_7_BI
   data required time                             N/C
-  data arrival time                          -   13.015
+  data arrival time                          -   13.278
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -319,12 +319,12 @@ Expanded Path 1
   8.246                        TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:GPOE[7] (r)
                +     0.689          net: TouchScreenFinal_0/GPOE_net_0[7]
   8.935                        TouchScreenFinal_0/MSS_GPIO_0_GPIO_7_BI:E (r)
-               +     4.080          cell: ADLIB:IOPAD_BI
-  13.015                       TouchScreenFinal_0/MSS_GPIO_0_GPIO_7_BI:PAD (f)
+               +     4.343          cell: ADLIB:IOPAD_BI
+  13.278                       TouchScreenFinal_0/MSS_GPIO_0_GPIO_7_BI:PAD (r)
                +     0.000          net: GPIO_7_BI
-  13.015                       GPIO_7_BI (f)
+  13.278                       GPIO_7_BI (r)
                                     
-  13.015                       data arrival time
+  13.278                       data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_pclk1
@@ -333,7 +333,7 @@ Expanded Path 1
                +     3.555          Clock generation
   N/C
                                     
-  N/C                          GPIO_7_BI (f)
+  N/C                          GPIO_7_BI (r)
 
 
 END SET Clock to Output
@@ -381,31 +381,31 @@ SET External Setup
 Path 1
   From:                  MSS_RESET_N
   To:                    TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
-  Delay (ns):            0.937
+  Delay (ns):            1.184
   Slack (ns):
-  Arrival (ns):          0.937
+  Arrival (ns):          1.184
   Required (ns):
   Setup (ns):            -2.196
-  External Setup (ns):   -4.814
+  External Setup (ns):   -4.567
 
 
 Expanded Path 1
   From: MSS_RESET_N
   To: TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
   data required time                             N/C
-  data arrival time                          -   0.937
+  data arrival time                          -   1.184
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
   0.000                        MSS_RESET_N (r)
                +     0.000          net: MSS_RESET_N
   0.000                        TouchScreenFinal_0/MSS_RESET_0_MSS_RESET_N:PAD (r)
-               +     0.937          cell: ADLIB:IOPAD_IN
-  0.937                        TouchScreenFinal_0/MSS_RESET_0_MSS_RESET_N:Y (r)
+               +     1.184          cell: ADLIB:IOPAD_IN
+  1.184                        TouchScreenFinal_0/MSS_RESET_0_MSS_RESET_N:Y (r)
                +     0.000          net: TouchScreenFinal_0/MSS_RESET_0_MSS_RESET_N_Y
-  0.937                        TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:MSSRESETn (r)
+  1.184                        TouchScreenFinal_0/MSS_ADLIB_INST/U_CORE:MSSRESETn (r)
                                     
-  0.937                        data arrival time
+  1.184                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_ccc_gla0

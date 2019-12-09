@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Sat Dec 07 23:05:50 2019 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Mon Dec 09 16:04:56 2019 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
@@ -8,8 +8,8 @@ Family: SmartFusion
 Die: A2F200M3F
 Package: 484 FBGA
 *****************************************************************
-Number |Port             |Function                     |State       |I/O Std |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
--------|-----------------|-----------------------------|------------|--------|------------------|-----|--------------|----------------|-----|-----------------|------------|--------------|
+Number |Port             |Function                     |State       |I/O Std  |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+-------|-----------------|-----------------------------|------------|---------|------------------|-----|--------------|----------------|-----|-----------------|------------|--------------|
 A1                        GND                           Reserved
 A2                        Not Bonded                    Unconnected
 A3                        Not Bonded                    Unconnected
@@ -53,7 +53,7 @@ AA18                      LPXIN                         Reserved
 AA19                      LPXOUT                        Reserved
 AA20                      Not Bonded                    Unconnected
 AA21                      Not Bonded                    Unconnected
-AA22    SPI_1_CLK         SPI_1_CLK/GPIO_26             Special      LVTTL    8                  High  None           No               No    35                No           Yes
+AA22    SPI_1_CLK         SPI_1_CLK/GPIO_26             Special      LVCMOS25  8                  High  None           No               No    35                No           Yes
 AB1                       GND                           Reserved
 AB2                       GPIO_13/IO36RSB4V0            Unassigned
 AB3                       GPIO_14/IO35RSB4V0            Unassigned
@@ -61,10 +61,10 @@ AB4                       GND                           Reserved
 AB5                       PCAP                          Reserved
 AB6                       NCAP                          Reserved
 AB7                       ABPS3                         Special
-AB8     ADCDirectInput_0  ADC3                          Special      LVTTL    ---                Low   ---            ---              ---   ---               No           No
+AB8     ADCDirectInput_0  ADC3                          Special      LVTTL     ---                Low   ---            ---              ---   ---               No           No
 AB9                       GND15ADC0                     Reserved
 AB10                      VCC33ADC1                     Reserved
-AB11    VAREF1            VAREF1                        Special      LVTTL    ---                Low   ---            ---              ---   ---               No           No
+AB11    VAREF1            VAREF1                        Special      LVTTL     ---                Low   ---            ---              ---   ---               No           No
 AB12                      TM2                           Special
 AB13                      CM2                           Special
 AB14                      ABPS4                         Special
@@ -362,7 +362,7 @@ P19                       GND                           Reserved
 P20                       TMS                           Reserved
 P21                       TDO                           Reserved
 P22                       TRSTB                         Reserved
-R1      MSS_RESET_N       MSS_RESET_N                   Special      LVTTL    ---                ---   None           No               ---   ---               No           Yes
+R1      MSS_RESET_N       MSS_RESET_N                   Special      LVCMOS25  ---                ---   None           No               ---   ---               No           Yes
 R2                        VCCFPGAIOB5                   Reserved
 R3                        GPIO_1/IO46RSB4V0             Unassigned
 R4                        Not Bonded                    Unconnected
@@ -386,7 +386,7 @@ R21                       VCCFPGAIOB1                   Reserved
 R22                       Not Bonded                    Unconnected
 T1                        GND                           Reserved
 T2                        VCCMSSIOB4                    Reserved
-T3      GPIO_8_BI         GPIO_8/IO39RSB4V0             Fixed        LVTTL    8                  High  None           No               No    35                No           Yes
+T3      GPIO_8_BI         GPIO_8/IO39RSB4V0             Fixed        LVCMOS25  8                  High  None           No               No    35                No           Yes
 T4                        GPIO_11/IO57RSB4V0            Unassigned
 T5                        GND                           Reserved
 T6                        MAC_CLK                       Special
@@ -400,14 +400,14 @@ T13                       Not Bonded                    Unconnected
 T14                       Not Bonded                    Unconnected
 T15                       VAREFOUT                      Special
 T16                       VCCMSSIOB2                    Reserved
-T17     SPI_1_DO          SPI_1_DO/GPIO_24              Special      LVTTL    8                  High  None           ---              No    35                No           Yes
+T17     SPI_1_DO          SPI_1_DO/GPIO_24              Special      LVCMOS25  8                  High  None           ---              No    35                No           Yes
 T18                       GND                           Reserved
 T19                       Not Bonded                    Unconnected
 T20                       Not Bonded                    Unconnected
 T21                       VCCMSSIOB2                    Reserved
 T22                       GND                           Reserved
 U1                        GND                           Reserved
-U2      GPIO_5_BI         GPIO_5/IO42RSB4V0             Fixed        LVTTL    8                  High  None           No               No    35                No           Yes
+U2      GPIO_5_BI         GPIO_5/IO42RSB4V0             Fixed        LVCMOS25  8                  High  None           No               No    35                No           Yes
 U3                        GPIO_10/IO58RSB4V0            Unassigned
 U4                        VCCMSSIOB4                    Reserved
 U5                        MAC_RXD[1]/IO53RSB4V0         Unassigned
@@ -415,26 +415,26 @@ U6                        Not Bonded                    Unconnected
 U7                        VCC33AP                       Reserved
 U8                        VCC33N                        Reserved
 U9                        CM1                           Special
-U10     VAREF0            VAREF0                        Special      LVTTL    ---                Low   ---            ---              ---   ---               No           No
+U10     VAREF0            VAREF0                        Special      LVTTL     ---                Low   ---            ---              ---   ---               No           No
 U11                       GND33ADC1                     Reserved
-U12     ADCDirectInput_1  ADC4                          Special      LVTTL    ---                Low   ---            ---              ---   ---               No           No
+U12     ADCDirectInput_1  ADC4                          Special      LVTTL     ---                Low   ---            ---              ---   ---               No           No
 U13                       Not Bonded                    Unconnected
 U14                       Not Bonded                    Unconnected
 U15                       GNDVAREF                      Special
 U16                       VCC33SDD1                     Reserved
 U17                       SPI_0_DO/GPIO_16              Special
-U18     UART_0_RXD        UART_0_RXD/GPIO_21            Special      LVTTL    ---                ---   None           No               ---   ---               No           Yes
+U18     UART_0_RXD        UART_0_RXD/GPIO_21            Special      LVCMOS25  ---                ---   None           No               ---   ---               No           Yes
 U19                       VCCMSSIOB2                    Reserved
-U20                       I2C_1_SCL/GPIO_31             Special
+U20     I2C_1_SCL         I2C_1_SCL/GPIO_31             Special      LVCMOS25  8                  High  None           No               No    35                No           Yes
 U21                       I2C_0_SCL/GPIO_23             Special
 U22                       GND                           Reserved
-V1      GPIO_0_OUT        GPIO_0/IO47RSB4V0             Fixed        LVTTL    8                  High  None           ---              No    35                No           Yes
-V2      GPIO_6_BI         GPIO_6/IO41RSB4V0             Fixed        LVTTL    8                  High  None           No               No    35                No           Yes
+V1      GPIO_0_OUT        GPIO_0/IO47RSB4V0             Fixed        LVCMOS25  8                  High  None           ---              No    35                No           Yes
+V2      GPIO_6_BI         GPIO_6/IO41RSB4V0             Fixed        LVCMOS25  8                  High  None           No               No    35                No           Yes
 V3                        GPIO_9/IO38RSB4V0             Unassigned
 V4                        MAC_MDIO/IO49RSB4V0           Unassigned
 V5                        MAC_RXD[0]/IO54RSB4V0         Unassigned
 V6                        GND                           Reserved
-V7      SDD_0             SDD0                          Special      LVTTL    ---                ---   ---            ---              ---   ---               No           No
+V7      SDD_0             SDD0                          Special      LVTTL     ---                ---   ---            ---              ---   ---               No           No
 V8                        ABPS1                         Special
 V9                        ADC2                          Special
 V10                       VCC33ADC0                     Reserved
@@ -446,12 +446,12 @@ V15                       Not Bonded                    Unconnected
 V16                       Not Bonded                    Unconnected
 V17                       GND                           Reserved
 V18                       SPI_0_DI/GPIO_17              Special
-V19     SPI_1_DI          SPI_1_DI/GPIO_25              Special      LVTTL    ---                ---   None           No               ---   ---               No           Yes
-V20     UART_1_TXD        UART_1_TXD/GPIO_28            Special      LVTTL    8                  High  None           ---              No    35                No           Yes
+V19     SPI_1_DI          SPI_1_DI/GPIO_25              Special      LVCMOS25  ---                ---   None           No               ---   ---               No           Yes
+V20     UART_1_TXD        UART_1_TXD/GPIO_28            Special      LVCMOS25  8                  High  None           ---              No    35                No           Yes
 V21                       I2C_0_SDA/GPIO_22             Special
-V22                       I2C_1_SDA/GPIO_30             Special
+V22     I2C_1_SDA         I2C_1_SDA/GPIO_30             Special      LVCMOS25  8                  High  None           No               No    35                No           Yes
 W1                        GPIO_2/IO45RSB4V0             Unassigned
-W2      GPIO_7_BI         GPIO_7/IO40RSB4V0             Fixed        LVTTL    8                  High  None           No               No    35                No           Yes
+W2      GPIO_7_BI         GPIO_7/IO40RSB4V0             Fixed        LVCMOS25  8                  High  None           No               No    35                No           Yes
 W3                        GND                           Reserved
 W4                        MAC_CRSDV/IO51RSB4V0          Unassigned
 W5                        MAC_TXD[1]/IO55RSB4V0         Unassigned
@@ -470,8 +470,8 @@ W17                       PU_N                          Reserved
 W18                       GNDSDD1                       Reserved
 W19                       SPI_0_CLK/GPIO_18             Special
 W20                       GND                           Reserved
-W21     SPI_1_SS          SPI_1_SS/GPIO_27              Special      LVTTL    8                  High  None           No               No    35                No           Yes
-W22     UART_1_RXD        UART_1_RXD/GPIO_29            Special      LVTTL    ---                ---   None           No               ---   ---               No           Yes
+W21     SPI_1_SS          SPI_1_SS/GPIO_27              Special      LVCMOS25  8                  High  None           No               No    35                No           Yes
+W22     UART_1_RXD        UART_1_RXD/GPIO_29            Special      LVCMOS25  ---                ---   None           No               ---   ---               No           Yes
 Y1                        GPIO_3/IO44RSB4V0             Unassigned
 Y2                        VCCMSSIOB4                    Reserved
 Y3                        GPIO_15/IO34RSB4V0            Unassigned
@@ -488,9 +488,9 @@ Y13                       Not Bonded                    Unconnected
 Y14                       Not Bonded                    Unconnected
 Y15                       Not Bonded                    Unconnected
 Y16                       VCCMAINXTAL                   Reserved
-Y17     SDD_1             SDD1                          Special      LVTTL    ---                ---   ---            ---              ---   ---               No           No
+Y17     SDD_1             SDD1                          Special      LVTTL     ---                ---   ---            ---              ---   ---               No           No
 Y18                       PTEM                          Reserved
 Y19                       VCC33A                        Reserved
 Y20                       SPI_0_SS/GPIO_19              Special
 Y21                       VCCMSSIOB2                    Reserved
-Y22     UART_0_TXD        UART_0_TXD/GPIO_20            Special      LVTTL    8                  High  None           ---              No    35                No           Yes
+Y22     UART_0_TXD        UART_0_TXD/GPIO_20            Special      LVCMOS25  8                  High  None           ---              No    35                No           Yes

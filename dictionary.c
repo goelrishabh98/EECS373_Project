@@ -358,137 +358,240 @@ else if(character == 'Z') {
 	makeLine();
 }
 else if(character == 'a') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(1.0, -4.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(1.5, -1.0);
+	makeLine(1.5, 1.0);
+	makeLine(0.0, 2.0);
+	makeLine(-2.0, -1.0);
+	makeLine(2.0, -1.0);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(1.0, 4.0);
 }
 else if(character == 'b') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(2.0, -6.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(0.0, 4.0);
+	makeLine(2.0, -1.0);
+	makeLine(-2.0, -1.0);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(3.0, 4.0);
 }
 else if(character == 'c') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(4.0, -4.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(-1.5, -1.0);
+	makeLine(-1.5, 1.0);
+	makeLine(0.0, 1.5);
+	makeLine(1.5, 1.0);
+	makeLine(1.5, -1.0);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(1.0, 2.0);
 }
 else if(character == 'd') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(3.0, -3.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(-2.0, 1.0);
+	makeLine(2.0, 1.0);
+	makeLine(0.0, -4.0);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(2.0, 5.0);
 }
 else if(character == 'e') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(1.5, -3.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(2.0, 0.0);
+	makeLine(-1.0, -1.5);
+	makeLine(-1.0, 1.5);
+	makeLine(0.0, -1.0);
+	makeLine(1.0, 1.5);
+	makeLine(1.0, -1.5);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(1.5, 4.0);
 }
 else if(character == 'f') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(2.0, -1.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(0.0, -4.0);
+	makeLine(1.0, -1.0);
+	makeLine(1.0, 1.0);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(-2.5, 2.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(2.5, 0.0);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(1.0, 3.0);
 }
 else if(character == 'g') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(1.0, -2.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(1.5, 1.0);
+	makeLine(1.5, -1.0);
+	makeLine(0.0, -2.5);
+	makeLine(-1.5, -1.5);
+	makeLine(-1.5, 1.5);
+	makeLine(1.5, 1.5);
+	makeLine(1.5, -1.5);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(1.0, 4.5);
 }
 else if(character == 'h') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(1.5, -1.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(0.0, -4.0);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(0.0, 2.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(1.0, -1.0);
+	makeLine(1.0, 1.0);
+	makeLine(0.0, 2.0);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(1.5, 1.0);
 }
 else if(character == 'i') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(2.5, -1.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(0.0, -3.0);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(0.0, -1.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(2.5, 5.0);
 }
 else if(character == 'j') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(1.5, -1.5);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(1.0, 1.0);
+	makeLine(1.0, -1.0);
+	makeLine(0.0, -2.0);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(0.0, -1.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(1.5, 4.5);
 }
 else if(character == 'k') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(1.5, -1.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(0.0, -4.5);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(1.5, 1.5);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(-1.5, 1.5);
+	makeLine(1.5, 1.5);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(2.0, 1.0);
 }
 else if(character == 'l') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(2.5, -1.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(0.0, -4.0);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(2.5, 5.0);
 }
 else if(character == 'm') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(1.0, -1.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(0.75, -2.5);
+	makeLine(0.75, 2.5);
+	makeLine(0.75, -2.5);
+	makeLine(0.75, 2.5);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(1.0, 1.0);
 }
 else if(character == 'n') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(1.5, -1.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(0.0, -3.0);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(0.0, 1.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(1.5, -1.0);
+	makeLine(1.5, 1.0);
+	makeLine(0.0, 2.0);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(0.5, 1.0);
 }
 else if(character == 'o') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(1.5, -2.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(1.0, -1.0);
+	makeLine(1.0, 1.0);
+	makeLine(-1.0, 1.0);
+	makeLine(-1.0, -1.0);
 	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(3.5, 2.0);
 }
 else if(character == 'p') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(1.5, -1.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(0.0, -3.0);
+	makeLine(1.0, -1.0);
+	makeLine(1.0, 1.0);
+	makeLine(-1.0, 1.0);
+	makeLine(-1.0, -1.0);
 	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(3.5, 4.0);
 }
 else if(character == 'q') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(3.0, -4.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(-1.0, 1.0);
+	makeLine(-1.0, -1.0);
+	makeLine(1.0, -1.0);
+	makeLine(1.0, 1.0);
+	makeLine(0.0, 3.0);
+	makeLine(1.0, -1.0);
 	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(1.0, 2.0);
 }
 else if(character == 'r') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(1.5, -1.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(0.0, -3.0);
 	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(0.0, 1.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(1.5, -1.5);
+	makeLine(1.5, 1.5);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(0.5, 3.0);
 }
 else if(character == 's') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(1.0, -1.5);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(1.5, 1.0);
+	makeLine(1.5, -1.0);
+	makeLine(-3.0, -1.5);
+	makeLine(1.5, -1.0);
+	makeLine(1.5, 1.0);
 	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(1.0, 3.0);
 }
 else if(character == 't') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(1.0, -4.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(3.0, 0.0);
 	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(-1.5, -1.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(0.0, 4.0);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(2.5, 1.0);
 }
 else if(character == 'u') {
-	makeLine();
-	makeLine();
-	makeLine();
-	makeLine();
+	makeLine(1.0, -4.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(0.0, 2.0);
+	makeLine(1.0, 1.0);
+	makeLine(1.0, 0.0);
+	makeLine(1.0, -1.0);
 	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(0.0, -2.0);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(0.0, 3.0);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(1.0, 1.0);
 }
 else if(character == 'v') {
 	makeLine(1.0, -4.0);

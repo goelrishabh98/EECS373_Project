@@ -30,7 +30,7 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "D:\GitHub\EECS373_Project\TouchScreenFinal"
+KEY ProjectLocation "E:\Github\EECS373_Project\TouchScreenFinal"
 KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
@@ -51,14 +51,14 @@ ENDLIST
 LIST FileManager
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777722"
+TIME="1575924604"
 SIZE="945"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v,hdl"
 STATE="utd"
-TIME="1575777722"
-SIZE="11942"
+TIME="1570057112"
+SIZE="11243"
 PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideSYNTHESIS"
@@ -69,134 +69,140 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ACE\2.2.100\MSS_ACE.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777722"
+TIME="1575924592"
 SIZE="252"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CCC\2.0.106\MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777722"
+TIME="1575924593"
 SIZE="252"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_CM3\1.0.200\MSS_CM3.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777722"
+TIME="1575924593"
 SIZE="252"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_COM\1.0.200\MSS_COM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777722"
+TIME="1575924593"
 SIZE="252"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_DMA\1.0.101\MSS_DMA.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777722"
+TIME="1575924593"
 SIZE="252"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_ENVM\2.3.200\MSS_ENVM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777722"
+TIME="1575924598"
 SIZE="253"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_FIO\1.0.203\MSS_FIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777722"
+TIME="1575924598"
 SIZE="252"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_GPIO\1.0.101\MSS_GPIO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777722"
+TIME="1575924598"
 SIZE="253"
+PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
+ENDFILE
+VALUE "<project>\component\Actel\SmartFusionMSS\MSS_I2C\1.0.101\MSS_I2C.cxf,actgen_cxf"
+STATE="utd"
+TIME="1575924598"
+SIZE="252"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_INTR\1.0.101\MSS_INTR.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777722"
+TIME="1575924598"
 SIZE="253"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RESET\1.0.101\MSS_RESET.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777724"
+TIME="1575924598"
 SIZE="254"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_RTC\1.0.100\MSS_RTC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777724"
+TIME="1575924598"
 SIZE="252"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_SPI\1.0.102\MSS_SPI.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777724"
+TIME="1575924598"
 SIZE="252"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_TIMER\1.0.100\MSS_TIMER.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777724"
+TIME="1575924598"
 SIZE="254"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UART\1.0.101\MSS_UART.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777724"
+TIME="1575924598"
 SIZE="253"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\component\Actel\SmartFusionMSS\MSS_UFROM\1.0.100\MSS_UFROM.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777724"
+TIME="1575924598"
 SIZE="254"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777724"
-SIZE="2543"
+TIME="1575924592"
+SIZE="2712"
 ENDFILE
 VALUE "<project>\component\work\DESIGN_IO\DESIGN_IO.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777724"
+TIME="1575685476"
 SIZE="413"
 ENDFILE
 VALUE "<project>\component\work\TouchScreenFinal\MSS_ACE_0\MSS_ACE_0.log,???"
 STATE="utd"
-TIME="1575777724"
+TIME="1575924592"
 SIZE="31587"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\TouchScreenFinal\MSS_CCC_0\TouchScreenFinal_tmp_MSS_CCC_0_MSS_CCC.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777724"
+TIME="1575924593"
 SIZE="499"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\component\work\TouchScreenFinal\MSS_CCC_0\TouchScreenFinal_tmp_MSS_CCC_0_MSS_CCC.v,hdl"
 STATE="utd"
-TIME="1575777724"
+TIME="1575924593"
 SIZE="2911"
 PARENT="<project>\component\work\TouchScreenFinal\MSS_CCC_0\TouchScreenFinal_tmp_MSS_CCC_0_MSS_CCC.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\TouchScreenFinal\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
 STATE="utd"
-TIME="1575777724"
+TIME="1575924598"
 SIZE="18007"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\TouchScreenFinal\mss_tshell.v,hdl"
 STATE="utd"
-TIME="1575777724"
+TIME="1575924598"
 SIZE="12226"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 BEGIN_USE_CONSTRAINT
@@ -208,25 +214,36 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777724"
-SIZE="14163"
+TIME="1575924606"
+SIZE="15671"
+ENDFILE
+VALUE "<project>\component\work\TouchScreenFinal\TouchScreenFinal.pdc,pdc"
+STATE="utd"
+TIME="1575924584"
+SIZE="3330"
+PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
+BEGIN_USE_CONSTRAINT
+TOOL_CONSTRAINT_TYPE="ideDESIGNER"
+END_USE_CONSTRAINT
+USE_FOR_ANY_TOOL="FALSE"
+IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\TouchScreenFinal\TouchScreenFinal.v,hdl"
 STATE="utd"
-TIME="1575777724"
-SIZE="25036"
+TIME="1575924604"
+SIZE="25860"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\touch\touch.cxf,actgen_cxf"
 STATE="utd"
-TIME="1575777724"
-SIZE="8025"
+TIME="1575925430"
+SIZE="9269"
 ENDFILE
 VALUE "<project>\component\work\touch\touch.pdc,pdc"
 STATE="utd"
-TIME="1575777724"
-SIZE="889"
+TIME="1575925427"
+SIZE="3793"
 PARENT="<project>\component\work\touch\touch.cxf"
 BEGIN_USE_CONSTRAINT
 TOOL_CONSTRAINT_TYPE="ideDESIGNER"
@@ -236,108 +253,108 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\component\work\touch\touch.v,hdl"
 STATE="utd"
-TIME="1575777724"
-SIZE="4113"
+TIME="1575925428"
+SIZE="4305"
 PARENT="<project>\component\work\touch\touch.cxf"
 IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\touch.adb,adb"
 STATE="utd"
-TIME="1575777966"
+TIME="1575916161"
 SIZE="297984"
 ENDFILE
 VALUE "<project>\designer\impl1\touch.fdb,fdb"
 STATE="utd"
-TIME="1575777966"
-SIZE="32680"
+TIME="1575925512"
+SIZE="32731"
 ENDFILE
 VALUE "<project>\designer\impl1\touch.ide_des,ide_des"
 STATE="utd"
-TIME="1575777966"
+TIME="1575916161"
 SIZE="1060"
 ENDFILE
 VALUE "<project>\designer\impl1\TouchScreenFinal.ide_des,ide_des"
 STATE="utd"
-TIME="1575777724"
+TIME="1575916089"
 SIZE="203"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_compile_log.rpt,log"
 STATE="utd"
-TIME="1575777936"
+TIME="1575916161"
 SIZE="31412"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_fp\projectData\touch.pdb,pdb"
 STATE="utd"
-TIME="1575778114"
+TIME="1575916161"
 SIZE="38611"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_fp\touch.pdb,pdb"
 STATE="utd"
-TIME="1575778072"
+TIME="1575916161"
 SIZE="38611"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_fp\touch.pro,pro"
 STATE="utd"
-TIME="1575778114"
+TIME="1575916161"
 SIZE="2386"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_placeroute_log.rpt,log"
 STATE="utd"
-TIME="1575777952"
+TIME="1575925497"
 SIZE="2688"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_prgdata_log.rpt,log"
 STATE="utd"
-TIME="1575777966"
+TIME="1575925513"
 SIZE="669"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_verifytiming_log.rpt,log"
 STATE="utd"
-TIME="1575777956"
+TIME="1575925500"
 SIZE="1134"
 ENDFILE
 VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
 STATE="utd"
-TIME="1575777726"
-SIZE="42"
+TIME="1570057111"
+SIZE="41"
 PARENT="<project>\component\Actel\SmartFusionMSS\MSS\2.5.200\MSS.cxf"
 ENDFILE
 VALUE "<project>\simulation\subsystem.bfm,sim"
 STATE="utd"
-TIME="1575777726"
+TIME="1575925428"
 SIZE="602"
 PARENT="<project>\component\work\touch\touch.cxf"
 ENDFILE
 VALUE "<project>\simulation\test.bfm,sim"
 STATE="utd"
-TIME="1575777726"
+TIME="1575924594"
 SIZE="10743"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\simulation\user.bfm,sim"
 STATE="utd"
-TIME="1575777726"
+TIME="1575685476"
 SIZE="670"
 PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\synthesis\touch.edn,syn_edn"
 STATE="utd"
-TIME="1575777924"
+TIME="1575916161"
 SIZE="109796"
 ENDFILE
 VALUE "<project>\synthesis\touch.so,so"
 STATE="utd"
-TIME="1575777924"
+TIME="1575916161"
 SIZE="222"
 ENDFILE
 VALUE "<project>\synthesis\touch_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1575777924"
+TIME="1575698480"
 SIZE="310"
 ENDFILE
 VALUE "<project>\synthesis\touch_syn.prj,prj"
 STATE="utd"
-TIME="1575777926"
+TIME="1575916161"
 SIZE="2220"
 ENDFILE
 ENDLIST
@@ -374,6 +391,7 @@ FILE "<project>\component\work\TouchScreenFinal\TouchScreenFinal.v,hdl"
 LIST Other_Association
 VALUE "<project>\simulation\user.bfm,sim"
 VALUE "<project>\simulation\test.bfm,sim"
+VALUE "<project>\component\work\TouchScreenFinal\TouchScreenFinal.pdc,pdc"
 VALUE "<project>\component\work\TouchScreenFinal\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
 VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
 ENDLIST
@@ -389,6 +407,7 @@ ENDLIST
 LIST TouchScreenFinal
 VALUE "<project>\simulation\user.bfm,sim"
 VALUE "<project>\simulation\test.bfm,sim"
+VALUE "<project>\component\work\TouchScreenFinal\TouchScreenFinal.pdc,pdc"
 VALUE "<project>\component\work\TouchScreenFinal\MSS_ENVM_0\MSS_ENVM_0.efc,efc"
 VALUE "<project>\simulation\CompileDssBfm.tcl,sim"
 ENDLIST
@@ -446,10 +465,10 @@ ENDLIST
 LIST PhySynthesisOptions
 ENDLIST
 LIST Profiles
-NAME="SC3v3"
+NAME="SoftConsole3v3"
 FUNCTION="SoftwareIDE"
 TOOL="SoftConsole"
-LOCATION="C:\Microsemi\SoftConsole v3.3\Eclipse\eclipse.exe"
+LOCATION="C:\Program Files (x86)\Microsemi\SoftConsole v3.3\Eclipse\eclipse.exe"
 PARAM=""
 BATCH=0
 LICENSE=""
@@ -459,8 +478,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\synplify_pro.exe"
-PARAM=""
-BATCH=0
+PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
+BATCH=1
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -521,11 +540,11 @@ ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
 Reports;Reports;0
-ReportsCurrentItem;Program Device:touch_program.log
+ReportsCurrentItem;Generate Programming Data:touch_prgdata_log.rpt
 StartPage;StartPage;0
 SmartDesign;TouchScreenFinal;0
 SmartDesign;touch;0
-ACTIVEVIEW;TouchScreenFinal
+ACTIVEVIEW;Reports
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
@@ -536,6 +555,7 @@ LIST "DESIGN_FIRMWARE::work","component\work\DESIGN_FIRMWARE\DESIGN_FIRMWARE.cxf
 SUBBLOCK "HAL::work","","FALSE","FALSE"
 SUBBLOCK "MSS_ACE_Driver::work","","FALSE","FALSE"
 SUBBLOCK "MSS_GPIO_Driver::work","","FALSE","FALSE"
+SUBBLOCK "MSS_I2C_Driver::work","","FALSE","FALSE"
 SUBBLOCK "MSS_IAP_Driver::work","","FALSE","FALSE"
 SUBBLOCK "MSS_NVM_Driver::work","","FALSE","FALSE"
 SUBBLOCK "MSS_PDMA_Driver::work","","FALSE","FALSE"
@@ -567,6 +587,8 @@ LIST "MSS_CCC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","F
 ENDLIST
 LIST "MSS_GPIO_Driver::work","","FALSE","FALSE"
 ENDLIST
+LIST "MSS_I2C_Driver::work","","FALSE","FALSE"
+ENDLIST
 LIST "MSS_IAP_Driver::work","","FALSE","FALSE"
 ENDLIST
 LIST "MSS_LPXTLOSC::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
@@ -596,6 +618,7 @@ SUBBLOCK "TouchScreenFinal::work","component\work\TouchScreenFinal\TouchScreenFi
 ENDLIST
 LIST "TouchScreenFinal::work","component\work\TouchScreenFinal\TouchScreenFinal.v","TRUE","FALSE"
 SUBBLOCK "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
+SUBBLOCK "BIBUF_OPEND_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 SUBBLOCK "INBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
 SUBBLOCK "MSS_APB::work","component\work\TouchScreenFinal\mss_tshell.v","FALSE","FALSE"
 SUBBLOCK "OUTBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
