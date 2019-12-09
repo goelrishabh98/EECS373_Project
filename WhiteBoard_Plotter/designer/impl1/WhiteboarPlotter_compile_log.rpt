@@ -12,12 +12,12 @@ Opened an existing Libero design WhiteboarPlotter.adb.
 'IDE_DESIGNERVIEW_ROOTDIR' set to 'N:\EECS373_Project\WhiteBoard_Plotter\designer'
 'IDE_DESIGNERVIEW_LASTREV' set to '1'
 
- Netlist Reading Time = 0.0 seconds
+ Netlist Reading Time = 1.0 seconds
 Imported the files:
    N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter.edn
    N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.pdc
 
-The Import command succeeded ( 00:00:03 )
+The Import command succeeded ( 00:00:04 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -34,7 +34,7 @@ Speed grade : STD
 Temp        : 0:25:85
 Voltage     : 1.58:1.50:1.42
 
-Keep Existing Physical Constraints : Yes
+Keep Existing Physical Constraints : No
 Keep Existing Timing Constraints   : Yes
 
 pdc_abort_on_error                 : Yes
@@ -79,7 +79,6 @@ Warning: CMP201: Net WhiteBoard_Plotter_0/MSS_ADLIB_INST_SPI1DO drives no load.
 Warning: CMP201: Net WhiteBoard_Plotter_0/MSS_ADLIB_INST_SPI1DOE drives no load.
 Warning: CMP201: Net WhiteBoard_Plotter_0/MSS_ADLIB_INST_SPI1CLKO drives no load.
 Warning: CMP201: Net WhiteBoard_Plotter_0/MSS_ADLIB_INST_SPI1MODE drives no load.
-Warning: CMP201: Net WhiteBoard_Plotter_0/MSS_ADLIB_INST_UART1TXD drives no load.
 Warning: CMP201: Net WhiteBoard_Plotter_0/MSS_ADLIB_INST_I2C1SDAO drives no load.
 Warning: CMP201: Net WhiteBoard_Plotter_0/MSS_ADLIB_INST_I2C1SCLO drives no load.
 Warning: CMP201: Net WhiteBoard_Plotter_0/MSS_ADLIB_INST_MACTXEN drives no load.
@@ -384,20 +383,20 @@ Optimized macros:
 
     Total macros optimized  0
 
-There were 0 error(s) and 317 warning(s) in this design.
-=====================================================================
-
-Reading previous post-compile physical placement constraints.
-
-
-There were 0 error(s) and 0 warning(s).
-
+There were 0 error(s) and 316 warning(s) in this design.
 =====================================================================
 
 Reading user pdc (Physical Design Constraints) file(s) postcompile
 
 
 There were 0 error(s) and 0 warning(s) in reading the user pdc.
+
+=====================================================================
+
+Reading previous post-compile physical placement constraints.
+
+
+There were 0 error(s) and 0 warning(s).
 
 =====================================================================
 Compile report:
@@ -408,7 +407,7 @@ Compile report:
     Fabric IO (W/ clocks)      Used:      4  Total:     94   (4.26%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
-    Dedicated MSS IO           Used:      9  Total:     43   (20.93%)
+    Dedicated MSS IO           Used:     11  Total:     43   (25.58%)
     GLOBAL (Chip+Quadrant)     Used:      0  Total:     15   (0.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)
@@ -456,8 +455,8 @@ I/O Technology:
 
 I/O Placement:
 
-    Locked  :   4 ( 100.00% )
-    Placed  :   0
+    Locked  :   0
+    Placed  :   4 ( 100.00% )
     UnPlaced:   0
 
 Net information report:

@@ -215,12 +215,12 @@
             000000000000000000000000000000000000000000000000001f1f004245
             45007e7f0100000002000008200100e1f505010000d2000000000000001e
             1a0707000500100005001000000000002bacb0c20a1828b0c20a2bacb0c2
-            0a2bacb0c20a2bacb0c20a2bacb0c20a2b60800106186080c10a2bacb0c2
+            0a1828b0c20a2bacb0c20a2bacb0c20a2b60800106186080c10a2bacb0c2
             0a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c2
             0a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c20a2bacb002
-            0000000078bf080090d0030000ff030088ff23000000cc2f0000be24
+            0000000078be080090d0030000ff030088ff23000000cc2f0000bcc3
             <crc>
-                922b
+                eb15
             </crc>
         </region>
         <region name="ACTEL_INIT_CONFIG" address="0x07fe00" retrieveAddressFromFile="false" size="152" format="HEX" type="Data Storage" wordSize="32" numberWords="38" memFile="" memType="" memFileTimeStamp="" clientType="private" program="true">

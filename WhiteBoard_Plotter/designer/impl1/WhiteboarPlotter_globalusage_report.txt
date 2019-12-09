@@ -1,0 +1,21 @@
+********************************************************************
+                            Global Usage Report
+********************************************************************
+  
+Product: Designer
+Release: v11.9
+Version: 11.9.0.4
+Date: Sun Dec 08 17:34:20 2019
+Design Name: WhiteboarPlotter  Family: SmartFusion  Die: A2F200M3F  Package: 484 FBGA
+Design State: Post-Layout
+
+The following nets have been routed to a chip global resource:
+
+    Fanout            Name
+    ----------------------
+    23                Net   : FAB_CLK
+                      Driver: WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1
+
+
+
+

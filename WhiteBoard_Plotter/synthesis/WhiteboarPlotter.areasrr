@@ -15,13 +15,13 @@ Report for cell WhiteBoard_Plotter.netlist
                                           Cell usage:
                                cell       count     area    count*area
                                 GND         1       0.0        0.0
-                          INBUF_MSS         2       0.0        0.0
+                          INBUF_MSS         3       0.0        0.0
                             MSS_APB         1       0.0        0.0
-                         OUTBUF_MSS         7       0.0        0.0
+                         OUTBUF_MSS         8       0.0        0.0
                                 VCC         1       0.0        0.0
           WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC         1       0.0        0.0
                             
-                         TOTAL             13                  0.0
+                         TOTAL             15                  0.0
 ----------------------------------------------------------------------
 Report for cell WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.netlist
      Instance path:  WhiteBoard_Plotter_0.MSS_CCC_0

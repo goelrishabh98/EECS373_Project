@@ -1,0 +1,862 @@
+Timing Report Min Delay Analysis
+
+SmartTime Version v11.9
+Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
+Date: Sun Dec 08 17:34:29 2019
+
+
+Design: WhiteboarPlotter
+Family: SmartFusion
+Die: A2F200M3F
+Package: 484 FBGA
+Temperature Range: 0 - 85 C
+Voltage Range: 1.425 - 1.575 V
+Speed Grade: STD
+Design State: Post-Layout
+Data source: Silicon verified
+Min Operating Conditions: BEST - 1.575 V - 0 C
+Max Operating Conditions: WORST - 1.425 V - 85 C
+Using Enhanced Min Delay Analysis
+Scenario for Timing Analysis: Primary
+
+
+-----------------------------------------------------
+SUMMARY
+
+Clock Domain:               mss_aclk
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_fabric_interface_clock
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+
+Clock Domain:               mss_pclk1
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      6.406
+
+Clock Domain:               mss_ccc_gla1
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      6.035
+
+Clock Domain:               mss_ccc_gla0
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Hold (ns):         3.700
+Min Clock-To-Out (ns):      N/A
+
+Clock Domain:               WhiteBoard_Plotter_0/MSS_CCC_0/I_RCOSC:CLKOUT
+Required Period (ns):       10.000
+Required Frequency (MHz):   100.000
+External Hold (ns):         N/A
+Min Clock-To-Out (ns):      N/A
+
+                            Input to Output
+Min Delay (ns):             N/A
+
+END SUMMARY
+-----------------------------------------------------
+
+Clock Domain mss_aclk
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Hold
+
+No Path
+
+END SET External Hold
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Removal
+
+No Path
+
+END SET External Removal
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_fabric_interface_clock
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Hold
+
+No Path
+
+END SET External Hold
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Removal
+
+No Path
+
+END SET External Removal
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_pclk1
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Hold
+
+No Path
+
+END SET External Hold
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                    GPIO_0_OUT
+  Delay (ns):            3.849
+  Slack (ns):
+  Arrival (ns):          6.406
+  Required (ns):
+  Clock to Out (ns):     6.406
+
+Path 2
+  From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                    GPIO_1_OUT
+  Delay (ns):            3.866
+  Slack (ns):
+  Arrival (ns):          6.423
+  Required (ns):
+  Clock to Out (ns):     6.423
+
+Path 3
+  From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                    GPIO_3_OUT
+  Delay (ns):            3.877
+  Slack (ns):
+  Arrival (ns):          6.434
+  Required (ns):
+  Clock to Out (ns):     6.434
+
+Path 4
+  From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                    GPIO_4_OUT
+  Delay (ns):            3.884
+  Slack (ns):
+  Arrival (ns):          6.441
+  Required (ns):
+  Clock to Out (ns):     6.441
+
+Path 5
+  From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                    GPIO_2_OUT
+  Delay (ns):            3.907
+  Slack (ns):
+  Arrival (ns):          6.464
+  Required (ns):
+  Clock to Out (ns):     6.464
+
+
+Expanded Path 1
+  From: WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To: GPIO_0_OUT
+  data arrival time                              6.406
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_pclk1
+               +     0.000          Clock source
+  0.000                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:PCLK1 (r)
+               +     2.557          Clock generation
+  2.557
+               +     2.079          cell: ADLIB:MSS_APB_IP
+  4.636                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:GPO[0] (r)
+               +     0.340          net: WhiteBoard_Plotter_0/GPO_net_0[0]
+  4.976                        WhiteBoard_Plotter_0/MSS_GPIO_0_GPIO_0_OUT:D (r)
+               +     1.430          cell: ADLIB:IOPAD_TRI
+  6.406                        WhiteBoard_Plotter_0/MSS_GPIO_0_GPIO_0_OUT:PAD (r)
+               +     0.000          net: GPIO_0_OUT
+  6.406                        GPIO_0_OUT (r)
+                                    
+  6.406                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_pclk1
+               +     0.000          Clock source
+  N/C                          WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:PCLK1 (r)
+               +     2.557          Clock generation
+  N/C
+                                    
+  N/C                          GPIO_0_OUT (r)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Removal
+
+No Path
+
+END SET External Removal
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain mss_ccc_gla1
+
+SET Register to Register
+
+Path 1
+  From:                  stepper_control_0/count2[1]:CLK
+  To:                    stepper_control_0/count2[1]:D
+  Delay (ns):            0.762
+  Slack (ns):            0.762
+  Arrival (ns):          4.614
+  Required (ns):         3.852
+  Hold (ns):             0.000
+
+Path 2
+  From:                  stepper_control_0/count1[1]:CLK
+  To:                    stepper_control_0/count1[1]:D
+  Delay (ns):            0.764
+  Slack (ns):            0.764
+  Arrival (ns):          4.621
+  Required (ns):         3.857
+  Hold (ns):             0.000
+
+Path 3
+  From:                  stepper_control_0/count1[3]:CLK
+  To:                    stepper_control_0/count1[3]:D
+  Delay (ns):            0.810
+  Slack (ns):            0.810
+  Arrival (ns):          4.667
+  Required (ns):         3.857
+  Hold (ns):             0.000
+
+Path 4
+  From:                  stepper_control_0/count2[0]:CLK
+  To:                    stepper_control_0/count2[0]:D
+  Delay (ns):            0.815
+  Slack (ns):            0.815
+  Arrival (ns):          4.677
+  Required (ns):         3.862
+  Hold (ns):             0.000
+
+Path 5
+  From:                  stepper_control_0/count1[0]:CLK
+  To:                    stepper_control_0/count1[0]:D
+  Delay (ns):            0.815
+  Slack (ns):            0.815
+  Arrival (ns):          4.672
+  Required (ns):         3.857
+  Hold (ns):             0.000
+
+
+Expanded Path 1
+  From: stepper_control_0/count2[1]:CLK
+  To: stepper_control_0/count2[1]:D
+  data arrival time                              4.614
+  data required time                         -   3.852
+  slack                                          0.762
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     3.558          Clock generation
+  3.558
+               +     0.000          net: WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  3.558                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  3.558                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.294          net: FAB_CLK
+  3.852                        stepper_control_0/count2[1]:CLK (r)
+               +     0.249          cell: ADLIB:DFN1
+  4.101                        stepper_control_0/count2[1]:Q (r)
+               +     0.163          net: stepper_control_0/un5lto1
+  4.264                        stepper_control_0/count2_n1:A (r)
+               +     0.198          cell: ADLIB:XA1
+  4.462                        stepper_control_0/count2_n1:Y (f)
+               +     0.152          net: stepper_control_0/count2_n1
+  4.614                        stepper_control_0/count2[1]:D (f)
+                                    
+  4.614                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     3.558          Clock generation
+  3.558
+               +     0.000          net: WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  3.558                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  3.558                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.294          net: FAB_CLK
+  3.852                        stepper_control_0/count2[1]:CLK (r)
+               +     0.000          Library hold time: ADLIB:DFN1
+  3.852                        stepper_control_0/count2[1]:D
+                                    
+  3.852                        data required time
+
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Hold
+
+No Path
+
+END SET External Hold
+
+----------------------------------------------------
+
+SET Clock to Output
+
+Path 1
+  From:                  stepper_control_0/dir2:CLK
+  To:                    dir2
+  Delay (ns):            2.182
+  Slack (ns):
+  Arrival (ns):          6.035
+  Required (ns):
+  Clock to Out (ns):     6.035
+
+Path 2
+  From:                  stepper_control_0/step1:CLK
+  To:                    step1
+  Delay (ns):            2.225
+  Slack (ns):
+  Arrival (ns):          6.089
+  Required (ns):
+  Clock to Out (ns):     6.089
+
+Path 3
+  From:                  stepper_control_0/dir1:CLK
+  To:                    dir1
+  Delay (ns):            2.426
+  Slack (ns):
+  Arrival (ns):          6.279
+  Required (ns):
+  Clock to Out (ns):     6.279
+
+Path 4
+  From:                  stepper_control_0/step2:CLK
+  To:                    step2
+  Delay (ns):            2.457
+  Slack (ns):
+  Arrival (ns):          6.306
+  Required (ns):
+  Clock to Out (ns):     6.306
+
+
+Expanded Path 1
+  From: stepper_control_0/dir2:CLK
+  To: dir2
+  data arrival time                              6.035
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     3.558          Clock generation
+  3.558
+               +     0.000          net: WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  3.558                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  3.558                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.295          net: FAB_CLK
+  3.853                        stepper_control_0/dir2:CLK (r)
+               +     0.249          cell: ADLIB:DFN1
+  4.102                        stepper_control_0/dir2:Q (r)
+               +     0.557          net: dir2_c
+  4.659                        dir2_pad/U0/U1:D (r)
+               +     0.257          cell: ADLIB:IOTRI_OB_EB
+  4.916                        dir2_pad/U0/U1:DOUT (r)
+               +     0.000          net: dir2_pad/U0/NET1
+  4.916                        dir2_pad/U0/U0:D (r)
+               +     1.119          cell: ADLIB:IOPAD_TRI
+  6.035                        dir2_pad/U0/U0:PAD (r)
+               +     0.000          net: dir2
+  6.035                        dir2 (r)
+                                    
+  6.035                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla1
+               +     0.000          Clock source
+  N/C                          WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     3.558          Clock generation
+  N/C
+                                    
+  N/C                          dir2 (r)
+
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Removal
+
+No Path
+
+END SET External Removal
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+SET mss_ccc_gla0 to mss_ccc_gla1
+
+Path 1
+  From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                    stepper_control_0/step1_en:D
+  Delay (ns):            2.687
+  Slack (ns):            1.380
+  Arrival (ns):          5.244
+  Required (ns):         3.864
+  Hold (ns):             0.000
+
+Path 2
+  From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                    stepper_control_0/dir2:D
+  Delay (ns):            2.722
+  Slack (ns):            1.410
+  Arrival (ns):          5.279
+  Required (ns):         3.869
+  Hold (ns):             0.000
+
+Path 3
+  From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                    stepper_control_0/step2_en:D
+  Delay (ns):            2.754
+  Slack (ns):            1.442
+  Arrival (ns):          5.311
+  Required (ns):         3.869
+  Hold (ns):             0.000
+
+Path 4
+  From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                    stepper_control_0/dir1:D
+  Delay (ns):            2.853
+  Slack (ns):            1.541
+  Arrival (ns):          5.410
+  Required (ns):         3.869
+  Hold (ns):             0.000
+
+Path 5
+  From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To:                    stepper_control_0/step2:D
+  Delay (ns):            3.326
+  Slack (ns):            2.019
+  Arrival (ns):          5.883
+  Required (ns):         3.864
+  Hold (ns):             0.000
+
+
+Expanded Path 1
+  From: WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:FCLK
+  To: stepper_control_0/step1_en:D
+  data arrival time                              5.244
+  data required time                         -   3.864
+  slack                                          1.380
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_ccc_gla0
+               +     0.000          Clock source
+  0.000                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLAMSS (r)
+               +     2.248          Clock generation
+  2.248
+               +     0.309          net: WhiteBoard_Plotter_0/GLA0
+  2.557                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:FCLK (r)
+               +     1.640          cell: ADLIB:MSS_APB_IP
+  4.197                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:M2FRESETn (f)
+               +     0.077          net: WhiteBoard_Plotter_0/MSS_ADLIB_INST/M2FRESETnINT_NET
+  4.274                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_46:PIN2INT (f)
+               +     0.045          cell: ADLIB:MSS_IF
+  4.319                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_46:PIN2 (f)
+               +     0.500          net: WhiteBoard_Plotter_0_M2F_RESET_N
+  4.819                        stepper_control_0/step1_en_RNO:B (f)
+               +     0.273          cell: ADLIB:NOR2B
+  5.092                        stepper_control_0/step1_en_RNO:Y (f)
+               +     0.152          net: stepper_control_0/step1_en_RNO
+  5.244                        stepper_control_0/step1_en:D (f)
+                                    
+  5.244                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     3.558          Clock generation
+  3.558
+               +     0.000          net: WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  3.558                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  3.558                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.306          net: FAB_CLK
+  3.864                        stepper_control_0/step1_en:CLK (r)
+               +     0.000          Library hold time: ADLIB:DFN1
+  3.864                        stepper_control_0/step1_en:D
+                                    
+  3.864                        data required time
+
+
+END SET mss_ccc_gla0 to mss_ccc_gla1
+
+----------------------------------------------------
+
+SET mss_fabric_interface_clock to mss_ccc_gla1
+
+Path 1
+  From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    stepper_control_0/dir2:D
+  Delay (ns):            2.854
+  Slack (ns):            1.542
+  Arrival (ns):          5.411
+  Required (ns):         3.869
+  Hold (ns):             0.000
+
+Path 2
+  From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    stepper_control_0/dir1:D
+  Delay (ns):            2.912
+  Slack (ns):            1.600
+  Arrival (ns):          5.469
+  Required (ns):         3.869
+  Hold (ns):             0.000
+
+Path 3
+  From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    stepper_control_0/step1_en:D
+  Delay (ns):            3.376
+  Slack (ns):            2.069
+  Arrival (ns):          5.933
+  Required (ns):         3.864
+  Hold (ns):             0.000
+
+Path 4
+  From:                  WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:GLB
+  To:                    stepper_control_0/step2_en:D
+  Delay (ns):            3.458
+  Slack (ns):            2.146
+  Arrival (ns):          6.015
+  Required (ns):         3.869
+  Hold (ns):             0.000
+
+
+Expanded Path 1
+  From: WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:GLB
+  To: stepper_control_0/dir2:D
+  data arrival time                              5.411
+  data required time                         -   3.869
+  slack                                          1.542
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        mss_fabric_interface_clock
+               +     0.000          Clock source
+  0.000                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:GLB (r)
+               +     2.557          Clock generation
+  2.557
+               +     1.654          cell: ADLIB:MSS_APB_IP
+  4.211                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:MSSPWDATA[1] (r)
+               +     0.061          net: WhiteBoard_Plotter_0/MSS_ADLIB_INST/MSSPWDATA[1]INT_NET
+  4.272                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_37:PIN1INT (r)
+               +     0.042          cell: ADLIB:MSS_IF
+  4.314                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_37:PIN1 (r)
+               +     0.347          net: CoreAPB3_0_APBmslave0_PWDATA[1]
+  4.661                        stepper_control_0/dir2_RNO_0:B (r)
+               +     0.251          cell: ADLIB:MX2
+  4.912                        stepper_control_0/dir2_RNO_0:Y (r)
+               +     0.144          net: stepper_control_0/N_163
+  5.056                        stepper_control_0/dir2_RNO:A (r)
+               +     0.209          cell: ADLIB:NOR2B
+  5.265                        stepper_control_0/dir2_RNO:Y (r)
+               +     0.146          net: stepper_control_0/dir2_RNO
+  5.411                        stepper_control_0/dir2:D (r)
+                                    
+  5.411                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  0.000                        mss_ccc_gla1
+               +     0.000          Clock source
+  0.000                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLA (r)
+               +     3.558          Clock generation
+  3.558
+               +     0.000          net: WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/GLA_INT
+  3.558                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5INT (r)
+               +     0.000          cell: ADLIB:MSS_CCC_GL_IF
+  3.558                        WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_TILE1:PIN5 (r)
+               +     0.311          net: FAB_CLK
+  3.869                        stepper_control_0/dir2:CLK (r)
+               +     0.000          Library hold time: ADLIB:DFN1
+  3.869                        stepper_control_0/dir2:D
+                                    
+  3.869                        data required time
+
+
+END SET mss_fabric_interface_clock to mss_ccc_gla1
+
+----------------------------------------------------
+
+Clock Domain mss_ccc_gla0
+
+Info: The maximum frequency of this clock domain is limited by the period of pin WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:FCLK
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Hold
+
+Path 1
+  From:                  MSS_RESET_N
+  To:                    WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+  Delay (ns):            0.277
+  Slack (ns):
+  Arrival (ns):          0.277
+  Required (ns):
+  Hold (ns):             1.358
+  External Hold (ns):    3.700
+
+
+Expanded Path 1
+  From: MSS_RESET_N
+  To: WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+  data arrival time                              0.277
+  data required time                         -   N/C
+  slack                                          N/C
+  ________________________________________________________
+  Data arrival time calculation
+  0.000                        MSS_RESET_N (f)
+               +     0.000          net: MSS_RESET_N
+  0.000                        WhiteBoard_Plotter_0/MSS_RESET_0_MSS_RESET_N:PAD (f)
+               +     0.277          cell: ADLIB:IOPAD_IN
+  0.277                        WhiteBoard_Plotter_0/MSS_RESET_0_MSS_RESET_N:Y (f)
+               +     0.000          net: WhiteBoard_Plotter_0/MSS_RESET_0_MSS_RESET_N_Y
+  0.277                        WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:MSSRESETn (f)
+                                    
+  0.277                        data arrival time
+  ________________________________________________________
+  Data required time calculation
+  N/C                          mss_ccc_gla0
+               +     0.000          Clock source
+  N/C                          WhiteBoard_Plotter_0/MSS_CCC_0/I_MSSCCC/U_MSSCCC:GLAMSS (r)
+               +     2.248          Clock generation
+  N/C
+               +     0.371          net: WhiteBoard_Plotter_0/GLA0
+  N/C                          WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:FCLK (r)
+               +     1.358          Library hold time: ADLIB:MSS_APB_IP
+  N/C                          WhiteBoard_Plotter_0/MSS_ADLIB_INST/U_CORE:MSSRESETn
+
+
+END SET External Hold
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Removal
+
+No Path
+
+END SET External Removal
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Clock Domain WhiteBoard_Plotter_0/MSS_CCC_0/I_RCOSC:CLKOUT
+
+SET Register to Register
+
+No Path
+
+END SET Register to Register
+
+----------------------------------------------------
+
+SET External Hold
+
+No Path
+
+END SET External Hold
+
+----------------------------------------------------
+
+SET Clock to Output
+
+No Path
+
+END SET Clock to Output
+
+----------------------------------------------------
+
+SET Register to Asynchronous
+
+No Path
+
+END SET Register to Asynchronous
+
+----------------------------------------------------
+
+SET External Removal
+
+No Path
+
+END SET External Removal
+
+----------------------------------------------------
+
+SET Asynchronous to Register
+
+No Path
+
+END SET Asynchronous to Register
+
+----------------------------------------------------
+
+Path set Pin to Pin
+
+SET Input to Output
+
+No Path
+
+END SET Input to Output
+
+----------------------------------------------------
+
+Path set User Sets
+

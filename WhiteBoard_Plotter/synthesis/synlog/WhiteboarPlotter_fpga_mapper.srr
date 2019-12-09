@@ -1,4 +1,4 @@
-# Wed Dec 04 16:14:18 2019
+# Sun Dec 08 17:33:41 2019
 
 Synopsys Microsemi Technology Mapper, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -16,7 +16,7 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
 
 @N: MO111 :"n:\eecs373_project\whiteboard_plotter\component\work\whiteboard_plotter\mss_ccc_0\whiteboard_plotter_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
 @N: MO111 :"n:\eecs373_project\whiteboard_plotter\component\work\whiteboard_plotter\mss_ccc_0\whiteboard_plotter_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
@@ -112,7 +112,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Dec 04 16:14:19 2019
+# Timing Report written on Sun Dec 08 17:33:43 2019
 #
 
 
@@ -377,7 +377,7 @@ None
 Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 --------------------------------------------------------------------------------
 Target Part: A2F200M3F_FBGA484_STD
@@ -409,24 +409,24 @@ Report for cell WhiteboarPlotter.verilog
 
   IO Cell usage:
               cell count
-         INBUF_MSS     2
+         INBUF_MSS     3
             OUTBUF     4
-        OUTBUF_MSS     7
+        OUTBUF_MSS     8
                    -----
-             TOTAL    13
+             TOTAL    15
 
 
 Core Cells         : 84 of 4608 (2%)
-IO Cells           : 13
+IO Cells           : 15
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 112MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 112MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Wed Dec 04 16:14:20 2019
+# Sun Dec 08 17:33:44 2019
 
 ###########################################################]

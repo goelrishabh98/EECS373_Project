@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Thu Nov 21 14:11:59 2019
+// Created by SmartDesign Sun Dec 08 17:32:38 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -10,6 +10,7 @@ module WhiteboarPlotter(
     // Inputs
     MSS_RESET_N,
     UART_0_RXD,
+    UART_1_RXD,
     // Outputs
     GPIO_0_OUT,
     GPIO_1_OUT,
@@ -18,6 +19,7 @@ module WhiteboarPlotter(
     GPIO_4_OUT,
     GPIO_5_OUT,
     UART_0_TXD,
+    UART_1_TXD,
     dir1,
     dir2,
     step1,
@@ -29,6 +31,7 @@ module WhiteboarPlotter(
 //--------------------------------------------------------------------
 input  MSS_RESET_N;
 input  UART_0_RXD;
+input  UART_1_RXD;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
@@ -39,6 +42,7 @@ output GPIO_3_OUT;
 output GPIO_4_OUT;
 output GPIO_5_OUT;
 output UART_0_TXD;
+output UART_1_TXD;
 output dir1;
 output dir2;
 output step1;
@@ -67,6 +71,8 @@ wire          step1_net_0;
 wire          step2_net_0;
 wire          UART_0_RXD;
 wire          UART_0_TXD_net_0;
+wire          UART_1_RXD;
+wire          UART_1_TXD_net_0;
 wire          WhiteBoard_Plotter_0_FAB_CLK;
 wire          WhiteBoard_Plotter_0_M2F_RESET_N;
 wire          WhiteBoard_Plotter_0_MSS_MASTER_APB_PENABLE;
@@ -87,6 +93,7 @@ wire          GPIO_3_OUT_net_1;
 wire          GPIO_2_OUT_net_1;
 wire          GPIO_1_OUT_net_1;
 wire          GPIO_0_OUT_net_1;
+wire          UART_1_TXD_net_1;
 //--------------------------------------------------------------------
 // TiedOff Nets
 //--------------------------------------------------------------------
@@ -163,6 +170,8 @@ assign GPIO_1_OUT_net_1 = GPIO_1_OUT_net_0;
 assign GPIO_1_OUT       = GPIO_1_OUT_net_1;
 assign GPIO_0_OUT_net_1 = GPIO_0_OUT_net_0;
 assign GPIO_0_OUT       = GPIO_0_OUT_net_1;
+assign UART_1_TXD_net_1 = UART_1_TXD_net_0;
+assign UART_1_TXD       = UART_1_TXD_net_1;
 //--------------------------------------------------------------------
 // Bus Interface Nets Assignments - Unequal Pin Widths
 //--------------------------------------------------------------------
@@ -328,6 +337,7 @@ WhiteBoard_Plotter WhiteBoard_Plotter_0(
         .MSSPREADY   ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PREADY ),
         .MSSPSLVERR  ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PSLVERR ),
         .MSSPRDATA   ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PRDATA ),
+        .UART_1_RXD  ( UART_1_RXD ),
         // Outputs
         .UART_0_TXD  ( UART_0_TXD_net_0 ),
         .MSSPSEL     ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PSELx ),
@@ -335,14 +345,15 @@ WhiteBoard_Plotter WhiteBoard_Plotter_0(
         .MSSPWRITE   ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PWRITE ),
         .FAB_CLK     ( WhiteBoard_Plotter_0_FAB_CLK ),
         .M2F_RESET_N ( WhiteBoard_Plotter_0_M2F_RESET_N ),
-        .MSSPADDR    ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR ),
-        .MSSPWDATA   ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PWDATA ),
         .GPIO_5_OUT  ( GPIO_5_OUT_net_0 ),
         .GPIO_4_OUT  ( GPIO_4_OUT_net_0 ),
         .GPIO_3_OUT  ( GPIO_3_OUT_net_0 ),
         .GPIO_2_OUT  ( GPIO_2_OUT_net_0 ),
         .GPIO_1_OUT  ( GPIO_1_OUT_net_0 ),
-        .GPIO_0_OUT  ( GPIO_0_OUT_net_0 ) 
+        .GPIO_0_OUT  ( GPIO_0_OUT_net_0 ),
+        .MSSPADDR    ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR ),
+        .MSSPWDATA   ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PWDATA ),
+        .UART_1_TXD  ( UART_1_TXD_net_0 ) 
         );
 
 

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Thu Nov 21 14:09:53 2019
+// Created by SmartDesign Sun Dec 08 17:31:34 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -13,6 +13,7 @@ module WhiteBoard_Plotter(
     MSSPSLVERR,
     MSS_RESET_N,
     UART_0_RXD,
+    UART_1_RXD,
     // Outputs
     FAB_CLK,
     GPIO_0_OUT,
@@ -27,7 +28,8 @@ module WhiteBoard_Plotter(
     MSSPSEL,
     MSSPWDATA,
     MSSPWRITE,
-    UART_0_TXD
+    UART_0_TXD,
+    UART_1_TXD
 );
 
 //--------------------------------------------------------------------
@@ -38,6 +40,7 @@ input         MSSPREADY;
 input         MSSPSLVERR;
 input         MSS_RESET_N;
 input         UART_0_RXD;
+input         UART_1_RXD;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
@@ -55,6 +58,7 @@ output        MSSPSEL;
 output [31:0] MSSPWDATA;
 output        MSSPWRITE;
 output        UART_0_TXD;
+output        UART_1_TXD;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
@@ -80,6 +84,8 @@ wire          MSS_RESET_0_MSS_RESET_N_Y;
 wire          MSS_RESET_N;
 wire          MSS_UART_0_RXD_Y;
 wire          MSS_UART_0_TXD_D;
+wire          MSS_UART_1_RXD_Y;
+wire          MSS_UART_1_TXD_D;
 wire          net_71;
 wire   [19:0] net_72_PADDR;
 wire          net_72_PENABLE;
@@ -91,6 +97,8 @@ wire   [31:0] net_72_PWDATA;
 wire          net_72_PWRITE;
 wire          UART_0_RXD;
 wire          UART_0_TXD_net_0;
+wire          UART_1_RXD;
+wire          UART_1_TXD_net_0;
 wire          net_72_PSELx_net_0;
 wire          net_72_PENABLE_net_0;
 wire          net_72_PWRITE_net_0;
@@ -99,6 +107,7 @@ wire          net_71_net_0;
 wire   [19:0] net_72_PADDR_net_0;
 wire   [31:0] net_72_PWDATA_net_0;
 wire          UART_0_TXD_net_1;
+wire          UART_1_TXD_net_1;
 wire          GPIO_5_OUT_net_1;
 wire          GPIO_4_OUT_net_1;
 wire          GPIO_3_OUT_net_1;
@@ -149,6 +158,8 @@ assign net_72_PWDATA_net_0              = net_72_PWDATA;
 assign MSSPWDATA[31:0]                  = net_72_PWDATA_net_0;
 assign UART_0_TXD_net_1                 = UART_0_TXD_net_0;
 assign UART_0_TXD                       = UART_0_TXD_net_1;
+assign UART_1_TXD_net_1                 = UART_1_TXD_net_0;
+assign UART_1_TXD                       = UART_1_TXD_net_1;
 assign GPIO_5_OUT_net_1                 = GPIO_5_OUT_net_0;
 assign GPIO_5_OUT                       = GPIO_5_OUT_net_1;
 assign GPIO_4_OUT_net_1                 = GPIO_4_OUT_net_0;
@@ -249,7 +260,7 @@ MSS_ADLIB_INST(
         .SPI1DI         ( GND_net ), // tied to 1'b0 from definition
         .SPI1CLKI       ( GND_net ), // tied to 1'b0 from definition
         .SPI1SSI        ( GND_net ), // tied to 1'b0 from definition
-        .UART1RXD       ( GND_net ), // tied to 1'b0 from definition
+        .UART1RXD       ( MSS_UART_1_RXD_Y ),
         .I2C1SDAI       ( GND_net ), // tied to 1'b0 from definition
         .I2C1SCLI       ( GND_net ), // tied to 1'b0 from definition
         .MACRXD         ( MACRXD_const_net_0 ), // tied to 2'h0 from definition
@@ -374,7 +385,7 @@ MSS_ADLIB_INST(
         .SPI1CLKO       (  ),
         .SPI1MODE       (  ),
         .SPI1SSO        (  ),
-        .UART1TXD       (  ),
+        .UART1TXD       ( MSS_UART_1_TXD_D ),
         .I2C1SDAO       (  ),
         .I2C1SCLO       (  ),
         .MACTXD         (  ),
@@ -530,6 +541,28 @@ MSS_UART_0_TXD(
         .D   ( MSS_UART_0_TXD_D ),
         // Outputs
         .PAD ( UART_0_TXD_net_0 ) 
+        );
+
+//--------INBUF_MSS
+INBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "W22" ) )
+MSS_UART_1_RXD(
+        // Inputs
+        .PAD ( UART_1_RXD ),
+        // Outputs
+        .Y   ( MSS_UART_1_RXD_Y ) 
+        );
+
+//--------OUTBUF_MSS
+OUTBUF_MSS #( 
+        .ACT_CONFIG ( 0 ),
+        .ACT_PIN    ( "V20" ) )
+MSS_UART_1_TXD(
+        // Inputs
+        .D   ( MSS_UART_1_TXD_D ),
+        // Outputs
+        .PAD ( UART_1_TXD_net_0 ) 
         );
 
 

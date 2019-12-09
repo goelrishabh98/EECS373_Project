@@ -2,19 +2,21 @@ Microsemi Libero Software
 Version: 11.9.0.4
 Release: v11.9
 
-'IDE_DESIGNERVIEW_ROOTDIR' set to
-'C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\designer'
+'IDE_DESIGNERVIEW_ROOTDIR' set to 'N:\EECS373_Project\WhiteBoard_Plotter\designer'
 Info: The design WhiteboarPlotter.adb was last modified by software version 11.9.0.4.
 Opened an existing Libero design WhiteboarPlotter.adb.
-WARNING: DEFUSR table not loaded - file: C:\Users\bansarth\AppData\Roaming\Actel/designer.def
 
-The Execute Script command succeeded ( 00:00:23 )
-This program can detect if an updated version of the software is available by
-checking the Actel web-site.
+The Execute Script command succeeded ( 00:00:27 )
+Design saved to file N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter.adb.
+Wrote pin report to file:
+N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter_report_pin_byname.txt
 
-Would you like to have this check automatically done when you startup the program?
+The Report command succeeded ( 00:00:00 )
+Wrote pin report to file:
+N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter_report_pin_bynumber.txt
 
-(To change this setting later, go to the File menu and select Preferences.
-From the Updates tab, you can change your selection.) [NO]
+The Report command succeeded ( 00:00:01 )
+
+The Execute Script command succeeded ( 00:00:01 )
 Design closed.
 

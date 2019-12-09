@@ -1,9 +1,9 @@
 #Build: Synplify Pro L-2016.09M-SP1-5, Build 264R, Oct 26 2017
 #install: C:\Microsemi\Libero_SoC_v11.9\SynplifyPro
 #OS: Windows 8 6.2
-#Hostname: EECS373-04
+#Hostname: EECS373-11
 
-# Wed Dec 04 16:14:09 2019
+# Sun Dec 08 17:33:34 2019
 
 #Implementation: synthesis
 
@@ -30,7 +30,14 @@ Copyright (C) 1994-2016 Synopsys, Inc. All rights reserved. This Synopsys softwa
 @I::"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v" (library COREAPB3_LIB)
 @I::"N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.v" (library work)
 Verilog syntax check successful!
-Options changed - recompiling
+File N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v changed - recompiling
+File N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\mss_tshell.v changed - recompiling
+File N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\MSS_CCC_0\WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC.v changed - recompiling
+File N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteBoard_Plotter\WhiteBoard_Plotter.v changed - recompiling
+File N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v changed - recompiling
+File N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_iaddr_reg.v changed - recompiling
+File N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v changed - recompiling
+File N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.v changed - recompiling
 Selecting top level module WhiteboarPlotter
 @W: CG775 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":13:0:13:7|Found Component CoreAPB3 in library COREAPB3_LIB
 @N: CG364 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3_muxptob3.v":13:0:13:6|Synthesizing module CAPB3II in library COREAPB3_LIB.
@@ -208,12 +215,12 @@ Selecting top level module WhiteboarPlotter
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":690:0:690:9|Input PSLVERRS14 is unused.
 @N: CL159 :"N:\EECS373_Project\WhiteBoard_Plotter\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\core_obfuscated\coreapb3.v":692:0:692:9|Input PSLVERRS15 is unused.
 
-At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 78MB)
+At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 76MB peak: 78MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Dec 04 16:14:11 2019
+# Sun Dec 08 17:33:36 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
@@ -224,34 +231,32 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Dec 04 16:14:12 2019
+# Sun Dec 08 17:33:36 2019
 
 ###########################################################]
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 3MB peak: 4MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
+Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Dec 04 16:14:12 2019
+# Sun Dec 08 17:33:36 2019
 
 ###########################################################]
 Synopsys Netlist Linker, version comp2016q4p1, Build 512R, built Oct 26 2017
 @N|Running in 64-bit mode
-File C:\Users\bansarth\Documents\EECS373_Project\WhiteBoard_Plotter\synthesis\synwork\WhiteboarPlotter_comp.srs changed - recompiling
+File N:\EECS373_Project\WhiteBoard_Plotter\synthesis\synwork\WhiteboarPlotter_comp.srs changed - recompiling
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 70MB peak: 71MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Wed Dec 04 16:14:14 2019
+# Sun Dec 08 17:33:38 2019
 
 ###########################################################]
-Pre-mapping Report
-
-# Wed Dec 04 16:14:14 2019
+# Sun Dec 08 17:33:38 2019
 
 Synopsys Microsemi Technology Pre-mapping, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -304,12 +309,10 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 114MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Wed Dec 04 16:14:17 2019
+# Sun Dec 08 17:33:41 2019
 
 ###########################################################]
-Map & Optimize Report
-
-# Wed Dec 04 16:14:18 2019
+# Sun Dec 08 17:33:41 2019
 
 Synopsys Microsemi Technology Mapper, Version mapact, Build 2172R, Built Oct 30 2017 10:54:39
 Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
@@ -327,7 +330,7 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 
 
 
-Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
+Starting Optimization and Mapping (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 110MB peak: 111MB)
 
 @N: MO111 :"n:\eecs373_project\whiteboard_plotter\component\work\whiteboard_plotter\mss_ccc_0\whiteboard_plotter_tmp_mss_ccc_0_mss_ccc.v":64:7:64:18|Tristate driver LPXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net LPXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
 @N: MO111 :"n:\eecs373_project\whiteboard_plotter\component\work\whiteboard_plotter\mss_ccc_0\whiteboard_plotter_tmp_mss_ccc_0_mss_ccc.v":63:7:63:20|Tristate driver MAINXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) on net MAINXIN_CLKOUT (in view: work.WhiteBoard_Plotter_tmp_MSS_CCC_0_MSS_CCC(verilog)) has its enable tied to GND.
@@ -423,7 +426,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Wed Dec 04 16:14:19 2019
+# Timing Report written on Sun Dec 08 17:33:43 2019
 #
 
 
@@ -688,7 +691,7 @@ None
 Finished final timing analysis (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
+Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 111MB peak: 112MB)
 
 --------------------------------------------------------------------------------
 Target Part: A2F200M3F_FBGA484_STD
@@ -720,24 +723,24 @@ Report for cell WhiteboarPlotter.verilog
 
   IO Cell usage:
               cell count
-         INBUF_MSS     2
+         INBUF_MSS     3
             OUTBUF     4
-        OUTBUF_MSS     7
+        OUTBUF_MSS     8
                    -----
-             TOTAL    13
+             TOTAL    15
 
 
 Core Cells         : 84 of 4608 (2%)
-IO Cells           : 13
+IO Cells           : 15
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 112MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:00s; Memory used current: 27MB peak: 112MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Wed Dec 04 16:14:20 2019
+# Sun Dec 08 17:33:44 2019
 
 ###########################################################]

@@ -11,6 +11,8 @@ extern "C" {
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////// Globals //////////////////////////////////////////////////////////
+int dirLeft = CCW;
+int dirRight = CW;
 
 //all in cm
 double boardHeight;
@@ -24,64 +26,9 @@ double RadiusRight;
 
 int counter;
 double thres = .02;
+double ratio;
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////// TIMER //////////////////////////////////////////////////////////
-typedef void (*handler_t)(int);
-
-typedef struct Timer {
-    int			left;//function pointer (called after timer period)
-    uint32_t	time;//time remaining for this counter
-    uint32_t	period;//period
-    uint32_t	mode;//continuous or one shot timer
-    struct Timer*  next;//points to next timer
-    struct Timer* prev;
-} timer_tt;
-
-timer_tt *root = NULL;
-int dirLeft = CCW;
-int dirRight = CW;
-
-//used to initialize hardware
-void start_hardware_timer(){
-	// mode == 1 One shot mode == 0 continuous
-	MSS_TIM1_init(MSS_TIMER_PERIODIC_MODE);
-
-	MSS_TIM1_load_immediate(root->period);
-	MSS_TIM1_start();
-	MSS_TIM1_enable_irq();
-}
-
-void insert_timer(timer_tt* newtimer){
-
-	if(root == NULL){
-		root = newtimer;
-		return;
-	}
-
-	timer_tt* curr = root;
-	while( curr != NULL){
-		if(curr->time > newtimer->time){
-			if(curr->prev == NULL){
-				root = newtimer;
-			}
-			if(curr->prev != NULL){
-				curr->prev->next = newtimer;
-			}
-			newtimer->prev = curr->prev;
-			curr->prev = newtimer;
-			newtimer->next = curr;
-			return;
-		}
-		else{
-			if(curr->next == NULL){
-				curr->next = newtimer;
-				newtimer->prev = curr;
-				return;
-			}
-			curr = curr->next;
-		}
-	}
-}
 
 void motorLeft(int dir) {
 	step(dir, NO);
@@ -101,104 +48,42 @@ void motorRight(int dir) {
 	else if(dir == CW){
 		RadiusRight = RadiusRight - 3.8*1.8/360/16;
 	}
-
 	++counter;
 }
 
-//add a continuous (periodic) timer to linked list.
-void startTimerContinuous(int isLeft, uint32_t period){
-	timer_tt* newTimer = NULL;
-	newTimer = (timer_tt*)malloc(sizeof(struct Timer));
-	newTimer->left = isLeft;
-	newTimer->period = period;
-	newTimer->time = period;
-	newTimer->mode = 0;
-	newTimer->next = NULL;
-	newTimer->prev = NULL;
+//used to initialize hardware
+void start_hardware_timer1(){
+	MSS_TIM1_init(MSS_TIMER_PERIODIC_MODE);
 
-	insert_timer(newTimer);
+	MSS_TIM1_load_immediate(100000);
+	MSS_TIM1_start();
+	MSS_TIM1_enable_irq();
 }
-//example
-//startTimerContinuous(&led0, 50000000);
 
-//update down count with elapsed time, call fnc if timer zero, update continuous timers
-//with new down count
-void update_timers(){
-	timer_tt *curr = root;
-	curr = curr->next;
-	while(curr != NULL){
-		curr->time = curr->time - root->time;
-		curr = curr->next;
-	}
-	if(root->next == NULL){
-		if(!root->mode){
-			root->time = root->period;
-			return;
-		}
-		else{
-			root = NULL;
-			return;
-		}
-	}
-	timer_tt *temp = root;
-	root = root->next;
-	temp->next = NULL;
-	root->prev = NULL;
-	if(!temp->mode){
-		startTimerContinuous(temp->left, temp->period);
-		free(temp);
-		return;
-	}
-	return;
+void start_hardware_timer2(){
+	MSS_TIM2_init(MSS_TIMER_PERIODIC_MODE);
+
+	MSS_TIM2_load_immediate(100000 * ratio);
+	MSS_TIM2_start();
+	MSS_TIM2_enable_irq();
 }
 
 void Timer1_IRQHandler( void ){
-
-	if(root->left){
-		motorLeft(dirLeft);
-	}
-	else{
-		motorRight(dirRight);
-	}
-	update_timers();
-
-	timer_tt* temp = root;
-	while(temp != NULL){
-		int not_change = 0;
-		if(temp->time == 0){
-			if(root->left){
-				motorLeft(dirLeft);
-			}
-			else{
-				motorRight(dirRight);
-			}
-			update_timers();
-			not_change = 1;
-		}
-		if(not_change){
-			temp = root;
-		}
-		else{
-			temp = temp->next;
-		}
-	}
+	motorLeft(dirLeft);
 
 	MSS_TIM1_clear_irq();
-	MSS_TIM1_load_immediate(root->time);
-	start_hardware_timer();
-};
+	MSS_TIM1_load_immediate(100000);
+	MSS_TIM1_start();
+	MSS_TIM1_enable_irq();
+}
 
-void clearTimers(){
-	if(root != NULL){
-		timer_tt *temp = root;
-		root = root->next;
-		free(temp);
-		while(root != NULL){
-			temp = root;
-			root = root->next;
-			free(temp);
-		}
-	}
+void Timer2_IRQHandler( void ){
+	motorRight(dirRight);
+
+	MSS_TIM2_clear_irq();
+	MSS_TIM2_load_immediate(100000 * ratio);
+	MSS_TIM2_start();
+	MSS_TIM2_enable_irq();
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -218,8 +103,8 @@ void interfaceConfig(double height, double width){
 }
 
 void makeLine(double relX, double relY){
-	double endX = relX;
-	double endY = relY;
+	double endX = relX + xPos;
+	double endY = relY + yPos;
 	int dirL = calculateMotorDir(xPos, yPos, endX, endY, 0);
 	int dirR = calculateMotorDir(xPos, yPos, endX, endY, 1);
 	while(1){
@@ -231,26 +116,22 @@ void makeLine(double relX, double relY){
 		double rateChangeR = RadiusRight - newRR;
 		if(rateChangeL < 0) rateChangeL = rateChangeL * -1;
 		if(rateChangeR < 0) rateChangeR = rateChangeR * -1;
-		double ratio = rateChangeL/rateChangeR;
+		ratio = rateChangeL/rateChangeR;
 
 		if(fabs(newRL - RadiusLeft) <= thres && fabs(newRR - RadiusRight) > thres){
-			dirL = NO;
+			dirLeft = NO;
 			ratio = 1;
 		}
 		else if(fabs(newRL - RadiusLeft) > thres && fabs(newRR - RadiusRight) <= thres){
-			dirR = NO;
+			dirRight = NO;
 			ratio = 1;
 		}
 		else if(fabs(newRL - RadiusLeft) <= thres && fabs(newRR - RadiusRight) <= thres) {
 			break;
 		}
 
-
-
-		clearTimers();
-		startTimerContinuous(1, 100000);
-		startTimerContinuous(0, 100000*ratio);
-		start_hardware_timer();
+		start_hardware_timer1();
+		start_hardware_timer2();
 		while(1){
 			if(counter >= 10){
 				counter = 0;
