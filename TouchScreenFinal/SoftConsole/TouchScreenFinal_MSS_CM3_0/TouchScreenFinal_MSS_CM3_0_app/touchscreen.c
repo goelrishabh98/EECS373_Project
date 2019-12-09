@@ -55,7 +55,7 @@ void touchscreen_begin(){
 
 }
 int16_t getX(){
-	int sample;
+	int samples[2];
 	MSS_GPIO_set_output(yn, 0);
 	MSS_GPIO_config(yp, MSS_GPIO_INPUT_MODE);
 	MSS_GPIO_config(yn, MSS_GPIO_INPUT_MODE);
@@ -64,15 +64,23 @@ int16_t getX(){
 
 	MSS_GPIO_set_output(xp, 1);
 	MSS_GPIO_set_output(xn, 0);
-	delayMicro(20);
+	delayMicro(500);
 
-	sample = ACE_get_ppe_sample(ace_y);
+	samples[0] = ACE_get_ppe_sample(ace_y);
+	samples[1] = ACE_get_ppe_sample(ace_y);
+
+	if (samples[0] - samples[1] < -4 || samples[0] - samples[1] > 4) {
+	  return -1;
+   } else {
+	 samples[1] = (samples[0] + samples[1]) >> 1; // average 2 samples
+   }
+
 	MSS_GPIO_set_output(xp, 0);
-	return ((sample/4080.0f)*240);
+	return ((samples[1]/4080.0f)*240);
 }
 
 int16_t getY(){
-	int sample;
+	int samples[2];
 
 	MSS_GPIO_config(yp, MSS_GPIO_OUTPUT_MODE);
 	MSS_GPIO_config(yn, MSS_GPIO_OUTPUT_MODE);
@@ -82,12 +90,20 @@ int16_t getY(){
 	MSS_GPIO_set_output(yp, 1);
 	MSS_GPIO_set_output(yn, 0);
 
-	delayMicro(20);
+	delayMicro(500);
 
-	sample = ACE_get_ppe_sample(ace_x);
+	samples[0] = ACE_get_ppe_sample(ace_x);
+	samples[1] = ACE_get_ppe_sample(ace_x);
+
+    if (samples[0] - samples[1] < -4 || samples[0] - samples[1] > 4) {
+	  return -1;
+   } else {
+	 samples[1] = (samples[0] + samples[1]) >> 1; // average 2 samples
+   }
+
 	MSS_GPIO_set_output(yp, 0);
 
-	return ((sample/4080.0f)*320);
+	return ((samples[1]/4080.0f)*320);
 }
 
 int16_t getZ(uint16_t x){
@@ -156,8 +172,23 @@ void drawFillScreen(uint16_t color){
 }
 
 void drawText1(uint16_t color){
-	drawRectanglePixel(40, 200, 5, 20, color);
-	drawRectanglePixel(40, 210, 35, 5, color);
+	drawRectanglePixel(40, 210, 5, 25, color);
+	drawRectanglePixel(40, 220, 30, 5, color);
+
+
+}
+
+void drawText2(uint16_t color){
+	drawRectanglePixel(40, 110, 5, 20, color);
+	drawRectanglePixel(40, 130, 30, 5, color);
+	drawRectanglePixel(65, 110, 5, 20, color);
+
+}
+
+void drawText3(uint16_t color){
+	drawRectanglePixel(160, 160, 30, 5, color);
+	drawRectanglePixel(160, 160, 5, 20, color);
+	drawRectanglePixel(165, 160, 5, 20, color);
 }
 
 void setAddr(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1){

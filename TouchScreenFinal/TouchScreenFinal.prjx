@@ -243,8 +243,8 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\touch.adb,adb"
 STATE="utd"
-TIME="1575777724"
-SIZE="297472"
+TIME="1575777966"
+SIZE="297984"
 ENDFILE
 VALUE "<project>\designer\impl1\touch.fdb,fdb"
 STATE="utd"
@@ -253,8 +253,8 @@ SIZE="32680"
 ENDFILE
 VALUE "<project>\designer\impl1\touch.ide_des,ide_des"
 STATE="utd"
-TIME="1575777724"
-SIZE="1039"
+TIME="1575777966"
+SIZE="1060"
 ENDFILE
 VALUE "<project>\designer\impl1\TouchScreenFinal.ide_des,ide_des"
 STATE="utd"
@@ -263,23 +263,23 @@ SIZE="203"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_compile_log.rpt,log"
 STATE="utd"
-TIME="1575777724"
-SIZE="31370"
+TIME="1575777936"
+SIZE="31412"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_fp\projectData\touch.pdb,pdb"
 STATE="utd"
-TIME="1575777724"
-SIZE="38578"
+TIME="1575778114"
+SIZE="38611"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_fp\touch.pdb,pdb"
 STATE="utd"
-TIME="1575777724"
-SIZE="38578"
+TIME="1575778072"
+SIZE="38611"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_fp\touch.pro,pro"
 STATE="utd"
-TIME="1575777724"
-SIZE="2365"
+TIME="1575778114"
+SIZE="2386"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_placeroute_log.rpt,log"
 STATE="utd"
@@ -322,23 +322,23 @@ PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\synthesis\touch.edn,syn_edn"
 STATE="utd"
-TIME="1575777726"
-SIZE="109797"
+TIME="1575777924"
+SIZE="109796"
 ENDFILE
 VALUE "<project>\synthesis\touch.so,so"
 STATE="utd"
-TIME="1575777726"
-SIZE="215"
+TIME="1575777924"
+SIZE="222"
 ENDFILE
 VALUE "<project>\synthesis\touch_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1575777726"
+TIME="1575777924"
 SIZE="310"
 ENDFILE
 VALUE "<project>\synthesis\touch_syn.prj,prj"
 STATE="utd"
-TIME="1575777728"
-SIZE="2178"
+TIME="1575777926"
+SIZE="2220"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -459,8 +459,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -525,7 +525,7 @@ ReportsCurrentItem;Program Device:touch_program.log
 StartPage;StartPage;0
 SmartDesign;TouchScreenFinal;0
 SmartDesign;touch;0
-ACTIVEVIEW;Reports
+ACTIVEVIEW;TouchScreenFinal
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"

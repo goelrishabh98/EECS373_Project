@@ -9,7 +9,10 @@ main.d main.o: ../main.c ../touchscreen.h \
  D:\GitHub\EECS373_Project\TouchScreenFinal\SoftConsole\TouchScreenFinal_MSS_CM3_0\TouchScreenFinal_MSS_CM3_0_hw_platform/drivers/mss_gpio/mss_gpio.h \
  D:\GitHub\EECS373_Project\TouchScreenFinal\SoftConsole\TouchScreenFinal_MSS_CM3_0\TouchScreenFinal_MSS_CM3_0_hw_platform/drivers/mss_gpio/../../CMSIS/a2fxxxm3.h \
  D:\GitHub\EECS373_Project\TouchScreenFinal\SoftConsole\TouchScreenFinal_MSS_CM3_0\TouchScreenFinal_MSS_CM3_0_hw_platform/drivers/mss_timer/mss_timer.h \
- D:\GitHub\EECS373_Project\TouchScreenFinal\SoftConsole\TouchScreenFinal_MSS_CM3_0\TouchScreenFinal_MSS_CM3_0_hw_platform/drivers/mss_timer/../../CMSIS/a2fxxxm3.h
+ D:\GitHub\EECS373_Project\TouchScreenFinal\SoftConsole\TouchScreenFinal_MSS_CM3_0\TouchScreenFinal_MSS_CM3_0_hw_platform/drivers/mss_timer/../../CMSIS/a2fxxxm3.h \
+ ../xbee.h \
+ D:\GitHub\EECS373_Project\TouchScreenFinal\SoftConsole\TouchScreenFinal_MSS_CM3_0\TouchScreenFinal_MSS_CM3_0_hw_platform/drivers/mss_uart/mss_uart.h \
+ D:\GitHub\EECS373_Project\TouchScreenFinal\SoftConsole\TouchScreenFinal_MSS_CM3_0\TouchScreenFinal_MSS_CM3_0_hw_platform/drivers/mss_uart/../../CMSIS/a2fxxxm3.h
 
 ../touchscreen.h:
 
@@ -34,3 +37,9 @@ D:\GitHub\EECS373_Project\TouchScreenFinal\SoftConsole\TouchScreenFinal_MSS_CM3_
 D:\GitHub\EECS373_Project\TouchScreenFinal\SoftConsole\TouchScreenFinal_MSS_CM3_0\TouchScreenFinal_MSS_CM3_0_hw_platform/drivers/mss_timer/mss_timer.h:
 
 D:\GitHub\EECS373_Project\TouchScreenFinal\SoftConsole\TouchScreenFinal_MSS_CM3_0\TouchScreenFinal_MSS_CM3_0_hw_platform/drivers/mss_timer/../../CMSIS/a2fxxxm3.h:
+
+../xbee.h:
+
+D:\GitHub\EECS373_Project\TouchScreenFinal\SoftConsole\TouchScreenFinal_MSS_CM3_0\TouchScreenFinal_MSS_CM3_0_hw_platform/drivers/mss_uart/mss_uart.h:
+
+D:\GitHub\EECS373_Project\TouchScreenFinal\SoftConsole\TouchScreenFinal_MSS_CM3_0\TouchScreenFinal_MSS_CM3_0_hw_platform/drivers/mss_uart/../../CMSIS/a2fxxxm3.h:
