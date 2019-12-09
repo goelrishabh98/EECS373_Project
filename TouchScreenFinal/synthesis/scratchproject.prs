@@ -1,18 +1,18 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09M-SP1-5
-#--  Project file D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\scratchproject.prs
+#--  Project file E:\Github\EECS373_Project\TouchScreenFinal\synthesis\scratchproject.prs
 
 #project files
-add_file -verilog "D:/GitHub/EECS373_Project/TouchScreenFinal/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v"
-add_file -verilog "D:/GitHub/EECS373_Project/TouchScreenFinal/component/work/TouchScreenFinal/mss_tshell.v"
-add_file -verilog "D:/GitHub/EECS373_Project/TouchScreenFinal/component/work/TouchScreenFinal/MSS_CCC_0/TouchScreenFinal_tmp_MSS_CCC_0_MSS_CCC.v"
-add_file -verilog "D:/GitHub/EECS373_Project/TouchScreenFinal/component/work/TouchScreenFinal/TouchScreenFinal.v"
-add_file -verilog "D:/GitHub/EECS373_Project/TouchScreenFinal/component/work/touch/touch.v"
+add_file -verilog "E:/Github/EECS373_Project/TouchScreenFinal/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v"
+add_file -verilog "E:/Github/EECS373_Project/TouchScreenFinal/component/work/TouchScreenFinal/mss_tshell.v"
+add_file -verilog "E:/Github/EECS373_Project/TouchScreenFinal/component/work/TouchScreenFinal/MSS_CCC_0/TouchScreenFinal_tmp_MSS_CCC_0_MSS_CCC.v"
+add_file -verilog "E:/Github/EECS373_Project/TouchScreenFinal/component/work/TouchScreenFinal/TouchScreenFinal.v"
+add_file -verilog "E:/Github/EECS373_Project/TouchScreenFinal/component/work/touch/touch.v"
 
 
 
 #implementation: "synthesis"
-impl -add D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis -type fpga
+impl -add E:\Github\EECS373_Project\TouchScreenFinal\synthesis -type fpga
 
 #
 #implementation attributes
@@ -74,5 +74,5 @@ set_option -auto_infer_blackbox 0
 set_option -write_apr_constraint 1
 
 #set result format/file last
-project -result_file "D:/GitHub/EECS373_Project/TouchScreenFinal/synthesis/touch.edn"
+project -result_file "E:/Github/EECS373_Project/TouchScreenFinal/synthesis/touch.edn"
 impl -active "synthesis"

@@ -1,6 +1,7 @@
 KEY IDE_DES_TOOL "Ide"
-KEY IDE_DES_ADB_PATH "N:\EECS373_Project\TouchScreenFinal\designer\impl1\TouchScreenFinal.adb"
+KEY IDE_DES_ADB_PATH "E:\Github\EECS373_Project\TouchScreenFinal\designer\impl1\TouchScreenFinal.adb"
 LIST SOURCE_FILES
+VALUE "E:\Github\EECS373_Project\TouchScreenFinal\component\work\TouchScreenFinal\TouchScreenFinal.pdc;pdc"
 ENDLIST
 LIST OPTIONAL_FILES
 ENDLIST

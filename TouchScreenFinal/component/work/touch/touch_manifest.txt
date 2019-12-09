@@ -1,14 +1,14 @@
 Microsemi Corporation - Microsemi Libero Software Release v11.9 (Version 11.9.0.4)
 
-Date      :  Fri Dec 06 18:32:12 2019
-Project   :  N:\EECS373_Project\TouchScreenFinal
+Date      :  Mon Dec 09 16:03:50 2019
+Project   :  E:\Github\EECS373_Project\TouchScreenFinal
 Component :  touch
 Family    :  SmartFusion
 
 
 HDL source files for all Synthesis and Simulation tools:
-    N:/EECS373_Project/TouchScreenFinal/component/work/touch/touch.v
+    E:/Github/EECS373_Project/TouchScreenFinal/component/work/touch/touch.v
 
 Stimulus files for all Simulation tools:
-    N:/EECS373_Project/TouchScreenFinal/component/work/touch/subsystem.bfm
+    E:/Github/EECS373_Project/TouchScreenFinal/component/work/touch/subsystem.bfm
 

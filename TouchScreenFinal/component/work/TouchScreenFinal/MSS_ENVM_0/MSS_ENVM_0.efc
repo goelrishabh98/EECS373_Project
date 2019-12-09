@@ -214,13 +214,13 @@
         <region name="ACTEL_AB_MSS_CONFIG" address="0x083e00" retrieveAddressFromFile="false" size="208" format="HEX" type="Data Storage" wordSize="32" numberWords="52" memFile="" memType="" memFileTimeStamp="" clientType="private" program="true">
             0000008c000000000000000c000000000000000000000000001f1f004245
             45007e7f0100000002000008200100e1f505010000d2000000000000001e
-            1a0707000500100005001000000000002bacb0c20a1828b0c20a00280000
-            001828b0c20a2bacb0c20a2bacb0c20a2b60b0c20a2bac0000000000b0c2
+            1a070700050010000500100000000a002bacb0c20a1828b0c20a00280000
+            0018280000002bacb0c20a2bacb0c20a2b60b0c20a2bac0000000000b0c2
             0a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c2
             0a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c20a2bacb0c20a2bacb002
-            00000000789a080090d0331180fc03036cff73005177108fd6900f4d
+            00000000788a080090d0331180fc03036cff73005177108fd690fc75
             <crc>
-                a2be
+                7d6e
             </crc>
         </region>
         <region name="ACTEL_PPE_MERGE_CONFIG" address="0x07f900" retrieveAddressFromFile="false" size="192" format="HEX" type="Data Storage" wordSize="32" numberWords="48" memFile="" memType="" memFileTimeStamp="" clientType="private" program="true">

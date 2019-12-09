@@ -20,10 +20,10 @@ KEY IDE_DES_BLOCK_PUBLISH "FALSE"
 KEY IDE_DES_BA_EXPORTED "FALSE"
 KEY IDE_DES_INTERACTIVE "FALSE"
 KEY IDE_DES_ERROR_FOUND "FALSE"
-KEY IDE_DES_ADB_PATH "D:\GitHub\EECS373_Project\TouchScreenFinal\designer\impl1\touch.adb"
+KEY IDE_DES_ADB_PATH "E:\Github\EECS373_Project\TouchScreenFinal\designer\impl1\touch.adb"
 LIST SOURCE_FILES
-VALUE "D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\touch.edn;edn"
-VALUE "D:\GitHub\EECS373_Project\TouchScreenFinal\component\work\touch\touch.pdc;pdc"
+VALUE "E:\Github\EECS373_Project\TouchScreenFinal\synthesis\touch.edn;edn"
+VALUE "E:\Github\EECS373_Project\TouchScreenFinal\component\work\touch\touch.pdc;pdc"
 ENDLIST
 LIST OPTIONAL_FILES
 ENDLIST

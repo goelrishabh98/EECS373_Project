@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Fri Dec 06 18:31:48 2019
+// Created by SmartDesign Mon Dec 09 16:03:48 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -28,6 +28,8 @@ module touch(
     GPIO_6_BI,
     GPIO_7_BI,
     GPIO_8_BI,
+    I2C_1_SCL,
+    I2C_1_SDA,
     SPI_1_CLK,
     SPI_1_SS
 );
@@ -59,6 +61,8 @@ inout  GPIO_5_BI;
 inout  GPIO_6_BI;
 inout  GPIO_7_BI;
 inout  GPIO_8_BI;
+inout  I2C_1_SCL;
+inout  I2C_1_SDA;
 inout  SPI_1_CLK;
 inout  SPI_1_SS;
 //--------------------------------------------------------------------
@@ -71,6 +75,8 @@ wire   GPIO_5_BI;
 wire   GPIO_6_BI;
 wire   GPIO_7_BI;
 wire   GPIO_8_BI;
+wire   I2C_1_SCL;
+wire   I2C_1_SDA;
 wire   MSS_RESET_N;
 wire   SDD_0_net_0;
 wire   SDD_1_net_0;
@@ -132,7 +138,9 @@ TouchScreenFinal TouchScreenFinal_0(
         .GPIO_8_BI        ( GPIO_8_BI ),
         .GPIO_7_BI        ( GPIO_7_BI ),
         .GPIO_6_BI        ( GPIO_6_BI ),
-        .GPIO_5_BI        ( GPIO_5_BI ) 
+        .GPIO_5_BI        ( GPIO_5_BI ),
+        .I2C_1_SCL        ( I2C_1_SCL ),
+        .I2C_1_SDA        ( I2C_1_SDA ) 
         );
 
 
