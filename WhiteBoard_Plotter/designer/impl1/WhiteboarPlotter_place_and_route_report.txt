@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Sun Dec 08 17:34:19 2019 ***************************************************************************
+                          Mon Dec 09 16:14:55 2019 ***************************************************************************
 
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
 File Name: N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter.adb
 Design Name: WhiteboarPlotter  Design State: layout
-Last Saved: Sun Dec 08 17:34:02 2019
+Last Saved: Mon Dec 09 16:12:59 2019
 
 ***** Device Data **************************************************
 
@@ -566,16 +566,16 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Sun Dec 08 17:34:10 2019
+Timing-driven Placer Started: Mon Dec 09 16:14:45 2019
 
-Placer Finished: Sun Dec 08 17:34:11 2019
-Total Placer CPU Time:     00:00:01
+Placer Finished: Mon Dec 09 16:14:47 2019
+Total Placer CPU Time:     00:00:02
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: WhiteboarPlotter                Started: Sun Dec 08 17:34:13 2019
+Design: WhiteboarPlotter                Started: Mon Dec 09 16:14:49 2019
 
  
 Iterative improvement...
@@ -583,9 +583,9 @@ Iterative improvement...
 Timing-driven Router completed successfully.
 
 Design: WhiteboarPlotter                
-Finished: Sun Dec 08 17:34:17 2019
+Finished: Mon Dec 09 16:14:53 2019
 Total CPU Time:     00:00:02            Total Elapsed Time: 00:00:04
-Total Memory Usage: 166.2 Mbytes
+Total Memory Usage: 166.1 Mbytes
                         o - o - o - o - o - o
 
 

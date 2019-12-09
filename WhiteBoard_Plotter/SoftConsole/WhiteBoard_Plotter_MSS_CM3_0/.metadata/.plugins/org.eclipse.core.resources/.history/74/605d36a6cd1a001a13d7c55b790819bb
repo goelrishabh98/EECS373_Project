@@ -1,0 +1,188 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+#include "stepper.h"
+#include "mss_timer.h"
+#include <math.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include "TouchScreenInterpreter.h"
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////// Globals //////////////////////////////////////////////////////////
+int dirLeft = CCW;
+int dirRight = CW;
+
+//all in cm
+double boardHeight;
+double boardWidth;
+
+double xPos;
+double yPos;
+
+double RadiusLeft;
+double RadiusRight;
+
+int counter;
+double thres = .002;
+double ratio;
+//////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////// TIMER //////////////////////////////////////////////////////////
+
+void motorLeft(int dir) {
+	step(dir, NO);
+	if(dir == CW){
+		RadiusLeft = RadiusLeft + 3.8*1.8/360/16;
+	}
+	else if(dir == CCW){
+		RadiusLeft = RadiusLeft - 3.8*1.8/360/16;
+	}
+	++counter;
+}
+void motorRight(int dir) {
+	step(NO, dir);
+	if(dir == CCW){
+		RadiusRight = RadiusRight + 3.8*1.8/360/16;
+	}
+	else if(dir == CW){
+		RadiusRight = RadiusRight - 3.8*1.8/360/16;
+	}
+	++counter;
+}
+
+//used to initialize hardware
+void start_hardware_timer1(){
+	MSS_TIM1_init(MSS_TIMER_PERIODIC_MODE);
+
+	MSS_TIM1_load_immediate(100000);
+	MSS_TIM1_start();
+	MSS_TIM1_enable_irq();
+}
+
+void start_hardware_timer2(){
+	MSS_TIM2_init(MSS_TIMER_PERIODIC_MODE);
+
+	MSS_TIM2_load_immediate(100000 * ratio);
+	MSS_TIM2_start();
+	MSS_TIM2_enable_irq();
+}
+
+void Timer1_IRQHandler( void ){
+	motorLeft(dirLeft);
+
+	MSS_TIM1_clear_irq();
+	MSS_TIM1_load_immediate(100000);
+	MSS_TIM1_start();
+	MSS_TIM1_enable_irq();
+}
+
+void Timer2_IRQHandler( void ){
+	motorRight(dirRight);
+
+	MSS_TIM2_clear_irq();
+	MSS_TIM2_load_immediate(100000 * ratio);
+	MSS_TIM2_start();
+	MSS_TIM2_enable_irq();
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////// INTERFACE //////////////////////////////////////////////////////////
+
+void interfaceConfig(double height, double width){
+	boardHeight = height;
+	boardWidth = width;
+
+	xPos = boardWidth/2;
+	yPos = boardHeight/2;
+
+	RadiusLeft = sqrt(pow(xPos, 2) + pow(yPos, 2));
+	RadiusRight = sqrt(pow(boardWidth - xPos, 2) + pow(yPos, 2));
+
+	counter = 0;
+}
+
+void makeLine(double relX, double relY){
+	double endX = relX + xPos;
+	double endY = relY + yPos;
+	int dirL = calculateMotorDir(xPos, yPos, endX, endY, 0);
+	int dirR = calculateMotorDir(xPos, yPos, endX, endY, 1);
+	while(1){
+		dirLeft = dirL;
+		dirRight = dirR;
+		double newRL = sqrt(pow(endX, 2) + pow(endY, 2));
+		double newRR = sqrt(pow(boardWidth - endX, 2) + pow(endY, 2));
+		double rateChangeL = RadiusLeft - newRL;
+		double rateChangeR = RadiusRight - newRR;
+		if(rateChangeL < 0) rateChangeL = rateChangeL * -1;
+		if(rateChangeR < 0) rateChangeR = rateChangeR * -1;
+		ratio = rateChangeL/rateChangeR;
+
+		if(fabs(newRL - RadiusLeft) <= thres && fabs(newRR - RadiusRight) > thres){
+			dirLeft = NO;
+			ratio = 1;
+		}
+		else if(fabs(newRL - RadiusLeft) > thres && fabs(newRR - RadiusRight) <= thres){
+			dirRight = NO;
+			ratio = 1;
+		}
+		else if(fabs(newRL - RadiusLeft) <= thres && fabs(newRR - RadiusRight) <= thres) {
+			break;
+		}
+
+		start_hardware_timer1();
+		start_hardware_timer2();
+		while(1){
+			if(counter >= 10){
+				counter = 0;
+				break;
+			}
+		}
+	}
+	xPos = (pow(RadiusLeft, 2) - pow(RadiusRight, 2) + pow(boardWidth, 2))/(2*boardWidth);
+	yPos = sqrt(pow(RadiusLeft, 2) - pow(xPos, 2));
+}
+
+void returnToCenter(){
+	double disX = 42.5 - xPos;
+	double disY = 28.5 - yPos;
+	makeLine(disX, disY);
+}
+
+void returnToPoint(double x, double y){
+	double disX = x - xPos;
+	double disY = y - yPos;
+	makeLine(disX, disY);
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////// HARDCODING /////////////////////////////////////////////////////////
+
+void letterA(double height){
+	makeLine(height * cos(60), -height * sin(60));
+	makeLine(height * cos(60), height * sin(60));
+	makeLine(-height * cos(60) * .5, -height * sin(60) * .5);
+	makeLine(-height * cos(60) * .5, 0);
+}
+
+void letterI(double height){
+	makeLine(height * .5, 0);
+	makeLine(-height * .25, 0);
+	makeLine(0, height);
+	makeLine(-height * .25, 0);
+	makeLine(height * .5, 0);
+}
+
+void letterE(double height){
+	makeLine(height * .5, 0);
+	makeLine(-height * .5, 0);
+	makeLine(0, -height);
+	makeLine(height * .5, 0);
+	makeLine(-height * .5, 0);
+	makeLine(0, height * .5);
+	makeLine(height * .5, 0);
+	makeLine(-height * .5, 0);
+}
+
+#ifdef __cplusplus
+}
+#endif

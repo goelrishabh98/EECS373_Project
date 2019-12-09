@@ -538,3 +538,16 @@ else if(character == 'z') {
 	sendMessage(&servoRetract, 1, 0x373A);
 	makeLine(1.0, 1.0);
 }
+else if(character == ' '){
+	makeLine(5, 0);
+}
+else if(character == '['){
+	makeLine(2, -1);
+	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine(0, -6);
+	makeLine(6, 0);
+	makeLine(0, 6);
+	makeLine(-6, 0);
+	sendMessage(&servoRetract, 1, 0x373A);
+	makeLine(8, 1);
+}

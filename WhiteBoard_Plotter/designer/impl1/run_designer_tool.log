@@ -6,17 +6,18 @@ Release: v11.9
 Info: The design WhiteboarPlotter.adb was last modified by software version 11.9.0.4.
 Opened an existing Libero design WhiteboarPlotter.adb.
 
-The Execute Script command succeeded ( 00:00:27 )
+The Execute Script command succeeded ( 00:00:06 )
+Checking for software updates...
 Design saved to file N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter.adb.
 Wrote pin report to file:
 N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter_report_pin_byname.txt
 
-The Report command succeeded ( 00:00:00 )
+The Report command succeeded ( 00:00:01 )
 Wrote pin report to file:
 N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:01 )
 
-The Execute Script command succeeded ( 00:00:01 )
+The Execute Script command succeeded ( 00:00:02 )
 Design closed.
 

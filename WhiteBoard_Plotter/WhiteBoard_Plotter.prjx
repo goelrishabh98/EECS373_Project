@@ -364,8 +364,8 @@ SIZE="37603"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteBoard_Plotter.ide_des,ide_des"
 STATE="utd"
-TIME="1575493912"
-SIZE="999"
+TIME="1575844300"
+SIZE="1102"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteBoard_Plotter_compile_log.rpt,log"
 STATE="utd"
@@ -389,8 +389,8 @@ SIZE="1229"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter.adb,adb"
 STATE="utd"
-TIME="1575494120"
-SIZE="349696"
+TIME="1575844486"
+SIZE="352256"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter.fdb,fdb"
 STATE="utd"
@@ -399,28 +399,28 @@ SIZE="36261"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter.ide_des,ide_des"
 STATE="utd"
-TIME="1575494120"
-SIZE="1201"
+TIME="1575844486"
+SIZE="1203"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter_compile_log.rpt,log"
 STATE="utd"
-TIME="1575494077"
-SIZE="34969"
+TIME="1575844442"
+SIZE="34885"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter_fp\projectData\WhiteboarPlotter.pdb,pdb"
 STATE="utd"
-TIME="1575494186"
-SIZE="41844"
+TIME="1575921172"
+SIZE="41796"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter_fp\WhiteboarPlotter.pdb,pdb"
 STATE="utd"
-TIME="1575494147"
-SIZE="41844"
+TIME="1575921172"
+SIZE="41796"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter_fp\WhiteboarPlotter.pro,pro"
 STATE="utd"
-TIME="1575834370"
-SIZE="2514"
+TIME="1575920315"
+SIZE="2448"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter_placeroute_log.rpt,log"
 STATE="utd"
@@ -500,28 +500,28 @@ SIZE="512"
 ENDFILE
 VALUE "<project>\synthesis\WhiteBoard_Plotter_syn.prj,prj"
 STATE="utd"
-TIME="1575834370"
-SIZE="2398"
+TIME="1575834411"
+SIZE="2266"
 ENDFILE
 VALUE "<project>\synthesis\WhiteboarPlotter.edn,syn_edn"
 STATE="utd"
-TIME="1575494059"
-SIZE="143233"
+TIME="1575844423"
+SIZE="144660"
 ENDFILE
 VALUE "<project>\synthesis\WhiteboarPlotter.so,so"
 STATE="utd"
-TIME="1575494059"
+TIME="1575844423"
 SIZE="239"
 ENDFILE
 VALUE "<project>\synthesis\WhiteboarPlotter_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1575494059"
+TIME="1575844423"
 SIZE="554"
 ENDFILE
 VALUE "<project>\synthesis\WhiteboarPlotter_syn.prj,prj"
 STATE="utd"
-TIME="1575834370"
-SIZE="0"
+TIME="1575844424"
+SIZE="2941"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -595,6 +595,18 @@ VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\b
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslaveext.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\amba_bfm\bfm_apbslave.v,tb_hdl"
 VALUE "<project>\component\Actel\DirectCore\CoreAPB3\4.1.100\rtl\vlog\test\user\testbench.v,tb_hdl"
+ENDLIST
+LIST ProjectState5.1
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
 ENDLIST
 ENDLIST
 ENDLIST
@@ -701,8 +713,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -749,6 +761,18 @@ Used_File_List
 ENDUsed_File_List
 ENDLIST
 ENDLIST
+LIST "CoreAPB3::COREAPB3_LIB"
+LIST Impl1
+ideSTIMULUS=StateSuccess
+LIST FlowOptions
+UsePhySynth=FALSE
+UseSynth=TRUE
+UseFhbAutoInst=FALSE
+ENDLIST
+Used_File_List
+ENDUsed_File_List
+ENDLIST
+ENDLIST
 ENDLIST
 LIST ExcludePackageForSimulation
 ENDLIST
@@ -762,12 +786,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Generate Programming Data:WhiteboarPlotter_prgdata_log.rpt
 StartPage;StartPage;0
-SmartDesign;WhiteboarPlotter;0
-SmartDesign;WhiteBoard_Plotter;0
-ACTIVEVIEW;Reports
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"

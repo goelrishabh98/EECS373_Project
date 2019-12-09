@@ -8,7 +8,11 @@ int main(){
 	stepper_config(SIXTEENTH, SIXTEENTH);
 	interfaceConfig(57, 85);
 
-	uint8_t servoExtend[1] = "e";
+	makeLine(-5, 5);
+	makeLine(15, 0.0);
+	returnToCenter();
+
+	/*uint8_t servoExtend[1] = "e";
 	uint8_t servoRetract[1] = "r";
 	MSS_UART_init(&g_mss_uart1, MSS_UART_57600_BAUD, MSS_UART_DATA_8_BITS | MSS_UART_NO_PARITY | MSS_UART_ONE_STOP_BIT);
 	MSS_UART_set_rx_handler( &g_mss_uart1, uart1_rx_handler, MSS_UART_FIFO_SINGLE_BYTE);
@@ -20,7 +24,7 @@ int main(){
 		a = 1;
 		sendMessage(&servoExtend, 1, 0x373A);
 		a = 1;
-	}
+	}*/
 	/*
 	makeLine(2.0, -0.7);
 	sendMessage(servoExtend, 1, 0x373A);
