@@ -195,12 +195,10 @@ else if(character == '9') {
 	makeLine(1.0, 3.5);
 }
 else if(character == 'A') {
-	makeLine(47.91, 18.305);
-	makeLine(53.91, 27.305);
-	sendMessage(&servoRetract, 1, 0x373A);
-	makeLine(50.91, 22.805);
-	sendMessage(&servoExtend, 1, 0x373A);
-	makeLine(44.91, 22.805);
+	makeLine();
+	makeLine();
+	makeLine();
+	makeLine();
 }
 else if(character == 'B') {
 	makeLine();
@@ -222,13 +220,9 @@ else if(character == 'D') {
 }
 else if(character == 'E') {
 	makeLine();
-	sendMessage(&servoRetract, 1, 0x373A);
-	makeLine();
-	sendMessage(&servoExtend, 1, 0x373A);
 	makeLine();
 	makeLine();
-	sendMessage(&servoRetract, 1, 0x373A);
-	sendMessage(&servoExtend, 1, 0x373A);
+	makeLine();
 }
 else if(character == 'F') {
 	makeLine();
