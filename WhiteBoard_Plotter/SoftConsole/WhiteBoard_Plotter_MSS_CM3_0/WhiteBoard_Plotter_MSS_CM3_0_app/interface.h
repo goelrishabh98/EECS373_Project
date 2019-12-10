@@ -903,7 +903,7 @@ void drawCharacter(uint8_t character) {
 		makeLine(2, 4);
 	}
 }
-
+/*
 void letterA(double height){
 	makeLine(height * cos(60), -height * sin(60));
 	makeLine(height * cos(60), height * sin(60));
@@ -929,7 +929,7 @@ void letterE(double height){
 	makeLine(height * .5, 0);
 	makeLine(-height * .5, 0);
 }
-
+*/
 #ifdef __cplusplus
 }
 #endif
