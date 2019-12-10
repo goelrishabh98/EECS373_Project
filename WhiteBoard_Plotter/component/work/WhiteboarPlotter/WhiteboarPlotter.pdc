@@ -3,7 +3,7 @@
 
 # Version: v11.9 11.9.0.4
 # Family: SmartFusion , Die: A2F200M3F , Package: 484 FBGA
-# Date generated: Sun Dec 08 17:32:33 2019 
+# Date generated: Tue Dec 10 11:18:40 2019 
 
 
 # 
@@ -36,24 +36,71 @@ define_group -name UART_1_PADs
 # Dedicated Peripheral I/O Settings
 # 
 
-# User Group UART_1_PADs
-
-set_io UART_1_RXD            \
-    -GROUP_NAME UART_1_PADs  \
-    -DIRECTION INPUT
-
-
-set_io UART_1_TXD            \
-    -GROUP_NAME UART_1_PADs  \
-    -DIRECTION OUTPUT
-
-
 
 # 
 # Unlocked I/O settings
 # The I/Os in this section are unplaced or placed but are not locked
 # the other listed attributes have been applied
 # 
+
+set_io GPIO_0_OUT      \
+    -iostd LVTTL       \
+    -DIRECTION OUTPUT
+
+
+set_io GPIO_1_OUT      \
+    -iostd LVTTL       \
+    -DIRECTION OUTPUT
+
+
+set_io GPIO_2_OUT      \
+    -iostd LVTTL       \
+    -DIRECTION OUTPUT
+
+
+set_io GPIO_3_OUT      \
+    -iostd LVTTL       \
+    -DIRECTION OUTPUT
+
+
+set_io GPIO_4_OUT      \
+    -iostd LVTTL       \
+    -DIRECTION OUTPUT
+
+
+set_io GPIO_5_OUT      \
+    -iostd LVTTL       \
+    -DIRECTION OUTPUT
+
+
+set_io MSS_RESET_N    \
+    -iostd LVTTL      \
+    -DIRECTION INPUT
+
+
+set_io UART_0_RXD     \
+    -iostd LVTTL      \
+    -DIRECTION INPUT
+
+
+set_io UART_0_TXD      \
+    -iostd LVTTL       \
+    -DIRECTION OUTPUT
+
+
+# User Group UART_1_PADs
+
+set_io UART_1_RXD            \
+    -iostd LVTTL             \
+    -GROUP_NAME UART_1_PADs  \
+    -DIRECTION INPUT
+
+
+set_io UART_1_TXD            \
+    -iostd LVTTL             \
+    -GROUP_NAME UART_1_PADs  \
+    -DIRECTION OUTPUT
+
 
 
 #
@@ -65,5 +112,14 @@ set_io UART_1_TXD            \
 # Old IO constraints, commented out for reference
 #
 
-# set_io UART_1_RXD -GROUP_NAME UART_1_PADs -DIRECTION INPUT 
-# set_io UART_1_TXD -GROUP_NAME UART_1_PADs -DIRECTION OUTPUT 
+# set_io GPIO_0_OUT -iostd LVTTL -DIRECTION OUTPUT 
+# set_io GPIO_1_OUT -iostd LVTTL -DIRECTION OUTPUT 
+# set_io GPIO_2_OUT -iostd LVTTL -DIRECTION OUTPUT 
+# set_io GPIO_3_OUT -iostd LVTTL -DIRECTION OUTPUT 
+# set_io GPIO_4_OUT -iostd LVTTL -DIRECTION OUTPUT 
+# set_io GPIO_5_OUT -iostd LVTTL -DIRECTION OUTPUT 
+# set_io MSS_RESET_N -iostd LVTTL -DIRECTION INPUT 
+# set_io UART_0_RXD -iostd LVTTL -DIRECTION INPUT 
+# set_io UART_0_TXD -iostd LVTTL -DIRECTION OUTPUT 
+# set_io UART_1_RXD -iostd LVTTL -GROUP_NAME UART_1_PADs -DIRECTION INPUT 
+# set_io UART_1_TXD -iostd LVTTL -GROUP_NAME UART_1_PADs -DIRECTION OUTPUT 

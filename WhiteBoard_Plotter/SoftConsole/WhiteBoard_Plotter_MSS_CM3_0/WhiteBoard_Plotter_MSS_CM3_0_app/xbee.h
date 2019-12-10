@@ -26,6 +26,8 @@ int parsedCounter = 0;
 uint8_t receivedRaw[RECEIVEDBUFFERSIZE];
 uint8_t receivedParsed[RECEIVEDBUFFERSIZE];
 double receivedScaled[RECEIVEDBUFFERSIZE];
+uint8_t servoRetract[1] = "r";
+uint8_t servoExtend[1] = "e";
 
 //Takes in an array of uint8_t containing address and destination address
 //Constructs frame appropriately and sends it out
@@ -72,28 +74,52 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart ) {
 		if(receivedRaw[i] == 0x7E && receivedRaw[i+3] == 0x81 && receivedRaw[i+4] == 0x37 && receivedRaw[i+5] == 0x3C) {
 			yData = receivedRaw[i+11];
 			xData = receivedRaw[i+12];
-			//receivedParsed[parsedCounter++] = xData;
-			//receivedParsed[parsedCounter++] = yData;
-			receivedScaled[parsedCounter++] = xData / 10.0 + 29.75;
-			receivedScaled[parsedCounter++] = yData / 10.0 + 15.75;
-			receivedRaw[i] = 0;
+			receivedParsed[parsedCounter++] = xData;
+			receivedParsed[parsedCounter++] = yData;
+			//receivedScaled[parsedCounter++] = xData / 10.0 + 29.75;
+			//receivedScaled[parsedCounter++] = yData / 10.0 + 15.75;
+			receivedRaw[i] = 0;		//Remove delimiter from memory so data will not be read twice
 			//memcpy(receivedRaw + i * sizeof(uint8_t), zeros, 12);
 		}
 	}
 }
 
-double scaleToBoard(uint8_t position) {
-	return position;
-}
 
 double deltaX;
 double deltaY;
 
 void drawFreeform() {
 	int i;
-	int currentX = receivedParsed[0] / 10.0 + 29.75;
-	int currentY = receivedParsed[1] / 10.0 + 15.75;
+	uint8_t currentX;	//Stores current position of freeform drawing for use in calculation of relative distances
+	uint8_t currentY;
+	//Only start if a pair of values are available
+	if(parsedCounter > 1) {
+		//Set current position to first received position
+		currentX = receivedParsed[0];
+		currentY = receivedParsed[1];
+		//Move to starting position
+		//sendMessage(&servoRetract, 1, 0x373A);
+		makeLine(currentX / 10.0 + 29.75 - 42.5, currentY / 10.0 + 20.5 - 28.5);
+		//sendMessage(&servoExtend, 1, 0x373A);
+		//Loop through each pair of received values
+		for(i = 2; i < parsedCounter; i += 2) {
+			//Scale the difference between next position and current position. Move that relative distance
+			makeLine((receivedParsed[i] - currentX) / 10.0 + 29.75, (receivedParsed[i+1] - currentY) / 10.0 + 20.5);
+			//Update current position to new position
+			currentX = receivedParsed[i];
+			currentY = receivedParsed[i+1];
+		}
+	}
 
+
+
+
+
+
+
+	//int currentX = receivedParsed[0] / 10.0 + 29.75;
+	//int currentY = receivedParsed[1] / 10.0 + 15.75;
+/*
 	if(receivedCounter != 0) {
 		//Move marker to starting position
 			//TODO: Retract
@@ -110,6 +136,7 @@ void drawFreeform() {
 				//currentY = receivedParsed[i+1] / 10.0 + 15.75;
 			}
 	}
+	*/
 }
 
 /*int main()
