@@ -40,7 +40,6 @@ boardWidth          0x8               ./main.o
 receivedRaw         0x12c             ./main.o
 RadiusRight         0x8               ./main.o
 yPos                0x8               ./main.o
-receivedScaled      0x960             ./main.o
 drawnPoints         0x1e0             ./main.o
 textInput           0x578             ./main.o
 receivedPoints      0x708             ./main.o
@@ -70,7 +69,7 @@ Discarded input sections
  .bss.receivedCounter
                 0x00000000        0x4 ./main.o
  .text.uart1_rx_handler
-                0x00000000      0x1bc ./main.o
+                0x00000000      0x298 ./main.o
  .text.returnToCenter
                 0x00000000       0x68 ./main.o
  .text.returnToPoint
@@ -218,7 +217,7 @@ END GROUP
                 0x20010000                PROVIDE (_estack, __main_stack_start)
                 0x00000000                PROVIDE (__mirrored_nvm, 0x0)
 
-.text           0x20000000     0x68ac
+.text           0x20000000     0x68c4
  CREATE_OBJECT_SYMBOLS
                 0x20000000                __text_load = LOADADDR (.text)
                 0x20000000                __text_start = .
@@ -450,103 +449,103 @@ END GROUP
                 0x20005048       0x7c ./main.o
                 0x20005048                uart0_rx_handler
  .text.drawHardCoded
-                0x200050c4       0x8c ./main.o
+                0x200050c4       0x9c ./main.o
                 0x200050c4                drawHardCoded
- .text.main     0x20005150       0xe8 ./main.o
-                0x20005150                main
+ .text.main     0x20005160       0xf0 ./main.o
+                0x20005160                main
  .text.MSS_GPIO_set_outputs
-                0x20005238       0x20 ./stepper.o
+                0x20005250       0x20 ./stepper.o
  .text.stepper_config
-                0x20005258       0x24 ./stepper.o
-                0x20005258                stepper_config
- .text.step     0x2000527c       0x5c ./stepper.o
-                0x2000527c                step
+                0x20005270       0x24 ./stepper.o
+                0x20005270                stepper_config
+ .text.step     0x20005294       0x5c ./stepper.o
+                0x20005294                step
  .text.NVIC_EnableIRQ
-                0x200052d8       0x38 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x200052f0       0x38 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .text.NVIC_ClearPendingIRQ
-                0x20005310       0x3c N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20005328       0x3c N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .text.MSS_UART_init
-                0x2000534c      0x204 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x2000534c                MSS_UART_init
+                0x20005364      0x204 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20005364                MSS_UART_init
  .text.MSS_UART_polled_tx
-                0x20005550       0xe4 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x20005550                MSS_UART_polled_tx
+                0x20005568       0xe4 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20005568                MSS_UART_polled_tx
  .text.MSS_UART_get_rx
-                0x20005634       0xdc N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x20005634                MSS_UART_get_rx
+                0x2000564c       0xdc N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x2000564c                MSS_UART_get_rx
  .text.MSS_UART_isr
-                0x20005710      0x11c N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20005728      0x11c N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .text.default_tx_handler
-                0x2000582c      0x108 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20005844      0x108 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .text.MSS_UART_set_rx_handler
-                0x20005934       0xa8 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x20005934                MSS_UART_set_rx_handler
+                0x2000594c       0xa8 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x2000594c                MSS_UART_set_rx_handler
  .text.UART0_IRQHandler
-                0x200059dc       0x2c N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x200059dc                UART0_IRQHandler
+                0x200059f4       0x2c N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x200059f4                UART0_IRQHandler
  .text.UART1_IRQHandler
-                0x20005a08       0x2c N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x20005a08                UART1_IRQHandler
+                0x20005a20       0x2c N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20005a20                UART1_IRQHandler
  .text.SystemInit
-                0x20005a34        0xc N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20005a34                SystemInit
+                0x20005a4c        0xc N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20005a4c                SystemInit
  .text.SystemCoreClockUpdate
-                0x20005a40      0x150 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20005a40                SystemCoreClockUpdate
+                0x20005a58      0x150 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20005a58                SystemCoreClockUpdate
  .text.GetSystemClock
-                0x20005b90       0xe8 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
- .text          0x20005c78      0x370 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
-                0x20005c78                __aeabi_drsub
-                0x20005c80                __aeabi_dsub
-                0x20005c80                __subdf3
-                0x20005c84                __aeabi_dadd
-                0x20005c84                __adddf3
-                0x20005efc                __floatunsidf
-                0x20005efc                __aeabi_ui2d
-                0x20005f1c                __floatsidf
-                0x20005f1c                __aeabi_i2d
-                0x20005f40                __aeabi_f2d
-                0x20005f40                __extendsfdf2
-                0x20005f7c                __floatundidf
-                0x20005f7c                __aeabi_ul2d
-                0x20005f8c                __floatdidf
-                0x20005f8c                __aeabi_l2d
- .text          0x20005fe8      0x424 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivdf3.o)
-                0x20005fe8                __aeabi_dmul
-                0x20005fe8                __muldf3
-                0x2000623c                __divdf3
-                0x2000623c                __aeabi_ddiv
- .text          0x2000640c      0x110 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_cmpdf2.o)
-                0x2000640c                __gtdf2
-                0x2000640c                __gedf2
-                0x20006414                __ltdf2
-                0x20006414                __ledf2
-                0x2000641c                __nedf2
-                0x2000641c                __eqdf2
-                0x2000641c                __cmpdf2
-                0x20006498                __aeabi_cdrcmple
-                0x200064a8                __aeabi_cdcmpeq
-                0x200064a8                __aeabi_cdcmple
-                0x200064b8                __aeabi_dcmpeq
-                0x200064cc                __aeabi_dcmplt
-                0x200064e0                __aeabi_dcmple
-                0x200064f4                __aeabi_dcmpge
-                0x20006508                __aeabi_dcmpgt
- .text          0x2000651c       0x40 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixunsdfsi.o)
-                0x2000651c                __aeabi_d2uiz
-                0x2000651c                __fixunsdfsi
- .text          0x2000655c        0xc c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
-                0x2000655c                __errno
- .text          0x20006568       0x50 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
-                0x20006568                __libc_init_array
- .text          0x200065b8       0xac c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libm.a(lib_a-w_sqrt.o)
-                0x200065b8                sqrt
- .text          0x20006664      0x1dc c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libm.a(lib_a-e_sqrt.o)
-                0x20006664                __ieee754_sqrt
- .text          0x20006840       0x1c c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libm.a(lib_a-s_isnand.o)
-                0x20006840                __isnand
- .text          0x2000685c        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libm.a(lib_a-s_matherr.o)
-                0x2000685c                matherr
+                0x20005ba8       0xe8 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .text          0x20005c90      0x370 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
+                0x20005c90                __aeabi_drsub
+                0x20005c98                __aeabi_dsub
+                0x20005c98                __subdf3
+                0x20005c9c                __aeabi_dadd
+                0x20005c9c                __adddf3
+                0x20005f14                __floatunsidf
+                0x20005f14                __aeabi_ui2d
+                0x20005f34                __floatsidf
+                0x20005f34                __aeabi_i2d
+                0x20005f58                __aeabi_f2d
+                0x20005f58                __extendsfdf2
+                0x20005f94                __floatundidf
+                0x20005f94                __aeabi_ul2d
+                0x20005fa4                __floatdidf
+                0x20005fa4                __aeabi_l2d
+ .text          0x20006000      0x424 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivdf3.o)
+                0x20006000                __aeabi_dmul
+                0x20006000                __muldf3
+                0x20006254                __divdf3
+                0x20006254                __aeabi_ddiv
+ .text          0x20006424      0x110 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_cmpdf2.o)
+                0x20006424                __gtdf2
+                0x20006424                __gedf2
+                0x2000642c                __ltdf2
+                0x2000642c                __ledf2
+                0x20006434                __nedf2
+                0x20006434                __eqdf2
+                0x20006434                __cmpdf2
+                0x200064b0                __aeabi_cdrcmple
+                0x200064c0                __aeabi_cdcmpeq
+                0x200064c0                __aeabi_cdcmple
+                0x200064d0                __aeabi_dcmpeq
+                0x200064e4                __aeabi_dcmplt
+                0x200064f8                __aeabi_dcmple
+                0x2000650c                __aeabi_dcmpge
+                0x20006520                __aeabi_dcmpgt
+ .text          0x20006534       0x40 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixunsdfsi.o)
+                0x20006534                __aeabi_d2uiz
+                0x20006534                __fixunsdfsi
+ .text          0x20006574        0xc c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
+                0x20006574                __errno
+ .text          0x20006580       0x50 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                0x20006580                __libc_init_array
+ .text          0x200065d0       0xac c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libm.a(lib_a-w_sqrt.o)
+                0x200065d0                sqrt
+ .text          0x2000667c      0x1dc c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libm.a(lib_a-e_sqrt.o)
+                0x2000667c                __ieee754_sqrt
+ .text          0x20006858       0x1c c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libm.a(lib_a-s_isnand.o)
+                0x20006858                __isnand
+ .text          0x20006874        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libm.a(lib_a-s_matherr.o)
+                0x20006874                matherr
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
@@ -555,7 +554,7 @@ END GROUP
  .glue_7        0x00000000        0x0 linker stubs
  *(.vfp11_veneer)
  .vfp11_veneer  0x00000000        0x0 linker stubs
-                0x20006860                . = ALIGN (0x4)
+                0x20006878                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
@@ -565,164 +564,166 @@ END GROUP
  *(SORT(.dtors.*))
  *crtend.o(.dtors)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
- .rodata        0x20006860       0x10 ./main.o
+ .rodata        0x20006878       0x10 ./main.o
  .rodata.C.18.2576
-                0x20006870       0x10 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20006888       0x10 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
  .rodata.str1.4
-                0x20006880        0x2 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x20006898        0x2 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
                                   0x4 (size before relaxing)
- *fill*         0x20006882        0x2 00
+ *fill*         0x2000689a        0x2 00
  .rodata.str1.4
-                0x20006884        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libm.a(lib_a-w_sqrt.o)
+                0x2000689c        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libm.a(lib_a-w_sqrt.o)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
  *(.eh_frame_hdr)
  *(.eh_frame)
  *(.init)
- .init          0x2000688c        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x2000688c                _init
- .init          0x20006890        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ .init          0x200068a4        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x200068a4                _init
+ .init          0x200068a8        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
  *(.fini)
- .fini          0x20006898        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x20006898                _fini
- .fini          0x2000689c        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
-                0x200068a4                PROVIDE (__preinit_array_start, .)
+ .fini          0x200068b0        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x200068b0                _fini
+ .fini          0x200068b4        0x8 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x200068bc                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
-                0x200068a4                PROVIDE (__preinit_array_end, .)
-                0x200068a4                PROVIDE (__init_array_start, .)
+                0x200068bc                PROVIDE (__preinit_array_end, .)
+                0x200068bc                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x200068a4        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
-                0x200068a8                PROVIDE (__init_array_end, .)
-                0x200068a8                PROVIDE (__fini_array_start, .)
+ .init_array    0x200068bc        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+                0x200068c0                PROVIDE (__init_array_end, .)
+                0x200068c0                PROVIDE (__fini_array_start, .)
  *(.fini_array)
- .fini_array    0x200068a8        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .fini_array    0x200068c0        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  *(SORT(.fini_array.*))
-                0x200068ac                PROVIDE (__fini_array_end, .)
-                0x200068ac                __exidx_start = .
+                0x200068c4                PROVIDE (__fini_array_end, .)
+                0x200068c4                __exidx_start = .
 
-.v4_bx          0x200068ac        0x0
+.v4_bx          0x200068c4        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x200068ac                __exidx_end = .
-                0x200068ac                _etext = .
-                0x200068ac                PROVIDE (__text_end, .)
+                0x200068c4                __exidx_end = .
+                0x200068c4                _etext = .
+                0x200068c4                PROVIDE (__text_end, .)
 
-.data           0x200068b0      0x130
-                0x200068b0                __data_load = LOADADDR (.data)
-                0x200068b0                _sidata = LOADADDR (.data)
-                0x200068b0                __data_start = .
-                0x200068b0                _sdata = .
+.data           0x200068c8      0x138
+                0x200068c8                __data_load = LOADADDR (.data)
+                0x200068c8                _sidata = LOADADDR (.data)
+                0x200068c8                __data_start = .
+                0x200068c8                _sdata = .
  *(.jcr)
- .jcr           0x200068b0        0x0 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- .jcr           0x200068b0        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .jcr           0x200068c8        0x0 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .jcr           0x200068c8        0x4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
  *(.got.plt)
  *(.got)
  *(.shdata)
  *(.data .data.* .gnu.linkonce.d.*)
+ .data.mode     0x200068cc        0x4 ./main.o
+                0x200068cc                mode
  .data.servoRetract
-                0x200068b4        0x4 ./main.o
-                0x200068b4                servoRetract
+                0x200068d0        0x4 ./main.o
+                0x200068d0                servoRetract
  .data.servoExtend
-                0x200068b8        0x4 ./main.o
-                0x200068b8                servoExtend
- .data.dirLeft  0x200068bc        0x4 ./main.o
-                0x200068bc                dirLeft
+                0x200068d4        0x4 ./main.o
+                0x200068d4                servoExtend
+ .data.dirLeft  0x200068d8        0x4 ./main.o
+                0x200068d8                dirLeft
  .data.dirRight
-                0x200068c0        0x4 ./main.o
-                0x200068c0                dirRight
- .data.period   0x200068c4        0x4 ./main.o
-                0x200068c4                period
- .data.thres    0x200068c8        0x8 ./main.o
-                0x200068c8                thres
+                0x200068dc        0x4 ./main.o
+                0x200068dc                dirRight
+ .data.period   0x200068e0        0x4 ./main.o
+                0x200068e0                period
+ *fill*         0x200068e4        0x4 00
+ .data.thres    0x200068e8        0x8 ./main.o
+                0x200068e8                thres
  .data.SystemFrequency
-                0x200068d0        0x4 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x200068d0                SystemFrequency
+                0x200068f0        0x4 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x200068f0                SystemFrequency
  .data.SystemCoreClock
-                0x200068d4        0x4 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x200068d4                SystemCoreClock
+                0x200068f4        0x4 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x200068f4                SystemCoreClock
  .data.g_FrequencyPCLK0
-                0x200068d8        0x4 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x200068d8                g_FrequencyPCLK0
+                0x200068f8        0x4 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x200068f8                g_FrequencyPCLK0
  .data.g_FrequencyPCLK1
-                0x200068dc        0x4 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x200068dc                g_FrequencyPCLK1
+                0x200068fc        0x4 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x200068fc                g_FrequencyPCLK1
  .data.g_FrequencyACE
-                0x200068e0        0x4 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x200068e0                g_FrequencyACE
+                0x20006900        0x4 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20006900                g_FrequencyACE
  .data.g_FrequencyFPGA
-                0x200068e4        0x4 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x200068e4                g_FrequencyFPGA
- .data          0x200068e8       0xf4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
-                0x200068e8                _impure_ptr
- .data          0x200069dc        0x1 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libm.a(lib_a-s_lib_ver.o)
-                0x200069dc                __fdlib_version
-                0x200069e0                . = ALIGN (0x4)
- *fill*         0x200069dd        0x3 00
-                0x200069e0                _edata = .
+                0x20006904        0x4 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20006904                g_FrequencyFPGA
+ .data          0x20006908       0xf4 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-impure.o)
+                0x20006908                _impure_ptr
+ .data          0x200069fc        0x1 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libm.a(lib_a-s_lib_ver.o)
+                0x200069fc                __fdlib_version
+                0x20006a00                . = ALIGN (0x4)
+ *fill*         0x200069fd        0x3 00
+                0x20006a00                _edata = .
 
-.bss            0x200069e0     0x2058
-                0x200069e0                __bss_start__ = .
-                0x200069e0                _sbss = .
+.bss            0x20006a00     0x16f8
+                0x20006a00                __bss_start__ = .
+                0x20006a00                _sbss = .
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x200069e0        0x1 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- *fill*         0x200069e1        0x3 00
+ .bss           0x20006a00        0x1 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ *fill*         0x20006a01        0x3 00
  .bss.parsedCounter
-                0x200069e4        0x4 ./main.o
-                0x200069e4                parsedCounter
+                0x20006a04        0x4 ./main.o
+                0x20006a04                parsedCounter
  .bss.textInputCounter
-                0x200069e8        0x4 ./main.o
-                0x200069e8                textInputCounter
+                0x20006a08        0x4 ./main.o
+                0x20006a08                textInputCounter
  .bss.textInputDrawnCounter
-                0x200069ec        0x4 ./main.o
-                0x200069ec                textInputDrawnCounter
- .bss.newInput  0x200069f0        0x1 ./main.o
-                0x200069f0                newInput
+                0x20006a0c        0x4 ./main.o
+                0x20006a0c                textInputDrawnCounter
+ .bss.newInput  0x20006a10        0x1 ./main.o
+                0x20006a10                newInput
  *(COMMON)
- *fill*         0x200069f1        0x7 00
- COMMON         0x200069f8     0x1fe9 ./main.o
-                0x200069f8                g_rx_buff
-                0x20006f70                deltaY
-                0x20006f78                boardWidth
-                0x20006f80                receivedRaw
-                0x200070b0                RadiusRight
-                0x200070b8                yPos
-                0x200070c0                receivedScaled
-                0x20007a20                drawnPoints
-                0x20007c00                textInput
-                0x20008178                receivedPoints
-                0x20008880                boardHeight
-                0x20008888                xData
-                0x2000888c                counter
-                0x20008890                ratio
-                0x20008898                receivedParsed
-                0x200089c8                xPos
-                0x200089d0                deltaX
-                0x200089d8                RadiusLeft
-                0x200089e0                yData
- *fill*         0x200089e1        0x3 00
- COMMON         0x200089e4       0x50 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x200089e4                g_mss_uart1
-                0x20008a0c                g_mss_uart0
-                0x20008a38                . = ALIGN (0x8)
- *fill*         0x20008a34        0x4 00
-                0x20008a38                __bss_end__ = .
-                0x20008a38                _end = .
-                0x20008a38                __end = _end
-                0x20008a38                _ebss = .
-                0x20008a38                PROVIDE (end, .)
+ *fill*         0x20006a11        0x7 00
+ COMMON         0x20006a18     0x1689 ./main.o
+                0x20006a18                g_rx_buff
+                0x20006f90                deltaY
+                0x20006f98                boardWidth
+                0x20006fa0                receivedRaw
+                0x200070d0                RadiusRight
+                0x200070d8                yPos
+                0x200070e0                drawnPoints
+                0x200072c0                textInput
+                0x20007838                receivedPoints
+                0x20007f40                boardHeight
+                0x20007f48                xData
+                0x20007f4c                counter
+                0x20007f50                ratio
+                0x20007f58                receivedParsed
+                0x20008088                xPos
+                0x20008090                deltaX
+                0x20008098                RadiusLeft
+                0x200080a0                yData
+ *fill*         0x200080a1        0x3 00
+ COMMON         0x200080a4       0x50 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x200080a4                g_mss_uart1
+                0x200080cc                g_mss_uart0
+                0x200080f8                . = ALIGN (0x8)
+ *fill*         0x200080f4        0x4 00
+                0x200080f8                __bss_end__ = .
+                0x200080f8                _end = .
+                0x200080f8                __end = _end
+                0x200080f8                _ebss = .
+                0x200080f8                PROVIDE (end, .)
 
-.stack          0x20008a38     0x3000
-                0x20008a38                . = ALIGN (0x4)
-                0x20009a38                . = (. + PROCESS_STACK_SIZE)
- *fill*         0x20008a38     0x1000 00
-                0x20009a38                . = ALIGN (0x4)
-                0x2000ba38                . = (. + MAIN_STACK_SIZE)
- *fill*         0x20009a38     0x2000 00
-                0x2000ba38                . = ALIGN (0x4)
+.stack          0x200080f8     0x3000
+                0x200080f8                . = ALIGN (0x4)
+                0x200090f8                . = (. + PROCESS_STACK_SIZE)
+ *fill*         0x200080f8     0x1000 00
+                0x200090f8                . = ALIGN (0x4)
+                0x2000b0f8                . = (. + MAIN_STACK_SIZE)
+ *fill*         0x200090f8     0x2000 00
+                0x2000b0f8                . = ALIGN (0x4)
 
 .stab
  *(.stab)
@@ -763,26 +764,26 @@ END GROUP
                 0x000002e8       0x30 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
 .debug_pubnames
-                0x00000000      0x758
+                0x00000000      0x74e
  *(.debug_pubnames)
  .debug_pubnames
-                0x00000000      0x36f ./main.o
+                0x00000000      0x365 ./main.o
  .debug_pubnames
-                0x0000036f       0x2e ./stepper.o
+                0x00000365       0x2e ./stepper.o
  .debug_pubnames
-                0x0000039d       0xeb N:/EECS373_Project/WhiteBoard_Plotter/SoftConsole/WhiteBoard_Plotter_MSS_CM3_0/WhiteBoard_Plotter_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+                0x00000393       0xeb N:/EECS373_Project/WhiteBoard_Plotter/SoftConsole/WhiteBoard_Plotter_MSS_CM3_0/WhiteBoard_Plotter_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
  .debug_pubnames
-                0x00000488      0x21c N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x0000047e      0x21c N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .debug_pubnames
-                0x000006a4       0xb4 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x0000069a       0xb4 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_info     0x00000000     0x4c3d
+.debug_info     0x00000000     0x4c1e
  *(.debug_info .gnu.linkonce.wi.*)
- .debug_info    0x00000000     0x1d11 ./main.o
- .debug_info    0x00001d11      0x35c ./stepper.o
- .debug_info    0x0000206d     0x10f0 N:/EECS373_Project/WhiteBoard_Plotter/SoftConsole/WhiteBoard_Plotter_MSS_CM3_0/WhiteBoard_Plotter_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_info    0x0000315d     0x15a4 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_info    0x00004701      0x53c N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_info    0x00000000     0x1cf2 ./main.o
+ .debug_info    0x00001cf2      0x35c ./stepper.o
+ .debug_info    0x0000204e     0x10f0 N:/EECS373_Project/WhiteBoard_Plotter/SoftConsole/WhiteBoard_Plotter_MSS_CM3_0/WhiteBoard_Plotter_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_info    0x0000313e     0x15a4 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_info    0x000046e2      0x53c N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
 .debug_abbrev   0x00000000      0x902
  *(.debug_abbrev)
@@ -792,13 +793,13 @@ END GROUP
  .debug_abbrev  0x000005ac      0x245 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .debug_abbrev  0x000007f1      0x111 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_line     0x00000000     0x1bf4
+.debug_line     0x00000000     0x1c07
  *(.debug_line)
- .debug_line    0x00000000      0xcaa ./main.o
- .debug_line    0x00000caa      0x251 ./stepper.o
- .debug_line    0x00000efb      0x509 N:/EECS373_Project/WhiteBoard_Plotter/SoftConsole/WhiteBoard_Plotter_MSS_CM3_0/WhiteBoard_Plotter_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_line    0x00001404      0x575 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_line    0x00001979      0x27b N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_line    0x00000000      0xcbd ./main.o
+ .debug_line    0x00000cbd      0x251 ./stepper.o
+ .debug_line    0x00000f0e      0x509 N:/EECS373_Project/WhiteBoard_Plotter/SoftConsole/WhiteBoard_Plotter_MSS_CM3_0/WhiteBoard_Plotter_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_line    0x00001417      0x575 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_line    0x0000198c      0x27b N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
 .debug_frame    0x00000000      0xb78
  *(.debug_frame)
@@ -815,17 +816,17 @@ END GROUP
  .debug_frame   0x00000b38       0x20 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libm.a(lib_a-s_isnand.o)
  .debug_frame   0x00000b58       0x20 c:/microsemi/softconsole v3.3/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libm.a(lib_a-s_matherr.o)
 
-.debug_str      0x00000000     0x203c
+.debug_str      0x00000000     0x202d
  *(.debug_str)
- .debug_str     0x00000000     0x17ec ./main.o
-                               0x188d (size before relaxing)
- .debug_str     0x000017ec      0x1e1 ./stepper.o
+ .debug_str     0x00000000     0x17dd ./main.o
+                               0x187e (size before relaxing)
+ .debug_str     0x000017dd      0x1e1 ./stepper.o
                                 0x303 (size before relaxing)
- .debug_str     0x000019cd      0x27d N:/EECS373_Project/WhiteBoard_Plotter/SoftConsole/WhiteBoard_Plotter_MSS_CM3_0/WhiteBoard_Plotter_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_str     0x000019be      0x27d N:/EECS373_Project/WhiteBoard_Plotter/SoftConsole/WhiteBoard_Plotter_MSS_CM3_0/WhiteBoard_Plotter_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
                                0x10be (size before relaxing)
- .debug_str     0x00001c4a      0x2fb N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_str     0x00001c3b      0x2fb N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(mss_uart.o)
                                0x14cf (size before relaxing)
- .debug_str     0x00001f45       0xf7 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_str     0x00001f36       0xf7 N:\EECS373_Project\WhiteBoard_Plotter\SoftConsole\WhiteBoard_Plotter_MSS_CM3_0\WhiteBoard_Plotter_MSS_CM3_0_hw_platform\Debug\libWhiteBoard_Plotter_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
                                 0x472 (size before relaxing)
 
 .debug_loc      0x00000000     0x115d

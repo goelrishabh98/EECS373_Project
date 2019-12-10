@@ -25,7 +25,8 @@ int receivedCounter = 0;
 int parsedCounter = 0;
 uint8_t receivedRaw[RECEIVEDBUFFERSIZE];
 uint8_t receivedParsed[RECEIVEDBUFFERSIZE];
-double receivedScaled[RECEIVEDBUFFERSIZE];
+//double receivedScaled[RECEIVEDBUFFERSIZE];
+int mode = -1;
 uint8_t servoRetract[1] = "r";
 uint8_t servoExtend[1] = "e";
 
@@ -70,7 +71,7 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart ) {
 	//Raw data all read in
 	for(i = 0; i < RECEIVEDBUFFERSIZE; ++i) {
 		//uint8_t zeros[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-		//If this is an RX packet from a specific XBee addr
+		//If this is an RX packet from a specific XBee addr containing freeform drawings
 		if(receivedRaw[i] == 0x7E && receivedRaw[i+3] == 0x81 && receivedRaw[i+4] == 0x37 && receivedRaw[i+5] == 0x3C) {
 			yData = receivedRaw[i+11];
 			xData = receivedRaw[i+12];
@@ -80,6 +81,12 @@ void uart1_rx_handler( mss_uart_instance_t * this_uart ) {
 			//receivedScaled[parsedCounter++] = yData / 10.0 + 15.75;
 			receivedRaw[i] = 0;		//Remove delimiter from memory so data will not be read twice
 			//memcpy(receivedRaw + i * sizeof(uint8_t), zeros, 12);
+		}
+		//If this is an RX packet from touchscreen containing data 0xFFFFFFFF__, then it is to change mode
+		else if(receivedRaw[i] == 0x7E && receivedRaw[i+3] == 0x81 && receivedRaw[i+4] == 0x37 && receivedRaw[i+5] == 0x3C &&
+				receivedRaw[i+8] == 0xFF && receivedRaw[i+9] == 0xFF && receivedRaw[i+10] == 0xFF && receivedRaw[i+11] == 0xFF) {
+			mode = receivedRaw[i+12];
+			receivedRaw[i] = 0;		//Remove delimiter from memory so data will not be read twice
 		}
 	}
 }
