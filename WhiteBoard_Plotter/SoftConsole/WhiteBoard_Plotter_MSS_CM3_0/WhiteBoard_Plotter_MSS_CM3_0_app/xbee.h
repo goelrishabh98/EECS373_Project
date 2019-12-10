@@ -9,14 +9,23 @@
 #define XBEE_H_
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <inttypes.h>
 #include "drivers/mss_uart/mss_uart.h"
 
 //NOTE: Maximum amount of data you can send (i.e maximum value of inputMessageLength) is messageLength - 15
 #define messageLength 16
-#define RX_BUFF_SIZE 64
+#define RX_BUFF_SIZE 1400
 
 uint8_t g_rx_buff[RX_BUFF_SIZE];
+uint8_t yData;
+uint8_t xData;
+int receivedCounter = 0;
+int parsedCounter = 0;
+uint8_t receivedRaw[RECEIVEDBUFFERSIZE];
+uint8_t receivedParsed[RECEIVEDBUFFERSIZE];
+double receivedScaled[RECEIVEDBUFFERSIZE];
 
 //Takes in an array of uint8_t containing address and destination address
 //Constructs frame appropriately and sends it out
@@ -48,7 +57,59 @@ void sendMessage(uint8_t* inputMessage, uint8_t inputMessageLength, uint16_t des
 
 //When something is received, trigger an interrupt that fills g_rx_buff with the received data
 void uart1_rx_handler( mss_uart_instance_t * this_uart ) {
-      MSS_UART_get_rx( this_uart, &g_rx_buff, sizeof(g_rx_buff) );
+	uint8_t g_rx_buff[RX_BUFF_SIZE];
+	int rx_size = MSS_UART_get_rx( this_uart, g_rx_buff, RX_BUFF_SIZE );
+	memcpy(receivedRaw + receivedCounter * sizeof(uint8_t), g_rx_buff, rx_size);
+	receivedCounter += rx_size;
+	if(receivedCounter >= RECEIVEDBUFFERSIZE - 12) {
+		receivedCounter = 0;
+	}
+	int i;
+	//Raw data all read in
+	for(i = 0; i < RECEIVEDBUFFERSIZE; ++i) {
+		//uint8_t zeros[] = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+		//If this is an RX packet from a specific XBee addr
+		if(receivedRaw[i] == 0x7E && receivedRaw[i+3] == 0x81 && receivedRaw[i+4] == 0x37 && receivedRaw[i+5] == 0x3C) {
+			yData = receivedRaw[i+11];
+			xData = receivedRaw[i+12];
+			//receivedParsed[parsedCounter++] = xData;
+			//receivedParsed[parsedCounter++] = yData;
+			receivedScaled[parsedCounter++] = xData / 10.0 + 29.75;
+			receivedScaled[parsedCounter++] = yData / 10.0 + 15.75;
+			receivedRaw[i] = 0;
+			//memcpy(receivedRaw + i * sizeof(uint8_t), zeros, 12);
+		}
+	}
+}
+
+double scaleToBoard(uint8_t position) {
+	return position;
+}
+
+double deltaX;
+double deltaY;
+
+void drawFreeform() {
+	int i;
+	int currentX = receivedParsed[0] / 10.0 + 29.75;
+	int currentY = receivedParsed[1] / 10.0 + 15.75;
+
+	if(receivedCounter != 0) {
+		//Move marker to starting position
+			//TODO: Retract
+			deltaX = receivedParsed[0] / 10.0 + 29.75 - 42.5;
+			deltaY = receivedParsed[1] / 10.0 + 15.75 - 28.5;
+			//makeLine(deltaX, deltaY);
+			makeLine(receivedScaled[0] - 42.5, receivedScaled[1] - 28.5);
+			//TODO: Extend
+			for(i = 2; i < parsedCounter; i += 2) {
+				//deltaX = receivedParsed[i] / 10.0 + 29.75 - currentX;
+				//deltaY = receivedParsed[i+1] / 10.0 + 15.75 - currentY;
+				makeLine(receivedScaled[i] - receivedScaled[i-2], receivedScaled[i+1] - receivedScaled[i-2]);
+				//currentX = receivedParsed[i] / 10.0 + 29.75;
+				//currentY = receivedParsed[i+1] / 10.0 + 15.75;
+			}
+	}
 }
 
 /*int main()
