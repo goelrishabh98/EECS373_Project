@@ -1,5 +1,5 @@
 *****************************************************************
-Pin Report - Date: Mon Dec 09 16:04:55 2019 Pinchecksum: NOT-AVAILABLE
+Pin Report - Date: Mon Dec 09 21:47:59 2019 Pinchecksum: NOT-AVAILABLE
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
@@ -8,27 +8,21 @@ Family: SmartFusion
 Die: A2F200M3F
 Package: 484 FBGA
 *****************************************************************
-Port             |Pin  |Fixed |Function           |I/O Std  |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
------------------|-----|------|-------------------|---------|------------------|-----|--------------|----------------|-----|-----------------|------------|--------------|
-ADCDirectInput_0  AB8   Yes    ADC3                LVTTL     ---                Low   ---            ---              ---   ---               No           No
-ADCDirectInput_1  U12   Yes    ADC4                LVTTL     ---                Low   ---            ---              ---   ---               No           No
-GPIO_0_OUT        V1    Yes    GPIO_0/IO47RSB4V0   LVCMOS25  8                  High  None           ---              No    35                No           Yes
-GPIO_5_BI         U2    Yes    GPIO_5/IO42RSB4V0   LVCMOS25  8                  High  None           No               No    35                No           Yes
-GPIO_6_BI         V2    Yes    GPIO_6/IO41RSB4V0   LVCMOS25  8                  High  None           No               No    35                No           Yes
-GPIO_7_BI         W2    Yes    GPIO_7/IO40RSB4V0   LVCMOS25  8                  High  None           No               No    35                No           Yes
-GPIO_8_BI         T3    Yes    GPIO_8/IO39RSB4V0   LVCMOS25  8                  High  None           No               No    35                No           Yes
-I2C_1_SCL         U20   Yes    I2C_1_SCL/GPIO_31   LVCMOS25  8                  High  None           No               No    35                No           Yes
-I2C_1_SDA         V22   Yes    I2C_1_SDA/GPIO_30   LVCMOS25  8                  High  None           No               No    35                No           Yes
-MSS_RESET_N       R1    Yes    MSS_RESET_N         LVCMOS25  ---                ---   None           No               ---   ---               No           Yes
-SDD_0             V7    Yes    SDD0                LVTTL     ---                ---   ---            ---              ---   ---               No           No
-SDD_1             Y17   Yes    SDD1                LVTTL     ---                ---   ---            ---              ---   ---               No           No
-SPI_1_CLK         AA22  Yes    SPI_1_CLK/GPIO_26   LVCMOS25  8                  High  None           No               No    35                No           Yes
-SPI_1_DI          V19   Yes    SPI_1_DI/GPIO_25    LVCMOS25  ---                ---   None           No               ---   ---               No           Yes
-SPI_1_DO          T17   Yes    SPI_1_DO/GPIO_24    LVCMOS25  8                  High  None           ---              No    35                No           Yes
-SPI_1_SS          W21   Yes    SPI_1_SS/GPIO_27    LVCMOS25  8                  High  None           No               No    35                No           Yes
-UART_0_RXD        U18   Yes    UART_0_RXD/GPIO_21  LVCMOS25  ---                ---   None           No               ---   ---               No           Yes
-UART_0_TXD        Y22   Yes    UART_0_TXD/GPIO_20  LVCMOS25  8                  High  None           ---              No    35                No           Yes
-UART_1_RXD        W22   Yes    UART_1_RXD/GPIO_29  LVCMOS25  ---                ---   None           No               ---   ---               No           Yes
-UART_1_TXD        V20   Yes    UART_1_TXD/GPIO_28  LVCMOS25  8                  High  None           ---              No    35                No           Yes
-VAREF0            U10   Yes    VAREF0              LVTTL     ---                Low   ---            ---              ---   ---               No           No
-VAREF1            AB11  Yes    VAREF1              LVTTL     ---                Low   ---            ---              ---   ---               No           No
+Port        |Pin  |Fixed |Function           |I/O Std  |Output Drive (mA) |Slew |Resistor Pull |Schmitt Trigger |Skew |Output Load (pF) |Use I/O Reg |Hot Swappable |
+------------|-----|------|-------------------|---------|------------------|-----|--------------|----------------|-----|-----------------|------------|--------------|
+GPIO_0_OUT   V1    Yes    GPIO_0/IO47RSB4V0   LVCMOS25  8                  High  None           ---              No    35                No           Yes
+GPIO_5_BI    U2    Yes    GPIO_5/IO42RSB4V0   LVCMOS25  8                  High  None           No               No    35                No           Yes
+GPIO_6_BI    V2    Yes    GPIO_6/IO41RSB4V0   LVCMOS25  8                  High  None           No               No    35                No           Yes
+GPIO_7_BI    W2    Yes    GPIO_7/IO40RSB4V0   LVCMOS25  8                  High  None           No               No    35                No           Yes
+GPIO_8_BI    T3    Yes    GPIO_8/IO39RSB4V0   LVCMOS25  8                  High  None           No               No    35                No           Yes
+I2C_1_SCL    U20   Yes    I2C_1_SCL/GPIO_31   LVCMOS25  8                  High  None           No               No    35                No           Yes
+I2C_1_SDA    V22   Yes    I2C_1_SDA/GPIO_30   LVCMOS25  8                  High  None           No               No    35                No           Yes
+MSS_RESET_N  R1    Yes    MSS_RESET_N         LVCMOS25  ---                ---   None           No               ---   ---               No           Yes
+SPI_1_CLK    AA22  Yes    SPI_1_CLK/GPIO_26   LVCMOS25  8                  High  None           No               No    35                No           Yes
+SPI_1_DI     V19   Yes    SPI_1_DI/GPIO_25    LVCMOS25  ---                ---   None           No               ---   ---               No           Yes
+SPI_1_DO     T17   Yes    SPI_1_DO/GPIO_24    LVCMOS25  8                  High  None           ---              No    35                No           Yes
+SPI_1_SS     W21   Yes    SPI_1_SS/GPIO_27    LVCMOS25  8                  High  None           No               No    35                No           Yes
+UART_0_RXD   U18   Yes    UART_0_RXD/GPIO_21  LVCMOS25  ---                ---   None           No               ---   ---               No           Yes
+UART_0_TXD   Y22   Yes    UART_0_TXD/GPIO_20  LVCMOS25  8                  High  None           ---              No    35                No           Yes
+UART_1_RXD   W22   Yes    UART_1_RXD/GPIO_29  LVCMOS25  ---                ---   None           No               ---   ---               No           Yes
+UART_1_TXD   V20   Yes    UART_1_TXD/GPIO_28  LVCMOS25  8                  High  None           ---              No    35                No           Yes

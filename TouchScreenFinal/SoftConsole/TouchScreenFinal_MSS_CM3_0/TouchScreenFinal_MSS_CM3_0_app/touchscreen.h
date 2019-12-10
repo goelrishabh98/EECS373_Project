@@ -3,6 +3,7 @@
 #include "drivers/mss_gpio/mss_gpio.h"
 #include "drivers/mss_timer/mss_timer.h"
 #include "drivers/mss_i2c/mss_i2c.h"
+#include "drivers/mss_uart/mss_uart.h"
 
 #define TFTWIDTH  240
 #define TFTHEIGHT 320
@@ -97,7 +98,6 @@
 
 #define TOUCH_ADDR 0x41
 
-/** STMPE610 Address **/
 #define STMPE_ADDR 0x41
 
 /** Reset Control **/
@@ -254,7 +254,11 @@ void set_DC_HIGH();
 void set_DC_LOW();
 
 void writeRegister8(uint8_t reg, uint8_t val);
-void readRegister8(uint8_t reg, uint8_t* receive_buf);
+uint8_t readRegister8(uint8_t reg);
+int bufferEmpty();
 
 void set_xp(int val);
 void set_yp(int val);
+
+uint8_t scaleX(uint16_t x);
+uint8_t scaleY(uint16_t y);

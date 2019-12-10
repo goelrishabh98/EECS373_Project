@@ -1,16 +1,16 @@
-C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  E:\Github\EECS373_Project\TouchScreenFinal\synthesis   -part A2F200M3F  -package FBGA484  -grade STD    -globalthreshold 50 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile E:\Github\EECS373_Project\TouchScreenFinal\synthesis\synlog\report\touch_fpga_mapper.xml  -top_level_module  touch  -licensetype  synplifypro_actel  -flow mapping  -mp  4  -prjfile  E:\Github\EECS373_Project\TouchScreenFinal\synthesis\scratchproject.prs  -implementation  synthesis  -multisrs  -oedif  E:\Github\EECS373_Project\TouchScreenFinal\synthesis\touch.edn   -freq 100.000   E:\Github\EECS373_Project\TouchScreenFinal\synthesis\synwork\touch_prem.srd  -sap  E:\Github\EECS373_Project\TouchScreenFinal\synthesis\touch.sap  -otap  E:\Github\EECS373_Project\TouchScreenFinal\synthesis\touch.tap  -omap  E:\Github\EECS373_Project\TouchScreenFinal\synthesis\touch.map  -devicelib  C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v  -sap  E:\Github\EECS373_Project\TouchScreenFinal\synthesis\touch.sap  -ologparam  E:\Github\EECS373_Project\TouchScreenFinal\synthesis\syntmp\touch.plg  -osyn  E:\Github\EECS373_Project\TouchScreenFinal\synthesis\touch.srm  -prjdir  E:\Github\EECS373_Project\TouchScreenFinal\synthesis\  -prjname  touch_syn  -log  E:\Github\EECS373_Project\TouchScreenFinal\synthesis\synlog\touch_fpga_mapper.srr 
+C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe  -prodtype  synplify_pro   -encrypt  -pro  -rundir  D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis   -part A2F200M3F  -package FBGA484  -grade STD    -globalthreshold 50 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\synlog\report\touch_fpga_mapper.xml  -top_level_module  touch  -licensetype  synplifypro_actel  -flow mapping  -mp  4  -prjfile  D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\scratchproject.prs  -implementation  synthesis  -multisrs  -oedif  D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\touch.edn   -freq 100.000   D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\synwork\touch_prem.srd  -sap  D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\touch.sap  -otap  D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\touch.tap  -omap  D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\touch.map  -devicelib  C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v  -sap  D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\touch.sap  -ologparam  D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\syntmp\touch.plg  -osyn  D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\touch.srm  -prjdir  D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\  -prjname  touch_syn  -log  D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\synlog\touch_fpga_mapper.srr 
 relcom:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe -prodtype synplify_pro -encrypt -pro -rundir ..\..\synthesis -part A2F200M3F -package FBGA484 -grade STD -globalthreshold 50 -maxfan 24 -opcond COMWC -report_path 4000 -RWCheckOnRam 0 -summaryfile ..\synlog\report\touch_fpga_mapper.xml -top_level_module touch -licensetype synplifypro_actel -flow mapping -mp 4 -prjfile ..\scratchproject.prs -implementation synthesis -multisrs -oedif ..\touch.edn -freq 100.000 ..\synwork\touch_prem.srd -sap ..\touch.sap -otap ..\touch.tap -omap ..\touch.map -devicelib C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v -sap ..\touch.sap -ologparam touch.plg -osyn ..\touch.srm -prjdir ..\ -prjname touch_syn -log ..\synlog\touch_fpga_mapper.srr
-rc:1 success:1 runtime:0
-file:..\scratchproject.prs|io:o|time:1575925465|size:2275|exec:0|csum:
-file:..\touch.edn|io:o|time:1575925468|size:112071|exec:0|csum:
-file:..\synwork\touch_prem.srd|io:i|time:1575925468|size:14268|exec:0|csum:78EAFB2ECECE71D6A0531018ECB05AEC
-file:..\touch.sap|io:o|time:1575925468|size:113|exec:0|csum:
+rc:1 success:1 runtime:1
+file:..\scratchproject.prs|io:o|time:1575930238|size:2275|exec:0|csum:
+file:..\touch.edn|io:o|time:1575946058|size:107559|exec:0|csum:
+file:..\synwork\touch_prem.srd|io:i|time:1575946056|size:12225|exec:0|csum:CA88A1C641A7CD265B34574E6421779E
+file:..\touch.sap|io:o|time:1575946056|size:113|exec:0|csum:
 file:..\touch.tap|io:o|time:0|size:0|exec:0|csum:
-file:..\touch.map|io:o|time:1575925468|size:28|exec:0|csum:
-file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v|io:i|time:1509027488|size:72817|exec:0|csum:792D908376FAE59463CBCC67F19D1698
-file:..\touch.sap|io:o|time:1575925468|size:113|exec:0|csum:
-file:touch.plg|io:o|time:1575925468|size:350|exec:0|csum:
-file:..\touch.srm|io:o|time:1575925468|size:63463|exec:0|csum:
-file:..\synlog\touch_fpga_mapper.srr|io:o|time:1575925468|size:15937|exec:0|csum:
-file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\m_proasic.exe|io:i|time:1509373872|size:11119104|exec:1|csum:6BD6E9876645BB1B346C655471A0D71C
-file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe|io:i|time:1509375286|size:14301696|exec:1|csum:CA7B630F1194A591FA1E520688EE75E2
+file:..\touch.map|io:o|time:1575946058|size:28|exec:0|csum:
+file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\lib\proasic\smartfusion.v|io:i|time:1509031088|size:72817|exec:0|csum:792D908376FAE59463CBCC67F19D1698
+file:..\touch.sap|io:o|time:1575946056|size:113|exec:0|csum:
+file:touch.plg|io:o|time:1575946058|size:350|exec:0|csum:
+file:..\touch.srm|io:o|time:1575946058|size:63092|exec:0|csum:
+file:..\synlog\touch_fpga_mapper.srr|io:o|time:1575946058|size:14373|exec:0|csum:
+file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\m_proasic.exe|io:i|time:1509377472|size:11119104|exec:1|csum:6BD6E9876645BB1B346C655471A0D71C
+file:C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin64\m_proasic.exe|io:i|time:1509378886|size:14301696|exec:1|csum:CA7B630F1194A591FA1E520688EE75E2

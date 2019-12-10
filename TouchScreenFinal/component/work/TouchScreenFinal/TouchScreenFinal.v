@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Mon Dec 09 15:50:04 2019
+// Created by SmartDesign Mon Dec 09 21:42:35 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -8,18 +8,12 @@
 // TouchScreenFinal
 module TouchScreenFinal(
     // Inputs
-    ADCDirectInput_0,
-    ADCDirectInput_1,
     MSS_RESET_N,
     SPI_1_DI,
     UART_0_RXD,
     UART_1_RXD,
-    VAREF0,
-    VAREF1,
     // Outputs
     GPIO_0_OUT,
-    SDD_0,
-    SDD_1,
     SPI_1_DO,
     UART_0_TXD,
     UART_1_TXD,
@@ -37,20 +31,14 @@ module TouchScreenFinal(
 //--------------------------------------------------------------------
 // Input
 //--------------------------------------------------------------------
-input  ADCDirectInput_0;
-input  ADCDirectInput_1;
 input  MSS_RESET_N;
 input  SPI_1_DI;
 input  UART_0_RXD;
 input  UART_1_RXD;
-input  VAREF0;
-input  VAREF1;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
 output GPIO_0_OUT;
-output SDD_0;
-output SDD_1;
 output SPI_1_DO;
 output UART_0_TXD;
 output UART_1_TXD;
@@ -68,8 +56,6 @@ inout  SPI_1_SS;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
-wire          ADCDirectInput_0;
-wire          ADCDirectInput_1;
 wire          GPIO_0_OUT_net_0;
 wire          GPIO_5_BI;
 wire          GPIO_6_BI;
@@ -77,12 +63,6 @@ wire          GPIO_7_BI;
 wire          GPIO_8_BI;
 wire          I2C_1_SCL;
 wire          I2C_1_SDA;
-wire          MSS_ACE_0_ADC3_Y;
-wire          MSS_ACE_0_ADC4_Y;
-wire          MSS_ACE_0_SDD0_D;
-wire          MSS_ACE_0_SDD1_D;
-wire          MSS_ACE_0_VAREF0_Y;
-wire          MSS_ACE_0_VAREF1_Y;
 wire          MSS_ADLIB_INST_EMCCLK;
 wire          MSS_ADLIB_INST_FCLK;
 wire          MSS_ADLIB_INST_MACCLK;
@@ -119,8 +99,6 @@ wire          MSS_UART_0_RXD_Y;
 wire          MSS_UART_0_TXD_D;
 wire          MSS_UART_1_RXD_Y;
 wire          MSS_UART_1_TXD_D;
-wire          SDD_0_net_0;
-wire          SDD_1_net_0;
 wire          SPI_1_CLK;
 wire          SPI_1_DI;
 wire          SPI_1_DO_net_0;
@@ -129,13 +107,9 @@ wire          UART_0_RXD;
 wire          UART_0_TXD_net_0;
 wire          UART_1_RXD;
 wire          UART_1_TXD_net_0;
-wire          VAREF0;
-wire          VAREF1;
 wire          UART_0_TXD_net_1;
 wire          UART_1_TXD_net_1;
 wire          SPI_1_DO_net_1;
-wire          SDD_0_net_1;
-wire          SDD_1_net_1;
 wire          GPIO_0_OUT_net_1;
 wire   [31:0] GPI_net_0;
 wire   [31:0] GPO_net_0;
@@ -174,10 +148,6 @@ assign UART_1_TXD_net_1 = UART_1_TXD_net_0;
 assign UART_1_TXD       = UART_1_TXD_net_1;
 assign SPI_1_DO_net_1   = SPI_1_DO_net_0;
 assign SPI_1_DO         = SPI_1_DO_net_1;
-assign SDD_0_net_1      = SDD_0_net_0;
-assign SDD_0            = SDD_0_net_1;
-assign SDD_1_net_1      = SDD_1_net_0;
-assign SDD_1            = SDD_1_net_1;
 assign GPIO_0_OUT_net_1 = GPIO_0_OUT_net_0;
 assign GPIO_0_OUT       = GPIO_0_OUT_net_1;
 //--------------------------------------------------------------------
@@ -200,54 +170,6 @@ assign GPI_net_0 = { 23'h000000 , MSS_GPIO_0_GPIO_8_BI_Y , MSS_GPIO_0_GPIO_7_BI_
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
-//--------INBUF_A
-INBUF_A MSS_ACE_0_ADC3(
-        // Inputs
-        .PAD ( ADCDirectInput_0 ),
-        // Outputs
-        .Y   ( MSS_ACE_0_ADC3_Y ) 
-        );
-
-//--------INBUF_A
-INBUF_A MSS_ACE_0_ADC4(
-        // Inputs
-        .PAD ( ADCDirectInput_1 ),
-        // Outputs
-        .Y   ( MSS_ACE_0_ADC4_Y ) 
-        );
-
-//--------OUTBUF_A
-OUTBUF_A MSS_ACE_0_SDD0(
-        // Inputs
-        .D   ( MSS_ACE_0_SDD0_D ),
-        // Outputs
-        .PAD ( SDD_0_net_0 ) 
-        );
-
-//--------OUTBUF_A
-OUTBUF_A MSS_ACE_0_SDD1(
-        // Inputs
-        .D   ( MSS_ACE_0_SDD1_D ),
-        // Outputs
-        .PAD ( SDD_1_net_0 ) 
-        );
-
-//--------INBUF_A
-INBUF_A MSS_ACE_0_VAREF0(
-        // Inputs
-        .PAD ( VAREF0 ),
-        // Outputs
-        .Y   ( MSS_ACE_0_VAREF0_Y ) 
-        );
-
-//--------INBUF_A
-INBUF_A MSS_ACE_0_VAREF1(
-        // Inputs
-        .PAD ( VAREF1 ),
-        // Outputs
-        .Y   ( MSS_ACE_0_VAREF1_Y ) 
-        );
-
 //--------MSS_APB
 MSS_APB #( 
         .ACT_CONFIG ( 0 ),
@@ -336,8 +258,8 @@ MSS_ADLIB_INST(
         .ADC0           ( GND_net ), // tied to 1'b0 from definition
         .ADC1           ( GND_net ), // tied to 1'b0 from definition
         .ADC2           ( GND_net ), // tied to 1'b0 from definition
-        .ADC3           ( MSS_ACE_0_ADC3_Y ),
-        .ADC4           ( MSS_ACE_0_ADC4_Y ),
+        .ADC3           ( GND_net ), // tied to 1'b0 from definition
+        .ADC4           ( GND_net ), // tied to 1'b0 from definition
         .ADC5           ( GND_net ), // tied to 1'b0 from definition
         .ADC6           ( GND_net ), // tied to 1'b0 from definition
         .ADC7           ( GND_net ), // tied to 1'b0 from definition
@@ -372,8 +294,8 @@ MSS_ADLIB_INST(
         .GNDTM0         ( GND_net ), // tied to 1'b0 from definition
         .GNDTM1         ( GND_net ), // tied to 1'b0 from definition
         .GNDTM2         ( GND_net ), // tied to 1'b0 from definition
-        .VAREF0         ( MSS_ACE_0_VAREF0_Y ),
-        .VAREF1         ( MSS_ACE_0_VAREF1_Y ),
+        .VAREF0         ( GND_net ), // tied to 1'b0 from definition
+        .VAREF1         ( GND_net ), // tied to 1'b0 from definition
         .VAREF2         ( GND_net ), // tied to 1'b0 from definition
         .GNDVAREF       ( GND_net ), // tied to 1'b0 from definition
         .PUn            ( GND_net ), // tied to 1'b0 from definition
@@ -467,8 +389,8 @@ MSS_ADLIB_INST(
         .EMCOEN1n       (  ),
         .EMCBYTEN       (  ),
         .EMCDBOE        (  ),
-        .SDD0           ( MSS_ACE_0_SDD0_D ),
-        .SDD1           ( MSS_ACE_0_SDD1_D ),
+        .SDD0           (  ),
+        .SDD1           (  ),
         .SDD2           (  ),
         .VAREFOUT       (  ) 
         );

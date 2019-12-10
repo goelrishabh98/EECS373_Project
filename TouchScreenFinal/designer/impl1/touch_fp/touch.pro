@@ -1,6 +1,6 @@
 <project name="touch" version="1.1">
     <ProjectDirectory>
-        E:\Github\EECS373_Project\TouchScreenFinal\designer\impl1\touch_fp
+        D:\GitHub\EECS373_Project\TouchScreenFinal\designer\impl1\touch_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,7 +9,7 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        E:\Github\EECS373_Project\TouchScreenFinal\designer\impl1\touch_fp\touch.log
+        D:\GitHub\EECS373_Project\TouchScreenFinal\designer\impl1\touch_fp\touch.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -74,7 +74,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                E:\Github\EECS373_Project\TouchScreenFinal\designer\impl1\touch_fp\touch.pdb
+                D:\GitHub\EECS373_Project\TouchScreenFinal\designer\impl1\touch_fp\touch.pdb
             </filename>
             <local>
                 projectData\touch.pdb

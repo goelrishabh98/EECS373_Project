@@ -1,7 +1,7 @@
 # Synopsys Constraint Checker, version mapact, Build 2172R, built Oct 30 2017
 # Copyright (C) 1994-2017 Synopsys, Inc. This Synopsys software and all associated documentation are proprietary to Synopsys, Inc. and may only be used pursuant to the terms and conditions of a written license agreement with Synopsys, Inc. All other use, reproduction, modification, or distribution of the Synopsys software or the associated documentation is strictly prohibited.
 
-# Written on Mon Dec 09 16:04:28 2019
+# Written on Mon Dec 09 21:47:35 2019
 
 
 ##### DESIGN INFO #######################################################
@@ -34,8 +34,6 @@ Starting     Ending     |     rise to rise     |     fall to fall     |     rise
 Unconstrained Start/End Points
 ******************************
 
-p:ADCDirectInput_0
-p:ADCDirectInput_1
 p:GPIO_0_OUT
 p:GPIO_5_BI (bidir end point)
 p:GPIO_5_BI (bidir start point)
@@ -50,8 +48,6 @@ p:I2C_1_SCL (bidir start point)
 p:I2C_1_SDA (bidir end point)
 p:I2C_1_SDA (bidir start point)
 p:MSS_RESET_N
-p:SDD_0
-p:SDD_1
 p:SPI_1_CLK (bidir end point)
 p:SPI_1_CLK (bidir start point)
 p:SPI_1_DI
@@ -62,8 +58,6 @@ p:UART_0_RXD
 p:UART_0_TXD
 p:UART_1_RXD
 p:UART_1_TXD
-p:VAREF0
-p:VAREF1
 
 
 Inapplicable constraints

@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2019 12 9 16 4 28)
+      (timeStamp 2019 12 9 21 47 36)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "L-2016.09M-SP1-5, mapper mapact, Build 2172R"))
      )
@@ -377,32 +377,6 @@
         (property is_pwr (integer 1))
        )
     )
-    (cell OUTBUF_A (cellType GENERIC)
-      (property pad_cell (string "true"))
-      (property dont_use (integer 1))
-      (property dont_touch (string "true"))
-       (view prim (viewType NETLIST)
-         (interface
-           (port PAD (direction OUTPUT)
-           (property is_pad (string "true"))
- )
-           (port D (direction INPUT))
-         )
-       )
-    )
-    (cell INBUF_A (cellType GENERIC)
-      (property pad_cell (string "true"))
-      (property dont_use (integer 1))
-      (property dont_touch (string "true"))
-       (view prim (viewType NETLIST)
-         (interface
-           (port Y (direction OUTPUT))
-           (port PAD (direction INPUT)
-           (property is_pad (string "true"))
- )
-         )
-       )
-    )
     (cell GND (cellType GENERIC)
       (property dont_touch (string "false"))
        (view prim (viewType NETLIST)
@@ -576,12 +550,6 @@
     (cell TouchScreenFinal (cellType GENERIC)
        (view netlist (viewType NETLIST)
          (interface
-           (port ADCDirectInput_0 (direction INPUT))
-           (port ADCDirectInput_1 (direction INPUT))
-           (port SDD_0 (direction OUTPUT))
-           (port SDD_1 (direction OUTPUT))
-           (port VAREF0 (direction INPUT))
-           (port VAREF1 (direction INPUT))
            (port GPIO_0_OUT (direction OUTPUT))
            (port GPIO_5_BI (direction INOUT))
            (port GPIO_6_BI (direction INOUT))
@@ -685,24 +653,6 @@
            (property ACT_DIE (string "IP4X3M1"))
            (property ACT_FCLK (integer 100000000))
            (property ACT_PKG (string "fg484"))
-          )
-          (instance MSS_ACE_0_VAREF1 (viewRef prim (cellRef INBUF_A (libraryRef smartfusion)))
-           (property is_instantiated (integer 1))
-          )
-          (instance MSS_ACE_0_VAREF0 (viewRef prim (cellRef INBUF_A (libraryRef smartfusion)))
-           (property is_instantiated (integer 1))
-          )
-          (instance MSS_ACE_0_SDD1 (viewRef prim (cellRef OUTBUF_A (libraryRef smartfusion)))
-           (property is_instantiated (integer 1))
-          )
-          (instance MSS_ACE_0_SDD0 (viewRef prim (cellRef OUTBUF_A (libraryRef smartfusion)))
-           (property is_instantiated (integer 1))
-          )
-          (instance MSS_ACE_0_ADC4 (viewRef prim (cellRef INBUF_A (libraryRef smartfusion)))
-           (property is_instantiated (integer 1))
-          )
-          (instance MSS_ACE_0_ADC3 (viewRef prim (cellRef INBUF_A (libraryRef smartfusion)))
-           (property is_instantiated (integer 1))
           )
           (instance MSS_CCC_0 (viewRef netlist (cellRef TouchScreenFinal_tmp_MSS_CCC_0_MSS_CCC))
           )
@@ -1067,9 +1017,11 @@
            (portRef LVTTL10EN (instanceRef MSS_ADLIB_INST))
            (portRef ABPS11 (instanceRef MSS_ADLIB_INST))
            (portRef LVTTL8EN (instanceRef MSS_ADLIB_INST))
+           (portRef VAREF1 (instanceRef MSS_ADLIB_INST))
            (portRef ABPS3 (instanceRef MSS_ADLIB_INST))
            (portRef LVTTL0EN (instanceRef MSS_ADLIB_INST))
            (portRef LVTTL11EN (instanceRef MSS_ADLIB_INST))
+           (portRef ADC4 (instanceRef MSS_ADLIB_INST))
            (portRef LVTTL9EN (instanceRef MSS_ADLIB_INST))
            (portRef TM1 (instanceRef MSS_ADLIB_INST))
            (portRef GNDVAREF (instanceRef MSS_ADLIB_INST))
@@ -1099,9 +1051,11 @@
            (portRef CM4 (instanceRef MSS_ADLIB_INST))
            (portRef CM2 (instanceRef MSS_ADLIB_INST))
            (portRef ABPS4 (instanceRef MSS_ADLIB_INST))
+           (portRef ADC3 (instanceRef MSS_ADLIB_INST))
            (portRef ADC7 (instanceRef MSS_ADLIB_INST))
            (portRef TM4 (instanceRef MSS_ADLIB_INST))
            (portRef ABPS2 (instanceRef MSS_ADLIB_INST))
+           (portRef VAREF0 (instanceRef MSS_ADLIB_INST))
            (portRef LVTTL6EN (instanceRef MSS_ADLIB_INST))
            (portRef ABPS8 (instanceRef MSS_ADLIB_INST))
            (portRef ADC2 (instanceRef MSS_ADLIB_INST))
@@ -1272,16 +1226,14 @@
           (net MSS_ADLIB_INST_LVTTL2 (joined
            (portRef LVTTL2 (instanceRef MSS_ADLIB_INST))
           ))
-          (net MSS_ACE_0_SDD1_D (joined
+          (net MSS_ADLIB_INST_SDD1 (joined
            (portRef SDD1 (instanceRef MSS_ADLIB_INST))
-           (portRef D (instanceRef MSS_ACE_0_SDD1))
           ))
           (net MSS_ADLIB_INST_LVTTL5 (joined
            (portRef LVTTL5 (instanceRef MSS_ADLIB_INST))
           ))
-          (net MSS_ACE_0_SDD0_D (joined
+          (net MSS_ADLIB_INST_SDD0 (joined
            (portRef SDD0 (instanceRef MSS_ADLIB_INST))
-           (portRef D (instanceRef MSS_ACE_0_SDD0))
           ))
           (net MSS_ADLIB_INST_LVTTL10 (joined
            (portRef LVTTL10 (instanceRef MSS_ADLIB_INST))
@@ -1300,22 +1252,6 @@
           ))
           (net MSS_ADLIB_INST_LVTTL11 (joined
            (portRef LVTTL11 (instanceRef MSS_ADLIB_INST))
-          ))
-          (net MSS_ACE_0_VAREF0_Y (joined
-           (portRef Y (instanceRef MSS_ACE_0_VAREF0))
-           (portRef VAREF0 (instanceRef MSS_ADLIB_INST))
-          ))
-          (net MSS_ACE_0_ADC3_Y (joined
-           (portRef Y (instanceRef MSS_ACE_0_ADC3))
-           (portRef ADC3 (instanceRef MSS_ADLIB_INST))
-          ))
-          (net MSS_ACE_0_ADC4_Y (joined
-           (portRef Y (instanceRef MSS_ACE_0_ADC4))
-           (portRef ADC4 (instanceRef MSS_ADLIB_INST))
-          ))
-          (net MSS_ACE_0_VAREF1_Y (joined
-           (portRef Y (instanceRef MSS_ACE_0_VAREF1))
-           (portRef VAREF1 (instanceRef MSS_ADLIB_INST))
           ))
           (net MSS_ADLIB_INST_CMP0 (joined
            (portRef CMP0 (instanceRef MSS_ADLIB_INST))
@@ -2106,30 +2042,6 @@
           (net (rename MSS_ADLIB_INST_MSSPWDATA_31 "MSS_ADLIB_INST_MSSPWDATA[31]") (joined
            (portRef (member msspwdata 0) (instanceRef MSS_ADLIB_INST))
           ))
-          (net VAREF1 (joined
-           (portRef VAREF1)
-           (portRef PAD (instanceRef MSS_ACE_0_VAREF1))
-          ))
-          (net VAREF0 (joined
-           (portRef VAREF0)
-           (portRef PAD (instanceRef MSS_ACE_0_VAREF0))
-          ))
-          (net SDD_1 (joined
-           (portRef PAD (instanceRef MSS_ACE_0_SDD1))
-           (portRef SDD_1)
-          ))
-          (net SDD_0 (joined
-           (portRef PAD (instanceRef MSS_ACE_0_SDD0))
-           (portRef SDD_0)
-          ))
-          (net ADCDirectInput_1 (joined
-           (portRef ADCDirectInput_1)
-           (portRef PAD (instanceRef MSS_ACE_0_ADC4))
-          ))
-          (net ADCDirectInput_0 (joined
-           (portRef ADCDirectInput_0)
-           (portRef PAD (instanceRef MSS_ACE_0_ADC3))
-          ))
          )
         (property orig_inst_of (string "TouchScreenFinal"))
        )
@@ -2137,17 +2049,11 @@
     (cell touch (cellType GENERIC)
        (view verilog (viewType NETLIST)
          (interface
-           (port ADCDirectInput_0 (direction INPUT))
-           (port ADCDirectInput_1 (direction INPUT))
            (port MSS_RESET_N (direction INPUT))
            (port SPI_1_DI (direction INPUT))
            (port UART_0_RXD (direction INPUT))
            (port UART_1_RXD (direction INPUT))
-           (port VAREF0 (direction INPUT))
-           (port VAREF1 (direction INPUT))
            (port GPIO_0_OUT (direction OUTPUT))
-           (port SDD_0 (direction OUTPUT))
-           (port SDD_1 (direction OUTPUT))
            (port SPI_1_DO (direction OUTPUT))
            (port UART_0_TXD (direction OUTPUT))
            (port UART_1_TXD (direction OUTPUT))
@@ -2165,14 +2071,6 @@
           )
           (instance VCC_i (viewRef prim (cellRef VCC (libraryRef smartfusion)))          )
           (instance GND_i (viewRef prim (cellRef GND (libraryRef smartfusion)))          )
-          (net ADCDirectInput_0 (joined
-           (portRef ADCDirectInput_0)
-           (portRef ADCDirectInput_0 (instanceRef TouchScreenFinal_0))
-          ))
-          (net ADCDirectInput_1 (joined
-           (portRef ADCDirectInput_1)
-           (portRef ADCDirectInput_1 (instanceRef TouchScreenFinal_0))
-          ))
           (net MSS_RESET_N (joined
            (portRef MSS_RESET_N)
            (portRef MSS_RESET_N (instanceRef TouchScreenFinal_0))
@@ -2189,25 +2087,9 @@
            (portRef UART_1_RXD)
            (portRef UART_1_RXD (instanceRef TouchScreenFinal_0))
           ))
-          (net VAREF0 (joined
-           (portRef VAREF0)
-           (portRef VAREF0 (instanceRef TouchScreenFinal_0))
-          ))
-          (net VAREF1 (joined
-           (portRef VAREF1)
-           (portRef VAREF1 (instanceRef TouchScreenFinal_0))
-          ))
           (net GPIO_0_OUT (joined
            (portRef GPIO_0_OUT (instanceRef TouchScreenFinal_0))
            (portRef GPIO_0_OUT)
-          ))
-          (net SDD_0 (joined
-           (portRef SDD_0 (instanceRef TouchScreenFinal_0))
-           (portRef SDD_0)
-          ))
-          (net SDD_1 (joined
-           (portRef SDD_1 (instanceRef TouchScreenFinal_0))
-           (portRef SDD_1)
           ))
           (net SPI_1_DO (joined
            (portRef SPI_1_DO (instanceRef TouchScreenFinal_0))

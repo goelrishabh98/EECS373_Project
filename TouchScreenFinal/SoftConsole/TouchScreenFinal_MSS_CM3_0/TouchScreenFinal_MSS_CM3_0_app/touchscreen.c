@@ -31,10 +31,11 @@ void touchscreen_begin(){
 
 	uint8_t cmd, x, numArgs;
 	uint8_t i;
+	uint8_t temp[65];
 	const uint8_t *addr = initcmd;
 
 	MSS_SPI_init(&g_mss_spi1);
-	MSS_I2C_init(&g_mss_i2c1 , TOUCH_ADDR, MSS_I2C_PCLK_DIV_256 );
+	MSS_I2C_init(&g_mss_i2c1 , TOUCH_ADDR, MSS_I2C_PCLK_DIV_960 );
 	MSS_GPIO_init();
 	ACE_init();
 	MSS_GPIO_config(DC, MSS_GPIO_OUTPUT_MODE);
@@ -56,20 +57,23 @@ void touchscreen_begin(){
 	clear_SPI_CS();
 
 	writeRegister8(STMPE_SYS_CTRL1, STMPE_SYS_CTRL1_RESET);
+	  delay(10);
 
-	readRegister8(i, 65);
+	  for ( i = 0; i < 65; i++) {
+	    readRegister8(i);
+	  }
 
-	writeRegister8(STMPE_SYS_CTRL2, 0x0); // turn on clocks!
-	writeRegister8(STMPE_TSC_CTRL,
-				 STMPE_TSC_CTRL_XYZ | STMPE_TSC_CTRL_EN); // XYZ and enable!
-	// Serial.println(readRegister8(STMPE_TSC_CTRL), HEX);
-	writeRegister8(STMPE_INT_EN, STMPE_INT_EN_TOUCHDET);
-	writeRegister8(STMPE_ADC_CTRL1, STMPE_ADC_CTRL1_10BIT |
-									  (0x6 << 4)); // 96 clocks per conversion
+	  writeRegister8(STMPE_SYS_CTRL2, 0x0); // turn on clocks!
+	  writeRegister8(STMPE_TSC_CTRL,
+	                 STMPE_TSC_CTRL_XYZ | STMPE_TSC_CTRL_EN); // XYZ and enable!
+	  // Serial.println(readRegister8(STMPE_TSC_CTRL), HEX);
+	  writeRegister8(STMPE_INT_EN, STMPE_INT_EN_TOUCHDET);
+	  writeRegister8(STMPE_ADC_CTRL1, STMPE_ADC_CTRL1_10BIT |
+	                                      (0x6 << 4)); // 96 clocks per conversion
 	  writeRegister8(STMPE_ADC_CTRL2, STMPE_ADC_CTRL2_6_5MHZ);
 	  writeRegister8(STMPE_TSC_CFG, STMPE_TSC_CFG_4SAMPLE |
-										STMPE_TSC_CFG_DELAY_1MS |
-										STMPE_TSC_CFG_SETTLE_5MS);
+	                                    STMPE_TSC_CFG_DELAY_1MS |
+	                                    STMPE_TSC_CFG_SETTLE_5MS);
 	  writeRegister8(STMPE_TSC_FRACTION_Z, 0x6);
 	  writeRegister8(STMPE_FIFO_TH, 1);
 	  writeRegister8(STMPE_FIFO_STA, STMPE_FIFO_STA_RESET);
@@ -77,7 +81,7 @@ void touchscreen_begin(){
 	  writeRegister8(STMPE_TSC_I_DRIVE, STMPE_TSC_I_DRIVE_50MA);
 	  writeRegister8(STMPE_INT_STA, 0xFF); // reset all ints
 	  writeRegister8(STMPE_INT_CTRL,
-					 STMPE_INT_CTRL_POL_HIGH | STMPE_INT_CTRL_ENABLE);
+	                 STMPE_INT_CTRL_POL_HIGH | STMPE_INT_CTRL_ENABLE);
 
 
 }
@@ -168,20 +172,22 @@ int16_t getZ(uint16_t x){
 
 void readTouch(uint16_t *x, uint16_t *y, uint8_t* z){
 	uint8_t data[4];
-	readRegister8(0xD7, &data);
-
-	*x = data[0];
-	*x <<= 4;
-	*x |= (data[1] >> 4);
-	*y = data[1] & 0x0F;
-	*y <<= 8;
-	*y |= data[2];
-	*z = data[3];
+	uint8_t i = 0;
+	for (i = 0; i < 4; i++) {
+	    data[i] = readRegister8(0xD7); // _spi->transfer(0x00);
+	    // Serial.print("0x"); Serial.print(data[i], HEX); Serial.print(" / ");
+	  }
+	  *x = data[0];
+	  *x <<= 4;
+	  *x |= (data[1] >> 4);
+	  *y = data[1] & 0x0F;
+	  *y <<= 8;
+	  *y |= data[2];
+	  *z = data[3];
 }
 int touched(){
-	uint8_t data;
-	readRegister8(STMPE_TSC_CTRL, &data);
-	return (data & 0x80);
+
+	return (readRegister8(STMPE_TSC_CTRL) & 0x80);
 }
 
 void drawPixel(uint16_t x, uint16_t y, uint16_t color){
@@ -195,14 +201,19 @@ void drawPixel(uint16_t x, uint16_t y, uint16_t color){
 
 
 void drawRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t color){
-	setAddr(x, y, x+w-1, y+h-1);
+	int i, j;
 
-	for(y=h; y>0; y--){
-		for(x = w; x>0; x--){
-			sendData(&color, 16);
+		set_SPI_CS();
+		setAddr(x,y, x+w, y+h);
+		set_DC_HIGH();
+		for(i = x; i<x+w; i++){
+			for (j =y; j<y+h; j++){
+				sendSPI16(color);
+			}
+			sendSPI16(color);
 		}
-		sendData(&color, 16);
-	}
+
+		clear_SPI_CS();
 }
 void drawRectanglePixel(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t color){
 	uint16_t i;
@@ -213,7 +224,19 @@ void drawRectanglePixel(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint16_t
 }		
 
 void drawFillScreen(uint16_t color){
-	drawRectanglePixel(0, 0, ILI9341_TFTWIDTH, ILI9341_TFTHEIGHT, color);
+	int i, j;
+	//drawRectanglePixel(0, 0, ILI9341_TFTWIDTH, ILI9341_TFTHEIGHT, color);
+	set_SPI_CS();
+	setAddr(0, 0, ILI9341_TFTWIDTH-1, ILI9341_TFTHEIGHT-1);
+	set_DC_HIGH();
+	for(i = 0; i<ILI9341_TFTWIDTH; i++){
+		for (j =0; j<ILI9341_TFTHEIGHT; j++){
+			sendSPI16(color);
+		}
+		sendSPI16(color);
+	}
+
+	clear_SPI_CS();
 }
 
 void drawText1(uint16_t color){
@@ -422,8 +445,7 @@ void set_yp(int val){
 }
 
 void writeRegister8(uint8_t reg, uint8_t val){
-	uint8_t transmit_buf[] = {reg, val};
-
+	uint8_t transmit_buf[2] = {reg, val};
 	MSS_I2C_write
 	(
 		&g_mss_i2c1,
@@ -432,20 +454,49 @@ void writeRegister8(uint8_t reg, uint8_t val){
 		sizeof(transmit_buf),
 		MSS_I2C_RELEASE_BUS
 	);
+
 	MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
 	return;
 }
 
-void readRegister8(uint8_t reg, uint8_t* receive_buf){
+uint8_t readRegister8(uint8_t reg){
+	uint8_t data;
+	MSS_I2C_write
+	(
+		&g_mss_i2c1,
+		TOUCH_ADDR,
+		&reg,
+		1,
+		MSS_I2C_RELEASE_BUS
+	);
+	MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
+
 	MSS_I2C_read
 	(
 			&g_mss_i2c1,
 			TOUCH_ADDR,
-			receive_buf,
-			sizeof(receive_buf),
+			&data,
+			1,
 			MSS_I2C_RELEASE_BUS
 	 );
 	MSS_I2C_wait_complete(&g_mss_i2c1, MSS_I2C_NO_TIMEOUT);
-	return;
+	return data;
 }
+
+int bufferEmpty(){
+	return (readRegister8(STMPE_FIFO_STA) & STMPE_FIFO_STA_EMPTY);
+}
+
+uint8_t scaleX(uint16_t x){
+	float temp = x/240.0;
+	temp *= 255;
+	return (uint8_t) temp;
+}
+
+uint8_t scaleY(uint16_t y){
+	float temp = y/320.0;
+	temp *= 255;
+	return (uint8_t) temp;
+}
+
 

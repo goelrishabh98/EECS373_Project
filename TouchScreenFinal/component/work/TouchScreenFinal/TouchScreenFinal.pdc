@@ -3,7 +3,7 @@
 
 # Version: v11.9 11.9.0.4
 # Family: SmartFusion , Die: A2F200M3F , Package: 484 FBGA
-# Date generated: Mon Dec 09 15:49:44 2019 
+# Date generated: Mon Dec 09 21:42:27 2019 
 
 
 # 
@@ -11,6 +11,10 @@
 # 
 
 define_group -name I2C_1_PADs
+
+define_group -name SPI_1_PADs
+
+define_group -name UART_0_PADs
 
 
 # 
@@ -59,31 +63,6 @@ set_io MSS_RESET_N    \
     -DIRECTION INPUT
 
 
-set_io SPI_1_CLK      \
-    -iostd LVCMOS25   \
-    -DIRECTION INOUT
-
-
-set_io SPI_1_DI       \
-    -iostd LVCMOS25   \
-    -DIRECTION INPUT
-
-
-set_io SPI_1_DO        \
-    -iostd LVCMOS25    \
-    -DIRECTION OUTPUT
-
-
-set_io SPI_1_SS       \
-    -iostd LVCMOS25   \
-    -DIRECTION INOUT
-
-
-set_io UART_0_RXD     \
-    -iostd LVCMOS25   \
-    -DIRECTION INPUT
-
-
 set_io UART_1_RXD     \
     -iostd LVCMOS25   \
     -DIRECTION INPUT
@@ -106,6 +85,46 @@ set_io I2C_1_SDA            \
     -iostd LVCMOS25         \
     -GROUP_NAME I2C_1_PADs  \
     -DIRECTION INOUT
+
+
+# User Group SPI_1_PADs
+
+set_io SPI_1_CLK            \
+    -iostd LVCMOS25         \
+    -GROUP_NAME SPI_1_PADs  \
+    -DIRECTION INOUT
+
+
+set_io SPI_1_DI             \
+    -iostd LVCMOS25         \
+    -GROUP_NAME SPI_1_PADs  \
+    -DIRECTION INPUT
+
+
+set_io SPI_1_DO             \
+    -iostd LVCMOS25         \
+    -GROUP_NAME SPI_1_PADs  \
+    -DIRECTION OUTPUT
+
+
+set_io SPI_1_SS             \
+    -iostd LVCMOS25         \
+    -GROUP_NAME SPI_1_PADs  \
+    -DIRECTION INOUT
+
+
+# User Group UART_0_PADs
+
+set_io UART_0_RXD            \
+    -iostd LVCMOS25          \
+    -GROUP_NAME UART_0_PADs  \
+    -DIRECTION INPUT
+
+
+set_io UART_0_TXD            \
+    -iostd LVCMOS25          \
+    -GROUP_NAME UART_0_PADs  \
+    -DIRECTION OUTPUT
 
 
 
@@ -137,6 +156,8 @@ set_io I2C_1_SDA            \
 # set_io UART_0_RXD -iostd LVCMOS25 -DIRECTION INPUT 
 # set_io UART_1_RXD -iostd LVCMOS25 -DIRECTION INPUT 
 # set_io UART_1_TXD -iostd LVCMOS25 -DIRECTION OUTPUT 
+# set_io I2C_1_SCL -iostd LVCMOS25 -GROUP_NAME I2C_1_PADs -DIRECTION INOUT 
+# set_io I2C_1_SDA -iostd LVCMOS25 -GROUP_NAME I2C_1_PADs -DIRECTION INOUT 
 # set_io GPIO_0_OUT -iostd LVCMOS25 -DIRECTION OUTPUT 
 # set_io GPIO_5_BI -iostd LVCMOS25 -DIRECTION INOUT 
 # set_io GPIO_6_BI -iostd LVCMOS25 -DIRECTION INOUT 
@@ -149,3 +170,5 @@ set_io I2C_1_SDA            \
 # set_io UART_0_RXD -iostd LVCMOS25 -DIRECTION INPUT 
 # set_io UART_1_RXD -iostd LVCMOS25 -DIRECTION INPUT 
 # set_io UART_1_TXD -iostd LVCMOS25 -DIRECTION OUTPUT 
+# set_io I2C_1_SCL -iostd LVCMOS25 -GROUP_NAME I2C_1_PADs -DIRECTION INOUT 
+# set_io I2C_1_SDA -iostd LVCMOS25 -GROUP_NAME I2C_1_PADs -DIRECTION INOUT 

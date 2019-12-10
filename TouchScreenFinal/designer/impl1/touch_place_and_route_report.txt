@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Mon Dec 09 16:04:54 2019 ***************************************************************************
+                          Mon Dec 09 21:47:58 2019 ***************************************************************************
 
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
-File Name: E:\Github\EECS373_Project\TouchScreenFinal\designer\impl1\touch.adb
+File Name: D:\GitHub\EECS373_Project\TouchScreenFinal\designer\impl1\touch.adb
 Design Name: touch  Design State: layout
-Last Saved: Mon Dec 09 16:04:41 2019
+Last Saved: Mon Dec 09 21:47:46 2019
 
 ***** Device Data **************************************************
 
@@ -22,9 +22,9 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Mon Dec 09 16:04:32 2019:
-        E:\Github\EECS373_Project\TouchScreenFinal\synthesis\touch.edn
-        E:\Github\EECS373_Project\TouchScreenFinal\component\work\touch\touch.pdc
+Source File(s) Imported on Mon Dec 09 21:47:39 2019:
+        D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\touch.edn
+        D:\GitHub\EECS373_Project\TouchScreenFinal\component\work\touch\touch.pdc
 
 
 ***** CAE Variables ************************************************
@@ -50,8 +50,8 @@ Parameters used to run compile:
 Family      : SmartFusion
 Device      : A2F200M3F
 Package     : 484 FBGA
-Source      : E:\Github\EECS373_Project\TouchScreenFinal\synthesis\touch.edn
-              E:\Github\EECS373_Project\TouchScreenFinal\component\work\touch\touch.pdc
+Source      : D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\touch.edn
+              D:\GitHub\EECS373_Project\TouchScreenFinal\component\work\touch\touch.pdc
 Format      : EDIF
 Topcell     : touch
 Speed grade : STD
@@ -118,7 +118,9 @@ Warning: CMP201: Net TouchScreenFinal_0/MSS_ADLIB_INST_LVTTL1 drives no load.
 Warning: CMP201: Net TouchScreenFinal_0/MSS_ADLIB_INST_SDD2 drives no load.
 Warning: CMP201: Net TouchScreenFinal_0/MSS_ADLIB_INST_LVTTL9 drives no load.
 Warning: CMP201: Net TouchScreenFinal_0/MSS_ADLIB_INST_LVTTL2 drives no load.
+Warning: CMP201: Net TouchScreenFinal_0/MSS_ADLIB_INST_SDD1 drives no load.
 Warning: CMP201: Net TouchScreenFinal_0/MSS_ADLIB_INST_LVTTL5 drives no load.
+Warning: CMP201: Net TouchScreenFinal_0/MSS_ADLIB_INST_SDD0 drives no load.
 Warning: CMP201: Net TouchScreenFinal_0/MSS_ADLIB_INST_LVTTL10 drives no load.
 Warning: CMP201: Net TouchScreenFinal_0/MSS_ADLIB_INST_LVTTL8 drives no load.
 Warning: CMP201: Net TouchScreenFinal_0/MSS_ADLIB_INST_LVTTL0 drives no load.
@@ -407,7 +409,7 @@ Optimized macros:
 
     Total macros optimized  0
 
-There were 0 error(s) and 316 warning(s) in this design.
+There were 0 error(s) and 318 warning(s) in this design.
 =====================================================================
 
 Reading user pdc (Physical Design Constraints) file(s) postcompile
@@ -430,7 +432,7 @@ Compile report:
     Fabric                     Used:      0  Total:   4608   (0.00%)
     Fabric IO (W/ clocks)      Used:      0  Total:     94   (0.00%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
-    Dedicated Analog IO        Used:      6  Total:     32   (18.75%)
+    Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
     Dedicated MSS IO           Used:     16  Total:     43   (37.21%)
     GLOBAL (Chip+Quadrant)     Used:      0  Total:     15   (0.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
@@ -492,7 +494,6 @@ Incremental Route: OFF
 Info: I/O Bank Assigner detected (1) out of (6) I/O Bank(s) with locked I/O technologies.
 
 Running I/O Bank Assigner.
-Due to the complexity of I/O technology constraints, I/O Bank Assigner may take a few minutes...
 
 I/O Bank Assigner completed successfully.
 
@@ -504,25 +505,25 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Mon Dec 09 16:04:44 2019
+Timing-driven Placer Started: Mon Dec 09 21:47:49 2019
 
-Placer Finished: Mon Dec 09 16:04:45 2019
-Total Placer CPU Time:     00:00:01
+Placer Finished: Mon Dec 09 21:47:51 2019
+Total Placer CPU Time:     00:00:02
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: touch                           Started: Mon Dec 09 16:04:48 2019
+Design: touch                           Started: Mon Dec 09 21:47:53 2019
 
  
 
 Timing-driven Router completed successfully.
 
 Design: touch                           
-Finished: Mon Dec 09 16:04:51 2019
-Total CPU Time:     00:00:03            Total Elapsed Time: 00:00:03
-Total Memory Usage: 161.7 Mbytes
+Finished: Mon Dec 09 21:47:56 2019
+Total CPU Time:     00:00:02            Total Elapsed Time: 00:00:03
+Total Memory Usage: 161.3 Mbytes
                         o - o - o - o - o - o
 
 
