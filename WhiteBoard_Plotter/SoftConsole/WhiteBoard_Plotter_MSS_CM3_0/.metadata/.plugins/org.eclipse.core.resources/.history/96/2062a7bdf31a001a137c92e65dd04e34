@@ -12,7 +12,6 @@ int main(){
 	stepper_config(SIXTEENTH, SIXTEENTH);
 	interfaceConfig(57, 85);
 
-
 	/*
 	makeLine(2.0, -0.7);
 	sendMessage(servoExtend, 1, 0x373A);
