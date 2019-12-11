@@ -389,8 +389,8 @@ SIZE="1229"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter.adb,adb"
 STATE="utd"
-TIME="1575992538"
-SIZE="353280"
+TIME="1575995239"
+SIZE="353792"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter.fdb,fdb"
 STATE="utd"
@@ -399,28 +399,28 @@ SIZE="36406"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter.ide_des,ide_des"
 STATE="utd"
-TIME="1575992538"
+TIME="1575995239"
 SIZE="1201"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter_compile_log.rpt,log"
 STATE="utd"
-TIME="1575992538"
+TIME="1575994797"
 SIZE="34886"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter_fp\projectData\WhiteboarPlotter.pdb,pdb"
 STATE="utd"
-TIME="1575992538"
-SIZE="41944"
+TIME="1575995336"
+SIZE="41943"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter_fp\WhiteboarPlotter.pdb,pdb"
 STATE="utd"
-TIME="1575992538"
-SIZE="41944"
+TIME="1575995297"
+SIZE="41943"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter_fp\WhiteboarPlotter.pro,pro"
 STATE="utd"
-TIME="1575992538"
-SIZE="2514"
+TIME="1575995338"
+SIZE="2448"
 ENDFILE
 VALUE "<project>\designer\impl1\WhiteboarPlotter_placeroute_log.rpt,log"
 STATE="utd"
@@ -500,28 +500,28 @@ SIZE="512"
 ENDFILE
 VALUE "<project>\synthesis\WhiteBoard_Plotter_syn.prj,prj"
 STATE="utd"
-TIME="1575992540"
-SIZE="2398"
+TIME="1575992600"
+SIZE="2266"
 ENDFILE
 VALUE "<project>\synthesis\WhiteboarPlotter.edn,syn_edn"
 STATE="utd"
-TIME="1575992540"
-SIZE="144660"
+TIME="1575994781"
+SIZE="144661"
 ENDFILE
 VALUE "<project>\synthesis\WhiteboarPlotter.so,so"
 STATE="utd"
-TIME="1575992540"
+TIME="1575994781"
 SIZE="239"
 ENDFILE
 VALUE "<project>\synthesis\WhiteboarPlotter_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1575992540"
+TIME="1575994781"
 SIZE="554"
 ENDFILE
 VALUE "<project>\synthesis\WhiteboarPlotter_syn.prj,prj"
 STATE="utd"
-TIME="1575992540"
-SIZE="0"
+TIME="1575994782"
+SIZE="2941"
 ENDFILE
 ENDLIST
 LIST UsedFile
@@ -713,8 +713,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -786,12 +786,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Program Device:WhiteboarPlotter_program.log
 StartPage;StartPage;0
-SmartDesign;WhiteboarPlotter;0
-SmartDesign;WhiteBoard_Plotter;0
-ACTIVEVIEW;WhiteBoard_Plotter
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"
