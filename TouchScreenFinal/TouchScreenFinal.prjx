@@ -254,8 +254,8 @@ IS_READONLY="TRUE"
 ENDFILE
 VALUE "<project>\designer\impl1\touch.adb,adb"
 STATE="utd"
-TIME="1575930312"
-SIZE="303616"
+TIME="1575946098"
+SIZE="303104"
 ENDFILE
 VALUE "<project>\designer\impl1\touch.fdb,fdb"
 STATE="utd"
@@ -264,32 +264,32 @@ SIZE="32701"
 ENDFILE
 VALUE "<project>\designer\impl1\touch.ide_des,ide_des"
 STATE="utd"
-TIME="1575930312"
+TIME="1575946098"
 SIZE="1060"
 ENDFILE
 VALUE "<project>\designer\impl1\TouchScreenFinal.ide_des,ide_des"
 STATE="utd"
-TIME="1575939652"
-SIZE="210"
+TIME="1575945760"
+SIZE="319"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_compile_log.rpt,log"
 STATE="utd"
-TIME="1575930260"
-SIZE="31250"
+TIME="1575946068"
+SIZE="31403"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_fp\projectData\touch.pdb,pdb"
 STATE="utd"
-TIME="1575930386"
-SIZE="38667"
+TIME="1575946256"
+SIZE="38253"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_fp\touch.pdb,pdb"
 STATE="utd"
-TIME="1575930328"
-SIZE="38667"
+TIME="1575946214"
+SIZE="38253"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_fp\touch.pro,pro"
 STATE="utd"
-TIME="1575930386"
+TIME="1576018988"
 SIZE="2386"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_placeroute_log.rpt,log"
@@ -333,22 +333,22 @@ PARENT="<project>\component\work\TouchScreenFinal\TouchScreenFinal.cxf"
 ENDFILE
 VALUE "<project>\synthesis\touch.edn,syn_edn"
 STATE="utd"
-TIME="1575930246"
-SIZE="112071"
+TIME="1575946058"
+SIZE="107559"
 ENDFILE
 VALUE "<project>\synthesis\touch.so,so"
 STATE="utd"
-TIME="1575930246"
+TIME="1575946058"
 SIZE="222"
 ENDFILE
 VALUE "<project>\synthesis\touch_sdc.sdc,syn_sdc"
 STATE="utd"
-TIME="1575930246"
+TIME="1575946058"
 SIZE="310"
 ENDFILE
 VALUE "<project>\synthesis\touch_syn.prj,prj"
 STATE="utd"
-TIME="1575930246"
+TIME="1576018988"
 SIZE="2220"
 ENDFILE
 ENDLIST
@@ -472,8 +472,8 @@ NAME="Synplify Pro ME"
 FUNCTION="Synthesis"
 TOOL="Synplify Pro ME"
 LOCATION="C:\Microsemi\Libero_SoC_v11.9\SynplifyPro\bin\synplify_pro.exe"
-PARAM="-licensetype synplifypro_actel -batch -log synplify.log"
-BATCH=1
+PARAM=""
+BATCH=0
 LICENSE=""
 IS32BIT="1"
 EndProfile
@@ -533,12 +533,8 @@ LIST UserCustomizedFileList
 ENDLIST
 LIST OpenedFileList
 ORIENTATION;HORIZONTAL
-Reports;Reports;0
-ReportsCurrentItem;Program Device:touch_program.log
 StartPage;StartPage;0
-SmartDesign;TouchScreenFinal;0
-SmartDesign;touch;0
-ACTIVEVIEW;Reports
+ACTIVEVIEW;StartPage
 ENDLIST
 LIST ModuleSubBlockList
 LIST "BIBUF_MSS::work","component\Actel\SmartFusionMSS\MSS\2.5.200\mss_comps.v","FALSE","FALSE"

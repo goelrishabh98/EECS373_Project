@@ -35,12 +35,10 @@ void touchscreen_begin(){
 	const uint8_t *addr = initcmd;
 
 	MSS_SPI_init(&g_mss_spi1);
-	MSS_I2C_init(&g_mss_i2c1 , TOUCH_ADDR, MSS_I2C_PCLK_DIV_960 );
+	MSS_I2C_init(&g_mss_i2c1 , TOUCH_ADDR, MSS_I2C_PCLK_DIV_256 );
 	MSS_GPIO_init();
-	ACE_init();
+
 	MSS_GPIO_config(DC, MSS_GPIO_OUTPUT_MODE);
-	ace_y = ACE_get_channel_handle((const uint8_t*)"ADCDirectInput_0");
-	ace_x = ACE_get_channel_handle((const uint8_t*)"ADCDirectInput_1");
 	
 	configureSPI(8);
 	set_SPI_CS();
@@ -97,8 +95,7 @@ int16_t getX(){
 	MSS_GPIO_set_output(xn, 0);
 	delayMicro(500);
 
-	samples[0] = ACE_get_ppe_sample(ace_y);
-	samples[1] = ACE_get_ppe_sample(ace_y);
+
 
 	if (samples[0] - samples[1] < -4 || samples[0] - samples[1] > 4) {
 	  return -1;
@@ -240,23 +237,26 @@ void drawFillScreen(uint16_t color){
 }
 
 void drawText1(uint16_t color){
-	drawRectanglePixel(40, 210, 5, 25, color);
-	drawRectanglePixel(40, 220, 30, 5, color);
+	//T
+	drawRectanglePixel(70, 220, 5, 25, color);
+	drawRectanglePixel(40, 230, 30, 5, color);
 
 
 }
 
 void drawText2(uint16_t color){
-	drawRectanglePixel(40, 110, 5, 20, color);
-	drawRectanglePixel(40, 130, 30, 5, color);
-	drawRectanglePixel(65, 110, 5, 20, color);
+	//C
+	drawRectanglePixel(40, 70, 5, 20, color);
+	drawRectanglePixel(40, 70, 30, 5, color);
+	drawRectanglePixel(65, 70, 5, 20, color);
 
 }
 
 void drawText3(uint16_t color){
+	//F
 	drawRectanglePixel(160, 160, 30, 5, color);
-	drawRectanglePixel(160, 160, 5, 20, color);
-	drawRectanglePixel(165, 160, 5, 20, color);
+	drawRectanglePixel(190, 160, 5, 20, color);
+	drawRectanglePixel(175, 160, 5, 20, color);
 }
 
 void setAddr(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1){
@@ -497,6 +497,40 @@ uint8_t scaleY(uint16_t y){
 	float temp = y/320.0;
 	temp *= 255;
 	return (uint8_t) temp;
+}
+
+void drawCircle(int16_t x0, int16_t y0, int16_t r,
+    uint16_t color) {
+  int16_t f = 1 - r;
+  int16_t ddF_x = 1;
+  int16_t ddF_y = -2 * r;
+  int16_t x = 0;
+  int16_t y = r;
+
+  drawPixel(x0  , y0+r, color);
+  drawPixel(x0  , y0-r, color);
+  drawPixel(x0+r, y0  , color);
+  drawPixel(x0-r, y0  , color);
+
+  while (x<y) {
+    if (f >= 0) {
+      y--;
+      ddF_y += 2;
+      f += ddF_y;
+    }
+    x++;
+    ddF_x += 2;
+    f += ddF_x;
+
+    drawPixel(x0 + x, y0 + y, color);
+    drawPixel(x0 - x, y0 + y, color);
+    drawPixel(x0 + x, y0 - y, color);
+    drawPixel(x0 - x, y0 - y, color);
+    drawPixel(x0 + y, y0 + x, color);
+    drawPixel(x0 - y, y0 + x, color);
+    drawPixel(x0 + y, y0 - x, color);
+    drawPixel(x0 - y, y0 - x, color);
+  }
 }
 
 
