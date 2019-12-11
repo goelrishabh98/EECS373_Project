@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09M-SP1-5
 #--  Project file N:\EECS373_Project\WhiteBoard_Plotter\synthesis\run_options.txt
-#--  Written on Mon Dec 09 17:43:15 2019
+#--  Written on Tue Dec 10 11:19:33 2019
 
 
 #project files

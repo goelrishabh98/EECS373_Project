@@ -2,7 +2,7 @@
 <device>
   <name>WhiteboarPlotter</name>
   <version>1.0</version>
-  <description>CMSIS description for WhiteboarPlotter.  Created by Microsemi SmartDesign on Sun Dec 08 17:32:45 2019</description>
+  <description>CMSIS description for WhiteboarPlotter.  Created by Microsemi SmartDesign on Tue Dec 10 11:18:52 2019</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>

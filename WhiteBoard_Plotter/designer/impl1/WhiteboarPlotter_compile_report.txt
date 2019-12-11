@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Mon Dec 09 17:43:41 2019 ***************************************************************************
+                          Tue Dec 10 11:19:56 2019 ***************************************************************************
 
 Product: Designer
 Release: v11.9
 Version: 11.9.0.4
 File Name: N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter.adb
 Design Name: WhiteboarPlotter  Design State: compile
-Last Saved: Mon Dec 09 17:42:31 2019
+Last Saved: Tue Dec 10 10:42:18 2019
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Mon Dec 09 17:43:37 2019:
+Source File(s) Imported on Tue Dec 10 11:19:50 2019:
         N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter.edn
         N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.pdc
 

@@ -17,7 +17,7 @@ Imported the files:
    N:\EECS373_Project\WhiteBoard_Plotter\synthesis\WhiteboarPlotter.edn
    N:\EECS373_Project\WhiteBoard_Plotter\component\work\WhiteboarPlotter\WhiteboarPlotter.pdc
 
-The Import command succeeded ( 00:00:02 )
+The Import command succeeded ( 00:00:03 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -523,7 +523,7 @@ Wrote status report to file: WhiteboarPlotter_compile_report.txt
 The Report command succeeded ( 00:00:00 )
 Wrote pin report to file: WhiteboarPlotter_report_pin_byname.txt
 
-The Report command succeeded ( 00:00:01 )
+The Report command succeeded ( 00:00:00 )
 Wrote pin report to file: WhiteboarPlotter_report_pin_bynumber.txt
 
 The Report command succeeded ( 00:00:01 )

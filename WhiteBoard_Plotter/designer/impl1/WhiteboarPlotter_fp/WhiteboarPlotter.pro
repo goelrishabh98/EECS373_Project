@@ -1,6 +1,6 @@
 <project name="WhiteboarPlotter" version="1.1">
     <ProjectDirectory>
-        C:\Users\sarth\Documents\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter_fp
+        N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter_fp
     </ProjectDirectory>
     <View>
         SingleSTAPLView
@@ -9,7 +9,7 @@
         
     </LiberoTargetDevice>
     <LogFile>
-        C:\Users\sarth\Documents\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter_fp\WhiteboarPlotter.log
+        N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter_fp\WhiteboarPlotter.log
     </LogFile>
     <SerializationOption>
         Skip
@@ -74,7 +74,7 @@
         </Hardware>
         <Algo type="PDB">
             <filename>
-                C:\Users\sarth\Documents\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter_fp\WhiteboarPlotter.pdb
+                N:\EECS373_Project\WhiteBoard_Plotter\designer\impl1\WhiteboarPlotter_fp\WhiteboarPlotter.pdb
             </filename>
             <local>
                 projectData\WhiteboarPlotter.pdb

@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Sun Dec 08 17:32:38 2019
+// Created by SmartDesign Tue Dec 10 11:18:45 2019
 // Version: v11.9 11.9.0.4
 //////////////////////////////////////////////////////////////////////
 
@@ -336,8 +336,8 @@ WhiteBoard_Plotter WhiteBoard_Plotter_0(
         .MSS_RESET_N ( MSS_RESET_N ),
         .MSSPREADY   ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PREADY ),
         .MSSPSLVERR  ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PSLVERR ),
-        .MSSPRDATA   ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PRDATA ),
         .UART_1_RXD  ( UART_1_RXD ),
+        .MSSPRDATA   ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PRDATA ),
         // Outputs
         .UART_0_TXD  ( UART_0_TXD_net_0 ),
         .MSSPSEL     ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PSELx ),
@@ -351,9 +351,9 @@ WhiteBoard_Plotter WhiteBoard_Plotter_0(
         .GPIO_2_OUT  ( GPIO_2_OUT_net_0 ),
         .GPIO_1_OUT  ( GPIO_1_OUT_net_0 ),
         .GPIO_0_OUT  ( GPIO_0_OUT_net_0 ),
+        .UART_1_TXD  ( UART_1_TXD_net_0 ),
         .MSSPADDR    ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PADDR ),
-        .MSSPWDATA   ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PWDATA ),
-        .UART_1_TXD  ( UART_1_TXD_net_0 ) 
+        .MSSPWDATA   ( WhiteBoard_Plotter_0_MSS_MASTER_APB_PWDATA ) 
         );
 
 
