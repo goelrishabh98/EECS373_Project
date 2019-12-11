@@ -29,7 +29,8 @@ int main()
 		while(menu == -1){
 				while (touched()) {
 					// read x & y & z;
-					if (! bufferEmpty()) {
+					while (! bufferEmpty()) {
+					uint8_t buf[5] = {0xFF, 0xFF, 0xFF, 0xFF, 0x00};
 
 					  readTouch(&x, &y, &z);
 					 //printf("x: %d   y: %d \n\r", x, y);
@@ -50,16 +51,20 @@ int main()
 					  //printf("x: %d   y: %d \n\r", x, y);
 					  if(x>120){
 						  menu = 0;
-						  sendMessage('~', 1, 0x000);
+						  buf[4] = '~';
+						  sendMessage(buf, 5, 0x000);
 
 					  }
 					  else if(y> 160){
 						  menu = 1;
-						  sendMessage('%', 1, 0x000);
+						  buf[4] = '%';
+						  sendMessage(buf, 5, 0x000);
+
 					  }
 					  else{
 						  menu = 2;
-						  sendMessage('_', 1, 0x000);
+						  buf[4] = '_';
+						  sendMessage(buf, 5, 0x000);
 
 					  }
 					}
@@ -86,17 +91,22 @@ int main()
 				drawRectangle(120, 165, 115, 152, ILI9341_WHITE);
 
 				//draw box
-				drawRectangle(40, 60, 5, 35, ILI9341_BLACK);
-				drawRectangle(40, 90, 35, 5, ILI9341_BLACK);
-				drawRectangle(40, 60, 35, 5, ILI9341_BLACK);
-				drawRectangle(70, 60, 5, 35, ILI9341_BLACK);
+				drawRectangle(40, 60, 3, 35, ILI9341_BLACK);
+				drawRectangle(40, 90, 35, 3, ILI9341_BLACK);
+				drawRectangle(40, 60, 35, 3, ILI9341_BLACK);
+				drawRectangle(70, 60, 3, 35, ILI9341_BLACK);
+
+				//drawCircle
+				drawCircle(160,240 , 20, ILI9341_BLACK);
 
 			}
 
 			while(menu == 2){
-				while (touched()) {
+				uint8_t buf[5] = {0x11, 0x11, 0x11, 0x11, 0x00};
+
+				if (touched()) {
 								// read x & y & z;
-								if (! bufferEmpty()) {
+								while (! bufferEmpty()) {
 
 								  readTouch(&x, &y, &z);
 								 //printf("x: %d   y: %d \n\r", x, y);
@@ -115,21 +125,38 @@ int main()
 								  y = 320 - y;
 
 								  //printf("x: %d   y: %d \n\r", x, y);
+								  drawRectanglePixel(x, y, 2, 2, ILI9341_BLUE);
 								  if(x>120){
 									  if(y>165){
 										  //send box
-										  sendMessage('[', 1, 0x000);
+
+										  buf[4] = '(';
+										  sendMessage(buf, 5, 0x000);
+										  while (!bufferEmpty()){
+									  				readTouch(&x, &y, &z);
+										  										  			}
+
 									  }
 									  else{
 										  //send tri
-										  sendMessage('<', 1, 0x000);
+										  buf[4] = '<';
+										  sendMessage(buf, 5, 0x000);
+										  while (!bufferEmpty()){
+										  			readTouch(&x, &y, &z);
+										  										  			}
+
 									  }
 
 								  }
 								  else{
-									  if(y>165){
+									  if(y<165){
 										  //send Circle
-										  sendMessage('(', 1, 0x000);
+										  buf[4] = '[';
+										  sendMessage(buf, 5, 0x000);
+										  while (!bufferEmpty()){
+										  				readTouch(&x, &y, &z);
+										  										  			}
+
 									  }
 									  else{
 										  while (!bufferEmpty()){
@@ -176,34 +203,14 @@ int main()
 							  //printf("x: %d   y: %d \n\r", x, y);
 						  if(!t){
 							  if(count < 250){
-								  int tempX = 255 - scaleX(x);
-								  int tempY = scaleY(y);
-								  drawRectanglePixel(x, y, 6, 6, ILI9341_BLUE);
-
-								  readTouch(&x, &y, &z);
-								 //printf("x: %d   y: %d \n\r", x, y);
-								  x -= 200;
-								  y -= 320;
-
-								  float temp = x/3730.0;
-								  temp *= 240;
-								  x = temp;
-
-								  temp = y/3605.0;
-								  temp *= 320;
-								  y = temp;
-
-								  x = 240 - x;
-								  y = 320 - y;
 
 								  drawRectanglePixel(x, y, 6, 6, ILI9341_BLUE);
-								  uint8_t buf[5] = {0,255-scaleX(x),scaleY(y),tempX, tempY};
+								  uint8_t buf[5] = {0,0,0,255-scaleX(x),scaleY(y)};
 								  sendMessage(buf, 5, 0x000);
 
 								  count++;
 								  t = 0;
 							  }
-
 
 
 								  }
@@ -226,6 +233,7 @@ int main()
 
 				}
 	}
+
 }
 
 //	while(menu == -1){

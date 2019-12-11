@@ -1,15 +1,15 @@
 #--  Synopsys, Inc.
 #--  Version L-2016.09M-SP1-5
-#--  Project file F:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\touch_syn.prj
+#--  Project file D:\GitHub\EECS373_Project\TouchScreenFinal\synthesis\touch_syn.prj
 #--  Written on Mon Dec 09 21:47:36 2019
 
 
 #project files
-add_file -verilog "F:/GitHub/EECS373_Project/TouchScreenFinal/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v"
-add_file -verilog "F:/GitHub/EECS373_Project/TouchScreenFinal/component/work/TouchScreenFinal/mss_tshell.v"
-add_file -verilog "F:/GitHub/EECS373_Project/TouchScreenFinal/component/work/TouchScreenFinal/MSS_CCC_0/TouchScreenFinal_tmp_MSS_CCC_0_MSS_CCC.v"
-add_file -verilog "F:/GitHub/EECS373_Project/TouchScreenFinal/component/work/TouchScreenFinal/TouchScreenFinal.v"
-add_file -verilog "F:/GitHub/EECS373_Project/TouchScreenFinal/component/work/touch/touch.v"
+add_file -verilog "D:/GitHub/EECS373_Project/TouchScreenFinal/component/Actel/SmartFusionMSS/MSS/2.5.200/mss_comps.v"
+add_file -verilog "D:/GitHub/EECS373_Project/TouchScreenFinal/component/work/TouchScreenFinal/mss_tshell.v"
+add_file -verilog "D:/GitHub/EECS373_Project/TouchScreenFinal/component/work/TouchScreenFinal/MSS_CCC_0/TouchScreenFinal_tmp_MSS_CCC_0_MSS_CCC.v"
+add_file -verilog "D:/GitHub/EECS373_Project/TouchScreenFinal/component/work/TouchScreenFinal/TouchScreenFinal.v"
+add_file -verilog "D:/GitHub/EECS373_Project/TouchScreenFinal/component/work/touch/touch.v"
 
 
 

@@ -260,5 +260,8 @@ int bufferEmpty();
 void set_xp(int val);
 void set_yp(int val);
 
+void drawCircle(int16_t x0, int16_t y0, int16_t r,
+    uint16_t color);
+
 uint8_t scaleX(uint16_t x);
 uint8_t scaleY(uint16_t y);

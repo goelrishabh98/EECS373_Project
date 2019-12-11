@@ -30,7 +30,7 @@ KEY VendorTechnology_VCCI_1.8_VOLTR "COM"
 KEY VendorTechnology_VCCI_2.5_VOLTR "COM"
 KEY VendorTechnology_VCCI_3.3_VOLTR "COM"
 KEY VendorTechnology_VOLTR "COM"
-KEY ProjectLocation "F:\GitHub\EECS373_Project\TouchScreenFinal"
+KEY ProjectLocation "D:\GitHub\EECS373_Project\TouchScreenFinal"
 KEY ProjectDescription ""
 KEY Pa4PeripheralNewSeq "GOOD"
 KEY SimulationType "VERILOG"
@@ -289,7 +289,7 @@ SIZE="38253"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_fp\touch.pro,pro"
 STATE="utd"
-TIME="1575946256"
+TIME="1576018988"
 SIZE="2386"
 ENDFILE
 VALUE "<project>\designer\impl1\touch_placeroute_log.rpt,log"
@@ -348,7 +348,7 @@ SIZE="310"
 ENDFILE
 VALUE "<project>\synthesis\touch_syn.prj,prj"
 STATE="utd"
-TIME="1575946058"
+TIME="1576018988"
 SIZE="2220"
 ENDFILE
 ENDLIST
