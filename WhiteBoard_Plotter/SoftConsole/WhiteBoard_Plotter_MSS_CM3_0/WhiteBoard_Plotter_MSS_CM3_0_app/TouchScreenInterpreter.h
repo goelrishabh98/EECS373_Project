@@ -27,20 +27,6 @@
 #define BOARDHEIGHT 54.61
 #define PI 3.141592654
 
-struct TSPoint {
-	uint16_t x;
-	uint16_t y;
-	uint16_t z;
-};
-
-struct DrawPoint {
-	double x;
-	double y;
-};
-
-struct TSPoint receivedPoints[RECEIVEDBUFFERSIZE];
-struct DrawPoint drawnPoints[RECEIVEDBUFFERSIZE / DISCRETIZESTEP];
-
 enum side{LEFT, RIGHT};
 
 //Pythagoras thm: NOTE!! RETURNS c^2 since calculating motor direction only compares two distances, not their true distances
@@ -73,27 +59,5 @@ int calculateMotorDir(double currentX, double currentY, double targetX, double t
 	}
 	return -1;	//Should never be here
 }
-
-//Draw out line saved in receivedPoints
-void drawReceivedLine() {
-	int i;	//For loop counter, indexes into receivedBuffer
-	int leftDirection;	//CW or CCW
-	int rightDirection;	//CW or CCW
-	//Calculates what direction motor should spin in for first movement
-	leftDirection = calculateMotorDir(BOARDWIDTH, BOARDHEIGHT, receivedPoints[0].x, receivedPoints[0].y, LEFT);
-	rightDirection = calculateMotorDir(BOARDWIDTH, BOARDHEIGHT, receivedPoints[0].x, receivedPoints[0].y, RIGHT);
-	for(i = 0; i <= RECEIVEDBUFFERSIZE - DISCRETIZESTEP; i += DISCRETIZESTEP) {
-		//To simulate drawing, save points that makeLine would draw to
-		drawnPoints[i / DISCRETIZESTEP].x = 25.91 + (double)receivedPoints[i].x / HORIZONTALSCALE;
-		drawnPoints[i / DISCRETIZESTEP].y = 15.305 + (double)receivedPoints[i].y / VERTICALSCALE;
-		//makeLine(leftDirection, rightDirection, 25.91 + (double)receivedPoints[i].x / HORIZONTALSCALE, 15.305 + (double)receivedPoints[i].y / VERTICALSCALE);
-		if(i < RECEIVEDBUFFERSIZE) {
-			//Calculates direction that motors should spin in for next point
-			leftDirection = calculateMotorDir(receivedPoints[i].x, receivedPoints[i].y, receivedPoints[i + DISCRETIZESTEP].x, receivedPoints[i + DISCRETIZESTEP].y, LEFT);
-			rightDirection = calculateMotorDir(receivedPoints[i].x, receivedPoints[i].y, receivedPoints[i + DISCRETIZESTEP].x, receivedPoints[i + DISCRETIZESTEP].y, RIGHT);
-		}
-	}
-}
-
 
 #endif /* TOUCHSCREENINTERPRETER_H_ */

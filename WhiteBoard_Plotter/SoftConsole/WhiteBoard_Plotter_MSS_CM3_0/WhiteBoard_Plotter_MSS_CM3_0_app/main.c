@@ -2,10 +2,15 @@
 #include "interface.h"
 #include "xbee.h"
 
+
+
+#define farEnoughThresh 100.0
+#define horizontalScale 5.0
+#define verticalScale 10.0
+
 uint8_t textInput[RX_BUFF_SIZE];	//Stores text input only, use other arrays to store freeform drawing data points
 int textInputCounter = 0;		//Indexes into textInput array so input does not overwrite each other in the 0th index
 int textInputDrawnCounter = 0;	//Remembers where in the array we have drawn until
-uint8_t newInput = 0;	//0 if no new input, 1 otherwise. Flag set by interrupts and cleared by drawing functions
 
 void uart0_rx_handler( mss_uart_instance_t * this_uart )
 {
@@ -20,14 +25,20 @@ void uart0_rx_handler( mss_uart_instance_t * this_uart )
 }
 
 void drawHardCoded() {
+	MSS_TIM2_start();
+	MSS_TIM1_start();
+	makeLine(-20.0, 0.0);
 	int i = 0;
 	//Draw from last drawn character to the next carriage return (when user presses enter, \r is placed into buffer
-	for(i = textInputDrawnCounter; textInput[i] == '\r'; ++i) {
+	for(i = textInputDrawnCounter; textInput[i] != '\r'; ++i) {
 		//Draw character
 		drawCharacter(textInput[i]);
 		//Erase as it goes along and replace with arbitrary character for easier debugging
 		textInput[i] = 'D';
 	}
+	//Once done drawing
+	MSS_TIM1_stop();
+	MSS_TIM2_stop();
 	newInput = 0;	//Once done drawing, reset the flag to false
 	//Character in ith index is '\r'. Set textInputDrawnCounter to one after \r
 	textInputDrawnCounter = i + 1;
@@ -46,24 +57,40 @@ void drawFreeform() {
 		currentX = receivedParsed[0];
 		currentY = receivedParsed[1];
 		//Move to starting position
-		//sendMessage(&servoRetract, 1, 0x373A);
-		makeLine(currentX / 10.0 + 29.75 - 42.5, currentY / 10.0 + 20.5 - 28.5);
-		//sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(&servoRetract, 1, 0x373A);
+		//makeLine(currentX / 10.0 + 29.75 - 42.5, currentY / 10.0 + 20.5 - 28.5);
+		makeLine((currentX) / horizontalScale - 25.0, (currentY) / verticalScale - 10.5);
+		sendMessage(&servoExtend, 1, 0x373A);
 		//Loop through each pair of received values
 		for(i = 2; i < parsedCounter; i += 2) {
 			//Scale the difference between next position and current position. Move that relative distance
-			makeLine((receivedParsed[i] - currentX) / 10.0 + 29.75, (receivedParsed[i+1] - currentY) / 10.0 + 20.5);
+			//makeLine((receivedParsed[i] - currentX) / 10.0 + 29.75, (receivedParsed[i+1] - currentY) / 10.0 + 20.5);
+			//If distance between the current point and the next point is more than a threshold, then lift up marker
+			uint8_t farEnough = (pow(receivedParsed[i] - currentX, 2) + pow(receivedParsed[i+1] - currentY, 2)) > farEnoughThresh;
+			if(farEnough) {
+				sendMessage(&servoRetract, 1, 0x373A);
+			}
+			makeLine((receivedParsed[i] - currentX) / horizontalScale, (receivedParsed[i+1] - currentY) / verticalScale);
+			if(farEnough) {
+				sendMessage(&servoExtend, 1, 0x373A);
+			}
 			//Update current position to new position
 			currentX = receivedParsed[i];
 			currentY = receivedParsed[i+1];
 		}
+		//Once done drawing
+		MSS_TIM1_stop();
+		MSS_TIM2_stop();
+		newInput = 0;
+		//makeLine(0,0);
+		sendMessage(&servoRetract, 1, 0x373A);
+
+
+
+		makeLine(0, 0);
+		MSS_UART_enable_irq( &g_mss_uart1,( MSS_UART_RBF_IRQ ) );
+		parsedCounter = 0;
 	}
-
-
-
-
-
-
 
 	//int currentX = receivedParsed[0] / 10.0 + 29.75;
 	//int currentY = receivedParsed[1] / 10.0 + 15.75;
@@ -102,24 +129,37 @@ int main(){
 	MSS_UART_set_rx_handler( &g_mss_uart1, uart1_rx_handler, MSS_UART_FIFO_FOURTEEN_BYTES);
 	stepper_config(SIXTEENTH, SIXTEENTH);
 	interfaceConfig(57, 85);
+	sendMessage(servoRetract, 1, 0x373A);
+
 
 	while(1) {
 		switch(mode) {
 		case -1:	//User has not chosen mode yet
 			break;
 
-		case 0:		//Text
+		case 37:		//Text
 			if(newInput) {
 				drawHardCoded();
 			}
 			break;
 
-		case 1:		//Shape
+		case 95:		//Shape
+			if(newInput) {
+				MSS_TIM2_start();
+				MSS_TIM1_start();
+				drawCharacter(shapeInput);
+				newInput = 0;
+				MSS_TIM1_stop();
+				MSS_TIM2_stop();
+			}
 			break;
 
-		case 2:		//Freeform
+		case 126:		//Freeform
 			if(newInput) {
 				drawFreeform();
+			}
+			else {
+				makeLine(0,0);
 			}
 			break;
 
@@ -127,22 +167,6 @@ int main(){
 			break;
 		}
 	}
-
-	/*
-	makeLine(2.0, -0.7);
-	sendMessage(servoExtend, 1, 0x373A);
-	makeLine(0.0, -3.0);
-	makeLine(-1.5, 1.5);
-	makeLine(2.0, 0.0);
-	//Get ready for next character
-	sendMessage(servoRetract, 1, 0x373A);
-	makeLine(0.5, 2.2);
-	 */
-	//makeLine(3, 0);
-	//makeLine(0, -3);
-	//makeLine(-3, 0);
-	//makeLine(0, -3);
-	//makeLine(3, 0);
 
 	return 0;
 }

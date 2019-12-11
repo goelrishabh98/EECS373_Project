@@ -25,9 +25,10 @@ double yPos;
 double RadiusLeft;
 double RadiusRight;
 
-int period = 100000;
+int period1 = 100000;
+int period2 = 100000;
 int counter;
-double thres = .0035;
+double thres = .01;
 double ratio;
 //////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////// TIMER //////////////////////////////////////////////////////////
@@ -57,7 +58,7 @@ void motorRight(int dir) {
 void start_hardware_timer1(){
 	MSS_TIM1_init(MSS_TIMER_PERIODIC_MODE);
 
-	MSS_TIM1_load_immediate(period);
+	MSS_TIM1_load_immediate(period1);
 	MSS_TIM1_start();
 	MSS_TIM1_enable_irq();
 }
@@ -65,7 +66,7 @@ void start_hardware_timer1(){
 void start_hardware_timer2(){
 	MSS_TIM2_init(MSS_TIMER_PERIODIC_MODE);
 
-	MSS_TIM2_load_immediate(period * ratio);
+	MSS_TIM2_load_immediate(period2);
 	MSS_TIM2_start();
 	MSS_TIM2_enable_irq();
 }
@@ -74,7 +75,7 @@ void Timer1_IRQHandler( void ){
 	motorLeft(dirLeft);
 
 	MSS_TIM1_clear_irq();
-	MSS_TIM1_load_immediate(period);
+	MSS_TIM1_load_immediate(period1);
 	MSS_TIM1_start();
 	MSS_TIM1_enable_irq();
 }
@@ -83,7 +84,7 @@ void Timer2_IRQHandler( void ){
 	motorRight(dirRight);
 
 	MSS_TIM2_clear_irq();
-	MSS_TIM2_load_immediate(period * ratio);
+	MSS_TIM2_load_immediate(period2);
 	MSS_TIM2_start();
 	MSS_TIM2_enable_irq();
 }
@@ -104,7 +105,23 @@ void interfaceConfig(double height, double width){
 	counter = 0;
 }
 
+void periodFinder(double ratio){
+	if(ratio <= 1){
+		period1 = 100000/ratio;
+		period2 = 100000;
+	}
+	else{
+		period1 = 100000;
+		period2 = 100000*ratio;
+	}
+}
+
 void makeLine(double relX, double relY){
+	if(relX < 0.05 && relX > -0.05 && relY < 0.05 && relY > -0.05) {
+		return;
+	}
+	MSS_TIM2_start();
+	MSS_TIM1_start();
 	double endX = relX + xPos;
 	double endY = relY + yPos;
 	int dirL = calculateMotorDir(xPos, yPos, endX, endY, 0);
@@ -132,6 +149,7 @@ void makeLine(double relX, double relY){
 			break;
 		}
 
+		periodFinder(ratio);
 		start_hardware_timer1();
 		start_hardware_timer2();
 		while(1){
@@ -143,6 +161,8 @@ void makeLine(double relX, double relY){
 	}
 	xPos = (pow(RadiusLeft, 2) - pow(RadiusRight, 2) + pow(boardWidth, 2))/(2*boardWidth);
 	yPos = sqrt(pow(RadiusLeft, 2) - pow(xPos, 2));
+	MSS_TIM1_stop();
+	MSS_TIM2_stop();
 }
 
 void returnToCenter(){
@@ -162,7 +182,7 @@ void returnToPoint(double x, double y){
 void drawCharacter(uint8_t character) {
 	if(character == '0') {
 		makeLine(2.0, -1);	//Start at bottom of 0
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(-1.0, -2.5);
 		makeLine(0.0, -1.5);
 		makeLine(1.0, -2.5);
@@ -172,37 +192,37 @@ void drawCharacter(uint8_t character) {
 		makeLine(-1.0, 1.5);
 		makeLine(-1.0, 0.0);
 		//Get ready for next character
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(3.0, 1.0);
 	}
 	else if(character == '1') {
 		makeLine(1.0, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(3.5, 0.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(-1.75, 0.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0.0, -4.5);
 		makeLine(-1.5, 1.5);
 		//Get ready for next character
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(3.75, 4.0);
 	}
 	else if(character == '2') {
 		makeLine(4.0, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(-3.0, 0.0);
 		makeLine(0.0, -2.0);
 		makeLine(3.0, 0.0);
 		makeLine(0.0, -1.5);
 		makeLine(-3.0, 0.0);
 		//Get ready for next character
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(4.0, 4.5);
 	}
 	else if(character == '3') {
 		makeLine(1.0, -2.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(1.5, 1.0);
 		makeLine(1.5, -1.0);
 		makeLine(-1.5, -1.5);
@@ -210,34 +230,34 @@ void drawCharacter(uint8_t character) {
 		makeLine(-1.5, -1.0);
 		makeLine(-1.5, 1.0);
 		//Get ready for next character
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(4.0, 5.0);
 	}
 	else if(character == '4') {
 		makeLine(3.0, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0.0, -4.5);
 		makeLine(-2.0, 2.0);
 		makeLine(3.5, 0.0);
 		//Get ready for next character
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(0.5, 4.5);
 	}
 	else if(character == '5') {
 		makeLine(1.0, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(3.0, 0.0);
 		makeLine(0.0, -2.0);
 		makeLine(-3.0, 0.0);
 		makeLine(0.0, -1.5);
 		makeLine(3.0, 0.0);
 		//Get ready for next character
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.0, 4.5);
 	}
 	else if(character == '6') {
 		makeLine(1.0, -3.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0.0, -2.0);
 		makeLine(3.0, 0.0);
 		makeLine(0.0, -2.0);
@@ -245,59 +265,59 @@ void drawCharacter(uint8_t character) {
 		makeLine(0.0, -1.5);
 		makeLine(3.0, 0.0);
 		//Get ready for next character
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.0, 4.5);
 	}
 	else if(character == '7') {
 		makeLine(1.0, -5.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(3.0, 0.0);
 		makeLine(-2.0, 4.0);
 		//Get ready for next character
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.0, 1.0);
 	}
 	else if(character == '8') {
 		makeLine(1.0, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0.0, -5.0);
 		makeLine(3.0, 0.0);
 		makeLine(0.0, 5.0);
 		makeLine(-3.0, 0.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(0.0, -2.5);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(3.0, 0.0);
 		//Get ready for next character
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.0, 3.5);
 	}
 	else if(character == '9') {
 		makeLine(1.0, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(3.0, 0.0);
 		makeLine(0.0, -5.0);
 		makeLine(-3.0, 0.0);
 		makeLine(0.0, 2.5);
 		makeLine(3.0, 0.0);
 		//Get ready for next character
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.0, 3.5);
 	}
 	else if(character == 'A') {
 		makeLine(1.0, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0, -6);
 		makeLine(3, 0);
 		makeLine(0, 6);
 		makeLine(0, -3);
 		makeLine(-3, 0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(4, 4);
 	}
 	else if(character == 'B') {
 		makeLine(1.0, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0, -6);
 		makeLine(3, 0);
 		makeLine(0, 3);
@@ -305,326 +325,326 @@ void drawCharacter(uint8_t character) {
 		makeLine(3, 0);
 		makeLine(0, 3);
 		makeLine(-3, 0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(4, 1);
 	}
 	else if(character == 'C') {
 		makeLine(4, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(-3, 0);
 		makeLine(0, -6);
 		makeLine(3, 0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1, 7);
 	}
 	else if(character == 'D') {
 		makeLine(4, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(-3, 0);
 		makeLine(0, .5);
 		makeLine(0, -7);
 		makeLine(0, .5);
 		makeLine(3, 0);
 		makeLine(0, 6);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1, 7);
 	}
 	else if(character == 'E') {
 		makeLine(4, -7);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(-3, 0);
 		makeLine(0, 3);
 		makeLine(3, 0);
 		makeLine(-3, 0);
 		makeLine(0, 3);
 		makeLine(3, 0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1, 1);
 	}
 	else if(character == 'F') {
 		makeLine(4, -7);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(-3, 0);
 		makeLine(0, 3);
 		makeLine(3, 0);
 		makeLine(-3, 0);
 		makeLine(0, 3);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1, 1);
 	}
 	else if(character == 'G') {
 		makeLine(4, -7);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(-3, 0);
 		makeLine(0, 6);
 		makeLine(3, 0);
 		makeLine(0, 3);
 		makeLine(-2, 0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(3, 4);
 	}
 	else if(character == 'H') {
 		makeLine(1.0, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0, -6);
 		makeLine(0, 3);
 		makeLine(-3, 0);
 		makeLine(0, -3);
 		makeLine(0, 6);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1, 1);
 	}
 	else if(character == 'I') {
 		makeLine(1.0, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(3, 0);
 		makeLine(-1.5, 0);
 		makeLine(0, -6);
 		makeLine(-1.5, 0);
 		makeLine(3, 0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1, 7);
 	}
 	else if(character == 'J') {
 		makeLine(4, -7);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(-3, 0);
 		makeLine(-1.5, 0);
 		makeLine(0, 6);
 		makeLine(-1.5, 0);
 		makeLine(0, 3);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(4, 4);
 	}
 	else if(character == 'K') {
 		makeLine(1.0, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0, -6);
 		makeLine(0, 3);
 		makeLine(3, -3);
 		makeLine(-3, 3);
 		makeLine(3, 3);
 		makeLine(-3, -3);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(4, 4);
 	}
 	else if(character == 'L') {
 		makeLine(1.0, -7);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0, 6);
 		makeLine(3, 0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1, 1);
 	}
 	else if(character == 'M') {
 		makeLine(1.0, -1);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0, -6);
 		makeLine(1.5, 6);
 		makeLine(1.5, -6);
 		makeLine(0, 6);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1, 1);
 	}
 	else if(character == 'N') {
 		makeLine(1.0, -1);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0, -6);
 		makeLine(3, 6);
 		makeLine(0, -6);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1, 1);
 	}
 	else if(character == 'O') {
 		makeLine(4, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(-3, 0);
 		makeLine(0, -6);
 		makeLine(3, 0);
 		makeLine(0, 6);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1, 1);
 	}
 	else if(character == 'P') {
 		makeLine(1, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0, -6);
 		makeLine(3, 0);
 		makeLine(0, 3);
 		makeLine(-3, 0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(4, 4);
 	}
 	else if(character == 'Q') {
 		makeLine(1, -2);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0, -5);
 		makeLine(3, 0);
 		makeLine(0, 5);
 		makeLine(-3, 0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.5, 2.5);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(1.5, 3.5);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1, 1);
 	}
 	else if(character == 'R') {
 		makeLine(1, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0, -6);
 		makeLine(3, 0);
 		makeLine(0, 3);
 		makeLine(-3, 0);
 		makeLine(3, 3);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1, 1);
 	}
 	else if(character == 'S') {
 		makeLine(1, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(3, 0);
 		makeLine(0, -3);
 		makeLine(-3, 0);
 		makeLine(0, -3);
 		makeLine(3, 0);
-		sendMessage(&servoRetract, 1, 0x373A);
-		makeLine(1, -7);
+		sendMessage(servoRetract, 1, 0x373A);
+		makeLine(1, 7);
 	}
 	else if(character == 'T') {
 		makeLine(2.5, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0, -6);
 		makeLine(-1.5, 0);
 		makeLine(3, 0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1, 7);
 	}
 	else if(character == 'U') {
 		makeLine(1, -7);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0, 6);
 		makeLine(3, 0);
 		makeLine(0, -6);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1, 7);
 	}
 	else if(character == 'V') {
 		makeLine(1, -7);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(1.5, 6);
 		makeLine(1.5, -6);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1, 7);
 	}
 	else if(character == 'W') {
 		makeLine(1, -7);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0, 6);
 		makeLine(1.5, -6);
 		makeLine(1.5, 6);
 		makeLine(0, -6);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1, 7);
 	}
 	else if(character == 'X') {
 		makeLine(1, -7);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(3, 6);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(0, -6);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(-3, 6);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1, 7);
 	}
 	else if(character == 'Y') {
 		makeLine(2.5, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0, -3);
 		makeLine(-1.5, -3);
 		makeLine(1.5, 3);
 		makeLine(1.5, -3);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1, 7);
 	}
 	else if(character == 'Z') {
 		makeLine(1, -7);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(3, 0);
 		makeLine(-3, 6);
 		makeLine(3, 0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1, 1);
 	}
 	else if(character == 'a') {
 		makeLine(1.0, -4.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(1.0, -1.0);
 		makeLine(1.0, 1.0);
 		makeLine(0.0, 2.0);
 		makeLine(-2.0, -1.0);
 		makeLine(2.0, -1.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.0, 4.0);
 	}
 	else if(character == 'b') {
 		makeLine(2.0, -6.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0.0, 4.0);
 		makeLine(2.0, -1.0);
 		makeLine(-2.0, -1.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(3.0, 4.0);
 	}
 	else if(character == 'c') {
 		makeLine(4.0, -4.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(-1.5, -1.0);
 		makeLine(-1.5, 1.0);
 		makeLine(0.0, 1.5);
 		makeLine(1.5, 1.0);
 		makeLine(1.5, -1.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.0, 2.0);
 	}
 	else if(character == 'd') {
 		makeLine(3.0, -3.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(-2.0, 1.0);
 		makeLine(2.0, 1.0);
 		makeLine(0.0, -4.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(2.0, 5.0);
 	}
 	else if(character == 'e') {
 		makeLine(1.5, -3.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(2.0, 0.0);
 		makeLine(-1.0, -1.5);
 		makeLine(-2.0, 1.5);
 		makeLine(0.0, 1.0);
 		makeLine(1.0, 1.5);
 		makeLine(2.0, -1.5);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.5, 4.0);
 	}
 	else if(character == 'f') {
 		makeLine(2.0, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0.0, -4.0);
 		makeLine(1.0, -1.0);
 		makeLine(1.0, 1.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(-2.5, 2.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(2.5, 0.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.0, 3.0);
 	}
 	else if(character == 'g') {
 		makeLine(1.0, -2.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(1.5, 1.0);
 		makeLine(1.5, -1.0);
 		makeLine(0.0, -2.5);
@@ -632,214 +652,214 @@ void drawCharacter(uint8_t character) {
 		makeLine(-1.5, 1.5);
 		makeLine(1.5, 1.5);
 		makeLine(1.5, -1.5);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.0, 4.5);
 	}
 	else if(character == 'h') {
 		makeLine(1.5, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0.0, -4.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(0.0, 2.5);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(1.0, -1.0);
 		makeLine(1.0, 1.0);
 		makeLine(0.0, 2.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.5, 1.0);
 	}
 	else if(character == 'i') {
 		makeLine(2.5, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0.0, -3.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(0.0, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(2.5, 5.0);
 	}
 	else if(character == 'j') {
 		makeLine(1.5, -1.5);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(1.0, 1.0);
 		makeLine(1.0, -1.0);
 		makeLine(0.0, -2.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(0.0, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.5, 4.5);
 	}
 	else if(character == 'k') {
 		makeLine(1.5, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0.0, -4.5);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.5, 1.5);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(-1.5, 1.5);
 		makeLine(1.5, 1.5);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(2.0, 1.0);
 	}
 	else if(character == 'l') {
 		makeLine(2.5, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0.0, -4.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(2.5, 5.0);
 	}
 	else if(character == 'm') {
 		makeLine(1.0, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0.75, -2.5);
 		makeLine(0.75, 2.5);
 		makeLine(0.75, -2.5);
 		makeLine(0.75, 2.6);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.0, 1.0);
 	}
 	else if(character == 'n') {
 		makeLine(1.5, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0.0, -3.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(0.0, 1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(1.5, -1.0);
 		makeLine(1.5, 1.0);
 		makeLine(0.0, 2.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(0.5, 1.0);
 	}
 	else if(character == 'o') {
 		makeLine(1.5, -2.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(1.0, -1.0);
 		makeLine(1.0, 1.0);
 		makeLine(-1.0, 1.0);
 		makeLine(-1.0, -1.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(3.5, 2.0);
 	}
 	else if(character == 'p') {
 		makeLine(1.5, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0.0, -3.0);
 		makeLine(1.0, -1.0);
 		makeLine(1.0, 1.0);
 		makeLine(-1.0, 1.0);
 		makeLine(-1.0, -1.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(3.5, 4.0);
 	}
 	else if(character == 'q') {
 		makeLine(3.0, -4.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(-1.0, 1.0);
 		makeLine(-1.0, -1.0);
 		makeLine(1.0, -1.0);
 		makeLine(1.0, 1.0);
 		makeLine(0.0, 3.0);
 		makeLine(1.0, -1.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.0, 2.0);
 	}
 	else if(character == 'r') {
 		makeLine(1.5, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0.0, -3.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(0.0, 1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(1.5, -1.5);
 		makeLine(1.5, 1.5);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(0.5, 3.0);
 	}
 	else if(character == 's') {
 		makeLine(1.0, -1.5);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(1.5, 1.0);
 		makeLine(1.5, -1.0);
 		makeLine(-3.0, -1.5);
 		makeLine(1.5, -1.0);
 		makeLine(1.5, 1.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.0, 3.0);
 	}
 	else if(character == 't') {
 		makeLine(1.0, -4.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(3.0, 0.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(-1.5, -1.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0.0, 4.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(2.5, 1.0);
 	}
 	else if(character == 'u') {
 		makeLine(1.0, -4.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0.0, 2.0);
 		makeLine(1.0, 1.0);
 		makeLine(1.0, 0.0);
 		makeLine(1.0, -1.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(0.0, -2.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0.0, 3.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.0, 1.0);
 	}
 	else if(character == 'v') {
 		makeLine(1.0, -4.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(1.5, 3.0);
 		makeLine(1.5, -3.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.0, 4.0);
 	}
 	else if(character == 'w') {
 		makeLine(0.5, -4.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(1.0, 3.0);
 		makeLine(1.0, -3.0);
 		makeLine(1.0, 3.0);
 		makeLine(1.0, -3.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(0.5, 4.0);
 	}
 	else if(character == 'x') {
 		makeLine(1.0, -4.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(3.0, 3.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(0.0, -3.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(-3.0, 3.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(4.0, 1.0);
 	}
 	else if(character == 'y') {
 		makeLine(1.0, -4.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(1.5, 1.5);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.5, -1.5);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(-3.0, 3.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(4.0, 1.0);
 	}
 	else if(character == 'z') {
 		makeLine(1.0, -4.0);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(3.0, 0.0);
 		makeLine(-3.0, 3.0);
 		makeLine(3.0, 0.0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(1.0, 1.0);
 	}
 	else if(character == ' '){
@@ -847,26 +867,101 @@ void drawCharacter(uint8_t character) {
 	}
 	else if(character == '['){
 		makeLine(2, -1);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(0, -6);
 		makeLine(6, 0);
 		makeLine(0, 6);
 		makeLine(-6, 0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(8, 1);
 	}
-	else if(character == "<"){
+	else if(character == '<'){
+		makeLine(-20.0, 0.0);
+		//E
+		makeLine(4, -7);
+		sendMessage(servoExtend, 1, 0x373A);
+		makeLine(-3, 0);
+		makeLine(0, 3);
+		makeLine(3, 0);
+		makeLine(-3, 0);
+		makeLine(0, 3);
+		makeLine(3, 0);
+		sendMessage(servoRetract, 1, 0x373A);
+		makeLine(1, 1);
+		//E
+		makeLine(4, -7);
+		sendMessage(servoExtend, 1, 0x373A);
+		makeLine(-3, 0);
+		makeLine(0, 3);
+		makeLine(3, 0);
+		makeLine(-3, 0);
+		makeLine(0, 3);
+		makeLine(3, 0);
+		sendMessage(servoRetract, 1, 0x373A);
+		makeLine(1, 1);
+		//C
+		makeLine(4, -1.0);
+		sendMessage(servoExtend, 1, 0x373A);
+		makeLine(-3, 0);
+		makeLine(0, -6);
+		makeLine(3, 0);
+		sendMessage(servoRetract, 1, 0x373A);
+		makeLine(1, 7);
+		//S
+		makeLine(1, -1.0);
+		sendMessage(servoExtend, 1, 0x373A);
+		makeLine(3, 0);
+		makeLine(0, -3);
+		makeLine(-3, 0);
+		makeLine(0, -3);
+		makeLine(3, 0);
+		sendMessage(servoRetract, 1, 0x373A);
+		makeLine(1, 7);
+		//3
+		makeLine(1.0, -2.0);
+		sendMessage(servoExtend, 1, 0x373A);
+		makeLine(1.5, 1.0);
+		makeLine(1.5, -1.0);
+		makeLine(-1.5, -1.5);
+		makeLine(1.5, -1.5);
+		makeLine(-1.5, -1.0);
+		makeLine(-1.5, 1.0);
+		//Get ready for next character
+		sendMessage(servoRetract, 1, 0x373A);
+		makeLine(4.0, 5.0);
+		//7
+		makeLine(1.0, -5.0);
+		sendMessage(servoExtend, 1, 0x373A);
+		makeLine(3.0, 0.0);
+		makeLine(-2.0, 4.0);
+		//Get ready for next character
+		sendMessage(servoRetract, 1, 0x373A);
+		makeLine(1.0, 1.0);
+		//3
+		makeLine(1.0, -2.0);
+		sendMessage(servoExtend, 1, 0x373A);
+		makeLine(1.5, 1.0);
+		makeLine(1.5, -1.0);
+		makeLine(-1.5, -1.5);
+		makeLine(1.5, -1.5);
+		makeLine(-1.5, -1.0);
+		makeLine(-1.5, 1.0);
+		//Get ready for next character
+		sendMessage(servoRetract, 1, 0x373A);
+		makeLine(4.0, 5.0);
+		/*
 		makeLine(2, -1);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(3, -5.19);
 		makeLine(3, 5.19);
 		makeLine(-6, 0);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(8, 1);
+		*/
 	}
-	else if(character == "("){
+	else if(character == '('){
 		makeLine(8, -4);
-		sendMessage(&servoExtend, 1, 0x373A);
+		sendMessage(servoExtend, 1, 0x373A);
 		makeLine(-0.0576400000000007,-0.58527);
 		makeLine(-0.17072,-0.56278);
 		makeLine(-0.277229999999999,-0.51866);
@@ -899,7 +994,7 @@ void drawCharacter(uint8_t character) {
 		makeLine(0.277229999999999,-0.51866);
 		makeLine(0.17072,-0.56278);
 		makeLine(0.0576400000000007,-0.58527);
-		sendMessage(&servoRetract, 1, 0x373A);
+		sendMessage(servoRetract, 1, 0x373A);
 		makeLine(2, 4);
 	}
 }

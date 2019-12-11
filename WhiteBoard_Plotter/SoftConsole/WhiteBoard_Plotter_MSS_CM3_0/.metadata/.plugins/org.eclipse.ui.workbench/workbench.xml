@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="20" version="2.0">
+<workbench progressCount="21" version="2.0">
 <workbenchAdvisor/>
-<window height="768" maximized="true" width="1024" x="161" y="-23">
+<window height="873" maximized="true" width="1196" x="233" y="94">
 <fastViewData fastViewLocation="1024"/>
 <perspectiveBar>
 <itemSize x="302"/>
@@ -16,7 +16,7 @@
 <coolItem id="org.eclipse.cdt.ui.buildConfigActionSet" itemType="typeToolBarContribution" x="89" y="22"/>
 <coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="129" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
-<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="84" y="22"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="38" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -26,7 +26,7 @@
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
-<page aggregateWorkingSetId="Aggregate for window 1573767118123" focus="true" label="Workspace - C/C++">
+<page aggregateWorkingSetId="Aggregate for window 1573767118123" focus="true" label="Workspace - Debug">
 <editors>
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
@@ -37,32 +37,51 @@
 <part id="2"/>
 <part id="3"/>
 <part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="N:/EECS373_Project/WhiteBoard_Plotter/SoftConsole/WhiteBoard_Plotter_MSS_CM3_0/WhiteBoard_Plotter_MSS_CM3_0_app/main.c" title="main.c" tooltip="WhiteBoard_Plotter_MSS_CM3_0_app/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WhiteBoard_Plotter_MSS_CM3_0_app/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="668" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5306" selectionTopPixel="2193"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="interface.h" partName="interface.h" path="N:/EECS373_Project/WhiteBoard_Plotter/SoftConsole/WhiteBoard_Plotter_MSS_CM3_0/WhiteBoard_Plotter_MSS_CM3_0_app/interface.h" title="interface.h" tooltip="WhiteBoard_Plotter_MSS_CM3_0_app/interface.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WhiteBoard_Plotter_MSS_CM3_0_app/interface.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4110" selectionTopPixel="2103"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="xbee.h" partName="xbee.h" path="N:/EECS373_Project/WhiteBoard_Plotter/SoftConsole/WhiteBoard_Plotter_MSS_CM3_0/WhiteBoard_Plotter_MSS_CM3_0_app/xbee.h" title="xbee.h" tooltip="WhiteBoard_Plotter_MSS_CM3_0_app/xbee.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WhiteBoard_Plotter_MSS_CM3_0_app/xbee.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4762" selectionTopPixel="1209"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2803" selectionTopPixel="969"/>
+</editor>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="TouchScreenInterpreter.h" partName="TouchScreenInterpreter.h" path="N:/EECS373_Project/WhiteBoard_Plotter/SoftConsole/WhiteBoard_Plotter_MSS_CM3_0/WhiteBoard_Plotter_MSS_CM3_0_app/TouchScreenInterpreter.h" title="TouchScreenInterpreter.h" tooltip="WhiteBoard_Plotter_MSS_CM3_0_app/TouchScreenInterpreter.h" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WhiteBoard_Plotter_MSS_CM3_0_app/TouchScreenInterpreter.h"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="830" selectionTopPixel="719"/>
 </editor>
 <editor id="org.eclipse.cdt.ui.editor.CEditor" name="mss_uart.h" partName="mss_uart.h" path="N:/EECS373_Project/WhiteBoard_Plotter/SoftConsole/WhiteBoard_Plotter_MSS_CM3_0/WhiteBoard_Plotter_MSS_CM3_0_hw_platform/drivers/mss_uart/mss_uart.h" title="mss_uart.h" tooltip="WhiteBoard_Plotter_MSS_CM3_0_hw_platform/drivers/mss_uart/mss_uart.h" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/WhiteBoard_Plotter_MSS_CM3_0_hw_platform/drivers/mss_uart/mss_uart.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="242" selectionOffset="26185" selectionTopPixel="9044"/>
+<editorState selectionHorizontalPixel="0" selectionLength="76" selectionOffset="51386" selectionTopPixel="20604"/>
 </editor>
 </editors>
 <views>
+<view id="org.eclipse.debug.ui.ModuleView" partName="Modules">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.MemoryView" partName="Memory">
+<viewState/>
+</view>
+<view id="org.eclipse.search.ui.views.SearchView" partName="Search">
+<viewState isPinned="false">
+<view IMemento.internal.id="org.eclipse.cdt.ui.pdomSearchViewPage" definitionColumnWidth="300" locationColumnWidth="300" matchColumnWidth="300" org.eclipse.search.lastActivation="1" org.eclipse.search.resultpage.layout="2" showEnclosingDefinitions="false"/>
+<view IMemento.internal.id="" org.eclipse.search.lastActivation="0"/>
+</viewState>
+</view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
 <viewState/>
 </view>
-<view id="org.eclipse.cdt.debug.ui.executablesView" partName="Executables"/>
+<view id="org.eclipse.cdt.debug.ui.executablesView" partName="Executables">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.TaskList" partName="Tasks">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
 <columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="304" org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.priorityField="20" org.eclipse.ui.ide.resourceField="94"/>
@@ -95,6 +114,9 @@
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
 <viewState/>
 </view>
+<view id="org.eclipse.debug.ui.RegisterView" partName="Registers">
+<viewState/>
+</view>
 <view id="org.eclipse.cdt.debug.ui.DisassemblyView" partName="Disassembly">
 <viewState/>
 </view>
@@ -102,8 +124,8 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="64" org.eclipse.ui.ide.markerType="94" org.eclipse.ui.ide.pathField="124" org.eclipse.ui.ide.resourceField="94" org.eclipse.ui.ide.severityAndDescriptionField="1638"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -117,7 +139,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.cdt.ui.editor.CEditor" activePerspective="org.eclipse.cdt.ui.CPerspective">
+<perspectives activePart="org.eclipse.debug.ui.DebugView" activePerspective="org.eclipse.debug.ui.DebugPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.cdt.internal.ui.CPerspectiveFactory" id="org.eclipse.cdt.ui.CPerspective" label="C/C++"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -169,6 +191,7 @@
 <view id="org.eclipse.ui.views.TaskList"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.search.ui.views.SearchView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.cdt.make.ui.views.MakeView"/>
 <fastViewBars/>
@@ -192,22 +215,24 @@
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="topLeft"/>
+<info part="org.eclipse.ui.editorss" ratio="0.19381875" ratioLeft="370" ratioRight="1539" relationship="2" relative="topLeft"/>
 <info folder="true" part="bottom" ratio="0.74285716" ratioLeft="650" ratioRight="225" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="topRight" ratio="0.7475845" ratioLeft="1238" ratioRight="418" relationship="2" relative="org.eclipse.ui.editorss">
+<info folder="true" part="topRight" ratio="0.7949219" ratioLeft="1221" ratioRight="315" relationship="2" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.cdt.make.ui.views.MakeView" label="Make Targets"/>
@@ -257,10 +282,14 @@
 <view id="org.eclipse.ui.views.TaskList"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.cdt.debug.ui.executablesView"/>
+<view id="org.eclipse.debug.ui.MemoryView"/>
+<view id="org.eclipse.search.ui.views.SearchView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
 <view id="org.eclipse.debug.ui.VariableView"/>
 <view id="org.eclipse.debug.ui.BreakpointView"/>
 <view id="org.eclipse.debug.ui.ExpressionView"/>
+<view id="org.eclipse.debug.ui.RegisterView"/>
+<view id="org.eclipse.debug.ui.ModuleView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.cdt.debug.ui.DisassemblyView"/>
 <fastViewBars/>
@@ -288,7 +317,8 @@
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.cdt.debug.ui.executablesView" label="Executables"/>
-<page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="Search"/>
+<page content="org.eclipse.debug.ui.MemoryView" label="Memory"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
@@ -296,12 +326,14 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.4295416" ratioLeft="253" ratioRight="336" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info part="org.eclipse.ui.editorss" ratio="0.5035885" ratioLeft="421" ratioRight="415" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
 <info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.8114196" ratioLeft="1549" ratioRight="360" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.cdt.debug.ui.DisassemblyView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.cdt.debug.ui.DisassemblyView" label="Disassembly"/>
 <page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
@@ -316,13 +348,15 @@
 <page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
 <page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
-<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
-<page content="org.eclipse.debug.ui.ModuleView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="Registers"/>
+<page content="org.eclipse.debug.ui.ModuleView" label="Modules"/>
 <page content="org.eclipse.cdt.debug.ui.SignalsView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
+<part id="4"/>
 </presentation>
 </folder>
 </info>
@@ -335,157 +369,154 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WhiteBoard_Plotter_MSS_CM3_0_app/main.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WhiteBoard_Plotter_MSS_CM3_0_app/interface.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WhiteBoard_Plotter_MSS_CM3_0_app/interface.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WhiteBoard_Plotter_MSS_CM3_0_app/main.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WhiteBoard_Plotter_MSS_CM3_0_app/xbee.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/WhiteBoard_Plotter_MSS_CM3_0_hw_platform/drivers/mss_uart/mss_uart.h"/>
 </editors>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="411" y="0"/>
+<position info="not_deleted" x="4380" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4380" y="0"/>
+</item>
+<item historyLabel="xbee.h" index="2">
+<position info="not_deleted" x="1277" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="472" y="0"/>
+</item>
+<item historyLabel="xbee.h" index="2">
+<position info="not_deleted" x="3699" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="472" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5574" y="0"/>
+</item>
+<item historyLabel="xbee.h" index="2">
+<position info="not_deleted" x="3668" y="10"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5574" y="0"/>
+</item>
+<item historyLabel="xbee.h" index="2">
+<position info="not_deleted" x="2803" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="474" y="0"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4380" y="0"/>
 </item>
 <item historyLabel="interface.h" index="1">
-<position info="not_deleted" x="635" y="0"/>
+<position info="not_deleted" x="3867" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="411" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1927" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="411" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="869" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="411" y="0"/>
+<position info="not_deleted" x="5639" y="0"/>
 </item>
 <item historyLabel="interface.h" index="1">
-<position info="not_deleted" x="635" y="0"/>
+<position info="not_deleted" x="23801" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="411" y="0"/>
+<position info="not_deleted" x="5639" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1927" y="0"/>
+<position info="not_deleted" x="5639" y="0"/>
 </item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="411" y="0"/>
-</item>
-<item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1927" y="0"/>
+<item historyLabel="xbee.h" index="2">
+<position info="not_deleted" x="2803" y="0"/>
 </item>
 <item historyLabel="interface.h" index="1">
-<position info="not_deleted" x="596" y="0"/>
+<position info="not_deleted" x="23801" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="411" y="0"/>
+<position info="not_deleted" x="4380" y="0"/>
+</item>
+<item historyLabel="interface.h" index="1">
+<position info="not_deleted" x="22295" y="0"/>
+</item>
+<item historyLabel="interface.h" index="1">
+<position info="not_deleted" x="25607" y="0"/>
 </item>
 <item historyLabel="main.c" index="0">
-<position info="not_deleted" x="1927" y="0"/>
+<position info="not_deleted" x="5578" y="0"/>
 </item>
-<item historyLabel="interface.h" index="2">
-<position info="not_deleted" x="596" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5647" y="0"/>
 </item>
-<item historyLabel="interface.h" index="2">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5306" y="0"/>
 </item>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="463" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5481" y="0"/>
 </item>
-<item historyLabel="xbee.h" index="4">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5647" y="0"/>
 </item>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="463" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5306" y="0"/>
 </item>
-<item historyLabel="xbee.h" index="4">
-<position info="not_deleted" x="0" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5481" y="0"/>
 </item>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="463" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5647" y="0"/>
 </item>
-<item historyLabel="xbee.h" index="4">
-<position info="not_deleted" x="4781" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5544" y="0"/>
 </item>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="1153" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4380" y="0"/>
 </item>
-<item historyLabel="xbee.h" index="4">
-<position info="not_deleted" x="4781" y="0"/>
+<item historyLabel="interface.h" index="1">
+<position info="not_deleted" x="22295" y="0"/>
 </item>
-<item historyLabel="xbee.h" index="4">
-<position info="not_deleted" x="3938" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4380" y="0"/>
 </item>
-<item historyLabel="xbee.h" index="4">
-<position info="not_deleted" x="3934" y="0"/>
+<item historyLabel="interface.h" index="1">
+<position info="not_deleted" x="3867" y="0"/>
 </item>
-<item historyLabel="xbee.h" index="4">
-<position info="not_deleted" x="3319" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4380" y="0"/>
 </item>
-<item historyLabel="xbee.h" index="4">
-<position info="not_deleted" x="3394" y="0"/>
+<item historyLabel="xbee.h" index="2">
+<position info="not_deleted" x="2803" y="0"/>
 </item>
-<item historyLabel="xbee.h" index="4">
-<position info="not_deleted" x="3470" y="0"/>
+<item historyLabel="interface.h" index="1">
+<position info="not_deleted" x="22361" y="0"/>
 </item>
-<item historyLabel="xbee.h" index="4">
-<position info="not_deleted" x="3602" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4380" y="0"/>
 </item>
-<item historyLabel="xbee.h" index="4">
-<position info="not_deleted" x="3929" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4380" y="0"/>
 </item>
-<item historyLabel="xbee.h" index="4">
-<position info="not_deleted" x="3891" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5500" y="44"/>
 </item>
-<item historyLabel="xbee.h" index="4">
-<position info="not_deleted" x="4762" y="0"/>
+<item historyLabel="interface.h" index="1">
+<position info="not_deleted" x="2726" y="79"/>
 </item>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="1153" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5597" y="42"/>
 </item>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="503" y="0"/>
+<item historyLabel="interface.h" index="1">
+<position info="not_deleted" x="4110" y="0"/>
 </item>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="917" y="0"/>
+<item historyLabel="xbee.h" index="2">
+<position info="not_deleted" x="2803" y="0"/>
 </item>
-<item historyLabel="xbee.h" index="4">
-<position info="not_deleted" x="4762" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="5597" y="42"/>
 </item>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="917" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1029" y="0"/>
 </item>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="917" y="0"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="4380" y="0"/>
 </item>
-<item historyLabel="mss_uart.h" index="5">
-<position/>
-</item>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="912" y="0"/>
-</item>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="901" y="0"/>
-</item>
-<item historyLabel="xbee.h" index="4">
-<position info="not_deleted" x="4762" y="0"/>
-</item>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="901" y="0"/>
-</item>
-<item historyLabel="mss_uart.h" index="5">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="main.c" index="3">
-<position info="not_deleted" x="901" y="0"/>
-</item>
-<item historyLabel="mss_uart.h" index="5">
-<position info="not_deleted" x="26185" y="242"/>
-</item>
-<item active="true" historyLabel="main.c" index="3">
-<position info="not_deleted" x="901" y="0"/>
+<item active="true" historyLabel="main.c" index="0">
+<position info="not_deleted" x="5306" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -493,6 +524,13 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.ToolsFolderView"/>
+<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.OutlineFolderView"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -500,18 +538,13 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="org.eclipse.debug.internal.ui.ConsoleFolderView"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mss_uart.h" tooltip="WhiteBoard_Plotter_MSS_CM3_0_hw_platform/drivers/mss_uart/mss_uart.h">
-<persistable path="/WhiteBoard_Plotter_MSS_CM3_0_hw_platform/drivers/mss_uart/mss_uart.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="xbee.h" tooltip="WhiteBoard_Plotter_MSS_CM3_0_app/xbee.h">
-<persistable path="/WhiteBoard_Plotter_MSS_CM3_0_app/xbee.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="interface.h" tooltip="WhiteBoard_Plotter_MSS_CM3_0_app/interface.h">
-<persistable path="/WhiteBoard_Plotter_MSS_CM3_0_app/interface.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mss_timer.h" tooltip="WhiteBoard_Plotter_MSS_CM3_0_hw_platform/drivers/mss_timer/mss_timer.h">
+<persistable path="/WhiteBoard_Plotter_MSS_CM3_0_hw_platform/drivers/mss_timer/mss_timer.h"/>
 </file>
 </mruList>
 </workbench>
