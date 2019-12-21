@@ -86,18 +86,25 @@ int main()
 			else{
 				drawFillScreen(ILI9341_GREEN);
 				drawRectangle(5, 5, 110, 152, ILI9341_WHITE);
-				drawRectangle(5, 165, 110, 152, ILI9341_WHITE);
+				drawRectangle(5, 165, 110, 152, ILI9341_RED);
 				drawRectangle(120, 5, 115, 152, ILI9341_WHITE);
 				drawRectangle(120, 165, 115, 152, ILI9341_WHITE);
 
 				//draw box
-				drawRectangle(40, 60, 3, 35, ILI9341_BLACK);
-				drawRectangle(40, 90, 35, 3, ILI9341_BLACK);
-				drawRectangle(40, 60, 35, 3, ILI9341_BLACK);
-				drawRectangle(70, 60, 3, 35, ILI9341_BLACK);
+				drawRectangle(40, 60, 3, 38, ILI9341_BLACK);
+				drawRectangle(40, 90, 38, 3, ILI9341_BLACK);
+				drawRectangle(40, 60, 38, 3, ILI9341_BLACK);
+				drawRectangle(75, 60, 3, 38, ILI9341_BLACK);
 
 				//drawCircle
-				drawCircle(160,240 , 20, ILI9341_BLACK);
+				drawCircle(180,240 , 20, ILI9341_BLACK);
+
+				//Draw E
+
+				drawRectanglePixel(160, 75, 30, 5, ILI9341_BLACK);
+				drawRectanglePixel(190, 75, 5, 20, ILI9341_BLACK);
+				drawRectanglePixel(175, 75, 5, 20, ILI9341_BLACK);
+				drawRectanglePixel(160, 75, 5, 20, ILI9341_BLACK);
 
 			}
 

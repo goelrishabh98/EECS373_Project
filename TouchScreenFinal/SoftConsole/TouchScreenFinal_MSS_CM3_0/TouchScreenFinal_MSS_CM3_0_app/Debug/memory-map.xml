@@ -1,4 +1,4 @@
-<!-- File generated from D:\GitHub\EECS373_Project\TouchScreenFinal\SoftConsole\TouchScreenFinal_MSS_CM3_0\TouchScreenFinal_MSS_CM3_0_hw_platform\CMSIS\startup_gcc\debug-in-actel-smartfusion-envm.ld -->
+<!-- File generated from C:\Users\rgroc\OneDrive\Documents\EECS373_Project\TouchScreenFinal\SoftConsole\TouchScreenFinal_MSS_CM3_0\TouchScreenFinal_MSS_CM3_0_hw_platform\CMSIS\startup_gcc\debug-in-actel-smartfusion-envm.ld -->
 <board>
  <properties>
   <property name="system-v6-m"/>
